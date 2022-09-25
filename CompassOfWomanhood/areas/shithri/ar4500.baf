@@ -1,0 +1,14 @@
+//
+// Shithri summoning
+//
+
+IF
+  Global("6W#ShithriSummoned","GLOBAL",1)
+  Global("6W#ShithriSpawnPlane","GLOBAL",0)
+THEN
+  RESPONSE #100
+    CreateVisualEffect("SPPORTAL",[1999.1218])
+    Wait(2)
+    CreateCreature("6WSHIT25",[1999.1218],S)  // Shithri
+    SetGlobal("6W#ShithriSpawnPlane","GLOBAL",1)
+END

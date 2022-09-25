@@ -1,0 +1,96 @@
+//
+// Shithri-Neera romance scripts in ToB, Shithri's part
+//
+
+
+// If "comitted" and Neera is enemy, so is Shithri
+
+IF
+  InParty(Myself)
+  Allegiance("Neera",ENEMY)
+  Global("6W#ShithriNeeraRomanceActive","GLOBAL",2)
+THEN
+  RESPONSE #100
+    LeaveParty()
+    Enemy()
+END
+
+IF
+  !InParty(Myself)
+  Allegiance("6WSHITHRI",ENEMY)
+  !Allegiance(Myself,ENEMY)
+  Global("6W#ShithriNeeraRomanceActive","GLOBAL",2)
+THEN
+  RESPONSE #100
+    ChangeAIScript("6WSHITHRI",SPECIFICS)
+    Enemy()
+END
+
+
+// If Neera dies while "comitted", Shithri cries
+IF
+  Global("6W#ShithriNeeraRomanceActive","GLOBAL",2)
+  Global("6W#ShithriNeeraNeeraDead","GLOBAL",0)
+  Dead("Neera")
+THEN
+  RESPONSE #100
+    SetGlobal("6W#ShithriNeeraNeeraDead","GLOBAL",1)
+    Interact(Player1)
+END
+
+// If Neera just died and is outside of the party,
+// she probably perma-died, e.g. disintegrated or massacred.
+// Force "Neera died" dialogue even if it was run before.
+IF
+  Global("6W#ShithriNeeraRomanceActive","GLOBAL",2)
+  OR(2)
+    Global("6W#ShithriNeeraNeeraDead","GLOBAL",0)
+    Global("6W#ShithriNeeraNeeraDead","GLOBAL",2)
+  !InPartyAllowDead("Neera")
+  Dead("Neera")
+THEN
+  RESPONSE #100
+    SetGlobal("6W#ShithriNeeraNeeraDead","GLOBAL",3)
+    Interact(Player1)
+END
+
+// If Neera dies permanently, the romance always ends
+IF
+  OR(2)
+    Global("6W#ShithriNeeraRomanceActive","GLOBAL",1)
+    Global("6W#ShithriNeeraRomanceActive","GLOBAL",2)
+  !InPartyAllowDead("Neera")
+  Dead("Neera")
+THEN
+  RESPONSE #100
+    SetGlobal("6W#ShithriNeeraRomanceActive","GLOBAL",3)
+    SetGlobal("6W#ShithriNeeraNeeraDead","GLOBAL",3)
+END
+
+
+// Shithri starts the following dialogues:
+IF
+  Global("6W#ShithriNeeraLoveTalk","GLOBAL",28)
+THEN
+  RESPONSE #100
+    Interact("Neera")
+END
+
+
+// timing
+IF
+  !RealGlobalTimerNotExpired("6W#ShithriNeeraRomance","GLOBAL")
+  GlobalGT("Chapter","GLOBAL",7)
+  IfValidForPartyDialog("6WSHITHRI")
+  IfValidForPartyDialog("Neera")
+  See("Neera")
+  CombatCounter(0)
+  Global("6W#ShithriNeeraRomanceActive","GLOBAL",2)
+  OR(2)
+    Global("6W#ShithriNeeraLoveTalk","GLOBAL",27)
+    Global("6W#ShithriNeeraLoveTalk","GLOBAL",29)
+THEN
+  RESPONSE #100
+    IncrementGlobal("6W#ShithriNeeraLoveTalk","GLOBAL",1)
+    RealSetGlobalTimer("6W#ShithriNeeraRomance","GLOBAL",FIVE_HOURS)
+END

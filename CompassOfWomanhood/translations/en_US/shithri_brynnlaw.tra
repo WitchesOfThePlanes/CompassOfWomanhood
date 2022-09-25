@@ -1,0 +1,227 @@
+@1000000 = ~So ye nah sailin' t' Brynnlaw?~ [6WSHI00]
+@1000001 = ~I'm a sailor, not pirate, lass. *hic* Told ye already! Sailin' north now.~
+@1000002 = ~Amn be 'avin' colonies in Maztica and ye sailin' north?~
+@1000003 = ~Listen, I sail where me captain leads. Served me right until now! *hic*~
+@1000004 = ~*gulp* Wha' a swab...~
+@1000005 = ~Oy, ye there! Know a ship sailin' t' Brynnlaw?~ [6WSHI01]
+@1000006 = ~No. Not really.~
+@1000007 = ~Brynnlaw? Never heard of it.~
+@1000008 = ~And who are you?~
+@1000009 = ~You think I'm water traffic control functionary or what?~
+@1000010 = ~Huh. Noone "knows". I nah expected it t' be such issue.~
+@1000011 = ~Pirate Island, they call it. Or house o' madmen, until recently. Or so I hear.~
+@1000012 = ~House of madmen? Why?~
+@1000013 = ~Never heard of it. Sorry.~
+@1000014 = ~Like... mad madmen, I hear. Mad wizards 'n other mageries, aye. 'Tis like a jail.~
+@1000015 = ~Do you mean Spellhold?~
+@1000013 = ~Never heard of it. Sorry.~
+@1000016 = ~Aye! Spellhold. So ye know the island, aye?~
+@1000017 = ~I'm trying to get there myself.~
+@1000018 = ~No. Still doesn't ring a bell.~
+@1000019 = ~Do ye? So who'll smuggle ye there? Nah. Nah need t' answer. Jus' tell if ye can get I there too.~
+@1000020 = ~Sure, welcome aboard. If you help me raise the money, that is.~
+@1000021 = ~I'd rather not.~
+@1000022 = ~And who are you?~
+@1000023 = ~Nah bad fer a lubber ye be! Lead the way then, "capt'n".~
+@1000024 = ~Name be Shithri.~
+@1000025 = ~Good. I'm <CHARNAME>. Welcome aboard, Shithri.~
+@1000026 = ~...and?~
+@1000027 = ~Huh. Ye be very curious, ain't ye? Fine then, I tell ye.~
+@1000028 = ~I be pirate. So I wanna get t' Pirate Island. Makes sense, aye?~
+@1000029 = ~It does. Glad you were honest with me, welcome aboard!~
+@1000030 = ~Pirate? No thanks.~
+@1000031 = ~You have weird accent. You're from far away?~
+@1000032 = ~Aye. I be Zentish.~
+@1000033 = ~A Zhent? I knew I heard that accent before...~
+@1000034 = ~Zenthil Keep is hardly the best place to be a half-orc.~ 
+@1000035 = ~Make up yer mind. Ye'll 'ave' I or nah?~
+@1000036 = ~Sure. Glad you were honest with me, welcome aboard!~
+@1000037 = ~A Zenth pirate? No thanks.~
+@1000038 = ~Wha' a swab...~
+@1000039 = ~Me name nah matter if ye nah know a ship t' Brynnlaw. Know some?~
+@1000040 = ~Ahoy. Ye know a ship sailin' t' Brynnlaw?~
+
+@2000000 = ~Ho! Here it be, Brynnlaw! Thanks, capt'n!~
+@2000001 = ~So... are you leaving the party?~
+@2000002 = ~My pleasure! Glad I could help you.~
+@2000003 = ~Finally! No more of those... ughm. "Songs".~
+@2000010 = ~This bucko has some business t' do. Yarrr.~
+@2000011 = ~Maybe I could help you with that too?~
+@2000012 = ~Good. If you decide to rejoin me later on, though - feel free to do so.~
+@2000013 = ~So it's a goodbye.~
+@2000030 = ~Har har! Aye, capt'n, ye silly old swab. No more shanties fer ye.~
+@2000040 = ~Huh. Ye could, mayhaps. I be lookin' fer a man they call "the King o' Pirates".~
+@2000041 = ~So you want an audience with a king?~
+@2000042 = ~I don't think I can help you with that.~
+@2000050 = ~Nah bad, yer idea. *gulp* Meet this bucko after ye leave the house o' madmen then.~
+@2000060 = ~Too bad. Off I go then.~
+@2000061 = ~Would you rejoin me when we're both done with our tasks?~
+@2000062 = ~Goodbye then!~
+@2000070 = ~Ye could call it that, aye.~
+@2000071 = ~Fine. I will help you then.~
+@2000072 = ~Good! Set sail fer the "Pirate King"!~
+@2000080 = ~Ne'er say "goodbye", capt'n. *gulp*~
+@2000090 = ~Well, <CHARNAME>... I'm not really good at saying goodbyes either. So, um, grateful for everything you did for me. For us? Anyway... bye!~
+@2000091 = ~Wait, Shithri! I will go with you.~
+@2000092 = ~Nah need t'. Betta watch fer capt'n t' come back fer this bucko, har har!~
+@2000093 = ~I... what?~
+@2000094 = ~*sigh* Okay, you're right. <CHARNAME> needs someone dependable on <PRO_HISHER> side while you're gone.~
+@2000095 = ~Just- be back safely.~
+@2000096 = ~*smirk* This bucko gives ye her word.~
+
+@2000100 = ~Ho! Behind this door be "the King 'o Pirates".~
+@2000101 = ~*gulp* *gulp* *gulp* Ha...~
+@2000102 = ~Aye. I be ready now.~
+@2000103 = ~Nay. *gulp* *gulp* Ha... Now I be ready.~
+@2000110 = ~Wha'? Blimey, I be sober as a mackerel!~
+@2000111 = ~Capt'n, wha' the...~
+@2000112 = ~You can't be drunk when talking to a king, can you?~
+@2000113 = ~Side-effect of healing spells.~
+@2000120 = ~Hmm. Mayhaps, aye. Thanks, capt'n!~
+@2000130 = ~Ayyy, could've warned this bucko, ye could.~
+@2000131 = ~*gulp* *gulp* *gulp* Ha... A moment.~
+@2000132 = ~*gulp* *gulp* Ha... I be ready!~
+
+@2000300 = ~Ahoy, ye old sea dog!~
+@2000301 = ~Do we know each other?~
+@2000302 = ~Do we? Oh do we? Ho, ye betta know that, me tar. *gulp* Here ye be, talkin' like a fancy lubber 'n these rapscallions o'er here callin' ye the King o' the Pirates, har har! Good one!~
+@2000303 = ~You're drunk, girl. Get out.~
+@2000304 = ~Sileeence! Silence! Ye. Ye think ye betta than I, aye? Huh! Ye sittin' in yer fancy office, wearin' yer long clothes. But this bucko nah be fooled so easily! Nay, nay!~
+@2000305 = ~Could you ask your friend here to stop spilling that slop on me?~
+@2000306 = ~Slop? SLOP?! Here ye be, nah e'en knowin' the buccaneers' finest grog there be! Ye know wha'? Ye know wha'?~
+@2000307 = ~I be the one who'll be Queen o' Pirates!~
+@2000308 = ~What you will be is yet another mad woman throw into the asylum. Get. Out. NOW.~
+@2000310 = ~Is that how you adress your queen?! Kneel before her majesty, fool!~
+@2000311 = ~May I add that I am a child of god?~
+@2000312 = ~I'm terribly sorry for this situation, but I really need to get to Spellhold.~
+@2000320 = ~I can see there are more of you sick ones. Get them all out of my sight, all of them. I swear to gods, new silky shirt, already stained...~
+@2000321 = ~Oh, don't worry. They have plenty of queens and gods in the Spellhold. Get them all out of my sight, all of them. I swear to gods, new silky shirt, already stained...~
+
+@2000400 = ~My friend Shithri wanted to speak with you.~
+@2000401 = ~Ahoy.~
+@2000402 = ~Do we know each other?~
+@2000403 = ~*smirk* Nay. Prolly nah. But that o' nah importance. I be here to jus' tell ye two things.~
+@2000404 = ~First. Whate'er those rapscallions call ye - ye nah "king" o' this bucko. Nah in a thousand years I consider a half-lubber me king.~
+@2000405 = ~Second. I, Shithri o' Zenthil Keep, gonna be Queen o' Pirates.~
+@2000406 = ~That be all.~
+@2000407 = ~Consider me mildly amused, girl, by your efforts to speak proper Common. As for the contents - you think how many pirates declared me exactly that? I couldn't care less for you calling me "your king". I care for the actual power.~
+@2000408 = ~That be why ye'll ne'er truly be the king.~
+@2000409 = ~Is that all you came here for?~
+@2000410 = ~Yes. That's all.~
+
+@2000500 = ~Ho, me capt'n! Nahbody that dumb.~
+@2000501 = ~Ye promised t' help this bucko speak t' Pirate King. 'n yet here we be - inside o' that house o' madmen.~
+@2000502 = ~Well, I intended to go back to help you later...~
+@2000503 = ~I assume you already know I'm here for Imoen. Don't you think rescuing her is more important than your "business" with the Pirate King?~
+@2000504 = ~I'm here for my revenge on Irenicus. Unless the Pirate King tortured until it drives you mad - I think my business is more important than yours.~
+@2000505 = ~I'm sorry. That's all I can say.~
+@2000520 = ~Then ye betta nah wasted me time, yarrr. Off I go.~
+@2000530 = ~Then ye do yer thing, I do me thing. Off I go.~ 
+@2000540 = ~Why should I care? Ye do yer thing, I do me thing. Off I go.~
+
+@2000700 = ~Ho, me matey... Ho, ho, ye there?~
+@2000701 = ~Huh? Wh-wha'? Shiri? Har har, me hear-ty! *hic* Me prtty, prrtty hear-ty!~
+@2000702 = ~Oy, get yerself together, matey! Nah wanna leave this island nahmore?~
+@2000710 = ~*hic* Wit' that... that... captain o' yers?~
+@2000711 = ~Aye! Ye gettin' outta here wit' this bucko and <PRO_HIMHER>, ain't ye?~
+@2000720 = ~*hic* Wit' that... prtty, prtty elvn lady o' yers?~
+@2000721 = ~Half-elven. 'n she nah "lady 'o I". She jus'...~
+@2000722 = ~She jus' a... friend.~
+@2000730 = ~*hic* Wit' that... prtty, prtty elvn lady o' yers?~
+@2000731 = ~*smirk* ...half-elven.~
+@2000740 = ~zzzZZzzz...~
+@2000741 = ~Ho, me matey! Me matey! Blimey... *gulp*~
+
+@2000800 = ~Ho, me capt'n! Ahoy!~
+@2000810 = ~...and "your half-elven lady". Hi.~
+@2000811 = ~*gulp* I said "friend".~
+@2000812 = ~Well. Hullo, Neera.~
+@2000820 = ~So, me capt'n. Ye came as promised.~
+@2000821 = ~Indeed! Please join me again.~
+@2000822 = ~In fact... I wanted to say goodbye.~
+@2000830 = ~Aye aye, capt'n! Gladly!~
+@2000831 = ~Aye, I heard ye got this bosun a job, har har. Good thinkin'.~
+@2000840 = ~Huh. As ye wish. *gulp*~
+@2000841 = ~Thanks for making it clear, <CHARNAME>. You did keep your word... kinda. Anyway. Bye!~
+
+
+@2010000 = ~Ye corsair. This bucko nah believe one bit o' yer pretty words. At least that mage keeps his mug shut well.~
+
+@2010100 = ~Me capt'n, this rapscallion has a point. 'n on the sea, this bosun can keep an eye on 'im.~
+@2010101 = ~I have one condition: my friend Shithri will be the ship's bosun.~
+@2010102 = ~That pirate girl? I can agree to that, she's a fine sailor.~
+
+@2010200 = ~And you even sided with that self-proclaimed "pirate queen", I can see!~
+
+@2010300 = ~Cast off the mains! We are away! Set sights on the mainland! Shithri, sails!~ [PPSAEM27]
+
+@2010400 = ~Ye rapscallion, I could watch the upperdeck all day 'n still fail t' notice...~
+
+
+
+@3000000 = ~You really have no idea how often I hear that, do you? Of course you belong here. We have lots of self-proclaimed kings, queens and gods here, after all. There once was an Elminster even.~
+
+@3000100 = ~Aye, mate, bend yer ear fer a secon'... Whaddaya call a fish wit' no eyes?~
+@3000101 = ~Fssshhh! Har, har, har, ye're a landlubber if e'er I saw one, mate!~
+@3000102 = ~I know that one! Fssshhh!~
+@3000103 = ~Har har! I see ye're a fine bucko, mate!~
+
+@3000200 = ~Oh cod, I love 'er, I do!~
+
+@3000300 = ~...All around the circle!~
+
+
+
+@9000000 = ~Getting Shithri to Brynnlaw
+
+At the docks, I met a half-orc pirate called Shithri. She was looking for a ship to get to Brynnlaw - the same island Spellhold is located in, as it turns out. I agreed for her to join me and get there together.~
+
+
+@9000001 = ~Getting Shithri to Brynnlaw
+
+At the docks, I met a half-orc pirate called Shithri. She was looking for a ship to get to the island known as Brynnlaw.~
+
+
+@9000002 = ~Getting Shithri to Brynnlaw
+
+We arrived at the Brynnlaw island, Shithri's destination. Despite the companionship we shared, she didn't even say goodbye.~
+
+
+@9000003 = ~Getting Shithri to Brynnlaw
+
+We arrived at the Brynnlaw island, Shithri's destination. It seems like she has something to do here, but can rejoin me later. I promised to meet her after I come back from the Spellhold.~
+
+
+@9000004 = ~Getting Shithri to Brynnlaw
+
+We arrived at the Brynnlaw island, Shithri's destination. As it turns out, she's trying to get audience with the Pirate King himself. I promised to meet her after I come back from the Spellhold.~
+
+
+@9000005 = ~Getting Shithri to Brynnlaw
+
+We arrived at the Brynnlaw island, Shithri's destination. As it turns out, she's trying to get audience with the Pirate King himself. I decided to help her.~
+
+
+@9000010 = ~Getting Shithri to Brynnlaw
+
+Shithri talked to the Pirate Lord Desharik and declared to him that it's her who will become the Queen of Pirates. It looks like that is all she had to say to him.~
+
+
+@9000011 = ~Getting inside the asylum
+
+Drunk and brutally honest Shithri was more than enough to convince Desharik to have us thrown in the asylum. I am to be admitted forthwith, and then I shall find out what has happened to Imoen and Irenicus both!~
+
+
+@9000012 = ~Getting Shithri to Brynnlaw
+
+I came back for Shithri, as promised. She seems to be done with her "business" now.~
+
+
+@9000013 = ~Getting Shithri to Brynnlaw
+
+I met with Shithri to say my goodbye. Despite the companionship we shared, she didn't even answer it.~
+
+
+@9000020 = ~Getting Shithri to Brynnlaw
+
+We went to the asylum before helping Shithri talk to the Pirate King. She wasn't too happy about it. Despite the companionship we shared, she didn't even say goodbye.~

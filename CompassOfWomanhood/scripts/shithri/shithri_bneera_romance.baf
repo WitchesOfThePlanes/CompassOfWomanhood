@@ -1,0 +1,98 @@
+//
+// Shithri-Neera romance scripts, Neera's part
+//
+
+
+// If Shithri dies while "comitted", Neera cries
+IF
+  Global("6W#ShithriNeeraRomanceActive","GLOBAL",2)
+  Global("6W#ShithriNeeraShithriDead","GLOBAL",0)
+  Dead("6WSHITHRI")
+THEN
+  RESPONSE #100
+    SetGlobal("6W#ShithriNeeraShithriDead","GLOBAL",1)
+    Interact(Player1)
+END
+
+// If Shithri just died and is outside of the party,
+// she probably perma-died, e.g. disintegrated or massacred.
+// Force "Shithri died" dialogue even if it was run before.
+IF
+  Global("6W#ShithriShithriRomanceActive","GLOBAL",2)
+  OR(2)
+    Global("6W#ShithriNeeraShithriDead","GLOBAL",0)
+    Global("6W#ShithriNeeraShithriDead","GLOBAL",2)
+  !InPartyAllowDead("6WSHITHRI")
+  Dead("6WSHITHRI")
+THEN
+  RESPONSE #100
+    SetGlobal("6W#ShithriShithriShithriDead","GLOBAL",3)
+    Interact(Player1)
+END
+
+// If Shithri dies permanently, the romance ends
+IF
+  OR(2)
+    Global("6W#ShithriNeeraRomanceActive","GLOBAL",1)
+    Global("6W#ShithriNeeraRomanceActive","GLOBAL",2)
+  !InPartyAllowDead("6WSHITHRI")
+  Dead("6WSHITHRI")
+THEN
+  RESPONSE #100
+    SetGlobal("6W#ShithriNeeraShithriDead","GLOBAL",3)
+    SetGlobal("6W#ShithriNeeraRomanceActive","GLOBAL",3)
+END
+
+
+//
+// Each time Shithri will leave the party, Neera should do so too.
+//
+// If some case is unhandled though - e.g. Shithri is kicked out
+// but the PC runs away so that she can't have her unjoin dialogue,
+// Neera should leave too.
+//
+// Same if Neera is unconscious, asleep etc.
+//
+
+IF
+  Global("6W#ShithriNeeraRomanceActive","GLOBAL",2)
+  InParty(Myself)
+  !Dead("Neera") // `Dead` cannot accept Myself
+  !InPartyAllowDead("6WSHITHRI")
+  // Unless Shithri leaves, she can still talk to PC
+  !InMyArea("6WSHITHRI")
+
+  // ...unless she promised Shithri to rejoin later on
+  !Global("6W#ShithriBrynnlawRejoin","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    LeaveParty()
+    //TODO: handle it better? or is it good enough?
+    SetGLOBAL("KickedOut","LOCALS",1)
+    EscapeAreaMove("AR0313",703,242,SW)
+    SetInterrupt(TRUE)
+END
+
+
+// Neera starts the following dialogues:
+IF
+  OR(6)
+    Global("6W#ShithriNeeraLoveTalk","GLOBAL",2)
+    Global("6W#ShithriNeeraLoveTalk","GLOBAL",4)
+    Global("6W#ShithriNeeraLoveTalk","GLOBAL",10)
+    Global("6W#ShithriNeeraLoveTalk","GLOBAL",12)
+    Global("6W#ShithriNeeraLoveTalk","GLOBAL",22)
+    Global("6W#ShithriNeeraLoveTalk","GLOBAL",24)
+THEN
+  RESPONSE #100
+    Interact("6WSHITHRI")
+END
+
+// Neera will talk to CHARNAME:
+IF
+  Global("6W#ShithriNeeraLoveTalk","GLOBAL",18)
+THEN
+  RESPONSE #100
+    Interact(Player1)
+END

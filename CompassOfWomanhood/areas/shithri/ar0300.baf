@@ -1,0 +1,91 @@
+//
+// Docks District
+//
+
+// Shithri present near a seaman on the south.
+// level-scaling:
+IF
+  Global("6W#Shithri_present","AR0300",0)
+  XPLT(Player1,161000)
+  !InMyArea("6WSHITHRI")
+  !InPartyAllowDead("6WSHITHRI")
+  !Dead("6WSHITHRI")
+THEN
+  RESPONSE #100
+    SetGlobal("6W#Shithri_present","AR0300",1)
+    CreateCreature("6WSHIT08",[3564.3086],SE)
+END
+
+IF
+  Global("6W#Shithri_present","AR0300",0)
+  XPGT(Player1,160999)
+  XPLT(Player1,200000)
+  !InMyArea("6WSHITHRI")
+  !InPartyAllowDead("6WSHITHRI")
+  !Dead("6WSHITHRI")
+THEN
+  RESPONSE #100
+    SetGlobal("6W#Shithri_present","AR0300",1)
+    // Shithri has her bonus since lvl 10
+    SetGlobal("6W#ShithriGotHalfAttackBonus","GLOBAL",1)
+    CreateCreature("6WSHIT09",[3564.3086],SE)
+END
+
+IF
+  Global("6W#Shithri_present","AR0300",0)
+  XPGT(Player1,199999)
+  XPLT(Player1,400000)
+  !InMyArea("6WSHITHRI")
+  !InPartyAllowDead("6WSHITHRI")
+  !Dead("6WSHITHRI")
+THEN
+  RESPONSE #100
+    SetGlobal("6W#Shithri_present","AR0300",1)
+    // Shithri has her bonus since lvl 10
+    SetGlobal("6W#ShithriGotHalfAttackBonus","GLOBAL",1)
+    CreateCreature("6WSHIT10",[3564.3086],SE)
+END
+
+IF
+  Global("6W#Shithri_present","AR0300",0)
+  XPGT(Player1,399999)
+  XPLT(Player1,800000)
+  !InMyArea("6WSHITHRI")
+  !InPartyAllowDead("6WSHITHRI")
+  !Dead("6WSHITHRI")
+THEN
+  RESPONSE #100
+    SetGlobal("6W#Shithri_present","AR0300",1)
+    // Shithri has her bonus since lvl 10
+    SetGlobal("6W#ShithriGotHalfAttackBonus","GLOBAL",1)
+    CreateCreature("6WSHIT11",[3564.3086],SE)
+END
+
+IF
+  Global("6W#Shithri_present","AR0300",0)
+  XPGT(Player1,799999)
+  XPLT(Player1,1200000)
+  !InMyArea("6WSHITHRI")
+  !InPartyAllowDead("6WSHITHRI")
+  !Dead("6WSHITHRI")
+THEN
+  RESPONSE #100
+    SetGlobal("6W#Shithri_present","AR0300",1)
+    // Shithri has her bonus since lvl 10
+    SetGlobal("6W#ShithriGotHalfAttackBonus","GLOBAL",1)
+    CreateCreature("6WSHIT13",[3564.3086],SE)
+END
+
+IF
+  Global("6W#Shithri_present","AR0300",0)
+  XPGT(Player1,1199999)
+  !InMyArea("6WSHITHRI")
+  !InPartyAllowDead("6WSHITHRI")
+  !Dead("6WSHITHRI")
+THEN
+  RESPONSE #100
+    SetGlobal("6W#Shithri_present","AR0300",1)
+    // Shithri has her bonus since lvl 10
+    SetGlobal("6W#ShithriGotHalfAttackBonus","GLOBAL",1)
+    CreateCreature("6WSHIT15",[3564.3086],SE)
+END

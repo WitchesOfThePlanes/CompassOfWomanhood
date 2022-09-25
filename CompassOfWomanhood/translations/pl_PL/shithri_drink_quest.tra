@@ -1,0 +1,313 @@
+@1000000 = ~Hej, kapitanie! Mam nadzieje, że nie przejdziesz ty znów obojętnie koło fejnych truneczków, jak ostatnio?~
+@1000001 = ~Dlaczego miałbym nie?~ ~Dlaczego miałabym nie?~
+@1000002 = ~Co masz na myśli? Już pijemy całkiem dobre rzeczy, nie?~
+@1000003 = ~Czy ty właśnie zasugerowałaś, że Piwo Elminstera nie jest świetnym trunkiem?!~
+
+@1000010 = ~Huh. Wyncej jes w życiu niż tyko praca cały czas, wiesz.~
+@1000011 = ~Ale mnie smakuje to co pijemy...~
+@1000012 = ~Masz rację. Jest czas na pracę i czas na przyjemności. Co proponujesz?~
+@1000013 = ~W normalnych okolicznościach - może. Ale mamy coś do zrobienia.~
+
+@1000020 = ~Nie no, nie te zwykłe rzeczy. Piwo Cieniste niby też dobre. Aleśmy w Amn! Takie dobre miejsce, handlujo tu najlepszymi truneczkami w całym Faerûnie. Nie żalże ci?~
+@1000021 = ~Jeśli tak to ująć... co w takim razie proponujesz?~
+@1000022 = ~Niespecjalnie. Picie to dla mnie raczej prosta przyjemność.~
+@1000023 = ~Mam nadzieje, że se żartujesz.~
+@1000024 = ~Phhh. Taki zabiegany chłopaczyna. Co za kwindas...~ ~Phhh. Taka zabiegana dziewczyna. Co za kwindas...~
+@1000025 = ~Ehh... może jeszcze wyrozumiesz. Jak tak to zagadaj do tejże galernicy.~
+
+@1000030 = ~Proste, kapitanie. Idziem do tawerny. Bierzem flaszke czy dwie. Idziem do nastympnej.~
+@1000031 = ~Brzmi jak plan.~
+@1000032 = ~A właściwie dlaczego nie możemy po prostu kupić wszystkich w jednym miejscu?~
+@1000033 = ~Ta! I to dobry, arrr. Kurs na truneczki!~
+@1000034 = ~Myśmy so w Amn, kapitanie. Wiele tu miejsc z fejnymi truneczkami. Czemu tyko w jednym brać?~
+@1000035 = ~Dobrze mówisz. Zabierajmy się do pra... to znaczy - przyjemności!~
+@1000036 = ~Bo to miała być przyjemnosć, a nie praca?~
+@1000037 = ~Tajes, kapitanie! Kurs na truneczki!~
+
+@1000040 = ~Dlaczego butelki? Nie możemy po prostu napić się w tawernie?~
+@1000041 = ~Raczyć sie fejnymi truneczkami tyko w tawernach? Przecie one najlepiej smakujo zaraz po dobrej bitce, o ta!~
+@1000042 = ~Zapomnij. Możemy napić się czegoś ciekawego w tawernie, ale nie będziemy marnować miejsca w plecakach na zapas trunków.~
+@1000045 = ~Uwierz tejże morskiej wilczycy - warto.~
+@1000046 = ~Dobrze, tak zróbmy.~
+@1000047 = ~Meh. Za dużo roboty.~
+
+@1000050 = ~Ha, kapitanie, gotowyś odpowiedzieć na wołanie truneczków?~ ~Ha, kapitanie, gotowaś odpowiedzieć na wołanie truneczków?~
+@1000051 = ~No pewnie! Idźmy po nie!~
+@1000052 = ~Powtórzysz jaki był plan?~
+@1000053 = ~Nie, nie ma na to czasu.~
+@1000054 = ~No i dobrze! Kurs na truneczki!~
+
+
+@2000000 = ~Masz jakieś trunki na wynos?~
+@2000001 = ~Pewnie. Wszystko poza starym dobrym amnijskim.~
+@2000002 = ~Shithri? Czy któryś z nich może być?~
+@2000010 = ~A pewno. Który ci sie podoba?~
+@2000011 = ~Żaden konkretny.~
+
+@2010000 = ~Masz jakieś trunki na wynos?~
+@2010001 = ~O, czyli jednak pan luksusowy? Ale skoro już pytasz: tak, wszystko poza miodem.~ ~O, czyli jednak pani luksusowa? Ale skoro już pytasz: tak, wszystko poza miodem.~
+@2010002 = ~Shithri? Czy któryś z nich może być?~
+@2010010 = ~A pewno. Który ci sie podoba?~
+@2010011 = ~Żaden konkretny.~
+
+@2020000 = ~Masz jakieś trunki na wynos?~
+@2020001 = ~Ha, czy Paluch je ma? To twój szczęśliwy dzień, bo powiem - wszystkie!~
+@2020002 = ~Shithri? Czy któryś z nich może być?~
+@2020010 = ~A pewno. Który ci sie podoba?~
+@2020011 = ~Żaden konkretny.~
+
+@2030000 = ~Masz jakieś trunki na wynos?~
+@2030001 = ~Ależ oczywiście, mój dobry, uśmiechnięty przyjacielu! Na cokolwiek tylko masz smak, mam wszystko od calimshańskich piw aż po cormyrskie wina.~
+@2030002 = ~Shithri? Czy któryś z nich może być?~
+@2030010 = ~A pewno. Który ci sie podoba?~
+@2030011 = ~Żaden konkretny.~
+
+@2040000 = ~Masz jakieś trunki na wynos?~
+@2040001 = ~Na wynos? Dobrze, weźcie i idźcie, tu się pracuje! Chyba, że chcecie miodu, tego wam przeta nie zabutelkuję.~
+@2040002 = ~Shithri? Czy któryś z nich może być?~
+@2040010 = ~A pewno. Który ci sie podoba?~
+@2040011 = ~Żaden konkretny.~
+
+@2050000 = ~Masz jakieś trunki na wynos?~
+@2050001 = ~W rzeczy samej, <LADYLORD>. Cały nasz asortyment. Racz zerknąć.~
+@2050002 = ~Shithri? Czy któryś z nich może być?~
+@2050010 = ~A pewno. Który ci sie podoba?~
+@2050011 = ~Żaden konkretny.~
+
+@2060000 = ~Masz jakieś trunki na wynos?~
+@2060001 = ~Na wynos! Dobrze, dobrze. Weź butelkę czy dwie i idź być mężczyzną gdzieś gdzie nie będę cię widziała! Bierz piwo jakie chcesz, byleś zapłacił.~
+@2060002 = ~Oh, czyli nie zostaniesz tu nawet na chwilę, panienko? Szkoda. Piwa weź jakie tylko chcesz.~
+@2060005 = ~Shithri? Czy któryś z nich może być?~
+@2060010 = ~A pewno. Który ci sie podoba?~
+@2060011 = ~Żaden konkretny.~
+
+@2070000 = ~Masz jakieś trunki na wynos?~
+@2070001 = ~Dla nas tylko butelkę czy dwie.~
+@2070010 = ~„Trunki”! Śliczne słówko jak na to co można tu dostać!~
+@2070011 = ~Cichaj, chłopcze! Wybacz mu, mój panie. Oczywiście, mamy znakomity asortyment...~ ~Cichaj, chłopcze! Wybacz mu, moja pani. Oczywiście, mamy znakomity asortyment...~
+@2070012 = ~„Asortyment”! Skąd ty bierzesz te wszystkie mądrze brzmiące słowa, Vince?~
+@2070013 = ~Przymknij jadaczkę, chłopcze. Zatem, mój panie. Arabellańskie wino, calimshańskie piwo, a nawet sam słynny evermead - wybieraj co zechcesz.~ ~Przymknij jadaczkę, chłopcze. Zatem, mój panie. Arabellańskie wino, calimshańskie piwo, a nawet sam słynny evermead - wybieraj co zechcesz.~
+@2070020 = ~Naturalnie, naturalnie, mój panie. Jak sobie życzysz.~ ~Naturalnie, naturalnie, moja pani. Jak sobie życzysz.~
+@2070030 = ~Shithri? Czy któryś z nich może być?~
+@2070040 = ~A pewno. Który ci sie podoba?~
+@2070041 = ~Żaden konkretny.~
+
+@2080000 = ~Chciałem tylko kupić butelkę czy dwie i sobie pójść.~ ~Chciałam tylko kupić butelkę czy dwie i sobie pójść.~
+@2080001 = ~Płaci ORAZ sobie idzie? Ho, toś bodaj najlepszym chłopem tutaj. Omija cię wprawdzie tutejszy miód i piwo, ale to już twoja sprawa.~
+@2080002 = ~Shithri? Czy któryś z nich może być?~
+@2080010 = ~A pewno. Który ci sie podoba?~
+@2080011 = ~Żaden konkretny.~
+
+@2090000 = ~Masz jakieś trunki na wynos?~
+@2090001 = ~Cóż, nie ma tego wiele. Choć chętnych żeby to kupić też. Ale to wszystko całkiem dobre rzeczy. Tylko piwo leśne jest na kranie, nie butelkuję.~
+@2090002 = ~Oczywiście, <CHARNAME>. Wszystko dla naszego bohatera! Mam zabutelkowany każdy poza naszym miejscowym piwem leśnym.~ ~Oczywiście, <CHARNAME>. Wszystko dla naszego bohaterki! Mam zabutelkowane każdy poza naszym miejscowym piwem leśnym.~
+@2090005 = ~Shithri? Czy któryś z nich może być?~
+@2090010 = ~A pewno. Który ci sie podoba?~
+@2090011 = ~Żaden konkretny.~
+
+
+@3000000 = ~Piwo Ciemne Gorzkie.~
+@3000001 = ~Ty z Wybrzeża Mieczy i nie znasz? Cinżkie takie, ale wykszość lubio. Fejne schłodzone.~
+@3000002 = ~W takim razie weźmy je.~
+@3000003 = ~Szkoda, że nas na nie nie stać...~
+@3000004 = ~Brzmi trochę zbyt pospolicie.~
+@3000020 = ~Sie rozumie. Mieczyki zawsze lubio.~
+@3000030 = ~Sie nie martw, mieczyk. Najdziem pare monet i sie wrócim.~
+@3000040 = ~Ta. Widze, że masz ty jednak kapke gustu.~
+
+@3010000 = ~Piwo Cieniste.~
+@3010001 = ~Panienki lubio, ta je. Kremowe i słodkawe, korzenny zapaszek.~
+@3010002 = ~„Panienki”? A ja dla ciebie jestem „panienką”?~
+@3010003 = ~Cóż, skoro powiadasz, że takie lubiane.~
+@3010004 = ~Jakkolwiek smutno by to nie zabrzmiało, nie sądzę żeby było nas stać.~
+@3010005 = ~„Panienki lubią” to trochę za mało.~
+@3010020 = ~Nie, z ciebie nie jes byle która biełka, kapitanie.~
+@3010030 = ~Jes, o ta. Nie takie złe, nie takie złe.~
+@3010040 = ~Har har har! Prawda, żeśmy so spłukani.~
+@3010050 = ~Ho? No i tera brzmisz jak chwacki galernik, ta właśnie!~ ~Ho? No i tera brzmisz jak chwacka galernica, ta właśnie!~
+
+@3020000 = ~Piwo-Suz.~
+@3020001 = ~A to ci je echt piwo! Bogate, orzechowe. Fejne zimne. Z tych lepszych cormyrskich, ta.~
+@3020002 = ~Bogate i orzechowe? Wchodzę w to!~
+@3020003 = ~Brzmi wspaniale, ale nie wygląda żeby było nas stać.~
+@3020004 = ~Przekomplikowane. Dalej!~
+@3020020 = ~No i to jes kapitan!~
+@3020030 = ~Tyko kwindasy nie znajdo paru monet na Piwo-Suz, tyko kwindasy.~
+@3020040 = ~A takiś był niby wysztafirowany...~ ~A takaś była niby wysztafirowana...~
+
+@3030000 = ~Wywar Złote Piaski.~
+@3030001 = ~Tu tyko Wywar Złote Piaski Zwykły, ale gdzie indziej so i inne.~
+@3030010 = ~Czyste piwo leżakujynce to je, ta. Świeże i lekkie.~
+@3030020 = ~Czyste leżakujące, dokładnie to czego chciałem!~ ~Czyste leżakujące, dokładnie to czego chciałam!~
+@3030021 = ~Ha! Czyli lubisz ty łagodne, ta.~
+@3030030 = ~Brzmi na cudownie odświeżające... gdyby nas było na nie stać...~
+@3030031 = ~Odśweżenie je warte paru monet, o ta.~
+@3030040 = ~Trochę zbyt zwyczajne jak na mój gust.~
+@3030041 = ~Jes proste, ta. Ale też skuteczne.~
+@3030101 = ~Tu tyko Wywar Złote Piaski Złocisty, ale gdzie indziej so i inne.~
+@3030110 = ~Mmm, kaktus z pustyni i pokrzywa z Brodu Sztyletu... rzeźkie bardzo, o ta...~
+@3030120 = ~Kaktus i pokrzywa brzmi na dobrze połączenie.~
+@3030130 = ~Byłoby taniej pójść do Lasu Ostrych Kłów i sobie tam nazbierać pokrzywy...~
+@3030140 = ~Mieszaniu składników z północy i południa mówię: nie.~
+@3030121 = ~A i owszem.~
+@3030131 = ~Jeszcze taniej jak se sam piwo uwarzysz, har har.~ ~Jeszcze taniej jak se sama piwo uwarzysz, har har.~
+@3030141 = ~Phi. A co to? Jakieś dziwne mieczykowe uprzedzenie?~
+@3030201 = ~Majo tu Złoty i Pomarańczowy. Bez Zwykłego.~
+@3030202 = ~Może Złoty?~
+@3030203 = ~Może Pomarańczowy?~
+@3030210 = ~Lekki jak poranna mgła! Troche kwaskowy, dodajo tam pomarańczy i porzeczki.~
+@3030220 = ~Calimshański napitek z calimshańskimi owocami. Brzmi bardzo tradycyjnie.~
+@3030221 = ~E, nie bardzo. Ale popularny na północy Wybrzeża Mieczy, o ta.~
+@3030230 = ~Może mógłby być tańszy gdyby użyć... eee... no nie wiem...~
+@3030231 = ~Czego dokładnie, tak se myśle?~
+@3030232 = ~Eeee... może żurawiny?~
+@3030233 = ~Agrestu. Też jest kwaskowy, a rośnie w Tethyrze, więc powinien być tani.~
+@3030234 = ~Nie znam się na owocach, ale wiesz... lubię mieć sakiewkę raczej pełną niż pustą.~
+@3030235 = ~Żurawina. „Szkarłatne złoto” Neverwinter, masz na myśli? Tania, ta żurawina? Har har! Głuptas...~ ~Żurawina. „Szkarłatne złoto” Neverwinter, masz na myśli? Tania, ta żurawina? Har har! Głuptaska...~
+@3030236 = ~Mmm. Nieźle, nieźle. Myślał żeś coby przejść na truneczki? Byś sie w tym odnalazł.~ ~Mmm. Nieźle, nieźle. Myślała żeś coby przejść na truneczki? Byś sie w tym odnalazła.~
+@3030237 = ~To co marudzisz? Weźże se co innego.~
+@3030240 = ~Zero niespodzianek? *wzdycha*~
+@3030241 = ~A po co. Dobry je jaki je.~
+
+@3040000 = ~Piwo Północne Iriaeborańskie.~
+@3040001 = ~Mmm. „Pocałunek północnego wiatru”, na nie mówio. Ale to je łagodne, tyko taki posmak zostaje... zimny.~
+@3040002 = ~Łagodne, ale z lodowatym posmakiem. Brzmi intrygująco.~
+@3040003 = ~Mówiąc chłodno: nie stać nas na nie.~
+@3040004 = ~Gdybym chciał się poczuć jak w Dolinie Lodowego Wichru, to bym tam pojechał.~ ~Gdybym chciała się poczuć jak w Dolinie Lodowego Wichru, to bym tam pojechała.~
+@3040020 = ~Jak i sama północ, ta właśnie. Dobry wybór.~
+@3040030 = ~Spłukaniśmy jak orkowie w Rdzeniu Świata, o ta.~
+@3040040 = ~Jeśli zime lubisz. Mie taki łyk wystarczy.~
+
+@3050000 = ~Najlepsze Piwo Luirena.~
+@3050001 = ~Od niziołków dla niziołków. Czarne i cinżkie jak najciemniejsza noc, ale posmak ma całkiem słodki.~
+@3050002 = ~„Od niziołków, dla niziołków”, podoba mi się.~
+@3050003 = ~Niziołki chyba mają dobry gust, myślę?~
+@3050004 = ~Szkoda, że niziołki nie rozdają go za darmo.~
+@3050005 = ~Czarne jak noc? Nie przekonuje mnie to.~
+@3050020 = ~Ta, nie zawiedzie cie, o nie.~
+@3050030 = ~Zależy od niziołka. Jak który z Turmish - to raczy nie. Ale reszta nawet.~
+@3050040 = ~Co se myślisz, że niziołkom grosza nie trza, he?~
+@3050050 = ~Nie jes dla każdego, nie nie.~
+
+@3060000 = ~Piwo ciemne mocne Tanagyra.~
+@3060001 = ~O mój czarny, czarny piweczku! Nic tak domu nie przypomina jak ty! Taki cinżki, taki słodowy... i jest wszyndzie na Ksinżycowym i Smoczym, ale tutaj rzadko najdziesz.~
+@3060002 = ~Zawsze się zastanawiałem co pijają Zentowie.~ ~Zawsze się zastanawiałam co pijają Zentowie.~
+@3060003 = ~Co prawda strasznie bym chciał dowiedzieć się co pijają Zentowie, ale nie wydaje mi się, żeby było nas na to stać.~ ~Co prawda strasznie bym chciała dowiedzieć się co pijają Zentowie, ale nie wydaje mi się, żeby było nas na to stać.~
+@3060004 = ~Wybacz, Shithri, ale miano zentyjskiego nie jest najlepszą metodą reklamy dla napitków.~
+@3060020 = ~So lepsze powody, ale i taki może być.~
+@3060030 = ~Ta, tani tu nie je. Może innym razem.~
+@3060040 = ~Bym skłamała mówioc, że nie rozumiem. Szkoda, to naprawde fejne piwo.~
+
+@3070000 = ~Wino Alurlyathańskie.~
+@3070001 = ~Kapitanie, jak cie prosze! „Podgórze Alurlyathańskie”, sławne zielone wino co to świeci w ciemności. Romantyczne słodkie, powiada sie.~
+@3070002 = ~Świeci w ciemności?~
+@3070003 = ~Brzmi wyjątkowo, rzeczywiście. Weźmy trochę.~
+@3070004 = ~Jego cena... też jest dość wyjątkowa.~
+@3070005 = ~Zielone wino? To nie może smakować dobrze!~
+@3070020 = ~Ta! Ślipnij, kapitanie. Widzisz ty ten zielono-srebrny blask?~
+@3070021 = ~Faktycznie się świeci! Zdecydowanie bierzemy.~
+@3070022 = ~Jest bardzo ładne... oraz bardzo drogie.~
+@3070023 = ~Świeci się na ZIELONO. Kto chce wino, które świeci na ZIELONO?~
+@3070030 = ~*szczerzy się* Żem wiedziała, że ci sie spodoba.~
+@3070040 = ~Dla nas jeno blask ksiunżyca, ta?~
+@3070050 = ~Masz co do zielonego, kapitanie? Mam nadzieje, że nie.~
+
+@3080000 = ~Arabellańskie Wino Wytrawne.~
+@3080001 = ~Mmm, drzewne. Troche jagody w tle. Bardzo dobre je do duszenia dzika.~
+@3080002 = ~A zatem smak lasu. Brzmi dobrze.~
+@3080003 = ~Chętnie skosztowałbym dzika duszonego w winie. Ale wiesz - fundusze.~ ~Chętnie skosztowałabym dzika duszonego w winie. Ale wiesz - fundusze.~
+@3080004 = ~Wino do gotowania? Phi!~
+@3080020 = ~Nie do końca. Ale bliżej Cormyrczycy nie bywajo, o nie.~
+@3080030 = ~Innym razem, kapitanie.~
+@3080040 = ~Gotowania i picia. Dobre i tak i tak. Ale jak se ta chcesz.~
+
+@3090000 = ~Evermead.~
+@3090001 = ~Płynne złoto czy co ta se szlachta powiadajo. Wszelka fanaberia: płatki róż, wiśnie, owoce storczyka - co chcesz.~
+@3090002 = ~Owoce storczyka? Masz na myśli wanilię?~
+@3090003 = ~Najszlachetniejszy z trunków... jak mógłbym go nie spróbować chociaż raz w życiu?~ ~Najszlachetniejszy z trunków... jak mogłabym go nie spróbować chociaż raz w życiu?~
+@3090004 = ~Widzę, że cena też jest... *chrząka* ...iście szlachecka.~
+@3090005 = ~Brzmi jakby ktoś po prostu wymieszał wszystko co znalazł drogiego. To nie może być dobre.~
+@3090020 = ~Ta. „Wanilia”. Jak żem gadała - wszelka fanaberia. Pewno pomysł elfa słonecznego, powiem.~
+@3090030 = ~Huh, bawisz sie w szlachcica? Bym cie nie podejrzewała, oj nie.~ ~Huh, bawisz sie w szlachcianke? Bym cie nie podejrzewała, oj nie.~
+@3090040 = ~Ta. Wyncej kosztuje niż dobra zbroja, jako żywo! Har har!~
+@3090050 = ~Powiadajo, że fejna to rzecz. Ale ta galernica taka pewna nie jest.~
+
+@3900000 = ~Piwo Przysmak Elminstera.~
+@3900001 = ~Hola, kapitanie! Mam nadzieje, że se żartujesz - bo czy ty poważnie chcesz pić te ciemne, brudne pomyje?~
+@3900002 = ~A co jest z nim nie tak?~
+@3900003 = ~Chyba nie powiesz, że Elminster ma zły gust, co?~
+@3900004 = ~Spokojnie, Shithri, to tylko żarcik. Miej trochę wiary w swojego kapitana!~ ~Spokojnie, Shithri, to tylko żarcik. Miej trochę wiary w swoją kapitana!~
+@3900020 = ~Kapitanie. Na wszystkich diabłów - jeśli chcesz to pić, to weź ta se zmieszaj wode ze smoło i uwędź nad zapruchniałym drewnem. Bo to tak smakuje.~
+@3900021 = ~Czyli ciemne, gęste, mętne i z dymnym posmakiem? Nie brzmi tak źle, jeśli o mnie chodzi.~
+@3900022 = ~Nie, nigdy, zapomnij. Zapomnij, niech zginie, przepadnie ten śmieć. I nie waż sie o nim wspominać gdy ta galernica tu jes. *spluwa*~
+@3900030 = ~Kapitanie. O mój kapitanie... spotkał żeś kiedy Elminstera?~ ~Kapitanie. O mój kapitanie... spotkała żeś kiedy Elminstera?~
+@3900031 = ~Cóż, właściwie...~
+@3900032 = ~A co jeśli tak?~
+@3900033 = ~Do czego zmierzasz?~
+@3900034 = ~Nazywajo to „Przysmak Elminstera” tylko żeby je sprzedać, kapitanie. On nigdy go nie pija.~
+@3900035 = ~No po prostu...!~
+@3900036 = ~Właściwie mogłem się tego spodziewać.~ ~Właściwie mogłam się tego spodziewać.~
+@3900037 = ~Ta. Tak właśnie.~
+@3900038 = ~Jak widzisz - wychodzi draniom nieźle.~
+@3900040 = ~Har har, ależ okrutnieś zakpił z tej galernicy, o ta! Tu mie masz, nie powiem nie!~ ~Har har, ależ okrutnieś zakpiła z tej galernicy, o ta! Tu mie masz, nie powiem nie!~
+
+@3100000 = ~Piwo Rubinowe z Wrót Zachodu.~
+@3100001 = ~Ha, nigdy nie zapomne Barnab Wołowo-Ostrygowych! Ale pasuje też do krasnoludzkich gulaszy. Ciężki to truneczek, o ta.~
+@3100002 = ~Czyli właściwie jedno wino by rządzić wszystkim co wołowe? Fantastycznie!~
+@3100003 = ~Obawiam się, że w naszym przypadku to albo wino albo wołowina...~
+@3100004 = ~Do wołowiny najlepiej smakuje piwo, nie wino. Nie potrzebujemy tego.~
+@3100020 = ~Tera nam już tyko trza echt krasnoludzkiego kucharza coby nam gulaszu nawarzył, powiadam!~
+@3100030 = ~To zbierzmy kapke grosza. Wołek źle wchodzi suchym pyskiem.~
+@3100040 = ~Mówi szczur loudowy, co to nigdy nie próbował specjałów Morza Spadajoucych Gwiazd.~
+
+@3110000 = ~Saerloonianiańskie Piwo Topazowe.~
+@3110001 = ~Czyli to bursztynowe, co to je i orzechowe i owocowe. Dobry truneczek, ładnie wchodzi z królikiem. Nie mylić z czerwonym Saerlooniańsko Specjalno Kadzio, oraz sławnym świecoucym białym Saerlooniańskim Blaskiem.~
+@3110002 = ~Orzechowe ORAZ owocowe? Zainteresowałaś mnie.~
+@3110003 = ~Tak czy owak, obawiam się, że nie stać nas na żadne z nich.~
+@3110004 = ~Królik nie wymaga wina, a tylko ognia.~
+@3110005 = ~Żółtawe wino do dziczyzny... nie brzmi zbyt smacznie.~
+@3110020 = ~Dobry wybór. Jedno z najlepszych z Sembii.~
+@3110030 = ~Pewnie ta. Te inne so jeszcze wynksza drożyzna.~
+@3110040 = ~Po prostu spróbuj. A potem powiedz tej galernicy czy nadal tak samo myślisz.~
+@3110050 = ~Ty to niewiele wiesz o królika, he?~
+
+@3120000 = ~Berduskiańskie czerwone wino.~
+@3120001 = ~Ah, mocne to ono jes! Ciemne, cinżkie. Na poczuntku sie zdaje słodkie, a potem cie pali z zaskoczenia, o ta! Fejne do krewetek i przepiórczych jaj.~
+@3120002 = ~Słodkie? Jest. Palące? Jest. Mocne? Jest.~
+@3120003 = ~Prawie tak drogie jak same krewetki i przepiórcze jaja...~
+@3120004 = ~Wolałbym coś bardziej... wyrafinowanego.~ ~Wolałabym coś bardziej... wyrafinowanego.~
+@3120020 = ~Har har! Tera gadasz jak chwacki galernik, arrr!~ ~Har har! Tera gadasz jak chwacka galernica, arrr!~
+@3120030 = ~He? Że krewetki drogie? Majo ich mnóstwo zaraz na południe stoud. W Porcie Kir, w Tethyrze.~
+@3120040 = ~A, czyżby? Jakże wysztafirowany.~ ~A, czyżby? Jakże wysztafirowana.~
+
+@3130000 = ~Zimowe wino.~
+@3130001 = ~Fioletowe jakby, robi sie je z winogron zamrożonych na pnouczu. Zawsze mocne, powiadam ci. Do deserów dobre.~
+@3130002 = ~Północne wino deserowe, nie muszę więcej wiedzieć!~
+@3130003 = ~Te winogrona to mrożą płatkami złota czy co?~
+@3130004 = ~Nie jadam deserów.~
+@3130005 = ~Winogrona potrzebują słońca, nie zimna.~
+@3130020 = ~Ha, lubisz ty słodkości, nie? Dobrze wiedzieć.~
+@3130030 = ~Wiesz, nie tak łatwo zrobić wino z zamarznieutych winogron.~
+@3130040 = ~Popularny zwyczaj, powiem. Mnóstwo wilków morskich tak ma.~
+@3130050 = ~Dlatego je drogie to wino. Nie tak łatwo, z zamarznieutych winogron.~
+
+@3140000 = ~Piwo Smoczy Oddech.~
+@3140001 = ~Znasz ty tego smoka co to Sembia ma w herbie? No. To rozumisz, że z tego truneczka so dumni. Ładna piana, cierpki smak. Najlepsze do żytniej pajdy i sera.~
+@3140002 = ~Żytni chleb, ser i piwo - czegóż mogę chcieć więcej?~
+@3140003 = ~Brzmi bardzo miło, ale nie za bardzo nas na to stać. Musielibyśmy spędzić trochę czasu na wsi.~
+@3140004 = ~Ser pasuje do wina, nie piwa.~
+@3140020 = ~Har har, nic dodać nic ujonć, kapitanie. Takiego dogadzania podniebieniu nam trza.~
+@3140030 = ~A czemu nie? Można zostać pare dni. Kiedyśtam.~
+@3140040 = ~To chybaś nigdy sembiańskiego sera nie jadł.~ ~To chybaś nigdy sembiańskiego sera nie jadła.~
+
+@3990000 = ~Jakieś jeszcze cie ciekawio?~
+@3990001 = ~A są jakieś które mogą mnie interesować?~
+@3990099 = ~Tyle mi wystarczy. Idźmy już!~
+
+
+
+@9000000 = ~Kolekcja trunków, za radą Shithri
+
+Za namową Shithri, postanowiłem dać szansę kolekcjonowaniu alkoholi. Muszę pytać w tawernach i gospodach o butelkowane trunki na wynos. Shithri wydaje się mieć na ten temat sporą wiedzę, zapewne może mi doradzać.~ ~Kolekcja trunków, za radą Shithri
+
+Za namową Shithri, postanowiłam dać szansę kolekcjonowaniu alkoholi. Muszę pytać w tawernach i gospodach o butelkowane trunki na wynos. Shithri wydaje się mieć na ten temat sporą wiedzę, zapewne może mi doradzać.~

@@ -1,0 +1,393 @@
+@1000000 = ~Oy, capt'n! I hope ye'll nah jus' go past these great liqies indifferently, like the last time?~
+@1000001 = ~Why wouldn't I?~
+@1000002 = ~What do you mean? We're already drinking quality stuff, aren't we?~
+@1000003 = ~Did you just imply that Elminster's Beer is not a fine liquor?!~
+
+@1000010 = ~Huh. There be more to life than jus' businness all the time, ye know.~
+@1000011 = ~But I do enjoy the stuff we drink...~
+@1000012 = ~You're right. There is time for work and time for pleasure. What do you suggest then?~
+@1000013 = ~Normally - maybe. But we have stuff to do.~
+
+@1000020 = ~I nah mean the usual stuff, capt'n. Shadowdark Ale is fine too. But we in Amn! Such a great place, tradin' all the finest liqies o' the whole Faerûn. Ain't it a waste?~
+@1000021 = ~If you put it that way... what do you suggest then?~
+@1000022 = ~Not really. Drinking is a simple pleasure for me.~
+@1000023 = ~I hope ye jus' jestin'.~
+@1000024 = ~Pfff. Busy-busy <PRO_GIRLBOY>. Wha' a swab...~
+@1000025 = ~Ehh... mayhaps ye'll get it somewhen. If so, talk t' this bucko again.~
+
+@1000030 = ~Simple, me capt'n. We go t' tavern. Ye get a bottle or two. We go t' next one.~
+@1000031 = ~Sounds like a plan.~
+@1000032 = ~Why can't we just buy all of them in a single place though?~
+@1000033 = ~Aye! A good one at that, yarrr. Set sail fer liqies!~
+@1000034 = ~We in Amn, capt'n. So many places wit' so many fine liqies. Why only buy in one?~
+@1000035 = ~Good thinking. Let's get to wo... I mean - pleasure!~
+@1000036 = ~Because it was supposed to be pleasure, not work?~
+@1000037 = ~Aye aye, capt'n! Set sail fer liqies!~
+
+@1000040 = ~Why bottles? Can't we just drink in the tavern?~
+@1000041 = ~Only enjoyin' fine liqies in taverns? Nay, those taste best right after a tough battle, they do!~
+@1000042 = ~Forget it. We can drink something fancy at a tavern, but we won't waste space in our backpacks for liquors supply.~
+@1000045 = ~Believe this tar - it be worth the bustle.~
+@1000046 = ~Fine, let's do that.~
+@1000047 = ~Meh. Too much work after all.~
+
+@1000050 = ~Ho, capt'n. Ye ready t' answer the liqie call?~
+@1000051 = ~Of course! Let's go get some right now!~
+@1000052 = ~Can you repeat what's the plan?~
+@1000053 = ~No. No time.~
+@1000054 = ~Good! Set sail fer liqies!~
+
+
+@2000000 = ~Any bottled liquors in your offer?~
+@2000001 = ~Sure thing. Anything but fer good ol' Amnian Ale.~
+@2000002 = ~Shithri? Are these any good?~
+@2000010 = ~Aye. Which one catches yer eye?~
+@2000011 = ~None in particular.~
+
+@2010000 = ~Any bottled liquors in your offer?~
+@2010001 = ~Oh, you're a fancy one after all? But since you asked: yes, anything but Mead.~
+@2010002 = ~Shithri? Are these any good?~
+@2010010 = ~Aye. Which one catches yer eye?~
+@2010011 = ~None in particular.~
+
+@2020000 = ~Any bottled liquors in your offer?~
+@2020001 = ~Ho, does he, the Thumb? It's yer lucky day, mate - all of them, I say!~
+@2020002 = ~Shithri? Are these any good?~
+@2020010 = ~Aye. Which one catches yer eye?~
+@2020011 = ~None in particular.~
+
+@2030000 = ~Any bottled liquors in your offer?~
+@2030001 = ~But of course, my good smilin' friend! Whatever suits your taste, I have everything from Calimshite lagers to Cormyrian wine.~
+@2030002 = ~Shithri? Are these any good?~
+@2030010 = ~Aye. Which one catches yer eye?~
+@2030011 = ~None in particular.~
+
+@2040000 = ~Any bottled liquors in your offer?~
+@2040001 = ~Bottled? Good, take them and go, it's a busy place! Unless ye want mead, can't bottle ye that.~
+@2040002 = ~Shithri? Are these any good?~
+@2040010 = ~Aye. Which one catches yer eye?~
+@2040011 = ~None in particular.~
+
+@2050000 = ~Any bottled liquors in your offer?~
+@2050001 = ~Bottled? Good, take them and go, it's a busy place! Unless ye want mead, can't bottle ye that.~
+@2050001 = ~Indeed, my <LADYLORD>. All of our assortment, in fact. Please have a look.~
+@2050002 = ~Shithri? Are these any good?~
+@2050010 = ~Aye. Which one catches yer eye?~
+@2050011 = ~None in particular.~
+
+@2060000 = ~Any bottled liquors in your offer?~
+@2060001 = ~Good, good! Take a bottle or two and put your disgusting male self somewhere when I can't see ye! Any beer ye want, as long as ye pay.~
+@2060002 = ~Oh, so ye won't be stayin' fer a while, miss? Pity. Have any beer you want though.~
+@2060005 = ~Shithri? Are these any good?~
+@2060010 = ~Aye. Which one catches yer eye?~
+@2060011 = ~None in particular.~
+
+@2070000 = ~Any bottled liquors in your offer?~
+@2070001 = ~Just a bottle or two for us.~
+@2070010 = ~"Liquors"! Pretty word for what you can get in here!~
+@2070011 = ~Silence, boy! Please excuse him, my good <PRO_LADYLORD>. Of course we have a fine assortment of...~
+@2070012 = ~"Assortment"! Where ye get all those fancy words from, Vince?~
+@2070013 = ~Shut yer yip, boy. Now, me <PRO_LADYLORD>. Arabellan wine, Calimshite beer and even the famous evermead - pick whatever you like.~
+@2070030 = ~Shithri? Are these any good?~
+@2070020 = ~Of course, of course, me <PRO_LADYLORD> <CHARNAME>. As ye wish.~
+@2070030 = ~Shithri? Are these any good?~
+@2070040 = ~Aye. Which one catches yer eye?~
+@2070041 = ~None in particular.~
+
+@2080000 = ~I just wanted to buy a bottle or two and leave.~
+@2080001 = ~Paying AND leaving? Huh, you the best <PRO_MANWOMAN> here then. You be missing the local mead and sout, but that's on you.~
+@2080002 = ~Shithri? Are these any good?~
+@2080010 = ~Aye. Which one catches yer eye?~
+@2080011 = ~None in particular.~
+
+@2090000 = ~Any bottled liquors in your offer?~
+@2090001 = ~Well, there isn't much, but also few people to buy what little I have. These are all pretty good though. Woodland Ale is just on tap though, no bottles.~
+@2090002 = ~Of course, <CHARNAME>! Anything for our hero! I have everything bottled but for our local Woodland Ale.~
+@2090005 = ~Shithri? Are these any good?~
+@2090010 = ~Aye. Which one catches yer eye?~
+@2090011 = ~None in particular.~
+
+
+
+@3000000 = ~Bitter Black Ale.~
+@3000001 = ~Ye from Sword Coast 'n nah know it? Quite heavy, but most like it that way. Best chilled.~
+@3000002 = ~Let's take it then.~
+@3000003 = ~Too bad we can't afford it...~
+@3000004 = ~Sounds a bit too common.~
+@3000020 = ~Sure thingy. Swordies always love it.~
+@3000030 = ~No worries, swordie. We raise some coins 'n come back fer it.~
+@3000040 = ~Aye. I see yer taste be a bit more refined.~
+
+@3010000 = ~Shadowdark Ale.~
+@3010001 = ~Liked by the ladies, it be, aye. Creamy and sweety, got bit spicey aroma.~
+@3010002 = ~"Ladies"? Am I a "lady" to you then?~
+@3010003 = ~Well, if you say it's so liked.~
+@3010004 = ~As sad as it sounds, I don't think we can afford it.~
+@3010005 = ~"Liked by ladies" doesn't quite cut it.~
+@3010020 = ~Nah, ye nah common lass, capt'n.~
+@3010030 = ~It be, aye. Nah bad, really, nah bad.~
+@3010040 = ~Har har har! 'tis true we be broke.~
+@3010050 = ~Ho? Now ye talk like a darin' bucko now, aye ye be!~
+
+
+@3020000 = ~Suz-Ale.~
+@3020001 = ~Wha' fine ale, 'tis! Rich 'n nutty, best cold. One o' Cormyr's better ones, aye.~
+@3020002 = ~Rich and nutty? Count me in!~
+@3020003 = ~Sounds great, but I don't think we can afford it.~
+@3020004 = ~Too sophisticated. Next!~
+@3020020 = ~'tis me capt'n!~
+@3020030 = ~Only swabs nah save coin fer Suz-Ale, aye they ain't.~
+@3020040 = ~'n here ye pretended so fancy...~
+
+@3030000 = ~Golden Sands.~
+@3030001 = ~Only Golden Sands Basic here, but there are others elsewhere.~
+@3030010 = ~Clear lager, 'tis, aye. Crisp 'n light.~
+@3030020 = ~Clear lager, that's exactly what I wanted!~
+@3030030 = ~Would really be refreshing... if we could only afford it...~
+@3030040 = ~A little too plain to my taste.~
+@3030021 = ~Ho, ye like mild stuff then, aye.~
+@3030031 = ~Refreshment be worth a coin, aye it be.~
+@3030041 = ~'tis simple, aye. But also effective.~
+@3030101 = ~Only Golden Sands Gold here, but there are others elsewhere.~
+@3030110 = ~Mmm, desert's cacti 'n Daggerfort's nettles... sharp 'n refreshin', aye..~
+@3030120 = ~Cacti and nettles sound like a good match.~
+@3030130 = ~Would be cheaper to just go to Wood of Sharp Teeth and gather some nettle there...~
+@3030140 = ~Mixing ingredients from the north and south is a big no-no.~
+@3030121 = ~They be, indeed.~
+@3030131 = ~Cheaper still t' brew yer own beer, har har.~
+@3030141 = ~Huh. Wha' be that? That some weird Swordie biases...~
+@3030201 = ~They 'ave Gold 'n Orange ones here. Nah Basic though.~
+@3030202 = ~How about the Gold one?~
+@3030203 = ~How about the Orange one?~
+@3030210 = ~Light as the mornin' mist! Bit acidic, orange 'n currant flavored.~
+@3030220 = ~Calimshite drink with Calimshite fruits. Sounds really authentic.~
+@3030221 = ~Nay, nah really. But it popular on north Sword Coast, aye it be.~
+@3030230 = ~Maybe it could be made cheaper if they used... ehhh... I don't know...~
+@3030231 = ~What exactly, I wonder?~
+@3030232 = ~Err... fenberries, maybe?~
+@3030233 = ~Gooseberries. They are also but slightly acidic and grow in Tethyr, so they should be pretty cheap.~
+@3030234 = ~I'm no specialist in fruits, you know. I just like my sack to be full.~
+@3030235 = ~Fenberries. The "crimson gold" o' Ne'erwinter, ye mean? Cheap, those fenberries? Har har! Silly capt'n...~
+@3030236 = ~Mmm. Nah bad. Ye e'er though o' startin' a liqie business? Ye'd be good at that.~
+@3030237 = ~So why naggin'? Jus' 'ave something else.~
+@3030240 = ~No twist at all? *sigh*~
+@3030241 = ~Nah need fer any. 'Tis good as it is.~
+
+@3040000 = ~Iriaeboran Ale.~
+@3040001 = ~Mmm. "Bite o' the north winds", they call it. It quite mild though, 'tis jus' the aftertaste... it cold.~
+@3040002 = ~Mild, but with ice-cold aftertaste. Sounds intriguing.~
+@3040003 = ~As cool as it sounds, we can't afford it.~
+@3040004 = ~If I wanted to feel like I'm in Icewind Dale, I would simply go there.~
+@3040020 = ~As much as the north itself, aye it be. Good choice.~
+@3040030 = ~As broke as orcs in Spine o' the World, we be, aye.~
+@3040040 = ~If winter be yer thin'. Jus' a sip be enough fer me.~
+
+@3050000 = ~Luiren's Best Ale.~
+@3050001 = ~From halflings, fer halflings. Black 'n heavy like the darkest night, but the aftertaste be quite sweet.~
+@3050002 = ~"From halflings, for halflings", I like that.~
+@3050003 = ~Halflings must know the good stuff, I guess?~
+@3050004 = ~Too bad the halflings won't give it away for free.~
+@3050005 = ~Black like a night? Doesn't sound convincing.~
+@3050020 = ~Aye, it nah disappoint, I tell ye.~
+@3050030 = ~Depends on the halflin'. If they from Turmish - probably nah. Otherwise they good.~
+@3050040 = ~Ye think halflings nah needin' earnings or wha'?~
+@3050050 = ~'Tis nah fer everybody, I say.~
+
+@3060000 = ~Tanagyr's Ale.~
+@3060001 = ~Oh, me black, black stout! Nothin' as reminds o' home like ye! So heavy, so malty... got it everywhere on the Moonsea 'n Dragon Coast, but nah so common here.~
+@3060002 = ~I always wondered what do Zentish drink.~
+@3060003 = ~As much as I'd like to know what do Zentish drink, I don't think we can afford it.~
+@3060004 = ~Sorry, Shithri, but the "Zentish" label isn't really the best way to sell a drink.~
+@3060020 = ~Nah the best reason t' try, but good enough.~
+@3060030 = ~Aye, it be bit pricey here. Another time, mayhaps.~
+@3060040 = ~Can't say I nah get ye. Shame though, it be really nice stout.~
+
+@3070000 = ~Alurlyath Wine.~
+@3070001 = ~Capt'n, please! 'Tis "Undermountain Alurlyath", famous green wine that be glowin' in the dark. Very romantic sweet one, they say.~
+@3070002 = ~Glows in the dark? ~
+@3070003 = ~Sounds unique, indeed. Let's take some.~
+@3070004 = ~Its price is quite... unique too.~
+@3070005 = ~Green wine? As if that could taste good!~
+@3070020 = ~Aye! 'ave a look, capt'n. See that greenish-silver glimmer?~
+@3070021 = ~It really does glow! We must definitely take some.~
+@3070022 = ~It's very pretty... but also very pricey.~
+@3070023 = ~It glows GREEN. Who wants wine to glow GREEN?~
+@3070030 = ~*smirk* I knew ye be likin' that.~
+@3070040 = ~Jus' the moon's glow fer us then, aye?~
+@3070050 = ~Ye got anythin' against green, me capt'n? I hope nah.~
+
+@3080000 = ~Arabellan Wine.~
+@3080001 = ~Oh, that dry one! Mmm, woodsy. Some berry in the background. Great fer braisin' boar.~
+@3080002 = ~Taste of the forest then. Sounds good.~
+@3080003 = ~I'd love some wine-braised boar. But you know, money.~
+@3080004 = ~Cooking wine? Huh!~
+@3080020 = ~Nah exactly. But as close as Cormyrians get, aye.~
+@3080030 = ~Another time, capt'n.~
+@3080040 = ~Cookin' and jus' drinkin'. Good both ways. But ye do ye.~
+
+@3090000 = ~Evermead.~
+@3090001 = ~Pure gold 'n whatnah nobles say about it. Everythin' fancy: rose petals, cherries, orchid fruits - ye name it.~
+@3090002 = ~Orchid fruits? Do you mean vanilla?~
+@3090003 = ~The noblest of liquors... how could I not try that at least once in my lifetime?~
+@3090004 = ~I see its price is also... *grunt* ...noble.~
+@3090005 = ~Sounds like just putting all the expensive stuff together. That can't be good.~
+@3090020 = ~Aye. "Vanilla". As I be sayin' - everythin' fancy. Prolly sun elf's idea, I say.~
+@3090030 = ~Huh, playin' noble<PRO_MANWOMAN> then? Ne'er thought o' ye like that, nay.~
+@3090040 = ~Aye. Costin' more than a good armor, aye it be! Har har!~
+@3090050 = ~They say 'tis fine stuff. But this bucko nah so sure ye're wrong on that one.~
+
+@3900000 = ~Elminster's Beer.~
+@3900001 = ~Avast, me capt'n! I hope ye jus' jestin' - or be ye really wantin' that dark, cloudy slop?~
+@3900002 = ~What's wrong with it?~
+@3900003 = ~I mean - Elminster can't be wrong on that one, can he?~
+@3900004 = ~Relax, Shithri, it's a joke. Have some faith in your captain!~
+@3900020 = ~Capt'n. Fer all the devils - if ye really want t' drink that, jus' mix water wit' tar 'n smoke that o'er rotten wood. That be how it tastes.~
+@3900021 = ~So dark, thick, cloudy and with smokey aftertaste? Doesn't sound that bad if you ask me.~
+@3900022 = ~Nay. No, nay, ne'er. No nay ne'er no more speak o' that trash o' a beer when this bucko around! *spits*~
+@3900030 = ~Capt'n. Oh me capt'n... ye e'er met Elminster?~
+@3900031 = ~Well, actually...~
+@3900032 = ~What if I did?~
+@3900033 = ~Your point being?~
+@3900034 = ~They call it "Elminster's Choice" jus' t' sell it, capt'n. The guy ne'er drinks it.~
+@3900035 = ~That's just...!~
+@3900036 = ~Could've expected that, I suppose.~
+@3900037 = ~Aye. It be.~
+@3900038 = ~As ye see - works well fer them bastards.~
+@3900040 = ~Har har, wha' savage joke it be, me capt'n! Ye got this bucko right here, aye ye did!~
+
+@3100000 = ~Westgate Wine.~
+@3100001 = ~Ho, ne'er gonna forget the Beef 'n Oysters Barnabas! But fits well wit' dwarvish stews too, that bold, crimson liqie, aye.~  
+@3100002 = ~So basically one wine to rule all them beef dishes? Fantastic!~
+@3100003 = ~I'm afraid it's either the wine or the beef for us...~
+@3100004 = ~Beef goes best with beer, not wine. We don't need it.~
+@3100020 = ~Now we only need a fine dwarvish cook t' prepare some stew, I say!~
+@3100030 = ~Let us get some coin then. Beef ain't in love wit' dry throats.~
+@3100040 = ~Says the land-lubber who ne'er had any specialty from the Sea o' the Fallen Stars.~
+
+@3110000 = ~Saerloonian Wine.~
+@3110001 = ~Precision, me capt'n. 'Tis Saerloonian Topaz, the amber one that combines nutty 'n fruity. Fine liqie, fits well wit' rabbit. But nah t' be confused wit' their red wine, Saerloonian Special Vat, or the famous glowin' white wine, Saerloonian Glowfire.~
+@3110002 = ~Nutty AND fruity? Consider me interested.~
+@3110003 = ~Either way, we can't afford any of them, I'm afraid.~
+@3110004 = ~Rabbit need no wine. Just fire.~
+@3110005 = ~Yellow wine used for game... doesn't sound very appetizing.~
+@3110020 = ~Good choice. One o' the best Sembian wines, 'tis.~
+@3110030 = ~Prolly, aye. The others be e'en more pricey.~
+@3110040 = ~Betta jus' try it. Then tell this bucko if ye still think that.~
+@3110050 = ~Ye clearly nah know much about rabbits, do ye?~
+
+@3120000 = ~Berduskan Wine.~
+@3120001 = ~Oh, that one be plenty strong! Dark, heavy. Seems sweet at first but then stabs ye wit' its burnin' aftertaste, aye! Goes well wit' prawns 'n quail eggs.~
+@3120002 = ~Sweet? Check. Burning? Check. Strong? Check.~
+@3120003 = ~Almost as pricey as quail eggs and prawns themselves...~
+@3120004 = ~I'd prefer some more... subtle taste.~
+@3120020 = ~Har har! Now ye talkin' like a darin bucko, yarrr!~
+@3120030 = ~Huh? Prawns be pricey? They 'ave lots o' them jus' south o' here. Port Kir, Tethyr.~
+@3120040 = ~Oh, ain't ye? So fancy, ye be.~
+
+@3130000 = ~Winter Wine.~
+@3130001 = ~That purplish one be made from grapes freezed on the vine. Can't nah be plenty strong, I say. Good fer desserts.~
+@3130002 = ~North dessert wine, no need to tell me more!~
+@3130003 = ~Are these grapes freezed with gold flakes or something along those lines?~
+@3130004 = ~I don't eat desserts.~
+@3130005 = ~Grapes need sun, not cold.~
+@3130020 = ~Ho, so ye 'ave a sweet tooth, ain't ye? Good t' know.~
+@3130030 = ~'Tis not so easy t' make wine o' frozen grapes, ye know.~
+@3130040 = ~Quite common custom, I say. Lots o' sea dogs ain't too.~
+@3130050 = ~That why it so pricey, this wine. Nah so easy t' make wine o' frozen grapes.~
+
+@3140000 = ~Dragon's Beer.~
+@3140001 = ~Ye know how Sembia has dragon in its coats o' arms? They be very proud o' this liqie. Nice foams, harsh flavor. Best one fer rye bread 'n cheese.~
+@3140002 = ~Rye bread, cheese and beer - what else would I need?~
+@3140003 = ~Sounds very satisfying, but we can't really afford that kind of thing. Not unless we stay at countryside.~
+@3140004 = ~Cheese goes with wine, not beer.~
+@3140020 = ~Har har, nothin' more at all, me capt'n. That be the comfy meal we all need.~
+@3140030 = ~Why nah then? We could stay fer a few days. Some time. Some time.~
+@3140040 = ~I guess ye ne'er had the Sembian cheese then.~
+
+@3990000 = ~Any others ye be interested in?~
+@3990001 = ~Are there any I could be interested in?~
+@3990099 = ~I'm fine. Off we go!~
+
+
+
+@4000000 = ~Bitter Black Ale~
+@4000001 = ~This bottle contains dark, pitch-black beer that, when poured, produces lots of deep brown foam.
+
+Shithri claims it to be quite heavy and best served chilled, but not cold. It's highly popular throughout the Sword Coast - you do remember people drinking it Candlekeep, Friendly Arm Inn and even Nashkel. It comes from Arabel, Cormyr.~
+
+
+@4010000 = ~Shadordark Ale~
+@4010001 = ~This bottle is filled with dark brown, a bit cloudy beer. When shaken, bubbles appear inside of it, and when poured, produces a yellow foam. Spells of cloves.
+
+According to Shithri, it's a very popular drink among young women of the Sword Coast, possibly due to it crisp, sweet and fruity flavor, as well as pleasant, creamy texture.~
+
+
+@4020000 = ~Suz-Ale~
+@4020001 = ~The beer inside of this bottle is clear brown with no additional traits that would be particularly distinguishing.
+
+Shithri claims it's top-quality ale with nutty flavor. It's produced in Suzail, the capital of Cormyr.~
+
+
+@4030000 = ~Golden Sands Basic~
+@4030001 = ~One of the Golden Sands Brew series of Calimshite lagers. This one is light yellow, quite transculent.
+
+Shithri says it's clear, crisp and light. Probably the most common of the Calimshite brews north of Tethyr.~
+
+@4030100 = ~Golden Sands Gold~
+@4030101 = ~One of the Golden Sands Brew series of Calimshite lagers. This one is of deep golden color and smells of nettles.
+
+Confirmed by Shithri to contain nettles from Daggerfort, as well as desert cacti. It's said to be sharp and refreshing.~
+
+@4030200 = ~Golden Sands Orange~
+@4030201 = ~One of the Golden Sands Brew series of Calimshite lagers. This one is amber-yellow. Smells of oranges.
+
+Shithri claims it to get its color from oranges and currants, which also give it slightly acidic, sweet taste. It's very light, even for a lager of the Golden Sands Brew series.~
+
+
+@4040000 = ~Iriaeboran Ale~
+@4040001 = ~Called "bite of the north winds", this brew doesn't seem to stand out very much. It lacks distinct smell and its dark amber color is shared with many other drinks too.
+
+Despite it being rather mild, Shithri claims it to have a quite unique "cold" aftertaste. It's produced in Iriaebor of Elturgard region, just east of Wood of Sharp Teeth.~
+
+
+@4050000 = ~Luiren's Best Ale~
+@4050001 = ~This bottle contains jeb-black, very thick ale of a bit unusual smell.
+
+Shithri claims it's produced by halflings and mostly consumed by halflings. Very popular in Luiren, Halruaa and Shining South, but occasionally also drunk in Sembia, Sword Coast and - as you saw - Amn.~
+
+
+@4060000 = ~Tanagyr's Ale~
+@4060001 = ~This bottle is filled with black stout with a strong malty smell.
+
+A slight smirk appears on Shithri's face each time she sees you holding the bottle. It comes from her home city of Zenthil Keep, although due to the city's reputation and the general embargo on its products, it's usually advertised as originating from "the Moonsea region". Not so common on the Sword Coast, popular mostly among heavy drinkers due to its high alcohol content.~
+
+
+@4070000 = ~Undermountain Alurlyath~
+@4070001 = ~This bottle is made of very dark glass - its contents can't be seen without opening it. When you do, however, you can see a slight silver-green glow inside of it.
+
+Shithri claims this to be a special kind of sweet wine wine, with slightly nutty aftertaste. It's considered quite romantic and common among sea adventurers with good taste. Produced in Undermountain, a dwarvish city located just below Waterdeep.~
+
+
+@4080000 = ~Arabellan Wine~
+@4080001 = ~This bottle contains ruby wine with a slight forest-like smell.
+
+According to Shithri, it's a dry wine that can be consumed on its own, chilled, or used for cooking - particularly braising a boar, due to the pleasant, berry-like taste in the background.~
+
+
+@4090000 = ~Evermead~
+@4090001 = ~This fanciful bottle contains a clear-gold, very thick mead. When you look at it against the light, it seems as if little suns - or stars, perhaps? - danced inside of it.
+
+Shithri claims that this mead contains all the most expensive ingredients, such like cherries, vanilla beans and rose petals. It Westgate, it's a sign of nobility. Rumored to take centuries to produce and easily the best liquor elves of Trademeet make. It's also easily the most expensive drink one can have in the Sword Coast or Amn.~
+
+
+@4100000 = ~Westgate Wine~
+@4100001 = ~~
+
+
+
+
+
+@9000000 = ~Shithri-inspired liquor collection
+
+Per Shithri's suggestion, I decided to give a try to fine liquor collecting. I need to ask for bottle liquors in the inns and taverns we visit. Shithri seems quite knowledgeable about various drinks, so she can probably offer me some advice.~
+

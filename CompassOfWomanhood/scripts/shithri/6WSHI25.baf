@@ -1,0 +1,49 @@
+//
+// Shithri script for Throne of Bhaal
+//
+
+IF
+  Global("6W#ShithriSummoned","GLOBAL",1)
+THEN
+  RESPONSE #100
+    StartDialogueNoSet(Player1)
+END
+
+
+
+
+// Hexxat feeding is triggered after three rests
+// with both Shithri and Hexxat in the party
+IF
+  // ToB-only
+  GlobalGT("Chapter","GLOBAL",7)
+  PartyRested()
+  !AreaType(CITY)
+  InParty("6WSHITHRI")
+  InParty("Hexxat")
+  GlobalLT("6W#Shithri_Hexxat_starves","GLOBAL",3)
+  !GlobalTimerNotExpired("6W#Shithri_Hexxat_starving","GLOBAL")
+THEN
+  RESPONSE #100
+    IncrementGlobal("6W#Shithri_Hexxat_starves","GLOBAL",1)
+    // minimum half a day between rests
+    SetGlobalTimer("6W#Shithri_Hexxat_starving","GLOBAL",3600)
+    Continue()
+END
+
+IF
+  // ToB-only
+  GlobalGT("Chapter","GLOBAL",7)
+  PartyRested()
+  !AreaType(CITY)
+  IfValidForPartyDialog("6WSHITHRI")
+  IfValidForPartyDialog("Hexxat")
+  Global("6W#Shithri_Hexxat_starves","GLOBAL",3)
+  GlobalTimerExpired("6W#Shithri_Hexxat_starving","GLOBAL")
+  Global("6W#tob_banter_Shithri_Hexxat","GLOBAL",0)
+THEN
+  RESPONSE #100
+    Interact("Hexxat")
+    IncrementGlobal("6W#Shithri_Hexxat_starves","GLOBAL",1)
+    Continue()
+END

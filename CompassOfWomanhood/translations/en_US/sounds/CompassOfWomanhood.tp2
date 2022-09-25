@@ -1,0 +1,242 @@
+// --------------------------------------------
+// Mod setup
+// --------------------------------------------
+
+// Basics
+
+BACKUP ~CompassOfWomanhood/backup~
+AUTHOR ~udiknedormin@gmail.com~
+VERSION ~v0.1~
+README ~CompassOfWomanhood/translations/%LANGUAGE%/CompassOfWomanhood_readme.html~
+
+
+// Requires Enhanced-Edition, all files use UTF-8, so no need for any conversions
+// EET-compatibility
+ALWAYS
+  ACTION_IF GAME_IS ~eet~ BEGIN
+    OUTER_SET bg2_chapter = 12
+  END ELSE BEGIN
+    OUTER_SET bg2_chapter = 0
+  END
+  OUTER_FOR (i=1; i<=10; i=i+1) BEGIN
+    OUTER_SET bg2_chapter = bg2_chapter + 1
+    OUTER_SPRINT name_source ~bg2_chapter_%i%~
+    OUTER_SET EVAL ~%name_source%~ = bg2_chapter
+  END
+END
+
+
+// Translations
+AUTO_TRA ~CompassOfWomanhood/translations/%s~
+
+
+LANGUAGE ~English (American)~
+         ~en_US~
+         ~CompassOfWomanhood/translations/en_US/setup.tra~
+
+LANGUAGE ~Polish~
+         ~pl_PL~
+         ~CompassOfWomanhood/translations/pl_PL/setup.tra~
+
+
+// --------------------------------------------
+// Compass of Womanhood NPC Mod v0.1
+// --------------------------------------------
+
+// Component "SHITHRI" setup
+BEGIN @1 /* Shithri the Pirate - companion */
+REQUIRE_PREDICATE GAME_IS ~bg2ee~ @0
+
+
+//
+// Epilogues
+//
+
+/* No Neera romance, visiting Chult. */
+COPY ~CompassOfWomanhood/epilogues/ls_shithri.2da~ ~override/ls_shithri1.2da~
+REPLACE ~99998~ @12
+REPLACE ~99999~ @20
+
+/* No Neera romance, coming back to the Moonsea. */
+COPY ~CompassOfWomanhood/epilogues/ls_shithri.2da~ ~override/ls_shithri2.2da~
+REPLACE ~99998~ @12
+REPLACE ~99999~ @21
+
+/* Neera romance. */
+COPY ~CompassOfWomanhood/epilogues/ls_shithri.2da~ ~override/ls_shithri3.2da~
+REPLACE ~99998~ @12
+REPLACE ~99999~ @22
+
+/* Neera's epilogue, if romancing Shithri */
+//TODO: make sure if basing it on NeeraD2.2da is not needed.
+COPY ~CompassOfWomanhood/epilogues/ls_neera.2da~ ~override/ls_neera3.2da~
+REPLACE ~99999~ @23
+
+// Prepend epilogues
+EXTEND_TOP ~ar6200.bcs~ ~CompassOfWomanhood/scripts/shithri_ar6200.baf~
+
+
+//
+// Dialogues
+//
+
+COMPILE ~CompassOfWomanhood/dialogues/shithr.d~
+COMPILE ~CompassOfWomanhood/dialogues/bshithr.d~
+COMPILE ~CompassOfWomanhood/dialogues/shithrp.d~
+COMPILE ~CompassOfWomanhood/dialogues/shithrj.d~
+COMPILE ~CompassOfWomanhood/dialogues/shithrd.d~
+
+COMPILE ~CompassOfWomanhood/dialogues/shith25.d~
+COMPILE ~CompassOfWomanhood/dialogues/shith25a.d~
+COMPILE ~CompassOfWomanhood/dialogues/bshith25.d~
+COMPILE ~CompassOfWomanhood/dialogues/shith25p.d~
+COMPILE ~CompassOfWomanhood/dialogues/shith25j.d~
+COMPILE ~CompassOfWomanhood/dialogues/shith25d.d~
+
+COMPILE ~CompassOfWomanhood/dialogues/bshithri_neera_romance.d~
+COMPILE ~CompassOfWomanhood/dialogues/shithri_interjections.d~
+
+// banters
+APPEND ~pdialog.2da~
+  ~SHITHRI       SHITHRP            SHITHRJ           SHITHRD~
+  UNLESS ~SHITHRI~
+  UNLESS ~25POST~
+
+APPEND ~pdialog.2da~
+  ~SHITHRI       SHITHRP            SHITHRJ           SHITHRD        SHITH25P           SHITH25J              SHITH25D              SHITH25~
+  UNLESS ~SHITHRI~
+  IF ~25POST~
+
+APPEND ~interdia.2da~
+  ~SHITHRI      BSHITHR~
+  UNLESS ~SHITHRI~
+  UNLESS ~25FILE~
+
+APPEND ~interdia.2da~
+  ~SHITHRI      BSHITHR       BSHITH25~
+  UNLESS ~SHITHRI~
+  IF ~25FILE~
+
+
+
+APPEND ~npclevel.2da~
+  ~Shithri     Shithri     Shithri     Shithri     Shithri     Shithri     Shithri    Shithri  Shithri     Shithri     Shithri     Shithri     Shithri     Shithri     Shithri     Shithri     Shithri    Shithri  Shithri  Shithri   Shithri  Shithri   Shithri  Shithri~
+  UNLESS ~Shithri~
+
+APPEND ~npclvl25.2da~
+  ~Shithri     Shithri     Shithri     Shithri     Shithri     Shithri     Shithri    Shithri  Shithri     Shithri     Shithri     Shithri     Shithri     Shithri     Shithri     Shithri     Shithri    Shithri  Shithri  Shithri   Shithri  Shithri   Shithri  Shithri~
+  UNLESS ~Shithri~
+
+
+//
+// Items
+//
+
+COPY ~CompassOfWomanhood/items/COW_SW1I.BAM~ ~override~
+COPY ~CompassOfWomanhood/items/COW_SW1D.BAM~ ~override~
+COPY ~CompassOfWomanhood/items/COW_SW1.ITM~ ~override~
+  SAY NAME1 @50
+  SAY NAME2 @51
+  SAY UNIDENTIFIED_DESC @52
+
+//
+// Scripts
+//
+
+COMPILE ~CompassOfWomanhood/scripts/shithri.baf~
+COMPILE ~CompassOfWomanhood/scripts/shith25.baf~
+EXTEND_BOTTOM ~dorn25.bcs~  ~CompassOfWomanhood/scripts/shithri_dorn25.baf~
+EXTEND_BOTTOM ~shithri.bcs~ ~CompassOfWomanhood/scripts/bshithri_neera_romance.baf~
+EXTEND_BOTTOM ~neera.bcs~   ~CompassOfWomanhood/scripts/shithri_bneera_romance.baf~
+EXTEND_BOTTOM ~shith25.bcs~ ~CompassOfWomanhood/scripts/bshith25_neera_romance.baf~
+EXTEND_BOTTOM ~neer25.bcs~ ~CompassOfWomanhood/scripts/shithri_bneer25_romance.baf~
+
+//
+// Sounds
+//
+
+// `LAF HANDLE_AUDIO` doesn't seem to support %LANGUAGE% placeholder
+/*
+LAF HANDLE_AUDIO
+  STR_VAR
+    oggdec_path = ~CompassOfWomanhood/sounds~
+    audio_path  = ~CompassOfWomanhood/translations/%LANGUAGE%/sounds~
+END
+*/
+
+ACTION_BASH_FOR ~CompassOfWomanhood/translations/%LANGUAGE%/sounds~ ~^shith.*\.wav$~
+BEGIN
+  COPY ~%BASH_FOR_FILESPEC%~ ~override~
+END
+
+//
+// Companion herself
+//
+
+// portraits
+COPY ~CompassOfWomanhood/creatures/shithriS.bmp~ ~override~
+COPY ~CompassOfWomanhood/creatures/shithriM.bmp~ ~override~
+COPY ~CompassOfWomanhood/creatures/shithriL.bmp~ ~override~
+
+// creature
+ACTION_FOR_EACH cre_file IN ~shithri8.cre~ ~shithr25.cre~
+BEGIN
+  COPY ~CompassOfWomanhood/creatures/%cre_file%~ ~override~
+    SAY NAME1 @10
+    SAY NAME2 @11
+    SAY BIO   @12
+  
+    SAY HAPPY                  @100 /* Ho! 'tis the hearties I be lookin' fer! */
+    SAY UNHAPPY_ANNOYED        @101 /* I hope ye jus' jestin'. */
+    SAY UNHAPPY_SERIOUS        @102 /* I nah so glad fer this capt'n o' ours. */
+    SAY UNHAPPY_BREAKING_POINT @103 /* O'er me dead body! */
+    SAY LEADER                 @104 /* Yarrr, this bosun shall pull all the strings! */
+    SAY TIRED                  @105 /* Even the most darin' bucko can't stay on her watch all time. */
+    SAY BORED                  @106 /* Idlin' be tiresome. This bucko nah used t' doin' nothin'. */
+    SAY BATTLE_CRY1            @107 /* Blow 'em down! */
+    SAY BATTLE_CRY2            @108 /* Draught fer me blade! */
+    SAY BATTLE_CRY3            @109 /* Ye'll make nice salmagundi! */
+    SAY HURT                   @110 /* Takes more than that t' blow down this bucko! */
+    SAY DYING                  @111 /* Feel pity fer the devils. I be comin'. */
+    SAY AREA_FOREST            @112 /* Sssh. I be listenin' t' Mother's voice. */
+    SAY AREA_CITY              @113 /* City means tavern. Tavern means draught. */
+    SAY AREA_DUNGEON           @114 /* Some treasure t' find in 'ere, I hope? */
+    SAY AREA_DAY               @115 /* Sun in the sky, it be new day. Another roddle diddle one, mayhaps? */
+    SAY AREA_NIGHT             @116 /* Wha' a fine night fer a draught... */
+    SAY SELECT_COMMON1         @117 /* Aye? */
+    SAY SELECT_COMMON2         @118 /* Wha'? */
+    SAY SELECT_COMMON3         @119 /* Awaitin' command. */
+    SAY SELECT_COMMON4         @120 /* This bucko be ready. */
+    SAY SELECT_COMMON5         @121 /* Do speak. */
+    SAY SELECT_COMMON6         @122 /* Careful ye. */
+    SAY SELECT_ACTION1         @123 /* Aye aye! */
+    SAY SELECT_ACTION2         @124 /* Roger that. */
+    SAY SELECT_ACTION3         @125 /* It be done. */
+    SAY SELECT_ACTION4         @126 /* It be breeze. */
+    SAY SELECT_ACTION5         @127 /* Clear as day. */
+    SAY REACT_TO_DIE_GENERAL   @128 /* Matey's death nah be left unavenged, yarrr! */
+    SAY SELECT_RARE1           @129 /* Care fer a draught? Nay? So why bother? */
+    SAY SELECT_RARE2           @130 /* Wha' do ye know? Land-lubber... */
+    SAY CRITICAL_HIT           @131 /* YARRR! */
+    SAY CRITICAL_MISS          @132 /* Blimey, not even close! */
+    SAY TARGET_IMMUNE          @133 /* This nah work. */
+    SAY INVENTORY_FULL         @134 /* I be a bucko, nah a ship. Can't carry that much. */
+    SAY PICKED_POCKET          @135 /* Jus' took a thing or two. */
+    SAY HIDDEN_IN_SHADOWS      @136 /* No flag raised. */
+    SAY SPELL_DISRUPTED        @137 /* Sink me, that spell go nah good... */
+    SAY SET_A_TRAP             @138 /* Lil something. Big surprise. */
+END
+
+// place her in the docks
+EXTEND_BOTTOM ~ar0300.bcs~ ~CompassOfWomanhood/areas/shithri_ar0300.baf~
+
+// summon in ToB
+EXTEND_BOTTOM ~ar4500.bcs~ ~CompassOfWomanhood/scripts/shithri_ar4500.baf~
+
+
+//
+// Quests
+//
+
+COMPILE ~CompassOfWomanhood/dialogues/shithri_drink_quest.d~
+EXTEND_BOTTOM ~shithri.bcs~ ~CompassOfWomanhood/scripts/shithri_drink_quest.baf~

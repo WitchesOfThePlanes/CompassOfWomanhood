@@ -1,0 +1,499 @@
+@1000000 = ~Me matey. Ho, me matey! Ye ravin' t' yerself.~
+@1000001 = ~(Just another mad monkey, ignore her)~
+@1000002 = ~Ye be 'avin' too much brandy lately or wha'?~
+@1000003 = ~(That drunkard will lose interest soon enough)~
+@1000004 = ~*smirk* I know what ye need, me matey.~
+@1000005 = ~(She will go away)~
+@1000006 = ~"What will we do wit' a drunken wizard
+What will we do wit' a drunken wizard..."~
+@1000007 = ~(She will...) Go away...~
+@1000008 = ~"What will we do wit' a drunken wizard
+When he is delirious?~
+
+@1000009 = ~AAAAA!~
+
+@1000100 = ~Ahoy, me drunken wizard!~
+@1000101 = ~Just go awayyy... Go pray to your cave goddess or something...~
+@1000102 = ~I jus' noticed. Ye be wearin' long clothes, like most lubbers I know. That - I understand. But as ye be keepin' yer hood up to yer sleep even, I wonder - ain't it troublesome fer the ladies?~
+@1000103 = ~Well, of course I... Silence, you idiot!~
+
+@1000200 = ~Ahoy, me beauty! I see yer dress be a bit tight. Here, let this bold, darin' bucko help ye wit' that.~
+@1000201 = ~What are you... hey, stop!~
+@1000202 = ~Well, ain't that better now? Wha' a fine lass ye be!~
+@1000203 = ~Go away, you pervert! I mean, "idiot!"~
+@1000204 = ~I be just helpin', me hearty. But helpin' ye be pleasure, yarrr.~
+
+@1000300 = ~Me beauty, I nah be fooled that easily.~
+@1000301 = ~(Why... why of all things...) What now, pirate?~
+@1000302 = ~Shhh... Nah need t' shy away like that, me hearty. I can see ye givin' those lonely looks t' our blankets at night. Ones o' this darin' bucko 'n our dark matey.~
+@1000303 = ~All ye need t' do be ask.~
+@1000304 = ~What are you- (No no, that actually makes sense) Oh. Oooh. Really?~
+@1000305 = ~Aye. Just try.~
+@1000306 = ~Well... hello, Viconia. I was just wondering... about...~
+@1000307 = ~What? What is it, rivvil?~
+@1000308 = ~B-Blankets! Yes, blankets! (What am I saying?) They are so thin. I thought if we stay close, we can…~
+@1000309 = ~Why, hello, Hexxat.~
+@1000310 = ~Hello, Edwin.~
+@1000311 = ~So... how do you do?~
+@1000312 = ~Quite well, thank you.~
+@1000313 = ~Sooo... err...~
+@1000314 = ~Gah! You. You little pirate pig! What are you laughing at?!~
+@1000315 = ~Ye doin' great, sis!~
+@1000316 = ~(Fireballs. Fireballs should work doubly well on that grog-burnt throat, oh yesss)~
+
+
+@1010000 = ~Heya, Shithri. So you're a pirate, right? On a ship, I mean?~
+@1010001 = ~I prefer the term swash-buccaner. But do speak, lass.~
+@1010002 = ~So when you land, you pillage the towns and stuff...~
+@1010003 = ~Aye.~
+@1010004 = ~But what do you do while on the ship?~
+@1010005 = ~...~
+@1010006 = ~I mean, you don't just sing, drink and look at the sea.~
+@1010007 = ~Why nah?~
+@1010008 = ~Well, if you did, your ship would sink. I think?~
+@1010009 = ~Ye can take a caulk, if ye want.~
+@1010010 = ~What's that?~
+@1010011 = ~Tarred ropes. Makes the ship water-tight.~
+@1010012 = ~Oh, so that's how...~
+@1010013 = ~...ye get those black markings on yer back after nappin' on the deck, aye.~
+@1010014 = ~So singing, drinking, looking at the see AND napping. Not so different from Candlekeep.~
+@1010015 = ~And playin' cards.~
+@1010016 = ~Still not that different.~
+
+
+@1020000 = ~Sha'nru? Care fer...~
+@1020001 = ~No. We have more important things to do than drinking.~
+@1020002 = ~Besides. I don’t trust you yet.~
+@1020003 = ~Yet? Let I guess then. Ye be Harper. I be Zentish. Mayhaps yer answer 'as word "Zentharim"...~
+@1020004 = ~Far from that. I doubt you're a Zenthish agent. You being a half-orc and a pirate, however, is what concerns me.~
+@1020005 = ~I have yet to determine your place in the balance.~
+@1020006 = ~*gulp* May Luthic guide ye in that.~
+
+@1020100 = ~Drink this, child.~
+@1020101 = ~A draught? Always!~
+@1020102 = ~Ptui! *spits* Wha' 'tis bitter, gross slop?!~
+@1020103 = ~Something your goddess' husband wouldn't like her to use. Now drink it up.~
+@1020104 = ~I ain't needin' it! I ne'er did 'n I be fine!~
+@1020105 = ~Child. I believe you do know a suble difference between men and women in that matter.~
+@1020106 = ~...~
+@1020107 = ~Drink it up.~
+@1020108 = ~Aye aye, sha'nru...~
+@1020109 = ~Sha'nru?~
+@1020110 = ~What is it?~
+@1020111 = ~Th-thank ye.~
+
+
+@1030000 = ~So, me hearty, I see ye Rashemi?~
+@1030001 = ~I am.~
+@1030002 = ~Ye no seaman nor trader. *gulp* Mayhaps on yer darjamma?~
+@1030003 = ~You know of dajemma? So Boo was right about you!~
+@1030004 = ~Boo? 'is rat o' yers?~
+@1030005 = ~Rat? Are you trying to insult Boo?!~
+@1030006 = ~What, Boo? Is that true? Well then...~
+@1030007 = ~Boo is no rat. He's a miniature giant space hamster.~
+@1030008 = ~Wait. He SPEAKS to ye?~
+@1030009 = ~And how wise his words are!~
+@1030010 = ~So wha' he say o' me?~
+@1030011 = ~Boo says you know many things. And something about ropes.~
+@1030012 = ~Jolly, squiffy tar I be, yarrr! Yer hamster runs no rig!~
+@1030013 = ~I be sorry, Boo. 'ere, have a tack.~
+@1030014 = ~Boo appreciates.~
+
+@1030100 = ~What a sight you are in battle, Shithri! Even Boo is impressed!~
+@1030101 = ~Yarrr, I be a known swasher in me motherland by now.~
+@1030102 = ~Do you have a lodge for your heroes there? Like Ice Dragon Berserker Lodge?~
+@1030103 = ~Naught aside the army, I fear. But wha' an army 'tis!~
+@1030104 = ~Back when I be a wee lass, Zentish army o' a thousand orcs under general Vrakk went t' defend Thesk agains the Horde. Reckon that! A thousand orcs!~
+@1030105 = ~Great heroes butt-kicking for goodness! Just like us!~
+
+@1030200 = ~*gulp* A fine <DAY/NIGHT>. Me hearty, 'tis a fine <DAY/NIGHT> to hear some tales o' that lodge ye mention.~
+@1030201 = ~Ha, so you want to know of the highest honor there is for a ranger? All hail the heroes of Ice Dragon Berserker Lodge. No feast is ever complete without a song for their glory!~
+@1030202 = ~Speakin' o' which... don't ye miss yer firewine?~
+@1030203 = ~Oh, yes! Jhuild, the greatest drink there is. Dynaheir used to make one for Minsc... did you try it during your adventures?~
+@1030204 = ~Nay, it be pretty pricey back in the Dragoncoast. Tried the other one though. The nightmare one.~
+@1030205 = ~Oh? Minsc didn't know that. What a shame there is no Jhuild here for us two to celebrate our great adventures!~
+@1030206 = ~We can splice the mainbrace o' Tanagyr's Stout Ale back in the Sword Coast.~
+@1030207 = ~That we will, my friend!~
+
+
+@1040000 = ~Tell me, tu'rilcretok... or should I call you tu'rilthiin, as you claim of your father? Mongrels as they are, I still find it difficult to believe they would mate with those mountain boars.~
+@1040001 = ~Aye, ye can call I - pidhaggur, "lil tusks". 'Tis I be used to.~
+@1040002 = ~Most amusing to see a dog squeaking.~
+@1040003 = ~Call it as ye do, me bella. Dogs be loyal 'n boars be dilligent. Not the worst I be called.~
+
+
+@1050000 = ~Ahoy, lassie. Care fer a draught?~
+@1050001 = ~Me? I... No... No, thank you.~
+@1050002 = ~I 'ave some wine too if ye prefer.~
+@1050003 = ~It's not that, it's just... please. Just leave me.~
+
+@1050100 = ~I-I need to ask you something. Shithri.~
+@1050101 = ~Aye, lass? Wha'?~
+@1050102 = ~Have you... -please, could you just... set that b-bottle aside? Just for a moment?~
+@1050103 = ~Thank you. So. M-my question.~
+@1050104 = ~Have you... during your travels... have you ever...~
+@1050105 = ~Aye.~
+@1050106 = ~But...~
+@1050107 = ~Whatever 'tis, I prolly did it.~
+@1050108 = ~I... I see. Thank you.~
+@1050109 = ~Anytime ye needs. *gulp*~
+
+
+@1060000 = ~Ho, me matey, care fer a draught?~
+@1060001 = ~Mercy, woman, have some mercy! Travelling with a mere pirate is enough of a disgrace, I have no need to drink with one!~
+@1060002 = ~Could jus' say "no".~
+
+@1060100 = ~You fight well for a woman.~
+@1060101 = ~Oh do I, pretty lad?~
+@1060102 = ~Well, I do admit it looks like your training wasn't exactly in the art of battle. I could only guess it's some dance for primitive orcish gods or another Zentharim ritual for luck. Or perhaps a pirate thing?~
+@1060103 = ~Speak another word 'n yer head will feed the Luthic's bears, ye wretched, mangy knave.~
+@1060104 = ~"Knave"? You calling me a servant, half-orc? Learn your place! <CHARNAME> only keeps you around for the laughs.~
+@1060105 = ~Careful, dandy. 'tis not yer cozy lil castle where yer garau be t' pat yer head afterwards.~
+@1060106 = ~Stop that at once, both of you!~
+@1060107 = ~Anomen, I will not tolerate that kind of behaviour.~
+@1060108 = ~Shithri, you're taking it too far.~
+@1060109 = ~Squire and pirate. This will be interesting.~
+@1060110 = ~Wha'? Ye tell that t' knighty.~
+@1060111 = ~You took it too far too.~
+@1060112 = ~I know he started, but think if Luthic would approve your behaviour.~
+@1060113 = ~I know he started, but please be the wiser one.~
+@1060120 = ~Ye know nothin', swab. O' pirates. O' Zentharim. O' orcish gods.~
+@1060121 = ~You're right, I don't. But we're all friends here.~
+@1060122 = ~Like it or not, we're a team. Companions.~
+@1060123 = ~I don't need to. If you don't like it, leave.~
+@1060124 = ~That sorry, dandy rapscallion is no hearty o' I.~
+@1060125 = ~He is to me though.~
+@1060126 = ~Even if he's not your friend, he's still your companion.~
+@1060127 = ~My team, my rules. If you don't like it, leave.~
+@1060128 = ~Then ye nah me capt'n.~
+@1060129 = ~He nah me matey. And ye nah me capt'n.~
+@1060130 = ~...aye. 'tis true.~
+@1060131 = ~But 'tis the last time, ye hear? Next time I beat yer lil knighty arse down.~
+@1060132 = ~I will see you try, pirate.~
+@1060140 = ~You're siding with that pirate, <CHARNAME>?~
+@1060141 = ~Yes. She's a friend.~
+@1060142 = ~I don't take sides. We're a team. We work together.~
+@1060143 = ~Really? A Zentharim half-orc pirate. Worshipping blood-thirsty orcish gods. You call THAT a friend?~
+@1060144 = ~Don't make me laugh! It's vermin!~
+@1060145 = ~Say wha', knighty? Ah, right! Ye nah knighty at all, yarrr! Ye just a failure! Failure to yer god, failure to yer order. Mayhaps it be just mercy that capt'n keeps ye with <PRO_HIMHER>?~
+@1060146 = ~Enough!~
+@1060147 = ~...fine. Just because of you. I will let it slide.~
+@1060150 = ~It surely will!~
+@1060151 = ~Interesting? More like quick.~
+@1060160 = ~...nah. She wouldna. 'tis wha' Gruumsh would approve.~
+@1060161 = ~*gulp* Thank ye, capt'n.~
+@1060170 = ~Wiser one? Blimey! Another knighty!~
+@1060171 = ~<PRO_HESHE>'s right, child! You're both wasting time on pointless fights!~
+@1060172 = ~Sha'nru...~
+@1060173 = ~Lady Jaheira...~
+@1060174 = ~*gulp* Ye right, sha'nru. He nah worth it.~
+@1060199 = ~Gladly.~
+
+@1060200 = ~Need a draught, matey?~
+@1060201 = ~I sure am.~
+@1060202 = ~*gulp* Let me guess: you have some comments, like everyone else.~
+@1060203 = ~Nay. *gulp*~
+@1060204 = ~Really? Nothing about me failing my tests and all?~
+@1060205 = ~Why would I care?~
+@1060206 = ~I see.~
+@1060207 = ~Shithri?~
+@1060208 = ~Aye?~
+@1060209 = ~Sorry for what I said about you earlier. You're a fine woman.~
+@1060210 = ~*smirks*~
+
+
+@1070000 = ~Har har, wha' a lively city 'tis! Like Westgate, like Baldur's Gate but even bigger!~
+@1070001 = ~Does a mother bear raise her cubs among the bricks? Does mortar grow on the walls of her cave? Can she love them enough when surrounded by concrete?~
+@1070002 = ~Nay. She can't.~
+@1070003 = ~Tell me then, oh child of mountains and hills and rivers forgotten.~
+@1070004 = ~"Only in caves o' stone, only under clear skies. Only where the river flows. Can a bear raise her cubs."~
+@1070005 = ~I nah expected ye t' know prayer t' the godly-ma, me hearty.~
+@1070006 = ~That, I do not. But I do know Mother.~
+@1070007 = ~Ye do. And ye serve her well, pulgor.~
+
+@1070100 = ~I noticed that you love singing, Shithri, but never sing in a forest.~
+@1070101 = ~I be listenin', pulgor. T' Mother.~
+@1070102 = ~As do I. You would make a fine druid, and yet you chose a life of... adventuring.~
+@1070103 = ~Aye. Ye think Mother be angry wit' me?~
+@1070104 = ~I believe she still loves you. As she does with all of her children. But whether she is angry or not would depend on what your reason was.~
+@1070105 = ~Love.~
+@1070106 = ~That - a mother will always condone.~
+
+
+@1080000 = ~Ho, how smartly yer blade dance be, my hearty!~
+@1080001 = ~A great actor must know his footsteps, my seahawk. Yours are far from ordinary as well, if slightly unpolished. Evasive like a fish of shining scales, you are.~
+@1080002 = ~'tis called "sea legs". Naught fancy.~
+
+@1080100 = ~Walkin' in silence be tiresome. Ahoy, me hearty! Ye know any shanties?~
+@1080101 = ~Shanties, you say. Sea songs... yes. I do know one you may enjoy.~
+@1080102 = ~"Seagulls, oh black seagulls, wind-sculptured icy dust,
+Wing-bladed, blade-winged muses of ships fading into mist.
+Who made you gliding skyless beyond the memory
+Through cold hurricane's anger of cubic battlefields"~
+@1080103 = ~"Planehoppers coming back from Baator -
+Remind them for whom the bell tolls.
+To soldiers may your dark wings carry
+Hope for the speedy final loss"~
+@1080104 = ~"Birds that I remember from journey's very start,
+Predacious gales falling from rocks to gray Wreychtmirk.
+Wind drifting to Ocanthus, bouncing on the surface of Styx.
+How very reminiscent, dark birds of icy nix."~
+@1080105 = ~"Planehoppers coming back from Baator -
+Remind them for whom the bell tolls.
+To soldiers may your dark wings carry
+Hope for the speedy final loss"~
+@1080106 = ~I... ne'er heard that one.~
+@1080107 = ~But of course, my seahawk. That one comes, after all, from the river of oblivion, flowing through the fields of Archeron. The plane of vast blocks of steel flowing through the sharpest of airs, clashing against one another as the armies of once-fallen clash on them.~
+@1080108 = ~*gulp* Fine tale, me bard. Fine tale. I hope ye tell me more o' it someday.~
+@1080109 = ~I gladly will, my seahawk.~
+
+@1080200 = ~What happened, my seahawk? Though I cannot deny that melancholy suits you well, 'tis a rare view.~
+@1080201 = ~'tis just... ye sing o' love so often. Lost love.~
+@1080202 = ~I be rememberin' me own. Me first love.~
+@1080203 = ~I can see it in your eyes, my seahawk. Free yourself of soul's burdens and tell this sparrow your tale! Tragic as it may be.~
+@1080204 = ~Har har, ye readin' me like a script. *smiles*~
+@1080205 = ~'tis a tragic tale, aye.~
+@1080206 = ~Her name be Semeia. She be most beautiful thing I ever seen. Covered in those white dresses o' hers. Swayin' me gently to me sleep.~
+@1080207 = ~Don't tell me you mean...~
+@1080208 = ~Her keel be too damaged, I be told. But I still took her to our last adventure.~
+@1080209 = ~I come back. She - nah.~
+@1080210 = ~I am sure you had many great journeys together before the Entropy took her from you.~
+@1080211 = ~We did.~
+@1080212 = ~It was supposed to happen. And it's a good thing. Everything ends, and it's always sad. Even though 'tis a good thing.~
+@1080213 = ~Perhaps Semeia is now sailing among the endless seas of Limbo?~
+@1080214 = ~Ye think so?~
+@1080215 = ~I do. I truly do, my seahawk.~
+
+@1080300 = ~Me sparrow? I be wonderin'. How ye became planehopper?~
+@1080301 = ~Well, 'tis quite natural for my kind. But if you ask for the first time I felt I am one... that must have been Ocanthus.~
+@1080302 = ~Ye mentioned that name afore. In the song.~
+@1080303 = ~Ye... ne'er said who wrote it.~
+@1080304 = ~Indeed, my seahawk. I have not. *smirk*~
+@1080305 = ~Already being a Doomguard, I wished to see the beginning and end of the great river of oblivion.~
+@1080306 = ~'n then ye saw them. The birds o' black ice.~
+@1080307 = ~Indeed, I have. They are said to hold memories took by the waters of Styx. So I watched as the memories themselves fly across the cloudless sky.~
+@1080308 = ~Only then did I feel it for the very first time. The awe for Entropy. The call to see what few eyes saw.~
+@1080309 = ~Awe can change the nature o' a man.~
+@1080310 = ~It can, my seahawk. It certainly can.~
+
+@1080400 = ~Could you ease this sparrow's endless curiosity for tales of love? I'm longing for the story of how you met your dear Semeia.~
+@1080401 = ~*gulp* I... be same age as me mother when she had me.~
+@1080402 = ~Wanderin' in the dockyard. I always liked watchin' new ships, ever since I be a wee lass.~
+@1080403 = ~Then I see her. She be standin' there. All ready fer her first voyage.~
+@1080404 = ~How could I nah come closer?~
+@1080405 = ~So I come. 'n I touch her helm. Hear how her riggin' whispers to me.~
+@1080406 = ~'Tis how she stole me. That how I became a bucko o' today.~
+@1080407 = ~A story as old as water and forest. Forbidden love, two runaways trying to change their fate, only to be separated in death...~
+@1080408 = ~With just one exception.~
+@1080409 = ~Wha' be it?~
+@1080410 = ~You live.~
+@1080411 = ~'n she be taken by Enthropy.~
+@1080412 = ~Like we all will. Someday.~
+
+
+@1090000 = ~"There once be a gnome that put t' field
+The name o' the gnome be Jansen Scratchy
+The sun shined hot, the rain poured down
+Oh come, me hungry boys, come (huh!)"~
+@1090001 = ~"Soon may the Jansen come
+T' bring us onions 'n leek 'n yam
+When turnip pickle be done
+He offer his price 'n sell!"~
+@1090002 = ~I must say, my dear, that you created most striking image of Uncle Scratchy... aside from the yam part, of course - he was always a man for potatoes. You see, Uncle Scratchy had a knack for dealings with Cormyrean vegetable merchants. He once convinced them for the most excellent idea of including leek in fruit salad.~
+@1090003 = ~Be it why he hates yams?~
+@1090004 = ~You speak as you knew him! Why, that and his great passion for home-made liquors. What was I… oh, yes, leeks. Scratchy tried to convince Cormyretes to his new vegetable cheese when the Onion Famine stroke for good. Was it not for me, Uncle would surely go bankrupt.~
+@1090005 = ~Aye, I reckon. Turnip price mus' be hundred times normal.~
+@1090006 = ~Exactly my point, dear!~
+@1090007 = ~Blimey, this shanty o' mine be na good after all...~
+@1090008 = ~Don't worry. Uncle Scratchy was never good at singing to begin with. Besides - 'tis not even the way he spoke his own name. He claimed it to be pronounced Sss-cratt-chee. But as you may guess, it was just to make the Sembian competition angry.~
+
+
+@1100000 = ~What is it, pirate girl? I cannot accept your morals, but I won't deny you confession, if your repentance is honest.~
+@1100001 = ~Wha'? Confession? I be lookin' at yer many o' scars. Ye be a great warrior, I can tell, yarrr.~
+@1100002 = ~I am not a fighter for glory, Shithri. Only for the greater good. For justice.~
+@1100003 = ~Aye, I respect that.~
+@1100004 = ~I beg your pardon?~
+@1100005 = ~I said I be respectin' that. Ye follow yer code o' conduct. That be good. That be wha' warriors do. Like me uncle.~
+@1100006 = ~Well, mother's brother is surely an important man in the life of a young woman.~
+@1100007 = ~'n a daughter be an important woman in the life o' an old man.~
+@1100008 = ~Indeed. Even if she has lost the way.~
+@1100009 = ~Mayhaps she goes her own one, knighty man.~
+
+
+@1110000 = ~Wha' a sight. Half-orc, yet so hairless. Face so disgustin' ye could take 'er for an elf. And that o'erlame excuse of tusks...~
+@1110001 = ~Ye got a problem wit' me, ye lil' stinkin' bildge rat?~
+@1110002 = ~Me, a rat?! How dare ye, ye mold-covered wench! Or mayhaps if I split ye open, I'd see all those rotten rodents that painted ye that?!~
+@1110003 = ~Well, why don't ye try, ye cowardly, lubber scallywag? Afore I met ye, I'd believe only swabs could get scurvy, but ye prove I wrong, yarrr!~
+@1110004 = ~Wha' ye bark about me teeth, ye she-dog?! Maybe when I bury me keen axe in yer face, ye'll finally look like a proper orc?!~
+@1110005 = ~'is axe? Be it not fer yer teeth, I'd guess ye from Moonshea Isles. Cause that axe o' yers be only good for worm-huntin'.~
+@1110006 = ~Ye compare me to those green-bearded wildlings? Har har! Ye're not as soft as I thought!~
+@1110007 = ~Aye, ye'd break yer axe on I, yarrr. *gulp*~
+
+@1110100 = ~Hey, half-orc! Me mouth's dry!~
+@1110101 = ~*gulp* It be nay beer, matey. Would make ye loaded to the gunwales. If we on a ship, 'tis yarrr.~
+@1110101 = ~Oh, come on, lass! Just a cup!~
+@1110102 = ~A nipperkin fer ye. 'tis nah grog.~
+@1110103 = ~Seven Hells, 'tis plenty strong! What is it called?~
+@1110104 = ~Clap o' thunder.~
+@1110105 = ~Har har! Fittin' name. Pour me some more!~
+
+
+@1120000 = ~A nipperkin, me matey?~
+@1120001 = ~Gladly, after so much walking... but why not a "draught"?~
+@1120002 = ~Wha' ye mean?~
+@1120003 = ~You always ask for a "draught", not a "nipperkin". Is it perhaps related to my size?~
+@1120004 = ~Nay, it jus' be strong. Have a try.~
+@1120005 = ~Thank you, I think I've lost my thirst.~
+
+@1120100 = ~What is it?~
+@1120101 = ~Aye?~
+@1120102 = ~You have been looking at me for quite some time now.~
+@1120103 = ~I be thinkin'.~
+@1120104 = ~That's unforeseen.~
+@1120105 = ~Ye said ye can nah be paladin.~
+@1120106 = ~Indeed. I cannot.~
+@1120107 = ~Why so?~
+@1120108 = ~Well, the gods...~
+@1120109 = ~Ah, 'em. Then tell me, me matey. Can halflings be druids?~
+@1120110 = ~No. I don't think they can.~
+@1120111 = ~Yet there was one, back in the Dragoncoast. Whole party o' halflings, 'tis. Called "heroes o' Westgate".~
+@1120112 = ~It must be just a legend.~
+@1120113 = ~Mayhaps. Mayhaps.~
+
+
+@1130000 = ~Ahoy, lass. Care fer a draught?~
+@1130001 = ~No, but thank you for your offer. I know it's important to you.~
+@1130002 = ~Wha'?~
+@1130003 = ~I mean... you drink a lot and not just common liquors. I don't think you're a noble-born. You drink like... a person who knows how it is not to have anything to drink.~
+@1130004 = ~*gulp*~
+@1130005 = ~And even you becoming a pirate...~
+@1130006 = ~Avast, lass. Avast.~
+
+@1130100 = ~Shithri?~
+@1130101 = ~*gulp*~
+@1130102 = ~Shithri. Please, talk to me. You haven't spoken a word since... since then.~
+@1130103 = ~I was just trying to say that the class system...~
+@1130104 = ~Ye betta nah look down yer nose on I. Yarrr.~
+@1130105 = ~I don't! Shithri, I...~
+@1130106 = ~Listen, ye fake, spoiled wench. Listen well 'cause I nah repeat meself.~
+@1130107 = ~Me mother be proud orc o' Zentil Keep. Me uncle be soldier under general Vrakk.~
+@1130108 = ~I be pirate. Aye, I be! I be pillagin'. I be killin' dozens. I be starvin' on the sea.~
+@1130109 = ~Don't ye dare lie that it be all 'cause o' me birth. I CHOSE this life.~
+@1130110 = ~Now begone. I need a drink.~
+
+
+@1140000 = ~I prefer you this way.~
+@1140001 = ~Wha' way?~
+@1140002 = ~Not singing shanties when you're near me.~
+
+@1140100 = ~I hear ye once be in the army, me hearty.~
+@1140101 = ~Indeed, I was.~
+@1140102 = ~Ye surely did many an honor t' yer country, yarrr.~
+@1140103 = ~I doubt that. I wasn't a front-fighter, but a scout.~
+@1140104 = ~Did ye emerge victorious?~
+@1140105 = ~Well, I'm alive.~
+@1140106 = ~Then ye did many an honor to yer country, yarrr.~
+@1140107 = ~*sight* I suppose I did.~
+
+
+@1150000 = ~Cheer up, pirate princess! Why are you drinking alone this beautiful <DAYNIGHT>?~
+@1150001 = ~Aye, well-spoken. I 'ave nah letter o' marque.~
+@1150002 = ~Would it bring more smiles on your fair face, my beauty?~
+@1150003 = ~Nay. But it may make ye lose interest.~
+@1150004 = ~That glimmer in yer eyes. 'n that fake smile o' yers. I know 'em all too very well. Don't ye run any rigs on I, yarrr.~
+
+
+@1170000 = ~A pirate. One who should be taking whatever she desires, while the world around screams and burns. And yet she doesn't.~
+@1170001 = ~Nay. She jus' ain't doin' it now.~
+@1170002 = ~Why? There is so much more you could do. And be.~
+@1170003 = ~She be doin' what she wants. Bein' what she wants.~
+@1170004 = ~You know it is not the truth.~
+@1170005 = ~Ye better nah learn 'tisn't.~
+
+@1170100 = ~Says I, me matey, that ye be nah jus' carouser, but also quite a slasher.~
+@1170101 = ~It's true that I'm strong. But it's also true that you are weak.~
+@1170102 = ~Natterin' all fancy again, ain't ye?~
+@1170103 = ~You really are. Doubly so for a half-orc, much to my surprise.~
+@1170104 = ~Ye worship the Leg-Breaker or wha'? Hope ye know he pays his mother more respect than t' his father.~
+@1170105 = ~Don't try to educate me on orcish gods, lass. I serve not them, but my patron.~
+@1170106 = ~Don't try to educate me on orcish gods, lass. I serve not them, but my patron.~
+@1170107 = ~Don't try to educate me on orcish gods, lass. I serve not them. Them nor anyone.~
+@1170108 = ~Foolish.~
+@1170109 = ~We will see.~
+
+@1170200 = ~I must admit I see some... potential in you.~
+@1170201 = ~Oh do ye? Or be it jus' yer patron who does?~
+@1170202 = ~Oh do ye? Or be it jus' yer patron who does?~
+@1170203 = ~Oh do ye?~
+@1170204 = ~It is of no concern to him.~
+@1170205 = ~It is of no concern to her.~
+@1170206 = ~You were betrayed too.~
+@1170207 = ~...~
+@1170208 = ~Shall I continue?~
+@1170209 = ~Why ye suddenly care?~
+@1170210 = ~I... I do not. I do not.~
+@1170211 = ~*gulp* Now ye say "I find ye useful". Or somethin' o' the kind.~
+@1170212 = ~Begone!~
+@1170213 = ~As ye wish, me matey. As ye wish.~
+
+
+@1180000 = ~Ahoy, me beauty!~
+@1180001 = ~How do you do, Shithri.~
+@1180002 = ~Would ye care fer a glass o' wine, m'lady?~
+@1180003 = ~I'm a vampire. I can't drink wine.~
+@1180004 = ~Even the blood wine?!~
+@1180005 = ~Sadly, no.~
+@1180006 = ~Wha' be t' life if ye can't drink?~
+@1180007 = ~"Life"...~
+
+@1180100 = ~Ahoy, me beauty!~
+@1180101 = ~What is it, buccaneer?~
+@1180102 = ~I be curious: are ye from Chult?~
+@1180103 = ~I am. Why?~
+@1180104 = ~I be dyin' fer tales o' it!~
+@1180105 = ~Better don't. Death is not as romantic as you may imagine it.~
+
+
+@1190000 = ~Take this.~
+@1190001 = ~Growl.~
+@1190002 = ~'n that one too. Careful nah t' stir it too much.~
+@1190003 = ~Snuffle growl.~
+@1190004 = ~No prey, no pay, me matey. Ye doin' great.~
+@1190005 = ~Stop this at once! Wilson is no mule!~
+@1190006 = ~He seems to do surprisingly well, for a bear of such gentle nature...~
+@1190007 = ~Wilson? Mind taking my stuff too?~
+@1190010 = ~Growl, growl!~
+@1190011 = ~Oh does she? How does one pay a bear though?~
+@1190012 = ~I'm sure I can pay you more than she does.~
+@1190013 = ~Fine then. Do as you wish, Wilson.~
+@1190014 = ~Roar growl!~
+@1190015 = ~Ale, is it? Hmm. Who would have thought.~
+@1190016 = ~Very well then.~
+@1190020 = ~He has good taste fer it too.~
+@1190021 = ~Me matey. Less growlin' more carryin'.~
+@1190022 = ~Growl, roar!~
+@1190023 = ~I see you must have a very high opinion of her. Very well then.~
+@1190024 = ~May even go on account, he may.~
+@1190025 = ~Wilson? A pirate? You're joking, right?~
+@1190026 = ~I never really thought about it, but... I think you may be right.~
+@1190027 = ~Surely he could. He's a bear of many talents.~
+@1190030 = ~Snuffle. Roar. ROAR!~
+@1190031 = ~I'm sorry, Wilson. I didn't know that's how you feel.~
+@1190032 = ~Well, I'll see you try. Maybe you will surprise me one day.~
+@1190033 = ~I think that's just not for bears. I mean: a bear at full sea? No sir. That's just how things are.~
+@1190034 = ~Snort. Snort. Snuffle.~
+@1190035 = ~Roar, growl growl.~
+@1190036 = ~Snuffle. Roar.~
+@1190037 = ~Roar.~
+@1190040 = ~Snort roar.~
+
+
+
+@1900000 = ~Boo says he's quite fond of this company. And so is Minsc!~
+@1900001 = ~Har har! Ne'er thought I'd agree with that rodent o' yers, an' here we are!~
+@1900002 = ~Uh. Fine, fine, Shithri. Don't give me that look... Hamster. With that hamster of yers.~
+@1900003 = ~Boo says...~
+@1900004 = ~Aye, Boo! Wise words!~
+@1900005 = ~*gulp* Looks quite good with that mug o' ale, I gotta admit.~
+@1900006 = ~Oh, I always knew even you must realise his greatness! He may be small, but his body is packed with goodness!~
+@1900007 = ~Yeah, sure... Pour me some more, half-orc. I be needin' it.~

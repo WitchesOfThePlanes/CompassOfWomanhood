@@ -1,0 +1,227 @@
+//
+// Shithri - script for SoA
+//
+
+// initial talk
+IF
+  Detect([PC])
+  Range(LastSeenBy(Myself),15)
+  NumberOfTimesTalkedTo(0)
+  Global("Shithri_SeaMan_Initial","AR0300",0) // Sea Docks
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    StartDialogueNoSet(LastSeenBy(Myself))
+    SetInterrupt(TRUE)
+END
+
+
+//
+// Special traits o' this bucko
+//
+
+// At level 10 - extra 1/2 attack
+IF
+  InParty(Myself)
+  LevelGT(Myself,9)
+  Global("6W#ShithriGotHalfAttackBonus","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("6W#ShithriGotHalfAttackBonus","GLOBAL",1)
+    ReallyForceSpellDeadRES("6W#SHAB",Myself)
+    Continue()
+END
+
+
+//
+// Dialogues
+//
+
+// Shithri must actually get into Cernd's house during his plot...
+IF
+  AreaCheck("AR0708")
+  Global("CerndBeggar","GLOBAL",1)
+  Global("6W#Shithri_Cernd_House","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("6W#Shithri_Cernd_House","GLOBAL",1)
+END
+
+// ...to get angry when he's nonchalant later on.
+IF
+  IfValidForPartyDialogue("6WSHITHRI")
+  IfValidForPartyDialogue("Cernd")
+  See("Cernd")
+  Global("6W#Shithri_Cernd_House","GLOBAL",1)
+  Global("CerndBeggar","GLOBAL",2)
+  // easiest way to make sure it won't trigger after the whole thing is done
+  !Global("CerndSpawnAfterBabyDelivered","GLOBAL",2)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    Wait(1)
+    MoveToObject("Cernd")
+    SetGlobal("6W#Shithri_Cernd_House","GLOBAL",3)
+    StartDialogNoSet("Cernd")
+    SetInterrupt(TRUE)
+END
+
+// After Cernd's baby's mission is done, Shithri comes back to her senses
+// and apologizes.
+IF
+  IfValidForPartyDialogue("6WSHITHRI")
+  IfValidForPartyDialogue("Cernd")
+  See("Cernd")
+  Global("6W#Shithri_Cernd_House","GLOBAL",4)
+  Global("CerndSpawnAfterBabyDelivered","GLOBAL",2)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    Wait(1)
+    MoveToObject("Cernd")
+    SetGlobal("6W#Shithri_Cernd_House","GLOBAL",5)
+    StartDialogNoSet("Cernd")
+    SetInterrupt(TRUE)
+END
+
+// If not romancing Neera, but getting really close with Haer'Dalis,
+// Shithri will show her bisexual side.
+//
+// Stop complaining. Everyone knows pirates are bisexual.
+IF
+  !Global("6W#Shithri_Neera_romance","GLOBAL",1)
+  !Global("6W#Shithri_Neera_romance","GLOBAL",2)
+  Global("6W#Shithri_Haerdalis_friend","GLOBAL",2)
+  Global("6W#Shithri_men","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("6W#Shithri_men","GLOBAL",1)
+END
+
+
+// Shithri will react to Lavok's death almost immediately after Valygar's speech
+// (not via banter, which would probably take longer)
+IF
+  CombatCounter(0)
+  Global("LavokDead","GLOBAL",1)
+  Global("6W#Shithri_Valygar_lavok","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    Wait(1)
+    MoveToObject("Valygar")
+    SetGlobal("6W#Shithri_Valygar_lavok","GLOBAL",1)
+    StartDialogNoSet("Valygar")
+    SetInterrupt(TRUE)
+END
+
+
+
+
+//
+// Adjust XP
+//
+
+IF
+  Global("BD_JOINXP","LOCALS",0)
+  InParty(Myself)
+  XPGT(Player1,1249999)
+  XPLT(Myself,1250000)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("BD_JOINXP","LOCALS",1)
+    ChangeStat(Myself,XP,1250000,SET)
+    SetInterrupt(TRUE)
+END
+
+IF
+  Global("BD_JOINXP","LOCALS",0)
+  InParty(Myself)
+  XPGT(Player1,999999)
+  XPLT(Myself,1000000)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("BD_JOINXP","LOCALS",1)
+    ChangeStat(Myself,XP,1000000,SET)
+    SetInterrupt(TRUE)
+END
+
+IF
+  Global("BD_JOINXP","LOCALS",0)
+  InParty(Myself)
+  XPGT(Player1,749999)
+  XPLT(Myself,750000)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("BD_JOINXP","LOCALS",1)
+    ChangeStat(Myself,XP,750000,SET)
+    SetInterrupt(TRUE)
+END
+
+IF
+  Global("BD_JOINXP","LOCALS",0)
+  InParty(Myself)
+  XPGT(Player1,499999)
+  XPLT(Myself,500000)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("BD_JOINXP","LOCALS",1)
+    ChangeStat(Myself,XP,500000,SET)
+    SetInterrupt(TRUE)
+END
+
+IF
+  Global("BD_JOINXP","LOCALS",0)
+  InParty(Myself)
+  XPGT(Player1,249999)
+  XPLT(Myself,250000)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("BD_JOINXP","LOCALS",1)
+    ChangeStat(Myself,XP,250000,SET)
+    SetInterrupt(TRUE)
+END
+
+IF
+  Global("BD_JOINXP","LOCALS",0)
+  InParty(Myself)
+  XPGT(Player1,124999)
+  XPLT(Myself,125000)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("BD_JOINXP","LOCALS",1)
+    ChangeStat(Myself,XP,125000,SET)
+    SetInterrupt(TRUE)
+END
+
+IF
+  Global("BD_JOINXP","LOCALS",0)
+  InParty(Myself)
+  XPLT(Player1,89001)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("BD_JOINXP","LOCALS",1)
+    SetInterrupt(TRUE)
+END
+
+
+//
+// Story mode
+//
+
+IF
+  !InParty(Myself)
+  CheckSpellState(Myself,STORY_MODE)
+THEN
+  RESPONSE #100
+    ReallyForceSpellDeadRES("OHSMODE3",Myself)
+    Continue()
+END
+

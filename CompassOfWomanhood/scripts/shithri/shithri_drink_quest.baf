@@ -1,0 +1,81 @@
+//
+// Shithri SoA drink quest
+//
+// Shithri suggests you to ask for bottled liquors in taverns and inns.
+// Later on, after you get enough bottles, an old seaman appears
+// to challenge you to a competition.
+//
+// Prove not to be a mere land lubber! Taste the adventure!
+//
+
+// Shithri must be with you in a tavern or inn...
+IF
+  Global("6W#ShithriDrinksStart","GLOBAL",0)
+  // SoA-only
+  GlobalLT("Chapter","GLOBAL",8)
+  InParty("6WSHITHRI")
+  OR(11)
+    AreaCheck("AR0021")  // Crooked Crane 1st Floor
+    AreaCheck("AR0313")  // Sea Bounty Tavern 1st Floor
+    AreaCheck("AR0406")  // Copper Coronet
+    AreaCheck("AR0509")  // Five Flagons Inn 1st Floor
+    AreaCheck("AR0513")  // Calbor's Inn at Bridge District 1st Floor
+    AreaCheck("AR0522")  // Five Flagons Inn (Stronghold)
+    AreaCheck("AR0704")  // Mithrest Inn
+    AreaCheck("AR0709")  // Den of the Seven Vales 1st Floor
+    AreaCheck("AR1105")  // Imnesvale Inn
+    AreaCheck("AR1602")  // Brynnlaw's Inn
+    AreaCheck("AR2010")  // Trademeet's Inn
+THEN
+  RESPONSE #100
+    SetGlobal("6W#ShithriDrinksStart","GLOBAL",1)
+END
+
+// ...so that after you leave...
+IF
+  Global("6W#ShithriDrinksStart","GLOBAL",1)
+  InParty("6WSHITHRI")
+  !AreaCheck("AR0021")  // Crooked Crane 1st Floor
+  !AreaCheck("AR0313")  // Sea Bounty Tavern 1st Floor
+  !AreaCheck("AR0406")  // Copper Coronet
+  !AreaCheck("AR0509")  // Five Flagons Inn 1st Floor
+  !AreaCheck("AR0513")  // Calbor's Inn at Bridge District 1st Floor
+  !AreaCheck("AR0522")  // Five Flagons Inn (Stronghold)
+  !AreaCheck("AR0704")  // Mithrest Inn
+  !AreaCheck("AR0709")  // Den of the Seven Vales 1st Floor
+  !AreaCheck("AR1105")  // Imnesvale Inn
+  !AreaCheck("AR1602")  // Brynnlaw's Inn
+  !AreaCheck("AR2010")  // Trademeet's Inn
+THEN
+  RESPONSE #100
+    SetGlobal("6W#ShithriDrinksStart","GLOBAL",2)
+    SetGlobalTimer("6W#ShithriDrinksStartTimer","GLOBAL",ONE_HOUR)
+END
+
+// ...and come to an inn or tavern again, a bit later - she can offer her quest.
+IF
+  !GlobalTimerNotExpired("6W#ShithriDrinksStartTimer","GLOBAL")
+  Global("6W#ShithriDrinksStart","GLOBAL",2)
+  InParty("6WSHITHRI")
+  OR(11)
+    AreaCheck("AR0021")  // Crooked Crane 1st Floor
+    AreaCheck("AR0313")  // Sea Bounty Tavern 1st Floor
+    AreaCheck("AR0406")  // Copper Coronet
+    AreaCheck("AR0509")  // Five Flagons Inn 1st Floor
+    AreaCheck("AR0513")  // Calbor's Inn at Bridge District 1st Floor
+    AreaCheck("AR0522")  // Five Flagons Inn (Stronghold)
+    AreaCheck("AR0704")  // Mithrest Inn
+    AreaCheck("AR0709")  // Den of the Seven Vales 1st Floor
+    AreaCheck("AR1105")  // Imnesvale Inn
+    AreaCheck("AR1602")  // Brynnlaw's Inn
+    AreaCheck("AR2010")  // Trademeet's Inn
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("6W#ShithriDrinksStart","GLOBAL",3)
+    Wait(1)
+    // Shithri's drinks quest is still work in progress
+    //StartDialogNoSet(Player1)
+    SetInterrupt(TRUE)
+END
+

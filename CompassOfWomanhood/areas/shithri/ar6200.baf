@@ -1,0 +1,53 @@
+//
+// Shithri epilogues
+//
+
+// No Neera romance, visiting Chult, pirating freely
+IF
+  Global("StartEndBios","AR6200",1)
+  InParty("Shithri")
+  GlobalLT("6W#Shithri_NotChult","GLOBAL",3)
+  !Global("6W#Shithri_Neera_Romance","GLOBAL",2)
+  Global("6W#ShithriBio","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("6W#ShithriBio","GLOBAL",1)
+    TextScreen("6W_shithri1")
+END
+
+// No Neera romance, coming back to the Moonsea, family and patriotic stuff
+IF
+  Global("StartEndBios","AR6200",1)
+  InParty("Shithri")
+  Global("6W#Shithri_NotChult","GLOBAL",3)
+  !Global("6W#Shithri_Neera_Romance","GLOBAL",2)
+  Global("6W#ShithriBio","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("6W#ShithriBio","GLOBAL",1)
+    TextScreen("6W_shithri2")
+END
+
+// Neera romance, coming to Moonsea together
+IF
+  Global("StartEndBios","AR6200",1)
+  InParty("Shithri")
+  Global("6W#Shithri_Neera_Romance","GLOBAL",2)
+  Global("6W#ShithriBio","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("6W#ShithriBio","GLOBAL",1)
+    TextScreen("6W_shithri3")
+END
+
+// Neera's part of the romance
+IF
+  Global("StartEndBios","AR6200",1)
+  InParty("Neera")
+  Global("6W#Shithri_Neera_Romance","GLOBAL",2)
+  Global("NeeraBio","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("NeeraBio","GLOBAL",1)
+    TextScreen("6W_neera3")
+END

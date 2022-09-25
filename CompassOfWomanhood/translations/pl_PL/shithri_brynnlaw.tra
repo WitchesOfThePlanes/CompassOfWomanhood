@@ -1,0 +1,242 @@
+@1000000 = ~Czyli nie płynieta na Brynnlaw?~ [6WSHI00]
+@1000001 = ~*czka* Mówiłem! Na północ płyniem, dziewczyno.~
+@1000002 = ~Amn ma kolonie w Maztice a wy płynieta na północ?~
+@1000003 = ~Słuchaj, pływam gdzie mi kapitam każe. Jeszczem nigdy źle na tym wyszedł. *czka*~
+@1000004 = ~*łyk* Co za kwindas...~
+@1000005 = ~Hej, ty tam! Znasz ty jaki statek co płynie na Brynnlaw?~ [6WSHI01]
+@1000006 = ~Nie. Nie bardzo.~
+@1000007 = ~Brynnlaw? Nie słyszałem.~ ~Brynnlaw? Nie słyszałam.~
+@1000008 = ~A ty to kto?~
+@1000009 = ~A co ja jestem, biuro kontroli rejsów czy co?~
+@1000010 = ~Huh. Nikt „nie wie”. Żem nie myślała że to taki problem.~
+@1000011 = ~Wyspa Piratów, mówio na nio. Abo wariatkowo, do niedawna. Tak żem słyszała.~
+@1000012 = ~Wariatkowo? Dlaczego?~
+@1000013 = ~Przykro mi, nie słyszałem.~ ~Przykro mi, nie słyszałam.~
+@1000014 = ~No... świrnieutych świrów dom, mówio. Magów co im odbiło i inne czarowaństwa, o ta. Takie wynzienie jakby.~
+@1000015 = ~Masz na myśli Czarowięzy?~
+@1000016 = ~Ta! Czarowinzy. To znasz te wyspe, ta?~
+@1000017 = ~Sam próbuję się tam dostać.~ ~Sama próbuję się tam dostać.~
+@1000018 = ~Nie, nadal mi się nie kojarzy.~
+@1000019 = ~Dostać? Chyba przeszmuglować. Eh. Nieważne. Powiedz mi jeno czy i mie zabierzecie.~
+@1000020 = ~Pewnie, witamy na pokładzie. O ile pomożesz uzbierać na opłaty, oczywiście.~
+@1000021 = ~Raczej nie.~
+@1000022 = ~A ty to kto?~
+@1000023 = ~Nieźle jak na szczura loundowego, o ta! Prowadź, „kapitanie”.~
+@1000024 = ~Jezdem Shithri.~
+@1000025 = ~Świetnie. Ja jestem <CHARNAME>. Witamy na pokładzie, Shithri.~
+@1000026 = ~...iii?~
+@1000027 = ~Huh. Bardzoś ostrożny, nie? Dobra, powiem ci.~ ~Huh. Bardzoś ostrożna, nie? Dobra, powiem ci.~
+@1000028 = ~Żem jes piratko. To chce na Piracko Wyspe. Trzyma sie kupy?~
+@1000029 = ~Zdecydowanie. Dzięki za szczerość, witaj na pokładzie!~
+@1000030 = ~Piratka? Podziękuję.~
+@1000031 = ~Masz dziwną wymowę. Jesteś nie stąd, prawda?~
+@1000032 = ~Ta. Zentyjko jezdem.~
+@1000033 = ~Zent? Wiedziałam, że skądś kojarzę ten akcent...~
+@1000034 = ~Twierdza Zenthil to nienajlepsze miejsce na bycie pół-orkiem.~
+@1000035 = ~Sie zdecyduj. Bierzeta mie czy nie?~
+@1000036 = ~Pewnie. Dzięki za szczerość, witaj na pokładzie!~
+@1000037 = ~Zentyjska piratka? Podziękuję.~
+@1000038 = ~Co za kwindas...~
+@1000039 = ~Co cie obchodzi jak mie na imie jak nie znasz statku na Brynnlaw. To znasz czy nie?~
+@1000040 = ~Ahoj. Znasz ty jaki statek co płynie na Brynnlaw?~
+
+@2000000 = ~Ha! A oto i Brynnlaw! Dzinki, kapitanie!~
+@2000001 = ~A więc... opuszczasz drużynę?~
+@2000002 = ~Cała przyjemność po mojej stronie! Cieszę się, że mogłem ci pomóc.~ ~Cała przyjemność po mojej stronie! Cieszę się, że mogłam ci pomóc.~
+@2000003 = ~Wreszcie! Koniec z tymi... ekhm. „Piosenkami”.~
+@2000010 = ~Ta galernica ma tu pewno sprawe do załatwienia. Arrr.~
+@2000011 = ~Może mógłbym ci pomóc?~ ~Może mogłabym ci pomóc?~
+@2000012 = ~Dobrze. Jeśli jednak później zdecydowałabyś się znów do mnie dołączyć - nie krępuj się.~
+@2000013 = ~A zatem to pożegnanie.~
+@2000030 = ~Har har! Ta, kapitanie, stary kwindasie. Żadnych wyncej szant.~
+@2000040 = ~Huh. A w sumie to byś mógł. Szukam ja chopa co go zwo - „Król Piratów”.~ ~Huh. A w sumie to byś i mogła. Szukam ja chopa co go zwo - „Król Piratów”.~
+@2000041 = ~Zatem chcesz audiencji u króla?~
+@2000042 = ~Nie wydaje mi się, żebym mógł ci z tym pomóc.~ ~Nie wydaje mi się, żebym mogła ci z tym pomóc.~
+@2000050 = ~Nie głupi, ten twój pomysł. *łyk* Przyjdźże te galernice spotkać jak już wyjdziesz z tego wariatkowa.~
+@2000060 = ~Trudno. No to ide.~
+@2000061 = ~Czy przyłączyłabyś się znów do mnie jak już oboje załatwimy swoje sprawy?~ ~Czy przyłączyłabyś się znów do mnie jak już obie załatwimy swoje sprawy?~
+@2000062 = ~Żegnaj więc!~
+@2000070 = ~Można i tak to nazwać, ta.~
+@2000071 = ~Dobrze. Pomogę ci.~
+@2000072 = ~No i dobrze! Kurs na „Króla Piratów”!~
+@2000080 = ~Nigdy nie mów „żegnaj”, kapitanie. *łyk*~
+@2000090 = ~Cóż, <CHARNAME>... też nie jestem zbyt dobra w pożegnaniach. Więc, yyy, dzięki za wszystko co dla mnie zrobiłeś. Dla nas? W każdym razie... na razie!~ ~Cóż, <CHARNAME>... też nie jestem zbyt dobra w pożegnaniach. Więc, yyy, dzięki za wszystko co dla mnie zrobiłaś. Dla nas? W każdym razie... na razie!~
+@2000091 = ~Czekaj, Shithri! Pójdę z tobą.~
+@2000092 = ~Nie trza. Lepij przypilnuj kapitana, coby po te galernice wrócił, har har!~ ~Nie trza. Lepij przypilnuj kapitan, coby po te galernice wróciła, har har!~
+@2000093 = ~Ja... co?~
+@2000094 = ~*wzdycha* Dobrze, masz rację. <CHARNAME> potrzebuje kogoś na kim można polegać kiedy ciebie nie będzie.~
+@2000095 = ~Po prostu... wróć bezpieczna.~
+@2000096 = ~*szczerzy się* Masz tej galernicy słowo.~
+
+@2000100 = ~Ho! Za tymi drzwiami je ten cały „Król Piratów”.~
+@2000101 = ~*łyk* *łyk* *łyk* Ha...~
+@2000102 = ~Ta. Jem gotowa.~
+@2000103 = ~Nie. *łyk* *łyk* Ha... Tera jem gotowa.~
+@2000110 = ~Co jes? Niech mie kule bijo, żem je trzeźwa jak makrela!~
+@2000111 = ~Kapitanie, co do...~
+@2000112 = ~Nie możesz iść tak pijana rozmawiać z królem, nie?~
+@2000113 = ~Efekty uboczne czarów leczniczych.~
+@2000120 = ~Hmm. Może i racja. Dzienki, kapitanie!~
+@2000130 = ~Ajjj, mógł żeś te galernice uprzedzić, oj tak.~ ~Ajjj, mogła żeś chociaż te galernice uprzedzić, oj tak.~
+@2000131 = ~*łyk* *łyk* *łyk* Ha... Chwilke.~
+@2000132 = ~*łyk* *łyk* Ha... Gotowa!~
+
+@2000300 = ~Ahoj, ty stary psie morski!~
+@2000301 = ~Czy my się znamy?~
+@2000302 = ~Znamy? Czy my sie znamy? Ha, lepij cobyś wiedział, wilku. *łyk* No i co? Jesteś tu taki, pindrzony jak ostatni szczór loudowy a te typy tam o bedo mówić, żeś jes Król Piratów, har har! To dobre!~
+@2000303 = ~Jesteś pijana, dziewczyno. Wyjdź stąd.~
+@2000304 = ~Cichooo! Cicho! Ty. Ty myślisz, że ty lepszy ode mie, ha? Huh! Siedzisz ty se w tym swoim śmiesznym biureczku, nosisz ty te swoje badechołzy. Ale ta galernica sie tak łatwo nie nabierze! Nie nie!~
+@2000305 = ~Czy mógłbyś powiedzieć swojej przyjaciółce żeby przestała wylewać na mnie te pomyje?~ ~Czy mogłabyś powiedzieć swojej przyjaciółce żeby przestała wylewać na mnie te pomyje?~
+@2000306 = ~Pomyje? POMYJE?! No i patrzaj, nawet nie znasz ty takiego echcik grogu! Wiesz ty co? Wiesz ty co?~
+@2000307 = ~To ja bynde Królowo Piratów!~
+@2000308 = ~Tym kim będziesz to kolejną szaloną kobietą wtrąconą do przytułku. Wyjdź. Stąd. TERAZ.~
+@2000310 = ~Czy tak się zwracasz do swojej królowej?! Na kolana przed majestatem, głupcze!~
+@2000311 = ~Pragnę dodać, że ja jestem dzieckiem boga.~
+@2000312 = ~Bardzo mi przykro za tę sytuację, ale naprawdę muszę się dostać do Czarowięzów.~
+@2000320 = ~Widzę, że jest i więcej chorych. Zabierz mi ich wszystkich sprzed oczu. Na bogów, nowa jedwabna koszula, już poplamiona...~
+@2000321 = ~Oh, nie martw się. W Czarowięzach jest mnóstwo królowych i bogów. Zabierz mi ich wszystkich sprzed oczu. Na bogów, nowa jedwabna koszula, już poplamiona...~
+
+@2000400 = ~Moja przyjaciółka Shithri chciała z tobą pogadać.~
+@2000401 = ~Ahoj.~
+@2000402 = ~Czy my się znamy?~
+@2000403 = ~*szczerzy się* Nie. Raczy nie. Ale to nieważne. Jezdem tu coby ci rzec dwie rzeczy.~
+@2000404 = ~Pierwsza. Jak by cie te wszystkie typy nie zwały - dla tej galernicy żaden z ciebie „król”. Nawet i za tysiouc lat nie uznam takiego pół-loudowego za swojego króla.~
+@2000405 = ~Druga. Ja, Shithri z Twerdzy Zentyla, zostane Królowo Piratów.~
+@2000406 = ~To je wszystko.~
+@2000407 = ~Jestem pod umiarkowanym wrażeniem twoich usilnych prób mówienia czystym Wspólnym. Co do treści - myślisz, że ilu piratów już mi deklarowało dokładnie to samo? Nie dbam o to czy nazwiesz mnie „swoim królem”. Interesuje mnie tylko faktyczna władza.~
+@2000408 = ~Dlatego nigdy nie byndziesz królem.~
+@2000409 = ~Tylko po to tu przyszliście?~
+@2000410 = ~Tak. To wszystko.~
+
+@2000500 = ~Hej, kapitanie! Nie ma głupich.~
+@2000501 = ~Żeś obiecał tej galernicy pomóc coby pogadała z Królem Piratów. A my tera - w twoim wariatkowie.~ ~Żeś obiecała tej galernicy pomoc coby pogadała z Królem Piratów. A my tera - w twoim wariatkowie.~
+@2000502 = ~Cóż, zamierzałem później się wrócić...~ ~Cóż, zamierzałam później się wrócić...~
+@2000503 = ~Zakładam, że wiesz już, że jestem tu po Imoen. Nie wydaje ci się, że to ważniejsze niż twoja „sprawa” z Królem Piratów?~
+@2000504 = ~Jestem tu dla zemsty na Irenicusie. O ile ten Król Piratów nie torturował cię do granic szaleństwa - to wydaje mi się, że moja sprawa jest ważniejsza niż twoja.~
+@2000505 = ~Przepraszam. Tylko tyle mogę rzec.~
+@2000520 = ~To mogłeś mie czasu nie marnować, arrr. To se ide.~
+@2000530 = ~No to rób se swojo sprawe, a ja - swojo. No to se ide.~
+@2000540 = ~A co mie to obchodzi? Ty rób se swojo sprawe, a ja swojo. No to se ide.~
+
+@2000700 = ~Hej, kompanie... ejże, jezdeś ty tam?~
+@2000701 = ~He? T-tso? Szyri? Har har, mordeeeczko! *czka* Moja ty pikna mordeeeczko!~
+@2000702 = ~Ej, weź ty sie w garść, kompanie! Nie miał żeś z tej wyspy wyleźć?~
+@2000710 = ~*czka* Z tym... tym... kapitanem twoim?~ ~*czka* Z tą... tą... twoją kapitan?~
+@2000711 = ~Ta! Wyłazisz stoud razem z nim i to galernico, nie?~ ~Ta! Wyłazisz stoud razem z nio i to galernico, nie?~
+@2000720 = ~*czka* Z tą... pikną, pikną elficką panią twoją?~
+@2000721 = ~Pół-elficką. I żadna „moja pani”. Jes tyko...~
+@2000722 = ~Tyko przyjaciółko.~
+@2000730 = ~*czka* Z tą... pikną, pikną elficką panią twoją?~
+@2000731 = ~*szczerzy się* ...pół-elficką.~
+@2000740 = ~zzzZZzzz...~
+@2000741 = ~Ejże, kompanie! Mój kompanie! Niech to... *łyk*~
+
+@2000800 = ~Ah, kapitan! Ahoj!~
+@2000810 = ~...i twoja „pół-elficka pani”. Cześć.~
+@2000811 = ~*łyk* Mówiłam „przyjaciółka”.~
+@2000812 = ~Cóż. Dzień dobry, Neero.~
+@2000820 = ~No, kapitanie. Dotrzymał żeś słowa.~ ~No, kapitanie. Żeś dotrzymała słowa.~
+@2000821 = ~A jakże! Przyłącz się znów do mnie.~
+@2000822 = ~W zasadzie... chciałem się pożegnać.~ ~W zasadzie... chciałam się pożegnać.~
+@2000830 = ~Rozkaz, kapitanie! Chyntnie!~
+@2000831 = ~Ta, żem słyszała żeś tej bosmance fuche załatwił, har har. Dobrze kombinujesz.~ ~Ta, żem słyszała żeś tej bosmance fuche załatwiła, har har. Dobrze kombinujesz.~
+@2000840 = ~Huh. Jak se chcesz. *łyk*~
+@2000841 = ~Dzięki za postawienie sprawy jasno, <CHARNAME>. Właściwie dotrzymałeś słowa... tak jakby. No. To cześć!~ ~Dzięki za postawienie sprawy jasno, <CHARNAME>. Właściwie dotrzymałaś słowa... tak jakby. No. To cześć!~
+
+
+@2010000 = ~Te, korsarz. Ta galernica ci nie wierzy ani kapinke. Tamten mag to chociaż tyla nie faflónił.~
+
+@2010100 = ~Kapitanie, ten psubrat kapke racji ma. No i na morzu ta bosmanka może mieć na niego oko.~
+@2010101 = ~Mam jeden warunek: moja przyjaciółka Shithri będzie bosmanką na tym statku.~
+@2010102 = ~Ta piratka? Mogę się zgodzić, to dobra żeglarka.~
+
+@2010200 = ~Na dodatek sprzymierzyłeś się z tą samozwańczą „piracką królową”, jak widzę!~
+
+@2010300 = ~Zrzucać cumy! Wypływamy! Kurs na kontynent! Shithri, żagle!~ [PPSAEM27]
+
+@2010400 = ~Ty psie, żem mogła i cały dzień na pokład patrzeć a bym i tak przegapiła...~
+
+
+
+@3000000 = ~Nie masz pojęcia, jak często to słyszę. Oczywiście, że jesteś tu na leczeniu. W końcu mamy tu już wielu samozwańczych królów, królowych i bogów. Kiedyś nawet był tu jeden Elminster.~
+
+@3000100 = ~Hej, kompanie, posłuchaj no... Jak się nazywa ryba co ma ucha?~
+@3000101 = ~Sam nie wiem, ale pewnikiem nie śledź! Har har, ależ z ciebie jest szczur lądowy!~
+@3000102 = ~Nie wiem, ale pewno nie śledź!~
+@3000103 = ~Har har! Widzę, żeś jes zacna galernica, kompanko!~
+
+@3000200 = ~O dorsze, kocham jo ja!~
+
+@3000300 = ~...Wszystkie dookoła!~
+
+
+
+@9000000 = ~Dostarczenie Shithri na Brynnlaw
+
+Spotkałem w dokach pół-orczą piratkę o imieniu Shithri. Szukała statku, który dostarczyłby ją na Brynnlaw - tę samą wyspę, na której znajdują się Czarowięzy, jak się okazuje. Zgodziłem się by się do mnie przyłączyła, a dostanie się tam razem ze mną.~ ~Dostarczenie Shithri na Brynnlaw
+
+Spotkałam w dokach pół-orczą piratkę o imieniu Shithri. Szukała statku, który dostarczyłby ją na Brynnlaw - tę samą wyspę, na której znajdują się Czarowięzy, jak się okazuje. Zgodziłam się by się do mnie przyłączyła, a dostanie się tam razem ze mną.~
+
+
+@9000001 = ~Dostarczenie Shithri na Brynnlaw
+
+Spotkałem w dokach pół-orczą piratkę o imieniu Shithri. Szukała statku, który dostarczyłby ją na Brynnlaw.~ ~Dostarczenie Shithri na Brynnlaw
+
+Spotkałam w dokach pół-orczą piratkę o imieniu Shithri. Szukała statku, który dostarczyłby ją na Brynnlaw.~
+
+
+@9000002 = ~Dostarczenie Shithri na Brynnlaw
+
+Udało nam się dotrzeć do wyspy Brynnlaw, celu podróży Shithri. Pomimo czasu spędzonego jako część drużyny, nawet się nie pożegnała.~
+
+
+@9000003 = ~Dostarczenie Shithri na Brynnlaw
+
+Udało nam się dotrzeć do wyspy Brynnlaw, celu podróży Shithri. Wygląda na to, że ma tu jakąś sprawę do załatwienia, ale gdy się z nią upora, może powrócić do drużyny. Obiecałem spotkać się z nią po powrocie z Czarowięzów.~ ~Dostarczenie Shithri na Brynnlaw
+
+Udało nam się dotrzeć do wyspy Brynnlaw, celu podróży Shithri. Wygląda na to, że ma tu jakąś sprawę do załatwienia, ale gdy się z nią upora, może powrócić do drużyny. Obiecałam spotkać się z nią po powrocie z Czarowięzów.~
+
+
+@9000004 = ~Dostarczenie Shithri na Brynnlaw
+
+Udało nam się dotrzeć do wyspy Brynnlaw, celu podróży Shithri. Jak się okazuje, stara się ona o audiencję u samego Króla Piratów. Obiecałem spotkać się z nią po powrocie z Czarowięzów.~ ~Dostarczenie Shithri na Brynnlaw
+
+Udało nam się dotrzeć do wyspy Brynnlaw, celu podróży Shithri. Jak się okazuje, stara się ona o audiencję u samego Króla Piratów. Obiecałam spotkać się z nią po powrocie z Czarowięzów.~
+
+
+@9000005 = ~Dostarczenie Shithri na Brynnlaw
+
+Udało nam się dotrzeć do wyspy Brynnlaw, celu podróży Shithri. Jak się okazuje, stara się ona o audiencję u samego Króla Piratów. Zdecydowałem się jej pomóc.~ ~Dostarczenie Shithri na Brynnlaw
+
+Udało nam się dotrzeć do wyspy Brynnlaw, celu podróży Shithri. Jak się okazuje, stara się ona o audiencję u samego Króla Piratów. Zdecydowałem się jej pomóc.~
+
+
+@9000010 = ~Dostarczenie Shithri na Brynnlaw
+
+Shithri udało się porozmawiać z Pirackim Hersztem Desharikiem. Zadeklarowała mu, że to ona stanie się Królową Piratów. Wygląda na to, że to wszystko co miała mu do przekazania.~
+
+
+@9000011 = ~Dostaję się do przytułku
+
+Pijana i rozbrajająco szczera Shithri była więcej niż wystarczającym powodem by Desharik wtrącił nas do przytułku. Mam tam niezwłocznie trafić, a wtedy dowiem się, co stało się z Imoen i Irenicusem!~
+
+
+@9000012 = ~Dostarczenie Shithri na Brynnlaw
+
+Zgodnie z obietnicą, wróciłem po Shithri. Wygląda na to, że już skończyła swoją „sprawę”.~ ~Dostarczenie Shithri na Brynnlaw
+
+Zgodnie z obietnicą, wróciłam po Shithri. Wygląda na to, że już skończyła swoją „sprawę”.~
+
+
+@9000013 = ~Dostarczenie Shithri na Brynnlaw
+
+Spotkałem się z Shithri by się pożegnać. Pomimo czasu spędzonego jako część drużyny, ona pożegnać się nie chciała.~ ~Dostarczenie Shithri na Brynnlaw
+
+Spotkałam się z Shithri by się pożegnać. Pomimo czasu spędzonego jako część drużyny, ona pożegnać się nie chciała.~
+
+
+@9000020 = ~Dostarczenie Shithri na Brynnlaw
+
+Weszliśmy do przytułku zanim pomogłem Shithri porozmawiać z Królem Piratów. Nie była zbyt zadowolona. Pomimo czasu spędzonego jako część drużyny, nawet się nie pożegnała.~ ~Dostarczenie Shithri na Brynnlaw
+
+Weszliśmy do przytułku zanim pomogłam Shithri porozmawiać z Królem Piratów. Nie była zbyt zadowolona. Pomimo czasu spędzonego jako część drużyny, nawet się nie pożegnała.~

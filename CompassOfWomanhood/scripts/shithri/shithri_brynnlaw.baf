@@ -1,0 +1,198 @@
+//
+// Shithri get-to-Brynnlaw quest scrip
+//
+// Mainly initiating dialogues.
+//
+
+
+//
+// Shithri is finally in Brynnlaw
+//
+
+IF
+  GlobalGT("AsylumPlot","GLOBAL",3) // after talking to Saemon
+  OR(2)
+    Global("ThiefGroup","GLOBAL",2)
+    GlobalGT("AsylumPlot","GLOBAL",4) // after fighting Boddhi's vampires
+  Global("6W#ShithriBrynnlaw","GLOBAL",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("6W#ShithriBrynnlaw","GLOBAL",1)
+    StartDialogueNoSet(Player1)
+    SetInterrupt(TRUE)
+END
+
+
+//
+// Shithri needs some draught before speaking to Pirate King
+//
+
+IF
+  GlobalGT("PirateOpen","GLOBAL",0)
+  Global("6W#ShithriBrynnlawKing","GLOBAL",1)
+  Global("6W#ShithriBrynnlawKingDoor","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("6W#ShithriBrynnlawKingDoor","GLOBAL",1)
+
+    // Starts a timer to know if she naturally sobered-up
+    // or if she was "healed" from intoxication
+    //
+    // Her intoxication has value 100 with sobering-up
+    // by 10 for each 1800 ticks (2 min), so she needs
+    // 9000 ticks (10 min) to fully sober-up.
+    //
+    // Note that 9000 ticks is 30h in-universe.
+    //
+    // There is a timer set in the dialogue.
+
+    StartDialogueNoSet(Player1)
+
+    //TODO: most of banters shouldn't be started if Shithri
+    // is super-drunk, as they would be counter-immersive
+
+    SetInterrupt(TRUE)
+END
+
+//
+// Shithri was "healed" from the intoxication
+//
+IF
+  Global("6W#ShithriBrynnlawDrunk","GLOBAL",1)
+  GlobalTimerNotExpired("6W#ShithriBrynnlawSobering","GLOBAL")
+  CheckStatLT(Myself,50,INTOXICATION)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("6W#ShithriBrynnlawDrunk","GLOBAL",3)
+    StartDialogueNoSet(Player1)
+    SetInterrupt(TRUE)
+END
+
+//
+// Shithri is "healed" from intoxication after resting too
+//
+IF
+  Global("6W#ShithriBrynnlawDrunk","GLOBAL",1)
+  PartyRested()
+THEN
+  RESPONSE #100
+    SetGlobal("6W#ShithriBrynnlawDrunk","GLOBAL",4)
+    ReallyForceSpellRES("6W#DRUNK0", Myself)
+END
+
+//
+// No matter if she did or did not talk to Desharik,
+// if the party is sent to the asylum by Desharik -
+// Shithri sobers up. Maybe they gave her some meds
+// or something?
+//
+// TODO: maybe specify that in the dialogue?
+//
+
+IF
+  Global("PPdeshSend","GLOBAL",1)
+  Global("6W#ShithriBrynnlawDrunk","GLOBAL",1)
+THEN
+  RESPONSE #100
+     SetGlobal("6W#ShithriBrynnlawDrunk","GLOBAL",2)
+     ReallyForceSpellRES("6W#DRUNK0", Myself)
+END
+
+
+//
+// If after Brynnlaw, but didn't go to Desharik with Shithri
+//
+
+IF
+  Global("6W#ShithriBrynnlawKing","GLOBAL",1) // Shithri was promised to see Desharik
+  GlobalGT("AsylumPlot","GLOBAL",11) // ...but got into asylum without seeing him
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("6W#ShithriKing","GLOBAL",3) // Shithri is angry
+    SmallWait(15)
+    StartDialogueNoSet(Player1)
+    SetInterrupt(TRUE)
+END
+
+
+// If the player tries to "hack" by killing her before entering Spellhold
+// and resurrecting her AFTER getting after the Spellhold...
+//
+// ...Shithri will just stay dead.
+//
+// If you've let her drop dead BEFORE Spellhold and ENTERED it with her being
+// dead and didn't raise her for the WHOLE of Spellhold - you don't sound like
+// you care for her that much.
+//
+// If you need an in-universe reason - well, I doubt you think you've been
+// carrying her body around all this time and didn't make it any less
+// ressurectable?
+IF
+  Global("6W#ShithriBrynnlawKing","GLOBAL",1)
+  GlobalGT("AsylumPlot","GLOBAL",50)
+THEN
+  RESPONSE #100
+    SetGlobal("6W#ShithriBrynnlawKing","GLOBAL",3)
+    Kill(Myself)
+    LeaveParty()
+END
+
+
+//
+// Respawn Shithri after Asylum
+//
+IF 
+  GlobalGT("AsylumPlot","GLOBAL",40)
+  Global("6W#ShithriBrynnlawRespawn","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("6W#ShithriBrynnlawRespawn","GLOBAL",1)
+    Activate(Myself)
+END
+
+
+// If Neera is there when Shithri is talking with pirpir01,
+// she can comment on that at the end.
+IF
+  Global("6W#ShithriBrynnlawRespawn","GLOBAL",1)
+  !Dead("pirpir01")
+  InMyArea("pirpir01")
+  Range([PC],20)
+  InMyArea("Neera")
+  Global("6W#ShithriBrynnlawRespawnNeera","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("6W#ShithriBrynnlawRespawnNeera","GLOBAL",1)
+    Continue()
+END
+
+IF
+  Global("6W#ShithriBrynnlawRespawn","GLOBAL",1)
+  !Dead("pirpir01")
+  InMyArea("pirpir01")
+  Range([PC],20)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("6W#ShithriBrynnlawRespawn","GLOBAL",2)
+    Wait(1)
+    StartDialogueNoSet("pirpir01") // Pirate (sitting on a chair)
+    SetInterrupt(TRUE)
+END
+IF
+  Global("6W#ShithriBrynnlawRespawn","GLOBAL",1)
+  OR(2)
+    Dead("pirpir01")
+    !InMyArea("pirpir01")
+  Range([PC],12)
+THEN
+  RESPONSE #100
+    SetGlobal("6W#ShithriBrynnlawRespawn","GLOBAL",2)
+END
+
+

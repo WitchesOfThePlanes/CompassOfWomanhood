@@ -1,0 +1,40 @@
+//
+// Shithri_DORN25 - script for Throne of Bhaal
+// Shithri mod additions
+//
+
+
+// will go fight Shithri
+IF
+  Global("6W#Shithri_Dorn__fight","GLOBAL",1)
+  Global("6W#Shithri_Dorn__fight__ddone","GLOBAL",0)
+  See("6WSHITHRI")
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    MoveToObject("6WSHITHRI")
+
+    FaceObject("6WSHITHRI")
+    SwingOnce()
+
+    SmallWait(15)
+
+    FaceObject("6WSHITHRI")
+    SwingOnce()
+
+    SetGlobal("6W#Shithri_Dorn__fight__ddone","GLOBAL",1)
+    SetInterrupt(TRUE)
+END
+
+// when both are ready, initiate dialog
+IF
+  Global("6W#Shithri_Dorn__fight","GLOBAL",1)
+  Global("6W#Shithri_Dorn__fight__ddone","GLOBAL",1)
+  Global("6W#Shithri_Dorn__fight__sdone","GLOBAL",1)
+  See("6WSHITHRI")
+THEN
+  RESPONSE #100
+    SetGlobal("6W#Shithri_Dorn__fight","GLOBAL",2)
+    StartDialog("bdorn25","6WSHITHRI")
+END
+

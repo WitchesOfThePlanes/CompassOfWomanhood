@@ -1,0 +1,53 @@
+//
+// Shithri-Neera romance scripts in ToB, Neera's part
+//
+
+
+// If Shithri dies while "comitted", Neera cries
+IF
+  Global("6W#ShithriNeeraRomanceActive","GLOBAL",2)
+  Global("6W#ShithriNeeraShithriDead","GLOBAL",0)
+  Dead("6WSHITHRI")
+THEN
+  RESPONSE #100
+    SetGlobal("6W#ShithriNeeraShithriDead","GLOBAL",1)
+    Interact(Player1)
+END
+
+// If Shithri just died and is outside of the party,
+// she probably perma-died, e.g. disintegrated or massacred.
+// Force "Shithri died" dialogue even if it was run before.
+IF
+  Global("6W#ShithriShithriRomanceActive","GLOBAL",2)
+  OR(2)
+    Global("6W#ShithriNeeraShithriDead","GLOBAL",0)
+    Global("6W#ShithriNeeraShithriDead","GLOBAL",2)
+  !InPartyAllowDead("6WSHITHRI")
+  Dead("6WSHITHRI")
+THEN
+  RESPONSE #100
+    SetGlobal("6W#ShithriShithriShithriDead","GLOBAL",3)
+    Interact(Player1)
+END
+
+// If Shithri dies permanently, the romance ends
+IF
+  OR(2)
+    Global("6W#ShithriNeeraRomanceActive","GLOBAL",1)
+    Global("6W#ShithriNeeraRomanceActive","GLOBAL",2)
+  !InPartyAllowDead("6WSHITHRI")
+  Dead("6WSHITHRI")
+THEN
+  RESPONSE #100
+    SetGlobal("6W#ShithriNeeraShithriDead","GLOBAL",3)
+    SetGlobal("6W#ShithriNeeraRomanceActive","GLOBAL",3)
+END
+
+
+// Neera starts the following dialogues:
+IF
+  Global("6W#ShithriNeeraLoveTalk","GLOBAL",30)
+THEN
+  RESPONSE #100
+    Interact("6WSHITHRI")
+END

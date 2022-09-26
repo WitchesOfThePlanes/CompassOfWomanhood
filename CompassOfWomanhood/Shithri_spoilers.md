@@ -3,13 +3,13 @@ This file contains more detailed description of the mod, but does contain some s
 
 ## Mechanics
 
-Shithri has a unique innate ability: Sea Shanty. It's somewhat of a weaker hybrid between bard song and enrage ability: it grants her +1 Luck bonus, as well as immunities to sleep, fear, confusion and stun - but forces her to be visible. It lasts a full turn, i.e. 10 rounds, 60 seconds.
+Shithri has a unique innate ability: Sea Shanty. It's somewhat of a weaker hybrid between Bard Song and Enrage ability: it grants her +1 Luck bonus, as well as immunities to sleep, fear, confusion and stun - but forces her to be visible. It lasts a full turn, i.e. 10 rounds, 60 seconds.
 
-What makes this ability truly unique, however, is the fact Shithri cannot use it in forest areas (due to [religious](#religion) reasons). Similarly to a bard song, Shithri hums each round, so if she moves to a forest area at any time, she till cease to hum until she comes back to a non-forest area. You can see how it works in Umar Hills - a forest area with a non-forest inn you can enter. While you cannot activate the ability at all while in Umar Hills, you can do so while in its inn - it will be put to hold if you go out of it.
+What makes this ability truly unique, however, is the fact Shithri cannot use it in forest areas (due to [religious](#religion) reasons). Similarly to a bard song, Shithri hums each round, so if she moves to a forest area at any time, she till cease to hum until she comes back to a non-forest area. You can see how it works in Umar Hills - a forest area with a non-forest inn you can enter. While you cannot activate the ability at all while in Umar Hills, you can do so while in its inn - the humming will be put to hold if you go out of the inn.
 
 Shithri can use Sea Shanty ability twice a day. Unlike berserker's Enrage ability, Sea Shanty can be reactivated immediately after it ends.
 
-Implementation details: this ability is internally implemented as a spell loop (i.e. spelling calling itself with some delay, in this case - a round) with a short period of spell immunity for that spell added after some time (in this case - full turn).
+Implementation details: this ability is internally implemented as a spell loop (i.e. a spell calling itself with some delay, in this case - a round) with a short period of spell immunity for that spell added after some time (in this case - full turn).
 
 
 ## Banters
@@ -50,16 +50,16 @@ And here is the more detailed list of relationships:
  * Jaheira - Shithri calls Jaheira "sha'nru", orcish for "auntie". That should explain everything.
  * Minsc - initially suspicious, but convinced by Boo to give Shithri a chance. They become such good friends that the two of them can even have a drink with Korgan with no drama.
  * Viconia - mocks Shithri for allegedly being an half-elf, as well as for liking women (note that it's not that accepted among drow women).
- * Aerie - Shithri treats her like a child in SoA, but grows respect for her in ToB.
- * Anomen - he considers her a lowly person for many reasons and they may come to blows. She treats him well was he to fail his trial though, and they can become quite good friends as a result. If he passes, he won't try to fight her but will still look down on her.
+ * Aerie - Shithri treats her like a child in SoA, but grows respect for her as a "witch" in ToB.
+ * Anomen - he considers her a lowly person (for many reasons) and they may come to blows. She treats him well was he to fail his trial though, and they can become quite good friends as a result. If he passes, he won't try to fight her but will still look down on her.
  * Cernd - Shithri has much respect for him, treating him like the closest equivalent of her religion's priest.
- * Haer'Dalis - they share mutual respect of experienced swordmen, as well as share some stories and songs.
- * Jan Jansen - Shithri tries to write a perfect shanty about his uncle Scratchy.
+ * Haer'Dalis - they have mutual respect of experienced swordmen. They also share some stories and songs.
+ * Jan Jansen - Shithri tries to write a perfect shanty about his uncle Scratchy and the Onion Famine.
  * Keldorn - treats Shithri as a sinful person, both for her piracy and rather casual sexual behaviours. Shithri, on the other hand, respects his knight morals but is amused by his prudeness.
  * Korgan - initially calls Shithri names, but quickly earns some respect and later they become drinking buddies. May even drink together with Shithri and Minsc.
  * Mazzy - typical Mazzy stuff about her height and dream of becoming a paladin. She would prefer for Shithri to stop being a pirate.
  * Nalia - in SoA, Nalia treats Shithri as a result of opressive class system etc, much to Shithri's irritation. In ToB though they start to develop friendship.
- * Valygar - irritated by Shithri's signing. Shithri respects him for his military experience.
+ * Valygar - irritated by Shithri's singing. Shithri respects him for his military experience.
  * Yoshimo - Shithri doesn't trust him.
  * Dorn - he questions Shithri's will to take what she wants. They argue once and have a few sparrings. Not very close, but on good terms.
  * Neera - develops a (romantic? not-really? not-sure?) relationship with Shithri, spanning through both SoA and ToB, affecting the Tree of Life talk as well as both Shithri's and Neera's epilogues.

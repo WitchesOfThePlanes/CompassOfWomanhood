@@ -172,12 +172,12 @@ APPEND ~interdia.2da~
 OUTER_SET file_num += 1
 
 APPEND ~npclevel.2da~
-  ~6WSHITHRI    6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08  6Wshit086Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08  6Wshit086Wshit086Wshit08 6Wshit086Wshit08 6Wshit08 Shithri~
+  ~6WSHITHRI    6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08  6Wshit086 Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08  6Wshit086 Wshit08 6Wshit08 6Wshit086 Wshit08 6Wshit08 Wshit08~
   UNLESS ~6WSHITHRI~
 OUTER_SET file_num += 1
 
 APPEND ~npclvl25.2da~
-  ~Shithri    6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08  6Wshit086Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08  6Wshit086Wshit086Wshit08 6Wshit086Wshit08 6Wshit08 Shithri~
+  ~Shithri    6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08  6Wshit086 Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08  6Wshit08 6Wshit08 6Wshit08 6Wshit08 6Wshit08 6Wshit08 6Wshit08~
   UNLESS ~6WSHITHRI~
 OUTER_SET file_num += 1
 

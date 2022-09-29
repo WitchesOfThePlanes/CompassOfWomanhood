@@ -316,7 +316,7 @@
 Shithri claims it to be quite heavy and best served chilled, but not cold. It's highly popular throughout the Sword Coast - you do remember people drinking it Candlekeep, Friendly Arm Inn and even Nashkel. It comes from Arabel, Cormyr.~
 
 
-@4010000 = ~Shadordark Ale~
+@4010000 = ~Shadowdark Ale~
 @4010001 = ~This bottle is filled with dark brown, a bit cloudy beer. When shaken, bubbles appear inside of it, and when poured, produces a yellow foam. Spells of cloves.
 
 According to Shithri, it's a very popular drink among young women of the Sword Coast, possibly due to it crisp, sweet and fruity flavor, as well as pleasant, creamy texture.~
@@ -339,19 +339,19 @@ Shithri says it's clear, crisp and light. Probably the most common of the Calims
 Confirmed by Shithri to contain nettles from Daggerfort, as well as desert cacti. It's said to be sharp and refreshing.~
 
 @4030200 = ~Golden Sands Orange~
-@4030201 = ~One of the Golden Sands Brew series of Calimshite lagers. This one is amber-yellow. Smells of oranges.
+@4030201 = ~One of the Golden Sands Brew series of Calimshite lagers. This one is amber-yellow and smells of oranges.
 
 Shithri claims it to get its color from oranges and currants, which also give it slightly acidic, sweet taste. It's very light, even for a lager of the Golden Sands Brew series.~
 
 
-@4040000 = ~Iriaeboran Ale~
+@4040000 = ~Iriaeboran North Brew~
 @4040001 = ~Called "bite of the north winds", this brew doesn't seem to stand out very much. It lacks distinct smell and its dark amber color is shared with many other drinks too.
 
-Despite it being rather mild, Shithri claims it to have a quite unique "cold" aftertaste. It's produced in Iriaebor of Elturgard region, just east of Wood of Sharp Teeth.~
+Despite it being rather mild, it has quite a unique "cold" aftertaste - or so says Shithri. It's produced in Iriaebor of Elturgard region, just east of Wood of Sharp Teeth.~
 
 
 @4050000 = ~Luiren's Best Ale~
-@4050001 = ~This bottle contains jeb-black, very thick ale of a bit unusual smell.
+@4050001 = ~This bottle contains jet-black, very thick ale of a bit unusual smell.
 
 Shithri claims it's produced by halflings and mostly consumed by halflings. Very popular in Luiren, Halruaa and Shining South, but occasionally also drunk in Sembia, Sword Coast and - as you saw - Amn.~
 
@@ -365,25 +365,57 @@ A slight smirk appears on Shithri's face each time she sees you holding the bott
 @4070000 = ~Undermountain Alurlyath~
 @4070001 = ~This bottle is made of very dark glass - its contents can't be seen without opening it. When you do, however, you can see a slight silver-green glow inside of it.
 
-Shithri claims this to be a special kind of sweet wine wine, with slightly nutty aftertaste. It's considered quite romantic and common among sea adventurers with good taste. Produced in Undermountain, a dwarvish city located just below Waterdeep.~
+Shithri claims this to be a special kind of sweet wine, with slightly nutty aftertaste. It's considered quite romantic and common among sea adventurers with good taste. Produced in Undermountain, a dwarvish city located just below Waterdeep.~
 
 
-@4080000 = ~Arabellan Wine~
+@4080000 = ~Arabellan Dry~
 @4080001 = ~This bottle contains ruby wine with a slight forest-like smell.
 
 According to Shithri, it's a dry wine that can be consumed on its own, chilled, or used for cooking - particularly braising a boar, due to the pleasant, berry-like taste in the background.~
 
 
 @4090000 = ~Evermead~
-@4090001 = ~This fanciful bottle contains a clear-gold, very thick mead. When you look at it against the light, it seems as if little suns - or stars, perhaps? - danced inside of it.
+@4090001 = ~This sophisticated bottle contains a clear-gold, very thick mead. When you look at it against the light, it seems as if little suns - or stars, perhaps? - danced inside of it.
 
 Shithri claims that this mead contains all the most expensive ingredients, such like cherries, vanilla beans and rose petals. It Westgate, it's a sign of nobility. Rumored to take centuries to produce and easily the best liquor elves of Trademeet make. It's also easily the most expensive drink one can have in the Sword Coast or Amn.~
 
 
-@4100000 = ~Westgate Wine~
-@4100001 = ~~
+@4100000 = ~Westgate Ruby~
+@4100001 = ~You can see this wine's lush crimson even from behind the thick glass.
+
+You're informed it's quite bold and slightly acidic. Shithri says it's the very best wine to have with beef dishes, be it a hearty stew or the famous Beef and Oyster Barnabas.~
 
 
+@4110000 = ~Saerloonian Topaz~
+@4110001 = ~This bottle is almost transparent, with very thin walls, so you can see the contents very well. It's filled with yellow-amber wine that gets but slightly bubbly when shaken.
+
+Shithri says it's semi-dry and that its nutty flavour with slight lemon-and-pear overtones make it a great for marinating rabbit. She bolds, however, not to confuse it with the other two famous wines from the same region: Saerloonian Special Vat, which is a red wine made with the addition of grains and sweet berries, and Saerloonian Glowfire, the highly aromatic wine that is said to capture the very essence of summer.~
+
+
+@4120000 = ~Berduskan Dark~
+@4120001 = ~The liquid inside this bottle is not only very dark, but also a bit thicker than most wines you've seen. It smells quite sweet.
+
+Shithri warns you that this wine is very alcoholic and may surprise you with it's burning aftertaste. According to her, if you tried it in Beregost - you did it wrong, as its true value only shines when it's paired with prawns or quail eggs, preferably both. Despite how strong it is, it's said to be quite a popular choice for romantic dinners.~
+
+
+@4130000 = ~Winter Wine~
+@4130001 = ~This bottle's contents is of purplish-red color. It looks a bit more like a potion rather than wine, but the smell dispels any doubts you may have.
+
+According to Shithri, this very alcoholic wine is made in the North, from grapes freezed on the vine. Its flavour is very strong and slightly spicy.~
+
+
+@4140000 = ~Dragon's Beer~
+@4140001 = ~The beer in this bottle is of a lighter brown hue and foams quite well. It has quite a strong aroma, a bit reminescent of sulphur.
+
+Sembians are very proud of this beer - or so Shithri says. Its flavor is strong and harsh, which makes it a good pair for rye bread and rich cheese.~
+
+
+@4900000 = ~Elminster's Choice~
+@4900001 = ~Almost half of this bottle is covered in a simple label picturing famous mage Elminster. Big, colorful letters above it form the text: "Elminster's Choice!". Below the picture come smaller characters stylized for hand-writing - "Life has no meaning but what we give it. My choice is on beer".
+
+The liquid inside is reminescent of storm clouds - very dark and hazy. It has a strong odor of cheep smoked ham.
+
+Shithri not only refuses to provide any valuable comment on this beer, but seems gravely offended of you as much as having it on you.~
 
 
 

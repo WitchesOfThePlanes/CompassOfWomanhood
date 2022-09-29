@@ -199,7 +199,7 @@
 @3060040 = ~Bym skłamała mówioc, że nie rozumiem. Szkoda, to naprawde fejne piwo.~
 
 @3070000 = ~Wino Alurlyathańskie.~
-@3070001 = ~Kapitanie, jak cie prosze! „Podgórze Alurlyathańskie”, sławne zielone wino co to świeci w ciemności. Romantyczne słodkie, powiada sie.~
+@3070001 = ~Kapitanie, jak cie prosze! „Podgórskie Alurlyathańskie”, sławne zielone wino co to świeci w ciemności. Romantyczne słodkie, powiada sie.~
 @3070002 = ~Świeci w ciemności?~
 @3070003 = ~Brzmi wyjątkowo, rzeczywiście. Weźmy trochę.~
 @3070004 = ~Jego cena... też jest dość wyjątkowa.~
@@ -303,6 +303,119 @@
 @3990000 = ~Jakieś jeszcze cie ciekawio?~
 @3990001 = ~A są jakieś które mogą mnie interesować?~
 @3990099 = ~Tyle mi wystarczy. Idźmy już!~
+
+
+
+@4000000 = ~Piwo Ciemne Gorzkie~
+@4000001 = ~Ta butelka zawiera ciemne, zupełnie czarne piwo które, gdy je lać, tworzy duże ilości piany w odcieniu głębokiego brązu.
+
+Shithri twierdzi, że jest dość ciężkie i najlepiej podawać je schłodzone, ale nie zimne. Jest bardzo popularne na Wybrzeżu Mieczy - przypominasz sobie picie go w Candlekeep, Gospodzie Pod Pomocną Dłonią, a nawet Nashkel. Pochodzi z Arabel, w Cormyrze.~
+
+
+@4010000 = ~Piwo Cieniste~
+@4010001 = ~Tę butelkę wypełnia ciemnobrązowe, nieco mętnawe piwo. Gdy je wstrząsnąć, pojawiają się w nim bąbelki. Gdy lać, tworzy żółtawą pianę. Pachnie goździkami.
+
+Według Shithri, to trunek bardzo popularny wśród młodych kobiet Wybrzeża Mieczy, przypuszczalnie ze względu na swój słodki, owocowy, ale delikatnie szorstki smak, jak również przyjemną, kremową konsystencję.~
+
+
+@4020000 = ~Piwo-Suz~
+@4020001 = ~Piwo wewnątrz tej butelki jest czysto brązowe bez żadnych dodatkowych cech, które mogłyby je jakoś wyróżnić.
+
+Shithri twierdzi, że to doskonałej jakości piwo z orzechowym posmakiem. Wytwarzane jest w Suzail, stolicy Cormyru.~
+
+
+@4030000 = ~Wywar Złote Piaski Zwykły~
+@4030001 = ~Jedno z piw leżakujących należących do calimshańskiej serii Wywarów Złote Piaski. Ten jest jasnożółtawy, prawie przezroczysty.
+
+Shithri powiada, że jego smak jest przyjemnie czysty i lekki. Na północ od Tethyru to przypuszczalnie najpopularniejszy calimshański trunek.~
+
+@4030100 = ~Wywar Złote Piaski Złocisty~
+@4030101 = ~Jedno z piw leżakujących należących do calimshańskiej serii Wywarów Złote Piaski. Ten jest głęboko złotego koloru i pachnie pokrzywą.
+
+Shithri potwierdza, że ów trunek zawiera pokrzywę z Brodu Sztyletu, podobnie jak pustynny kaktus. Podobno w smaku jest szorstki i bardzo odświeżający.~
+
+@4030200 = ~Wywar Złote Piaski Pomarańczowy~
+@4030201 = ~Jedno z piw leżakujących należących do calimshańskiej serii Wywarów Złote Piaski. Ten jest bursztynowej barwy i pachnie pomarańczą.
+
+Shithri twierdzi, że swój kolor ów trunek zawdzięcza pomarańczom i porzeczkom, które dają mu też słodki, ale lekko kwaskowy posmak. Jest wyjątkowo lekki, nawet jak na piwo z serii Wywarów Złote Piaski.~
+
+
+@4040000 = ~Piwo Północne Iriaeborańskie~
+@4040001 = ~Nazywany „pocałunkiem północnego wiatru”, ten trunek niespecjalnie się wyróżnia. Nie ma żadnego charakterystycznego zapachu, a swój ciemnobursztynowy kolor również dzieli z wieloma innymi napojami.
+
+Pomimo względnej łagodności smaku, piwo to ma „zimny” posmak - a przynajmniej tak twierdzi Shithri. Jest wytwarzane w Iriaeborze, w regionie Elturgard, zaraz na wschód od Lasu Ostrych Kłów.~
+
+
+@4050000 = ~Najlepsze Piwo Luirena~
+@4050001 = ~Ta butelka zawiera kruczoczarne, bardzo gęste piwo o nieco nietypowym zapachu.
+
+Shithri twierdzi, że jest wytwarzane przez niziołków i głównie przez nich spożywane. Bardzo popularne w Luiren, Halruii i Skrzącym Południu, a od czasu do czasu zdarza się i w Sembii, na Wybrzeżu Mieczy oraz - jak widać - w Amn.~
+
+
+@4060000 = ~Piwo ciemne mocne Tanagyra~
+@4060001 = ~Tę butelkę wypełnia ciemne piwo z palonego słodu i mocno nim pachnące.
+
+Za każdym razem gdy sięgasz po tę butelkę, na twarzy Shithri pojawia się lekki uśmieszek. Ten trunek pochodzi z jej rodzimego miasta, Twierdzy Zenthil, choć ze względu na jego reputację i zasadnicze embargo na jego towary, zwykle reklamuje się je jako pochodzące „z regionu Morza Księżycowego”. Nie jest aż tak powszechne na Wybrzeżu Mieczy, popularnością cieszy się przede wszystkim wśród osób zaprawionych w piciu, a to ze względu na wysoką zawartość alkoholu.~
+
+
+@4070000 = ~Podgórskie Alurlyathańskie~
+@4070001 = ~Ta butelka jest wykonana z bardzo ciemnego szkła - nie jesteś w stanie zobaczyć jej zawartości bez otwierania jej. Kiedy jednak to robisz, dostrzegasz bijącą z jej wnętrza delikatną srebrno-zielonkawą poświatę.
+
+Shithri twierdzi że to specjalny rodzaj słodkiego wina, z delikatnie orzechowym posmakiem. Jest uznawane za bardzo romantyczne i popularne wśród poszukiwaczy przygód o dobrym smaku. Wytwarzane jest w Podgórze, krasnoludzkim mieście znajdującym się pod Waterdeep.~
+
+
+@4080000 = ~Arabellańskie Wino Wytrawne~
+@4080001 = ~Ta butelka zawiera rubinowe wino o lekko leśnym zapachu.
+
+Według Shithri, to wino wytrawne można spożywać samo, schłodzone, albo wykorzystać w gotowaniu - w szczególnośći do duszenia dzika. Sprzyjają temu przyjemne, jagodowe nuty w tle.~
+
+
+@4090000 = ~Evermead~
+@4090001 = ~Ta wyrafinowana butelka zawiera czysty, gęsty miód o złotej barwie. Gdy spoglądasz pod światło, wydaje się jakby maleńkie słońca - a może gwiazdy? - tańczyły w jego wewnętrzu.
+
+Shithri twierdzi, że ten miód zawiera wszystkie najdroższe składniki, w tym wiśnie, wanilię i płatki róż. We Wrotach Zachodu jest uznawany za znak szlachectwa. Wieść głosi, że jego wytworzenie trwa całe wieki. Jest zdecydowanie najlepszym trunkiem jaki wyszedł spod rąk elfów z Trademeet, a także zdecydowanie najdroższym napojem na całym Wybrzeżu Mieczy oraz w Amn.~
+
+
+@4100000 = ~Piwo Rubinowe z Wrót Zachodu~
+@4100001 = ~Nawet zza grubych ścianek butelki dobrze widać soczysty karmazyn tego wina.
+
+Zostajesz poinformowany, że ma dość mocny i lekko kwaskowy smak. Shithri powiada, że to najlepsze możliwe wino do dań z wołowiny, niezależnie od tego, czy chodzi o tłusty gulasz czy słynne Barnaby Wołowo-Ostrygowe.~ ~Nawet zza grubych ścianek butelki dobrze widać soczysty karmazyn tego wina.
+
+Zostajesz poinformowana, że ma dość mocny i lekko kwaskowy smak. Shithri powiada, że to najlepsze możliwe wino do dań z wołowiny, niezależnie od tego, czy chodzi o tłusty gulasz czy słynne Barnaby Wołowo-Ostrygowe.~
+
+
+@4110000 = ~Saerloonianiańskie Piwo Topazowe~
+@4110001 = ~Ta butelka jest niemal zupełnie prezroczysta, o bardzo cienkich ściankach, przez co bardzo dobrze widać jej zawartość. Jest wypełniona żółto-bursztynowym winem które delikatnie się pieni gdy je wstrząsnąć.
+
+Shithri powiada, że to pół-wytrawne wino jest w smaku orzechowe z lekkimi nutami cytryn i gruszek, co czyni je doskonałym do marynowania królika. Podkreśla jednak, aby nie mylić go z dwoma pozostałymi słynnymi winami z tego samego regionu: Saerlooniańską Specjalną Kadzią, czerwonym winem z dodatkiem zbóż, truskawek i malin, oraz Saerlooniańskim Blaskiem, wyjątkowo aromatycznym winem, o którym mówi się, że zamyka w sobie samą esencję lata.~
+
+
+@4120000 = ~Berduskiańskie Ciemne~
+@4120001 = ~Płyn wewnątrz tej butelki jest nie tylko bardzo ciemny, ale też nieco gęstszy niż większość win, które w życiu widziałeś. Pachnie dość słodko.
+
+Shithri ostrzega cię, że owo wino ma bardzo wysoką zawartość alkoholu oraz że może zaskoczyć cię swoim palącym posmakiem. Twierdzi, że jeśli próbowałeś do w Beregoście - to źle zrobiłeś, bo prawdziwą jego wartość można docenić jedynie w połączeniu z krewetkami albo jajami przepiórczy, a najlepiej i jednym i drugim. Pomimo mocy tego trunku, to podobno dość popularny wybór na romantyczne kolacje.~ ~Płyn wewnątrz tej butelki jest nie tylko bardzo ciemny, ale też nieco gęstszy niż większość win, które w życiu widziałaś. Pachnie dość słodko.
+
+Shithri ostrzega cię, że owo wino ma bardzo wysoką zawartość alkoholu oraz że może zaskoczyć cię swoim palącym posmakiem. Twierdzi, że jeśli próbowałaś do w Beregoście - to źle zrobiłaś, bo prawdziwą jego wartość można docenić jedynie w połączeniu z krewetkami albo jajami przepiórczy, a najlepiej i jednym i drugim. Pomimo mocy tego trunku, to podobno dość popularny wybór na romantyczne kolacje.~
+
+
+@4130000 = ~Zimowe Wino~
+@4130001 = ~Zawartość tej butelki jest fioletowo-czerwona. Przypomina raczej eliksir niż wino, ale smak rozwiewa wszelkie wątpliwości.
+
+Według Shithri, to wyjątkowo mocne wino jest wytwarzane na dalekiej Północy, z winogron, które zamarzły na krzewie. Ma bardzo intensywny, lekko piekący smak.~
+
+
+@4140000 = ~Piwo Smoczy Oddech~
+@4140001 = ~Piwo w tej butelce jest nieco jaśniejszego odcienia brązu i dobrze się pieni. Ma dość mocny aromat, nieco przypominający siarkę.
+
+Sembiańczycy są bardzo dumni z tego piwa - a przynajmniej tak powiada Shithri. Jego smak jest mocny i cierpki, przez co dobrze pasuje do żytniego chleba i intensywnych serów.~
+
+
+@4900000 = ~Wybór Elminstera~
+@4900001 = ~Niemal połowę butelki przykrywa prosta etykieta z obrazkiem przedstawiającym sławnego maga Elminstera. Wielkimi, kolorowymi literami nad obrazkiem napisano: „Wybór Elminstera!”. Pod obrazkiem stoją zaś mniejsze znaki stylizowane na pismo ręczne - „Życie nie ma znaczenia innego niż mu je nadamy. A mój wybór to piwo”.
+
+Płyn wewnątrz butelki przypomina burzowe chmury - bardzo ciemny i mętny. Ma silny zapach taniej wędzonej szynki.
+
+Shithri nie tylko odmawia podania ci jakichkolwiek użytecznych informacji na temat tego piwa, ale wręcz wydaje się śmiertelnie oburzona tym, że w ogóle masz je przy sobie.~
 
 
 

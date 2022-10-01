@@ -2367,13 +2367,36 @@ APPEND 6WSHITJ
     IF ~~ THEN
       REPLY @3900003 /* I mean - Elminster can't be wrong on that one, can he? */
       GOTO elminsters_beer__elminster
+
+    IF ~~ THEN
+      REPLY @3900022 /* Well, if you say so... */
+      GOTO liquors_more
   END
 
   IF ~~ THEN BEGIN elminsters_beer__not_so_bad
-    SAY @3900022 /* Nay. No, nay, ne'er. No nay ne'er no more speak o' that trash o' a beer when this bucko be around! *spits* */
+    SAY @3900023 /* Nay. No, nay, ne'er. No nay ne'er no more speak o' that trash o' a beer when this bucko be around! *spits* */
     // You know that Irish folk song?
     // https://www.youtube.com/watch?v=bYPuz0EYPSo
-    IF ~~ THEN GOTO liquors_more
+
+    IF ~~ THEN
+      REPLY @3900090 /* Got it. */
+      GOTO liquors_more
+
+    IF ~~ THEN
+      REPLY @3900091 /* Ok, I won't SPEAK of it. But we're still taking a bottle. */
+      DO ~
+        TakePartyGold(1)
+        DestroyGold(1)
+        GiveItemCreate("_6WDR90", Player1, 0, 0, 0)
+      ~
+      GOTO elminsters_beer__swab
+
+    IF ~PartyGoldLT(1)~ THEN GOTO liquors_more
+  END
+
+  IF ~~ THEN BEGIN elminsters_beer__swab
+    SAY @3900099 /* *gulp* Wha' a swab... */
+    IF ~~ THEN EXIT
   END
 
   IF ~~ THEN BEGIN elminsters_beer__elminster
@@ -2402,15 +2425,47 @@ APPEND 6WSHITJ
     IF ~~ THEN
       REPLY @3900036 /* Could've expected that, I suppose. */
       GOTO elminsters_beer__couldve_expected
+
+    IF ~~ THEN
+      REPLY @3900004 /* Relax, Shithri, it's a joke. Have some faith in your captain! */
+      GOTO elminsters_beer__joke
   END
 
   IF ~~ THEN BEGIN elminsters_beer__infuriating
     SAY @3900037 /* Aye. It be. */
-    IF ~~ THEN GOTO liquors_more
+
+    IF ~~ THEN
+      REPLY @3900092 /* You convinced me. */
+      GOTO liquors_more
+
+    IF ~~ THEN
+      REPLY @3900093 /* Well, even if Elminster doesn't really drink it, we'll still take a bottle. */
+      DO ~
+        TakePartyGold(1)
+        DestroyGold(1)
+        GiveItemCreate("_6WDR90", Player1, 0, 0, 0)
+      ~
+      GOTO elminsters_beer__swab
+
+    IF ~PartyGoldLT(1)~ THEN GOTO liquors_more
   END
   IF ~~ THEN BEGIN elminsters_beer__couldve_expected
-    SAY @3900038 /* As ye see - works well fer them bastards. */
-    IF ~~ THEN GOTO liquors_more
+    SAY @3900038 /* See? Works well fer them bastards. */
+
+    IF ~~ THEN
+      REPLY @3900092 /* You convinced me. */
+      GOTO liquors_more
+
+    IF ~~ THEN
+      REPLY @3900093 /* Well, even if Elminster doesn't really drink it, we'll still take a bottle. */
+      DO ~
+        TakePartyGold(1)
+        DestroyGold(1)
+        GiveItemCreate("_6WDR90", Player1, 0, 0, 0)
+      ~
+      GOTO elminsters_beer__swab
+
+    IF ~PartyGoldLT(1)~ THEN GOTO liquors_more
   END
 
   IF ~~ THEN BEGIN elminsters_beer__joke

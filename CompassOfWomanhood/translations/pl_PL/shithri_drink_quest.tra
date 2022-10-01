@@ -239,7 +239,8 @@
 @3900004 = ~Spokojnie, Shithri, to tylko żarcik. Miej trochę wiary w swojego kapitana!~ ~Spokojnie, Shithri, to tylko żarcik. Miej trochę wiary w swoją kapitana!~
 @3900020 = ~Kapitanie. Na wszystkich diabłów - jeśli chcesz to pić, to weź ta se zmieszaj wode ze smoło i uwędź nad zapruchniałym drewnem. Bo to tak smakuje.~
 @3900021 = ~Czyli ciemne, gęste, mętne i z dymnym posmakiem? Nie brzmi tak źle, jeśli o mnie chodzi.~
-@3900022 = ~Nie, nigdy, zapomnij. Zapomnij, niech zginie, przepadnie ten śmieć. I nie waż sie o nim wspominać gdy ta galernica tu jes. *spluwa*~
+@3900022 = ~Skoro tak twierdzisz...~
+@3900023 = ~Nie, nigdy, zapomnij. Zapomnij, niech zginie, przepadnie ten śmieć. I nie waż sie o nim wspominać gdy ta galernica tu jes. *spluwa*~
 @3900030 = ~Kapitanie. O mój kapitanie... spotkał żeś kiedy Elminstera?~ ~Kapitanie. O mój kapitanie... spotkała żeś kiedy Elminstera?~
 @3900031 = ~Cóż, właściwie...~
 @3900032 = ~A co jeśli tak?~
@@ -250,6 +251,11 @@
 @3900037 = ~Ta. Tak właśnie.~
 @3900038 = ~Jak widzisz - wychodzi draniom nieźle.~
 @3900040 = ~Har har, ależ okrutnieś zakpił z tej galernicy, o ta! Tu mie masz, nie powiem nie!~ ~Har har, ależ okrutnieś zakpiła z tej galernicy, o ta! Tu mie masz, nie powiem nie!~
+@3900090 = ~W porządku.~
+@3900091 = ~Niech będzie, nie będę o nim MÓWIĆ. Ale i tak weźmiemy butelkę.~
+@3900092 = ~Przekonałaś mnie.~
+@3900093 = ~Nawet jeśli Elminster takiego nie pija, i tak weźmiemy butelkę.~
+@3900099 = ~*łyk* Co za kwindas...~
 
 @3100000 = ~Piwo Rubinowe z Wrót Zachodu.~
 @3100001 = ~Ha, nigdy nie zapomne Barnab Wołowo-Ostrygowych! Ale pasuje też do krasnoludzkich gulaszy. Ciężki to truneczek, o ta.~

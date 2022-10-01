@@ -243,7 +243,8 @@
 @3900004 = ~Relax, Shithri, it's a joke. Have some faith in your captain!~
 @3900020 = ~Capt'n. Fer all the devils - if ye really want t' drink that, jus' mix water wit' tar 'n smoke that o'er rotten wood. That be how it tastes.~
 @3900021 = ~So dark, thick, cloudy and with smokey aftertaste? Doesn't sound that bad if you ask me.~
-@3900022 = ~Nay. No, nay, ne'er. No nay ne'er no more speak o' that trash o' a beer when this bucko around! *spits*~
+@3900022 = ~Well, if you say so...~
+@3900023 = ~Nay. No, nay, ne'er. No nay ne'er no more speak o' that trash o' a beer when this bucko around! *spits*~
 @3900030 = ~Capt'n. Oh me capt'n... ye e'er met Elminster?~
 @3900031 = ~Well, actually...~
 @3900032 = ~What if I did?~
@@ -254,6 +255,11 @@
 @3900037 = ~Aye. It be.~
 @3900038 = ~As ye see - works well fer them bastards.~
 @3900040 = ~Har har, wha' savage joke it be, me capt'n! Ye got this bucko right here, aye ye did!~
+@3900090 = ~Got it.~
+@3900091 = ~Ok, I won't SPEAK of it. But we're still taking a bottle.~
+@3900092 = ~You convinced me.~
+@3900093 = ~Well, even if Elminster doesn't really drink it, we'll still take a bottle.~
+@3900099 = ~*gulp* Wha' a swab...~
 
 @3100000 = ~Westgate Wine.~
 @3100001 = ~Ho, ne'er gonna forget the Beef 'n Oysters Barnabas! But fits well wit' dwarvish stews too, that bold, crimson liqie, aye.~  

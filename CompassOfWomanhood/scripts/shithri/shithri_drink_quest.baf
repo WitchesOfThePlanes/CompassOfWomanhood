@@ -89,7 +89,42 @@ END
 // No straightforward way to count N out of M items. Seems like
 // the easiest way is to keep track of each item type via a variable,
 // and when setting one - incrementing the total unique counter.
+// This variable encodes:
+//  * 0 - party doesn't have that drink
+//  * 1 - party does have that drink
+//  * 2 - party already used that drink, doesn't matter if they
+//        still another bottle or not
 //
 // That is, however, VERY repetitive - so a script should generate those
 // instead.
 
+
+//
+// When you have at least 9 liquors, the seaman appears
+// in the Sea Bounty tavern.
+//
+
+// First, set "ready". If the party is in the Sea Bounty tavern,
+// they need to leave it before the seaman appears.
+IF
+  GlobalGT("6W#ShithriDrinksHasUniqueDrinks","GLOBAL",8)
+  Global("6W#ShithriDrinksSeamanSpawn","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("6W#ShithriDrinksSeamanSpawn","GLOBAL",1)
+END
+
+// The second step is to be anywhere but in the Sea Bounty tavern.
+IF
+  Global("6W#ShithriDrinksSeamanSpawn","GLOBAL",1)
+  // doesn't look like it can be done via [PC]:
+  !AreaCheckObject("AR0313",Player1)
+  !AreaCheckObject("AR0313",Player2)
+  !AreaCheckObject("AR0313",Player3)
+  !AreaCheckObject("AR0313",Player4)
+  !AreaCheckObject("AR0313",Player5)
+  !AreaCheckObject("AR0313",Player6)
+THEN
+  RESPONSE #100
+    SetGlobal("6W#ShithriDrinksSeamanSpawn","GLOBAL",2)
+END

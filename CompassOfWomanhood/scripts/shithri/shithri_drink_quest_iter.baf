@@ -1,19 +1,23 @@
 
 IF
+  !Global("6W#ShithriDrinksActive","GLOBAL",0)
   Global("6W#ShithriDrinksHasDrink%drink_num%","GLOBAL",0)
   PartyHasItem("_6WDR%drink_num%")
 THEN
   RESPONSE #100
     SetGlobal("6W#ShithriDrinksHasDrink%drink_num%","GLOBAL",1)
     IncrementGlobal("6W#ShithriDrinksHasUniqueDrinks","GLOBAL",1)
+    Continue()
 END
 
 IF
-  !Global("6W#ShithriDrinksHasDrink%drink_num%","GLOBAL",0)
+  !Global("6W#ShithriDrinksActive","GLOBAL",0)
+  Global("6W#ShithriDrinksHasDrink%drink_num%","GLOBAL",1)
   !PartyHasItem("_6WDR%drink_num%")
 THEN
   RESPONSE #100
     SetGlobal("6W#ShithriDrinksHasDrink%drink_num%","GLOBAL",0)
     IncrementGlobal("6W#ShithriDrinksHasUniqueDrinks","GLOBAL",-1)
+    Continue()
 END
 

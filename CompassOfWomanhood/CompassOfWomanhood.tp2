@@ -401,6 +401,7 @@ BEGIN
   // quests
   ~CompassOfWomanhood/scripts/shithri/shithri_brynnlaw.baf~         =>  ~6WSHITH.bcs~
   ~CompassOfWomanhood/scripts/shithri/shithri_drink_quest.baf~      =>  ~6WSHITH.bcs~
+  ~CompassOfWomanhood/areas/shithri/ar0313.baf~                     =>  ~ar0313.bcs~
 
   // Dorn sparring
   ~CompassOfWomanhood/scripts/shithri/shithri_dorn25.baf~           =>  ~dorn25.bcs~

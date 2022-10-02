@@ -1,0 +1,17 @@
+// For Shithri's drink quest - spawn the seaman
+
+//
+// When you have at least 9 liquors, the seaman appears
+// in the Sea Bounty tavern.
+//
+
+// First, set "ready". If the party is in the Sea Bounty tavern,
+// they need to leave it before the seaman appears.
+IF
+  GlobalGT("6W#ShithriDrinksHasUniqueDrinks","GLOBAL",8)
+  Global("6W#ShithriDrinksSeamanSpawn","GLOBAL",2)
+THEN
+  RESPONSE #100
+    CreateCreature("6WPIRDR",[443.540],NW)
+    SetGlobal("6W#ShithriDrinksSeamanSpawn","GLOBAL",3)
+END

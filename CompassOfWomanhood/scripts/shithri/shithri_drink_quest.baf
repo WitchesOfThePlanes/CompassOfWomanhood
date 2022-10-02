@@ -73,9 +73,23 @@ THEN
   RESPONSE #100
     SetInterrupt(FALSE)
     SetGlobal("6W#ShithriDrinksStart","GLOBAL",3)
+    SetGlobal("6W#ShithriDrinksActive","GLOBAL",1)
+    SetGlobal("6W#ShithriDrinksHasUniqueDrinks","GLOBAL",0)
     Wait(1)
     // Shithri's drinks quest is still work in progress
-    //StartDialogNoSet(Player1)
+    // StartDialogNoSet(Player1)
     SetInterrupt(TRUE)
 END
+
+
+//
+// Count unique liquors
+//
+// Implementation Note:
+// No straightforward way to count N out of M items. Seems like
+// the easiest way is to keep track of each item type via a variable,
+// and when setting one - incrementing the total unique counter.
+//
+// That is, however, VERY repetitive - so a script should generate those
+// instead.
 

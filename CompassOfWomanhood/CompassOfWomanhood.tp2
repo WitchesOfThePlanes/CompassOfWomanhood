@@ -283,77 +283,6 @@ OUTER_SET file_num += 1
 PRINT "Copied %file_num% spell files"
 
 
-//
-// Items
-//
-
-ACTION_DEFINE_ARRAY item_icons
-BEGIN
-  ~CompassOfWomanhood/items/shithri/6WSAB01I.BAM~
-  ~CompassOfWomanhood/items/shithri/6WSAB01D.BAM~
-END
-
-SILENT
-OUTER_SET file_num = 0
-ACTION_PHP_EACH item_icons AS num => icon
-BEGIN
-  COPY ~%icon%~ ~override~
-  OUTER_SET file_num += 1
-END
-PRINT "Copied %file_num% item icons"
-
-SILENT
-OUTER_SET file_num = 0
-
-// cutlass
-COPY ~CompassOfWomanhood/items/shithri/_6WSAB01.ITM~ ~override~
-  SAY NAME1 @50
-  SAY NAME2 @51
-  SAY UNIDENTIFIED_DESC @52
-OUTER_SET file_num += 1
-
-// liquors
-// (mapping two-digit midfix to string number)
-//TODO: icons
-ACTION_DEFINE_ASSOCIATIVE_ARRAY drink_items
-BEGIN
-  ~00~  => 4000000  /* Bitter Black Ale */
-  ~01~  => 4010000  /* Shadowdark Ale */
-  ~02~  => 4020000  /* Suz-Ale */
-  ~03a~ => 4030000  /* Golden Sands Basic */
-  ~03b~ => 4030100  /* Golden Sands Gold */
-  ~03c~ => 4030200  /* Golden Sands Orange */
-  ~04~  => 4040000  /* Iriaeboran North Brew */
-  ~05~  => 4050000  /* Luiren's Best Ale */
-  ~06~  => 4060000  /* Tanagyr's Ale */
-  ~07~  => 4070000  /* Undermountain Alurlyath */
-  ~08~  => 4080000  /* Arabellan Dry */
-  ~09~  => 4090000  /* Evermead */
-  ~10~  => 4100000  /* Westgate Ruby */
-  ~11~  => 4110000  /* Saerloonian Topaz */
-  ~12~  => 4120000  /* Berduskan Dark */
-  ~13~  => 4130000  /* Winter Wine */
-  ~14~  => 4140000  /* Dragon's Beer */
-  ~90~  => 4900000  /* Elminster's Choice */
-END
-
-WITH_TRA ~CompassOfWomanhood/translations/%LANGUAGE%/shithri_drink_quest.tra~ 
-BEGIN
-  ACTION_PHP_EACH drink_items AS midfix => num
-  BEGIN
-    COPY ~CompassOfWomanhood/items/shithri/_6WDR00.itm~ ~override/_6WDR%midfix%.itm~
-      SAY NAME1 (AT "num")
-      SAY NAME2 (AT "num")
-      num += 1
-      SAY UNIDENTIFIED_DESC (AT "num")
-      SAY IDENTIFIED_DESC   (AT "num")
-    OUTER_SET file_num += 1
-  END
-END
-
-PRINT "Copied %file_num% item files"
-
-
 
 //
 // Sounds
@@ -497,6 +426,82 @@ BEGIN
   OUTER_SET file_num += 1
 END
 PRINT "Extended %file_num% existing scripts"
+
+
+//
+// Items
+//
+
+ACTION_DEFINE_ARRAY item_icons
+BEGIN
+  ~CompassOfWomanhood/items/shithri/6WSAB01I.BAM~
+  ~CompassOfWomanhood/items/shithri/6WSAB01D.BAM~
+END
+
+SILENT
+OUTER_SET file_num = 0
+ACTION_PHP_EACH item_icons AS num => icon
+BEGIN
+  COPY ~%icon%~ ~override~
+  OUTER_SET file_num += 1
+END
+PRINT "Copied %file_num% item icons"
+
+SILENT
+OUTER_SET file_num = 0
+
+// cutlass
+COPY ~CompassOfWomanhood/items/shithri/_6WSAB01.ITM~ ~override~
+  SAY NAME1 @50
+  SAY NAME2 @51
+  SAY UNIDENTIFIED_DESC @52
+OUTER_SET file_num += 1
+
+// liquors
+// (mapping two-digit midfix to string number)
+//TODO: icons
+ACTION_DEFINE_ASSOCIATIVE_ARRAY drink_items
+BEGIN
+  ~00~  => 4000000  /* Bitter Black Ale */
+  ~01~  => 4010000  /* Shadowdark Ale */
+  ~02~  => 4020000  /* Suz-Ale */
+  ~03a~ => 4030000  /* Golden Sands Basic */
+  ~03b~ => 4030100  /* Golden Sands Gold */
+  ~03c~ => 4030200  /* Golden Sands Orange */
+  ~04~  => 4040000  /* Iriaeboran North Brew */
+  ~05~  => 4050000  /* Luiren's Best Ale */
+  ~06~  => 4060000  /* Tanagyr's Ale */
+  ~07~  => 4070000  /* Undermountain Alurlyath */
+  ~08~  => 4080000  /* Arabellan Dry */
+  ~09~  => 4090000  /* Evermead */
+  ~10~  => 4100000  /* Westgate Ruby */
+  ~11~  => 4110000  /* Saerloonian Topaz */
+  ~12~  => 4120000  /* Berduskan Dark */
+  ~13~  => 4130000  /* Winter Wine */
+  ~14~  => 4140000  /* Dragon's Beer */
+  ~90~  => 4900000  /* Elminster's Choice */
+END
+
+WITH_TRA ~CompassOfWomanhood/translations/%LANGUAGE%/shithri_drink_quest.tra~ 
+BEGIN
+  ACTION_PHP_EACH drink_items AS midfix => num
+  BEGIN
+    COPY ~CompassOfWomanhood/items/shithri/_6WDR00.itm~ ~override/_6WDR%midfix%.itm~
+      SAY NAME1 (AT "num")
+      SAY NAME2 (AT "num")
+      num += 1
+      SAY UNIDENTIFIED_DESC (AT "num")
+      SAY IDENTIFIED_DESC   (AT "num")
+
+    EXTEND_BOTTOM ~6WSHITH.bcs~ ~CompassOfWomanhood/scripts/shithri/shithri_drink_quest_iter.baf~
+      SPRINT drink_num "%midfix%"
+      EVALUATE_BUFFER
+
+    OUTER_SET file_num += 1
+  END
+END
+
+PRINT "Copied %file_num% item files"
 
 
 //

@@ -28,7 +28,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("6W#ShithriGotHalfAttackBonus","GLOBAL",1)
-    ReallyForceSpellDeadRES("6W#SHAB",Myself)
+    ReallyForceSpellDeadRES("6WSHIEAT",Myself)
     Continue()
 END
 

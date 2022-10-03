@@ -262,7 +262,7 @@
 @3900099 = ~*gulp* Wha' a swab...~
 
 @3100000 = ~Westgate Wine.~
-@3100001 = ~Ho, ne'er gonna forget the Beef 'n Oysters Barnabas! But fits well wit' dwarvish stews too, that bold, crimson liqie, aye.~  
+@3100001 = ~Ho, ne'er gonna forget the Beef 'n Oysters Barnabas! But fits well wit' dwarvish stews too, that bold, crimson liqie, aye.~
 @3100002 = ~So basically one wine to rule all them beef dishes? Fantastic!~
 @3100003 = ~I'm afraid it's either the wine or the beef for us...~
 @3100004 = ~Beef goes best with beer, not wine. We don't need it.~
@@ -422,6 +422,66 @@ Sembians are very proud of this beer - or so Shithri says. Its flavor is strong 
 The liquid inside is reminescent of storm clouds - very dark and hazy. It has a strong odor of cheep smoked ham.
 
 Shithri not only refuses to provide any valuable comment on this beer, but seems gravely offended of you as much as having it on you.~
+
+
+
+@5000000 = ~Nah talkin' t' ye lubbers. Pff! *gulp*~
+@5000010 = ~Oy, look who's there! Ain't that lil Shithri?~
+@5000011 = ~Franky the Eye-Popper? Be that ye? How'd ye been, matey?~
+@5000012 = ~Nah bad, nah bad. Been sailin' between Amn 'n Calimshan quite lot these days.~
+@5000013 = ~Huh. Betta than ye, it seems. Who's that lubber o'er there?~
+@5000014 = ~That? That be me capt'n. Capt'n, meet Franky.~
+@5000015 = ~"Capt'n"? Har har! That a good one!~
+@5000016 = ~Shithri, me lil rapscallion. Why nah ye join me instead of playin' wit' that lubber?~
+@5000017 = ~Capt'n be alright, Franky.~
+@5000018 = ~Aye, sure thing! That lubber who had dwarvish grog once or twice 'n already thinks <PRO_HIMHER>'s a sailor, har har! Shithri, ye lil jester, 'ave some mercy fer an old man's stomach!~
+@5000020 = ~Nice to meet you too, Franky. I'm <CHARNAME>.~
+@5000021 = ~Not to brag, but I'm actually quite an expert when it comes to liquors.~
+@5000022 = ~Let's not waste our time on that man. We have stuff to do.~
+@5000030 = ~I bet ye do, lubber! Pff. Shithri, matey, if ye reconsider - ye know where t' find me.~
+@5000035 = ~Ho? 'n wha' makes ye think that?~
+@5000036 = ~Well, I mean: how difficult can it be to be better than someone like you?~
+@5000040 = ~Oh, 'n who be ye, huh?~
+@5000041 = ~That is no concern of yours.~
+@5000042 = ~You heard my trusty bosun. I'm her captain.~
+@5000043 = ~I'm someone who knows <PRO_HISHER> liquors better than you do.~
+@5000050 = ~Aye, it ain't. *gulp* Good luck wit' yer lubbin' then. Shithri, matey, if ye reconsider - ye know where t' find me.~
+@5000060 = ~Ye sure be! I bet ye got lotta experience on the sea, har har.~
+@5000061 = ~Well, I bet even a land-lubber like me knows my liquors better than you do.~
+@5000070 = ~Wha' ye said, ye swab?!~
+@5000071 = ~What you heard, dog. I bet I know my liquors better than you do.~
+@5000072 = ~I said what I said.~
+@5000080 = ~I warn ye, ye bildge rat. I nah be called Franky the Eye-Popper fer naught.~
+@5000081 = ~Oh? So you admit you can only beat me by fist and not by skill?~
+@5000082 = ~Bring it on, Franky the Popped-Eye!~
+@5000085 = ~Ho! I see ye got a big mouth. Fine, let's see if ye as good as ye say. The Thumb be judgin'.~
+@5000086 = ~Wha' the Thumb hears? A drinkin' duel, be it?~
+@5000087 = ~So wha' ye say, Shithri's "cap'tn"?~
+@5000090 = ~Fine by me.~
+@5000091 = ~I won't waste my time on you.~
+@5000095 = ~Huh! Thought so - ye jus' all talk. *gulp* Good luck wit' yer lubbin' then. Shithri, matey, if ye reconsider - ye know where t' find me.~
+
+@5000100 = ~Good! *gulp* Here be me rules: I try three o' yers, ye try three o' mine. I win - ye gimme some nice, round figure. Like 5000 gold pieces, says me. Fair enough?~
+@5000101 = ~Sure. I accept your rules.~
+@5000102 = ~And what if I win?~
+@5000103 = ~After giving it a second thought, I won't waste my time on you.~
+@5000110 = ~If ye win? Har har! If that e'er happens, ye pick wha' ye want.~
+@5000111 = ~Fine. I accept your rules.~
+@5000112 = ~Make it 5000 gold too and we're fine.~
+@5000120 = ~Capt'n? May I 'ave this bucko talk t' ye fer a moment?~
+@5000121 = ~Franky be plenty strong, though he nah look like it. Some say it cause o' how much spinach he eats, but I nah believe that. He prolly be 'avin' some item that makes 'im strong.~
+@5000122 = ~Like gloves or belt?~
+@5000123 = ~Doesn't matter. 5000 gold pieces is a fair reward.~
+@5000125 = ~Aye. Somethin' o' that kind.~
+@5000126 = ~Well, in that case... Hey, Franky! I will pick what I want then I win, after all. I accept your rules.~
+@5000130 = ~Could be, aye. 5000 gold pieces t' ye if ye e'er win. Deal?~
+@5000140 = ~Ready?~
+@5000141 = ~When you are.~
+@5000142 = ~Let me just gather my gold.~
+@5000143 = ~Let me just gather my collection.~
+@5000150 = ~Aye, take yer time. I ain't wanna hear ye complain ye got nah chance.~
+
+@5000200 = ~Oy, The Thumb! Come o'er 'ere!~
 
 
 

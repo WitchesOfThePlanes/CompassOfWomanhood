@@ -1,0 +1,23 @@
+//
+// Shithri's drink quest seaman
+//
+// Appears in AR0313 (Sea Bounty tavern) after the party collects
+// at least different 9 drinks (and re-enters it, if they got to 9
+// in the Sea Bounty tavern itself).
+
+// Doesn't really make much sense for the dialogue to take place
+// unless Player1 is in the same location. Shithri being there without
+// Player1 could trigger a different one, but it seems a bit of an edgecase.
+IF
+  See("6WSHITHRI")
+  IsValidForPartyDialogue("6WSHITHRI")
+  InMyArea(Player1)
+  InMyArea("THUMB")
+  Global("6W#ShithriDrinksSeamanSaw","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("6W#ShithriDrinksSeamanSaw","GLOBAL",1)
+    StartDialogNoSet(Player1)
+    SetInterrupt(TRUE)
+END

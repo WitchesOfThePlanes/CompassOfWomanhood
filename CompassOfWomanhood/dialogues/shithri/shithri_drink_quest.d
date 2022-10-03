@@ -2474,3 +2474,306 @@ APPEND 6WSHITJ
   END
 END
 
+
+//
+// Seaman-related dialogues
+//
+
+// ShithriDrinksActive:
+//  * 1 - still gathering the liquors
+//  * 2 - agreed to the duel
+//  * 3 - denied the duel, no coming back!
+//
+// ShithriDrinksStakes:
+//  * 0 - no info on stakes
+//  * 1 - if you win, "you pick what you want"
+//  * 2 - equal stakes, i.e. 5000 gp
+
+// If Shithri's not in the party, location or can't talk,
+// the seaman has nothing interesting to say.
+APPEND 6WPIRDR
+  IF ~
+    !IsValidForPartyDialog("6WSHITHRI")
+  ~ THEN 6W#ShithriDrinksSeaman__initial_nah
+    SAY @5000000 /* Nah talkin' t' ye lubbers. Pff! *gulp* */
+    IF ~~ THEN EXIT
+  END
+END
+
+CHAIN IF ~
+  IsValidForPartyDialog("6WSHITHRI")
+  InMyArea(Player1)
+  InMyArea("THUMB")
+~ THEN 6WPIRDR 6W#ShithriDrinksSeaman__initial
+  @5000010 /* Oy, look who's there! Ain't that lil Shithri? */
+  == 6WSHITJ
+  @5000011 /* Franky the Eye-Popper? Be that ye? How'd ye been, matey? */
+  // If you couldn't tell: the person who inspired Popeye's author
+  // was a Pole, Frank "Rocky" Fiegel.
+  //
+  // The Polish version is Ferdek instead, as the early translations
+  // of Popeye comis strips translated him either as „żeglarz Kubuś”
+  // (Jake the sailor) or Ferdek (Freddie).
+  == 6WPIRDR
+  @5000012 /* Nah bad, nah bad. Been sailin' between Amn 'n Calimshan quite lot these days. */
+  == 6WPIRDR
+  @5000013 /* Huh. Betta than ye, it seems. Who's that lubber o'er there? */
+  == 6WSHITJ
+  @5000014 /* That? That be me capt'n. Capt'n, meet Franky. */
+  == 6WPIRDR
+  @5000015 /* "Capt'n"? Har har! That a good one! */
+  =
+  @5000016 /* Shithri, me lil rapscallion. Why nah ye join me instead of playin' wit' that lubber? */
+  == 6WSHITJ
+  @5000017 /* Capt'n be alright, Franky. */
+  == 6WPIRDR
+  @5000018 /* Aye, sure thing! That lubber who had dwarvish grog once or twice 'n already thinks <PRO_HIMHER>'s a sailor, har har! Shithri, ye lil jester, 'ave some mercy fer an old man's stomach! */
+END
+  IF ~~ THEN
+    REPLY @5000020 /* Nice to meet you too, Franky. I'm <CHARNAME>. */
+    GOTO 6W#ShithriDrinksSeaman__nice_to_meet_you
+  IF ~~ THEN
+    REPLY @5000021 /* Not to brag, but I'm actually quite an expert when it comes to liquors. */
+    GOTO 6W#ShithriDrinksSeaman__im_expert
+  IF ~~ THEN
+    REPLY @5000022 /* Let's not waste our time on that man. We have stuff to do. */
+    GOTO 6W#ShithriDrinksSeaman__wasting_time
+
+APPEND 6WPIRDR
+  // Note: the quest ends here!
+  IF ~~ THEN 6W#ShithriDrinksSeaman__wasting_time
+    SAY @5000030 /* I bet ye do, lubber! Pff. Shithri, matey, if ye reconsider - ye know where t' find me. */
+    IF ~~ THEN
+      DO ~
+        SetGlobal("6W#ShithriDrinksActive","GLOBAL",3)
+      ~
+      EXIT
+  END
+
+  IF ~~ THEN 6W#ShithriDrinksSeaman__im_expert
+    SAY @5000035 /* Ho? 'n wha' makes ye think that? */
+
+    IF ~~ THEN
+      REPLY @5000036 /* Well, I mean: how difficult can it be to be better than someone like you? */
+      GOTO 6W#ShithriDrinksSeaman__better_than_you
+
+    IF ~~ THEN
+      REPLY @5000041 /* That is no concern of yours. */
+      GOTO 6W#ShithriDrinksSeaman__not_your_concern
+  END
+
+  IF ~~ THEN 6W#ShithriDrinksSeaman__nice_to_meet_you
+    SAY @5000040 /* Oh, 'n who be ye, huh? */
+
+    IF ~~ THEN
+      REPLY @5000041 /* That is no concern of yours. */
+      GOTO 6W#ShithriDrinksSeaman__not_your_concern
+
+    IF ~~ THEN
+      REPLY @5000042 /* You heard my trusty bosun. I'm her captain. */
+      GOTO 6W#ShithriDrinksSeaman__her_captain
+
+    IF ~~ THEN
+      REPLY @5000043 /* I'm someone who knows <PRO_HISHER> liquors better than you do. */
+      GOTO 6W#ShithriDrinksSeaman__better_than_you
+  END
+
+  IF ~~ THEN 6W#ShithriDrinksSeaman__not_your_concern
+    SAY @5000050 /* Aye, it ain't. *gulp* Good luck wit' yer lubbin' then. Shithri, matey, if ye reconsider - ye know where t' find me. */
+    IF ~~ THEN
+      DO ~
+        SetGlobal("6W#ShithriDrinksActive","GLOBAL",3)
+      ~
+      EXIT
+  END
+
+  IF ~~ THEN 6W#ShithriDrinksSeaman__her_captain
+    SAY @5000060 /* Ye sure be! I bet ye got lotta experience on the sea, har har. */
+
+    IF ~~ THEN
+      REPLY @5000041 /* That is no concern of yours. */
+      GOTO 6W#ShithriDrinksSeaman__not_your_concern
+
+    IF ~~ THEN
+      REPLY @5000061 /* Well, I bet even a land-lubber like me knows my liquors better than you do. */
+      GOTO 6W#ShithriDrinksSeaman__better_than_you
+  END
+
+  IF ~~ THEN 6W#ShithriDrinksSeaman__better_than_you
+    SAY @5000070 /* Wha' ye said, ye swab?! */
+
+    IF ~~ THEN
+      REPLY @5000071 /* What you heard, dog. I bet I know my liquors better than you do. */
+      GOTO 6W#ShithriDrinksSeaman__better_than_you_1
+
+    IF ~~ THEN
+      REPLY @5000072 /* I said what I said. */
+      GOTO 6W#ShithriDrinksSeaman__better_than_you_1
+  END
+
+  IF ~~ THEN 6W#ShithriDrinksSeaman__better_than_you_1
+    SAY @5000080 /* I warn ye, ye bildge rat. I nah be called Franky the Eye-Popper fer naught. */
+
+    IF ~~ THEN
+      REPLY @5000081 /* Oh? So you admit you can only beat me by fist and not by skill? */
+      GOTO 6W#ShithriDrinksSeaman__better_than_you_2
+
+    IF ~~ THEN
+      REPLY @5000082 /* Bring it on, Franky the Popped-Eye! */
+      DO ~
+        SetGlobal("6W#ShithriDrinksActive","GLOBAL",3)
+        Enemy()
+        Attack(Player1)
+      ~
+      EXIT
+  END
+END
+
+CHAIN 6WPIRDR 6W#ShithriDrinksSeaman__better_than_you_2
+  @5000085 /* Ho! I see ye got a big mouth. Fine, let's see if ye as good as ye say. The Thumb be judgin'. */
+  == THUMB
+  @5000086 /* Wha' the Thumb hears? A drinkin' duel, be it? */
+  == 6WPIRDR
+  @5000087 /* So wha' ye say, Shithri's "cap'tn"? */
+END
+  IF ~~ THEN
+    REPLY @5000090 /* Fine by me. */
+    GOTO 6W#ShithriDrinksSeaman__accept
+  IF ~~ THEN
+    REPLY @5000091 /* I won't waste my time on you. */
+    GOTO 6W#ShithriDrinksSeaman__all_talk
+
+APPEND 6WPIRDR
+  IF ~~ THEN 6W#ShithriDrinksSeaman__all_talk
+    SAY @5000095 /* Huh! Thought so - ye jus' all talk. *gulp* Good luck wit' yer lubbin' then. Shithri, matey, if ye reconsider - ye know where t' find me. */
+    IF ~~ THEN
+      DO ~
+        SetGlobal("6W#ShithriDrinksActive","GLOBAL",3)
+      ~
+      EXIT
+  END
+
+  IF ~~ THEN 6W#ShithriDrinksSeaman__accept
+    SAY @5000100 /* Good! *gulp* Here be me rules: I try three o' yers, ye try three o' mine. I win - ye gimme some nice, round figure. Like 5000 gold pieces, says me. Fair enough? */
+
+    IF ~~ THEN
+      REPLY @5000101 /* Sure. I accept your rules. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksActive","GLOBAL",2)
+      ~
+      GOTO 6W#ShithriDrinksSeaman__accept_rules
+
+    IF ~~ THEN
+      REPLY @5000102 /* And what if I win? */
+      DO ~
+        SetGlobal("6W#ShithriDrinksStakes","GLOBAL",1)
+      ~
+      GOTO 6W#ShithriDrinksSeaman__what_if_i_win
+
+    IF ~~ THEN
+      REPLY @5000103 /* After giving it a second thought, I won't waste my time on you. */
+      GOTO 6W#ShithriDrinksSeaman__all_talk
+  END
+
+  IF ~~ THEN 6W#ShithriDrinksSeaman__what_if_i_win
+    SAY @5000110 /* If ye win? Har har! If that e'er happens, ye pick wha' ye want. */
+
+    IF ~~ THEN
+      REPLY @5000111 /* Fine. I accept your rules. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksActive","GLOBAL",2)
+      ~
+      GOTO 6W#ShithriDrinksSeaman__accept_rules
+
+    IF ~~ THEN
+      REPLY @5000112 /* Make it 5000 gold too and we're fine. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksStakes","GLOBAL",2)
+      ~
+      EXTERN ~6WSHITJ~ 6W#ShithriDrinksSeaman__shithri_stake_rethink
+
+    IF ~~ THEN
+      REPLY @5000103 /* After giving it a second thought, I won't waste my time on you. */
+      GOTO 6W#ShithriDrinksSeaman__all_talk
+  END
+END
+
+APPEND 6WSHITJ
+  IF ~~ THEN 6W#ShithriDrinksSeaman__shithri_stake_rethink
+    SAY @5000120 /* Capt'n? May I 'ave this bucko talk t' ye fer a moment? */
+    =
+    @5000121 /* Franky be plenty strong, though he nah look like it. Some say it cause o' how much spinach he eats, but I nah believe that. He prolly be 'avin' some item that makes 'im strong. */ 
+
+    IF ~~ THEN
+      REPLY @5000122 /* Like gloves or belt? */
+      // ;)
+      GOTO 6W#ShithriDrinksSeaman__shithri_like_gloves_or_belt
+
+    IF ~~ THEN
+      REPLY @5000123 /* Doesn't matter. 5000 gold pieces is a fair reward. */
+      EXTERN ~6WPIRDR~ 6W#ShithriDrinksSeaman__same_stake
+  END
+
+  IF ~~ THEN 6W#ShithriDrinksSeaman__shithri_like_gloves_or_belt
+    SAY @5000125 /* Aye. Somethin' o' that kind. */
+
+    IF ~~ THEN
+      REPLY @5000126 /* Well, in that case... Hey, Franky! I will pick what I want then I win, after all. I accept your rules. */
+      EXTERN ~6WPIRDR~ 6W#ShithriDrinksSeaman__accept_rules
+
+    IF ~~ THEN
+      REPLY @5000123 /* Doesn't matter. 5000 gold pieces is a fair reward. */
+      EXTERN ~6WPIRDR~ 6W#ShithriDrinksSeaman__same_stake
+  END
+END
+
+APPEND 6WPIRDR
+  IF ~~ THEN 6W#ShithriDrinksSeaman__same_stake
+    SAY @5000130 /* Could be, aye. 5000 gold pieces t' ye if ye e'er win. Deal? */
+
+    IF ~~ THEN
+      REPLY @5000111 /* Fine. I accept your rules. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksActive","GLOBAL",2)
+        SetGlobal("6W#ShithriDrinksStakes","GLOBAL",2)
+      ~
+      GOTO 6W#ShithriDrinksSeaman__accept_rules
+
+    IF ~~ THEN
+      REPLY @5000103 /* After giving it a second thought, I won't waste my time on you. */
+      GOTO 6W#ShithriDrinksSeaman__all_talk
+  END
+
+  IF ~~ THEN 6W#ShithriDrinksSeaman__accept_rules
+    SAY @5000140 /* Ready? */
+
+    IF ~
+      !GlobalLT("6W#ShithriDrinksHasUniqueDrinks","GLOBAL",3)
+      !PartyGoldLT(5000)
+    ~ THEN
+      REPLY @5000141 /* When you are. */
+      GOTO 6W#ShithriDrinksDuel__start
+
+    IF ~PartyGoldLT(5000)~ THEN
+      REPLY @5000142 /* Let me just gather my gold. */
+      GOTO 6W#ShithriDrinksSeaman__take_your_time
+
+    IF ~~ THEN
+      REPLY @5000143 /* Let me just gather my collection. */
+      GOTO 6W#ShithriDrinksSeaman__take_your_time
+  END
+
+  IF ~~ THEN 6W#ShithriDrinksSeaman__take_your_time
+    SAY @5000150 /* Aye, take yer time. I ain't wanna hear ye complain ye got nah chance. */
+    IF ~~ THEN EXIT
+  END
+END
+
+APPEND 6WPIRDR
+  IF ~~ THEN 6W#ShithriDrinksDuel__start
+    SAY @5000200 /* Oy, The Thumb! Come o'er 'ere! */
+
+    //TODO: the actual duel
+    IF ~~ THEN EXIT
+  END
+END

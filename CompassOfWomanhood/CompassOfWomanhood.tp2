@@ -111,6 +111,9 @@ BEGIN
   ~CompassOfWomanhood/dialogues/shithri/6WSHI25P.d~
   ~CompassOfWomanhood/dialogues/shithri/6WSHI25J.d~
   ~CompassOfWomanhood/dialogues/shithri/6WSHI25D.d~
+
+  // quests-related creatures
+  ~CompassOfWomanhood/dialogues/shithri/6WPIRDR.d~
 END
 
 ACTION_DEFINE_ARRAY dialogues_extra
@@ -384,6 +387,10 @@ BEGIN
     SAY SET_A_TRAP             @140 /* Lil something. Big surprise. */
   OUTER_SET file_num += 1
 END
+
+COPY ~CompassOfWomanhood/creatures/shithri/6WPIRDR.cre~ ~override~
+  OUTER_SET file_num += 1
+
 PRINT "Copied %file_num% creature files"
 
 
@@ -394,7 +401,8 @@ PRINT "Copied %file_num% creature files"
 SILENT
 COMPILE ~CompassOfWomanhood/scripts/shithri/6WSHITH.baf~ ~override~
 COMPILE ~CompassOfWomanhood/scripts/shithri/6WSHI25.baf~ ~override~
-PRINT "Compiled 2 new scripts"
+COMPILE ~CompassOfWomanhood/scripts/shithri/6WPIRDR.baf~ ~override~
+PRINT "Compiled 3 new scripts"
 
 ACTION_DEFINE_ASSOCIATIVE_ARRAY script_extensions
 BEGIN

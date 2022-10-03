@@ -389,7 +389,9 @@ BEGIN
 END
 
 COPY ~CompassOfWomanhood/creatures/shithri/6WPIRDR.cre~ ~override~
-  OUTER_SET file_num += 1
+  SAY NAME1 @1000
+  SAY NAME2 @1000
+OUTER_SET file_num += 1
 
 PRINT "Copied %file_num% creature files"
 

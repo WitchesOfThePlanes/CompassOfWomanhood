@@ -15,3 +15,24 @@ THEN
     CreateCreature("6WPIRDR",[443.540],NW)
     SetGlobal("6W#ShithriDrinksSeamanSpawn","GLOBAL",3)
 END
+
+// The Thumb has no script of his own, so he'll use area script (for simplicity).
+IF
+  Global("6W#ShithriDrinksStarting","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("6W#ShithriDrinksStarting","GLOBAL",2)
+    ClearAllActions()
+    StartCutSceneMode()
+    FadeToColor([20.0],0)
+    Wait(2)
+
+    //TODO: move other characters around so it's more realistic?
+    ActionOverride(Player1, JumpToPoint([468.540],NW))
+
+    FadeFromColor([20.0],0)
+    Wait(1)
+    SmallWait(1)
+    EndCutSceneMode()
+    ActionOverride("THUMB", StartDialogNoSet(Player1))
+END

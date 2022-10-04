@@ -337,6 +337,8 @@ PRINT "Copied 3 portrait files"
 // creature
 SILENT
 OUTER_SET file_num = 0
+OUTER_SET file_edited_num = 0
+
 ACTION_FOR_EACH cre_file IN ~6WSHIT08~ ~6WSHIT09~ ~6WSHIT10~ ~6WSHIT11~ ~6WSHIT13~ ~6WSHIT15~ ~6WSHIT25~
 BEGIN
   COPY ~CompassOfWomanhood/creatures/shithri/%cre_file%.cre~ ~override~
@@ -388,12 +390,86 @@ BEGIN
   OUTER_SET file_num += 1
 END
 
+
+// Implementation Note:
+// In the original game, some creatures lack Script Identifiers. Those are needed in order to refer
+// to a creature inside scripts. In particular - to check if it's alive, in your location, move it
+// around etc.
+//
+// This mod adds Script Identifiers to some creatures that lack them. These Script Identifiers match
+// the creature's file name.
+//
+// While name collisions could theoretically happen, it is assumed that modders don't give their
+// creatures Script Identifiers that match existing file names.
+
+// TODO: write a more general function, that could calculate the data automatically?
+// ~THUMB~ ~SBCUST01~ ~SBCUST02~ ~SBWENCH~ ~SBSLUM01~
+COPY_EXISTING ~THUMB.cre~ ~override~
+  PATCH_IF (LONG_AT 0x280) == 0  ||  (LONG_AT 0x280) == 0x656e6f4e // `None`
+  BEGIN
+    WRITE_LONG 0x280 0x4d554854
+    WRITE_LONG 0x284 0x00000042
+    INNER_ACTION
+    BEGIN
+      OUTER_SET file_edited_num += 1
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+COPY_EXISTING ~SBCUST01.cre~ ~override~
+  PATCH_IF (LONG_AT 0x280) == 0  ||  (LONG_AT 0x280) == 0x656e6f4e // `None`
+  BEGIN
+    WRITE_LONG 0x280 0x55434253
+    WRITE_LONG 0x284 0x31305453
+    INNER_ACTION
+    BEGIN
+      OUTER_SET file_edited_num += 1
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+COPY_EXISTING ~SBCUST02.cre~ ~override~
+  PATCH_IF (LONG_AT 0x280) == 0  ||  (LONG_AT 0x280) == 0x656e6f4e // `None`
+  BEGIN
+    WRITE_LONG 0x280 0x55434253
+    WRITE_LONG 0x284 0x32305453
+    INNER_ACTION
+    BEGIN
+      OUTER_SET file_edited_num += 1
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+COPY_EXISTING ~SBWENCH.cre~ ~override~
+  PATCH_IF (LONG_AT 0x280) == 0  ||  (LONG_AT 0x280) == 0x656e6f4e // `None`
+  BEGIN
+    WRITE_LONG 0x280 0x45574253
+    WRITE_LONG 0x284 0x0048434e
+    INNER_ACTION
+    BEGIN
+      OUTER_SET file_edited_num += 1
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+COPY_EXISTING ~SBSLUM01.cre~ ~override~
+  PATCH_IF (LONG_AT 0x280) == 0  ||  (LONG_AT 0x280) == 0x656e6f4e // `None`
+  BEGIN
+    WRITE_LONG 0x280 0x4c534253
+    WRITE_LONG 0x284 0x31304d55
+    INNER_ACTION
+    BEGIN
+      OUTER_SET file_edited_num += 1
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+
+
+// new creature: drinking sailor
 COPY ~CompassOfWomanhood/creatures/shithri/6WPIRDR.cre~ ~override~
   SAY NAME1 @1000
   SAY NAME2 @1000
 OUTER_SET file_num += 1
 
 PRINT "Copied %file_num% creature files"
+PRINT "Edited %file_edited_num% existing creature files"
 
 
 //

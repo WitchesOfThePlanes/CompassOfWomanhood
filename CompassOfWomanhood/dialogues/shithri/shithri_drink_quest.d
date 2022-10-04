@@ -5,9 +5,9 @@
 // Later on, after you get enough bottles, an old seaman appears
 // to challenge you to a competition.
 //
-// Prove not to be a mere land lubber! Taste the adventure!
+// Prove not to be a mere land-lubber! Taste the adventure!
 //
-// 
+//
 
 APPEND 6WSHITJ
   IF ~
@@ -253,8 +253,8 @@ EXTEND_BOTTOM BERNARD 22
     IsGabber(Player1)
     IfValidForPartyDialogue("6WSHITHRI")
     InMyArea("6WSHITHRI")
-    Global("6W#ShithriDrinksActive","GLOBAL",1)
-  ~ THEN 
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
+  ~ THEN
     REPLY @2000000 /* Any bottled liquors in your offer? */
     GOTO bottled_liquors
 END
@@ -263,8 +263,8 @@ EXTEND_BOTTOM BERNARD 24
     IsGabber(Player1)
     IfValidForPartyDialogue("6WSHITHRI")
     InMyArea("6WSHITHRI")
-    Global("6W#ShithriDrinksActive","GLOBAL",1)
-  ~ THEN 
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
+  ~ THEN
     REPLY @2000000 /* Any bottled liquors in your offer? */
     GOTO bottled_liquors
 END
@@ -273,8 +273,8 @@ EXTEND_BOTTOM BERNARD 31
     IsGabber(Player1)
     IfValidForPartyDialogue("6WSHITHRI")
     InMyArea("6WSHITHRI")
-    Global("6W#ShithriDrinksActive","GLOBAL",1)
-  ~ THEN 
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
+  ~ THEN
     REPLY @2000000 /* Any bottled liquors in your offer? */
     GOTO bottled_liquors
 END
@@ -283,8 +283,8 @@ EXTEND_BOTTOM BERNARD 33
     IsGabber(Player1)
     IfValidForPartyDialogue("6WSHITHRI")
     InMyArea("6WSHITHRI")
-    Global("6W#ShithriDrinksActive","GLOBAL",1)
-  ~ THEN 
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
+  ~ THEN
     REPLY @2000000 /* Any bottled liquors in your offer? */
     GOTO bottled_liquors
 END
@@ -293,8 +293,8 @@ EXTEND_BOTTOM BERNARD 36
     IsGabber(Player1)
     IfValidForPartyDialogue("6WSHITHRI")
     InMyArea("6WSHITHRI")
-    Global("6W#ShithriDrinksActive","GLOBAL",1)
-  ~ THEN 
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
+  ~ THEN
     REPLY @2000000 /* Any bottled liquors in your offer? */
     GOTO bottled_liquors
 END
@@ -320,7 +320,7 @@ APPEND 6WSHITJ
     ~ THEN
       REPLY @3000000 /* Bitter Black Ale. */
       GOTO bitter_black_ale
-    
+   
     IF ~
       !PartyHasItem("_6WDR01")
     ~ THEN
@@ -355,7 +355,7 @@ EXTEND_BOTTOM CROBAR01 1
     IsGabber(Player1)
     IfValidForPartyDialogue("6WSHITHRI")
     InMyArea("6WSHITHRI")
-    Global("6W#ShithriDrinksActive","GLOBAL",1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
   ~ THEN
     REPLY @2010000 /* Any bottled liquors in your offer? */
     GOTO bottled_liquors
@@ -418,7 +418,7 @@ EXTEND_BOTTOM THUMB 0
     IsGabber(Player1)
     IfValidForPartyDialogue("6WSHITHRI")
     InMyArea("6WSHITHRI")
-    Global("6W#ShithriDrinksActive","GLOBAL",1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
   ~ THEN
     REPLY @2020000 /* Any bottled liquors in your offer? */
     GOTO bottled_liquors
@@ -428,7 +428,7 @@ EXTEND_BOTTOM THUMB 1
     IsGabber(Player1)
     IfValidForPartyDialogue("6WSHITHRI")
     InMyArea("6WSHITHRI")
-    Global("6W#ShithriDrinksActive","GLOBAL",1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
   ~ THEN
     REPLY @2020000 /* Any bottled liquors in your offer? */
     GOTO bottled_liquors
@@ -438,7 +438,7 @@ EXTEND_BOTTOM THUMB 3
     IsGabber(Player1)
     IfValidForPartyDialogue("6WSHITHRI")
     InMyArea("6WSHITHRI")
-    Global("6W#ShithriDrinksActive","GLOBAL",1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
   ~ THEN
     REPLY @2020000 /* Any bottled liquors in your offer? */
     GOTO bottled_liquors
@@ -448,7 +448,7 @@ EXTEND_BOTTOM THUMB 6
     IsGabber(Player1)
     IfValidForPartyDialogue("6WSHITHRI")
     InMyArea("6WSHITHRI")
-    Global("6W#ShithriDrinksActive","GLOBAL",1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
   ~ THEN
     REPLY @2020000 /* Any bottled liquors in your offer? */
     GOTO bottled_liquors
@@ -523,7 +523,7 @@ EXTEND_BOTTOM FFBART 0
     IsGabber(Player1)
     IfValidForPartyDialogue("6WSHITHRI")
     InMyArea("6WSHITHRI")
-    Global("6W#ShithriDrinksActive","GLOBAL",1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
   ~ THEN
     REPLY @2030000 /* Any bottled liquors in your offer? */
     GOTO bottled_liquors
@@ -533,7 +533,7 @@ EXTEND_BOTTOM FFBART 8
     IsGabber(Player1)
     IfValidForPartyDialogue("6WSHITHRI")
     InMyArea("6WSHITHRI")
-    Global("6W#ShithriDrinksActive","GLOBAL",1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
   ~ THEN
     REPLY @2030000 /* Any bottled liquors in your offer? */
     GOTO bottled_liquors
@@ -600,7 +600,7 @@ EXTEND_BOTTOM BINNKEEP 0
     IsGabber(Player1)
     IfValidForPartyDialogue("6WSHITHRI")
     InMyArea("6WSHITHRI")
-    Global("6W#ShithriDrinksActive","GLOBAL",1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
   ~ THEN
     REPLY @2040000 /* Any bottled liquors in your offer? */
     GOTO bottled_liquors
@@ -661,7 +661,7 @@ EXTEND_BOTTOM WINNKEEP 0
     IsGabber(Player1)
     IfValidForPartyDialogue("6WSHITHRI")
     InMyArea("6WSHITHRI")
-    Global("6W#ShithriDrinksActive","GLOBAL",1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
   ~ THEN
     REPLY @2050000 /* Any bottled liquors in your offer? */
     GOTO bottled_liquors
@@ -671,7 +671,7 @@ EXTEND_BOTTOM WINNKEEP 3
     IsGabber(Player1)
     IfValidForPartyDialogue("6WSHITHRI")
     InMyArea("6WSHITHRI")
-    Global("6W#ShithriDrinksActive","GLOBAL",1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
   ~ THEN
     REPLY @2050000 /* Any bottled liquors in your offer? */
     GOTO bottled_liquors
@@ -753,7 +753,7 @@ EXTEND_BOTTOM SEVBAR01 0
     IsGabber(Player1)
     IfValidForPartyDialogue("6WSHITHRI")
     InMyArea("6WSHITHRI")
-    Global("6W#ShithriDrinksActive","GLOBAL",1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
   ~ THEN
     REPLY @2060000 /* Any bottled liquors in your offer? */
     GOTO bottled_liquors__male
@@ -763,7 +763,7 @@ EXTEND_BOTTOM SEVBAR01 3
     IsGabber(Player1)
     IfValidForPartyDialogue("6WSHITHRI")
     InMyArea("6WSHITHRI")
-    Global("6W#ShithriDrinksActive","GLOBAL",1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
   ~ THEN
     REPLY @2060000 /* Any bottled liquors in your offer? */
     GOTO bottled_liquors__male
@@ -773,7 +773,7 @@ EXTEND_BOTTOM SEVBAR01 5
     IsGabber(Player1)
     IfValidForPartyDialogue("6WSHITHRI")
     InMyArea("6WSHITHRI")
-    Global("6W#ShithriDrinksActive","GLOBAL",1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
   ~ THEN
     REPLY @2060000 /* Any bottled liquors in your offer? */
     GOTO bottled_liquors__male
@@ -783,7 +783,7 @@ EXTEND_BOTTOM SEVBAR01 7
     IsGabber(Player1)
     IfValidForPartyDialogue("6WSHITHRI")
     InMyArea("6WSHITHRI")
-    Global("6W#ShithriDrinksActive","GLOBAL",1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
   ~ THEN
     REPLY @2060000 /* Any bottled liquors in your offer? */
     GOTO bottled_liquors__male
@@ -794,7 +794,7 @@ EXTEND_BOTTOM SEVBAR01 1
     IsGabber(Player1)
     IfValidForPartyDialogue("6WSHITHRI")
     InMyArea("6WSHITHRI")
-    Global("6W#ShithriDrinksActive","GLOBAL",1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
   ~ THEN
     REPLY @2060000 /* Any bottled liquors in your offer? */
     GOTO bottled_liquors__female
@@ -804,7 +804,7 @@ EXTEND_BOTTOM SEVBAR01 11
     IsGabber(Player1)
     IfValidForPartyDialogue("6WSHITHRI")
     InMyArea("6WSHITHRI")
-    Global("6W#ShithriDrinksActive","GLOBAL",1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
   ~ THEN
     REPLY @2060000 /* Any bottled liquors in your offer? */
     GOTO bottled_liquors__female
@@ -814,7 +814,7 @@ EXTEND_BOTTOM SEVBAR01 12
     IsGabber(Player1)
     IfValidForPartyDialogue("6WSHITHRI")
     InMyArea("6WSHITHRI")
-    Global("6W#ShithriDrinksActive","GLOBAL",1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
   ~ THEN
     REPLY @2060000 /* Any bottled liquors in your offer? */
     GOTO bottled_liquors__female
@@ -824,7 +824,7 @@ EXTEND_BOTTOM SEVBAR01 15
     IsGabber(Player1)
     IfValidForPartyDialogue("6WSHITHRI")
     InMyArea("6WSHITHRI")
-    Global("6W#ShithriDrinksActive","GLOBAL",1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
   ~ THEN
     REPLY @2060000 /* Any bottled liquors in your offer? */
     GOTO bottled_liquors__female
@@ -834,7 +834,7 @@ EXTEND_BOTTOM SEVBAR01 17
     IsGabber(Player1)
     IfValidForPartyDialogue("6WSHITHRI")
     InMyArea("6WSHITHRI")
-    Global("6W#ShithriDrinksActive","GLOBAL",1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
   ~ THEN
     REPLY @2060000 /* Any bottled liquors in your offer? */
     GOTO bottled_liquors__female
@@ -898,7 +898,7 @@ EXTEND_BOTTOM UHINN01 2
     IsGabber(Player1)
     IfValidForPartyDialogue("6WSHITHRI")
     InMyArea("6WSHITHRI")
-    Global("6W#ShithriDrinksActive","GLOBAL",1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
   ~ THEN
     REPLY @2070000 /* Any bottled liquors in your offer? */
     EXTERN ~UHINN02~ bottled_liquors__ask
@@ -908,7 +908,7 @@ EXTEND_BOTTOM UHINN01 29
     IsGabber(Player1)
     IfValidForPartyDialogue("6WSHITHRI")
     InMyArea("6WSHITHRI")
-    Global("6W#ShithriDrinksActive","GLOBAL",1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
   ~ THEN
     REPLY @2070000 /* Any bottled liquors in your offer? */
     EXTERN ~UHINN02~ bottled_liquors__ask
@@ -918,7 +918,7 @@ EXTEND_BOTTOM UHINN01 31
     IsGabber(Player1)
     IfValidForPartyDialogue("6WSHITHRI")
     InMyArea("6WSHITHRI")
-    Global("6W#ShithriDrinksActive","GLOBAL",1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
   ~ THEN
     REPLY @2070000 /* Any bottled liquors in your offer? */
     EXTERN ~UHINN02~ bottled_liquors__ask
@@ -928,7 +928,7 @@ EXTEND_BOTTOM UHINN01 36
     IsGabber(Player1)
     IfValidForPartyDialogue("6WSHITHRI")
     InMyArea("6WSHITHRI")
-    Global("6W#ShithriDrinksActive","GLOBAL",1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
   ~ THEN
     REPLY @2070000 /* Any bottled liquors in your offer? */
     EXTERN ~UHINN02~ bottled_liquors__ask
@@ -940,7 +940,7 @@ EXTEND_BOTTOM UHINN01 41
     IsGabber(Player1)
     IfValidForPartyDialogue("6WSHITHRI")
     InMyArea("6WSHITHRI")
-    Global("6W#ShithriDrinksActive","GLOBAL",1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
   ~ THEN
     REPLY @2070001 /* Just a bottle or two for us. */
     GOTO bottled_liquors__want
@@ -950,7 +950,7 @@ EXTEND_BOTTOM UHINN01 44
     IsGabber(Player1)
     IfValidForPartyDialogue("6WSHITHRI")
     InMyArea("6WSHITHRI")
-    Global("6W#ShithriDrinksActive","GLOBAL",1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
   ~ THEN
     REPLY @2070001 /* Just a bottle or two for us. */
     GOTO bottled_liquors__want
@@ -960,7 +960,7 @@ EXTEND_BOTTOM UHINN01 45
     IsGabber(Player1)
     IfValidForPartyDialogue("6WSHITHRI")
     InMyArea("6WSHITHRI")
-    Global("6W#ShithriDrinksActive","GLOBAL",1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
   ~ THEN
     REPLY @2070001 /* Just a bottle or two for us. */
     GOTO bottled_liquors__want
@@ -970,7 +970,7 @@ EXTEND_BOTTOM UHINN01 46
     IsGabber(Player1)
     IfValidForPartyDialogue("6WSHITHRI")
     InMyArea("6WSHITHRI")
-    Global("6W#ShithriDrinksActive","GLOBAL",1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
   ~ THEN
     REPLY @2070001 /* Just a bottle or two for us. */
     GOTO bottled_liquors__want
@@ -980,7 +980,7 @@ EXTEND_BOTTOM UHINN01 47
     IsGabber(Player1)
     IfValidForPartyDialogue("6WSHITHRI")
     InMyArea("6WSHITHRI")
-    Global("6W#ShithriDrinksActive","GLOBAL",1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
   ~ THEN
     REPLY @2070001 /* Just a bottle or two for us. */
     GOTO bottled_liquors__want
@@ -990,7 +990,7 @@ EXTEND_BOTTOM UHINN01 52
     IsGabber(Player1)
     IfValidForPartyDialogue("6WSHITHRI")
     InMyArea("6WSHITHRI")
-    Global("6W#ShithriDrinksActive","GLOBAL",1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
   ~ THEN
     REPLY @2070001 /* Just a bottle or two for us. */
     GOTO bottled_liquors__want
@@ -1063,7 +1063,7 @@ EXTEND_BOTTOM PPINN01 0
     IsGabber(Player1)
     IfValidForPartyDialogue("6WSHITHRI")
     InMyArea("6WSHITHRI")
-    Global("6W#ShithriDrinksActive","GLOBAL",1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
   ~ THEN
     REPLY @2080000 /* I just wanted to buy a bottle or two and leave. */
     DO ~SetGlobal("ppinntalk","AR1602",1)~
@@ -1074,7 +1074,7 @@ EXTEND_BOTTOM PPINN01 3
     IsGabber(Player1)
     IfValidForPartyDialogue("6WSHITHRI")
     InMyArea("6WSHITHRI")
-    Global("6W#ShithriDrinksActive","GLOBAL",1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
   ~ THEN
     REPLY @2080000 /* I just wanted to buy a bottle or two and leave. */
     GOTO bottled_liquors
@@ -1141,7 +1141,7 @@ EXTEND_BOTTOM TRINNK01 0
     IsGabber(Player1)
     IfValidForPartyDialogue("6WSHITHRI")
     InMyArea("6WSHITHRI")
-    Global("6W#ShithriDrinksActive","GLOBAL",1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
   ~ THEN
     REPLY @2090000 /* Any bottled liquors in your offer? */
     DO ~SetGlobal("ppinntalk","AR1602",1)~
@@ -1152,7 +1152,7 @@ EXTEND_BOTTOM TRINNK01 14
     IsGabber(Player1)
     IfValidForPartyDialogue("6WSHITHRI")
     InMyArea("6WSHITHRI")
-    Global("6W#ShithriDrinksActive","GLOBAL",1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
   ~ THEN
     REPLY @2090000 /* Any bottled liquors in your offer? */
     GOTO bottled_liquors__hero
@@ -2059,7 +2059,7 @@ END
 
 APPEND 6WSHITJ
   IF ~~ BEGIN westgate_wine
-    SAY @3100001 /* Ho, ne'er gonna forget the Beef 'n Oysters Barnabas! But fits well wit' dwarvish stews too, that bold, crimson liqie, aye. */  
+    SAY @3100001 /* Ho, ne'er gonna forget the Beef 'n Oysters Barnabas! But fits well wit' dwarvish stews too, that bold, crimson liqie, aye. */ 
 
     IF ~!PartyGoldLT(8)~ THEN
       REPLY @3100002 /* So basically one wine to rule all them beef dishes? Fantastic! */
@@ -2282,7 +2282,7 @@ END
 
 APPEND 6WSHITJ
   IF ~~ BEGIN dragons_beer
-    SAY @3140001 /* Ye know how Sembia has dragon in its coats o' arms? They be very proud o' this liqie. Nice foams, harsh flavor. Best one fer rye bread 'n cheese. */
+    SAY @3140001 /* Ye know how Cormyr has dragon in its coats o' arms? Few know Sembia has a dragon also. They be that proud o' this liqie. Nice foams, harsh flavor. Best one fer rye bread 'n cheese. */
 
     // 1 gp elsewhere, 9 in Mithrest (AR0704)
 
@@ -2483,6 +2483,8 @@ END
 //  * 1 - still gathering the liquors
 //  * 2 - agreed to the duel
 //  * 3 - denied the duel, no coming back!
+//  * 4 - during duel
+//  * 5 - after duel
 //
 // ShithriDrinksStakes:
 //  * 0 - no info on stakes
@@ -2493,6 +2495,7 @@ END
 // the seaman has nothing interesting to say.
 APPEND 6WPIRDR
   IF ~
+    !Global("6W#ShithriDrinksActive","GLOBAL",2)
     !IsValidForPartyDialog("6WSHITHRI")
   ~ THEN 6W#ShithriDrinksSeaman__initial_nah
     SAY @5000000 /* Nah talkin' t' ye lubbers. Pff! *gulp* */
@@ -2501,6 +2504,7 @@ APPEND 6WPIRDR
 END
 
 CHAIN IF ~
+  Global("6W#ShithriDrinksActive","GLOBAL",1)
   IsValidForPartyDialog("6WSHITHRI")
   InMyArea(Player1)
   InMyArea("THUMB")
@@ -2542,7 +2546,7 @@ END
 APPEND 6WPIRDR
   // Note: the quest ends here!
   IF ~~ THEN 6W#ShithriDrinksSeaman__wasting_time
-    SAY @5000030 /* I bet ye do, lubber! Pff. Shithri, matey, if ye reconsider - ye know where t' find me. */
+    SAY @5000030 /* I bet ye do, lubber! Pff. Shithri, mate, if ye reconsider - ye know where t' find me. */
     IF ~~ THEN
       DO ~
         SetGlobal("6W#ShithriDrinksActive","GLOBAL",3)
@@ -2579,7 +2583,7 @@ APPEND 6WPIRDR
   END
 
   IF ~~ THEN 6W#ShithriDrinksSeaman__not_your_concern
-    SAY @5000050 /* Aye, it ain't. *gulp* Good luck wit' yer lubbin' then. Shithri, matey, if ye reconsider - ye know where t' find me. */
+    SAY @5000050 /* Aye, it ain't. *gulp* Good luck wit' yer lubbin' then. Shithri, mate, if ye reconsider - ye know where t' find me. */
     IF ~~ THEN
       DO ~
         SetGlobal("6W#ShithriDrinksActive","GLOBAL",3)
@@ -2702,7 +2706,7 @@ APPEND 6WSHITJ
   IF ~~ THEN 6W#ShithriDrinksSeaman__shithri_stake_rethink
     SAY @5000120 /* Capt'n? May I 'ave this bucko talk t' ye fer a moment? */
     =
-    @5000121 /* Franky be plenty strong, though he nah look like it. Some say it cause o' how much spinach he eats, but I nah believe that. He prolly be 'avin' some item that makes 'im strong. */ 
+    @5000121 /* Franky be plenty strong, though he nah look like it. Some say it cause o' how much spinach he eats, but I nah believe that. He prolly be 'avin' some item that makes 'im strong. */
 
     IF ~~ THEN
       REPLY @5000122 /* Like gloves or belt? */
@@ -2719,6 +2723,9 @@ APPEND 6WSHITJ
 
     IF ~~ THEN
       REPLY @5000126 /* Well, in that case... Hey, Franky! I will pick what I want then I win, after all. I accept your rules. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksActive","GLOBAL",2)
+      ~
       EXTERN ~6WPIRDR~ 6W#ShithriDrinksSeaman__accept_rules
 
     IF ~~ THEN
@@ -2770,10 +2777,584 @@ APPEND 6WPIRDR
 END
 
 APPEND 6WPIRDR
-  IF ~~ THEN 6W#ShithriDrinksDuel__start
-    SAY @5000200 /* Oy, The Thumb! Come o'er 'ere! */
+  // After agreeing to the duel.
+  IF ~
+    IsGabber(Player1)
+    Global("6W#ShithriDrinksActive","GLOBAL",2)
+    InMyArea("THUMB")
+  ~ THEN 6W#ShithriDrinksSeaman__ready
+    SAY @5000160 /* Oy, lubber. Ready fer the duel yet? */
 
-    //TODO: the actual duel
-    IF ~~ THEN EXIT
+    IF ~
+      !GlobalLT("6W#ShithriDrinksHasUniqueDrinks","GLOBAL",3)
+      !PartyGoldLT(5000)
+    ~ THEN
+      REPLY @5000161 /* When you are. */
+      GOTO 6W#ShithriDrinksDuel__start
+
+    IF ~~ THEN
+      REPLY @5000162 /* No, not yet. */
+      GOTO 6W#ShithriDrinksSeaman__take_your_time
   END
 END
+
+//
+// The actual duel!
+//
+
+CHAIN 6WPIRDR 6W#ShithriDrinksDuel__start
+  @5000200 /* Oy, The Thumb! Come o'er 'ere! */
+  == THUMB
+  @5000201 /* Hehe. Listen y'all! Ye don't be seein' that often - a drinkin' duel 'ere in Sea's Bounty! */
+  DO ~
+    SetGlobal("6W#ShithriDrinksActive","GLOBAL",4)
+    SetGlobal("6W#ShithriDrinksStarting","GLOBAL",1)
+  ~
+EXIT
+
+APPEND THUMB
+  IF WEIGHT #-1 ~
+    Global("6W#ShithriDrinksActive","GLOBAL",4)
+  ~ THEN 6W#ShithriDrinksDuel__start_thumb
+    SAY @5000210 /* Betta be listenin' good, folks! These two will now be... */
+
+    // similar to how it's done in the original BG2, it's a priority queue:
+    // only one character speaks, depending on which is available:
+    // 1. Korgan
+    // 2. Dorn
+    // 3. Shithri
+    // 4. Franky the Eye-Popper (always present)
+    // Can't really use interjections here, as the state isn't there yet.
+    //TODO: verify
+    IF ~~ THEN
+      EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__start_pirdr
+    IF ~IsValidForPartyDialog("6WSHITHRI")~ THEN
+      EXTERN ~6WSHITJ~ 6W#ShithriDrinksDuel__start_shithri
+    IF ~IsValidForPartyDialog("Dorn")~ THEN
+      EXTERN ~DORNJ~ 6W#ShithriDrinksDuel__start_dorn
+    IF ~IsValidForPartyDialog("Korgan")~ THEN
+      EXTERN ~KORGANJ~ 6W#ShithriDrinksDuel__start_korgan
+  END
+END
+
+APPEND KORGANJ
+  IF ~~ THEN 6W#ShithriDrinksDuel__start_korgan
+    SAY @5000211 /* Be quick with it, ye hooker! We're waiting! */
+    IF ~~ EXTERN ~THUMB~ 6W#ShithriDrinksDuel__start_thumb_1
+  END
+END
+APPEND DORNJ
+  IF ~~ THEN 6W#ShithriDrinksDuel__start_dorn
+    SAY @5000212 /* Too much talking, not enough drinking! */
+    IF ~~ EXTERN ~THUMB~ 6W#ShithriDrinksDuel__start_thumb_1
+  END
+END
+APPEND 6WSHITJ
+  IF ~~ THEN 6W#ShithriDrinksDuel__start_shithri
+    SAY @5000213 /* Oy, ye gonna flappin' yer gums, leavin' 'em throats-dry? Or let 'em 'ave their duel already, yarrr? */
+    IF ~~ EXTERN ~THUMB~ 6W#ShithriDrinksDuel__start_thumb_1
+  END
+END
+APPEND 6WPIRDR
+  IF ~~ THEN 6W#ShithriDrinksDuel__start_pirdr
+    SAY @5000214 /* Oi, I ain't THAT patient, mate. My throat's dry. */
+    IF ~~ EXTERN ~THUMB~ 6W#ShithriDrinksDuel__start_thumb_1
+  END
+END
+
+CHAIN THUMB 6W#ShithriDrinksDuel__start_thumb_1
+  @5000220 /* Me folks! Wit'out nah more yappin': hello an' welcome our contestants... */
+  == SBSLUM01 IF ~InMyArea("SBSLUM01")~ // nobleman
+  @5000221 /* We know them already! */
+  == SBWENCH IF ~InMyArea("SBWENCH")~ // wench
+  @5000222 /* Just begin already, let them taste the wine! */
+  == THUMB
+  @5000225 /* O' course, o' course. First goes our first-timer, <CHARNAME>! */
+END ~THUMB~ 6W#ShithriDrinksDuel__pick_drink
+
+APPEND THUMB
+  IF ~~ THEN 6W#ShithriDrinksDuel__pick_drink
+    SAY @5000226 /* Pick a drink fer Franky t' guess. */
+
+    // an answer for each possible liquor
+    IF ~
+      PartyHasItem("_6WDR00")
+      GlobalLT("6W#ShithriDrinksHasDrink00","GLOBAL",2)
+    ~ THEN
+      REPLY @6000000 /* Bitter Black Ale. */
+      DO ~
+        RemoveHasItem("_6WDR00")
+        SetGlobal("6W#ShithriDrinksHasDrink00","GLOBAL",2)
+      ~
+      EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__round_1a__00
+
+    IF ~
+      PartyHasItem("_6WDR01")
+      GlobalLT("6W#ShithriDrinksHasDrink01","GLOBAL",2)
+    ~ THEN
+      REPLY @6000010 /* Shadowdark Ale. */
+      DO ~
+        RemoveHasItem("_6WDR01")
+        SetGlobal("6W#ShithriDrinksHasDrink01","GLOBAL",2)
+      ~
+      EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__round_1a__01
+
+    IF ~
+      PartyHasItem("_6WDR02")
+      GlobalLT("6W#ShithriDrinksHasDrink02","GLOBAL",2)
+    ~ THEN
+      REPLY @6000020 /* Suz-Ale. */
+      DO ~
+        RemoveHasItem("_6WDR02")
+        SetGlobal("6W#ShithriDrinksHasDrink02","GLOBAL",2)
+      ~
+      EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__round_1a__02
+
+    IF ~
+      PartyHasItem("_6WDR03a")
+      GlobalLT("6W#ShithriDrinksHasDrink03a","GLOBAL",2)
+    ~ THEN
+      REPLY @6000030 /* Golden Sands Basic. */
+      DO ~
+        RemoveHasItem("_6WDR03a")
+        SetGlobal("6W#ShithriDrinksHasDrink03a","GLOBAL",2)
+      ~
+      EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__round_1a__03a
+
+    IF ~
+      PartyHasItem("_6WDR03b")
+      GlobalLT("6W#ShithriDrinksHasDrink03b","GLOBAL",2)
+    ~ THEN
+      REPLY @6000031 /* Golden Sands Gold. */
+      DO ~
+        RemoveHasItem("_6WDR03b")
+        SetGlobal("6W#ShithriDrinksHasDrink03b","GLOBAL",2)
+      ~
+      EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__round_1a__03b
+
+    IF ~
+      PartyHasItem("_6WDR03c")
+      GlobalLT("6W#ShithriDrinksHasDrink03c","GLOBAL",2)
+    ~ THEN
+      REPLY @6000032 /* Golden Sands Orange. */
+      DO ~
+        RemoveHasItem("_6WDR03c")
+        SetGlobal("6W#ShithriDrinksHasDrink03c","GLOBAL",2)
+      ~
+      EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__round_1a__03c
+
+    IF ~
+      PartyHasItem("_6WDR04")
+      GlobalLT("6W#ShithriDrinksHasDrink04","GLOBAL",2)
+    ~ THEN
+      REPLY @6000040 /* Iriaeboran North Brew. */
+      DO ~
+        RemoveHasItem("_6WDR04")
+        SetGlobal("6W#ShithriDrinksHasDrink04","GLOBAL",2)
+      ~
+      EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__round_1a__04
+
+    IF ~
+      PartyHasItem("_6WDR05")
+      GlobalLT("6W#ShithriDrinksHasDrink05","GLOBAL",2)
+    ~ THEN
+      REPLY @6000050 /* Luiren's Best Ale. */
+      DO ~
+        RemoveHasItem("_6WDR05")
+        SetGlobal("6W#ShithriDrinksHasDrink05","GLOBAL",2)
+      ~
+      EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__round_1a__05
+
+    IF ~
+      PartyHasItem("_6WDR06")
+      GlobalLT("6W#ShithriDrinksHasDrink06","GLOBAL",2)
+    ~ THEN
+      REPLY @6000060 /* Tanagyr's Ale. */
+      DO ~
+        RemoveHasItem("_6WDR06")
+        SetGlobal("6W#ShithriDrinksHasDrink06","GLOBAL",2)
+      ~
+      EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__round_1a__06
+
+    IF ~
+      PartyHasItem("_6WDR07")
+      GlobalLT("6W#ShithriDrinksHasDrink07","GLOBAL",2)
+    ~ THEN
+      REPLY @6000070 /* Undermountain Alurlyath. */
+      DO ~
+        RemoveHasItem("_6WDR07")
+        SetGlobal("6W#ShithriDrinksHasDrink07","GLOBAL",2)
+      ~
+      EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__round_1a__07
+
+    IF ~
+      PartyHasItem("_6WDR08")
+      GlobalLT("6W#ShithriDrinksHasDrink08","GLOBAL",2)
+    ~ THEN
+      REPLY @6000080 /* Arabellan Dry. */
+      DO ~
+        RemoveHasItem("_6WDR08")
+        SetGlobal("6W#ShithriDrinksHasDrink08","GLOBAL",2)
+      ~
+      EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__round_1a__08
+
+    IF ~
+      PartyHasItem("_6WDR09")
+      GlobalLT("6W#ShithriDrinksHasDrink09","GLOBAL",2)
+    ~ THEN
+      REPLY @6000090 /* Evermead. */
+      DO ~
+        RemoveHasItem("_6WDR09")
+        SetGlobal("6W#ShithriDrinksHasDrink09","GLOBAL",2)
+      ~
+      EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__round_1a__09
+
+    IF ~
+      PartyHasItem("_6WDR10")
+      GlobalLT("6W#ShithriDrinksHasDrink10","GLOBAL",2)
+    ~ THEN
+      REPLY @6000100 /* Westgate Ruby. */
+      DO ~
+        RemoveHasItem("_6WDR10")
+        SetGlobal("6W#ShithriDrinksHasDrink10","GLOBAL",2)
+      ~
+      EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__round_1a__10
+
+    IF ~
+      PartyHasItem("_6WDR11")
+      GlobalLT("6W#ShithriDrinksHasDrink11","GLOBAL",2)
+    ~ THEN
+      REPLY @6000110 /* Saerloonian Topaz. */
+      DO ~
+        RemoveHasItem("_6WDR11")
+        SetGlobal("6W#ShithriDrinksHasDrink11","GLOBAL",2)
+      ~
+      EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__round_1a__11
+
+    IF ~
+      PartyHasItem("_6WDR12")
+      GlobalLT("6W#ShithriDrinksHasDrink12","GLOBAL",2)
+    ~ THEN
+      REPLY @6000120 /* Berduskan Dark. */
+      DO ~
+        RemoveHasItem("_6WDR12")
+        SetGlobal("6W#ShithriDrinksHasDrink12","GLOBAL",2)
+      ~
+      EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__round_1a__12
+
+    IF ~
+      PartyHasItem("_6WDR13")
+      GlobalLT("6W#ShithriDrinksHasDrink13","GLOBAL",2)
+    ~ THEN
+      REPLY @6000130 /* Winter Wine. */
+      DO ~
+        RemoveHasItem("_6WDR13")
+        SetGlobal("6W#ShithriDrinksHasDrink13","GLOBAL",2)
+      ~
+      EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__round_1a__13
+
+    IF ~
+      PartyHasItem("_6WDR14")
+      GlobalLT("6W#ShithriDrinksHasDrink14","GLOBAL",2)
+    ~ THEN
+      REPLY @6000140 /* Dragon's Beer. */
+      DO ~
+        RemoveHasItem("_6WDR14")
+        SetGlobal("6W#ShithriDrinksHasDrink14","GLOBAL",2)
+      ~
+      EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__round_1a__14
+
+    IF ~
+      PartyHasItem("_6WDR90")
+      GlobalLT("6W#ShithriDrinksHasDrink90","GLOBAL",2)
+    ~ THEN
+      REPLY @6000900 /* Elminster's Choice. */
+      DO ~
+        RemoveHasItem("_6WDR90")
+        SetGlobal("6W#ShithriDrinksHasDrink90","GLOBAL",2)
+      ~
+      EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__round_1a__90
+  END
+END
+
+
+APPEND 6WPIRDR
+  IF ~~ THEN 6W#ShithriDrinksDuel__round_1a__00
+    SAY @5010000 /* *sniffs* *sips* */
+    =
+    @5010001 /* Heavy. Black, wit' deep brown foam. Huh! Easy. It's Arabellan Bitter Black. */
+
+    IF ~~ THEN
+      DO ~
+        IncreaseGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
+      ~
+      //TODO: to round 1b, with Player1 guessing - with point
+      EXIT
+  END
+  IF ~~ THEN 6W#ShithriDrinksDuel__round_1a__01
+    SAY @5010100 /* *sniffs* *sips* */
+    =
+    @5010101 /* Smells o' cloves. Cloudy an' bubblin'. Cremy. It's, obviously, Shadowdark Ale! */
+
+    IF ~~ THEN
+      DO ~
+        IncreaseGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
+      ~
+      //TODO: to round 1b, with Player1 guessing - with point
+      EXIT
+  END
+  IF ~~ THEN 6W#ShithriDrinksDuel__round_1a__02
+    SAY @5010200 /* *sniffs* *sips* */
+    =
+    @5010201 /* Hmmm... */
+    =
+    @5010202 /* This one's nah easy. Was I nah a common guest at Calimport, I'd 'ave nah idea... but I had it once or twice. What its name though... Pretty sure it comes from Cormyr's capital... */
+
+    IF ~~ THEN
+      //TODO: to round 1b, with Player1 guessing - no point
+      EXIT
+  END
+  IF ~~ THEN 6W#ShithriDrinksDuel__round_1a__03a
+    SAY @5010300 /* *stares* Be it a trick? *sips* */
+    =
+    @5010301 /* Nay. Nah trick. It's really jus' Golden Sands Basic. How disappointin'. */
+
+    IF ~~ THEN
+      DO ~
+        IncreaseGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
+      ~
+      //TODO: to round 1b, with Player1 guessing - with point
+      EXIT
+  END
+  IF ~~ THEN 6W#ShithriDrinksDuel__round_1a__03b
+    SAY @5010310 /* *sniffs* *sips* */
+    =
+    @5010311 /* Har har! Givin' cacti brew t' me? Forgot I'm tradin' wit' Calimshan already, <PRO_BOYGIRL>? O' course it's Golden Sands Gold! */
+
+    IF ~~ THEN
+      DO ~
+        IncreaseGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
+      ~
+      //TODO: to round 1b, with Player1 guessing - with point
+      EXIT
+  END
+  IF ~~ THEN 6W#ShithriDrinksDuel__round_1a__03c
+    SAY @5010320 /* *sniffs* *sips* */
+    =
+    @5010321 /* Hmm. Pretty sure it's Golden Sands Brew... but wha' kinda? */
+    =
+    @5010322 /* Smells o' oranges. Sweet. Very light. But a bit acidic, nah jus' from orange. Currant, be it? */
+    =
+    @5010323 /* Me guess: Golden Sands Orange. */
+
+    IF ~~ THEN
+      DO ~
+        IncreaseGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
+      ~
+      //TODO: to round 1b, with Player1 guessing - with point
+      EXIT
+  END
+  IF ~~ THEN 6W#ShithriDrinksDuel__round_1a__04
+    SAY @5010400 /* *sniffs* *sips* */
+    =
+    @5010401 /* Brrr! Cold! Something from the North? Nah gonna lie though - I ain't knowin' that one. */
+
+    IF ~~ THEN
+      //TODO: to round 1b, with Player1 guessing - no point
+      EXIT
+  END
+  IF ~~ THEN 6W#ShithriDrinksDuel__round_1a__05
+    SAY @5010500 /* *sniffs* *sips* */
+    =
+    @5010501 /* Smells like... smells. Black. Weird. Huh... Bet it's some halflin' or gnome one. No clue about theirs though. */
+
+    IF ~~ THEN
+      //TODO: to round 1b, with Player1 guessing - no point
+      EXIT
+  END
+  IF ~~ THEN 6W#ShithriDrinksDuel__round_1a__06
+    SAY @5010600 /* *sniffs* */
+    =
+    @5010601 /* Ye 'ave good taste, lubber, I mus' admit. This be good old Black Tanagyr's. */
+
+    IF ~~ THEN
+      //TODO: to round 1b, with Player1 guessing - nwith point
+      DO ~
+        IncreaseGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
+      ~
+      EXIT
+  END
+  IF ~~ THEN 6W#ShithriDrinksDuel__round_1a__07
+    SAY @5010700 /* *stares* *sips* */
+    =
+    @5010701 /* Green. Glowing. Is it rich though? Hmm... mayhaps? Could it be... */
+    =
+    @5010702 /* Drow Green. Nah Ulaver, nay. But some kind of Drow Green. */
+
+    IF ~~ THEN
+      //TODO: to round 1b, with Player1 guessing - no point
+      //TODO: Shithri, Thumb or clients commenting how it's popular among romantic people AND available in this tavern?
+      EXIT
+  END
+  IF ~~ THEN 6W#ShithriDrinksDuel__round_1a__08
+    SAY @5010800 /* *smells* *sips* */
+    =
+    @5010801 /* Har har. Taste o' the forest, aye. Drunk it back on Inner Sea, drinkin' it 'ere. One o' me favs, Arabellan Dry. */
+
+    IF ~~ THEN
+      //TODO: to round 1b, with Player1 guessing - with point
+      DO ~
+        IncreaseGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
+      ~
+      EXIT
+  END
+  IF ~~ THEN 6W#ShithriDrinksDuel__round_1a__09
+    SAY @5010900 /* *sniffs* *sips* */
+    =
+    @5010901 /* Be it really... *sips* */
+    =
+    @5010902 /* Ne'er had it afore. But it obviously be it - the famous Evermead. I see ye nah poor <PRO_MANWOMAN> if ye can afford it, lubber. */
+
+    IF ~~ THEN
+      //TODO: to round 1b, with Player1 guessing - with point
+      DO ~
+        IncreaseGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
+      ~
+      EXIT
+  END
+  IF ~~ THEN 6W#ShithriDrinksDuel__round_1a__10
+    SAY @5011000 /* *sniffs* *sips* */
+    =
+    @5011001 /* Deep, deep red an' quite bold... Had something like that in Cormyr. It's Blood Wine. */
+
+    IF ~~ THEN
+      //TODO: to round 1b, with Player1 guessing - no point
+      //TODO: Shithri commenting he never liked beef?
+      EXIT
+  END
+  IF ~~ THEN 6W#ShithriDrinksDuel__round_1a__11
+    SAY @5011100 /* *stares* *sips* */
+    =
+    @5011101 /* Hmm. Nah glow, but the color fits an' it does tast o' pears. Nah too sweet either. I says: Saerloonian Glowfire, although badly stored. */
+
+    IF ~~ THEN
+      //TODO: to round 1b, with Player1 guessing - no point
+      //TODO: Shithri saying "see? told ya nah t' confuse the two!"
+      EXIT
+  END
+  IF ~~ THEN 6W#ShithriDrinksDuel__round_1a__12
+    SAY @5011200 /* *stares* *sips* */
+    =
+    @5011201 /* Very dark. Dense. Dry, but in a sweet way. An' that burnin' aftertaste... like fort'fied? They make that kind o' stuff in the North, ain't they? Winter Dry, then? */
+
+    IF ~~ THEN
+      //TODO: to round 1b, with Player1 guessing - no point
+      EXIT
+  END
+  IF ~~ THEN 6W#ShithriDrinksDuel__round_1a__13
+    SAY @5011300 /* *stares* *sips* */
+    =
+    @5011301 /* Very dark, purplish even. Sweet, but plenty strong. An' that burnin' aftertaste... like fort'fied? They make that kind o' stuff in the North, ain't they? Winter Wine, then? */
+
+    IF ~~ THEN
+      //TODO: to round 1b, with Player1 guessing - with point
+      DO ~
+        IncreaseGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
+      ~
+      EXIT
+  END
+  IF ~~ THEN 6W#ShithriDrinksDuel__round_1a__14
+    SAY @5011400 /* *smells* *sips* */
+    =
+    @5011401 /* Nah from Cormyr. Nay, definitely - too strong. Sembia, perhaps? Hmmm... I be knowin' but one strong Sembian beer. That's Old Black Goblin. */
+
+    IF ~~ THEN
+      //TODO: to round 1b, with Player1 guessing - no point
+      EXIT
+  END
+END
+CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__90
+  @5019000 /* *stares* *sniffs* */
+  =
+  @5019001 /* Ye tryin' t' poison me? I ain't be drinkin' tis... tis... tis slop! */
+  == THUMB
+  @5019002 /* Yer guess then? */
+  == 6WPIRDR
+  @5019003 /* Oh come on, mate! 'Twas suppposed t' be FINE liquor duel! */
+END
+  // rule-lawyer to the rescue!
+  IF ~
+    CheckStatGT(Player1,13,INT)
+  ~ THEN
+    REPLY @5019010 /* "Fine"? Huh. Can't remember the "fine" part, I'm afraid. Maybe the judge remembers? */
+    EXTERN ~THUMB~ 6W#ShithriDrinksDuel__round_1a__90__int
+
+  // could get philosophical too
+  IF ~
+    CheckStatGT(Player1,13,WIS)
+  ~
+    REPLY @5019011 /* Well, it's a bit subjective whether or not some drink is "fine", wouldn't you agree? */
+    EXTERN ~THUMB~ 6W#ShithriDrinksDuel__round_1a__90__wis
+
+  // crowd-control
+  IF ~
+    OR(2)
+      CheckStatGT(Player1,13,CHA)
+      Class(Player1,BARD_ALL)
+    InMyArea("SBWENCH")
+  ~
+    REPLY @5019012 /* Huh. So he says he won't be guessing. You heard that, good folks? */
+    EXTERN ~SBWENCH~ 6W#ShithriDrinksDuel__round_1a__90__cha
+
+  // ...or be pacifist?
+  IF ~~
+    REPLY @5019013 /* Fine, I'll just pick another one then? */
+    EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pick_another_drink
+
+
+CHAIN THUMB 6W#ShithriDrinksDuel__round_1a__90__int
+  @5019020 /* Hmmm... nay. The Tumb be pretty sure he says: "drinking duel". Nah "fine" t' be found. */
+END ~THUMB~ 6W#ShithriDrinksDuel__round_1a__90__forfeit_or_what
+
+CHAIN THUMB 6W#ShithriDrinksDuel__round_1a__90__wis
+  @5019030 /* May The Thumb say: he be servin' it 'here in Sea's Bounty. */
+  == SBCUST01 IF ~InMyArea("SBCUST01")~
+  @5019031 /* Ex'cly! Who ye thnk ye're, mate? Sayin' all 'ose bad things 'bout... */
+  == SBCUST02 IF ~InMyArea("SBCUST02")~
+  @5019032 /* Expected more o' ye, Franky. All fancy an' bein' too "noble" t' drink wit' us. */
+  == SBSLUM01 IF ~InMyArea("SBSLUM01")~ // nobleman
+  @5019033 /* Oh really, good sailor, you're ruining the charm of this place! */
+  == THUMB
+  @5019035 /* I be countin' this drink as good as any. */
+END ~THUMB~ 6W#ShithriDrinksDuel__round_1a__90__forfeit_or_what
+
+CHAIN SBWENCH 6W#ShithriDrinksDuel__round_1a__90__cha
+  @5019040 /* Hey, sweety, can't you just accept defeat? */
+  == SBCUST02 IF ~InMyArea("SBCUST02")~
+  @5019041 /* Nah fair, Franky! Rules be rules! */
+  BRANCH ~
+    InMyArea("SBCUST02")
+    InMyArea("SBCUST01")
+  ~
+  BEGIN
+    == SBCUST01
+    @5019042 /* Oi, mate, who ye thnk ye're?, huh? Who're ye anways? */
+    == SBCUST02
+    @5019043 /* Franky. He's a regular. */
+    == SBCUST01
+    @5019044 /* Well, *I* nay be knowin' 'him! */
+  END
+  == THUMB
+  @5019045 /* I says continue. */
+END ~THUMB~ 6W#ShithriDrinksDuel__round_1a__90__forfeit_or_what
+
+CHAIN THUMB 6W#ShithriDrinksDuel__round_1a__90__forfeit_or_what
+  @5019050 /* Franky, mate, ye be drinkin' or forfeitin' round? */
+  == 6WPIRDR
+  @5019051 /* *sigh* Jus'... jus' let's say I lost that one. */
+  //TODO: to round 1b, with Player1 guessing - no point
+EXIT
+
+CHAIN THUMB 6W#ShithriDrinksDuel__pick_another_drink
+  @5019060 /* I says fine. */
+END ~THUMB~ 6W#ShithriDrinksDuel__pick_drink

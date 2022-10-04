@@ -459,6 +459,17 @@ COPY_EXISTING ~SBSLUM01.cre~ ~override~
     END
   END
   BUT_ONLY_IF_IT_CHANGES
+COPY_EXISTING ~SBSLUM02.cre~ ~override~
+  PATCH_IF (LONG_AT 0x280) == 0  ||  (LONG_AT 0x280) == 0x656e6f4e // `None`
+  BEGIN
+    WRITE_LONG 0x280 0x4c534253
+    WRITE_LONG 0x284 0x32304d55
+    INNER_ACTION
+    BEGIN
+      OUTER_SET file_edited_num += 1
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
 
 
 

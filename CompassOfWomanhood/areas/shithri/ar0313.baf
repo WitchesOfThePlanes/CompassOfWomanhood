@@ -16,7 +16,19 @@ THEN
     SetGlobal("6W#ShithriDrinksSeamanSpawn","GLOBAL",3)
 END
 
+// Implementation Node
 // The Thumb has no script of his own, so he'll use area script (for simplicity).
+//
+// Note that it's not really possible to scatter NPCs nicely
+// in the general scenario, as there is no option to iterate over all
+// NPCs in a location at runtime.
+//
+// If any other mods introduce new NPCs to Sea's Bounty and those NPCs
+// should be watching the duel - compatibility should be added explicitly.
+//
+// It's also assumed that the original locations, facing direction
+// and - most importantly - scripts for the original NPCs are
+// as in the original game (although the scripts may have been extended).
 IF
   Global("6W#ShithriDrinksStarting","GLOBAL",1)
 THEN
@@ -27,12 +39,83 @@ THEN
     FadeToColor([20.0],0)
     Wait(2)
 
-    //TODO: move other characters around so it's more realistic?
-    ActionOverride(Player1, JumpToPoint([468.540],NW))
+    // NPCs should cease to move for the time being
+    //Note: they should get their original scripts back later on
+    ActionOverride("SBCUST01", ChangeAIScript("",DEFAULT))
+    ActionOverride("SBCUST02", ChangeAIScript("",DEFAULT))
+    ActionOverride("SBWENCH",  ChangeAIScript("",DEFAULT))
+    ActionOverride("SBSLUM01", ChangeAIScript("",DEFAULT))
+    SmallWait(1)
+
+    StorePartyLocations()
+    ActionOverride("6WPIRDIR", JumpToPoint([443.540]))
+    ActionOverride(Player1,    JumpToPoint([482.500]))
+    ActionOverride(Player2,    JumpToPoint([518.437]))
+    ActionOverride(Player3,    JumpToPoint([486.414]))
+    ActionOverride(Player4,    JumpToPoint([457.404]))
+    ActionOverride(Player5,    JumpToPoint([439.379]))
+    ActionOverride(Player6,    JumpToPoint([411.367]))
+    ActionOverride("SBCUST01", JumpToPoint([379.464]))
+    ActionOverride("SBCUST02", JumpToPoint([384.570]))
+    ActionOverride("SBWENCH",  JumpToPoint([334.518]))
+    ActionOverride("SBSLUM01", JumpToPoint([271.562]))
+    ActionOverride("SBSLUM02", JumpToPoint([289.551]))
+
+    ActionOverride("6WPIRDIR", Face(NW))
+    ActionOverride(Player1,    Face(NW))
+    ActionOverride(Player2,    Face(SW))
+    ActionOverride(Player3,    Face(SW))
+    ActionOverride(Player4,    Face(SW))
+    ActionOverride(Player5,    Face(SW))
+    ActionOverride(Player6,    Face(SW))
+    ActionOverride("SBCUST01", Face(SE))
+    ActionOverride("SBCUST02", Face(NW))
+    ActionOverride("SBWENCH",  Face(SE))
+    ActionOverride("SBSLUM01", Face(SE))
+    ActionOverride("SBSLUM02", Face(SE))
 
     FadeFromColor([20.0],0)
     Wait(1)
     SmallWait(1)
     EndCutSceneMode()
     ActionOverride("THUMB", StartDialogNoSet(Player1))
+END
+
+IF
+  Global("6W#ShithriDrinksEnding","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("6W#ShithriDrinksEnding","GLOBAL",2)
+    ClearAllActions()
+    StartCutSceneMode()
+    FadeToColor([20.0],0)
+    Wait(2)
+
+    //TODO: move other characters around so it's more realistic?
+    RestorePartyLocations()
+    ActionOverride("SBCUST01", JumpToPoint([689.251]))
+    ActionOverride("SBCUST02", JumpToPoint([485.278]))
+    ActionOverride("SBWENCH",  JumpToPoint([664.350]))
+    ActionOverride("SBSLUM01", JumpToPoint([601.240]))
+    ActionOverride("SBSLUM02", JumpToPoint([643.236]))
+    SmallWait(1)
+
+    ActionOverride("SBCUST01", Face(SE))
+    ActionOverride("SBCUST02", Face(NW))
+    ActionOverride("SBWENCH",  Face(E))
+    ActionOverride("SBSLUM01", Face(E))
+    ActionOverride("SBSLUM02", Face(W))
+    SmallWait(1)
+
+    // NPCs should cease to move for the time being
+    //Note: they should get their original scripts back later on
+    ActionOverride("SBCUST01", ChangeAIScript("WDRUNSGT",DEFAULT))
+    ActionOverride("SBCUST02", ChangeAIScript("",DEFAULT))
+    ActionOverride("SBWENCH",  ChangeAIScript("WDRUNSGT",DEFAULT))
+    ActionOverride("SBSLUM01", ChangeAIScript("WTRUNSGT",DEFAULT))
+    ActionOverride("SBSLUM02", ChangeAIScript("WDRUNSGT",DEFAULT))
+
+    FadeFromColor([20.0],0)
+    SmallWait(1)
+    EndCutSceneMode()
 END

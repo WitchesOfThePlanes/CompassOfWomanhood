@@ -2519,9 +2519,7 @@ CHAIN IF ~
   // of Popeye comis strips translated him either as „żeglarz Kubuś”
   // (Jake the sailor) or Ferdek (Freddie).
   == 6WPIRDR
-  @5000012 /* Nah bad, nah bad. Been sailin' between Amn 'n Calimshan quite lot these days. */
-  == 6WPIRDR
-  @5000013 /* Huh. Betta than ye, it seems. Who's that lubber o'er there? */
+  @5000012 /* Nah bad, nah bad. Been sailin' between Amn 'n Calimshan quite lot these days... Betta than ye, it seems. Who's that lubber o'er there? */
   == 6WSHITJ
   @5000014 /* That? That be me capt'n. Capt'n, meet Franky. */
   == 6WPIRDR
@@ -2531,7 +2529,7 @@ CHAIN IF ~
   == 6WSHITJ
   @5000017 /* Capt'n be alright, Franky. */
   == 6WPIRDR
-  @5000018 /* Aye, sure thing! That lubber who had dwarvish grog once or twice 'n already thinks <PRO_HIMHER>'s a sailor, har har! Shithri, ye lil jester, 'ave some mercy fer an old man's stomach! */
+  @5000018 /* Aye, sure thing! That lubber who had dwarvish grog once or twice 'n already thinks <PRO_HESHE>'s a sailor, har har! Shithri, ye lil jester, 'ave some mercy fer an old man's stomach! */
 END
   IF ~~ THEN
     REPLY @5000020 /* Nice to meet you too, Franky. I'm <CHARNAME>. */
@@ -2870,6 +2868,9 @@ CHAIN THUMB 6W#ShithriDrinksDuel__start_thumb_1
   @5000222 /* Just begin already, let them taste the wine! */
   == THUMB
   @5000225 /* O' course, o' course. First goes our first-timer, <CHARNAME>! */
+  DO ~
+    SetGlobal("6W#ShithriDrinksRound","GLOBAL",1)
+  ~
 END ~THUMB~ 6W#ShithriDrinksDuel__pick_drink
 
 APPEND THUMB
@@ -3078,201 +3079,310 @@ APPEND THUMB
 END
 
 
-APPEND 6WPIRDR
-  IF ~~ THEN 6W#ShithriDrinksDuel__round_1a__00
-    SAY @5010000 /* *sniffs* *sips* */
-    =
-    @5010001 /* Heavy. Black, wit' deep brown foam. Huh! Easy. It's Arabellan Bitter Black. */
+CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__00
+  @5010000 /* *sniffs* *sips* */
+  =
+  @5010001 /* Heavy. Black, wit' deep brown foam. Huh! Easy. It's Arabellan Bitter Black. */
+  == THUMB
+  @5010010 /* ...which y'all can get 'ere, in Sea's Bounty! 'Tis one's a point fer Franky! */
+  DO ~
+    IncreaseGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
+  ~
+  //TODO: to round 1b, with Player1 guessing - with point
+EXIT
 
-    IF ~~ THEN
-      DO ~
-        IncreaseGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
-      ~
-      //TODO: to round 1b, with Player1 guessing - with point
-      EXIT
+CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__01
+  @5010100 /* *sniffs* *sips* */
+  =
+  @5010101 /* Smells o' cloves. Cloudy an' bubblin'. Cremy. It's, obviously, Shadowdark Ale! */
+  == THUMB
+  @5010110 /* Ladies love 'im, I can tell ye! 'Tis a point! */
+  DO ~
+    IncreaseGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
+  ~
+  //TODO: to round 1b, with Player1 guessing - with point
+EXIT
+
+CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__02
+  @5010200 /* *sniffs* *sips* */
+  =
+  @5010201 /* Hmmm... */
+  =
+  @5010202 /* This one's nah easy. Was I nah a common guest at Calimport, I'd 'ave nah idea... but I had it once or twice. What its name though... Pretty sure it comes from Cormyr's capital... */
+  == SBSLUM02 IF ~InMyArea("SBSLUM02")~
+  @5010203 /* Suzail. */
+  == THUMB
+  @5010204 /* 'Tis correct. Suz-Ale. Nah point fer Franky though! */
+  //TODO: to round 1b, with Player1 guessing - no point
+EXIT
+
+CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__03a
+  @5010300 /* *stares* Be it a trick? *sips* */
+  =
+  @5010301 /* Nay. Nah trick. It's really jus' Golden Sands Basic. How disappointin'. */
+  == THUMB
+  @5010305 /* Nah Calimshite tricks this time! Point fer Franky! */
+  DO ~
+    IncreaseGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
+  ~
+  == RASAAD IF ~IsValidForPartyDialog("Rasaad")~
+  // He probably hears that joke a lot. :/
+  @5010306 /* *sigh* */
+  //TODO: to round 1b, with Player1 guessing - with point
+EXIT
+
+CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__03b
+  @5010310 /* *sniffs* *sips* */
+  =
+  @5010311 /* Har har! Givin' cacti brew t' me? Forgot I'm tradin' wit' Calimshan already, <PRO_BOYGIRL>? O' course it's Golden Sands Gold! */
+  == THUMB
+  @5010315 /* Truly golden answer, point fer Franky! */
+  DO ~
+    IncreaseGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
+  ~
+  //TODO: to round 1b, with Player1 guessing - with point
+EXIT
+
+CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__03c
+  @5010320 /* *sniffs* *sips* */
+  =
+  @5010321 /* Hmm. Pretty sure it's Golden Sands Brew... but wha' kinda? */
+  =
+  @5010322 /* Smells o' oranges. Sweet. Very light. But a bit acidic, nah jus' from orange. Currant, be it? */
+  =
+  @5010323 /* Me guess: Golden Sands Orange. */
+  == THUMB
+  @5010325 /* Aye it be! Quite a rarity, ain't it? One point fer ye! */
+  DO ~
+    IncreaseGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
+  ~
+  //TODO: to round 1b, with Player1 guessing - with point
+EXIT
+
+CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__04
+  @5010400 /* *sniffs* *sips* */
+  =
+  @5010401 /* Brrr! Cold! Something from the North? Nah gonna lie though - I ain't knowin' that one. */
+  == THUMB
+  @5010410 /* From the North 'tis, aye! The Iriaebor's best! */
+  == SBCUST02 IF ~InMyArea("SBCUST02")~
+  @5010411 /* Hey, come t' think o' it. Why ye nah got it 'ere, mate? */
+  == THUMB
+  @5010412 /* ... */
+  =
+  @5010413 /* Me says: let's continue. */
+  //TODO: to round 1b, with Player1 guessing - no point
+EXIT
+
+CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__05
+  @5010500 /* *sniffs* *sips* */
+  =
+  @5010501 /* Smells like... smells. Black. Weird. Huh... Bet it's some halflin' or gnome one. No clue about theirs though. */
+  == THUMB
+  @5010510 /* Huh. E'ery halflin' worth 'is sling knows this one! 'Tis Luiren's Best itself! Nah point fer ya! */
+  //TODO: to round 1b, with Player1 guessing - no point
+EXIT
+
+CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__06
+  @5010600 /* *sniffs* */
+  =
+  @5010601 /* Ye 'ave good taste, lubber, I mus' admit. This be good old Black Tanagyr's. *sips* *smiles* */
+  == THUMB
+  @5010610 /* An' that's a good answer! Point fer Franky! */
+  DO ~
+    IncreaseGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
+  ~
+
+  BRANCH ~
+    InMyArea("SBCUST01")
+    InMyArea("SBCUST02")
+  ~
+  BEGIN
+    == SBCUST01 
+    @5010611 /* Oi. Oi, mate. Ain't tha' *hic* the one from... */
+    == SBCUST02
+    @5010612 /* Aye, 'tis the one. Heard they 'ave it somewhere in the city. */
   END
-  IF ~~ THEN 6W#ShithriDrinksDuel__round_1a__01
-    SAY @5010100 /* *sniffs* *sips* */
-    =
-    @5010101 /* Smells o' cloves. Cloudy an' bubblin'. Cremy. It's, obviously, Shadowdark Ale! */
 
-    IF ~~ THEN
-      DO ~
-        IncreaseGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
-      ~
-      //TODO: to round 1b, with Player1 guessing - with point
-      EXIT
+  //TODO: to round 1b, with Player1 guessing - nwith point
+EXIT
+
+CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__07
+  @5010700 /* *stares* *sips* */
+  =
+  @5010701 /* Green. Glowing. Is it rich though? Hmm... mayhaps? Could it be... */
+  =
+  @5010702 /* Drow Green. Nah Ulaver, nay. But some kind of Drow Green. */
+  == 6WSHITJ IF ~IsValidForPartyDialog("6WSHITJ")~
+  @5010710 /* Oy, matey, ye jestin' or wha'? E'ery bucko knows this one! */
+
+  BRANCH ~
+    InMyArea("SBSLUM01")
+    InMyArea("SBSLUM02")
+    InMyArea("SBWENCH")
+  ~
+  BEGIN
+    == SBSLUM02 
+    @5010711 /* It's Alurlyath. They have it here. */
+    == SBSLUM01
+    @5010712 /* I didn't realise you have such a good taste for wine, my dear! */
+    == SBWENCH
+    @5010713 /* She doesn't. Just a keen eye, boy. A pair, even. Not looking into them often enough, are you? */
+    == SBSLUM01
+    @5010714 /* I... huh! As if you could know! */
   END
-  IF ~~ THEN 6W#ShithriDrinksDuel__round_1a__02
-    SAY @5010200 /* *sniffs* *sips* */
-    =
-    @5010201 /* Hmmm... */
-    =
-    @5010202 /* This one's nah easy. Was I nah a common guest at Calimport, I'd 'ave nah idea... but I had it once or twice. What its name though... Pretty sure it comes from Cormyr's capital... */
 
-    IF ~~ THEN
-      //TODO: to round 1b, with Player1 guessing - no point
-      EXIT
+  == THUMB
+  @5010720 /* No point! */
+  //TODO: to round 1b, with Player1 guessing - no point
+EXIT
+
+CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__08
+  @5010800 /* *smells* *sips* */
+  =
+  @5010801 /* Har har. Taste o' the forest, aye. Drunk it back on Inner Sea, drinkin' it 'ere. One o' me favs, Arabellan Dry. */
+  == THUMB
+  @5010810 /* Straight from Cormyr, aye! One point fer ye! */
+  DO ~
+    IncreaseGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
+  ~
+  //TODO: to round 1b, with Player1 guessing - with point
+EXIT
+
+CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__09
+  @5010900 /* *sniffs* *sips* */
+  =
+  @5010901 /* Be it really... *sips* */
+  =
+  @5010902 /* Ne'er had it afore. But it obviously be it - the famous Evermead. I see ye nah poor <PRO_MANWOMAN> if ye can afford it, lubber. */
+  == THUMB
+  @5010910 /* An' if any one o' ye ne'er tried it either - now's the chance! Only 'til the end o' this duel - pay two gold pieces less! */
+
+  BRANCH ~
+    InMyArea("SBSLUM01")
+    InMyArea("SBSLUM02")
+  ~
+  BEGIN
+    == SBSLUM01 
+    @5010911 /* Would you care for some, my dear? */
+    == SBSLUM02
+    @5010912 /* Glad you've finally asked. */
   END
-  IF ~~ THEN 6W#ShithriDrinksDuel__round_1a__03a
-    SAY @5010300 /* *stares* Be it a trick? *sips* */
-    =
-    @5010301 /* Nay. Nah trick. It's really jus' Golden Sands Basic. How disappointin'. */
 
-    IF ~~ THEN
-      DO ~
-        IncreaseGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
-      ~
-      //TODO: to round 1b, with Player1 guessing - with point
-      EXIT
-  END
-  IF ~~ THEN 6W#ShithriDrinksDuel__round_1a__03b
-    SAY @5010310 /* *sniffs* *sips* */
-    =
-    @5010311 /* Har har! Givin' cacti brew t' me? Forgot I'm tradin' wit' Calimshan already, <PRO_BOYGIRL>? O' course it's Golden Sands Gold! */
+  == THUMB
+  @5010920 /* One point fer Franky! */
+  DO ~
+    IncreaseGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
+  ~
+  //TODO: to round 1b, with Player1 guessing - with point
+EXIT
 
-    IF ~~ THEN
-      DO ~
-        IncreaseGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
-      ~
-      //TODO: to round 1b, with Player1 guessing - with point
-      EXIT
-  END
-  IF ~~ THEN 6W#ShithriDrinksDuel__round_1a__03c
-    SAY @5010320 /* *sniffs* *sips* */
-    =
-    @5010321 /* Hmm. Pretty sure it's Golden Sands Brew... but wha' kinda? */
-    =
-    @5010322 /* Smells o' oranges. Sweet. Very light. But a bit acidic, nah jus' from orange. Currant, be it? */
-    =
-    @5010323 /* Me guess: Golden Sands Orange. */
+CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__10
+  @5011000 /* *sniffs* *sips* */
+  =
+  @5011001 /* Deep, deep red an' quite bold... Had something like that in Cormyr. It's Blood Wine. */
+END
+  // only one should comment
+  IF ~~
+    EXTERN ~THUMB~ 6W#ShithriDrinksDuel__round_1a__10__thumb
+  IF ~IfValidForPartyDialog("Shithri")~
+    EXTERN ~6WSHITJ~ 6W#ShithriDrinksDuel__round_1a__10__shithri
+  IF ~IfValidForPartyDialog("Hexxat")~
+    // Hexxat has less of a reason to comment on that, but still.
+    // Plus Shithri speaks MUCH more often than Hexxat.
+    EXTERN ~HEXXATJ~ 6W#ShithriDrinksDuel__round_1a__10__hexxat
+  IF ~IfValidForPartyDialog("Viconia")~
+    EXTERN ~VICONIJ~ 6W#ShithriDrinksDuel__round_1a__10__viconia
 
+APPEND VICONIJ
+  IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__round_1a__10__viconia
+    SAY @5011011 /* How typical, rivvil... I can say he's wrong without tasting as much as a drop of it. */ 
     IF ~~ THEN
-      DO ~
-        IncreaseGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
-      ~
-      //TODO: to round 1b, with Player1 guessing - with point
-      EXIT
-  END
-  IF ~~ THEN 6W#ShithriDrinksDuel__round_1a__04
-    SAY @5010400 /* *sniffs* *sips* */
-    =
-    @5010401 /* Brrr! Cold! Something from the North? Nah gonna lie though - I ain't knowin' that one. */
-
-    IF ~~ THEN
-      //TODO: to round 1b, with Player1 guessing - no point
-      EXIT
-  END
-  IF ~~ THEN 6W#ShithriDrinksDuel__round_1a__05
-    SAY @5010500 /* *sniffs* *sips* */
-    =
-    @5010501 /* Smells like... smells. Black. Weird. Huh... Bet it's some halflin' or gnome one. No clue about theirs though. */
-
-    IF ~~ THEN
-      //TODO: to round 1b, with Player1 guessing - no point
-      EXIT
-  END
-  IF ~~ THEN 6W#ShithriDrinksDuel__round_1a__06
-    SAY @5010600 /* *sniffs* */
-    =
-    @5010601 /* Ye 'ave good taste, lubber, I mus' admit. This be good old Black Tanagyr's. */
-
-    IF ~~ THEN
-      //TODO: to round 1b, with Player1 guessing - nwith point
-      DO ~
-        IncreaseGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
-      ~
-      EXIT
-  END
-  IF ~~ THEN 6W#ShithriDrinksDuel__round_1a__07
-    SAY @5010700 /* *stares* *sips* */
-    =
-    @5010701 /* Green. Glowing. Is it rich though? Hmm... mayhaps? Could it be... */
-    =
-    @5010702 /* Drow Green. Nah Ulaver, nay. But some kind of Drow Green. */
-
-    IF ~~ THEN
-      //TODO: to round 1b, with Player1 guessing - no point
-      //TODO: Shithri, Thumb or clients commenting how it's popular among romantic people AND available in this tavern?
-      EXIT
-  END
-  IF ~~ THEN 6W#ShithriDrinksDuel__round_1a__08
-    SAY @5010800 /* *smells* *sips* */
-    =
-    @5010801 /* Har har. Taste o' the forest, aye. Drunk it back on Inner Sea, drinkin' it 'ere. One o' me favs, Arabellan Dry. */
-
-    IF ~~ THEN
-      //TODO: to round 1b, with Player1 guessing - with point
-      DO ~
-        IncreaseGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
-      ~
-      EXIT
-  END
-  IF ~~ THEN 6W#ShithriDrinksDuel__round_1a__09
-    SAY @5010900 /* *sniffs* *sips* */
-    =
-    @5010901 /* Be it really... *sips* */
-    =
-    @5010902 /* Ne'er had it afore. But it obviously be it - the famous Evermead. I see ye nah poor <PRO_MANWOMAN> if ye can afford it, lubber. */
-
-    IF ~~ THEN
-      //TODO: to round 1b, with Player1 guessing - with point
-      DO ~
-        IncreaseGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
-      ~
-      EXIT
-  END
-  IF ~~ THEN 6W#ShithriDrinksDuel__round_1a__10
-    SAY @5011000 /* *sniffs* *sips* */
-    =
-    @5011001 /* Deep, deep red an' quite bold... Had something like that in Cormyr. It's Blood Wine. */
-
-    IF ~~ THEN
-      //TODO: to round 1b, with Player1 guessing - no point
-      //TODO: Shithri commenting he never liked beef?
-      EXIT
-  END
-  IF ~~ THEN 6W#ShithriDrinksDuel__round_1a__11
-    SAY @5011100 /* *stares* *sips* */
-    =
-    @5011101 /* Hmm. Nah glow, but the color fits an' it does tast o' pears. Nah too sweet either. I says: Saerloonian Glowfire, although badly stored. */
-
-    IF ~~ THEN
-      //TODO: to round 1b, with Player1 guessing - no point
-      //TODO: Shithri saying "see? told ya nah t' confuse the two!"
-      EXIT
-  END
-  IF ~~ THEN 6W#ShithriDrinksDuel__round_1a__12
-    SAY @5011200 /* *stares* *sips* */
-    =
-    @5011201 /* Very dark. Dense. Dry, but in a sweet way. An' that burnin' aftertaste... like fort'fied? They make that kind o' stuff in the North, ain't they? Winter Dry, then? */
-
-    IF ~~ THEN
-      //TODO: to round 1b, with Player1 guessing - no point
-      EXIT
-  END
-  IF ~~ THEN 6W#ShithriDrinksDuel__round_1a__13
-    SAY @5011300 /* *stares* *sips* */
-    =
-    @5011301 /* Very dark, purplish even. Sweet, but plenty strong. An' that burnin' aftertaste... like fort'fied? They make that kind o' stuff in the North, ain't they? Winter Wine, then? */
-
-    IF ~~ THEN
-      //TODO: to round 1b, with Player1 guessing - with point
-      DO ~
-        IncreaseGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
-      ~
-      EXIT
-  END
-  IF ~~ THEN 6W#ShithriDrinksDuel__round_1a__14
-    SAY @5011400 /* *smells* *sips* */
-    =
-    @5011401 /* Nah from Cormyr. Nay, definitely - too strong. Sembia, perhaps? Hmmm... I be knowin' but one strong Sembian beer. That's Old Black Goblin. */
-
-    IF ~~ THEN
-      //TODO: to round 1b, with Player1 guessing - no point
-      EXIT
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__round_1a__10__thumb
   END
 END
+APPEND HEXXATJ
+  IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__round_1a__10__hexxat
+    SAY @5011012 /* Have you ever seen blood? */
+    IF ~~ THEN
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__round_1a__10__thumb
+  END
+END
+APPEND 6WSHITJ
+  IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__round_1a__10__shithri
+    SAY @5011013 /* Ayayay... I guess 'tis true Franky ne'er liked Beef 'n Oysters Barnabas... */
+    IF ~~ THEN
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__round_1a__10__thumb
+  END
+END
+CHAIN THUMB 6W#ShithriDrinksDuel__round_1a__10__thumb
+  @5011020 /* Nah point fer ye this time, Franky! 'Tis Westgate Ruby, nah Bloood Wine. */
+  == 6WPIRDR
+  @5011021 /* Blimey... */
+  //TODO: to round 1b, with Player1 guessing - no point
+EXIT
+
+CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__11
+  @5011100 /* *stares* *sips* */
+  =
+  @5011101 /* Hmm. Nah glow, but the color fits an' it does tast o' pears. Nah too sweet either. I says: Saerloonian Glowfire, although badly stored. */
+  == THUMB
+  @5011010 /* Saerloonian - aye. But 'tis Topaz, nah Glowfire. Nah point! */
+  == 6WSHITJ IF ~IsValidForPartyDialog("6WSHITJ")~
+  @5011011 /* Toldja. People keep confusin' 'em. */
+  //TODO: to round 1b, with Player1 guessing - no point
+EXIT
+
+CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__12
+  @5011200 /* *stares* *sips* */
+  =
+  @5011201 /* Very dark. Dense. Dry, but in a sweet way. An' that burnin' aftertaste... like fort'fied? They make that kind o' stuff in the North, ain't they? Winter Dry, then? */
+  == THUMB
+  @5011210 /* Nay. Nah really North, e'en. This one's from Berdusk. Nah point! */
+  //TODO: to round 1b, with Player1 guessing - no point
+EXIT
+
+CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__13
+  @5011300 /* *stares* *sips* */
+  =
+  @5011301 /* Very dark, purplish even. Sweet, but plenty strong. An' that burnin' aftertaste... like fort'fied? They make that kind o' stuff in the North, ain't they? Winter Wine, then? */
+  == THUMB
+  @5011310 /* Aye. Winter Wine. Hope ye're nah jus' guessin' the name. One point fer Franky! */
+  DO ~
+    IncreaseGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
+  ~
+  //TODO: to round 1b, with Player1 guessing - with point
+EXIT
+
+CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__14
+  @5011400 /* *smells* *sips* */
+  =
+  @5011401 /* Nah from Cormyr. Nay, definitely - too strong. Sembia, perhaps? Hmmm... I be knowin' but one strong Sembian beer. That's Old Black Goblin. */
+  == THUMB
+  @5011410 /* Nah, that's Dragon's Breath. */
+
+  BRANCH ~
+    IsValidForPartyDialog("6WSHITHRI")
+    InMyArea("SBCUST02")
+  ~
+  BEGIN
+    == 6WSHITJ
+    @5011411 /* Old Black Goblin be plenty pricey e'en in Sembia, matey. */
+    == SBCUST02
+    @5011412 /* All fancy an' "noble", ain't he? */
+    == 6WSHITJ
+    @5011413 /* Calimshan itch, mayhaps? */
+    == SBCUST02
+    @5011414 /* Har har! Could be, aye! */
+    == JAN IF ~IsValidForPartyDialog("Jan")~
+    @5011415 /* Calimshan Itch. Terrible disease and yet you laugh at it! See, my cousin Barnal... */
+  END
+
+  == THUMB
+  @5011420 /* Nah point! */
+  //TODO: to round 1b, with Player1 guessing - no point
+EXIT
+
 CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__90
   @5019000 /* *stares* *sniffs* */
   =
@@ -3332,6 +3442,7 @@ CHAIN SBWENCH 6W#ShithriDrinksDuel__round_1a__90__cha
   @5019040 /* Hey, sweety, can't you just accept defeat? */
   == SBCUST02 IF ~InMyArea("SBCUST02")~
   @5019041 /* Nah fair, Franky! Rules be rules! */
+
   BRANCH ~
     InMyArea("SBCUST02")
     InMyArea("SBCUST01")
@@ -3344,6 +3455,7 @@ CHAIN SBWENCH 6W#ShithriDrinksDuel__round_1a__90__cha
     == SBCUST01
     @5019044 /* Well, *I* nay be knowin' 'him! */
   END
+
   == THUMB
   @5019045 /* I says continue. */
 END ~THUMB~ 6W#ShithriDrinksDuel__round_1a__90__forfeit_or_what

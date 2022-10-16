@@ -1,4 +1,19 @@
 //
+// Attack any enemies
+//
+IF
+  !Allegiance(Myself,ENEMY)
+  See([ENEMY])
+  !Class(LastSeenBy(Myself),INNOCENT)
+  !Class(LastSeenBy(Myself),FLAMING_FIST)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate([ENEMY],30)
+END
+
+
+//
 // Shithri's drink quest seaman
 //
 // Appears in AR0313 (Sea Bounty tavern) after the party collects

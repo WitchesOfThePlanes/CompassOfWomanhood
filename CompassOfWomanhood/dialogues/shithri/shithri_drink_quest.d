@@ -1547,6 +1547,7 @@ APPEND 6WSHITJ
     ~ THEN
       REPLY @3030120 /* Cacti and nettles sound like a good match. */
       DO ~
+        SetGlobal("6W#ShithriDrinksKnowDrink03b","GLOBAL",1) // heard description
         TakePartyGold(3)
         DestroyGold(3)
         GiveItemCreate("_6WDR03b", Player1, 0, 0, 0)
@@ -1559,6 +1560,7 @@ APPEND 6WSHITJ
     ~ THEN
       REPLY @3030120 /* Cacti and nettles sound like a good match. */
       DO ~
+        SetGlobal("6W#ShithriDrinksKnowDrink03b","GLOBAL",1) // heard description
         TakePartyGold(6)
         DestroyGold(6)
         GiveItemCreate("_6WDR03b", Player1, 0, 0, 0)
@@ -1567,10 +1569,16 @@ APPEND 6WSHITJ
 
     IF ~~ THEN
       REPLY @3030130 /* Would be cheaper to just go to Wood of Sharp Teeth and gather some nettle there... */
+      DO ~
+        SetGlobal("6W#ShithriDrinksKnowDrink03b","GLOBAL",1) // heard description
+      ~
       GOTO golden_sands_gold__no_money
 
     IF ~~ THEN
       REPLY @3030140 /* Mixing ingredients from the north and south is a big no-no. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksKnowDrink03b","GLOBAL",1) // heard description
+      ~
       GOTO golden_sands_gold__nah
   END
 
@@ -3086,10 +3094,9 @@ CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__00
   == THUMB
   @5010010 /* ...which y'all can get 'ere, in Sea's Bounty! 'Tis one's a point fer Franky! */
   DO ~
-    IncreaseGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
+    IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
   ~
-  //TODO: to round 1b, with Player1 guessing - with point
-EXIT
+END THUMB 6W#ShithriDrinksDuel__franky_pick_drink
 
 CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__01
   @5010100 /* *sniffs* *sips* */
@@ -3098,10 +3105,9 @@ CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__01
   == THUMB
   @5010110 /* Ladies love 'im, I can tell ye! 'Tis a point! */
   DO ~
-    IncreaseGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
+    IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
   ~
-  //TODO: to round 1b, with Player1 guessing - with point
-EXIT
+END THUMB 6W#ShithriDrinksDuel__franky_pick_drink
 
 CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__02
   @5010200 /* *sniffs* *sips* */
@@ -3113,8 +3119,7 @@ CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__02
   @5010203 /* Suzail. */
   == THUMB
   @5010204 /* 'Tis correct. Suz-Ale. Nah point fer Franky though! */
-  //TODO: to round 1b, with Player1 guessing - no point
-EXIT
+END THUMB 6W#ShithriDrinksDuel__franky_pick_drink
 
 CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__03a
   @5010300 /* *stares* Be it a trick? *sips* */
@@ -3123,13 +3128,12 @@ CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__03a
   == THUMB
   @5010305 /* Nah Calimshite tricks this time! Point fer Franky! */
   DO ~
-    IncreaseGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
+    IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
   ~
   == RASAAD IF ~IsValidForPartyDialog("Rasaad")~
   // He probably hears that joke a lot. :/
   @5010306 /* *sigh* */
-  //TODO: to round 1b, with Player1 guessing - with point
-EXIT
+END THUMB 6W#ShithriDrinksDuel__franky_pick_drink
 
 CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__03b
   @5010310 /* *sniffs* *sips* */
@@ -3138,10 +3142,9 @@ CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__03b
   == THUMB
   @5010315 /* Truly golden answer, point fer Franky! */
   DO ~
-    IncreaseGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
+    IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
   ~
-  //TODO: to round 1b, with Player1 guessing - with point
-EXIT
+END THUMB 6W#ShithriDrinksDuel__franky_pick_drink
 
 CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__03c
   @5010320 /* *sniffs* *sips* */
@@ -3154,10 +3157,9 @@ CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__03c
   == THUMB
   @5010325 /* Aye it be! Quite a rarity, ain't it? One point fer ye! */
   DO ~
-    IncreaseGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
+    IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
   ~
-  //TODO: to round 1b, with Player1 guessing - with point
-EXIT
+END THUMB 6W#ShithriDrinksDuel__franky_pick_drink
 
 CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__04
   @5010400 /* *sniffs* *sips* */
@@ -3171,8 +3173,7 @@ CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__04
   @5010412 /* ... */
   =
   @5010413 /* Me says: let's continue. */
-  //TODO: to round 1b, with Player1 guessing - no point
-EXIT
+END THUMB 6W#ShithriDrinksDuel__franky_pick_drink
 
 CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__05
   @5010500 /* *sniffs* *sips* */
@@ -3180,8 +3181,7 @@ CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__05
   @5010501 /* Smells like... smells. Black. Weird. Huh... Bet it's some halflin' or gnome one. No clue about theirs though. */
   == THUMB
   @5010510 /* Huh. E'ery halflin' worth 'is sling knows this one! 'Tis Luiren's Best itself! Nah point fer ya! */
-  //TODO: to round 1b, with Player1 guessing - no point
-EXIT
+END THUMB 6W#ShithriDrinksDuel__franky_pick_drink
 
 CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__06
   @5010600 /* *sniffs* */
@@ -3190,7 +3190,7 @@ CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__06
   == THUMB
   @5010610 /* An' that's a good answer! Point fer Franky! */
   DO ~
-    IncreaseGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
+    IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
   ~
 
   BRANCH ~
@@ -3204,8 +3204,7 @@ CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__06
     @5010612 /* Aye, 'tis the one. Heard they 'ave it somewhere in the city. */
   END
 
-  //TODO: to round 1b, with Player1 guessing - nwith point
-EXIT
+END THUMB 6W#ShithriDrinksDuel__franky_pick_drink
 
 CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__07
   @5010700 /* *stares* *sips* */
@@ -3234,8 +3233,7 @@ CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__07
 
   == THUMB
   @5010720 /* No point! */
-  //TODO: to round 1b, with Player1 guessing - no point
-EXIT
+END THUMB 6W#ShithriDrinksDuel__franky_pick_drink
 
 CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__08
   @5010800 /* *smells* *sips* */
@@ -3244,10 +3242,9 @@ CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__08
   == THUMB
   @5010810 /* Straight from Cormyr, aye! One point fer ye! */
   DO ~
-    IncreaseGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
+    IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
   ~
-  //TODO: to round 1b, with Player1 guessing - with point
-EXIT
+END THUMB 6W#ShithriDrinksDuel__franky_pick_drink
 
 CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__09
   @5010900 /* *sniffs* *sips* */
@@ -3272,10 +3269,9 @@ CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__09
   == THUMB
   @5010920 /* One point fer Franky! */
   DO ~
-    IncreaseGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
+    IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
   ~
-  //TODO: to round 1b, with Player1 guessing - with point
-EXIT
+END THUMB 6W#ShithriDrinksDuel__franky_pick_drink
 
 CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__10
   @5011000 /* *sniffs* *sips* */
@@ -3319,8 +3315,7 @@ CHAIN THUMB 6W#ShithriDrinksDuel__round_1a__10__thumb
   @5011020 /* Nah point fer ye this time, Franky! 'Tis Westgate Ruby, nah Bloood Wine. */
   == 6WPIRDR
   @5011021 /* Blimey... */
-  //TODO: to round 1b, with Player1 guessing - no point
-EXIT
+END THUMB 6W#ShithriDrinksDuel__franky_pick_drink
 
 CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__11
   @5011100 /* *stares* *sips* */
@@ -3330,8 +3325,7 @@ CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__11
   @5011010 /* Saerloonian - aye. But 'tis Topaz, nah Glowfire. Nah point! */
   == 6WSHITJ IF ~IsValidForPartyDialog("6WSHITJ")~
   @5011011 /* Toldja. People keep confusin' 'em. */
-  //TODO: to round 1b, with Player1 guessing - no point
-EXIT
+END THUMB 6W#ShithriDrinksDuel__franky_pick_drink
 
 CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__12
   @5011200 /* *stares* *sips* */
@@ -3339,8 +3333,7 @@ CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__12
   @5011201 /* Very dark. Dense. Dry, but in a sweet way. An' that burnin' aftertaste... like fort'fied? They make that kind o' stuff in the North, ain't they? Winter Dry, then? */
   == THUMB
   @5011210 /* Nay. Nah really North, e'en. This one's from Berdusk. Nah point! */
-  //TODO: to round 1b, with Player1 guessing - no point
-EXIT
+END THUMB 6W#ShithriDrinksDuel__franky_pick_drink
 
 CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__13
   @5011300 /* *stares* *sips* */
@@ -3349,10 +3342,9 @@ CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__13
   == THUMB
   @5011310 /* Aye. Winter Wine. Hope ye're nah jus' guessin' the name. One point fer Franky! */
   DO ~
-    IncreaseGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
+    IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",1)
   ~
-  //TODO: to round 1b, with Player1 guessing - with point
-EXIT
+END THUMB 6W#ShithriDrinksDuel__franky_pick_drink
 
 CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__14
   @5011400 /* *smells* *sips* */
@@ -3380,8 +3372,7 @@ CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__14
 
   == THUMB
   @5011420 /* Nah point! */
-  //TODO: to round 1b, with Player1 guessing - no point
-EXIT
+END THUMB 6W#ShithriDrinksDuel__franky_pick_drink
 
 CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__90
   @5019000 /* *stares* *sniffs* */
@@ -3409,7 +3400,7 @@ END
   // crowd-control
   IF ~
     OR(2)
-      CheckStatGT(Player1,13,CHA)
+      CheckStatGT(Player1,13,CHR)
       Class(Player1,BARD_ALL)
     InMyArea("SBWENCH")
   ~
@@ -3464,9 +3455,730 @@ CHAIN THUMB 6W#ShithriDrinksDuel__round_1a__90__forfeit_or_what
   @5019050 /* Franky, mate, ye be drinkin' or forfeitin' round? */
   == 6WPIRDR
   @5019051 /* *sigh* Jus'... jus' let's say I lost that one. */
-  //TODO: to round 1b, with Player1 guessing - no point
-EXIT
+END THUMB 6W#ShithriDrinksDuel__franky_pick_drink
 
 CHAIN THUMB 6W#ShithriDrinksDuel__pick_another_drink
   @5019060 /* I says fine. */
 END ~THUMB~ 6W#ShithriDrinksDuel__pick_drink
+
+
+// rounds 2, 4, 6 - you guess
+//
+// Design Note:
+// Not all of the drinks have to be aquirable for the PC, but there should
+// be some way to pass it:
+// ~ Saerloonian Special Vat - Shithri's comment about Saerloonian Topaz.
+// ~ Blood Wine - common among drows, could learn about it from Viconia or try
+//   it in the Underdark. It's said to be produced from grapes from vines posessed
+//   by spirits of criminals - could be sensed by paladins and shamans, maybe.
+// ~ Wheelon Spruce Beer - it's easy to recognize for druids. Perhaps you could
+//   get that info from Jaheira if talking with her earlier?
+// ~ Thayan Red - common among mages from Thay. Could learn about it from Edwin.
+// ~ Mint Wine - INT check should be enough
+APPEND THUMB
+  IF ~~ THEN 6W#ShithriDrinksDuel__franky_pick_drink
+    SAY @5000500 /* 'ere comes a drink from Franky! */
+    //TODO here comes Franky's drinks
+
+    // -- Round One --
+    // Franky picks "easy" drinks: either Golden Sands Gold
+    // or Arabellan Dry, depending on which the PC picked (if any)
+    IF ~
+      Global("6W#ShithriDrinksRound","GLOBAL",1)
+      GlobalLT("6W#ShithriDrinksHasDrink03b","GLOBAL",2)
+    ~ THEN
+      DO ~
+        SetGlobal("6W#ShithriDrinksHasDrink03b","GLOBAL",2)
+      ~
+      EXTERN ~PLAYER1~ 6W#ShithriDrinksDuel__franky__golden_sands_gold
+
+    // IF ~
+    //   Global("6W#ShithriDrinksRound","GLOBAL",1)
+    //   GlobalLT("6W#ShithriDrinksHasDrink08","GLOBAL",2)
+    // ~
+    //   DO ~
+    //     SetGlobal("6W#ShithriDrinksHasDrink08","GLOBAL",2)
+    //   ~
+    //   GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry
+
+    // // -- Round Two --
+    // // Franky picks something a bit more challenging:
+    // // Saerloonian Special Vat (can be recognized thanks
+    // // to Shithri's clues) and Blood Wine (multiple classes
+    // // could recognize it).
+    // IF ~
+    //   Global("6W#ShithriDrinksRound","GLOBAL",2)
+    //   RandomNum(2,1)
+    // ~ THEN
+    //   GOTO 6W#ShithriDrinksDuel__franky__saerloonian_special_vat
+
+    // IF ~
+    //   Global("6W#ShithriDrinksRound","GLOBAL",2)
+    //   RandomNum(2,2)
+    // ~ THEN
+    //   GOTO 6W#ShithriDrinksDuel__franky__blood_wine
+
+    // // -- Round Three --
+    // // Franky picks something he's convinced is very rare and difficult
+    // // to guess.
+    // //
+    // // These drinks may have only one way to solve them, such as class,
+    // // ability or lore check.
+    // IF ~~ THEN
+    //   GOTO 6W#ShithriDrinksDuel__franky__wheelon_spruce_beer
+
+    // IF ~~ THEN
+    //   GOTO 6W#ShithriDrinksDuel__franky__thayan_red
+
+    // IF ~~ THEN
+    //   GOTO 6W#ShithriDrinksDuel__franky__mint_wine
+  END
+END
+
+//TODO: should it be Player1? Or some separate dialogue file that
+// isn't attached to any creature, possibly?
+APPEND PLAYER1
+  IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__franky__golden_sands_gold
+    SAY @5020000 /* You're served a mug of clear, golden beer. */
+
+    IF ~~ THEN
+      REPLY @5020001 /* Take a better look. */
+      GOTO 6W#ShithriDrinksDuel__franky__golden_sands_gold__look
+
+    // a non-druid will smell less
+    IF ~
+      !Class(Player1,DRUID_ALL)
+    ~ THEN
+      REPLY @5020002 /* Smell it. */
+      GOTO 6W#ShithriDrinksDuel__franky__golden_sands_gold__smell__nondruid
+    // a druid will smell more
+    IF ~
+      Class(Player1,DRUID_ALL)
+    ~ THEN
+      REPLY @5020002 /* Smell it. */
+      GOTO 6W#ShithriDrinksDuel__franky__golden_sands_gold__smell__druid
+
+    // a non-druid will taste less
+    IF ~
+      !Class(Player1,DRUID_ALL)
+    ~ THEN
+      REPLY @5020003 /* Taste it. */
+      GOTO 6W#ShithriDrinksDuel__franky__golden_sands_gold__taste__nondruid
+    // a druid will taste more
+    IF ~
+      Class(Player1,DRUID_ALL)
+    ~ THEN
+      REPLY @5020003 /* Taste it. */
+      GOTO 6W#ShithriDrinksDuel__franky__golden_sands_gold__taste__druid
+
+    IF ~~ THEN
+      REPLY @5020004 /* Forfeit the round. */
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__franky__golden_sands_gold__forfeit
+  END
+  IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__franky__golden_sands_gold__look
+    SAY @5020010 /* The beer is clear and of deep-golden color. On top of it, there is a thin layer of white foam. You don't see many bubbles. */
+
+    // a non-druid will smell less
+    IF ~
+      !Class(Player1,DRUID_ALL)
+    ~ THEN
+      REPLY @5020002 /* Smell it. */
+      GOTO 6W#ShithriDrinksDuel__franky__golden_sands_gold__smell__nondruid
+    // a druid will smell more
+    IF ~
+      Class(Player1,DRUID_ALL)
+    ~ THEN
+      REPLY @5020002 /* Smell it. */
+      GOTO 6W#ShithriDrinksDuel__franky__golden_sands_gold__smell__druid
+
+    // a non-druid will taste less
+    IF ~
+      !Class(Player1,DRUID_ALL)
+    ~ THEN
+      REPLY @5020003 /* Taste it. */
+      GOTO 6W#ShithriDrinksDuel__franky__golden_sands_gold__taste__nondruid
+    // a druid will taste more
+    IF ~~ THEN
+      REPLY @5020003 /* Taste it. */
+      GOTO 6W#ShithriDrinksDuel__franky__golden_sands_gold__taste__druid
+
+    IF ~~ THEN
+      REPLY @5020004 /* Forfeit the round. */
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__franky__golden_sands_gold__forfeit
+  END
+  IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__franky__golden_sands_gold__smell__nondruid
+    SAY @5020020 /* Aside from a feint aroma typical to lagers, you also notice another strong component to the beer's smell. It's faint, but definitely there, herbaceous and slightly bitter. */
+
+    IF ~~ THEN
+      REPLY @5020001 /* Take a better look. */
+      GOTO 6W#ShithriDrinksDuel__franky__golden_sands_gold__look
+    IF ~~ THEN
+      REPLY @5020003 /* Taste it. */
+      GOTO 6W#ShithriDrinksDuel__franky__golden_sands_gold__taste__nondruid
+    IF ~~ THEN
+      REPLY @5020004 /* Forfeit the round. */
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__franky__golden_sands_gold__forfeit
+  END
+  IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__franky__golden_sands_gold__smell__druid
+    SAY @5020025 /* Aside from a feint aroma typical to lagers, you also notice another strong component. You know that slightly bitter smell very well - it's that of good-quality nettles. */
+
+    // for a druid - general appearance + smell + description is enough
+    IF ~
+      Global("6W#ShithriDrinksKnowDrink03b","GLOBAL",1) // heard description
+    ~ THEN
+      REPLY @5020026 /* Clear, golden lager which smells of nettles. It's Golden Sands Gold. */
+      DO ~
+        IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
+        // increase the round immediately to avoid potential problems with the engine
+        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
+      ~
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
+
+    IF ~~ THEN
+      REPLY @5020001 /* Take a better look. */
+      GOTO 6W#ShithriDrinksDuel__franky__golden_sands_gold__look
+    IF ~~ THEN
+      REPLY @5020003 /* Taste it. */
+      GOTO 6W#ShithriDrinksDuel__franky__golden_sands_gold__taste__druid
+    IF ~~ THEN
+      REPLY @5020004 /* Forfeit the round. */
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__franky__golden_sands_gold__forfeit
+  END
+  IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__franky__golden_sands_gold__taste__nondruid
+    SAY @5020030 /* When you sip the beer, it seems just slightly acidic. The taste is sharp and leaves a refreshing feeling in your mouth. It's somewhat reminescent of watermelon, although less sweet. You almost miss a very suble, iron-like after-taste. */
+
+    // if you know the drink, you'll recognize it now
+    IF ~
+      Global("6W#ShithriDrinksHasDrink03b","GLOBAL",1)
+    ~ THEN
+      REPLY @5020031 /* Tastes familiar. It's Golden Sands Gold. */
+      DO ~
+        IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
+        // increase the round immediately to avoid potential problems with the engine
+        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
+      ~
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
+
+    // a non-druid may mistake its sharp and refreshing taste for Golden Sands Basic
+    IF ~
+      Global("6W#ShithriDrinksHasDrink03a","GLOBAL",1)
+    ~ THEN
+      REPLY @5020031 /* Tastes familiar. It's Golden Sands Basic. */
+      DO ~
+        IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
+        // increase the round immediately to avoid potential problems with the engine
+        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
+      ~
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
+
+    IF ~~ THEN
+      REPLY @5020001 /* Take a better look. */
+      GOTO 6W#ShithriDrinksDuel__franky__golden_sands_gold__look
+    IF ~~ THEN
+      REPLY @5020002 /* Smell it. */
+      GOTO 6W#ShithriDrinksDuel__franky__golden_sands_gold__smell__nondruid
+    IF ~~ THEN
+      REPLY @5020004 /* Forfeit the round. */
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__franky__golden_sands_gold__forfeit
+  END
+  IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__franky__golden_sands_gold__taste__druid
+    SAY @5020035 /* When you sip the beer, it seems just slightly acidic. The taste is sharp and leaves a refreshing feeling in your mouth. It's somewhat reminescent of watermelon, although less sweet. You're quite certain it's some kind of a fruit, but it's foreign to you - perhaps coming from a different part of the world. Suddenly, you notice a suble, iron-like herbal after-taste. Nettles. Good ones, at that. */
+
+    // for a druid - general appearance + taste + description is enough
+    IF ~
+      Global("6W#ShithriDrinksKnowDrink03b","GLOBAL",1) // heard description
+    ~ THEN
+      REPLY @5020036 /* Clear, golden lager with nettles and some kind of foreign fruit - probably cacti. It's Golden Sands Gold. */
+      DO ~
+        IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
+        // increase the round immediately to avoid potential problems with the engine
+        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
+      ~
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
+
+    // if you know the drink, you'll recognize it now
+    IF ~
+      Global("6W#ShithriDrinksHasDrink03b","GLOBAL",1)
+    ~ THEN
+      REPLY @5020031 /* Tastes familiar. It's Golden Sands Gold. */
+      DO ~
+        IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
+        // increase the round immediately to avoid potential problems with the engine
+        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
+      ~
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
+
+    IF ~~ THEN
+      REPLY @5020001 /* Take a better look. */
+      GOTO 6W#ShithriDrinksDuel__franky__golden_sands_gold__look
+    IF ~~ THEN
+      REPLY @5020002 /* Smell it. */
+      GOTO 6W#ShithriDrinksDuel__franky__golden_sands_gold__smell__druid
+    IF ~~ THEN
+      REPLY @5020004 /* Forfeit the round. */
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__franky__golden_sands_gold__forfeit
+  END
+END
+APPEND THUMB
+  IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__franky__golden_sands_gold__forfeit
+    SAY @5020040 /* It's Calimshan's pride's northern version. Golden Sands Gold. */
+    IF ~~ THEN
+      DO ~
+        // increase the round immediately to avoid potential problems with the engine
+        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
+      ~
+      GOTO 6W#ShithriDrinksDuel__pc_no_point
+  END
+END
+
+APPEND THUMB
+  IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__pc_point
+    SAY @5029900 /* Point fer <CHARNAME>! */
+
+    IF ~
+      !GlobalGT("6W#ShithriDrinksRound","GLOBAL",3)
+    ~ THEN
+      GOTO 6W#ShithriDrinksDuel__pick_drink
+
+    IF ~
+      GlobalGT("6W#ShithriDrinksRound","GLOBAL",3) // end of the duel!
+    ~ THEN
+      GOTO 6W#ShithriDrinksDuel__results
+  END
+
+  IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__pc_no_point
+    SAY @5029910 /* No point fer ye. */
+
+    IF ~
+      !GlobalGT("6W#ShithriDrinksRound","GLOBAL",3)
+    ~ THEN
+      GOTO 6W#ShithriDrinksDuel__pick_drink
+
+    IF ~
+      GlobalGT("6W#ShithriDrinksRound","GLOBAL",3) // end of the duel!
+    ~ THEN
+      GOTO 6W#ShithriDrinksDuel__results
+  END
+END
+
+APPEND THUMB
+  IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__results
+    SAY @5030000 /* That was the last round, folks! An' the winner is... */
+
+    IF ~Global("6#ShithriDrinksPirPoints","GLOBAL",0)~ THEN
+      GOTO 6W#ShithriDrinksDuel__results__draw
+
+    IF ~GlobalGT("6#ShithriDrinksPirPoints","GLOBAL",0)~ THEN
+      GOTO 6W#ShithriDrinksDuel__results__pir
+
+    IF ~GlobalLT("6#ShithriDrinksPirPoints","GLOBAL",0)~ THEN
+      GOTO 6W#ShithriDrinksDuel__results__pc
+  END
+END
+
+CHAIN THUMB 6W#ShithriDrinksDuel__results__draw
+  @5030100 /* Neither o' the two! They proved to both be jus' as good! */
+  == SBCUST02 IF ~InMyArea("SBCUST02")~
+  @5030101 /* Huh. That comes a surprise. That new <PRO_MANWOMAN>'s nah so bad. */
+
+  BRANCH ~IsValidForPartyDialog("6WSHITJ")~
+  BEGIN
+    == 6WSHITJ 
+    @5030102 /* Har har, 'tis me capt'n fer ye! */
+    == 6WPIRDR
+    @5030103 /* I mus' say, Shithri, I misjudged that capt'n o' yers. */
+    == 6WSHITJ
+    @5030104 /* Ye know, <PRO_HESHE> got a name. 'n ears. */
+  END
+
+  == 6WPIRDR
+  @5030105 /* <CHARNAME>. As much as I hate t' admit that - ye nah a common lubber I thought ye be. Good match. */
+END
+  IF ~~ THEN
+    REPLY @5030110 /* Thank you. You're not half-bad either, Franky. */
+    EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__results__draw__ok
+  IF ~~ THEN
+    REPLY @5030120 /* To be frank, I can't say I really expected to hear "sorry". I guess that's as good as it gets. */
+    EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__results__draw__ok
+  IF ~~ THEN
+    REPLY @5030130 /* You just got lucky. */
+    EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__results__draw__lucky
+
+APPEND 6WPIRDR
+  IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__results__draw__lucky
+    SAY @5030131 /* Lucky? Har har! Prove me worse then, next time we meet. Until then! */
+    IF ~~ THEN
+      DO ~
+        //TODO add XP, journal entry etc
+        Global("6W#ShithriDrinksEnding","GLOBAL",1)
+      ~
+      EXIT
+  END
+  IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__results__draw__ok
+    SAY @5030111 /* Maybe we'll get a rematch next time we meet. Until then! */
+    IF ~~ THEN
+      DO ~
+        //TODO add XP, journal entry etc
+        Global("6W#ShithriDrinksEnding","GLOBAL",1)
+      ~
+      EXIT
+  END
+END
+
+
+CHAIN THUMB 6W#ShithriDrinksDuel__results__pir
+  @5030200 /* Our one an' only, Franky the Eye-Popper! */
+  == SBCUST02 IF ~InMyArea("SBCUST02")~
+  @5030201 /* Knew that. */
+
+  BRANCH ~IsValidForPartyDialog("6WSHITJ")~
+  BEGIN
+    == 6WPIRDR
+    @5030202 /* See, Shithri? Won fair an' square so I guess ye joinin' me now? */
+    == 6WSHITJ
+    @5030203 /* Wha'? This bucko be ne'er part o' the stakes, swab. */
+    == 6WPIRDR
+    @5030204 /* Oh come on... */
+    == 6WSHITJ
+    @5030205 /* I say wha' I say. */
+  END
+
+  == 6WPIRDR
+  @5030206 /* Oi, lubber. I hope ye nah forgot. Me gold. */
+END
+  IF ~~ THEN
+    REPLY @5030210 /* Good match. Here is your reward. */
+    //TODO: update journal etc
+    DO ~
+      TakePartyGold(5000)
+    ~
+    EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__results__pir__nice
+  IF ~~ THEN
+    REPLY @5030220 /* You just got lucky. */
+    DO ~
+      TakePartyGold(5000)
+    ~
+    EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__results__pir__lucky
+  IF ~IsValidForPartyDialog("6WSHITJ")~ THEN
+    REPLY @5030230 /* Can't you just take that pirate girl? */
+    EXTERN ~6WSHITJ~ 6W#ShithriDrinksDuel__results__pir__take_her
+  IF ~~ THEN
+    REPLY @5030240 /* Gold? */
+    EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__results__pir__gold
+
+APPEND 6WPIRDR
+  IF ~~ THEN 6W#ShithriDrinksDuel__results__pir__nice
+    SAY @5030211 /* Harrr... Aye, 5000 'tis. */
+    =
+    @5030212 /* Maybe one day, aft' ye see some more o' the world, we'll get a rematch. Until then, lubber! */
+    IF ~~ THEN
+      DO ~
+        Global("6W#ShithriDrinksEnding","GLOBAL",1)
+      ~
+      EXIT
+  END
+
+  IF ~~ THEN 6W#ShithriDrinksDuel__results__pir__lucky
+    SAY @5030221 /* Har har! Ye a sore loser, lubber! Now. Laughs aside - me gold. */
+    IF ~~ THEN
+      REPLY @5030222 /* Here it is. */
+      //TODO: update journal etc
+      DO ~
+        TakePartyGold(5000)
+      ~
+      GOTO 6W#ShithriDrinksDuel__results__pir__nice
+    IF ~~ THEN
+      REPLY @5030240 /* Gold? */
+      GOTO 6W#ShithriDrinksDuel__results__pir__gold
+  END
+
+  IF ~~ THEN 6W#ShithriDrinksDuel__results__pir__gold
+    SAY @5030241 /* Ye deaf or wha'? Ownin' me 5000 gold pieces, remember? */
+    IF ~~ THEN
+      REPLY @5030242 /* Sure, take it. */
+      GOTO 6W#ShithriDrinksDuel__results__pir__nice
+    IF ~~ THEN
+      REPLY @5030243 /* Ah. That gold. I don't feel like giving it to you. */
+      GOTO 6W#ShithriDrinksDuel__results__pir__not_paying
+  END
+
+  IF ~~ THEN 6W#ShithriDrinksDuel__results__pir__not_paying
+    SAY @5030250 /* Huh. Lemme tell ye somethin', matey. Jus' a friendly advice, cause I'm in a good mood. */
+    =
+    @5030251 /* I don't need yer gold. But I doubt the Thumb be happy if ye turn out nah t' pay yer debts. */
+
+    IF ~~ THEN
+      REPLY @5030252 /* Ok, ok. Take my gold then. */
+      GOTO 6W#ShithriDrinksDuel__results__pir__nice
+    IF ~~ THEN
+      REPLY @5030253 /* I don't care what you tell about me. I'm not parting with my gold. */
+      DO ~
+        SetGlobal("6W#SeaBountyCheater","GLOBAL",1)
+        ReputationInc(-1)
+      ~
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__results__thumb_not_paying
+  END
+END
+
+APPEND 6WSHITJ
+  IF ~~ THEN 6W#ShithriDrinksDuel__results__pir__take_her
+    SAY @5030260 /* Capt'n. A debt be a debt. */
+    IF ~~ THEN
+      EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__results__pir__not_paying
+  END
+END
+
+//
+// The Thumb shouldn't offer a drink to a cheater.
+//
+// TODO: other NPCs reacting in some way, maybe?
+APPEND THUMB
+  IF ~~ THEN 6W#ShithriDrinksDuel__results__thumb_not_paying
+    SAY @5030255 /* 'Tis how ye greet hospitality? Get out! The Thumb had his share o' slippery rats, nah need fer more! */
+    IF ~~ THEN
+      DO ~
+        Global("6W#ShithriDrinksEnding","GLOBAL",1)
+      ~
+      EXIT
+  END
+
+  IF WEIGHT #-1 ~
+    Global("6W#SeaBountyCheater","GLOBAL",1)
+  ~ THEN BEGIN 6W#ThumbNotLikeCheaters
+    SAY @5030500 /* Ah, ye again. Wha' ye lookin' fer, ye cheatin' bastard? Ye ain't welcome here! */
+
+    IF ~~ THEN
+      REPLY @5030501 /* Thumb, what happened to the hospitality? I thought Sea Bounty welcomes all. */
+      GOTO 6W#ThumbNotLikeCheaters__hospitality_where
+
+    IF ~~ THEN
+      REPLY @5030502 /* Well, I'd like a drink. */
+      GOTO 6W#ThumbNotLikeCheaters__id_like_a_drink
+
+    IF ~
+      Global("HiddenJob","GLOBAL",1)
+      Global("ThumbSeeker","GLOBAL",0)
+    ~ THEN
+      REPLY #34724 /* ~I am a Seeker.~ */
+      DO ~
+        SetGlobal("ThumbSeeker","GLOBAL",1)
+      ~
+      GOTO 7
+
+    IF ~~ THEN
+      REPLY @5030503 /* Nothing, really. Have a good day. */
+      EXIT
+  END
+
+  IF ~~ THEN 6W#ThumbNotLikeCheaters__hospitality_where
+    SAY @5030510 /* All guests are welcome at Sea Bounty. But ye nah guest. Begone. */
+    IF ~~ THEN EXIT
+  END
+
+  IF ~~ THEN 6W#ThumbNotLikeCheaters__id_like_a_drink
+    SAY @5030520 /* An' the Thumb be glad t' 'ave his hand back, but life's harsh. Now get out. */
+    IF ~~ THEN EXIT
+  END
+END
+
+
+CHAIN THUMB 6W#ShithriDrinksDuel__results__pc
+  @5030300 /* The newcomer, <CHARNAME>! */
+  == SBCUST02 IF ~InMyArea("SBCUST02")~
+  @5030301 /* Bein' fair: I doubted that. */
+  == 6WSHITJ IF ~IsValidForPartyDialog("6WSHITJ")~
+  @5030302 /* Har har, 'tis me capt'n fer ye! */
+  == SBCUST01 IF ~InMyArea("SBCUST01")~
+  @5030303 /* *hic* Very nice! Newcmr, ye a fine <PRO_MANWOMAN>. Let's 'ave a drink! */
+  == 6WPIRDR
+  @5030304 /* ... */
+END
+  IF ~~ THEN
+    REPLY @5030310 /* Good match, Frank. May I call you Frank? */
+    // ...yes, it's "Can I call you Frank?" from "Eddie Baby" by Monty Python.
+    //
+    // In Polish version, however, that joke wouldn't really work, so there
+    // is a different one instead: addressing the man by ,,Panie Ferdku''
+    // (Mr Freddie) --- referencing a popular Polish sitcom
+    // ,,Świat według Kiepskich'' ("The World According to the Kiepskis",
+    // Kiepski being a surname here, but as a common noun it means
+    // of-poor-quality). The main character, Ferdynand Kiepski, known to drink
+    // a lot of no-name beer, is referred to as "Mr Freddie" by his neighbours.
+    EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__results__pc_frank
+  IF ~~ THEN
+    REPLY @5030320 /* To be frank, I expected no other result. */
+    EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__results__pc_stop_tormenting
+  IF ~
+    Global("6W#ShithriDrinksStakes","GLOBAL",0) // no info on the stakes
+  ~ THEN
+    REPLY @5030330 /* So, what's my reward? */
+    EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__results__pc_reward_pick
+  IF ~
+    Global("6W#ShithriDrinksStakes","GLOBAL",1) // "you pick what you want"
+  ~ THEN
+    REPLY @5030340 /* If I remember correctly, I was to "pick what I want" in case I win. */
+    EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__results__pc_reward_pick
+  IF ~
+    Global("6W#ShithriDrinksStakes","GLOBAL",2) // equal stakes, 5000 gp
+  ~ THEN
+    REPLY @5030350 /* Where is my 5000 gold pieces? */
+    EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__results__pc_reward_gold
+
+APPEND 6WPIRDR
+  IF ~~ THEN 6W#ShithriDrinksDuel__results__pc_frank
+    SAY @5030311 /* Ye may nah. */
+
+    IF ~~ THEN
+      REPLY @5030312 /* Why so grim, Frank? */
+      GOTO 6W#ShithriDrinksDuel__results__pc_stop_tormenting
+    IF ~
+      Global("6W#ShithriDrinksStakes","GLOBAL",0) // no info on the stakes
+    ~ THEN
+      REPLY @5030313 /* Jokes aside - what's my reward? */
+      GOTO 6W#ShithriDrinksDuel__results__pc_reward_pick
+    IF ~
+      Global("6W#ShithriDrinksStakes","GLOBAL",1) // "you pick what you want"
+    ~ THEN
+      REPLY @5030314 /* If I remember correctly, I was to "pick what I want" in case I win. */
+      GOTO 6W#ShithriDrinksDuel__results__pc_reward_pick
+    IF ~
+      Global("6W#ShithriDrinksStakes","GLOBAL",2) // equal stakes, 5000 gp
+    ~ THEN
+      REPLY @5030315 /* So where is my 5000 gold pieces? */
+      GOTO 6W#ShithriDrinksDuel__results__pc_reward_gold
+  END
+
+  IF ~~ THEN 6W#ShithriDrinksDuel__results__pc_stop_tormenting
+    SAY @5030321 /* Why tormentin' this old sailor? Take yer reward an' jus'... */
+
+    IF ~
+      Global("6W#ShithriDrinksStakes","GLOBAL",0) // no info on the stakes
+    ~ THEN
+      REPLY @5030322 /* Yes, my reward. What was it, again? */
+      GOTO 6W#ShithriDrinksDuel__results__pc_reward_pick
+    IF ~
+      Global("6W#ShithriDrinksStakes","GLOBAL",1) // "you pick what you want"
+    ~ THEN
+      REPLY @5030323 /* If I remember correctly, I was to "pick what I want" in case I win. */
+      GOTO 6W#ShithriDrinksDuel__results__pc_reward_pick
+    IF ~
+      Global("6W#ShithriDrinksStakes","GLOBAL",2) // equal stakes, 5000 gp
+    ~ THEN
+      REPLY @5030324 /* My 5000 gold pieces, you mean. */
+      GOTO 6W#ShithriDrinksDuel__results__pc_reward_gold
+  END
+
+  IF ~~ THEN 6W#ShithriDrinksDuel__results__pc_reward_pick
+    SAY @5030330 /* Pick wha' ye want. Franky the Eye-Popper always pays his debts. */
+
+    IF ~~ THEN
+      REPLY @5030331 /* Well, if I'd lost, I'd give you 5000 gold pieces. So it's only fair for you to give me the same. */
+      GOTO 6W#ShithriDrinksDuel__results__pc_reward_gold
+    IF ~
+      Global("6W#ShithriDrinksPirMagicalItems","GLOBAL",0)
+    ~ THEN
+      REPLY @5030332 /* Don't you have some magical items I could be interested in? */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPirMagicalItems","GLOBAL",1)
+      ~
+      GOTO 6W#ShithriDrinksDuel__results__pc_reward_magical_item
+    IF ~~ THEN
+      REPLY @5030333 /* I want your cutlass. */
+      GOTO 6W#ShithriDrinksDuel__results__pc_reward_cutlass
+    // requires some insight
+    IF ~
+      OR(2)
+        CheckStatGT(Player1,13,INT)
+        CheckStatGT(Player1,13,WIS)
+    ~ THEN
+      REPLY @5030334 /* I want a symbol of my victory over you. Something of little value, but what you care for. Give me your bandana. */
+      GOTO 6W#ShithriDrinksDuel__results__pc_reward_bandana
+    IF ~~ THEN
+      REPLY @5030335 /* I want your life. */
+      GOTO 6W#ShithriDrinksDuel__results__pc_reward_life
+  END
+
+  IF ~~ THEN 6W#ShithriDrinksDuel__results__pc_reward_gold
+    SAY @5030351 /* ...fine. Capt'n will kill me, but debt be debt. Here be yer 5000 gold pieces. Now good day t' ye. */
+    IF ~~ THEN
+      //TODO: journal entry etc.
+      DO ~
+        GiveGoldForce(5000)
+        Global("6W#ShithriDrinksEnding","GLOBAL",1)
+      ~
+      EXIT
+  END
+
+  IF ~~ THEN 6W#ShithriDrinksDuel__results__pc_reward_magical_item
+    SAY @5030360 /* Magical? Nay, I ain't be havin' that kinda things. */
+
+    IF ~~ THEN
+      REPLY @5030331 /* Well, if I'd lost, I'd give you 5000 gold pieces. So it's only fair for you to give me the same. */
+      GOTO 6W#ShithriDrinksDuel__results__pc_reward_gold
+    IF ~~ THEN
+      REPLY @5030333 /* I want your cutlass. */
+      GOTO 6W#ShithriDrinksDuel__results__pc_reward_cutlass
+    // requires some insight
+    IF ~
+      OR(2)
+        CheckStatGT(Player1,13,INT)
+        CheckStatGT(Player1,13,WIS)
+    ~ THEN
+      REPLY @5030334 /* I want a symbol of my victory over you. Something of little value, but what you care for. Give me your bandana. */
+      GOTO 6W#ShithriDrinksDuel__results__pc_reward_bandana
+    IF ~~ THEN
+      REPLY @5030335 /* I want your life. */
+      GOTO 6W#ShithriDrinksDuel__results__pc_reward_life
+  END
+
+  IF ~~ THEN 6W#ShithriDrinksDuel__results__pc_reward_cutlass
+    SAY @5030370 /* Me cutlass? Sure, take it. Got plenty more on the ship. Now good day t' ye. */
+    IF ~~ THEN
+      //TODO: journal entry etc.
+      DO ~
+        GiveItem("6WSAB01",Player1)
+        Global("6W#ShithriDrinksEnding","GLOBAL",1)
+      ~
+      EXIT
+  END
+
+  IF ~~ THEN 6W#ShithriDrinksDuel__results__pc_reward_bandana
+    SAY @5030380 /* Me... me bandana? 'Tis... 'tis me very pride! Me soul! 'Tis... */
+    =
+    @5030381 /* Oh. I see. Ye cruel, cruel <PRO_MANWOMAN>. Fine, debt be debt. Take it. */
+    IF ~~ THEN
+      //TODO: journal entry etc.
+      DO ~
+        // GiveItemCreate("_6WBANDA", Player1, 0, 0, 0)
+        Global("6W#ShithriDrinksEnding","GLOBAL",1)
+      ~
+      EXIT
+  END
+
+  IF ~~ THEN 6W#ShithriDrinksDuel__results__pc_reward_life
+    SAY @5030390 /* Har har! Me life be nah mine t' give. It's me capt'n's. */
+
+    IF ~~ THEN
+      REPLY @5030331 /* Well, if I'd lost, I'd give you 5000 gold pieces. So it's only fair for you to give me the same. */
+      GOTO 6W#ShithriDrinksDuel__results__pc_reward_gold
+    IF ~
+      Global("6W#ShithriDrinksPirMagicalItems","GLOBAL",0)
+    ~ THEN
+      REPLY @5030332 /* Don't you have some magical items I could be interested in? */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPirMagicalItems","GLOBAL",1)
+      ~
+      GOTO 6W#ShithriDrinksDuel__results__pc_reward_magical_item
+    IF ~~ THEN
+      REPLY @5030333 /* I want your cutlass. */
+      GOTO 6W#ShithriDrinksDuel__results__pc_reward_cutlass
+    // requires some insight
+    IF ~
+      OR(2)
+        CheckStatGT(Player1,13,INT)
+        CheckStatGT(Player1,13,WIS)
+    ~ THEN
+      REPLY @5030334 /* I want a symbol of my victory over you. Something of little value, but what you care for. Give me your bandana. */
+      GOTO 6W#ShithriDrinksDuel__results__pc_reward_bandana
+  END
+END

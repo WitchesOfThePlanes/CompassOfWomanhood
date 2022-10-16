@@ -603,6 +603,111 @@ Shithri nie tylko odmawia podania ci jakichkolwiek użytecznych informacji na te
 @5019051 = ~*wzdycha* Po prostu... uznajmy, że te przegrałem.~
 @5019060 = ~Powiem - niech będzie.~
 
+
+
+@5000500 = ~A oto napitek od Ferdka!~
+
+
+@5020000 = ~Podano ci kufel przejrzystego, złotego piwa.~
+@5020001 = ~Przyjrzyj się.~
+@5020002 = ~Powąchaj.~
+@5020003 = ~Skosztuj.~
+@5020004 = ~Poddaj rundę.~
+@5020010 = ~Piwo jest przejrzyste i ma głęboko złoty kolor. Ma wierzchu ma cienką warstwę białej piany. Nie widzisz zbyt wielu bąbelków.~
+@5020020 = ~Poza delikatnym aromatem charakterystycznym dla piw leżakujących, wyczuwasz też inny element. Jest subtelny, ale zdecydowany. Ziołowo-gorzkawy.~
+@5020025 = ~Poza delikatnym aromatem charakterystycznym dla piw leżakujących, wyczuwasz też inny elemen. Dobrze znasz ten gorzkawą woń - tak pachnie dobrej jakości pokrzywa.~
+@5020026 = ~Czyste, złociste piwo leżakujące pachnące pokrzywą. To Złote Piaski Złocisty.~
+@5020030 = ~Gdy kosztujesz piwa, wydaje się delikatnie kwaskowe. Smak ma zdecydowany i pozostawia w ustach uczucie świeżości. Trochę przypomina arbuz, choć ze słabszą nutą słodyczy. Prawie umyka ci subtelny, lekko metaliczny posmak.~
+@5020031 = ~Smakuje znajomo. To Złote Piaski Złocisty.~
+@5020035 = ~Gdy kosztujesz piwa, wydaje się delikatnie kwaskowe. Smak ma zdecydowany i pozostawia w ustach uczucie świeżości. Przypomina nieco arbuza, choć ze słabszą nutą słodyczy. Masz pewność, że to jakiś owoc, ale nie jest ci znany - być może pochodzi z innej części świata. Nagle zauważasz subtelny, metaliczno-ziołowy posmak. Pokrzywa. I to dobra.~
+@5020036 = ~Czyste, złociste piwo leżakujące z pokrzywą i jakimś obcym owocem - pewne kaktusem. To Złote Piaski Złocisty.~
+@5020040 = ~Północna wersja dumy Calimshanu. Złote Piaski Złocisty.~
+
+
+@5029900 = ~Punkt dla ciebie, <CHARNAME>!~
+@5029910 = ~Ni ma punktu.~
+
+
+@5030000 = ~To była ostatnia runda, ludziska! A zwycięzcą jest...~
+
+@5030100 = ~Żaden z nich! Okazali się równie dobrzy!~ ~Żadne z nich! Okazali się równie dobrzy!~
+@5030101 = ~Huh. A to ci niespodzianka. Ten nowy nie jest zły.~ ~Huh. A to ci niespodzianka. Ta nowa nie jest zła.~
+@5030102 = ~Har har, to właśnie mój kapitan!~ ~Har har, to właśnie moja kapitan!~
+@5030103 = ~Przyznam, Shithri, żem nie docenił tego twojego kapitana.~ ~Przyznam, Shithri, żem nie docenił tej twojej kapitan.~
+@5030104 = ~Wiesz, on ma imie. I uszy.~ ~Wiesz, ona ma imie. I uszy.~
+@5030105 = ~<CHARNAME>. Cienżko sie przyznać - nie taki z ciebie szczurek jak żem myślał. Zacne starcie.~
+@5030110 = ~Dziękuję. Ty też kiepski nie jesteś, Ferdku.~
+@5030111 = ~Może kiedyś bendzie okazja na rewanż. Bywaj!~
+@5030120 = ~Skłamałbym mówiąc, że spodziewałem się przeprosin. Ale chyba lepiej nie będzie.~ ~Skłamałabym mówiąc, że spodziewałam się przeprosin. Ale chyba lepiej nie będzie.~
+@5030130 = ~Poszczęściło ci się.~
+@5030131 = ~Poszczenściło? Har har! To nastempnym razem pokaż, żem gorszy. Bywaj!~
+
+@5030200 = ~Nasz jedyny i niepowtarzalny, Ferdek Podbijoko!~
+@5030201 = ~Wiedziałem.~
+@5030202 = ~Widzisz, Shithri? Uczciwiem wygrał, więc tera sie do mnie przyłonczysz, nie?~
+@5030203 = ~Że co? Ta galernica nie była na szali, nicpoto.~
+@5030204 = ~Oj nie daj sie prosić...~
+@5030205 = ~Żem powiedziała co powiedziała.~
+@5030206 = ~Ej, londowy. Licze, żeś nie zapomniał. Moje złoto.~ ~Ej, londowa. Licze, żeś nie zapomniała. Moje złoto.~
+@5030210 = ~Dobra gra. Oto twoja nagroda.~
+@5030211 = ~Harrr... Ta, pinć tysiency, sie zgadza.~
+@5030212 = ~Może kiedyś, jak już zobaczysz troche świata, zmierzymy sie znowu. Na razie, szczurku!~
+@5030220 = ~Poszczęściło ci się.~
+@5030221 = ~Har har! Nie umisz przegrywać, szczurku! Dobra. Żarty na bok - moje złoto.~
+@5030222 = ~Trzymaj.~
+@5030230 = ~Nie możesz sobie wziąć tej piratki?~
+@5030240 = ~Złoto?~
+@5030241 = ~Głuchyś? Wisisz mi pinć tysiency, pamintasz?~ ~Głuchaś? Wisisz mi pinć tysiency, pamintasz?~
+@5030242 = ~Pewnie, bierz.~
+@5030243 = ~Ah. To złoto. Jakoś nie mam ochoty ci go dawać.~
+@5030250 = ~Huh. Powiem ci co, kompaneczku. Przyjacielska porada, bo mam dobry dzień.~ ~Huh. Powiem ci co, kompaneczko. Przyjacielska porada, bo mam dobry dzień.~
+@5030251 = ~Mnie tego złota nie trza. Ale nie wydaje mi sie, żeby Paluch był zadowolony jak sie okaże, że nie płacisz swoich długów.~
+@5030252 = ~Dobrze, już dobrze. Bierz to złoto.~
+@5030253 = ~Nie obchodzi mnie, co o mnie powiesz. Nie rozstanę się ze swoim złotem.~
+@5030255 = ~Tak sie odpłacasz za gościnność? Wynocha! Paluch dość już miał w życiu obślizgłych szczurów, nie trza mu więcej!~
+@5030260 = ~Kapitanie. Dług to dług.~
+
+@5030300 = ~Nowy, <CHARNAME>!~ ~Nowa, <CHARNAME>!~
+@5030301 = ~Uczciwie mówionc: żem wontpił.~
+@5030302 = ~Har har, to właśnie mój kapitan!~ ~Har har, to właśnie moja kapitan!~
+@5030303 = ~*hic* Brdzo ładnie! Te nowy, dobry z ciebie chop. Napijmy ś!~ ~*hic* Brdzo ładnie! Te nowa, dobra z ciebie kobitka. Napijmy ś!~
+@5030304 = ~...~
+@5030310 = ~Dobrze panu poszło, panie Ferdku.~
+@5030311 = ~Żaden ze mie pan.~
+@5030312 = ~Co takiś pan ponury, panie Ferdku?~
+@5030313 = ~Żarty na bok - gdzie moja nagroda?~
+@5030314 = ~Jeśli mnie pamięć nie myli, w przypadku zwycięstwa miałem „wybrać co zechcę”.~ ~Jeśli mnie pamięć nie myli, w przypadku zwycięstwa miałam „wybrać co zechcę”.~
+@5030315 = ~To gdzie moje pięć tysięcy sztuk złota?~
+@5030320 = ~Skłamałbym mówiąc, że spodziewałem się innego wyniku.~ ~Skłamałabym mówiąc, że spodziewałam się innego wyniku.~
+@5030321 = ~Czemu sie znencasz nad starym żeglarzem? Weź se swojo nagrode i...~
+@5030322 = ~A tak, moja nagroda. Jeszcze raz, jaka ona była?~
+@5030323 = ~Jeśli mnie pamięć nie myli, w przypadku zwycięstwa miałem „wybrać co zechcę”.~ ~Jeśli mnie pamięć nie myli, w przypadku zwycięstwa miałam „wybrać co zechcę”.~
+@5030324 = ~Moje pięć tysięcy sztuk złota, masz na myśli.~
+@5030330 = ~Wybierz co chcesz. Ferdek Podbijoko zawsze płaci swoje długi.~
+@5030330 = ~To co będzie moją nagrodą?~
+@5030331 = ~Gdybym ja przegrał, musiałbym ci dać pięć tysięcy sztuk złota. Wydaje się uczciwym, żebyś zrobił to samo.~ ~Gdybym ja przegrała, musiałabym ci dać pięć tysięcy sztuk złota. Wydaje się uczciwym, żebyś zrobił to samo.~
+@5030332 = ~Nie masz może jakichś magicznych przedmiotów, które mogłyby mnie zainteresować?~
+@5030333 = ~Chcę twój kordelas.~
+@5030334 = ~Chcę symbolu mojego zwycięstwa nad tobą. Coś o niewielkiej wartości, ale na czym ci zależy. Chcę twoją bandanę.~
+@5030335 = ~Chcę twoje życie.~
+@5030340 = ~Jeśli mnie pamięć nie myli, w przypadku zwycięstwa miałem „wybrać co zechcę”.~ ~Jeśli mnie pamięć nie myli, w przypadku zwycięstwa miałam „wybrać co zechcę”.~
+@5030350 = ~Gdzie moje pięć tysięcy sztuk złota?~
+@5030351 = ~...no dobra. Kapitan mie zabije, ale dług to dług. Masz te swoje pinć tysiency. Dobrego dnia tobie.~
+@5030360 = ~Magicznych? Nie. Nie mam takiego czegoś.~
+@5030370 = ~Mój kordelas? Pewnie, bierz. Dużo mamy takich na statku. Dobrego dnia tobie.~
+@5030380 = ~Mojo... mojom bandane? To... to jes moja duma! Moja dusza! Bez niej...~
+@5030381 = ~A. Rozumiem. Ty podły, podły człeku. Dobra, dług to dług. Bierz.~ ~A. Rozumiem. Ty podła, podła kobito. Dobra, dług to dług. Bierz.~
+@5030390 = ~Har har! Moje życie nie należy do mie, tylko do mojego kapitana.~
+
+
+@5030500 = ~A, to znowu ty. Czego tu szukasz, oszuście? Nie jesteś tu mile widziany!~ ~A, to znowu ty. Czego tu szukasz, oszustko? Nie jesteś tu mile widziana!~
+@5030501 = ~Hej, Paluch, gdzie się podziała twoja gościnność? Wydawało mi się, że w Morskiej Zdobyczy wszyscy są mile widziani.~
+@5030502 = ~Chciałbym się napić.~ ~Chciałabym się napić.~
+@5030503 = ~Nic takiego. Dobrego dnia.~
+@5030510 = ~Wszyscy goście są mile widziani w Morskiej Zdobyczy. Z ciebie żaden gość. Spływaj.~ ~Wszyscy goście są mile widziani w Morskiej Zdobyczy. Z ciebie żadna gościni. Spływaj.~
+@5030520 = ~A Paluch by chciał mieć ręke z powrotem, ale życie to nie bajka. A teraz wynocha.~
+
+
 @6000000 = ~Piwo Ciemne Gorzkie.~
 @6000010 = ~Piwo Cieniste.~
 @6000020 = ~Piwo-Suz.~

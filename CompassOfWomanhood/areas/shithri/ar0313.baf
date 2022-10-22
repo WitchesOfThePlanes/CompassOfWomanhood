@@ -16,7 +16,7 @@ THEN
     SetGlobal("6W#ShithriDrinksSeamanSpawn","GLOBAL",3)
 END
 
-// Implementation Node
+// Implementation Note:
 // The Thumb has no script of his own, so he'll use area script (for simplicity).
 //
 // Note that it's not really possible to scatter NPCs nicely

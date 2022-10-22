@@ -109,6 +109,15 @@ END
 IF
   GlobalGT("6W#ShithriDrinksHasUniqueDrinks","GLOBAL",8)
   Global("6W#ShithriDrinksSeamanSpawn","GLOBAL",0)
+
+  // It would be very awkward if the seaman talks between Ployer cursing Jaheira
+  // and Jaheira commenting on it. Wait with the quest until either Jaheira isn't
+  // in the party or Ployer already talked to her.
+  OR(4)
+    !InParty("Jaheira")
+    GlobalGT("JaheiraCursed","GLOBAL",2)
+    !AreaCheckObject("AR0313","Ployer")
+    Dead("Ployer")
 THEN
   RESPONSE #100
     SetGlobal("6W#ShithriDrinksSeamanSpawn","GLOBAL",1)

@@ -13,6 +13,34 @@ THEN
 END
 
 
+// It would be very awkward if the seaman talks between Ployer cursing Jaheira
+// and Jaheira commenting on it.
+//
+// If Jaheira and Ployer are present, wait for Jaheira to get cursed.
+IF
+  InParty("Jaheira")
+  InMyArea("Jaheira")
+  InMyArea("Ployer")
+  GlobalLT("JaheiraCursed","GLOBAL",3)
+  Global("6W#ShithriDrinksSeamanWait","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("6W#ShithriDrinksSeamanWait","GLOBAL",1)
+END
+
+// ...then wait a bit more.
+IF
+  Global("6W#ShithriDrinksSeamanWait","GLOBAL",1)
+  GlobalGT("JaheiraCursed","GLOBAL",2)
+  Global("6W#ShithriDrinksSeamanTime","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("6W#ShithriDrinksSeamanTime","GLOBAL",1)
+    // wait just a bit after Jaheira stops talking, not to break the moment
+    RealSetGlobalTimer("6W#ShithriDrinksSeamanTimer","GLOBAL",20)
+END
+
+
 //
 // Shithri's drink quest seaman
 //
@@ -29,6 +57,11 @@ IF
   InMyArea(Player1)
   InMyArea("THUMB")
   Global("6W#ShithriDrinksSeamanSaw","GLOBAL",0)
+
+  // Wait for Jaheira
+  OR(2)
+    Global("6W#ShithriDrinksSeamanWait","GLOBAL",0)
+    RealGlobalTimerExpired("6W#ShithriDrinksSeamanTimer","GLOBAL")
 THEN
   RESPONSE #100
     SetInterrupt(FALSE)

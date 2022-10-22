@@ -3487,8 +3487,11 @@ APPEND THUMB
     ~ THEN
       DO ~
         SetGlobal("6W#ShithriDrinksHasDrink03b","GLOBAL",2)
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",1)
+        SetGlobal("6W#ShithriDrinksPcOption","GLOBAL",0)
+        MoveViewObject(Myself,INSTANT)
       ~
-      EXTERN ~PLAYER1~ 6W#ShithriDrinksDuel__franky__golden_sands_gold
+      EXIT
 
     // IF ~
     //   Global("6W#ShithriDrinksRound","GLOBAL",1)
@@ -3496,6 +3499,8 @@ APPEND THUMB
     // ~
     //   DO ~
     //     SetGlobal("6W#ShithriDrinksHasDrink08","GLOBAL",2)
+    //    SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",1)
+    //    SetGlobal("6W#ShithriDrinksPcOption","GLOBAL",1)
     //   ~
     //   GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry
 
@@ -3535,12 +3540,18 @@ END
 
 //TODO: should it be Player1? Or some separate dialogue file that
 // isn't attached to any creature, possibly?
-APPEND PLAYER1
-  IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__franky__golden_sands_gold
+APPEND 6WDRINK
+  IF ~
+    Global("6W#ShithriDrinksPcRound","GLOBAL",1)
+    Global("6W#ShithriDrinksPcOption","GLOBAL",0)
+  ~ THEN BEGIN 6W#ShithriDrinksDuel__franky__golden_sands_gold
     SAY @5020000 /* You're served a mug of clear, golden beer. */
 
     IF ~~ THEN
       REPLY @5020001 /* Take a better look. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
       GOTO 6W#ShithriDrinksDuel__franky__golden_sands_gold__look
 
     // a non-druid will smell less
@@ -3548,12 +3559,18 @@ APPEND PLAYER1
       !Class(Player1,DRUID_ALL)
     ~ THEN
       REPLY @5020002 /* Smell it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
       GOTO 6W#ShithriDrinksDuel__franky__golden_sands_gold__smell__nondruid
     // a druid will smell more
     IF ~
       Class(Player1,DRUID_ALL)
     ~ THEN
       REPLY @5020002 /* Smell it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
       GOTO 6W#ShithriDrinksDuel__franky__golden_sands_gold__smell__druid
 
     // a non-druid will taste less
@@ -3561,16 +3578,25 @@ APPEND PLAYER1
       !Class(Player1,DRUID_ALL)
     ~ THEN
       REPLY @5020003 /* Taste it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
       GOTO 6W#ShithriDrinksDuel__franky__golden_sands_gold__taste__nondruid
     // a druid will taste more
     IF ~
       Class(Player1,DRUID_ALL)
     ~ THEN
       REPLY @5020003 /* Taste it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
       GOTO 6W#ShithriDrinksDuel__franky__golden_sands_gold__taste__druid
 
     IF ~~ THEN
       REPLY @5020004 /* Forfeit the round. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
       EXTERN ~THUMB~ 6W#ShithriDrinksDuel__franky__golden_sands_gold__forfeit
   END
   IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__franky__golden_sands_gold__look
@@ -3596,7 +3622,9 @@ APPEND PLAYER1
       REPLY @5020003 /* Taste it. */
       GOTO 6W#ShithriDrinksDuel__franky__golden_sands_gold__taste__nondruid
     // a druid will taste more
-    IF ~~ THEN
+    IF ~
+      Class(Player1,DRUID_ALL)
+    ~ THEN
       REPLY @5020003 /* Taste it. */
       GOTO 6W#ShithriDrinksDuel__franky__golden_sands_gold__taste__druid
 

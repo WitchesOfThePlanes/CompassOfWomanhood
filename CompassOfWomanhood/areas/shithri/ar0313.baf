@@ -133,3 +133,11 @@ THEN
     SmallWait(1)
     EndCutSceneMode()
 END
+
+// PC to guess Franky's drink
+IF
+  GlobalGT("6W#ShithriDrinksPcRound","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ActionOverride(Player1,StartDialog("6WDRINK",Player1))
+END

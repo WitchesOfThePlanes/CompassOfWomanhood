@@ -114,6 +114,7 @@ BEGIN
 
   // quests-related creatures
   ~CompassOfWomanhood/dialogues/shithri/6WPIRDR.d~
+  ~CompassOfWomanhood/dialogues/shithri/6WDRINK.d~
 END
 
 ACTION_DEFINE_ARRAY dialogues_extra

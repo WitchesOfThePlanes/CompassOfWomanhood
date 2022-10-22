@@ -303,7 +303,7 @@ END
 // US English is the base
 SILENT
 OUTER_SET file_num = 0
-ACTION_BASH_FOR ~CompassOfWomanhood/translations/en_US/sounds~ ~^B?6WSHI.*\.wav$~
+ACTION_BASH_FOR ~CompassOfWomanhood/translations/en_US/sounds~ ~^B?6W.*\.wav$~
 BEGIN
   COPY ~%BASH_FOR_FILESPEC%~ ~override~
   OUTER_SET file_num += 1
@@ -315,7 +315,7 @@ ACTION_IF !(%LANGUAGE% STRING_EQUAL "en_US") THEN
 BEGIN
   SILENT
   OUTER_SET file_num = 0
-  ACTION_BASH_FOR ~CompassOfWomanhood/translations/%LANGUAGE%/sounds~ ~^B?6WSHI.*\.wav$~
+  ACTION_BASH_FOR ~CompassOfWomanhood/translations/%LANGUAGE%/sounds~ ~^B?6W.*\.wav$~
   BEGIN
     COPY ~%BASH_FOR_FILESPEC%~ ~override~
     OUTER_SET file_num += 1

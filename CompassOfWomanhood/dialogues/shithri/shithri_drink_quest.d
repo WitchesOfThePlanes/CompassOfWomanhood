@@ -2531,9 +2531,7 @@ CHAIN IF ~
   == 6WSHITJ
   @5000014 /* That? That be me capt'n. Capt'n, meet Franky. */
   == 6WPIRDR
-  @5000015 /* "Capt'n"? Har har! That a good one! */
-  =
-  @5000016 /* Shithri, me lil rapscallion. Why nah ye join me instead of playin' wit' that lubber? */
+  @5000015 /* "Capt'n"? Har har! That a good one! Shithri, me lil rapscallion. Why nah ye join me instead of playin' wit' that lubber? */
   == 6WSHITJ
   @5000017 /* Capt'n be alright, Franky. */
   == 6WPIRDR
@@ -3698,7 +3696,7 @@ APPEND PLAYER1
 
     // if you know the drink, you'll recognize it now
     IF ~
-      Global("6W#ShithriDrinksHasDrink03b","GLOBAL",1)
+      PartyHasItem("_6WDR03b")
     ~ THEN
       REPLY @5020031 /* Tastes familiar. It's Golden Sands Gold. */
       DO ~

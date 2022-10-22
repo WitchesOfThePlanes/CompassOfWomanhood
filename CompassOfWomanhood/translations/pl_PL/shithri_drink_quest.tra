@@ -618,9 +618,29 @@ Shithri nie tylko odmawia podania ci jakichkolwiek użytecznych informacji na te
 @5020026 = ~Czyste, złociste piwo leżakujące pachnące pokrzywą. To Złote Piaski Złocisty.~
 @5020030 = ~Gdy kosztujesz piwa, wydaje się delikatnie kwaskowe. Smak ma zdecydowany i pozostawia w ustach uczucie świeżości. Trochę przypomina arbuz, choć ze słabszą nutą słodyczy. Prawie umyka ci subtelny, lekko metaliczny posmak.~
 @5020031 = ~Smakuje znajomo. To Złote Piaski Złocisty.~
+@5020032 = ~Smakuje znajomo. To Złote Piaski Zwykły.~
 @5020035 = ~Gdy kosztujesz piwa, wydaje się delikatnie kwaskowe. Smak ma zdecydowany i pozostawia w ustach uczucie świeżości. Przypomina nieco arbuza, choć ze słabszą nutą słodyczy. Masz pewność, że to jakiś owoc, ale nie jest ci znany - być może pochodzi z innej części świata. Nagle zauważasz subtelny, metaliczno-ziołowy posmak. Pokrzywa. I to dobra.~
 @5020036 = ~Czyste, złociste piwo leżakujące z pokrzywą i jakimś obcym owocem - pewne kaktusem. To Złote Piaski Złocisty.~
 @5020040 = ~Północna wersja dumy Calimshanu. Złote Piaski Złocisty.~
+
+@5020100 = ~Podano ci kieliszek ciemnego wina.~
+@5020101 = ~Przyjrzyj się.~
+@5020102 = ~Powąchaj.~
+@5020103 = ~Skosztuj.~
+@5020104 = ~Poddaj rundę.~
+@5020110 = ~To wino ma bardzo ciemny odcień czerwieni. Nie dostrzegasz innych cech godnych odnotowania.~
+@5020115 = ~Ujmujesz kieliszek w dłoń i wykonujesz nim kilka delikatnych obrotów. Obserwujesz, że krople opadają swobodnie, nie zostawiając smug. Niska lepkość. To wytrawne wino z zagranicy, przypuszczalnie z zachodu.~
+@5020116 = ~Wytrawne wino z zachodniego lasu. Pasuje tu Cormyr. A które cormyrskie miasto znane jest z wytrawnego czerwonego wina? Arabel. W takim razie to Arabellańskie Wino Wytrawne.~
+@5020120 = ~Aromat wina jest zbyt subtelny żeby go bliżej zidentyfikować.~
+@5020125 = ~Twoje wyostrzone powonienie z ledwością wykrywa znajomą nutę: jagody.~
+@5020126 = ~Ciemne czerwone wino z nutą jagód. To Arabellańskie Wino Wytrawne.~
+@5020130 = ~Wino jest bardzo wytrawne i ma leśny posmak.~
+@5020131 = ~Smakuje znajomo. To Arabellańskie Wino Wytrawne.~
+@5020133 = ~Głębokie jest w swej wytrawności, a jego bogactwo śpiewa ci opowieści o dalekich lasach. A jednak przynosi ci wspomnienia z Wybrzeża Mieczy...~
+@5020134 = ~Znam je dobrze, to jeden z pierwszych trunków jakich próbowałem, jeszcze w Candlekeep. To Arabellańskie Wino Wytrawne.~ ~Znam je dobrze, to jeden z pierwszych trunków jakich próbowałam, jeszcze w Candlekeep. To Arabellańskie Wino Wytrawne.~
+@5020135 = ~Jakże mógłbym zapomnieć smaku przygody? To wino piłem w Gospodzie Pod Pomocną Dłonią, pierwszym miejscu, w którym zatrzymałem się po opuszczeniu Candlekeep. Arabellańskie Wytrawne.~ ~Jakże mogłabym zapomnieć smaku przygody? To wino piłam w Gospodzie Pod Pomocną Dłonią, pierwszym miejscu, w którym zatrzymałam się po opuszczeniu Candlekeep. Arabellańskie Wytrawne.~
+@5020136 = ~To wino przypomina ci las w deszczowy dzień. Ma posmak jagód, choć innych niż te lokalne. Jest bardzo wtrawne, ale pozostawia w ustach przyjemne uczucie.~
+@5020140 = ~To duma Cormyru, Arabellańskie Wino Wytrawne.~
 
 
 @5029900 = ~Punkt dla ciebie, <CHARNAME>!~

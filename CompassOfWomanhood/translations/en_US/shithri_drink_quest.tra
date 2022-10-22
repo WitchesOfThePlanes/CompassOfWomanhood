@@ -616,9 +616,30 @@ Shithri not only refuses to provide any valuable comment on this beer, but seems
 @5020026 = ~Clear, golden lager which smells of nettles. It's Golden Sands Gold.~
 @5020030 = ~When you sip the beer, it seems just slightly acidic. The taste is sharp and leaves a refreshing feeling in your mouth. It's somewhat reminescent of watermelon, although less sweet. You almost miss a very suble, iron-like after-taste.~
 @5020031 = ~Tastes familiar. It's Golden Sands Gold.~
+@5020032 = ~Tastes familiar. It's Golden Sands Basic.~
 @5020035 = ~When you sip the beer, it seems just slightly acidic. The taste is sharp and leaves a refreshing feeling in your mouth. It's somewhat reminescent of watermelon, although less sweet. You're quite certain it's some kind of a fruit, but it's foreign to you - perhaps coming from a different part of the world. Suddenly, you notice a suble, iron-like herbal after-taste. Nettles. Good ones, at that.~
 @5020036 = ~Clear, golden lager with nettles and some kind of foreign fruit - probably cacti. It's Golden Sands Gold.~
 @5020040 = ~It's Calimshan's pride's northern version. Golden Sands Gold.~
+
+@5020100 = ~You're served a glass of dark wine.~
+@5020101 = ~Take a better look.~
+@5020102 = ~Smell it.~
+@5020103 = ~Taste it.~
+@5020104 = ~Forfeit the round.~
+@5020110 = ~This wine is of very deep red hue. You can see no other characteristics worth mentioning.~
+@5020115 = ~Taking the glass in your hand, you make a gentle swirling motion. You observe how the wine drops don't stick to the glassat all. Low viscosity. It's a dry wine from abroad, probably from the west.~
+@5020116 = ~A dry wine from a western forest. Most famously, Cormyr fits that. And which Cormyrean city is the most known for dry red wines? Arabel. That would be Arabellan Dry then.~
+@5020115 = ~Taking the glass in your hand, you make a gentle swirling motion. You observe how the wine drops don't stick to the glass at all. Low viscosity. It's a dry wine from abroad, probably from the west.~
+@5020120 = ~The wine's aroma is too subtle for you to identify.~
+@5020125 = ~Your keen sense of smell just barely detects a familiar hint: berries.~
+@5020126 = ~A dark red wine with a hint of berries. It's Arabellan Dry.~
+@5020130 = ~The wine is very dry with a woodsy feel to it.~
+@5020131 = ~Tastes familiar. It's Arabellan Dry.~
+@5020133 = ~The wine is deep in its dryness, its richness singing you the stories of forests afar. And yet, it brings back memories of the Sword Coast...~
+@5020134 = ~I know it well, it's one of the first liquors I've had, back in good Candlekeep. It's Arabellan Dry.~
+@5020135 = ~How could I ever forget the very taste of adventure? It's the wine I had in Friendly Arm Inn, the first one I stayed at after leaving Candlekeep. Arabellan Dry.~
+@5020136 = ~This wine reminds you of forests during a rainy day. It has a hint of berries, although they seem a bit different from the local ones. It's very dry, but leaves a pleasant taste in your mouth.~
+@5020140 = ~It's Cormyr's pride, Arabellan Dry.~
 
 
 @5029900 = ~Point fer <CHARNAME>!~

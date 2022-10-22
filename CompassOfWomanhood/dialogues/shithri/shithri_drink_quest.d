@@ -1936,6 +1936,7 @@ APPEND 6WSHITJ
     ~ THEN
       REPLY @3080002 /* Taste of the forest then. Sounds good. */
       DO ~
+        SetGlobal("6W#ShithriDrinksKnowDrink08","GLOBAL",1) // heard description
         TakePartyGold(7)
         DestroyGold(7)
         GiveItemCreate("_6WDR08", Player1, 0, 0, 0)
@@ -1948,6 +1949,7 @@ APPEND 6WSHITJ
     ~ THEN
       REPLY @3080002 /* Taste of the forest then. Sounds good. */
       DO ~
+        SetGlobal("6W#ShithriDrinksKnowDrink08","GLOBAL",1) // heard description
         TakePartyGold(13)
         DestroyGold(13)
         GiveItemCreate("_6WDR08", Player1, 0, 0, 0)
@@ -1956,10 +1958,16 @@ APPEND 6WSHITJ
 
     IF ~~ THEN
       REPLY @3080003 /* I'd love some wine-braised boar. But you know, money. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksKnowDrink08","GLOBAL",1) // heard description
+      ~
       GOTO arabellan_wine__no_money
 
     IF ~~ THEN
       REPLY @3080004 /* Cooking wine? Huh! */
+      DO ~
+        SetGlobal("6W#ShithriDrinksKnowDrink08","GLOBAL",1) // heard description
+      ~
       GOTO arabellan_wine__nah
   END
 
@@ -3484,6 +3492,9 @@ APPEND THUMB
     IF ~
       Global("6W#ShithriDrinksRound","GLOBAL",1)
       GlobalLT("6W#ShithriDrinksHasDrink03b","GLOBAL",2)
+      OR(2)
+        !GlobalLT("6W#ShithriDrinksHasDrink08","GLOBAL",2)
+        RandomNum(2,1)
     ~ THEN
       DO ~
         SetGlobal("6W#ShithriDrinksHasDrink03b","GLOBAL",2)
@@ -3493,16 +3504,20 @@ APPEND THUMB
       ~
       EXIT
 
-    // IF ~
-    //   Global("6W#ShithriDrinksRound","GLOBAL",1)
-    //   GlobalLT("6W#ShithriDrinksHasDrink08","GLOBAL",2)
-    // ~
-    //   DO ~
-    //     SetGlobal("6W#ShithriDrinksHasDrink08","GLOBAL",2)
-    //    SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",1)
-    //    SetGlobal("6W#ShithriDrinksPcOption","GLOBAL",1)
-    //   ~
-    //   GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry
+    IF ~
+      Global("6W#ShithriDrinksRound","GLOBAL",1)
+      GlobalLT("6W#ShithriDrinksHasDrink08","GLOBAL",2)
+      OR(2)
+        !GlobalLT("6W#ShithriDrinksHasDrink03b","GLOBAL",2)
+        RandomNum(2,2)
+    ~
+      DO ~
+        SetGlobal("6W#ShithriDrinksHasDrink08","GLOBAL",2)
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",1)
+        SetGlobal("6W#ShithriDrinksPcOption","GLOBAL",1)
+        MoveViewObject(Myself,INSTANT)
+      ~
+      EXIT
 
     // // -- Round Two --
     // // Franky picks something a bit more challenging:
@@ -3538,8 +3553,6 @@ APPEND THUMB
   END
 END
 
-//TODO: should it be Player1? Or some separate dialogue file that
-// isn't attached to any creature, possibly?
 APPEND 6WDRINK
   IF ~
     Global("6W#ShithriDrinksPcRound","GLOBAL",1)
@@ -3675,7 +3688,7 @@ APPEND 6WDRINK
 
     // if you know the drink, you'll recognize it now
     IF ~
-      Global("6W#ShithriDrinksHasDrink03b","GLOBAL",1)
+      PartyHasItem("_6WDR03b")
     ~ THEN
       REPLY @5020031 /* Tastes familiar. It's Golden Sands Gold. */
       DO ~
@@ -3689,7 +3702,7 @@ APPEND 6WDRINK
     IF ~
       Global("6W#ShithriDrinksHasDrink03a","GLOBAL",1)
     ~ THEN
-      REPLY @5020031 /* Tastes familiar. It's Golden Sands Basic. */
+      REPLY @5020032 /* Tastes familiar. It's Golden Sands Basic. */
       DO ~
         IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
         // increase the round immediately to avoid potential problems with the engine
@@ -3757,6 +3770,563 @@ APPEND THUMB
   END
 END
 
+APPEND 6WDRINK
+  IF ~
+    Global("6W#ShithriDrinksPcRound","GLOBAL",1)
+    Global("6W#ShithriDrinksPcOption","GLOBAL",1)
+  ~ THEN BEGIN 6W#ShithriDrinksDuel__franky__arabellan_dry
+    SAY @5020100 /* You're served a glass of dark wine. */
+
+    // default
+    IF ~
+      !CheckStatGT(Player1,13,INT)
+      !Class(Player1,BARD_ALL)
+    ~ THEN
+      REPLY @5020101 /* Take a better look. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__look__default
+    // intelligent characters, as well as bards, know the wine
+    // can be swirled to check viscousity
+    IF ~
+      OR(2)
+        CheckStatGT(Player1,13,INT)
+        Class(Player1,BARD_ALL)
+    ~ THEN
+      REPLY @5020101 /* Take a better look. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__look__swirl
+
+    // default
+    IF ~
+      !Race(Player1,HALF_ORC)
+    ~ THEN
+      REPLY @5020102 /* Smell it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__smell__default
+    // half-orcs have keen sense of smell, due to their orcish heritage
+    // ("borrowed" from gray orcs, who canonically have the Scent 
+    // ability in DnD 3.5e)
+    IF ~
+      Race(Player1,HALF_ORC)
+    ~ THEN
+      REPLY @5020102 /* Smell it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__smell__halforc
+
+    // unless you're of specific race or class, you don't know berries well
+    IF ~
+      !Class(Player1,BARD_ALL)
+      !Class(Player1,DRUID_ALL)
+      !Class(Player1,RANGER_ALL)
+      !Kit(Player1,BARBARIAN)
+    ~ THEN
+      REPLY @5020103 /* Taste it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__taste__default
+
+    // multiple options to know berries well
+    IF ~
+      !Class(Player1,BARD_ALL)
+      OR(3)
+        Class(Player1,DRUID_ALL)
+        Class(Player1,RANGER_ALL)
+        Kit(Player1,BARBARIAN)
+    ~ THEN
+      REPLY @5020103 /* Taste it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__taste__nature
+
+    // bards probably drunk it
+    IF ~
+      Class(Player1,BARD_ALL)
+    ~ THEN
+      REPLY @5020103 /* Taste it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__taste__bard
+
+    IF ~~ THEN
+      REPLY @5020104 /* Forfeit the round. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__franky__arabellan_dry__forfeit
+  END
+  IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__franky__arabellan_dry__look__default
+    SAY @5020110 /* This wine is of very deep red hue. You can see no other characteristics worth mentioning. */
+
+    // default
+    IF ~
+      !Race(Player1,HALF_ORC)
+    ~ THEN
+      REPLY @5020102 /* Smell it. */
+      GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__smell__default
+    // half-orcs have keen sense of smell, due to their orcish heritage
+    // ("borrowed" from gray orcs, who canonically have the Scent 
+    // ability in DnD 3.5e)
+    IF ~
+      Race(Player1,HALF_ORC)
+    ~ THEN
+      REPLY @5020102 /* Smell it. */
+      GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__smell__halforc
+
+    // unless you're of specific race or class, you don't know berries well
+    IF ~
+      !Class(Player1,BARD_ALL)
+      !Class(Player1,DRUID_ALL)
+      !Class(Player1,RANGER_ALL)
+      !Kit(Player1,BARBARIAN)
+    ~ THEN
+      REPLY @5020103 /* Taste it. */
+      GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__taste__default
+
+    // multiple options to know berries well
+    IF ~
+      !Class(Player1,BARD_ALL)
+      OR(3)
+        Class(Player1,DRUID_ALL)
+        Class(Player1,RANGER_ALL)
+        Kit(Player1,BARBARIAN)
+    ~ THEN
+      REPLY @5020103 /* Taste it. */
+      GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__taste__nature
+
+    // bards probably drunk it
+    IF ~
+      Class(Player1,BARD_ALL)
+    ~ THEN
+      REPLY @5020103 /* Taste it. */
+      GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__taste__bard
+
+    IF ~~ THEN
+      REPLY @5020104 /* Forfeit the round. */
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__franky__arabellan_dry__forfeit
+  END
+  IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__franky__arabellan_dry__look__swirl
+    SAY @5020115 /* Taking the glass in your hand, you make a gentle swirling motion. You observe how the wine drops don't stick to the glass at all. Low viscosity. It's a dry wine from abroad, probably from the west. */
+
+    // if you know it's from the west and it's from a forest region,
+    // Cormyr is an easy guess, and Cormyr's Arabel is quite famous
+    IF ~
+      Global("6W#ShithriDrinksThisTaste","GLOBAL",1)
+    ~ THEN
+      REPLY @5020116 /* A dry wine from a western forest. Most famously, Cormyr fits that. And which Cormyrean city is the most known for dry red wines? Arabel. That would be Arabellan Dry then. */
+      DO ~
+        IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
+        // increase the round immediately to avoid potential problems with the engine
+        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
+      ~
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
+
+    // default
+    IF ~
+      !Race(Player1,HALF_ORC)
+    ~ THEN
+      REPLY @5020102 /* Smell it. */
+      DO ~
+        Global("6W#ShithriDrinksThisLook","GLOBAL",1)
+      ~
+      GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__smell__default
+    // half-orcs have keen sense of smell, due to their orcish heritage
+    // ("borrowed" from gray orcs, who canonically have the Scent 
+    // ability in DnD 3.5e)
+    IF ~
+      Race(Player1,HALF_ORC)
+    ~ THEN
+      REPLY @5020102 /* Smell it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksThisLook","GLOBAL",1)
+      ~
+      GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__smell__halforc
+
+    // unless you're of specific race or class, you don't know berries well
+    IF ~
+      !Class(Player1,BARD_ALL)
+      !Class(Player1,DRUID_ALL)
+      !Class(Player1,RANGER_ALL)
+      !Kit(Player1,BARBARIAN)
+    ~ THEN
+      REPLY @5020103 /* Taste it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksThisLook","GLOBAL",1)
+      ~
+      GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__taste__default
+
+    // multiple options to know berries well
+    IF ~
+      !Class(Player1,BARD_ALL)
+      OR(3)
+        Class(Player1,DRUID_ALL)
+        Class(Player1,RANGER_ALL)
+        Kit(Player1,BARBARIAN)
+    ~ THEN
+      REPLY @5020103 /* Taste it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksThisLook","GLOBAL",1)
+      ~
+      GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__taste__nature
+
+    // bards probably drunk it
+    IF ~
+      Class(Player1,BARD_ALL)
+    ~ THEN
+      REPLY @5020103 /* Taste it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksThisLook","GLOBAL",1)
+      ~
+      GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__taste__bard
+
+    IF ~~ THEN
+      REPLY @5020104 /* Forfeit the round. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksThisLook","GLOBAL",1)
+      ~
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__franky__arabellan_dry__forfeit
+  END
+  IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__franky__arabellan_dry__smell__default
+    SAY @5020120 /* The wine's aroma is too subtle for you to identify. */
+
+    // default
+    IF ~
+      !CheckStatGT(Player1,13,INT)
+      !Class(Player1,BARD_ALL)
+    ~ THEN
+      REPLY @5020101 /* Take a better look. */
+      GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__look__default
+    // intelligent characters, as well as bards, know the wine
+    // can be swirled to check viscousity
+    IF ~
+      OR(2)
+        CheckStatGT(Player1,13,INT)
+        Class(Player1,BARD_ALL)
+    ~ THEN
+      REPLY @5020101 /* Take a better look. */
+      GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__look__swirl
+
+    // unless you're of specific race or class, you don't know berries well
+    IF ~
+      !Class(Player1,BARD_ALL)
+      !Class(Player1,DRUID_ALL)
+      !Class(Player1,RANGER_ALL)
+      !Kit(Player1,BARBARIAN)
+    ~ THEN
+      REPLY @5020103 /* Taste it. */
+      GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__taste__default
+
+    // multiple options to know berries well
+    IF ~
+      !Class(Player1,BARD_ALL)
+      OR(3)
+        Class(Player1,DRUID_ALL)
+        Class(Player1,RANGER_ALL)
+        Kit(Player1,BARBARIAN)
+    ~ THEN
+      REPLY @5020103 /* Taste it. */
+      GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__taste__nature
+
+    // bards probably drunk it
+    IF ~
+      Class(Player1,BARD_ALL)
+      !Class(Player1,DRUID_ALL)
+      !Class(Player1,RANGER_ALL)
+      !Kit(Player1,BARBARIAN)
+    ~ THEN
+      REPLY @5020103 /* Taste it. */
+      GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__taste__bard
+
+    IF ~~ THEN
+      REPLY @5020104 /* Forfeit the round. */
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__franky__arabellan_dry__forfeit
+  END
+  IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__franky__arabellan_dry__smell__halforc
+    SAY @5020125 /* Your keen sense of smell just barely detects a familiar hint: berries. */
+
+    // if you heard of it, you'll recognize it
+    IF ~
+      Global("6W#ShithriDrinksKnowDrink08","GLOBAL",1)
+    ~ THEN
+      REPLY @5020126 /* A dark red wine with a hint of berries. It's Arabellan Dry. */
+      DO ~
+        IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
+        // increase the round immediately to avoid potential problems with the engine
+        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
+      ~
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
+
+    // default
+    IF ~
+      !CheckStatGT(Player1,13,INT)
+      !Class(Player1,BARD_ALL)
+    ~ THEN
+      REPLY @5020101 /* Take a better look. */
+      GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__look__default
+    // intelligent characters, as well as bards, know the wine
+    // can be swirled to check viscousity
+    IF ~
+      OR(2)
+        CheckStatGT(Player1,13,INT)
+        Class(Player1,BARD_ALL)
+    ~ THEN
+      REPLY @5020101 /* Take a better look. */
+      GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__look__swirl
+
+    // unless you're of specific race or class, you don't know berries well
+    IF ~
+      !Class(Player1,BARD_ALL)
+      !Class(Player1,DRUID_ALL)
+      !Class(Player1,RANGER_ALL)
+      !Kit(Player1,BARBARIAN)
+    ~ THEN
+      REPLY @5020103 /* Taste it. */
+      GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__taste__default
+
+    // multiple options to know berries well
+    IF ~
+      !Class(Player1,BARD_ALL)
+      OR(3)
+        Class(Player1,DRUID_ALL)
+        Class(Player1,RANGER_ALL)
+        Kit(Player1,BARBARIAN)
+    ~ THEN
+      REPLY @5020103 /* Taste it. */
+      GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__taste__nature
+
+    // bards probably drunk it
+    IF ~
+      Class(Player1,BARD_ALL)
+      !Class(Player1,DRUID_ALL)
+      !Class(Player1,RANGER_ALL)
+      !Kit(Player1,BARBARIAN)
+    ~ THEN
+      REPLY @5020103 /* Taste it. */
+      GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__taste__bard
+
+    IF ~~ THEN
+      REPLY @5020104 /* Forfeit the round. */
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__franky__arabellan_dry__forfeit
+  END
+  IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__franky__arabellan_dry__taste__default
+    SAY @5020130 /* The wine is very dry with a woodsy feel to it. */
+
+    // if you know the drink, you'll recognize it now
+    IF ~
+      PartyHasItem("_6WDR08")
+    ~ THEN
+      REPLY @5020131 /* Tastes familiar. It's Arabellan Dry. */
+      DO ~
+        IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
+        // increase the round immediately to avoid potential problems with the engine
+        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
+      ~
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
+
+    // default
+    IF ~
+      !CheckStatGT(Player1,13,INT)
+      !Class(Player1,BARD_ALL)
+    ~ THEN
+      REPLY @5020101 /* Take a better look. */
+      GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__look__default
+    // intelligent characters, as well as bards, know the wine
+    // can be swirled to check viscousity
+    IF ~
+      OR(2)
+        CheckStatGT(Player1,13,INT)
+        Class(Player1,BARD_ALL)
+    ~ THEN
+      REPLY @5020101 /* Take a better look. */
+      GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__look__swirl
+
+    // default
+    IF ~
+      !Race(Player1,HALF_ORC)
+    ~ THEN
+      REPLY @5020102 /* Smell it. */
+      GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__smell__default
+    // half-orcs have keen sense of smell, due to their orcish heritage
+    // ("borrowed" from gray orcs, who canonically have the Scent 
+    // ability in DnD 3.5e)
+    IF ~
+      Race(Player1,HALF_ORC)
+    ~ THEN
+      REPLY @5020102 /* Smell it. */
+      GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__smell__halforc
+  END
+  IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__franky__arabellan_dry__taste__bard
+    SAY @5020133 /* The wine is deep in its dryness, its richness singing you the stories of forests afar. And yet, it brings back memories of the Sword Coast... */
+
+    // it's available in Candlekeep
+    IF ~~ THEN
+      REPLY @5020134 /* I know it well, it's one of the first liquors I've had, back in good Candlekeep. It's Arabellan Dry. */
+      DO ~
+        IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
+        // increase the round immediately to avoid potential problems with the engine
+        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
+      ~
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
+
+    // ...but also in Friendly Arm Inn
+    IF ~~ THEN
+      REPLY @5020135 /* How could I ever forget the very taste of adventure? It's the wine I had in Friendly Arm Inn, the first one I stayed at after leaving Candlekeep. Arabellan Dry. */
+      DO ~
+        IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
+        // increase the round immediately to avoid potential problems with the engine
+        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
+      ~
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
+
+    // if you know the drink, you'll recognize it now
+    IF ~
+      PartyHasItem("_6WDR08")
+    ~ THEN
+      REPLY @5020131 /* Tastes familiar. It's Arabellan Dry. */
+      DO ~
+        IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
+        // increase the round immediately to avoid potential problems with the engine
+        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
+      ~
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
+
+    // default
+    IF ~
+      !CheckStatGT(Player1,13,INT)
+      !Class(Player1,BARD_ALL)
+    ~ THEN
+      REPLY @5020101 /* Take a better look. */
+      GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__look__default
+    // intelligent characters, as well as bards, know the wine
+    // can be swirled to check viscousity
+    IF ~
+      OR(2)
+        CheckStatGT(Player1,13,INT)
+        Class(Player1,BARD_ALL)
+    ~ THEN
+      REPLY @5020101 /* Take a better look. */
+      GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__look__swirl
+
+    // default
+    IF ~
+      !Race(Player1,HALF_ORC)
+    ~ THEN
+      REPLY @5020102 /* Smell it. */
+      GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__smell__default
+    // half-orcs have keen sense of smell, due to their orcish heritage
+    // ("borrowed" from gray orcs, who canonically have the Scent 
+    // ability in DnD 3.5e)
+    IF ~
+      Race(Player1,HALF_ORC)
+    ~ THEN
+      REPLY @5020102 /* Smell it. */
+      GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__smell__halforc
+  END
+  IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__franky__arabellan_dry__taste__nature
+    SAY @5020136 /* This wine reminds you of forests during a rainy day. It has a hint of berries, although they seem a bit different from the local ones. It's very dry, but leaves a pleasant taste in your mouth. */
+
+    // if you know it's from the west and it's from a forest region,
+    // Cormyr is an easy guess, and Cormyr's Arabel is quite famous
+    IF ~
+      SetGlobal("6W#ShithriDrinksThisLook","GLOBAL",1)
+    ~ THEN
+      REPLY @5020116 /* A dry wine from a western forest. Most famously, Cormyr fits that. And which Cormyrean city is the most known for dry red wines? Anabel. That would be Arabellan Dry then. */
+      DO ~
+        IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
+        // increase the round immediately to avoid potential problems with the engine
+        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
+      ~
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
+
+    // if you heard of it, you'll recognize it
+    IF ~
+      Global("6W#ShithriDrinksKnowDrink08","GLOBAL",1)
+    ~ THEN
+      REPLY @5020126 /* A dark red wine with a hint of berries. It's Arabellan Dry. */
+      DO ~
+        IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
+        // increase the round immediately to avoid potential problems with the engine
+        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
+      ~
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
+
+    // if you know the drink, you'll recognize it now
+    IF ~
+      PartyHasItem("_6WDR08")
+    ~ THEN
+      REPLY @5020131 /* Tastes familiar. It's Arabellan Dry. */
+      DO ~
+        IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
+        // increase the round immediately to avoid potential problems with the engine
+        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
+      ~
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
+
+    // default
+    IF ~
+      !CheckStatGT(Player1,13,INT)
+      !Class(Player1,BARD_ALL)
+    ~ THEN
+      REPLY @5020101 /* Take a better look. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksThisTaste","GLOBAL",1)
+      ~
+      GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__look__default
+    // intelligent characters, as well as bards, know the wine
+    // can be swirled to check viscousity
+    IF ~
+      OR(2)
+        CheckStatGT(Player1,13,INT)
+        Class(Player1,BARD_ALL)
+    ~ THEN
+      REPLY @5020101 /* Take a better look. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksThisTaste","GLOBAL",1)
+      ~
+      GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__look__swirl
+
+    // default
+    IF ~
+      !Race(Player1,HALF_ORC)
+    ~ THEN
+      REPLY @5020102 /* Smell it. */
+      GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__smell__default
+    // half-orcs have keen sense of smell, due to their orcish heritage
+    // ("borrowed" from gray orcs, who canonically have the Scent 
+    // ability in DnD 3.5e)
+    IF ~
+      Race(Player1,HALF_ORC)
+    ~ THEN
+      REPLY @5020102 /* Smell it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksThisTaste","GLOBAL",1)
+      ~
+      GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__smell__halforc
+  END
+END
+APPEND THUMB
+  IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__franky__arabellan_dry__forfeit
+    SAY @5020140 /* It's Cormyr's pride, Arabellan Dry. */
+    IF ~~ THEN
+      DO ~
+        // increase the round immediately to avoid potential problems with the engine
+        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
+      ~
+      GOTO 6W#ShithriDrinksDuel__pc_no_point
+  END
+END
+
+
 APPEND THUMB
   IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__pc_point
     SAY @5029900 /* Point fer <CHARNAME>! */
@@ -3764,6 +4334,12 @@ APPEND THUMB
     IF ~
       !GlobalGT("6W#ShithriDrinksRound","GLOBAL",3)
     ~ THEN
+      // reset hints
+      DO ~
+        SetGlobal("6W#ShithriDrinksThisLook","GLOBAL",0)
+        SetGlobal("6W#ShithriDrinksThisSmell","GLOBAL",0)
+        SetGlobal("6W#ShithriDrinksThisTaste","GLOBAL",0)
+      ~
       GOTO 6W#ShithriDrinksDuel__pick_drink
 
     IF ~
@@ -3778,6 +4354,12 @@ APPEND THUMB
     IF ~
       !GlobalGT("6W#ShithriDrinksRound","GLOBAL",3)
     ~ THEN
+      // reset hints
+      DO ~
+        SetGlobal("6W#ShithriDrinksThisLook","GLOBAL",0)
+        SetGlobal("6W#ShithriDrinksThisSmell","GLOBAL",0)
+        SetGlobal("6W#ShithriDrinksThisTaste","GLOBAL",0)
+      ~
       GOTO 6W#ShithriDrinksDuel__pick_drink
 
     IF ~

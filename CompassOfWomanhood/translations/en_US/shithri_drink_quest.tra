@@ -641,6 +641,28 @@ Shithri not only refuses to provide any valuable comment on this beer, but seems
 @5020136 = ~This wine reminds you of forests during a rainy day. It has a hint of berries, although they seem a bit different from the local ones. It's very dry, but leaves a pleasant taste in your mouth.~
 @5020140 = ~It's Cormyr's pride, Arabellan Dry.~
 
+@5020200 = ~You're served a glass of pale red wine.~
+@5020201 = ~Take a better look.~
+@5020202 = ~Smell it.~
+@5020203 = ~Taste it.~
+@5020204 = ~Forfeit the round.~
+@5020210 = ~This pink-red wine is transculent and clear. It seems quite watery.~
+@5020220 = ~The aroma is very sweet and fruity. It seems quite complex, but you don't recognize its components.~
+@5020223 = ~You quickly recognize the lush smell of raspberries, a fruit very common in the Sword Coast. There is a different fruity scent too. A simpler one. These two aren't the whole thing either, though. You're quite certain you're missing some third component.~
+@5020224 = ~A wine made with two fruits, one of which is raspberry. Perhaps strawberry is the other one? That would be Saerloonian Special Vat then.~
+@5020226 = ~As you smell the wine, it brings back your memories of summer back in Candlekeep. One of the monks, passionate about halfling culture, always made sure to get you a proper treat - a crusty pie filled with local raspberries or Tethyr-imported strawberries.
+
+This wine smells exactly like that. Raspberries, strawberries and grains.~
+@5020227 = ~A wine that smells of a halfling pie. Beautiful. It's Saerloonian Special Vat.~
+@5020230 = ~It's really sweet, but not overwhelmingly so. It also leaves a tingle on your tongue, somehow.~
+@5020233 = ~As you sip the wine, you instantly recognize a familiar taste: ripe raspberries. There is also one more fruit in there. Less subtle in its sweetness, but just slightly acidic. The texture is also not as watery as it would if the wine was made just with sweet fruits, there is something more added in there. Something that leaves a tingle on your tongue. Your first thought is nettle, but then this wine doesn't taste of any green leaves.~
+@5020234 = ~A wine made with two fruits, one of which is raspberry. And something that changes the texture, but isn't nettle or any other green leaves. Could it be grains? And could the fruit be strawberry? That would be Saerloonian Special Vat then.~
+@5020236 = ~The first thing you notice about the wine is that it's unbelievably delicious. A perfect balance of fruity sweetness with just a hint of acidity, pleasurable texture without any stickiness. It feels like drinking liquid summer, having some excellent raspberry pie and raw strawberries at the same time. It brings back memories of one of the monks at Candlekeep, passionate about halfling culture, who always made sure to get you a proper treat, going as far as to buy Tethyr-imported strawberries.
+
+You wake up from this little daydream. The duel. You should make a guess. Raspberries, strawberries and a pleasant, pie-like feel to it. Grains?~
+@5020237 = ~The taste and feel of summer pie. It is, indeed, very special. It's Saerloonian Special Vat.~
+@5020240 = ~It's Sembia's rare sweet treat, Saerloonian Special Vat!~
+
 
 @5029900 = ~Point fer <CHARNAME>!~
 @5029910 = ~No point fer ye.~

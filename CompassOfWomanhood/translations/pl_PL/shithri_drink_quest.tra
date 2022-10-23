@@ -642,6 +642,28 @@ Shithri nie tylko odmawia podania ci jakichkolwiek użytecznych informacji na te
 @5020136 = ~To wino przypomina ci las w deszczowy dzień. Ma posmak jagód, choć innych niż te lokalne. Jest bardzo wtrawne, ale pozostawia w ustach przyjemne uczucie.~
 @5020140 = ~To duma Cormyru, Arabellańskie Wino Wytrawne.~
 
+@5020200 = ~Podano ci kieliszek jasnoczerwonego wina.~
+@5020201 = ~Przyjrzyj się.~
+@5020202 = ~Powąchaj.~
+@5020203 = ~Skosztuj.~
+@5020204 = ~Poddaj rundę.~
+@5020210 = ~To różowo-czerwone wino jest półprzezroczyste i bardzo jednorodne. Wydaje się nieco wodniste.~
+@5020220 = ~Aromat tego wina jest bardzo słodki i owocowy. Wydaje się złożony, ale nie rozpoznajesz jego elementów.~
+@5020223 = ~Od razu rozpoznajesz soczysty aromat malin, bardzo popularnych na Wybrzeżu Mieczy. Jest tam też woń innego owocu. Prostsza. Ale to nie wszystko, masz niemal pewność, że ucieka ci jakiś trzeci składnik.~
+@5020224 = ~Wino z dwóch owoców, z których jednym jest malina. Czyżby drugim była truskawka? W takim razie byłaby to Saerlooniańska Specjalna Kadź.~
+@5020226 = ~Gdy unosisz kieliszek do nosa, zapach wypełnia cię wspomnieniami lata w Candlekeep. Jeden z mnichów, pasjonat kultury niziołków, zawsze upewniał się by nie zabrakło ci tradycyjnego podwieczorku - kruchego ciasta wypełnionego lokalnymi malinami i truskawkami imoportowanymi aż z Tethyru.
+
+To wino pachnie dokładnie tak samo. Malinami, truskawkami i ziarnem.~
+@5020227 = ~Wino pachnące jak niziołcze ciasto. Piękna rzecz. To Saerlooniańska Specjalan Kadź.~
+@5020230 = ~Jest naprawdę słodkie, ale nie zanadto. Mimo to pozostawia na języku delikatne uczucie mrowienia.~
+@5020233 = ~Gdy bierzesz łyk, natychmiast rozpoznajesz znajomy smak: dojrzałe maliny. Jest tam jeszcze jeden owoc. Mniej subtelny w swojej słodyczy, ale delikatnie kwaskowy. Tekstura nie jest tak wodnista jak miałoby wino z samych słodkich owoców, dodano tu czegoś jeszcze. Czegoś, co lekko mrowi na języku. Twoim pierwszym skojarzeniem jest pokrzywa, ale to wino nie ma charakterystycznego smaku zielonych liści.~
+@5020234 = ~Wino z dwóch owoców, z których jednym jest malina. I czegoś jeszcze, co daje teksturę, ale nie pokrzywy ani żadnych innych zielonych liści. Czyżby zboże? A jeśli tak, czy owocem jest truskawka? W takim razie byłaby to Saerlooniańska Specjalna Kadź.~
+@5020236 = ~Pierwszym co cię uderza jest, że wino jest niewypowiedzianie pyszne. Idealna równowaga owocowej słodyczy z odrobiną kwasku, przyjemna tekstura bez śladu lepkości. To jak pić płynne lato, racząc się znakomitym ciastem malinowym i surowymi truskawkami w czasie jednego posiedzenia. Przynosi wspomnienie jednego z mnichów z Candlekeep, pasjonata kultury niziołków, ktory zawsze upewniał się by nie zabrakło ci tradycyjnego podwieczorku. Kupował nawet truskawki sprowadzane aż z Tethyru.
+
+Wybudzasz się z tego rozmarzenia. Pojedynek. Masz zgadywać. Maliny, truskawki i przyjemne uczucie kojarzące się z ciastem. Zboża?~
+@5020237 = ~Smak i charakter letniego ciasta. Zaiste, to prawdziwy specjał. Saerlooniańska Specjalna Kadź.~
+@5020240 = ~To rzadki przysmak z Sembii, Saerlooniańska Specjalna Kadź!~
+
 
 @5029900 = ~Punkt dla ciebie, <CHARNAME>!~
 @5029910 = ~Ni ma punktu.~

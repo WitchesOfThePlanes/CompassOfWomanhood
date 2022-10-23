@@ -3519,22 +3519,32 @@ APPEND THUMB
       ~
       EXIT
 
-    // // -- Round Two --
-    // // Franky picks something a bit more challenging:
-    // // Saerloonian Special Vat (can be recognized thanks
-    // // to Shithri's clues) and Blood Wine (multiple classes
-    // // could recognize it).
-    // IF ~
-    //   Global("6W#ShithriDrinksRound","GLOBAL",2)
-    //   RandomNum(2,1)
-    // ~ THEN
-    //   GOTO 6W#ShithriDrinksDuel__franky__saerloonian_special_vat
+    // -- Round Two --
+    // Franky picks something a bit more challenging:
+    // Saerloonian Special Vat (can be recognized thanks
+    // to Shithri's clues) and Blood Wine (multiple classes
+    // could recognize it).
+    IF ~
+      Global("6W#ShithriDrinksRound","GLOBAL",2)
+      //RandomNum(2,1)
+    ~ THEN
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",2)
+        SetGlobal("6W#ShithriDrinksPcOption","GLOBAL",0)
+        MoveViewObject(Myself,INSTANT)
+      ~
+      EXIT
 
-    // IF ~
-    //   Global("6W#ShithriDrinksRound","GLOBAL",2)
-    //   RandomNum(2,2)
-    // ~ THEN
-    //   GOTO 6W#ShithriDrinksDuel__franky__blood_wine
+    //IF ~
+    //  Global("6W#ShithriDrinksRound","GLOBAL",2)
+    //  RandomNum(2,2)
+    //~ THEN
+    //  DO ~
+    //    SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",2)
+    //    SetGlobal("6W#ShithriDrinksPcOption","GLOBAL",1)
+    //    MoveViewObject(Myself,INSTANT)
+    //  ~
+    //  EXIT
 
     // // -- Round Three --
     // // Franky picks something he's convinced is very rare and difficult
@@ -4317,6 +4327,337 @@ END
 APPEND THUMB
   IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__franky__arabellan_dry__forfeit
     SAY @5020140 /* It's Cormyr's pride, Arabellan Dry. */
+    IF ~~ THEN
+      DO ~
+        // increase the round immediately to avoid potential problems with the engine
+        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
+      ~
+      GOTO 6W#ShithriDrinksDuel__pc_no_point
+  END
+END
+
+
+APPEND 6WDRINK
+  IF ~
+    Global("6W#ShithriDrinksPcRound","GLOBAL",2)
+    Global("6W#ShithriDrinksPcOption","GLOBAL",0)
+  ~ THEN BEGIN 6W#ShithriDrinksDuel__franky__saerloonian_special_vat
+    SAY @5020200 /* You're served a glass of pale red wine. */
+
+    // default
+    IF ~~ THEN
+      REPLY @5020201 /* Take a better look. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      GOTO 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__look
+
+    // default
+    IF ~
+      !Race(Player1,HALFLING)
+      !Class(Player1,DRUID_ALL)
+      !Class(Player1,RANGER_ALL)
+    ~ THEN
+      REPLY @5020202 /* Smell it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      GOTO 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__smell__default
+    // druids and rangers recognize it easily
+    IF ~
+      !Race(Player1,HALFLING)
+      OR(2)
+        Class(Player1,DRUID_ALL)
+        Class(Player1,RANGER_ALL)
+    ~ THEN
+      REPLY @5020202 /* Smell it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      GOTO 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__smell__nature
+    // halflings have a sweet tooth for strawberries and raspberries
+    IF ~
+      Race(Player1,HALFLING)
+    ~ THEN
+      REPLY @5020202 /* Smell it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      GOTO 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__smell__halfling
+
+    // unless you're of specific race or class, you don't know berries well
+    IF ~
+      !Race(Player1,HALFLING)
+      !Class(Player1,DRUID_ALL)
+      !Class(Player1,RANGER_ALL)
+    ~ THEN
+      REPLY @5020203 /* Taste it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      GOTO 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__taste__default
+    // druids and rangers recognize it easily
+    IF ~
+      !Race(Player1,HALFLING)
+      OR(2)
+        Class(Player1,DRUID_ALL)
+        Class(Player1,RANGER_ALL)
+    ~ THEN
+      REPLY @5020203 /* Taste it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      GOTO 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__taste__nature
+    // halflings have a sweet tooth for strawberries and raspberries
+    IF ~
+      Race(Player1,HALFLING)
+    ~ THEN
+      REPLY @5020203 /* Taste it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      GOTO 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__taste__halfling
+
+    IF ~~ THEN
+      REPLY @5020204 /* Forfeit the round. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__forfeit
+  END
+  IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__look
+    SAY @5020210 /* This pink-red wine is transculent and clear. It seems quite watery. */
+
+    // default
+    IF ~
+      !Race(Player1,HALFLING)
+      !Class(Player1,DRUID_ALL)
+      !Class(Player1,RANGER_ALL)
+    ~ THEN
+      REPLY @5020202 /* Smell it. */
+      GOTO 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__smell__default
+    // druids and rangers recognize it easily
+    IF ~
+      !Race(Player1,HALFLING)
+      OR(2)
+        Class(Player1,DRUID_ALL)
+        Class(Player1,RANGER_ALL)
+    ~ THEN
+      REPLY @5020202 /* Smell it. */
+      GOTO 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__smell__nature
+    // halflings have a sweet tooth for strawberries and raspberries
+    IF ~
+      Race(Player1,HALFLING)
+    ~ THEN
+      REPLY @5020202 /* Smell it. */
+      GOTO 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__smell__halfling
+
+    // unless you're of specific race or class, you don't know berries well
+    IF ~
+      !Race(Player1,HALFLING)
+      !Class(Player1,DRUID_ALL)
+      !Class(Player1,RANGER_ALL)
+    ~ THEN
+      REPLY @5020203 /* Taste it. */
+      GOTO 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__taste__default
+    // druids and rangers recognize it easily
+    IF ~
+      !Race(Player1,HALFLING)
+      OR(2)
+        Class(Player1,DRUID_ALL)
+        Class(Player1,RANGER_ALL)
+    ~ THEN
+      REPLY @5020203 /* Taste it. */
+      GOTO 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__taste__nature
+    // halflings have a sweet tooth for strawberries and raspberries
+    IF ~
+      Race(Player1,HALFLING)
+    ~ THEN
+      REPLY @5020203 /* Taste it. */
+      GOTO 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__taste__halfling
+
+    IF ~~ THEN
+      REPLY @5020204 /* Forfeit the round. */
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__forfeit
+  END
+  IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__smell__default
+    SAY @5020220 /* The aroma is very sweet and fruity. It seems quite complex, but you don't recognize its components. */
+
+    // default
+    IF ~~ THEN
+      REPLY @5020201 /* Take a better look. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      GOTO 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__look
+
+    // unless you're of specific race or class, you don't know berries well
+    IF ~~ THEN
+      REPLY @5020203 /* Taste it. */
+      GOTO 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__taste__default
+
+    IF ~~ THEN
+      REPLY @5020204 /* Forfeit the round. */
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__forfeit
+  END
+  IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__smell__nature
+    SAY @5020223 /* You quickly recognize the lush smell of raspberries, a fruit very common in the Sword Coast. There is a different fruity scent too. A simpler one. These two aren't the whole thing either, though. You're quite certain you're missing some third component. */
+
+    // if you heard of it, you'll recognize it
+    IF ~
+      PartyHasItem("_6WDR08") // if you have it, Shithri told you about Special Vat
+    ~ THEN
+      REPLY @5020224 /* A wine made with two fruits, one of which is raspberry. Perhaps strawberry is the other one? That would be Saerloonian Special Vat then. */
+      DO ~
+        IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
+        // increase the round immediately to avoid potential problems with the engine
+        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
+      ~
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
+
+    // default
+    IF ~~ THEN
+      REPLY @5020201 /* Take a better look. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      GOTO 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__look
+
+    // druids and rangers recognize it easily
+    IF ~~ THEN
+      REPLY @5020203 /* Taste it. */
+      GOTO 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__taste__nature
+
+    IF ~~ THEN
+      REPLY @5020204 /* Forfeit the round. */
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__forfeit
+  END
+  IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__smell__halfling
+    SAY @5020226 /* As you smell the wine, it brings back your memories of summer back in Candlekeep. One of the monks, passionate about halfling culture, always made sure to get you a proper treat - a crusty pie filled with local raspberries or Tethyr-imported strawberries.
+                  
+    This wine smells exactly like that. Raspberries, strawberries and grains. */
+
+    // if you heard of it, you'll recognize it
+    IF ~
+      PartyHasItem("_6WDR08") // if you have it, Shithri told you about Special Vat
+    ~ THEN
+      REPLY @5020227 /* A wine that smells of a halfling pie. Beautiful. It's Saerloonian Special Vat. */
+      DO ~
+        IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
+        // increase the round immediately to avoid potential problems with the engine
+        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
+      ~
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
+
+    // default
+    IF ~~ THEN
+      REPLY @5020201 /* Take a better look. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      GOTO 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__look
+
+    // halflings have a sweet tooth for strawberries and raspberries
+    IF ~~ THEN
+      REPLY @5020203 /* Taste it. */
+      GOTO 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__taste__halfling
+
+    IF ~~ THEN
+      REPLY @5020204 /* Forfeit the round. */
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__forfeit
+  END
+  IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__taste__default
+    SAY @5020230 /* It's really sweet, but not overwhelmingly so. It also leaves a tingle on your tongue, somehow. */
+
+    // Note: even with Shithri's description, it's too complex for just any person to recognize it.
+
+    // default
+    IF ~~ THEN
+      REPLY @5020201 /* Take a better look. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      GOTO 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__look
+
+    // default
+    IF ~~ THEN
+      REPLY @5020202 /* Smell it. */
+      GOTO 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__smell__default
+
+    IF ~~ THEN
+      REPLY @5020204 /* Forfeit the round. */
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__forfeit
+  END
+  IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__taste__nature
+    SAY @5020233 /* As you sip the wine, you instantly recognize a familiar taste: ripe raspberries. There is also one more fruit in there. Less subtle in its sweetness, but just slightly acidic. The texture is also not as watery as it would if the wine was made just with sweet fruits, there is something more added in there. Something that leaves a tingle on your tongue. Your first thought is nettle, but then this wine doesn't taste of any green leaves. */
+
+    // if you heard of it, you'll recognize it
+    IF ~
+      PartyHasItem("_6WDR08") // if you have it, Shithri told you about Special Vat
+    ~ THEN
+      REPLY @5020234 /* A wine made with two fruits, one of which is raspberry. And something that changes the texture, but isn't nettle or any other green leaves. Could it be grains? And could the fruit be strawberry? That would be Saerloonian Special Vat then. */
+      DO ~
+        IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
+        // increase the round immediately to avoid potential problems with the engine
+        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
+      ~
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
+
+    // default
+    IF ~~ THEN
+      REPLY @5020201 /* Take a better look. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      GOTO 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__look
+
+    // druids and rangers recognize it easily
+    IF ~~ THEN
+      REPLY @5020202 /* Smell it. */
+      GOTO 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__smell__nature
+
+    IF ~~ THEN
+      REPLY @5020204 /* Forfeit the round. */
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__forfeit
+  END
+  IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__taste__halfling
+    SAY @5020236 /* The first thing you notice about the wine is that it's unbelievably delicious. A perfect balance of fruity sweetness with just a hint of acidity, pleasurable texture without any stickiness. It feels like drinking liquid summer, having some excellent raspberry pie and raw strawberries at the same time. It brings back memories of one of the monks at Candlekeep, passionate about halfling culture, who always made sure to get you a proper treat, going as far as to buy Tethyr-imported strawberries.
+
+You wake up from this little daydream. The duel. You should make a guess. Raspberries, strawberries and a pleasant, pie-like feel to it. Grains? */
+
+    // if you heard of it, you'll recognize it
+    IF ~
+      PartyHasItem("_6WDR08") // if you have it, Shithri told you about Special Vat
+    ~ THEN
+      REPLY @5020237 /* The taste and feel of summer pie. It is, indeed, very special. It's Saerloonian Special Vat. */
+      DO ~
+        IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
+        // increase the round immediately to avoid potential problems with the engine
+        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
+      ~
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
+
+    // default
+    IF ~~ THEN
+      REPLY @5020201 /* Take a better look. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      GOTO 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__look
+
+    // halflings have a sweet tooth for strawberries and raspberries
+    IF ~~ THEN
+      REPLY @5020202 /* Smell it. */
+      GOTO 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__smell__halfling
+
+    IF ~~ THEN
+      REPLY @5020204 /* Forfeit the round. */
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__forfeit
+  END
+END
+APPEND THUMB
+  IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__forfeit
+    SAY @5020240 /* It's Sembia's rare sweet treat, Saerloonian Special Vat! */
     IF ~~ THEN
       DO ~
         // increase the round immediately to avoid potential problems with the engine

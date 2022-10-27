@@ -5366,10 +5366,10 @@ APPEND 6WPIRDR
     SAY @5030360 /* Magical? Nay, I ain't be havin' that kinda things. */
 
     IF ~~ THEN
-      REPLY @5030331 /* Well, if I'd lost, I'd give you 5000 gold pieces. So it's only fair for you to give me the same. */
+      REPLY @5030332 /* Well, if I'd lost, I'd give you 5000 gold pieces. So it's only fair for you to give me the same. */
       GOTO 6W#ShithriDrinksDuel__results__pc_reward_gold
     IF ~~ THEN
-      REPLY @5030333 /* I want your cutlass. */
+      REPLY @5030334 /* I want your cutlass. */
       GOTO 6W#ShithriDrinksDuel__results__pc_reward_cutlass
     // requires some insight
     IF ~
@@ -5377,10 +5377,10 @@ APPEND 6WPIRDR
         CheckStatGT(Player1,13,INT)
         CheckStatGT(Player1,13,WIS)
     ~ THEN
-      REPLY @5030334 /* I want a symbol of my victory over you. Something of little value, but what you care for. Give me your bandana. */
+      REPLY @5030335 /* I want a symbol of my victory over you. Something of little value, but what you care for. Give me your bandana. */
       GOTO 6W#ShithriDrinksDuel__results__pc_reward_bandana
     IF ~~ THEN
-      REPLY @5030335 /* I want your life. */
+      REPLY @5030336 /* I want your life. */
       GOTO 6W#ShithriDrinksDuel__results__pc_reward_life
   END
 
@@ -5408,7 +5408,7 @@ APPEND 6WPIRDR
       GOTO 6W#ShithriDrinksDuel__results__pc_reward_bandana__female
   END
   IF ~~ THEN 6W#ShithriDrinksDuel__results__pc_reward_bandana__male
-    @5030381 /* Oh. I see. Ye cruel, cruel man. Fine, debt be debt. Take it. */
+    SAY @5030381 /* Oh. I see. Ye cruel, cruel man. Fine, debt be debt. Take it. */
     IF ~~ THEN
       //TODO: journal entry etc.
       DO ~
@@ -5418,7 +5418,7 @@ APPEND 6WPIRDR
       EXIT
   END
   IF ~~ THEN 6W#ShithriDrinksDuel__results__pc_reward_bandana__female
-    @5030382 /* Oh. I see. Ye cruel, cruel woman. Fine, debt be debt. Take it. */
+    SAY @5030382 /* Oh. I see. Ye cruel, cruel woman. Fine, debt be debt. Take it. */
     IF ~~ THEN
       //TODO: journal entry etc.
       DO ~
@@ -5432,18 +5432,18 @@ APPEND 6WPIRDR
     SAY @5030390 /* Har har! Me life be nah mine t' give. It's me capt'n's. */
 
     IF ~~ THEN
-      REPLY @5030331 /* Well, if I'd lost, I'd give you 5000 gold pieces. So it's only fair for you to give me the same. */
+      REPLY @5030332 /* Well, if I'd lost, I'd give you 5000 gold pieces. So it's only fair for you to give me the same. */
       GOTO 6W#ShithriDrinksDuel__results__pc_reward_gold
     IF ~
       Global("6W#ShithriDrinksPirMagicalItems","GLOBAL",0)
     ~ THEN
-      REPLY @5030332 /* Don't you have some magical items I could be interested in? */
+      REPLY @5030333 /* Don't you have some magical items I could be interested in? */
       DO ~
         SetGlobal("6W#ShithriDrinksPirMagicalItems","GLOBAL",1)
       ~
       GOTO 6W#ShithriDrinksDuel__results__pc_reward_magical_item
     IF ~~ THEN
-      REPLY @5030333 /* I want your cutlass. */
+      REPLY @5030334 /* I want your cutlass. */
       GOTO 6W#ShithriDrinksDuel__results__pc_reward_cutlass
     // requires some insight
     IF ~
@@ -5451,7 +5451,7 @@ APPEND 6WPIRDR
         CheckStatGT(Player1,13,INT)
         CheckStatGT(Player1,13,WIS)
     ~ THEN
-      REPLY @5030334 /* I want a symbol of my victory over you. Something of little value, but what you care for. Give me your bandana. */
+      REPLY @5030335 /* I want a symbol of my victory over you. Something of little value, but what you care for. Give me your bandana. */
       GOTO 6W#ShithriDrinksDuel__results__pc_reward_bandana
   END
 END

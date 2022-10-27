@@ -3218,7 +3218,7 @@ CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__07
   @5010701 /* Green. Glowing. Is it rich though? Hmm... mayhaps? Could it be... */
   =
   @5010702 /* Drow Green. Nah Ulaver, nay. But some kind of Drow Green. */
-  == 6WSHITJ IF ~IsValidForPartyDialog("6WSHITJ")~
+  == 6WSHITJ IF ~IfValidForPartyDialogue("6WSHITHRI")~
   @5010710 /* Oy, matey, ye jestin' or wha'? E'ery bucko knows this one! */
 
   BRANCH ~
@@ -3329,7 +3329,7 @@ CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__11
   @5011101 /* Hmm. Nah glow, but the color fits an' it does tast o' pears. Nah too sweet either. I says: Saerloonian Glowfire, although badly stored. */
   == THUMB
   @5011010 /* Saerloonian - aye. But 'tis Topaz, nah Glowfire. Nah point! */
-  == 6WSHITJ IF ~IsValidForPartyDialog("6WSHITJ")~
+  == 6WSHITJ IF ~IfValidForPartyDialogue("6WSHITHRI")~
   @5011011 /* Toldja. People keep confusin' 'em. */
 END THUMB 6W#ShithriDrinksDuel__franky_pick_drink
 
@@ -3678,8 +3678,6 @@ APPEND 6WDRINK
       REPLY @5020026 /* Clear, golden lager which smells of nettles. It's Golden Sands Gold. */
       DO ~
         IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
-        // increase the round immediately to avoid potential problems with the engine
-        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
       ~
       EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
 
@@ -3703,8 +3701,6 @@ APPEND 6WDRINK
       REPLY @5020031 /* Tastes familiar. It's Golden Sands Gold. */
       DO ~
         IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
-        // increase the round immediately to avoid potential problems with the engine
-        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
       ~
       EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
 
@@ -3715,8 +3711,6 @@ APPEND 6WDRINK
       REPLY @5020032 /* Tastes familiar. It's Golden Sands Basic. */
       DO ~
         IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
-        // increase the round immediately to avoid potential problems with the engine
-        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
       ~
       EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
 
@@ -3740,8 +3734,6 @@ APPEND 6WDRINK
       REPLY @5020036 /* Clear, golden lager with nettles and some kind of foreign fruit - probably cacti. It's Golden Sands Gold. */
       DO ~
         IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
-        // increase the round immediately to avoid potential problems with the engine
-        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
       ~
       EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
 
@@ -3752,8 +3744,6 @@ APPEND 6WDRINK
       REPLY @5020031 /* Tastes familiar. It's Golden Sands Gold. */
       DO ~
         IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
-        // increase the round immediately to avoid potential problems with the engine
-        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
       ~
       EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
 
@@ -3772,10 +3762,6 @@ APPEND THUMB
   IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__franky__golden_sands_gold__forfeit
     SAY @5020040 /* It's Calimshan's pride's northern version. Golden Sands Gold. */
     IF ~~ THEN
-      DO ~
-        // increase the round immediately to avoid potential problems with the engine
-        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
-      ~
       GOTO 6W#ShithriDrinksDuel__pc_no_point
   END
 END
@@ -3936,8 +3922,6 @@ APPEND 6WDRINK
       REPLY @5020116 /* A dry wine from a western forest. Most famously, Cormyr fits that. And which Cormyrean city is the most known for dry red wines? Arabel. That would be Arabellan Dry then. */
       DO ~
         IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
-        // increase the round immediately to avoid potential problems with the engine
-        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
       ~
       EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
 
@@ -4071,8 +4055,6 @@ APPEND 6WDRINK
       REPLY @5020126 /* A dark red wine with a hint of berries. It's Arabellan Dry. */
       DO ~
         IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
-        // increase the round immediately to avoid potential problems with the engine
-        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
       ~
       EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
 
@@ -4138,8 +4120,6 @@ APPEND 6WDRINK
       REPLY @5020131 /* Tastes familiar. It's Arabellan Dry. */
       DO ~
         IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
-        // increase the round immediately to avoid potential problems with the engine
-        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
       ~
       EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
 
@@ -4183,8 +4163,6 @@ APPEND 6WDRINK
       REPLY @5020134 /* I know it well, it's one of the first liquors I've had, back in good Candlekeep. It's Arabellan Dry. */
       DO ~
         IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
-        // increase the round immediately to avoid potential problems with the engine
-        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
       ~
       EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
 
@@ -4193,8 +4171,6 @@ APPEND 6WDRINK
       REPLY @5020135 /* How could I ever forget the very taste of adventure? It's the wine I had in Friendly Arm Inn, the first one I stayed at after leaving Candlekeep. Arabellan Dry. */
       DO ~
         IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
-        // increase the round immediately to avoid potential problems with the engine
-        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
       ~
       EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
 
@@ -4205,8 +4181,6 @@ APPEND 6WDRINK
       REPLY @5020131 /* Tastes familiar. It's Arabellan Dry. */
       DO ~
         IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
-        // increase the round immediately to avoid potential problems with the engine
-        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
       ~
       EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
 
@@ -4248,13 +4222,11 @@ APPEND 6WDRINK
     // if you know it's from the west and it's from a forest region,
     // Cormyr is an easy guess, and Cormyr's Arabel is quite famous
     IF ~
-      SetGlobal("6W#ShithriDrinksThisLook","GLOBAL",1)
+      Global("6W#ShithriDrinksThisLook","GLOBAL",1)
     ~ THEN
       REPLY @5020116 /* A dry wine from a western forest. Most famously, Cormyr fits that. And which Cormyrean city is the most known for dry red wines? Anabel. That would be Arabellan Dry then. */
       DO ~
         IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
-        // increase the round immediately to avoid potential problems with the engine
-        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
       ~
       EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
 
@@ -4265,8 +4237,6 @@ APPEND 6WDRINK
       REPLY @5020126 /* A dark red wine with a hint of berries. It's Arabellan Dry. */
       DO ~
         IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
-        // increase the round immediately to avoid potential problems with the engine
-        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
       ~
       EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
 
@@ -4277,8 +4247,6 @@ APPEND 6WDRINK
       REPLY @5020131 /* Tastes familiar. It's Arabellan Dry. */
       DO ~
         IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
-        // increase the round immediately to avoid potential problems with the engine
-        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
       ~
       EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
 
@@ -4328,10 +4296,6 @@ APPEND THUMB
   IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__franky__arabellan_dry__forfeit
     SAY @5020140 /* It's Cormyr's pride, Arabellan Dry. */
     IF ~~ THEN
-      DO ~
-        // increase the round immediately to avoid potential problems with the engine
-        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
-      ~
       GOTO 6W#ShithriDrinksDuel__pc_no_point
   END
 END
@@ -4510,8 +4474,6 @@ APPEND 6WDRINK
       REPLY @5020224 /* A wine made with two fruits, one of which is raspberry. Perhaps strawberry is the other one? That would be Saerloonian Special Vat then. */
       DO ~
         IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
-        // increase the round immediately to avoid potential problems with the engine
-        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
       ~
       EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
 
@@ -4544,8 +4506,6 @@ APPEND 6WDRINK
       REPLY @5020227 /* A wine that smells of a halfling pie. Beautiful. It's Saerloonian Special Vat. */
       DO ~
         IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
-        // increase the round immediately to avoid potential problems with the engine
-        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
       ~
       EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
 
@@ -4598,8 +4558,6 @@ APPEND 6WDRINK
       REPLY @5020234 /* A wine made with two fruits, one of which is raspberry. And something that changes the texture, but isn't nettle or any other green leaves. Could it be grains? And could the fruit be strawberry? That would be Saerloonian Special Vat then. */
       DO ~
         IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
-        // increase the round immediately to avoid potential problems with the engine
-        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
       ~
       EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
 
@@ -4632,8 +4590,6 @@ You wake up from this little daydream. The duel. You should make a guess. Raspbe
       REPLY @5020237 /* The taste and feel of summer pie. It is, indeed, very special. It's Saerloonian Special Vat. */
       DO ~
         IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
-        // increase the round immediately to avoid potential problems with the engine
-        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
       ~
       EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
 
@@ -4659,10 +4615,6 @@ APPEND THUMB
   IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__franky__saerloonian_special_vat__forfeit
     SAY @5020240 /* It's Sembia's rare sweet treat, Saerloonian Special Vat! */
     IF ~~ THEN
-      DO ~
-        // increase the round immediately to avoid potential problems with the engine
-        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
-      ~
       GOTO 6W#ShithriDrinksDuel__pc_no_point
   END
 END
@@ -5012,7 +4964,7 @@ APPEND THUMB
     SAY @5029900 /* Point fer <CHARNAME>! */
 
     IF ~
-      !GlobalGT("6W#ShithriDrinksRound","GLOBAL",3)
+      GlobalLT("6W#ShithriDrinksRound","GLOBAL",1)
     ~ THEN
       // reset hints
       DO ~
@@ -5025,7 +4977,7 @@ APPEND THUMB
       GOTO 6W#ShithriDrinksDuel__pick_drink
 
     IF ~
-      GlobalGT("6W#ShithriDrinksRound","GLOBAL",3) // end of the duel!
+      Global("6W#ShithriDrinksRound","GLOBAL",1) // end of the duel!
     ~ THEN
       GOTO 6W#ShithriDrinksDuel__results
   END
@@ -5034,18 +4986,19 @@ APPEND THUMB
     SAY @5029910 /* No point fer ye. */
 
     IF ~
-      !GlobalGT("6W#ShithriDrinksRound","GLOBAL",3)
+      GlobalLT("6W#ShithriDrinksRound","GLOBAL",1)
     ~ THEN
-      // reset hints
       DO ~
+        // reset hints
         SetGlobal("6W#ShithriDrinksThisLook","GLOBAL",0)
         SetGlobal("6W#ShithriDrinksThisSmell","GLOBAL",0)
         SetGlobal("6W#ShithriDrinksThisTaste","GLOBAL",0)
+        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
       ~
       GOTO 6W#ShithriDrinksDuel__pick_drink
 
     IF ~
-      GlobalGT("6W#ShithriDrinksRound","GLOBAL",3) // end of the duel!
+      Global("6W#ShithriDrinksRound","GLOBAL",1) // end of the duel!
     ~ THEN
       GOTO 6W#ShithriDrinksDuel__results
   END
@@ -5071,7 +5024,7 @@ CHAIN THUMB 6W#ShithriDrinksDuel__results__draw
   == SBCUST02 IF ~InMyArea("SBCUST02")~
   @5030101 /* Huh. That comes a surprise. That new <PRO_MANWOMAN>'s nah so bad. */
 
-  BRANCH ~IsValidForPartyDialog("6WSHITJ")~
+  BRANCH ~IfValidForPartyDialogue("6WSHITHRI")~
   BEGIN
     == 6WSHITJ 
     @5030102 /* Har har, 'tis me capt'n fer ye! */
@@ -5100,7 +5053,7 @@ APPEND 6WPIRDR
     IF ~~ THEN
       DO ~
         //TODO add XP, journal entry etc
-        Global("6W#ShithriDrinksEnding","GLOBAL",1)
+        SetGlobal("6W#ShithriDrinksEnding","GLOBAL",1)
       ~
       EXIT
   END
@@ -5109,7 +5062,7 @@ APPEND 6WPIRDR
     IF ~~ THEN
       DO ~
         //TODO add XP, journal entry etc
-        Global("6W#ShithriDrinksEnding","GLOBAL",1)
+        SetGlobal("6W#ShithriDrinksEnding","GLOBAL",1)
       ~
       EXIT
   END
@@ -5121,7 +5074,7 @@ CHAIN THUMB 6W#ShithriDrinksDuel__results__pir
   == SBCUST02 IF ~InMyArea("SBCUST02")~
   @5030201 /* Knew that. */
 
-  BRANCH ~IsValidForPartyDialog("6WSHITJ")~
+  BRANCH ~IfValidForPartyDialogue("6WSHITHRI")~
   BEGIN
     == 6WPIRDR
     @5030202 /* See, Shithri? Won fair an' square so I guess ye joinin' me now? */
@@ -5145,11 +5098,8 @@ END
     EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__results__pir__nice
   IF ~~ THEN
     REPLY @5030220 /* You just got lucky. */
-    DO ~
-      TakePartyGold(5000)
-    ~
     EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__results__pir__lucky
-  IF ~IsValidForPartyDialog("6WSHITJ")~ THEN
+  IF ~IfValidForPartyDialogue("6WSHITHRI")~ THEN
     REPLY @5030230 /* Can't you just take that pirate girl? */
     EXTERN ~6WSHITJ~ 6W#ShithriDrinksDuel__results__pir__take_her
   IF ~~ THEN
@@ -5163,7 +5113,7 @@ APPEND 6WPIRDR
     @5030212 /* Maybe one day, aft' ye see some more o' the world, we'll get a rematch. Until then, lubber! */
     IF ~~ THEN
       DO ~
-        Global("6W#ShithriDrinksEnding","GLOBAL",1)
+        SetGlobal("6W#ShithriDrinksEnding","GLOBAL",1)
       ~
       EXIT
   END
@@ -5227,7 +5177,7 @@ APPEND THUMB
     SAY @5030255 /* 'Tis how ye greet hospitality? Get out! The Thumb had his share o' slippery rats, nah need fer more! */
     IF ~~ THEN
       DO ~
-        Global("6W#ShithriDrinksEnding","GLOBAL",1)
+        SetGlobal("6W#ShithriDrinksEnding","GLOBAL",1)
       ~
       EXIT
   END
@@ -5276,7 +5226,7 @@ CHAIN THUMB 6W#ShithriDrinksDuel__results__pc
   @5030300 /* The newcomer, <CHARNAME>! */
   == SBCUST02 IF ~InMyArea("SBCUST02")~
   @5030301 /* Bein' fair: I doubted that. */
-  == 6WSHITJ IF ~IsValidForPartyDialog("6WSHITJ")~
+  == 6WSHITJ IF ~IfValidForPartyDialogue("6WSHITHRI")~
   @5030302 /* Har har, 'tis me capt'n fer ye! */
   == SBCUST01 IF ~InMyArea("SBCUST01")~
   @5030303 /* *hic* Very nice! Newcmr, ye a fine <PRO_MANWOMAN>. Let's 'ave a drink! */
@@ -5359,21 +5309,21 @@ APPEND 6WPIRDR
   END
 
   IF ~~ THEN 6W#ShithriDrinksDuel__results__pc_reward_pick
-    SAY @5030330 /* Pick wha' ye want. Franky the Eye-Popper always pays his debts. */
+    SAY @5030331 /* Pick wha' ye want. Franky the Eye-Popper always pays his debts. */
 
     IF ~~ THEN
-      REPLY @5030331 /* Well, if I'd lost, I'd give you 5000 gold pieces. So it's only fair for you to give me the same. */
+      REPLY @5030332 /* Well, if I'd lost, I'd give you 5000 gold pieces. So it's only fair for you to give me the same. */
       GOTO 6W#ShithriDrinksDuel__results__pc_reward_gold
     IF ~
       Global("6W#ShithriDrinksPirMagicalItems","GLOBAL",0)
     ~ THEN
-      REPLY @5030332 /* Don't you have some magical items I could be interested in? */
+      REPLY @5030333 /* Don't you have some magical items I could be interested in? */
       DO ~
         SetGlobal("6W#ShithriDrinksPirMagicalItems","GLOBAL",1)
       ~
       GOTO 6W#ShithriDrinksDuel__results__pc_reward_magical_item
     IF ~~ THEN
-      REPLY @5030333 /* I want your cutlass. */
+      REPLY @5030334 /* I want your cutlass. */
       GOTO 6W#ShithriDrinksDuel__results__pc_reward_cutlass
     // requires some insight
     IF ~
@@ -5381,10 +5331,10 @@ APPEND 6WPIRDR
         CheckStatGT(Player1,13,INT)
         CheckStatGT(Player1,13,WIS)
     ~ THEN
-      REPLY @5030334 /* I want a symbol of my victory over you. Something of little value, but what you care for. Give me your bandana. */
+      REPLY @5030335 /* I want a symbol of my victory over you. Something of little value, but what you care for. Give me your bandana. */
       GOTO 6W#ShithriDrinksDuel__results__pc_reward_bandana
     IF ~~ THEN
-      REPLY @5030335 /* I want your life. */
+      REPLY @5030336 /* I want your life. */
       GOTO 6W#ShithriDrinksDuel__results__pc_reward_life
   END
 
@@ -5394,7 +5344,7 @@ APPEND 6WPIRDR
       //TODO: journal entry etc.
       DO ~
         GiveGoldForce(5000)
-        Global("6W#ShithriDrinksEnding","GLOBAL",1)
+        SetGlobal("6W#ShithriDrinksEnding","GLOBAL",1)
       ~
       EXIT
   END
@@ -5427,7 +5377,7 @@ APPEND 6WPIRDR
       //TODO: journal entry etc.
       DO ~
         GiveItem("6WSAB01",Player1)
-        Global("6W#ShithriDrinksEnding","GLOBAL",1)
+        SetGlobal("6W#ShithriDrinksEnding","GLOBAL",1)
       ~
       EXIT
   END
@@ -5440,7 +5390,7 @@ APPEND 6WPIRDR
       //TODO: journal entry etc.
       DO ~
         // GiveItemCreate("_6WBANDA", Player1, 0, 0, 0)
-        Global("6W#ShithriDrinksEnding","GLOBAL",1)
+        SetGlobal("6W#ShithriDrinksEnding","GLOBAL",1)
       ~
       EXIT
   END

@@ -5346,8 +5346,13 @@ APPEND 6WPIRDR
     ~ THEN
       REPLY @5030335 /* I want a symbol of my victory over you. Something of little value, but what you care for. Give me your bandana. */
       GOTO 6W#ShithriDrinksDuel__results__pc_reward_bandana
-    IF ~~ THEN
+    IF ~
+      Global("6W#ShithriDrinksPirYerLife","GLOBAL",0)
+    ~ THEN
       REPLY @5030336 /* I want your life. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPirYerLife","GLOBAL",1)
+      ~
       GOTO 6W#ShithriDrinksDuel__results__pc_reward_life
   END
 
@@ -5379,8 +5384,13 @@ APPEND 6WPIRDR
     ~ THEN
       REPLY @5030335 /* I want a symbol of my victory over you. Something of little value, but what you care for. Give me your bandana. */
       GOTO 6W#ShithriDrinksDuel__results__pc_reward_bandana
-    IF ~~ THEN
+    IF ~
+      Global("6W#ShithriDrinksPirYerLife","GLOBAL",0)
+    ~ THEN
       REPLY @5030336 /* I want your life. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPirYerLife","GLOBAL",1)
+      ~
       GOTO 6W#ShithriDrinksDuel__results__pc_reward_life
   END
 

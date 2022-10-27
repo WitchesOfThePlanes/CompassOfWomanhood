@@ -663,6 +663,18 @@ You wake up from this little daydream. The duel. You should make a guess. Raspbe
 @5020237 = ~The taste and feel of summer pie. It is, indeed, very special. It's Saerloonian Special Vat.~
 @5020240 = ~It's Sembia's rare sweet treat, Saerloonian Special Vat!~
 
+@5020300 = ~You're served a glass of deep-red wine.~
+@5020301 = ~Take a better look.~
+@5020302 = ~Smell it.~
+@5020303 = ~Taste it.~
+@5020304 = ~Forfeit the round.~
+@5020305 = ~You look again at the glass of deep-red wine. It seems normal.~
+@5020310 = ~You notice that Keldorn got pale. He looks at you with concern and slowly shakes his head.~
+@5020311 = ~You notice Dorn is smiling. And it's not just any smile - it's the very same facial expression he makes after completing a mission given to him by his patron, Ur-Gothoz.~
+@5020312 = ~You notice Dorn is smiling. And it's not just any smile - it's the very same facial expression he makes after completing a mission given to him by his patron, Azothet.~
+@5020315 = ~Cast Detect Evil.~
+@5020319 = ~You feel a powerful aura emanating from the glass right in front of you. The wine howls with evil like wind on a hill.~
+
 
 @5029900 = ~Point fer <CHARNAME>!~
 @5029910 = ~No point fer ye.~

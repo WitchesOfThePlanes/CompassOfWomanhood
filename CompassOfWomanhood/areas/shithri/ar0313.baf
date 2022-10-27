@@ -137,7 +137,59 @@ END
 // PC to guess Franky's drink
 IF
   GlobalGT("6W#ShithriDrinksPcRound","GLOBAL",0)
+  // If the drink is being checked for being evil, a different action should take place.
+  Global("6W#ShithriDrinksThisEvil","GLOBAL",0)
 THEN
   RESPONSE #100
+    ActionOverride(Player1,StartDialog("6WDRINK",Player1))
+END
+
+// PC to check for evilness of the drink.
+// Picks the innate, cleric or wizard Detect Evil.
+// Uses a variable to avoid the problem of filtering prepared spells
+// of a creature other than the active one.
+IF
+  GlobalGT("6W#ShithriDrinksPcRound","GLOBAL",0)
+  Global("6W#ShithriDrinksThisEvil","GLOBAL",1)
+  Global("6W#ShithriDrinksThisEvilSpell","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ClearAllActions()
+    StartCutSceneMode()
+    ActionOverride(Player1,SpellRES("SPCL212",Myself))
+    Wait(4)
+    SetGlobal("6W#ShithriDrinksThisEvil","GLOBAL",2)
+    EndCutSceneMode()
+
+    ActionOverride(Player1,StartDialog("6WDRINK",Player1))
+END
+IF
+  GlobalGT("6W#ShithriDrinksPcRound","GLOBAL",0)
+  Global("6W#ShithriDrinksThisEvil","GLOBAL",1)
+  Global("6W#ShithriDrinksThisEvilSpell","GLOBAL",1)
+THEN
+  RESPONSE #100
+    ClearAllActions()
+    StartCutSceneMode()
+    ActionOverride(Player1,SpellRES("SPPR104",Myself))
+    Wait(4)
+    SetGlobal("6W#ShithriDrinksThisEvil","GLOBAL",2)
+    EndCutSceneMode()
+
+    ActionOverride(Player1,StartDialog("6WDRINK",Player1))
+END
+IF
+  GlobalGT("6W#ShithriDrinksPcRound","GLOBAL",0)
+  Global("6W#ShithriDrinksThisEvil","GLOBAL",1)
+  Global("6W#ShithriDrinksThisEvilSpell","GLOBAL",2)
+THEN
+  RESPONSE #100
+    ClearAllActions()
+    StartCutSceneMode()
+    ActionOverride(Player1,SpellRES("SPWI202",Myself))
+    Wait(4)
+    SetGlobal("6W#ShithriDrinksThisEvil","GLOBAL",2)
+    EndCutSceneMode()
+
     ActionOverride(Player1,StartDialog("6WDRINK",Player1))
 END

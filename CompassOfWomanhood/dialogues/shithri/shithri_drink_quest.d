@@ -3524,27 +3524,27 @@ APPEND THUMB
     // Saerloonian Special Vat (can be recognized thanks
     // to Shithri's clues) and Blood Wine (multiple classes
     // could recognize it).
-    IF ~
-      Global("6W#ShithriDrinksRound","GLOBAL",2)
-      //RandomNum(2,1)
-    ~ THEN
-      DO ~
-        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",2)
-        SetGlobal("6W#ShithriDrinksPcOption","GLOBAL",0)
-        MoveViewObject(Myself,INSTANT)
-      ~
-      EXIT
-
     //IF ~
     //  Global("6W#ShithriDrinksRound","GLOBAL",2)
-    //  RandomNum(2,2)
+    //  RandomNum(2,1)
     //~ THEN
     //  DO ~
     //    SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",2)
-    //    SetGlobal("6W#ShithriDrinksPcOption","GLOBAL",1)
+    //    SetGlobal("6W#ShithriDrinksPcOption","GLOBAL",0)
     //    MoveViewObject(Myself,INSTANT)
     //  ~
     //  EXIT
+
+    IF ~
+      Global("6W#ShithriDrinksRound","GLOBAL",2)
+      //RandomNum(2,2)
+    ~ THEN
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",2)
+        SetGlobal("6W#ShithriDrinksPcOption","GLOBAL",1)
+        MoveViewObject(Myself,INSTANT)
+      ~
+      EXIT
 
     // // -- Round Three --
     // // Franky picks something he's convinced is very rare and difficult
@@ -3812,7 +3812,7 @@ APPEND 6WDRINK
 
     // default
     IF ~
-      !Race(Player1,HALF_ORC)
+      !Race(Player1,HALFORC)
     ~ THEN
       REPLY @5020102 /* Smell it. */
       DO ~
@@ -3823,7 +3823,7 @@ APPEND 6WDRINK
     // ("borrowed" from gray orcs, who canonically have the Scent 
     // ability in DnD 3.5e)
     IF ~
-      Race(Player1,HALF_ORC)
+      Race(Player1,HALFORC)
     ~ THEN
       REPLY @5020102 /* Smell it. */
       DO ~
@@ -3880,7 +3880,7 @@ APPEND 6WDRINK
 
     // default
     IF ~
-      !Race(Player1,HALF_ORC)
+      !Race(Player1,HALFORC)
     ~ THEN
       REPLY @5020102 /* Smell it. */
       GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__smell__default
@@ -3888,7 +3888,7 @@ APPEND 6WDRINK
     // ("borrowed" from gray orcs, who canonically have the Scent 
     // ability in DnD 3.5e)
     IF ~
-      Race(Player1,HALF_ORC)
+      Race(Player1,HALFORC)
     ~ THEN
       REPLY @5020102 /* Smell it. */
       GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__smell__halforc
@@ -3943,7 +3943,7 @@ APPEND 6WDRINK
 
     // default
     IF ~
-      !Race(Player1,HALF_ORC)
+      !Race(Player1,HALFORC)
     ~ THEN
       REPLY @5020102 /* Smell it. */
       DO ~
@@ -3954,7 +3954,7 @@ APPEND 6WDRINK
     // ("borrowed" from gray orcs, who canonically have the Scent 
     // ability in DnD 3.5e)
     IF ~
-      Race(Player1,HALF_ORC)
+      Race(Player1,HALFORC)
     ~ THEN
       REPLY @5020102 /* Smell it. */
       DO ~
@@ -4162,7 +4162,7 @@ APPEND 6WDRINK
 
     // default
     IF ~
-      !Race(Player1,HALF_ORC)
+      !Race(Player1,HALFORC)
     ~ THEN
       REPLY @5020102 /* Smell it. */
       GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__smell__default
@@ -4170,7 +4170,7 @@ APPEND 6WDRINK
     // ("borrowed" from gray orcs, who canonically have the Scent 
     // ability in DnD 3.5e)
     IF ~
-      Race(Player1,HALF_ORC)
+      Race(Player1,HALFORC)
     ~ THEN
       REPLY @5020102 /* Smell it. */
       GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__smell__halforc
@@ -4229,7 +4229,7 @@ APPEND 6WDRINK
 
     // default
     IF ~
-      !Race(Player1,HALF_ORC)
+      !Race(Player1,HALFORC)
     ~ THEN
       REPLY @5020102 /* Smell it. */
       GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__smell__default
@@ -4237,7 +4237,7 @@ APPEND 6WDRINK
     // ("borrowed" from gray orcs, who canonically have the Scent 
     // ability in DnD 3.5e)
     IF ~
-      Race(Player1,HALF_ORC)
+      Race(Player1,HALFORC)
     ~ THEN
       REPLY @5020102 /* Smell it. */
       GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__smell__halforc
@@ -4307,7 +4307,7 @@ APPEND 6WDRINK
 
     // default
     IF ~
-      !Race(Player1,HALF_ORC)
+      !Race(Player1,HALFORC)
     ~ THEN
       REPLY @5020102 /* Smell it. */
       GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__smell__default
@@ -4315,7 +4315,7 @@ APPEND 6WDRINK
     // ("borrowed" from gray orcs, who canonically have the Scent 
     // ability in DnD 3.5e)
     IF ~
-      Race(Player1,HALF_ORC)
+      Race(Player1,HALFORC)
     ~ THEN
       REPLY @5020102 /* Smell it. */
       DO ~
@@ -4667,6 +4667,345 @@ APPEND THUMB
   END
 END
 
+APPEND 6WDRINK
+  IF ~
+    Global("6W#ShithriDrinksPcRound","GLOBAL",2)
+    Global("6W#ShithriDrinksPcOption","GLOBAL",1)
+
+    // if the PC knows it's evil, a different dialogue is run
+    Global("6W#ShithriDrinksThisEvil","GLOBAL",0)
+  ~ THEN BEGIN 6W#ShithriDrinksDuel__franky__blood_wine
+    SAY @5020300 /* You're served a glass of deep-red wine. */
+
+    // default
+    IF ~~ THEN
+      REPLY @5020301 /* Take a better look. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      //TODO:
+      //GOTO 6W#ShithriDrinksDuel__franky__blood_wine__look
+      EXIT
+
+    // default
+    IF ~
+      !Class(Player1,PALADIN_ALL)
+    ~ THEN
+      REPLY @5020302 /* Smell it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      //TODO:
+      //GOTO 6W#ShithriDrinksDuel__franky__blood_wine__smell__default
+      EXIT
+    // paladins can sense evil
+    IF ~
+      Class(Player1,PALADIN_ALL)
+      !Kit(Player1,BLACKGUARD)
+    ~ THEN
+      REPLY @5020302 /* Smell it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      //TODO:
+      //GOTO 6W#ShithriDrinksDuel__franky__blood_wine__smell__paladin
+      EXIT
+    // blackguards can sense evil, but in a different way
+    IF ~
+      Class(Player1,PALADIN_ALL)
+      Kit(Player1,BLACKGUARD)
+    ~ THEN
+      REPLY @5020302 /* Smell it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      //TODO:
+      //GOTO 6W#ShithriDrinksDuel__franky__blood_wine__smell__blackguard
+      EXIT
+
+    // default
+    IF ~
+      !Class(Player1,PALADIN_ALL)
+      !Class(Player1,BARD_ALL)
+    ~ THEN
+      REPLY @5020303 /* Taste it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      //TODO:
+      //GOTO 6W#ShithriDrinksDuel__franky__blood_wine__taste__default
+      EXIT
+    // paladins will lose consciousness
+    IF ~
+      Class(Player1,PALADIN_ALL)
+      !Kit(Player1,BLACKGUARD)
+    ~ THEN
+      REPLY @5020303 /* Taste it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      //TODO:
+      //GOTO 6W#ShithriDrinksDuel__franky__blood_wine__taste__paladin
+      EXIT
+    // blackguard will feel like when contacting their patron
+    IF ~
+      Class(Player1,PALADIN_ALL)
+      Kit(Player1,BLACKGUARD)
+    ~ THEN
+      REPLY @5020303 /* Taste it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      //TODO:
+      //GOTO 6W#ShithriDrinksDuel__franky__blood_wine__taste__blackguard
+      EXIT
+    // bards will remember it
+    IF ~
+      !Class(Player1,PALADIN_ALL) // some mods may allow paladin-bard dual
+      Class(Player1,BARD_ALL)
+    ~ THEN
+      REPLY @5020303 /* Taste it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      //TODO:
+      //GOTO 6W#ShithriDrinksDuel__franky__blood_wine__taste__bard
+      EXIT
+
+    IF ~~ THEN
+      REPLY @5020304 /* Forfeit the round. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      //TODO:
+      //EXTERN ~THUMB~ 6W#ShithriDrinksDuel__franky__blood_wine__forfeit
+      EXIT
+
+    // Dorn will react to it, being a Blackguard, but it requires
+    // high intelligence, wisdom or charisma to know why
+    // (and only then it's worth mentioning)
+    IF ~
+      IsValidForPartyDialog("Dorn")
+      Global("6W#ShithriDrinksBloodWineDorn","GLOBAL",0) // guarding variable
+      Global("OHD_urgothoz_patron","GLOBAL",1)
+      OR(3)
+        CheckStatGT(Player1,13,INT)
+        CheckStatGT(Player1,13,WIS)
+        CheckStatGT(Player1,13,CHR)
+    ~
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+        SetGlobal("6W#ShithriDrinksThisMaybeEvil","GLOBAL",1)
+        SetGlobal("6W#ShithriDrinksBloodWineDorn","GLOBAL",1)
+      ~
+      GOTO 6W#ShithriDrinksDuel__franky__blood_wine__dorn__urgothoz
+    IF ~
+      IsValidForPartyDialog("Dorn")
+      Global("6W#ShithriDrinksBloodWineDorn","GLOBAL",0) // guarding variable
+      Global("OHD_azothet_patron","GLOBAL",1)
+      OR(3)
+        CheckStatGT(Player1,13,INT)
+        CheckStatGT(Player1,13,WIS)
+        CheckStatGT(Player1,13,CHR)
+    ~
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+        SetGlobal("6W#ShithriDrinksThisMaybeEvil","GLOBAL",1)
+        SetGlobal("6W#ShithriDrinksBloodWineDorn","GLOBAL",1)
+      ~
+      GOTO 6W#ShithriDrinksDuel__franky__blood_wine__dorn__azothet
+
+    // Keldorn will react to it, due to his Detect Evil ability
+    IF ~
+      IsValidForPartyDialog("Keldron")
+      Global("6W#ShithriDrinksBloodWineKeldorn","GLOBAL",0) // guarding variable
+    ~
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+        SetGlobal("6W#ShithriDrinksThisMaybeEvil","GLOBAL",1)
+        SetGlobal("6W#ShithriDrinksBloodWineKeldorn","GLOBAL",1)
+      ~
+      GOTO 6W#ShithriDrinksDuel__franky__blood_wine__keldorn
+
+    // Implementation Note:
+    // If any mod adds a companion with the ability to detect evil,
+    // that character should be included here. Beware of the order.
+    //
+    // Only one companion should get a reaction here.
+  END
+  IF ~~ THEN 6W#ShithriDrinksDuel__franky__blood_wine__keldorn
+    SAY @5020310 /* You notice that Keldorn got pale. He looks at you with concern and slowly shakes his head. */
+
+    IF ~~ THEN
+      GOTO 6W#ShithriDrinksDuel__franky__blood_wine__decide
+  END
+  IF ~~ THEN 6W#ShithriDrinksDuel__franky__blood_wine__dorn__urgothoz
+    SAY @5020311 /* You notice Dorn is smiling. And it's not just any smile - it's the very same facial expression he makes after completing a mission given to him by his patron, Ur-Gothoz. */
+
+    IF ~~ THEN
+      GOTO 6W#ShithriDrinksDuel__franky__blood_wine__decide
+  END
+  IF ~~ THEN 6W#ShithriDrinksDuel__franky__blood_wine__dorn__azothet
+    SAY @5020312 /* You notice Dorn is smiling. And it's not just any smile - it's the very same facial expression he makes after completing a mission given to him by his patron, Azothet. */
+
+    IF ~~ THEN
+      GOTO 6W#ShithriDrinksDuel__franky__blood_wine__decide
+  END
+  IF ~~ THEN 6W#ShithriDrinksDuel__franky__blood_wine__decide
+    SAY @5020305 /* You look again at the glass of deep-red wine. It seems normal. */
+
+    // you can simply cast Detect-Evil without asking anyone's permission
+    IF ~
+      HaveSpellRES("SPCL212") // Paladin's innate DetectEvil
+    ~ THEN
+      REPLY @5020315 /* Cast Detect Evil. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",2)
+        SetGlobal("6W#ShithriDrinksThisEvil","GLOBAL",1)
+        SetGlobal("6W#ShithriDrinksThisEvilSpell","GLOBAL",0)
+      ~
+      EXIT
+    IF ~
+      !HaveSpellRES("SPCL212") // Paladin's innate DetectEvil
+      HaveSpellRES("SPPR104") // Cleric spellbook's spell
+    ~ THEN
+      REPLY @5020315 /* Cast Detect Evil. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",2)
+        SetGlobal("6W#ShithriDrinksThisEvil","GLOBAL",1)
+        SetGlobal("6W#ShithriDrinksThisEvilSpell","GLOBAL",1)
+      ~
+      EXIT
+    IF ~
+      !HaveSpellRES("SPCL212") // Paladin's innate DetectEvil
+      !HaveSpellRES("SPPR104") // Cleric spellbook's spell
+      HaveSpellRES("SPWI202")  // Wizard spellbook's spell
+    ~ THEN
+      REPLY @5020315 /* Cast Detect Evil. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",2)
+        SetGlobal("6W#ShithriDrinksThisEvil","GLOBAL",1)
+        SetGlobal("6W#ShithriDrinksThisEvilSpell","GLOBAL",2)
+      ~
+      EXIT
+
+    // default
+    IF ~~ THEN
+      REPLY @5020301 /* Take a better look. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      //TODO:
+      //GOTO 6W#ShithriDrinksDuel__franky__blood_wine__look
+      EXIT
+
+    // default
+    IF ~
+      !Class(Player1,PALADIN_ALL)
+    ~ THEN
+      REPLY @5020302 /* Smell it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      //TODO:
+      //GOTO 6W#ShithriDrinksDuel__franky__blood_wine__smell__default
+      EXIT
+    // paladins can sense evil
+    IF ~
+      Class(Player1,PALADIN_ALL)
+      !Kit(Player1,BLACKGUARD)
+    ~ THEN
+      REPLY @5020302 /* Smell it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      //TODO:
+      //GOTO 6W#ShithriDrinksDuel__franky__blood_wine__smell__paladin
+      EXIT
+    // blackguards can sense evil, but in a different way
+    IF ~
+      Class(Player1,PALADIN_ALL)
+      Kit(Player1,BLACKGUARD)
+    ~ THEN
+      REPLY @5020302 /* Smell it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      //TODO:
+      //GOTO 6W#ShithriDrinksDuel__franky__blood_wine__smell__blackguard
+      EXIT
+
+    // default
+    IF ~
+      !Class(Player1,PALADIN_ALL)
+      !Class(Player1,BARD_ALL)
+    ~ THEN
+      REPLY @5020303 /* Taste it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      //TODO:
+      //GOTO 6W#ShithriDrinksDuel__franky__blood_wine__taste__default
+      EXIT
+    // paladins will lose consciousness
+    IF ~
+      Class(Player1,PALADIN_ALL)
+      !Kit(Player1,BLACKGUARD)
+    ~ THEN
+      REPLY @5020303 /* Taste it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      //TODO:
+      //GOTO 6W#ShithriDrinksDuel__franky__blood_wine__taste__paladin
+      EXIT
+    // blackguard will feel like when contacting their patron
+    IF ~
+      Class(Player1,PALADIN_ALL)
+      Kit(Player1,BLACKGUARD)
+    ~ THEN
+      REPLY @5020303 /* Taste it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      //TODO:
+      //GOTO 6W#ShithriDrinksDuel__franky__blood_wine__taste__blackguard
+      EXIT
+    // bards will remember it
+    IF ~
+      !Class(Player1,PALADIN_ALL) // some mods may allow paladin-bard dual
+      Class(Player1,BARD_ALL)
+    ~ THEN
+      REPLY @5020303 /* Taste it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      //TODO:
+      //GOTO 6W#ShithriDrinksDuel__franky__blood_wine__taste__bard
+      EXIT
+
+    IF ~~ THEN
+      REPLY @5020304 /* Forfeit the round. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      //TODO:
+      //EXTERN ~THUMB~ 6W#ShithriDrinksDuel__franky__blood_wine__forfeit
+      EXIT
+  END
+  IF ~
+    Global("6W#ShithriDrinksPcRound","GLOBAL",2)
+    Global("6W#ShithriDrinksPcOption","GLOBAL",1)
+    Global("6W#ShithriDrinksThisEvil","GLOBAL",2)
+  ~ THEN BEGIN 6W#ShithriDrinksDuel__franky__blood_wine__evil
+    SAY @5020319 /* You feel a powerful aura emanating from the glass right in front of you. The wine howls with evil like wind on a hill. */
+
+    //TODO:
+    IF ~~ THEN
+      EXIT
+  END
+END
+
 
 APPEND THUMB
   IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__pc_point
@@ -4677,6 +5016,8 @@ APPEND THUMB
     ~ THEN
       // reset hints
       DO ~
+        SetGlobal("6W#ShithriDrinksThisMaybeEvil","GLOBAL",0)
+        SetGlobal("6W#ShithriDrinksThisEvil","GLOBAL",0)
         SetGlobal("6W#ShithriDrinksThisLook","GLOBAL",0)
         SetGlobal("6W#ShithriDrinksThisSmell","GLOBAL",0)
         SetGlobal("6W#ShithriDrinksThisTaste","GLOBAL",0)

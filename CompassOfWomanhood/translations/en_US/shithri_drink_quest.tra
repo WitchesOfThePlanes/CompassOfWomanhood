@@ -432,7 +432,8 @@ Shithri not only refuses to provide any valuable comment on this beer, but seems
 @5000014 = ~That? That be me capt'n. Capt'n, meet Franky.~
 @5000015 = ~"Capt'n"? Har har! That a good one! Shithri, me lil rapscallion. Why nah ye join me instead of playin' wit' that lubber?~ [6WDPIR04]
 @5000017 = ~Capt'n be alright, Franky.~
-@5000018 = ~Aye, sure thing! That lubber who had dwarvish grog once or twice 'n already thinks he's a sailor, har har! Shithri, ye lil jester, 'ave some mercy fer an old man's stomach!~ [6WDPIR06] ~Aye, sure thing! That lubber who had dwarvish grog once or twice 'n already thinks she's a sailor, har har! Shithri, ye lil jester, 'ave some mercy fer an old man's stomach!~ [6WDPIR07]
+@5000018 = ~Aye, sure thing! That lubber who had dwarvish grog once or twice 'n already thinks he's a sailor, har har! Shithri, ye lil jester, 'ave some mercy fer an old man's stomach!~ [6WDPIR06]
+@5000019 = ~Aye, sure thing! That lubber who had dwarvish grog once or twice 'n already thinks she's a sailor, har har! Shithri, ye lil jester, 'ave some mercy fer an old man's stomach!~ [6WDPIR07]
 @5000020 = ~Nice to meet you too, Franky. I'm <CHARNAME>.~
 @5000021 = ~Not to brag, but I'm actually quite an expert when it comes to liquors.~
 @5000022 = ~Let's not waste our time on that man. We have stuff to do.~
@@ -686,8 +687,9 @@ You wake up from this little daydream. The duel. You should make a guess. Raspbe
 @5030101 = ~Huh. That comes a surprise. That new <PRO_MANWOMAN>'s nah so bad.~
 @5030102 = ~Har har, 'tis me capt'n fer ye!~
 @5030103 = ~I mus' say, Shithri, I misjudged that capt'n o' yers.~ [6WDPIR30]
-@5030104 = ~Ye know, <PRO_HESHE> got a name. 'n ears.~
-@5030105 = ~<CHARNAME>. As much as I hate t' admit that - ye nah a common lubber I thought ye be. Good match.~ [6WDPIR32]
+@5030104 = ~Ye know, he got a name. 'n ears.~
+@5030105 = ~Ye know, she got a name. 'n ears.~
+@5030106 = ~<CHARNAME>. As much as I hate t' admit that - ye nah a common lubber I thought ye be. Good match.~ [6WDPIR32]
 @5030110 = ~Thank you. You're not half-bad either, Franky.~
 @5030111 = ~Maybe we'll get a rematch next time we meet. Until then!~ [6WDPIR34]
 @5030120 = ~To be frank, I can't say I really expected to hear "sorry". I guess that's as good as it gets.~
@@ -748,7 +750,8 @@ You wake up from this little daydream. The duel. You should make a guess. Raspbe
 @5030360 = ~Magical? Nay, I ain't be havin' that kinda things.~ [6WDPIR70]
 @5030370 = ~Me cutlass? Sure, take it. Got plenty more on the ship. Now good day t' ye.~ [6WDPIR72]
 @5030380 = ~Me... me bandana? 'Tis... 'tis me very pride! Me soul! 'Tis...~ [6WDPIR74]
-@5030381 = ~Oh. I see. Ye cruel, cruel man! Fine, debt be debt. Take it.~ [6WDPIR76] ~Oh. I see. Ye cruel, cruel woman! Fine, debt be debt. Take it.~ [6WDPIR77]
+@5030381 = ~Oh. I see. Ye cruel, cruel man! Fine, debt be debt. Take it.~ [6WDPIR76]
+@5030382 = ~Oh. I see. Ye cruel, cruel woman! Fine, debt be debt. Take it.~ [6WDPIR77]
 @5030390 = ~Har har! Me life be nah mine t' give. It's me capt'n's.~ [6WDPIR78]
 
 

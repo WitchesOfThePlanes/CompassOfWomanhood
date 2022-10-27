@@ -2542,8 +2542,15 @@ CHAIN IF ~
   @5000015 /* "Capt'n"? Har har! That a good one! Shithri, me lil rapscallion. Why nah ye join me instead of playin' wit' that lubber? */
   == 6WSHITJ
   @5000017 /* Capt'n be alright, Franky. */
-  == 6WPIRDR
-  @5000018 /* Aye, sure thing! That lubber who had dwarvish grog once or twice 'n already thinks <PRO_HESHE>'s a sailor, har har! Shithri, ye lil jester, 'ave some mercy fer an old man's stomach! */
+
+  // Implementation Note:
+  // Unfortunately, it seems that it's not possible to provide two different texts
+  // (and voiceovers) for a single state in case of the English language depending
+  // on the PC's gender. Therefore, two separate states must be used.
+  == 6WPIRDR IF ~Gender(Player1,MALE)~
+  @5000018 /* Aye, sure thing! That lubber who had dwarvish grog once or twice 'n already thinks he's a sailor, har har! Shithri, ye lil jester, 'ave some mercy fer an old man's stomach! */
+  == 6WPIRDR IF ~!Gender(Player1,MALE)~
+  @5000019 /* Aye, sure thing! That lubber who had dwarvish grog once or twice 'n already thinks she's a sailor, har har! Shithri, ye lil jester, 'ave some mercy fer an old man's stomach! */
 END
   IF ~~ THEN
     REPLY @5000020 /* Nice to meet you too, Franky. I'm <CHARNAME>. */
@@ -5030,12 +5037,18 @@ CHAIN THUMB 6W#ShithriDrinksDuel__results__draw
     @5030102 /* Har har, 'tis me capt'n fer ye! */
     == 6WPIRDR
     @5030103 /* I mus' say, Shithri, I misjudged that capt'n o' yers. */
-    == 6WSHITJ
-    @5030104 /* Ye know, <PRO_HESHE> got a name. 'n ears. */
+    // Implementation Note:
+    // Unfortunately, it seems that it's not possible to provide two different texts
+    // (and voiceovers) for a single state in case of the English language depending
+    // on the PC's gender. Therefore, two separate states must be used.
+    == 6WSHITJ IF ~Gender(Player1,MALE)~
+    @5030104 /* Ye know, he got a name. 'n ears. */
+    == 6WSHITJ IF ~!Gender(Player1,MALE)~
+    @5030105 /* Ye know, she got a name. 'n ears. */
   END
 
   == 6WPIRDR
-  @5030105 /* <CHARNAME>. As much as I hate t' admit that - ye nah a common lubber I thought ye be. Good match. */
+  @5030106 /* <CHARNAME>. As much as I hate t' admit that - ye nah a common lubber I thought ye be. Good match. */
 END
   IF ~~ THEN
     REPLY @5030110 /* Thank you. You're not half-bad either, Franky. */
@@ -5384,8 +5397,28 @@ APPEND 6WPIRDR
 
   IF ~~ THEN 6W#ShithriDrinksDuel__results__pc_reward_bandana
     SAY @5030380 /* Me... me bandana? 'Tis... 'tis me very pride! Me soul! 'Tis... */
-    =
-    @5030381 /* Oh. I see. Ye cruel, cruel <PRO_MANWOMAN>. Fine, debt be debt. Take it. */
+
+    // Implementation Note:
+    // Unfortunately, it seems that it's not possible to provide two different texts
+    // (and voiceovers) for a single state in case of the English language depending
+    // on the PC's gender. Therefore, two separate states must be used.
+    IF ~Gender(Player1,MALE)~
+      GOTO 6W#ShithriDrinksDuel__results__pc_reward_bandana__male
+    IF ~!Gender(Player1,MALE)~
+      GOTO 6W#ShithriDrinksDuel__results__pc_reward_bandana__female
+  END
+  IF ~~ THEN 6W#ShithriDrinksDuel__results__pc_reward_bandana__male
+    @5030381 /* Oh. I see. Ye cruel, cruel man. Fine, debt be debt. Take it. */
+    IF ~~ THEN
+      //TODO: journal entry etc.
+      DO ~
+        // GiveItemCreate("_6WBANDA", Player1, 0, 0, 0)
+        SetGlobal("6W#ShithriDrinksEnding","GLOBAL",1)
+      ~
+      EXIT
+  END
+  IF ~~ THEN 6W#ShithriDrinksDuel__results__pc_reward_bandana__female
+    @5030382 /* Oh. I see. Ye cruel, cruel woman. Fine, debt be debt. Take it. */
     IF ~~ THEN
       //TODO: journal entry etc.
       DO ~

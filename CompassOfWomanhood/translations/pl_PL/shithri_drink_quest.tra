@@ -434,6 +434,7 @@ Shithri nie tylko odmawia podania ci jakichkolwiek użytecznych informacji na te
 @5000015 = ~„Kapitan”? Har har! A to dobre! Shithri, złośnico mała. Byś nie dołączyła do mie zamiast sie z tym londowym bawić?~ [6WDPIR04] ~„Kapitan”? Har har! A to dobre! Shithri, złośnico mała. Byś nie dołączyła do mie zamiast sie z tom londowom bawić?~ [6WDPIR05]
 @5000017 = ~Kapitan je fejn, Ferdek.~ [6WDSHI04]
 @5000018 = ~Ta, jasna sprawa! Taki szczur londowy, co to krasnoludzkiego grogu sie raz czy dwa ożłopał i myśli, że marynarz, har har! Shithri, psotko, miejże litość nad brzuchem starego żeglarza!~ [6WDPIR06]
+@5000019 = ~Ta, jasna sprawa! Taki szczur londowy, co to krasnoludzkiego grogu sie raz czy dwa ożłopał i myśli, że marynarz, har har! Shithri, psotko, miejże litość nad brzuchem starego żeglarza!~ [6WDPIR06]
 @5000020 = ~Ciebie też miło poznać, Ferdku. Jestem <CHARNAME>.~
 @5000021 = ~Nie żebym się chwalił, ale właściwie to jestem specjalistą jeśli chodzi o trunki.~ ~Nie żebym się chwaliła, ale właściwie to jestem specjalistką jeśli chodzi o trunki.~
 @5000022 = ~Nie będziemy marnować czasu na tego człowieka. Mamy sprawy do załatwienia.~
@@ -687,8 +688,9 @@ Wybudzasz się z tego rozmarzenia. Pojedynek. Masz zgadywać. Maliny, truskawki 
 @5030101 = ~Huh. A to ci niespodzianka. Ten nowy nie jest zły.~ ~Huh. A to ci niespodzianka. Ta nowa nie jest zła.~
 @5030102 = ~Har har, to właśnie mój kapitan!~ ~Har har, to właśnie moja kapitan!~
 @5030103 = ~Przyznam, Shithri, żem nie docenił tego twojego kapitana.~ [6WDPIR30] ~Przyznam, Shithri, żem nie docenił tej twojej kapitan.~ [6WDPIR31]
-@5030104 = ~Wiesz, on ma imie. I uszy.~ ~Wiesz, ona ma imie. I uszy.~
-@5030105 = ~<CHARNAME>. Cienżko sie przyznać - nie taki z ciebie szczurek jak żem myślał. Zacne starcie.~ [6WDPIR32]
+@5030104 = ~Wiesz, on ma imie. I uszy.~
+@5030105 = ~Wiesz, ona ma imie. I uszy.~
+@5030106 = ~<CHARNAME>. Cienżko sie przyznać - nie taki z ciebie szczurek jak żem myślał. Zacne starcie.~ [6WDPIR32]
 @5030110 = ~Dziękuję. Ty też kiepski nie jesteś, Ferdku.~
 @5030111 = ~Może kiedyś bendzie okazja na rewanż. Bywaj!~ [6WDPIR34]
 @5030120 = ~Skłamałbym mówiąc, że spodziewałem się przeprosin. Ale chyba lepiej nie będzie.~ ~Skłamałabym mówiąc, że spodziewałam się przeprosin. Ale chyba lepiej nie będzie.~
@@ -749,7 +751,8 @@ Wybudzasz się z tego rozmarzenia. Pojedynek. Masz zgadywać. Maliny, truskawki 
 @5030360 = ~Magicznych? Nie. Nie mam takiego czegoś.~ [6WDPIR70]
 @5030370 = ~Mój kordelas? Pewnie, bierz. Dużo mamy takich na statku. Dobrego dnia tobie.~ [6WDPIR72]
 @5030380 = ~Mojo... mojom bandane? To... to jes moja duma! Moja dusza! Bez niej...~ [6WDPIR74]
-@5030381 = ~Aaa. Rozumiem... Ty podły, podły człeku! Dobra, dług to dług. Bierz.~ [6WDPIR76] ~Aaa. Rozumiem. Ty podła, podła kobito! Dobra, dług to dług. Bierz.~ [6WDPIR77]
+@5030381 = ~Aaa. Rozumiem... Ty podły, podły człeku! Dobra, dług to dług. Bierz.~ [6WDPIR76]
+@5030382 = ~Aaa. Rozumiem. Ty podła, podła kobito! Dobra, dług to dług. Bierz.~ [6WDPIR77]
 @5030390 = ~Har har! Moje życie nie należy do mie, tylko do mojego kapitana.~ [6WDPIR78]
 
 

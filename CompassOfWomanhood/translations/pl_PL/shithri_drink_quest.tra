@@ -467,11 +467,11 @@ Shithri nie tylko odmawia podania ci jakichkolwiek użytecznych informacji na te
 @5000110 = ~Jak ty wygrasz? Har har! Jakby sie już tak zdarzyło, to se wybierzesz nagrode.~ [6WDPIR22]
 @5000111 = ~Dobrze. Przyjmuję twoje warunki.~
 @5000112 = ~Niech to będzie także pięć tysięcy sztuk złota i jesteśmy umówieni.~
-@5000120 = ~Kapitanie? Nadstaw no tej galernicy ucha na chwilke.~
-@5000121 = ~Ferdek to je srodze tangi, jano nie wyglouda. Jedne powiadajo, że przez szpinaków źrecie, ale mie sie nie zdawa. Pewno ma jaki klamotek co mu sił przydaje.~
+@5000120 = ~Kapitanie? Nadstaw no tej galernicy ucha na chwilke.~ [6WDSHI06]
+@5000121 = ~Ferdek to je srodze tangi, jano nie wyglouda. Jedne powiadajo, że przez szpinaków źrecie, ale mie sie nie zdawa. Pewno ma jaki klamotek co mu sił przydaje.~ [6WDSHI08]
 @5000122 = ~Jak rękawice albo pas?~
 @5000123 = ~Nieistotne. Pięć tysięcy sztuk złota to uczciwa stawka.~
-@5000125 = ~Ta. Cosik takego.~
+@5000125 = ~Ta. Cosik takego.~ [6WDSHI10]
 @5000126 = ~Cóż, w takim razie... Hej, Ferdku! Jednak wybiorę sobie dopiero jak wygram. Przyjmuję twoje zasady.~
 @5000130 = ~Może być, ta. Pinć tysiency sztuk złota jakby sie zdarzyło, że wygrasz. To jak?~
 @5000140 = ~Gotowyś?~ ~Gotowaś?~

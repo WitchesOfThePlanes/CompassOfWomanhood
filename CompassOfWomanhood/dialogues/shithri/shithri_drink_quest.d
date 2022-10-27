@@ -2744,6 +2744,7 @@ APPEND 6WSHITJ
       REPLY @5000126 /* Well, in that case... Hey, Franky! I will pick what I want then I win, after all. I accept your rules. */
       DO ~
         SetGlobal("6W#ShithriDrinksActive","GLOBAL",2)
+        SetGlobal("6W#ShithriDrinksStakes","GLOBAL",1)
       ~
       EXTERN ~6WPIRDR~ 6W#ShithriDrinksSeaman__accept_rules
 

@@ -94,6 +94,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("6W#ShithriDrinksEnding","GLOBAL",2)
+    SetGlobal("6W#ShithriDrinksActive","GLOBAL",5) // quest done
     ClearAllActions()
     StartCutSceneMode()
     FadeToColor([20.0],0)
@@ -128,6 +129,9 @@ THEN
     SetPlayerSound("THUMB", 60247, SELECT_COMMON2)
     SetPlayerSound("THUMB", 60248, SELECT_COMMON3)
     SetPlayerSound("THUMB", 60249, SELECT_COMMON4)
+
+    // Franky goes away
+    ActionOverride("6WPIRDR", DestroySelf())
 
     FadeFromColor([20.0],0)
     SmallWait(1)

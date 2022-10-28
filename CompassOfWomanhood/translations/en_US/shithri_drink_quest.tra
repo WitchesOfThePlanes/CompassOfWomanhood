@@ -427,11 +427,11 @@ Shithri not only refuses to provide any valuable comment on this beer, but seems
 
 @5000000 = ~Nah talkin' t' ye lubbers. Pff! *gulp*~
 @5000010 = ~Oy, look who's there! Ain't that lil Shithri?~ [6WDPIR00]
-@5000011 = ~Franky the Eye-Popper? Be that ye? How'd ye been, ye old geezer?~
+@5000011 = ~Eh? Who am I seein'? Franky the Eye-Popper? Be that ye? How'd ye been, matey?~ [6WDSHI00]
 @5000012 = ~Nah bad, nah bad. Been sailin' between Amn 'n Calimshan quite lot these days... Betta than ye, it seems. Who's that lubber o'er there?~ [6WDPIR02]
-@5000014 = ~That? That be me capt'n. Capt'n, meet Franky.~
+@5000014 = ~That? That be me capt'n. Capt'n, meet Franky.~ [6WDSHI02]
 @5000015 = ~"Capt'n"? Har har! That a good one! Shithri, me lil rapscallion. Why nah ye join me instead of playin' wit' that lubber?~ [6WDPIR04]
-@5000017 = ~Capt'n be alright, Franky.~
+@5000017 = ~Capt'n be alright, Franky.~ [6WDSHI04]
 @5000018 = ~Aye, sure thing! That lubber who had dwarvish grog once or twice 'n already thinks he's a sailor, har har! Shithri, ye lil jester, 'ave some mercy fer an old man's stomach!~ [6WDPIR06]
 @5000019 = ~Aye, sure thing! That lubber who had dwarvish grog once or twice 'n already thinks she's a sailor, har har! Shithri, ye lil jester, 'ave some mercy fer an old man's stomach!~ [6WDPIR07]
 @5000020 = ~Nice to meet you too, Franky. I'm <CHARNAME>.~
@@ -467,11 +467,11 @@ Shithri not only refuses to provide any valuable comment on this beer, but seems
 @5000110 = ~If ye win? Har har! If that e'er happens, ye pick wha' ye want.~ [6WDPIR22]
 @5000111 = ~Fine. I accept your rules.~
 @5000112 = ~Make it 5000 gold too and we're fine.~
-@5000120 = ~Capt'n? May I 'ave this bucko talk t' ye fer a moment?~
-@5000121 = ~Franky be plenty strong, though he nah look like it. Some say it cause o' how much spinach he eats, but I nah believe that. He prolly be 'avin' some item that makes 'im strong.~
+@5000120 = ~Capt'n? May I 'ave this bucko talk t' ye fer a moment?~ [6WDSHI06]
+@5000121 = ~Franky be plenty strong, though he nah look like it. Some say it cause o' how much spinach he eats, but I nah believe that. He prolly be 'avin' some item that makes 'im strong.~ [6WDSHI08]
 @5000122 = ~Like gloves or belt?~
 @5000123 = ~Doesn't matter. 5000 gold pieces is a fair reward.~
-@5000125 = ~Aye. Somethin' o' the kind.~
+@5000125 = ~Aye. Somethin' o' the kind.~ [6WDSHI10]
 @5000126 = ~Well, in that case... Hey, Franky! I will pick what I want then I win, after all. I accept your rules.~
 @5000130 = ~Could be, aye. 5000 gold pieces t' ye if ye e'er win. Deal?~
 @5000140 = ~Ready?~

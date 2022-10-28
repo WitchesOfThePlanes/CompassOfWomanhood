@@ -688,8 +688,8 @@ Wybudzasz się z tego rozmarzenia. Pojedynek. Masz zgadywać. Maliny, truskawki 
 @5030101 = ~Huh. A to ci niespodzianka. Ten nowy nie jest zły.~ ~Huh. A to ci niespodzianka. Ta nowa nie jest zła.~
 @5030102 = ~Har har, to właśnie mój kapitan!~ ~Har har, to właśnie moja kapitan!~
 @5030103 = ~Przyznam, Shithri, żem nie docenił tego twojego kapitana.~ [6WDPIR30] ~Przyznam, Shithri, żem nie docenił tej twojej kapitan.~ [6WDPIR31]
-@5030104 = ~Wiesz, on ma imie. I uszy.~
-@5030105 = ~Wiesz, ona ma imie. I uszy.~
+@5030104 = ~Ej, Ferdek. Wiesz, on ma imie. I uszy.~ [6WDSHI16]
+@5030105 = ~Ej, Ferdek. Wiesz, ona ma imie. I uszy.~ [6WDSHI17]
 @5030106 = ~<CHARNAME>. Cienżko sie przyznać - nie taki z ciebie szczurek jak żem myślał. Zacne starcie.~ [6WDPIR32]
 @5030110 = ~Dziękuję. Ty też kiepski nie jesteś, Ferdku.~
 @5030111 = ~Może kiedyś bendzie okazja na rewanż. Bywaj!~ [6WDPIR34]

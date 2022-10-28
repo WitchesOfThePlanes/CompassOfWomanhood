@@ -687,8 +687,8 @@ You wake up from this little daydream. The duel. You should make a guess. Raspbe
 @5030101 = ~Huh. That comes a surprise. That new <PRO_MANWOMAN>'s nah so bad.~
 @5030102 = ~Har har, 'tis me capt'n fer ye!~
 @5030103 = ~I mus' say, Shithri, I misjudged that capt'n o' yers.~ [6WDPIR30]
-@5030104 = ~Ye know, he got a name. 'n ears.~
-@5030105 = ~Ye know, she got a name. 'n ears.~
+@5030104 = ~Ye know, he got a name. 'n ears.~ [6WDSHI16]
+@5030105 = ~Ye know, she got a name. 'n ears.~ [6WDSHI17]
 @5030106 = ~<CHARNAME>. As much as I hate t' admit that - ye nah a common lubber I thought ye be. Good match.~ [6WDPIR32]
 @5030110 = ~Thank you. You're not half-bad either, Franky.~
 @5030111 = ~Maybe we'll get a rematch next time we meet. Until then!~ [6WDPIR34]
@@ -699,9 +699,9 @@ You wake up from this little daydream. The duel. You should make a guess. Raspbe
 @5030200 = ~Our one an' only, Franky the Eye-Popper!~
 @5030201 = ~Knew that.~
 @5030202 = ~See, Shithri? Won fair an' square so I guess ye joinin' me now?~ [6WDPIR40]
-@5030203 = ~Wha'? This bucko be ne'er part o' the stakes, swab.~
+@5030203 = ~Wha'? This bucko be ne'er part o' the stakes, swab.~ [6WDSHI12]
 @5030204 = ~Oh come on...~ [6WDPIR42]
-@5030205 = ~I say wha' I say.~
+@5030205 = ~I say wha' I say.~ [6WDSHI14]
 @5030206 = ~Oi, lubber. I hope ye nah forgot. Me gold.~ [6WDPIR44]
 @5030210 = ~Good match. Here is your reward.~
 @5030211 = ~Harrr... Aye, 5000 'tis.~

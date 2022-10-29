@@ -137,3 +137,16 @@ THEN
   RESPONSE #100
     SetGlobal("6W#ShithriDrinksSeamanSpawn","GLOBAL",2)
 END
+
+// Shithri may comment on the duel's result if she's in the party
+IF
+  Global("6W#ShithriDrinksEnding","GLOBAL",2)
+  IfValidForPartyDialog("6WSHITHRI")
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    Wait(1)
+    StartDialogueNoSet(Player1)
+    SetGlobal("6W#ShithriDrinksEnding","GLOBAL",3)
+    SetInterrupt(TRUE)
+END

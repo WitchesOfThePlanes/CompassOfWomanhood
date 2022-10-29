@@ -2124,6 +2124,8 @@ APPEND 6WSHITJ
         TakePartyGold(15)
         DestroyGold(15)
         GiveItemCreate("_6WDR11", Player1, 0, 0, 0)
+        // the description says of Special Vat
+        SetGlobal("6W#ShithriDrinksKnowDrinkSpecialVat","GLOBAL",1) // heard description
       ~
       GOTO saerloonian_wine__bought
 
@@ -2912,7 +2914,8 @@ APPEND THUMB
     ~ THEN
       REPLY @6000000 /* Bitter Black Ale. */
       DO ~
-        RemoveHasItem("_6WDR00")
+        TakePartyItem("_6WDR00")
+        DestroyItem("_6WDR00")
         SetGlobal("6W#ShithriDrinksHasDrink00","GLOBAL",2)
       ~
       EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__round_1a__00
@@ -2923,7 +2926,8 @@ APPEND THUMB
     ~ THEN
       REPLY @6000010 /* Shadowdark Ale. */
       DO ~
-        RemoveHasItem("_6WDR01")
+        TakePartyItem("_6WDR01")
+        DestroyItem("_6WDR01")
         SetGlobal("6W#ShithriDrinksHasDrink01","GLOBAL",2)
       ~
       EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__round_1a__01
@@ -2934,7 +2938,8 @@ APPEND THUMB
     ~ THEN
       REPLY @6000020 /* Suz-Ale. */
       DO ~
-        RemoveHasItem("_6WDR02")
+        TakePartyItem("_6WDR02")
+        DestroyItem("_6WDR02")
         SetGlobal("6W#ShithriDrinksHasDrink02","GLOBAL",2)
       ~
       EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__round_1a__02
@@ -2945,7 +2950,8 @@ APPEND THUMB
     ~ THEN
       REPLY @6000030 /* Golden Sands Basic. */
       DO ~
-        RemoveHasItem("_6WDR03a")
+        TakePartyItem("_6WDR03a")
+        DestroyItem("_6WDR03a")
         SetGlobal("6W#ShithriDrinksHasDrink03a","GLOBAL",2)
       ~
       EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__round_1a__03a
@@ -2956,7 +2962,8 @@ APPEND THUMB
     ~ THEN
       REPLY @6000031 /* Golden Sands Gold. */
       DO ~
-        RemoveHasItem("_6WDR03b")
+        TakePartyItem("_6WDR03b")
+        DestroyItem("_6WDR03b")
         SetGlobal("6W#ShithriDrinksHasDrink03b","GLOBAL",2)
       ~
       EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__round_1a__03b
@@ -2967,7 +2974,8 @@ APPEND THUMB
     ~ THEN
       REPLY @6000032 /* Golden Sands Orange. */
       DO ~
-        RemoveHasItem("_6WDR03c")
+        TakePartyItem("_6WDR03c")
+        DestroyItem("_6WDR03c")
         SetGlobal("6W#ShithriDrinksHasDrink03c","GLOBAL",2)
       ~
       EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__round_1a__03c
@@ -2978,7 +2986,8 @@ APPEND THUMB
     ~ THEN
       REPLY @6000040 /* Iriaeboran North Brew. */
       DO ~
-        RemoveHasItem("_6WDR04")
+        TakePartyItem("_6WDR04")
+        DestroyItem("_6WDR04")
         SetGlobal("6W#ShithriDrinksHasDrink04","GLOBAL",2)
       ~
       EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__round_1a__04
@@ -2989,7 +2998,8 @@ APPEND THUMB
     ~ THEN
       REPLY @6000050 /* Luiren's Best Ale. */
       DO ~
-        RemoveHasItem("_6WDR05")
+        TakePartyItem("_6WDR05")
+        DestroyItem("_6WDR05")
         SetGlobal("6W#ShithriDrinksHasDrink05","GLOBAL",2)
       ~
       EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__round_1a__05
@@ -3000,7 +3010,8 @@ APPEND THUMB
     ~ THEN
       REPLY @6000060 /* Tanagyr's Ale. */
       DO ~
-        RemoveHasItem("_6WDR06")
+        TakePartyItem("_6WDR06")
+        DestroyItem("_6WDR06")
         SetGlobal("6W#ShithriDrinksHasDrink06","GLOBAL",2)
       ~
       EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__round_1a__06
@@ -3011,7 +3022,8 @@ APPEND THUMB
     ~ THEN
       REPLY @6000070 /* Undermountain Alurlyath. */
       DO ~
-        RemoveHasItem("_6WDR07")
+        TakePartyItem("_6WDR07")
+        DestroyItem("_6WDR07")
         SetGlobal("6W#ShithriDrinksHasDrink07","GLOBAL",2)
       ~
       EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__round_1a__07
@@ -3022,7 +3034,8 @@ APPEND THUMB
     ~ THEN
       REPLY @6000080 /* Arabellan Dry. */
       DO ~
-        RemoveHasItem("_6WDR08")
+        TakePartyItem("_6WDR08")
+        DestroyItem("_6WDR08")
         SetGlobal("6W#ShithriDrinksHasDrink08","GLOBAL",2)
       ~
       EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__round_1a__08
@@ -3033,7 +3046,8 @@ APPEND THUMB
     ~ THEN
       REPLY @6000090 /* Evermead. */
       DO ~
-        RemoveHasItem("_6WDR09")
+        TakePartyItem("_6WDR09")
+        DestroyItem("_6WDR09")
         SetGlobal("6W#ShithriDrinksHasDrink09","GLOBAL",2)
       ~
       EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__round_1a__09
@@ -3044,7 +3058,8 @@ APPEND THUMB
     ~ THEN
       REPLY @6000100 /* Westgate Ruby. */
       DO ~
-        RemoveHasItem("_6WDR10")
+        TakePartyItem("_6WDR10")
+        DestroyItem("_6WDR10")
         SetGlobal("6W#ShithriDrinksHasDrink10","GLOBAL",2)
       ~
       EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__round_1a__10
@@ -3055,7 +3070,8 @@ APPEND THUMB
     ~ THEN
       REPLY @6000110 /* Saerloonian Topaz. */
       DO ~
-        RemoveHasItem("_6WDR11")
+        TakePartyItem("_6WDR11")
+        DestroyItem("_6WDR11")
         SetGlobal("6W#ShithriDrinksHasDrink11","GLOBAL",2)
       ~
       EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__round_1a__11
@@ -3066,7 +3082,8 @@ APPEND THUMB
     ~ THEN
       REPLY @6000120 /* Berduskan Dark. */
       DO ~
-        RemoveHasItem("_6WDR12")
+        TakePartyItem("_6WDR12")
+        DestroyItem("_6WDR12")
         SetGlobal("6W#ShithriDrinksHasDrink12","GLOBAL",2)
       ~
       EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__round_1a__12
@@ -3077,7 +3094,8 @@ APPEND THUMB
     ~ THEN
       REPLY @6000130 /* Winter Wine. */
       DO ~
-        RemoveHasItem("_6WDR13")
+        TakePartyItem("_6WDR13")
+        DestroyItem("_6WDR13")
         SetGlobal("6W#ShithriDrinksHasDrink13","GLOBAL",2)
       ~
       EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__round_1a__13
@@ -3088,7 +3106,8 @@ APPEND THUMB
     ~ THEN
       REPLY @6000140 /* Dragon's Beer. */
       DO ~
-        RemoveHasItem("_6WDR14")
+        TakePartyItem("_6WDR14")
+        DestroyItem("_6WDR14")
         SetGlobal("6W#ShithriDrinksHasDrink14","GLOBAL",2)
       ~
       EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__round_1a__14
@@ -3099,7 +3118,8 @@ APPEND THUMB
     ~ THEN
       REPLY @6000900 /* Elminster's Choice. */
       DO ~
-        RemoveHasItem("_6WDR90")
+        TakePartyItem("_6WDR90")
+        DestroyItem("_6WDR90")
         SetGlobal("6W#ShithriDrinksHasDrink90","GLOBAL",2)
       ~
       EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__round_1a__90
@@ -3702,7 +3722,7 @@ APPEND 6WDRINK
 
     // if you know the drink, you'll recognize it now
     IF ~
-      PartyHasItem("_6WDR03b")
+      Global("6W#ShithriDrinksHasDrink03b","GLOBAL",1)
     ~ THEN
       REPLY @5020031 /* Tastes familiar. It's Golden Sands Gold. */
       DO ~
@@ -3745,7 +3765,7 @@ APPEND 6WDRINK
 
     // if you know the drink, you'll recognize it now
     IF ~
-      PartyHasItem("_6WDR03b")
+      Global("6W#ShithriDrinksHasDrink03b","GLOBAL",1)
     ~ THEN
       REPLY @5020031 /* Tastes familiar. It's Golden Sands Gold. */
       DO ~
@@ -4507,7 +4527,7 @@ APPEND 6WDRINK
 
     // if you heard of it, you'll recognize it
     IF ~
-      PartyHasItem("_6WDR08") // if you have it, Shithri told you about Special Vat
+      Global("6W#ShithriDrinksKnowDrinkSpecialVat","GLOBAL",1) // heard description of Special Vat
     ~ THEN
       REPLY @5020227 /* A wine that smells of a halfling pie. Beautiful. It's Saerloonian Special Vat. */
       DO ~
@@ -4559,7 +4579,7 @@ APPEND 6WDRINK
 
     // if you heard of it, you'll recognize it
     IF ~
-      PartyHasItem("_6WDR08") // if you have it, Shithri told you about Special Vat
+      Global("6W#ShithriDrinksKnowDrinkSpecialVat","GLOBAL",1) // heard description of Special Vat
     ~ THEN
       REPLY @5020234 /* A wine made with two fruits, one of which is raspberry. And something that changes the texture, but isn't nettle or any other green leaves. Could it be grains? And could the fruit be strawberry? That would be Saerloonian Special Vat then. */
       DO ~
@@ -4591,7 +4611,7 @@ You wake up from this little daydream. The duel. You should make a guess. Raspbe
 
     // if you heard of it, you'll recognize it
     IF ~
-      PartyHasItem("_6WDR08") // if you have it, Shithri told you about Special Vat
+      Global("6W#ShithriDrinksKnowDrinkSpecialVat","GLOBAL",1) // heard description of Special Vat
     ~ THEN
       REPLY @5020237 /* The taste and feel of summer pie. It is, indeed, very special. It's Saerloonian Special Vat. */
       DO ~

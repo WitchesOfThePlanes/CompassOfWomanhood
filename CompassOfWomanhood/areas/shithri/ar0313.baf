@@ -93,8 +93,9 @@ IF
   Global("6W#ShithriDrinksEnding","GLOBAL",1)
 THEN
   RESPONSE #100
-    SetGlobal("6W#ShithriDrinksEnding","GLOBAL",2)
     SetGlobal("6W#ShithriDrinksActive","GLOBAL",5) // quest done
+    SetGlobal("6W#ShithriDrinksEnding","GLOBAL",2)
+    SetGlobalTimer("6W#ShithriDrinksEndingComment","GLOBAL",ONE_HOUR)
     ClearAllActions()
     StartCutSceneMode()
     FadeToColor([20.0],0)
@@ -138,17 +139,9 @@ THEN
     EndCutSceneMode()
 END
 
-// Shithri may comment on the duel's result if she's in the party
+// Shithri may not comment on the duel's result if she's not in the party
 IF
-  Global("6W#ShithriDrinksEnding","GLOBAL",2)
-  IfValidForPartyDialog("6WSHITHRI")
-THEN
-  RESPONSE #100
-    SetGlobal("6W#ShithriDrinksEnding","GLOBAL",3)
-    ActionOverride("6WSHITHRI", StartDialog(Player1))
-END
-IF
-  Global("6W#ShithriDrinksEnding","GLOBAL",2)
+  GlobalTimerExpired("6W#ShithriDrinksEndingComment","GLOBAL")
 THEN
   RESPONSE #100
     SetGlobal("6W#ShithriDrinksEnding","GLOBAL",3)

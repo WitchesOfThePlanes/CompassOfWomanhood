@@ -670,12 +670,24 @@ Wybudzasz się z tego rozmarzenia. Pojedynek. Masz zgadywać. Maliny, truskawki 
 @5020302 = ~Powąchaj.~
 @5020303 = ~Skosztuj.~
 @5020304 = ~Poddaj rundę.~
-@5020305 = ~Znów spoglądasz w stronę kieliszka ciemnoczerwonego wina. Wydaje się zwyczajne.~
-@5020310 = ~Zauważasz, że Keldorn nagle pobladł. Spogląda na ciebie z obawą i wolno kręci głową.~
-@5020311 = ~Zauważasz, że Dorn się uśmiecha. I nie jest to uśmiech przypadkowy - dokładnie taki sam wyraz twarzy przybiera gdy tylko ukończy misję powierzoną mu przez jego patrona, Ur-Gothoza.~
-@5020312 = ~Zauważasz, że Dorn się uśmiecha. I nie jest to uśmiech przypadkowy - dokładnie taki sam wyraz twarzy przybiera gdy tylko ukończy misję powierzoną mu przez jego patronkę, Azothet.~
+@5020305 = ~Znów spoglądasz w stronę kieliszka ciemnoczerwonego wina.~
+@5020310 = ~Z jakiegoś powodu nagle czujesz satysfakcję. Przypomina ci to te momenty kiedy ukończysz zadanie dane ci od twego mrocznego patrona.~
+@5020311 = ~Na ułamek sekundy przechodzi cię złowrogi dreszcz. Nawet po tym jak minął, wciąż czujesz się nieco nieswojo względem lampki wina spoczywającej przed tobą.~
+@5020312 = ~Zauważasz, że Keldorn nagle pobladł. Spogląda na ciebie z obawą i wolno kręci głową.~
+@5020313 = ~Zauważasz, że Dorn się uśmiecha. I nie jest to uśmiech przypadkowy - dokładnie taki sam wyraz twarzy przybiera gdy tylko ukończy misję powierzoną mu przez jego patrona, Ur-Gothoza.~
+@5020314 = ~Zauważasz, że Dorn się uśmiecha. I nie jest to uśmiech przypadkowy - dokładnie taki sam wyraz twarzy przybiera gdy tylko ukończy misję powierzoną mu przez jego patronkę, Azothet.~
 @5020315 = ~Rzuć czar Wykrycie Zła.~
-@5020319 = ~Wyczuwasz potężną aurę emanującą wprost ze stojącego przed tobą kieliszka. Wino wyje do ciebie swym złem jak wiatr na wzgórzach.~
+@5020316 = ~„Mam nadzieję, że nie macie nic przeciwko bym wpierw się pomodlił?”~ ~„Mam nadzieję, że nie macie nic przeciwko bym wpierw się pomodliła?”~
+@5020317 = ~Tylko jedno wino może mieć tak potężną aurę zła. Takie, które opętały grzeszne dusze. Wino Krwawe.~
+@5020318 = ~Słyszałem o nim zbyt wiele opowieści by go nie rozpoznać. Uwarzone z winogron uschniętych od wpływu grzesznych dusz. To Wino Krwawe.~
+@5020320 = ~Wyczuwasz potężną aurę emanującą wprost ze stojącego przed tobą kieliszka. Wino wyje do ciebie swym złem jak wiatr na wzgórzach.~
+@5020321 = ~Ejże, co ty za czarostwa odprawiasz?~
+@5020322 = ~Sprawdzałem tylko, czy to wino aby nie jest przeklęte... i jest.~ ~Sprawdzałam tylko, czy to wino aby nie jest przeklęte... i jest.~
+@5020323 = ~Sędzia! Myślałem, że to miał być napitek, a nie przeklęty eliksir.~ ~Sędzia! Myślałam, że to miał być napitek, a nie przeklęty eliksir.~
+@5020325 = ~Hmm... Paluch dopuszcza taki czar. Ale nadal musisz zgadywać.~
+@5020326 = ~Ta. Paluch nic nie ma do modlitwy.~
+@5020330 = ~Gdy błogosławisz lampkę pośród potępieńczych jęków, wino nagle zmienia barwę. Jej czerwień stała się jasna i soczysta.~
+@5020331 = ~Wino wpierw koloru krwi zakrzepłej, lecz płacze i przypomina świeżą ranę gdy je błogosławić. To nie może być nic innego niż Wino Krwawe.~
 
 
 @5029900 = ~Punkt dla ciebie, <CHARNAME>!~

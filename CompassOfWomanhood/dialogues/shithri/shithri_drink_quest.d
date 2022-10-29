@@ -4798,42 +4798,96 @@ APPEND 6WDRINK
     // that character should be included here. Beware of the order.
     //
     // Only one companion should get a reaction here.
+
+    // If the PC is a paladin or blackguard, they will react too:
+    IF ~
+      Class(Player1,PALADIN_ALL)
+      !Kit(Player1,BLACKGUARD)
+    ~
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+        SetGlobal("6W#ShithriDrinksThisMaybeEvil","GLOBAL",1)
+        SetGlobal("6W#ShithriDrinksBloodWineSelf","GLOBAL",1)
+      ~
+      GOTO 6W#ShithriDrinksDuel__franky__blood_wine__paladin
+
+    IF ~
+      Kit(Player1,BLACKGUARD)
+    ~
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+        SetGlobal("6W#ShithriDrinksThisMaybeEvil","GLOBAL",1)
+        SetGlobal("6W#ShithriDrinksBloodWineSelf","GLOBAL",1)
+      ~
+      GOTO 6W#ShithriDrinksDuel__franky__blood_wine__blackguard
+  END
+  IF ~~ THEN 6W#ShithriDrinksDuel__franky__blood_wine__blackguard
+    SAY @5020310 /* For some reason, you suddenly feel very pleased. It reminds you of when you complete a task from your dark patron. */
+
+    IF ~~ THEN
+      GOTO 6W#ShithriDrinksDuel__franky__blood_wine__decide
+  END
+  IF ~~ THEN 6W#ShithriDrinksDuel__franky__blood_wine__paladin
+    SAY @5020311 /* For a split of a second, you get an eerie feeling. Even afterwards, you're a little uneasy looking at the glass before you. */
+
+    IF ~~ THEN
+      GOTO 6W#ShithriDrinksDuel__franky__blood_wine__decide
   END
   IF ~~ THEN 6W#ShithriDrinksDuel__franky__blood_wine__keldorn
-    SAY @5020310 /* You notice that Keldorn got pale. He looks at you with concern and slowly shakes his head. */
+    SAY @5020312 /* You notice that Keldorn got pale. He looks at you with concern and slowly shakes his head. */
 
     IF ~~ THEN
       GOTO 6W#ShithriDrinksDuel__franky__blood_wine__decide
   END
   IF ~~ THEN 6W#ShithriDrinksDuel__franky__blood_wine__dorn__urgothoz
-    SAY @5020311 /* You notice Dorn is smiling. And it's not just any smile - it's the very same facial expression he makes after completing a mission given to him by his patron, Ur-Gothoz. */
+    SAY @5020313 /* You notice Dorn is smiling. And it's not just any smile - it's the very same facial expression he makes after completing a mission given to him by his patron, Ur-Gothoz. */
 
     IF ~~ THEN
       GOTO 6W#ShithriDrinksDuel__franky__blood_wine__decide
   END
   IF ~~ THEN 6W#ShithriDrinksDuel__franky__blood_wine__dorn__azothet
-    SAY @5020312 /* You notice Dorn is smiling. And it's not just any smile - it's the very same facial expression he makes after completing a mission given to him by his patron, Azothet. */
+    SAY @5020314 /* You notice Dorn is smiling. And it's not just any smile - it's the very same facial expression he makes after completing a mission given to him by his patron, Azothet. */
 
     IF ~~ THEN
       GOTO 6W#ShithriDrinksDuel__franky__blood_wine__decide
   END
-  IF ~~ THEN 6W#ShithriDrinksDuel__franky__blood_wine__decide
-    SAY @5020305 /* You look again at the glass of deep-red wine. It seems normal. */
+
+  IF ~
+    Global("6W#ShithriDrinksPcRound","GLOBAL",2)
+    Global("6W#ShithriDrinksPcOption","GLOBAL",1)
+    // can get to this state from other states,
+    // so this condition isn't always met:
+    Global("6W#ShithriDrinksThisEvil","GLOBAL",1)
+  ~ THEN BEGIN 6W#ShithriDrinksDuel__franky__blood_wine__decide
+    SAY @5020305 /* You look again at the glass of deep-red wine. */
+
+    // If one can cast Bless or Chant, their WIS is probably high
+    // BUT 13 is the minimum for paladins, so requiring at least 14
+    // seems fair.
+    IF ~
+      Global("6W#ShithriDrinksThisEvil","GLOBAL",2)
+      CheckStatGT(Player1,13,WIS)
+      !Class(Player1,BARD_ALL)
+    ~
+      REPLY @5020317 /* Only one wine can have such a strong presence of evil in it. One posessed by sinful spirits. It's Blood Wine. */
+      DO ~
+        IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
+      ~
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
+    IF ~
+      Global("6W#ShithriDrinksThisEvil","GLOBAL",2)
+      Class(Player1,BARD_ALL)
+    ~
+      REPLY @5020318 /* I heard too many stories not to recognize it. Made from grapes shriveled by sinful spirits. It's Blood Wine. */
+      DO ~
+        IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
+      ~
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
 
     // you can simply cast Detect-Evil without asking anyone's permission
     IF ~
+      Global("6W#ShithriDrinksThisEvilSpell","GLOBAL",0)
       HaveSpellRES("SPCL212") // Paladin's innate DetectEvil
-    ~ THEN
-      REPLY @5020315 /* Cast Detect Evil. */
-      DO ~
-        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",2)
-        SetGlobal("6W#ShithriDrinksThisEvil","GLOBAL",1)
-        SetGlobal("6W#ShithriDrinksThisEvilSpell","GLOBAL",0)
-      ~
-      EXIT
-    IF ~
-      !HaveSpellRES("SPCL212") // Paladin's innate DetectEvil
-      HaveSpellRES("SPPR104") // Cleric spellbook's spell
     ~ THEN
       REPLY @5020315 /* Cast Detect Evil. */
       DO ~
@@ -4843,9 +4897,9 @@ APPEND 6WDRINK
       ~
       EXIT
     IF ~
+      Global("6W#ShithriDrinksThisEvilSpell","GLOBAL",0)
       !HaveSpellRES("SPCL212") // Paladin's innate DetectEvil
-      !HaveSpellRES("SPPR104") // Cleric spellbook's spell
-      HaveSpellRES("SPWI202")  // Wizard spellbook's spell
+      HaveSpellRES("SPPR104") // Cleric spellbook's spell
     ~ THEN
       REPLY @5020315 /* Cast Detect Evil. */
       DO ~
@@ -4854,6 +4908,43 @@ APPEND 6WDRINK
         SetGlobal("6W#ShithriDrinksThisEvilSpell","GLOBAL",2)
       ~
       EXIT
+    IF ~
+      Global("6W#ShithriDrinksThisEvilSpell","GLOBAL",0)
+      !HaveSpellRES("SPCL212") // Paladin's innate DetectEvil
+      !HaveSpellRES("SPPR104") // Cleric spellbook's spell
+      HaveSpellRES("SPWI202")  // Wizard spellbook's spell
+    ~ THEN
+      REPLY @5020315 /* Cast Detect Evil. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",2)
+        SetGlobal("6W#ShithriDrinksThisEvil","GLOBAL",1)
+        SetGlobal("6W#ShithriDrinksThisEvilSpell","GLOBAL",3)
+      ~
+      EXIT
+
+    IF ~
+      Global("6W#ShithriDrinksThisEvilSpell","GLOBAL",0)
+      HaveSpellRES("SPPR101") // Bless
+    ~ THEN
+      REPLY @5020316 /* "I hope you don't mind if I pray before making my guess?" */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",2)
+        SetGlobal("6W#ShithriDrinksThisEvil","GLOBAL",1)
+        SetGlobal("6W#ShithriDrinksThisEvilSpell","GLOBAL",4)
+      ~
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__franky__blood_wine__pray_ok
+    IF ~
+      Global("6W#ShithriDrinksThisEvilSpell","GLOBAL",0)
+      !HaveSpellRES("SPPR101") // Bless
+      HaveSpellRES("SPPR203")  // Chant
+    ~ THEN
+      REPLY @5020316 /* "I hope you don't mind if I pray before making my guess?" */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",2)
+        SetGlobal("6W#ShithriDrinksThisEvil","GLOBAL",1)
+        SetGlobal("6W#ShithriDrinksThisEvilSpell","GLOBAL",5)
+      ~
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__franky__blood_wine__pray_ok
 
     // default
     IF ~~ THEN
@@ -4962,11 +5053,153 @@ APPEND 6WDRINK
   IF ~
     Global("6W#ShithriDrinksPcRound","GLOBAL",2)
     Global("6W#ShithriDrinksPcOption","GLOBAL",1)
-    Global("6W#ShithriDrinksThisEvil","GLOBAL",2)
-  ~ THEN BEGIN 6W#ShithriDrinksDuel__franky__blood_wine__evil
-    SAY @5020319 /* You feel a powerful aura emanating from the glass right in front of you. The wine howls with evil like wind on a hill. */
+    Global("6W#ShithriDrinksThisEvil","GLOBAL",3)
+  ~ THEN 6W#ShithriDrinksDuel__franky__blood_wine__evil_scream
+    SAY @5020330 /* As you bless the glass among the hellish groaning, the wine suddenly changes its color. Now it's of a vivid red hue. */
 
-    //TODO:
+    // If one can cast Bless or Chant, their WIS is probably high
+    // BUT 13 is the minimum for paladins, so requiring at least 14
+    // seems fair.
+    IF ~
+      CheckStatGT(Player1,13,WIS)
+    ~ THEN
+      REPLY @5020331 /* A wine once of the color of clotted blood, but screams and resembles a fresh wound when blessed. It can't be anything but Blood Wine. */
+      DO ~
+        IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
+      ~
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
+
+    // default
+    IF ~~ THEN
+      REPLY @5020301 /* Take a better look. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      //TODO:
+      //GOTO 6W#ShithriDrinksDuel__franky__blood_wine__look
+      EXIT
+
+    // default
+    IF ~
+      !Class(Player1,PALADIN_ALL)
+    ~ THEN
+      REPLY @5020302 /* Smell it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      //TODO:
+      //GOTO 6W#ShithriDrinksDuel__franky__blood_wine__smell__default
+      EXIT
+    // paladins can sense evil
+    IF ~
+      Class(Player1,PALADIN_ALL)
+      !Kit(Player1,BLACKGUARD)
+    ~ THEN
+      REPLY @5020302 /* Smell it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      //TODO:
+      //GOTO 6W#ShithriDrinksDuel__franky__blood_wine__smell__paladin
+      EXIT
+    // blackguards can sense evil, but in a different way
+    IF ~
+      Class(Player1,PALADIN_ALL)
+      Kit(Player1,BLACKGUARD)
+    ~ THEN
+      REPLY @5020302 /* Smell it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      //TODO:
+      //GOTO 6W#ShithriDrinksDuel__franky__blood_wine__smell__blackguard
+      EXIT
+
+    // default
+    IF ~
+      !Class(Player1,PALADIN_ALL)
+      !Class(Player1,BARD_ALL)
+    ~ THEN
+      REPLY @5020303 /* Taste it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      //TODO:
+      //GOTO 6W#ShithriDrinksDuel__franky__blood_wine__taste__default
+      EXIT
+    // paladins will lose consciousness
+    IF ~
+      Class(Player1,PALADIN_ALL)
+      !Kit(Player1,BLACKGUARD)
+    ~ THEN
+      REPLY @5020303 /* Taste it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      //TODO:
+      //GOTO 6W#ShithriDrinksDuel__franky__blood_wine__taste__paladin
+      EXIT
+    // blackguard will feel like when contacting their patron
+    IF ~
+      Class(Player1,PALADIN_ALL)
+      Kit(Player1,BLACKGUARD)
+    ~ THEN
+      REPLY @5020303 /* Taste it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      //TODO:
+      //GOTO 6W#ShithriDrinksDuel__franky__blood_wine__taste__blackguard
+      EXIT
+    // bards will remember it
+    IF ~
+      !Class(Player1,PALADIN_ALL) // some mods may allow paladin-bard dual
+      Class(Player1,BARD_ALL)
+    ~ THEN
+      REPLY @5020303 /* Taste it. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      //TODO:
+      //GOTO 6W#ShithriDrinksDuel__franky__blood_wine__taste__bard
+      EXIT
+
+    IF ~~ THEN
+      REPLY @5020304 /* Forfeit the round. */
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",0)
+      ~
+      //TODO:
+      //EXTERN ~THUMB~ 6W#ShithriDrinksDuel__franky__blood_wine__forfeit
+      EXIT
+  END
+END
+
+CHAIN IF ~
+  Global("6W#ShithriDrinksPcRound","GLOBAL",2)
+  Global("6W#ShithriDrinksPcOption","GLOBAL",1)
+  Global("6W#ShithriDrinksThisEvil","GLOBAL",2)
+~ THEN 6WDRINK 6W#ShithriDrinksDuel__franky__blood_wine__evil
+  @5020320 /* You feel a powerful aura emanating from the glass right in front of you. The wine howls with evil like wind on a hill. */
+  == 6WPIRDR
+  @5020321 /* Oy, wha' ye doin' wit' that magics? */
+END
+  IF ~~ THEN
+    REPLY @5020322 /* It was just checking if it wasn't cursed... well, it is. */
+    EXTERN ~THUMB~ 6W#ShithriDrinksDuel__franky__blood_wine__spell_allowed
+  IF ~~ THEN
+    REPLY @5020323 /* Judge? I thought it was supposed to be a drink, not a cursed potion. */
+    EXTERN ~THUMB~ 6W#ShithriDrinksDuel__franky__blood_wine__spell_allowed
+
+APPEND THUMB
+  IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__franky__blood_wine__spell_allowed
+    SAY @5020325 /* Hmm... the Thumb be allowin' that spell. But ye still need t' guess. */
+    IF ~~ THEN
+      EXTERN ~6WDRINK~ 6W#ShithriDrinksDuel__franky__blood_wine__decide
+  END
+
+  IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__franky__blood_wine__pray_ok
+    SAY @5020326 /* Aye. The Thumb ain't be 'avin' nah problem wit' prayer. */
     IF ~~ THEN
       EXIT
   END
@@ -4978,20 +5211,22 @@ APPEND THUMB
     SAY @5029900 /* Point fer <CHARNAME>! */
 
     IF ~
-      GlobalLT("6W#ShithriDrinksRound","GLOBAL",1)
+      GlobalLT("6W#ShithriDrinksRound","GLOBAL",3)
     ~ THEN
-      // reset hints
       DO ~
+        // reset hints
         SetGlobal("6W#ShithriDrinksThisMaybeEvil","GLOBAL",0)
         SetGlobal("6W#ShithriDrinksThisEvil","GLOBAL",0)
         SetGlobal("6W#ShithriDrinksThisLook","GLOBAL",0)
         SetGlobal("6W#ShithriDrinksThisSmell","GLOBAL",0)
         SetGlobal("6W#ShithriDrinksThisTaste","GLOBAL",0)
+        // next round
+        IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
       ~
       GOTO 6W#ShithriDrinksDuel__pick_drink
 
     IF ~
-      Global("6W#ShithriDrinksRound","GLOBAL",1) // end of the duel!
+      Global("6W#ShithriDrinksRound","GLOBAL",3) // end of the duel!
     ~ THEN
       GOTO 6W#ShithriDrinksDuel__results
   END
@@ -5000,19 +5235,22 @@ APPEND THUMB
     SAY @5029910 /* No point fer ye. */
 
     IF ~
-      GlobalLT("6W#ShithriDrinksRound","GLOBAL",1)
+      GlobalLT("6W#ShithriDrinksRound","GLOBAL",3)
     ~ THEN
       DO ~
         // reset hints
+        SetGlobal("6W#ShithriDrinksThisMaybeEvil","GLOBAL",0)
+        SetGlobal("6W#ShithriDrinksThisEvil","GLOBAL",0)
         SetGlobal("6W#ShithriDrinksThisLook","GLOBAL",0)
         SetGlobal("6W#ShithriDrinksThisSmell","GLOBAL",0)
         SetGlobal("6W#ShithriDrinksThisTaste","GLOBAL",0)
+        // next round
         IncrementGlobal("6W#ShithriDrinksRound","GLOBAL",1)
       ~
       GOTO 6W#ShithriDrinksDuel__pick_drink
 
     IF ~
-      Global("6W#ShithriDrinksRound","GLOBAL",1) // end of the duel!
+      Global("6W#ShithriDrinksRound","GLOBAL",3) // end of the duel!
     ~ THEN
       GOTO 6W#ShithriDrinksDuel__results
   END

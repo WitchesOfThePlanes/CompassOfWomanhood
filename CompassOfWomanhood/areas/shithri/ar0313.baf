@@ -171,7 +171,7 @@ END
 IF
   GlobalGT("6W#ShithriDrinksPcRound","GLOBAL",0)
   Global("6W#ShithriDrinksThisEvil","GLOBAL",1)
-  Global("6W#ShithriDrinksThisEvilSpell","GLOBAL",0)
+  Global("6W#ShithriDrinksThisEvilSpell","GLOBAL",1)
 THEN
   RESPONSE #100
     ClearAllActions()
@@ -186,7 +186,7 @@ END
 IF
   GlobalGT("6W#ShithriDrinksPcRound","GLOBAL",0)
   Global("6W#ShithriDrinksThisEvil","GLOBAL",1)
-  Global("6W#ShithriDrinksThisEvilSpell","GLOBAL",1)
+  Global("6W#ShithriDrinksThisEvilSpell","GLOBAL",2)
 THEN
   RESPONSE #100
     ClearAllActions()
@@ -201,7 +201,7 @@ END
 IF
   GlobalGT("6W#ShithriDrinksPcRound","GLOBAL",0)
   Global("6W#ShithriDrinksThisEvil","GLOBAL",1)
-  Global("6W#ShithriDrinksThisEvilSpell","GLOBAL",2)
+  Global("6W#ShithriDrinksThisEvilSpell","GLOBAL",3)
 THEN
   RESPONSE #100
     ClearAllActions()
@@ -209,6 +209,40 @@ THEN
     ActionOverride(Player1,SpellRES("SPWI202",Myself))
     Wait(4)
     SetGlobal("6W#ShithriDrinksThisEvil","GLOBAL",2)
+    EndCutSceneMode()
+
+    ActionOverride(Player1,StartDialog("6WDRINK",Player1))
+END
+IF
+  GlobalGT("6W#ShithriDrinksPcRound","GLOBAL",0)
+  Global("6W#ShithriDrinksThisEvil","GLOBAL",1)
+  Global("6W#ShithriDrinksThisEvilSpell","GLOBAL",4)
+THEN
+  RESPONSE #100
+    ClearAllActions()
+    StartCutSceneMode()
+    ActionOverride(Player1,SpellRES("SPPR101",Myself))
+    Wait(7)
+    PlaySound("EFF_M89")
+    Wait(3)
+    SetGlobal("6W#ShithriDrinksThisEvil","GLOBAL",3)
+    EndCutSceneMode()
+
+    ActionOverride(Player1,StartDialog("6WDRINK",Player1))
+END
+IF
+  GlobalGT("6W#ShithriDrinksPcRound","GLOBAL",0)
+  Global("6W#ShithriDrinksThisEvil","GLOBAL",1)
+  Global("6W#ShithriDrinksThisEvilSpell","GLOBAL",5)
+THEN
+  RESPONSE #100
+    ClearAllActions()
+    StartCutSceneMode()
+    ActionOverride(Player1,SpellRES("SPPR203",Myself))
+    Wait(7)
+    PlaySound("EFF_M89")
+    Wait(3)
+    SetGlobal("6W#ShithriDrinksThisEvil","GLOBAL",3)
     EndCutSceneMode()
 
     ActionOverride(Player1,StartDialog("6WDRINK",Player1))

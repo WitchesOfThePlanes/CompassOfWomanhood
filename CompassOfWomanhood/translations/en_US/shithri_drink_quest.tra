@@ -669,12 +669,24 @@ You wake up from this little daydream. The duel. You should make a guess. Raspbe
 @5020302 = ~Smell it.~
 @5020303 = ~Taste it.~
 @5020304 = ~Forfeit the round.~
-@5020305 = ~You look again at the glass of deep-red wine. It seems normal.~
-@5020310 = ~You notice that Keldorn got pale. He looks at you with concern and slowly shakes his head.~
-@5020311 = ~You notice Dorn is smiling. And it's not just any smile - it's the very same facial expression he makes after completing a mission given to him by his patron, Ur-Gothoz.~
-@5020312 = ~You notice Dorn is smiling. And it's not just any smile - it's the very same facial expression he makes after completing a mission given to him by his patron, Azothet.~
+@5020305 = ~You look again at the glass of deep-red wine.~
+@5020310 = ~For some reason, you suddenly feel very pleased. It reminds you of when you complete a task from your dark patron.~
+@5020311 = ~For a split of a second, you get an eerie feeling. Even afterwards, you're a little uneasy looking at the glass before you.~
+@5020312 = ~You notice that Keldorn got pale. He looks at you with concern and slowly shakes his head.~
+@5020313 = ~You notice Dorn is smiling. And it's not just any smile - it's the very same facial expression he makes after completing a mission given to him by his patron, Ur-Gothoz.~
+@5020314 = ~You notice Dorn is smiling. And it's not just any smile - it's the very same facial expression he makes after completing a mission given to him by his patron, Azothet.~
 @5020315 = ~Cast Detect Evil.~
-@5020319 = ~You feel a powerful aura emanating from the glass right in front of you. The wine howls with evil like wind on a hill.~
+@5020316 = ~"I hope you don't mind if I pray before making my guess?"~
+@5020317 = ~Only one wine can have such a strong presence of evil in it. One posessed by sinful spirits. It's Blood Wine.~
+@5020318 = ~I heard too many stories not to recognize it. Made from grapes shriveled by sinful spirits. It's Blood Wine.~
+@5020320 = ~You feel a powerful aura emanating from the glass right in front of you. The wine howls with evil like wind on a hill.~
+@5020321 = ~Oy, wha' ye doin' wit' that magics?~
+@5020322 = ~It was just checking if it wasn't cursed... well, it is.~
+@5020323 = ~Judge? I thought it was supposed to be a drink, not a cursed potion.~
+@5020325 = ~Hmm... the Thumb be allowin' that spell. But ye still need t' guess.~
+@5020326 = ~Aye. The Thumb ain't be 'avin' nah problem wit' prayer.~
+@5020330 = ~As you bless the glass among the hellish groaning, the wine suddenly changes its color. Now it's of a vivid red hue.~
+@5020331 = ~A wine once of the color of clotted blood, but screams and resembles a fresh wound when blessed. It can't be anything but Blood Wine.~
 
 
 @5029900 = ~Point fer <CHARNAME>!~

@@ -2575,6 +2575,9 @@ APPEND 6WPIRDR
   IF ~~ THEN 6W#ShithriDrinksSeaman__wasting_time
     SAY @5000030 /* I bet ye do, lubber! Pff. Shithri, mate, if ye reconsider - ye know where t' find me. */
     IF ~~ THEN
+      UNSOLVED_JOURNAL @9000015 /* Shithri-inspired liquor collection
+
+We met Shithri's old friend, Franky the Eye-Popper, in Sea's Bounty tavern. He insulted me, probably looking for a fight, but I won't waste my time on an old drunkard. */
       DO ~
         SetGlobal("6W#ShithriDrinksActive","GLOBAL",3)
       ~
@@ -2612,6 +2615,9 @@ APPEND 6WPIRDR
   IF ~~ THEN 6W#ShithriDrinksSeaman__not_your_concern
     SAY @5000050 /* Aye, it ain't. *gulp* Good luck wit' yer lubbin' then. Shithri, mate, if ye reconsider - ye know where t' find me. */
     IF ~~ THEN
+      UNSOLVED_JOURNAL @9000015 /* Shithri-inspired liquor collection
+
+We met Shithri's old friend, Franky the Eye-Popper, in Sea's Bounty tavern. He insulted me, probably looking for a fight, but I won't waste my time on an old drunkard. */
       DO ~
         SetGlobal("6W#ShithriDrinksActive","GLOBAL",3)
       ~
@@ -2651,6 +2657,9 @@ APPEND 6WPIRDR
 
     IF ~~ THEN
       REPLY @5000082 /* Bring it on, Franky the Popped-Eye! */
+      UNSOLVED_JOURNAL @9000016 /* Shithri-inspired liquor collection
+
+  We met Shithri's old friend, Franky the Eye-Popper, in Sea's Bounty tavern. He insulted me, so we got into a serious fight. And not just for words. */
       DO ~
         SetGlobal("6W#ShithriDrinksActive","GLOBAL",3)
         Enemy()
@@ -2678,6 +2687,9 @@ APPEND 6WPIRDR
   IF ~~ THEN 6W#ShithriDrinksSeaman__all_talk
     SAY @5000095 /* Huh! Thought so - ye jus' all talk. *gulp* Good luck wit' yer lubbin' then. Shithri, matey, if ye reconsider - ye know where t' find me. */
     IF ~~ THEN
+      UNSOLVED_JOURNAL @9000015 /* Shithri-inspired liquor collection
+
+We met Shithri's old friend, Franky the Eye-Popper, in Sea's Bounty tavern. He insulted me, probably looking for a fight, but I won't waste my time on an old drunkard. */
       DO ~
         SetGlobal("6W#ShithriDrinksActive","GLOBAL",3)
       ~
@@ -2711,6 +2723,9 @@ APPEND 6WPIRDR
 
     IF ~~ THEN
       REPLY @5000111 /* Fine. I accept your rules. */
+      UNSOLVED_JOURNAL @9000010 /* Shithri-inspired liquor collection
+
+We met Shithri's old friend, Franky the Eye-Popper, in Sea's Bounty tavern. He dared to suggest I know nothing about fine liquors, so I got him to challenge me for a duel. If I lose, I'll need to pay 5000 gold pieces. */
       DO ~
         SetGlobal("6W#ShithriDrinksActive","GLOBAL",2)
       ~
@@ -2750,6 +2765,9 @@ APPEND 6WSHITJ
 
     IF ~~ THEN
       REPLY @5000126 /* Well, in that case... Hey, Franky! I will pick what I want then I win, after all. I accept your rules. */
+      UNSOLVED_JOURNAL @9000011 /* Shithri-inspired liquor collection
+
+We met Shithri's old friend, Franky the Eye-Popper, in Sea's Bounty tavern. He dared to suggest I know nothing about fine liquors, so I got him to challenge me for a duel. If I lose, I must pay him 5000 gold pieces. If I win, I'll pick my reward. */
       DO ~
         SetGlobal("6W#ShithriDrinksActive","GLOBAL",2)
         SetGlobal("6W#ShithriDrinksStakes","GLOBAL",1)
@@ -2768,6 +2786,9 @@ APPEND 6WPIRDR
 
     IF ~~ THEN
       REPLY @5000111 /* Fine. I accept your rules. */
+      UNSOLVED_JOURNAL @9000012 /* Shithri-inspired liquor collection
+
+We met Shithri's old friend, Franky the Eye-Popper, in Sea's Bounty tavern. He dared to suggest I know nothing about fine liquors, so I got him to challenge me for a duel. The loser pays the winner 5000 gold pieces. */
       DO ~
         SetGlobal("6W#ShithriDrinksActive","GLOBAL",2)
         SetGlobal("6W#ShithriDrinksStakes","GLOBAL",2)
@@ -5999,8 +6020,11 @@ APPEND 6WPIRDR
   IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__results__draw__lucky
     SAY @5030131 /* Lucky? Har har! Prove me worse then, next time we meet. Until then! */
     IF ~~ THEN
+      SOLVED_JOURNAL @9000020 /* Shithri-inspired liquor collection
+
+My duel with Franky the Eye-Popper ended in a draw. I think he just got lucky. */
       DO ~
-        //TODO add XP, journal entry etc
+        AddExperienceParty(33000)
         SetGlobal("6W#ShithriDrinksEnding","GLOBAL",1)
       ~
       EXIT
@@ -6008,8 +6032,11 @@ APPEND 6WPIRDR
   IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__results__draw__ok
     SAY @5030111 /* Maybe we'll get a rematch next time we meet. Until then! */
     IF ~~ THEN
+      SOLVED_JOURNAL @9000020 /* Shithri-inspired liquor collection
+
+My duel with Franky the Eye-Popper ended in a draw. I think he just got lucky. */
       DO ~
-        //TODO add XP, journal entry etc
+        AddExperienceParty(33000)
         SetGlobal("6W#ShithriDrinksEnding","GLOBAL",1)
       ~
       EXIT
@@ -6039,8 +6066,11 @@ CHAIN THUMB 6W#ShithriDrinksDuel__results__pir
 END
   IF ~~ THEN
     REPLY @5030210 /* Good match. Here is your reward. */
-    //TODO: update journal etc
+    SOLVED_JOURNAL @9000030 /* Shithri-inspired liquor collection
+
+I lost my duel with Franky the Eye-Popper. I had to give him 5000 gold pieces, as promised. */
     DO ~
+      AddExperienceParty(25000)
       TakePartyGold(5000)
     ~
     EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__results__pir__nice
@@ -6070,8 +6100,11 @@ APPEND 6WPIRDR
     SAY @5030221 /* Har har! Ye a sore loser, lubber! Now. Laughs aside - me gold. */
     IF ~~ THEN
       REPLY @5030222 /* Here it is. */
-      //TODO: update journal etc
+      SOLVED_JOURNAL @9000030 /* Shithri-inspired liquor collection
+
+I lost my duel with Franky the Eye-Popper. I had to give him 5000 gold pieces, as promised. */
       DO ~
+        AddExperienceParty(25000)
         TakePartyGold(5000)
       ~
       GOTO 6W#ShithriDrinksDuel__results__pir__nice
@@ -6084,6 +6117,13 @@ APPEND 6WPIRDR
     SAY @5030241 /* Ye deaf or wha'? Ownin' me 5000 gold pieces, remember? */
     IF ~~ THEN
       REPLY @5030242 /* Sure, take it. */
+      SOLVED_JOURNAL @9000030 /* Shithri-inspired liquor collection
+
+I lost my duel with Franky the Eye-Popper. I had to give him 5000 gold pieces, as promised. */
+      DO ~
+        AddExperienceParty(25000)
+        TakePartyGold(5000)
+      ~
       GOTO 6W#ShithriDrinksDuel__results__pir__nice
     IF ~~ THEN
       REPLY @5030243 /* Ah. That gold. I don't feel like giving it to you. */
@@ -6097,13 +6137,21 @@ APPEND 6WPIRDR
 
     IF ~~ THEN
       REPLY @5030252 /* Ok, ok. Take my gold then. */
+      SOLVED_JOURNAL @9000030 /* Shithri-inspired liquor collection
+
+I lost my duel with Franky the Eye-Popper. I had to give him 5000 gold pieces, as promised. */
       DO ~
+        AddExperienceParty(25000)
         TakePartyGold(5000)
       ~
       GOTO 6W#ShithriDrinksDuel__results__pir__nice
     IF ~~ THEN
       REPLY @5030253 /* I don't care what you tell about me. I'm not parting with my gold. */
+      SOLVED_JOURNAL @9000031 /* Shithri-inspired liquor collection
+
+I lost my duel with Franky the Eye-Popper, but I refused to pay him. He warned me that the Thumb won't like it, but why should I care? */
       DO ~
+        AddExperienceParty(17000)
         SetGlobal("6W#SeaBountyCheater","GLOBAL",1)
         ReputationInc(-1)
       ~
@@ -6297,8 +6345,11 @@ APPEND 6WPIRDR
   IF ~~ THEN 6W#ShithriDrinksDuel__results__pc_reward_gold
     SAY @5030351 /* ...fine. Capt'n will kill me, but debt be debt. Here be yer 5000 gold pieces. Now good day t' ye. */
     IF ~~ THEN
-      //TODO: journal entry etc.
+      SOLVED_JOURNAL @9000040 /* Shithri-inspired liquor collection
+
+I won my duel with Franky the Eye-Popper. He wasn't too happy about paying me my reward, but he kept his word. */
       DO ~
+        AddExperienceParty(50000)
         GiveGoldForce(5000)
         SetGlobal("6W#ShithriDrinksEnding","GLOBAL",1)
         SetGlobal("6W#ShithriDrinksReward","GLOBAL",1) // gold
@@ -6336,8 +6387,11 @@ APPEND 6WPIRDR
   IF ~~ THEN 6W#ShithriDrinksDuel__results__pc_reward_cutlass
     SAY @5030370 /* Me cutlass? Sure, take it. Got plenty more on the ship. Now good day t' ye. */
     IF ~~ THEN
-      //TODO: journal entry etc.
+      SOLVED_JOURNAL @9000041 /* Shithri-inspired liquor collection
+
+I won my duel with Franky the Eye-Popper. I picked his cutlass for my reward. Looks like a good weapon to me. */
       DO ~
+        AddExperienceParty(50000)
         GiveItem("6WSAB01",Player1)
         SetGlobal("6W#ShithriDrinksEnding","GLOBAL",1)
         SetGlobal("6W#ShithriDrinksReward","GLOBAL",2) // cutlass
@@ -6360,8 +6414,11 @@ APPEND 6WPIRDR
   IF ~~ THEN 6W#ShithriDrinksDuel__results__pc_reward_bandana__male
     SAY @5030381 /* Oh. I see. Ye cruel, cruel man. Fine, debt be debt. Take it. */
     IF ~~ THEN
-      //TODO: journal entry etc.
+      SOLVED_JOURNAL @9000042 /* Shithri-inspired liquor collection
+
+I won my duel with Franky the Eye-Popper. Remembering how he insulted me, I demanded the thing he values the most: his bandana. He did call me cruel, so I guess it worked as I wanted. */
       DO ~
+        AddExperienceParty(50000)
         // GiveItemCreate("_6WBANDA", Player1, 0, 0, 0)
         SetGlobal("6W#ShithriDrinksEnding","GLOBAL",1)
         SetGlobal("6W#ShithriDrinksReward","GLOBAL",3) // bandana
@@ -6371,8 +6428,11 @@ APPEND 6WPIRDR
   IF ~~ THEN 6W#ShithriDrinksDuel__results__pc_reward_bandana__female
     SAY @5030382 /* Oh. I see. Ye cruel, cruel woman. Fine, debt be debt. Take it. */
     IF ~~ THEN
-      //TODO: journal entry etc.
+      SOLVED_JOURNAL @9000043 /* Shithri-inspired liquor collection
+
+I won my duel with Franky the Eye-Popper. Remembering how he insulted me, I demanded the thing he values the most: his bandana. He did call me cruel, so I guess it worked as I wanted. */
       DO ~
+        AddExperienceParty(50000)
         // GiveItemCreate("_6WBANDA", Player1, 0, 0, 0)
         SetGlobal("6W#ShithriDrinksEnding","GLOBAL",1)
         SetGlobal("6W#ShithriDrinksReward","GLOBAL",3) // bandana

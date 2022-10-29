@@ -617,7 +617,12 @@ ADD_JOURNAL MANAGED
   USING ~CompassOfWomanhood/translations/%LANGUAGE%/shithri_brynnlaw.tra~
 OUTER_SET file_num += 11
 
-ADD_JOURNAL MANAGED @9000000
+ADD_JOURNAL MANAGED
+  @9000000
+  @9000010 @9000011 @9000012 @9000015 @9000016
+  @9000020
+  @9000030 @9000031
+  @9000040 @9000041 @9000042 @9000043
   USING ~CompassOfWomanhood/translations/%LANGUAGE%/shithri_drink_quest.tra~
 OUTER_SET file_num += 1
 

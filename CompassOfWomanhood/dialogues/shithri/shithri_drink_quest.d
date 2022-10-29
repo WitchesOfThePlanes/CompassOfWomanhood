@@ -137,7 +137,7 @@ Per Shithri's suggestion, I decided to give a try to fine liquor collecting. I n
   IF ~~ THEN BEGIN 6W#shithri_drinks_start__aye_aye
     SAY @1000037 /* Aye aye, capt'n! Set sail fer liqies! */
     IF ~~ THEN
-      DO ~SetGlobal("6W#ShithriDrinksProgress","GLOBAL",1)~
+      DO ~SetGlobal("6W#ShithriDrinksActive","GLOBAL",1)~
       EXIT
   END
 
@@ -156,7 +156,7 @@ Per Shithri's suggestion, I decided to give a try to fine liquor collecting. I n
   IF ~
     IsGabber(Player1)
     Global("6W#ShithriDrinksStart","GLOBAL",4)
-    Global("6W#ShithriDrinksProgress","GLOBAL",0)
+    Global("6W#ShithriDrinksActive","GLOBAL",0)
   ~ THEN BEGIN 6W#shithri_drinks_start__1
     SAY @1000050 /* Ho, capt'n. Ye ready t' answer the liqie call? */
 
@@ -176,7 +176,7 @@ Per Shithri's suggestion, I decided to give a try to fine liquor collecting. I n
   IF ~~ THEN BEGIN 6W#shithri_drinks_start__good
     SAY @1000054 /* Good! Set sail fer liqies! */
     IF ~~ THEN
-      DO ~SetGlobal("6W#ShithriDrinksProgress","GLOBAL",1)~
+      DO ~SetGlobal("6W#ShithriDrinksActive","GLOBAL",1)~
       EXIT
   END
 END

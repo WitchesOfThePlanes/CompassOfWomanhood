@@ -3530,7 +3530,6 @@ APPEND THUMB
         RandomNum(2,1)
     ~ THEN
       DO ~
-        SetGlobal("6W#ShithriDrinksHasDrink03b","GLOBAL",2)
         SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",1)
         SetGlobal("6W#ShithriDrinksPcOption","GLOBAL",0)
         MoveViewObject(Myself,INSTANT)
@@ -3545,7 +3544,6 @@ APPEND THUMB
         RandomNum(2,2)
     ~
       DO ~
-        SetGlobal("6W#ShithriDrinksHasDrink08","GLOBAL",2)
         SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",1)
         SetGlobal("6W#ShithriDrinksPcOption","GLOBAL",1)
         MoveViewObject(Myself,INSTANT)
@@ -3704,6 +3702,7 @@ APPEND 6WDRINK
       REPLY @5020026 /* Clear, golden lager which smells of nettles. It's Golden Sands Gold. */
       DO ~
         IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
+        SetGlobal("6W#ShithriDrinksHasDrink03b","GLOBAL",2)
       ~
       EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
 
@@ -3727,18 +3726,22 @@ APPEND 6WDRINK
       REPLY @5020031 /* Tastes familiar. It's Golden Sands Gold. */
       DO ~
         IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
+        SetGlobal("6W#ShithriDrinksHasDrink03b","GLOBAL",2)
       ~
       EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
 
     // a non-druid may mistake its sharp and refreshing taste for Golden Sands Basic
     IF ~
-      Global("6W#ShithriDrinksHasDrink03a","GLOBAL",1)
+      OR(2)
+        Global("6W#ShithriDrinksHasDrink03a","GLOBAL",1)
+        Global("6W#ShithriDrinksHasDrink03a","GLOBAL",2) // Franky doesn't use it, so 2 implies it was already used
     ~ THEN
       REPLY @5020032 /* Tastes familiar. It's Golden Sands Basic. */
       DO ~
         IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
+        SetGlobal("6W#ShithriDrinksHasDrink03b","GLOBAL",2)
       ~
-      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
+      EXTERN ~THUMB~ 6W#ShithriDrinksDuel__franky__golden_sands_gold__forfeit
 
     IF ~~ THEN
       REPLY @5020001 /* Take a better look. */
@@ -3760,6 +3763,7 @@ APPEND 6WDRINK
       REPLY @5020036 /* Clear, golden lager with nettles and some kind of foreign fruit - probably cacti. It's Golden Sands Gold. */
       DO ~
         IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
+        SetGlobal("6W#ShithriDrinksHasDrink03b","GLOBAL",2)
       ~
       EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
 
@@ -3770,6 +3774,7 @@ APPEND 6WDRINK
       REPLY @5020031 /* Tastes familiar. It's Golden Sands Gold. */
       DO ~
         IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
+        SetGlobal("6W#ShithriDrinksHasDrink03b","GLOBAL",2)
       ~
       EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
 
@@ -3788,6 +3793,9 @@ APPEND THUMB
   IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__franky__golden_sands_gold__forfeit
     SAY @5020040 /* It's Calimshan's pride's northern version. Golden Sands Gold. */
     IF ~~ THEN
+      DO ~
+        SetGlobal("6W#ShithriDrinksHasDrink03b","GLOBAL",2)
+      ~
       GOTO 6W#ShithriDrinksDuel__pc_no_point
   END
 END
@@ -3948,6 +3956,7 @@ APPEND 6WDRINK
       REPLY @5020116 /* A dry wine from a western forest. Most famously, Cormyr fits that. And which Cormyrean city is the most known for dry red wines? Arabel. That would be Arabellan Dry then. */
       DO ~
         IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
+        SetGlobal("6W#ShithriDrinksHasDrink08","GLOBAL",2)
       ~
       EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
 
@@ -4081,6 +4090,7 @@ APPEND 6WDRINK
       REPLY @5020126 /* A dark red wine with a hint of berries. It's Arabellan Dry. */
       DO ~
         IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
+        SetGlobal("6W#ShithriDrinksHasDrink08","GLOBAL",2)
       ~
       EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
 
@@ -4146,6 +4156,7 @@ APPEND 6WDRINK
       REPLY @5020131 /* Tastes familiar. It's Arabellan Dry. */
       DO ~
         IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
+        SetGlobal("6W#ShithriDrinksHasDrink08","GLOBAL",2)
       ~
       EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
 
@@ -4189,6 +4200,7 @@ APPEND 6WDRINK
       REPLY @5020134 /* I know it well, it's one of the first liquors I've had, back in good Candlekeep. It's Arabellan Dry. */
       DO ~
         IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
+        SetGlobal("6W#ShithriDrinksHasDrink08","GLOBAL",2)
       ~
       EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
 
@@ -4197,6 +4209,7 @@ APPEND 6WDRINK
       REPLY @5020135 /* How could I ever forget the very taste of adventure? It's the wine I had in Friendly Arm Inn, the first one I stayed at after leaving Candlekeep. Arabellan Dry. */
       DO ~
         IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
+        SetGlobal("6W#ShithriDrinksHasDrink08","GLOBAL",2)
       ~
       EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
 
@@ -4207,6 +4220,7 @@ APPEND 6WDRINK
       REPLY @5020131 /* Tastes familiar. It's Arabellan Dry. */
       DO ~
         IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
+        SetGlobal("6W#ShithriDrinksHasDrink08","GLOBAL",2)
       ~
       EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
 
@@ -4253,6 +4267,7 @@ APPEND 6WDRINK
       REPLY @5020116 /* A dry wine from a western forest. Most famously, Cormyr fits that. And which Cormyrean city is the most known for dry red wines? Anabel. That would be Arabellan Dry then. */
       DO ~
         IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
+        SetGlobal("6W#ShithriDrinksHasDrink08","GLOBAL",2)
       ~
       EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
 
@@ -4263,6 +4278,7 @@ APPEND 6WDRINK
       REPLY @5020126 /* A dark red wine with a hint of berries. It's Arabellan Dry. */
       DO ~
         IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
+        SetGlobal("6W#ShithriDrinksHasDrink08","GLOBAL",2)
       ~
       EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
 
@@ -4273,6 +4289,7 @@ APPEND 6WDRINK
       REPLY @5020131 /* Tastes familiar. It's Arabellan Dry. */
       DO ~
         IncrementGlobal("6#ShithriDrinksPirPoints","GLOBAL",-1)
+        SetGlobal("6W#ShithriDrinksHasDrink08","GLOBAL",2)
       ~
       EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pc_point
 
@@ -4322,6 +4339,9 @@ APPEND THUMB
   IF ~~ THEN BEGIN 6W#ShithriDrinksDuel__franky__arabellan_dry__forfeit
     SAY @5020140 /* It's Cormyr's pride, Arabellan Dry. */
     IF ~~ THEN
+      DO ~
+        SetGlobal("6W#ShithriDrinksHasDrink08","GLOBAL",2)
+      ~
       GOTO 6W#ShithriDrinksDuel__pc_no_point
   END
 END

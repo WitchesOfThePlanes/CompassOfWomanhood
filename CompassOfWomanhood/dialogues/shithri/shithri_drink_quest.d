@@ -6097,6 +6097,9 @@ APPEND 6WPIRDR
 
     IF ~~ THEN
       REPLY @5030252 /* Ok, ok. Take my gold then. */
+      DO ~
+        TakePartyGold(5000)
+      ~
       GOTO 6W#ShithriDrinksDuel__results__pir__nice
     IF ~~ THEN
       REPLY @5030253 /* I don't care what you tell about me. I'm not parting with my gold. */

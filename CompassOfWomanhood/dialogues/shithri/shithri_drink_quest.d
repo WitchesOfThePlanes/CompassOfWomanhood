@@ -433,6 +433,16 @@ EXTEND_BOTTOM THUMB 1
     REPLY @2020000 /* Any bottled liquors in your offer? */
     GOTO bottled_liquors
 END
+EXTEND_BOTTOM THUMB 2
+  IF ~
+    IsGabber(Player1)
+    IfValidForPartyDialogue("6WSHITHRI")
+    InMyArea("6WSHITHRI")
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
+  ~ THEN
+    REPLY @2020000 /* Any bottled liquors in your offer? */
+    GOTO bottled_liquors
+END
 EXTEND_BOTTOM THUMB 3
   IF ~
     IsGabber(Player1)

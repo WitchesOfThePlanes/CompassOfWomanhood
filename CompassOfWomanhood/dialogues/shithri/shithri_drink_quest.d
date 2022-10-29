@@ -3533,24 +3533,23 @@ APPEND THUMB
       EXIT
 
     // -- Round Two --
-    // Franky picks something a bit more challenging:
-    // Saerloonian Special Vat (can be recognized thanks
-    // to Shithri's clues) and Blood Wine (multiple classes
-    // could recognize it).
-    //IF ~
-    //  Global("6W#ShithriDrinksRound","GLOBAL",2)
-    //  RandomNum(2,1)
-    //~ THEN
-    //  DO ~
-    //    SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",2)
-    //    SetGlobal("6W#ShithriDrinksPcOption","GLOBAL",0)
-    //    MoveViewObject(Myself,INSTANT)
-    //  ~
-    //  EXIT
-
+    // Franky picks something you don't know, but at least
+    // Shithri mentioned it before.
     IF ~
       Global("6W#ShithriDrinksRound","GLOBAL",2)
-      //RandomNum(2,2)
+    ~ THEN
+      DO ~
+        SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",2)
+        SetGlobal("6W#ShithriDrinksPcOption","GLOBAL",0)
+        MoveViewObject(Myself,INSTANT)
+      ~
+      EXIT
+
+    // -- Round Three --
+    // Franky picks something he's convinced is very rare and difficult
+    // to guess. Shithri didn't mention them to you.
+    IF ~
+      Global("6W#ShithriDrinksRound","GLOBAL",3)
     ~ THEN
       DO ~
         SetGlobal("6W#ShithriDrinksPcRound","GLOBAL",2)
@@ -3559,20 +3558,14 @@ APPEND THUMB
       ~
       EXIT
 
-    // // -- Round Three --
-    // // Franky picks something he's convinced is very rare and difficult
-    // // to guess.
-    // //
-    // // These drinks may have only one way to solve them, such as class,
-    // // ability or lore check.
-    // IF ~~ THEN
-    //   GOTO 6W#ShithriDrinksDuel__franky__wheelon_spruce_beer
-
-    // IF ~~ THEN
-    //   GOTO 6W#ShithriDrinksDuel__franky__thayan_red
-
-    // IF ~~ THEN
-    //   GOTO 6W#ShithriDrinksDuel__franky__mint_wine
+    // Note:
+    // Original idea was to made Saerloonian Special Vat and Blood Wine
+    // random alternatives for round two, and round three consisting of:
+    // ~ Wheelon Spruce Beer
+    // ~ Thayan Red
+    // ~ Mint Wine
+    //
+    // Those could be introduced later on.
   END
 END
 

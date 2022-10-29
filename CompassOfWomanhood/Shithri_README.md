@@ -249,7 +249,7 @@ Słowniczek:
  * szur, szurek - młody chłopak
  * szurać, szurnąć - zaczepiać kogoś, "podskakiwać" komuś
  * ślipić - patrzeć, oglądać
- * tangi - silny
+ * tangi - tęgi, silny
  * typ / typiara - osoba podejrzana lub nie ciesząca się dobrą opinią
  * truneczek - napój alkoholowy, zwłaszcza dobry
  * wachta - czas pełnienia służby na statku, z grubsza: "zmiana"; Shithri używa czasami także w znaczeniu "służba", "czuwanie" lub "warta"

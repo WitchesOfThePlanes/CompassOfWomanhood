@@ -6518,7 +6518,7 @@ APPEND 6WSHITJ
 
   IF ~
     Global("6W#ShithriDrinksEnding","GLOBAL",2)
-    GlobalLT("6#ShithriDrinksPirPoints","GLOBAL",0) // lost
+    GlobalGT("6#ShithriDrinksPirPoints","GLOBAL",0) // lost
   ~ THEN BEGIN 6W#shithri_drinks__result_comment__lost
     SAY @5040100 /* See, capt'n? Told ye it be worth the hussle! Ye gave a good fight! */
 
@@ -6537,7 +6537,7 @@ APPEND 6WSHITJ
 
   IF ~
     Global("6W#ShithriDrinksEnding","GLOBAL",2)
-    GlobalGT("6#ShithriDrinksPirPoints","GLOBAL",0) // win
+    GlobalLT("6#ShithriDrinksPirPoints","GLOBAL",0) // win
   ~ THEN BEGIN 6W#shithri_drinks__result_comment__win
     SAY @5040200 /* See, capt'n? Told ye it be worth the hussle! Wha' a win! */
 

@@ -21,7 +21,7 @@
 @1000033 = ~Ta! I to dobry, arrr. Kurs na truneczki!~
 @1000034 = ~Myśmy so w Amn, kapitanie. Wiele tu miejsc z fejnymi truneczkami. Czemu tyko w jednym brać?~
 @1000035 = ~Dobrze mówisz. Zabierajmy się do pra... to znaczy - przyjemności!~
-@1000036 = ~Bo to miała być przyjemnosć, a nie praca?~
+@1000036 = ~Bo to miała być przyjemność, a nie praca?~
 @1000037 = ~Tajes, kapitanie! Kurs na truneczki!~
 
 @1000040 = ~Dlaczego butelki? Nie możemy po prostu napić się w tawernie?~
@@ -762,6 +762,19 @@ Wybudzasz się z tego rozmarzenia. Pojedynek. Masz zgadywać. Maliny, truskawki 
 @5030503 = ~Nic takiego. Dobrego dnia.~
 @5030510 = ~Wszyscy goście są mile widziani w Morskiej Zdobyczy. Z ciebie żaden gość. Spływaj.~ ~Wszyscy goście są mile widziani w Morskiej Zdobyczy. Z ciebie żadna gościni. Spływaj.~
 @5030520 = ~A Paluch by chciał mieć ręke z powrotem, ale życie to nie bajka. A teraz wynocha.~
+
+
+@5040000 = ~No i widzisz, kapitanie? Żem mówiła, że warto, nie? No łeb w łeb!~
+@5040010 = ~Tak było. Trudny przeciwnik.~
+@5040011 = ~Sie wie! To je przeca Ferdek Podbijoko, w rynce tangi, a i w piciu niekiepski!~
+@5040020 = ~Chyba wystarczy mi picia na dziś...~
+@5040021 = ~He? To nie golniem se Trzasku Pioruna coby jeszczy wrażeń dodać? Szkoda.~
+@5040030 = ~To miło, że przynajmniej tobie się podobało.~
+@5040031 = ~Dziwne. Wszystkie so abstynenty przy tej galernicy.~
+@5040100 = ~No i widzisz, kapitanie? Żem mówiła, że warto, nie? Ostre starcie!~
+@5040110 = ~Bo i trudny z niego przeciwnik.~
+@5040200 = ~No i widzisz, kapitanie? Żem mówiła, że warto, nie? Aś mu pokazał!~ ~No i widzisz, kapitanie? Żem mówiła, że warto, nie? Aś mu pokazała!~
+@5040210 = ~A jakże. Choć trudny z niego przeciwnik.~
 
 
 @6000000 = ~Piwo Ciemne Gorzkie.~

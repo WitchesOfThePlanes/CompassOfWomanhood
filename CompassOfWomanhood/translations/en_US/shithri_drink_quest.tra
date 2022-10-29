@@ -763,6 +763,19 @@ You wake up from this little daydream. The duel. You should make a guess. Raspbe
 @5030520 = ~An' the Thumb be glad t' 'ave his hand back, but life's harsh. Now get out.~
 
 
+@5040000 = ~See, capt'n? Told ye it be worth the hussle! Ye got toe-to-toe!~
+@5040010 = ~It was. He's a tough opponent.~
+@5040011 = ~But o' course! He Franky the Eye-Popper, a throat o' gold 'n an arm o' wood!~
+@5040020 = ~I think I've had my share of drinks for the day...~
+@5040021 = ~Huh? So nah Clap o' Thunder t' make it e'en more memorable? Shame.~
+@5040030 = ~Glad at least one of us liked it.~
+@5040031 = ~Weird. Everyone be abstinent around this bucko.~
+@5040100 = ~See, capt'n? Told ye it be worth the hussle! Ye gave a good fight!~
+@5040110 = ~Well, he's a tough opponent.~
+@5040200 = ~See, capt'n? Told ye it be worth the hussle! Wha' a win!~
+@5040210 = ~I did. But he was a tough opponent.~
+
+
 @6000000 = ~Bitter Black Ale.~
 @6000010 = ~Shadowdark Ale.~
 @6000020 = ~Suz-Ale.~

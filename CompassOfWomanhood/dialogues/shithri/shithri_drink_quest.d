@@ -2506,6 +2506,12 @@ END
 //  * 0 - no info on stakes
 //  * 1 - if you win, "you pick what you want"
 //  * 2 - equal stakes, i.e. 5000 gp
+//
+// ShithriDrinksReward:
+//  * 0 - no reward (didn't win)
+//  * 1 - gold
+//  * 2 - cutlass
+//  * 3 - bandana
 
 // If Shithri's not in the party, location or can't talk,
 // the seaman has nothing interesting to say.
@@ -5364,6 +5370,7 @@ APPEND 6WPIRDR
       DO ~
         GiveGoldForce(5000)
         SetGlobal("6W#ShithriDrinksEnding","GLOBAL",1)
+        SetGlobal("6W#ShithriDrinksReward","GLOBAL",1) // gold
       ~
       EXIT
   END
@@ -5402,6 +5409,7 @@ APPEND 6WPIRDR
       DO ~
         GiveItem("6WSAB01",Player1)
         SetGlobal("6W#ShithriDrinksEnding","GLOBAL",1)
+        SetGlobal("6W#ShithriDrinksReward","GLOBAL",2) // cutlass
       ~
       EXIT
   END
@@ -5425,6 +5433,7 @@ APPEND 6WPIRDR
       DO ~
         // GiveItemCreate("_6WBANDA", Player1, 0, 0, 0)
         SetGlobal("6W#ShithriDrinksEnding","GLOBAL",1)
+        SetGlobal("6W#ShithriDrinksReward","GLOBAL",3) // bandana
       ~
       EXIT
   END
@@ -5435,6 +5444,7 @@ APPEND 6WPIRDR
       DO ~
         // GiveItemCreate("_6WBANDA", Player1, 0, 0, 0)
         SetGlobal("6W#ShithriDrinksEnding","GLOBAL",1)
+        SetGlobal("6W#ShithriDrinksReward","GLOBAL",3) // bandana
       ~
       EXIT
   END
@@ -5464,5 +5474,92 @@ APPEND 6WPIRDR
     ~ THEN
       REPLY @5030335 /* I want a symbol of my victory over you. Something of little value, but what you care for. Give me your bandana. */
       GOTO 6W#ShithriDrinksDuel__results__pc_reward_bandana
+  END
+END
+
+APPEND 6WSHITJ
+  IF ~
+    Global("6W#ShithriDrinksEnding","GLOBAL",2)
+    Global("6#ShithriDrinksPirPoints","GLOBAL",0) // draw
+  ~ THEN BEGIN 6W#shithri_drinks__result_comment__draw
+    SAY @5040000 /* See, capt'n? Told ye it be worth the hussle! Ye got toe-to-toe! */
+
+    IF ~~ THEN
+      REPLY @5040010 /* It was. He's a tough opponent. */
+      GOTO 6W#shithri_drinks__result_comment__franky_strong
+
+    IF ~~ THEN
+      REPLY @5040020 /* I think I've had my share of drinks for the day... */
+      GOTO 6W#shithri_drinks__result_comment__too_many_drinks
+
+    IF ~~ THEN
+      REPLY @5040030 /* Glad at least one of us liked it. */
+      GOTO 6W#shithri_drinks__result_comment__nah_like_it
+  END
+  IF ~~ THEN 6W#shithri_drinks__result_comment__franky_strong
+    SAY @5040011 /* But o' course! He Franky the Eye-Popper, a throat o' gold 'n an arm o' wood! */
+    // Yes, Frank Drebin, "detective with a heart of gold and a brain of wood".
+    //
+    // In Polish version, another reference to Ferdek Kiepski instead (you can't have too much
+    // of that joke :D).
+    IF ~~ THEN
+      EXIT
+  END
+  IF ~~ THEN 6W#shithri_drinks__result_comment__too_many_drinks
+    SAY @5040021 /* Huh? So nah Clap o' Thunder t' make it e'en more memorable? Shame. */
+    IF ~~ THEN
+      EXIT
+  END
+  IF ~~ THEN 6W#shithri_drinks__result_comment__nah_like_it
+    SAY @5040031 /* Weird. Everyone be abstinent around this bucko. */
+    // "Everyone's an abstinent around you [all]" - the mayor in Polish comedy show, ,,Ranczo'' ("Ranch").
+    // He says that to the Bench team - a group of four friends who drink together while sitting on a bench
+    // just in front of the local shop. Considered common drunkards by many, Bench boys are actually quite
+    // important characters in the series.
+    //
+    // Notably in the Polish version, because of the way Shithri speaks in general, she says ,,abstynenty'' (abstinents)
+    // instead of the standard ,,abstynenci''. That's the same word that is used by another character from the same series,
+    // Lucy Wilska, who's an American of Polish heritage and often makes small mistakes while speaking Polish.
+    // When on hangover, she said to her dog: "You and Kusy are right to be abstinents" (Kusy being her husband).
+    IF ~~ THEN
+      EXIT
+  END
+
+  IF ~
+    Global("6W#ShithriDrinksEnding","GLOBAL",2)
+    GlobalLT("6#ShithriDrinksPirPoints","GLOBAL",0) // lost
+  ~ THEN BEGIN 6W#shithri_drinks__result_comment__lost
+    SAY @5040100 /* See, capt'n? Told ye it be worth the hussle! Ye gave a good fight! */
+
+    IF ~~ THEN
+      REPLY @5040110 /* Well, he's a tough opponent. */
+      GOTO 6W#shithri_drinks__result_comment__franky_strong
+
+    IF ~~ THEN
+      REPLY @5040020 /* I think I've had my share of drinks for the day... */
+      GOTO 6W#shithri_drinks__result_comment__too_many_drinks
+
+    IF ~~ THEN
+      REPLY @5040030 /* Glad at least one of us liked it. */
+      GOTO 6W#shithri_drinks__result_comment__nah_like_it
+  END
+
+  IF ~
+    Global("6W#ShithriDrinksEnding","GLOBAL",2)
+    GlobalGT("6#ShithriDrinksPirPoints","GLOBAL",0) // win
+  ~ THEN BEGIN 6W#shithri_drinks__result_comment__win
+    SAY @5040200 /* See, capt'n? Told ye it be worth the hussle! Wha' a win! */
+
+    IF ~~ THEN
+      REPLY @5040210 /* I did. But he was a tough opponent. */
+      GOTO 6W#shithri_drinks__result_comment__franky_strong
+
+    IF ~~ THEN
+      REPLY @5040020 /* I think I've had my share of drinks for the day... */
+      GOTO 6W#shithri_drinks__result_comment__too_many_drinks
+
+    IF ~~ THEN
+      REPLY @5040030 /* Glad at least one of us liked it. */
+      GOTO 6W#shithri_drinks__result_comment__nah_like_it
   END
 END

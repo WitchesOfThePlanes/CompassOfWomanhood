@@ -138,6 +138,22 @@ THEN
     EndCutSceneMode()
 END
 
+// Shithri may comment on the duel's result if she's in the party
+IF
+  Global("6W#ShithriDrinksEnding","GLOBAL",2)
+  IfValidForPartyDialog("6WSHITHRI")
+THEN
+  RESPONSE #100
+    SetGlobal("6W#ShithriDrinksEnding","GLOBAL",3)
+    ActionOverride("6WSHITHRI", StartDialog(Player1))
+END
+IF
+  Global("6W#ShithriDrinksEnding","GLOBAL",2)
+THEN
+  RESPONSE #100
+    SetGlobal("6W#ShithriDrinksEnding","GLOBAL",3)
+END
+
 // PC to guess Franky's drink
 IF
   GlobalGT("6W#ShithriDrinksPcRound","GLOBAL",0)

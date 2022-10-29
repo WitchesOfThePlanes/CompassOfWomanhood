@@ -669,7 +669,7 @@ You wake up from this little daydream. The duel. You should make a guess. Raspbe
 @5020302 = ~Smell it.~
 @5020303 = ~Taste it.~
 @5020304 = ~Forfeit the round.~
-@5020305 = ~You look again at the glass of deep-red wine.~
+@5020305 = ~You look again at the glass of wine.~
 @5020310 = ~For some reason, you suddenly feel very pleased. It reminds you of when you complete a task from your dark patron.~
 @5020311 = ~For a split of a second, you get an eerie feeling. Even afterwards, you're a little uneasy looking at the glass before you.~
 @5020312 = ~You notice that Keldorn got pale. He looks at you with concern and slowly shakes his head.~
@@ -686,7 +686,32 @@ You wake up from this little daydream. The duel. You should make a guess. Raspbe
 @5020325 = ~Hmm... the Thumb be allowin' that spell. But ye still need t' guess.~
 @5020326 = ~Aye. The Thumb ain't be 'avin' nah problem wit' prayer.~
 @5020330 = ~As you bless the glass among the hellish groaning, the wine suddenly changes its color. Now it's of a vivid red hue.~
-@5020331 = ~A wine once of the color of clotted blood, but screams and resembles a fresh wound when blessed. It can't be anything but Blood Wine.~
+@5020331 = ~A wine once of the color of clotted blood, but screams and resembles a fresh wound when blessed. It can't be anything other than Blood Wine.~
+@5020340 = ~This wine is of deep red hue. You can see no other characteristics worth mentioning.~
+@5020341 = ~The wine isn't deep red anymore, now its color is very vivid. As you take a better look, you notice it actually seems to slowly flow around the glass.~
+@5020342 = ~A wine that looked like clotted blood while still, but started flowing on its own when vivid red, like a fresh wound. It can'y be anything other than Blood Wine.~
+@5020350 = ~The aroma is quite strong, but you find it difficult to describe it. Plums? Cherries? Something different altogether? You're not sure.~
+@5020360 = ~It's heavy-bodied. Deep red tones are complimented by a slight afterbite. It's... pleasant, but in an unusual way.~
+@5020361 = ~You take a small sip and start choking. Your throat is burning and your heart is filled with pain. For some reason, a vivid picture of a gallow can't get out of your mind. You almost hear the crows caw.~
+@5020362 = ~So much pain. Such sinful spirits, dwelling in this glass. I did hear rumors of it, but didn't want to believe it. And yet here it is - Blood Wine.~
+@5020363 = ~Gallows, crows, spirits of dead men hanging! Take it away from me!~
+@5020364 = ~As you take a sip, you feel your heart is filling with power and your head - with vivid images. Gallow. Hanging men. Crows cawing above them.~
+@5020365 = ~Whoever made this wine, they weren't afraid of powerful spirits. I heard about it. It's Blood Wine.~
+@5020366 = ~The taste of this wine bring you back a memory back from the Sword Coast...~
+@5020367 = ~I know this wine. The monks at Candlekeep said it was the only truly "evil" one. I didn't understand what they meant until I've tried it... Blood Wine. Fitting name.~
+@5020368 = ~It's just a story but a monk in Candlekeep once mentioned me, but it's too specific to be anything else. Heavy wine with deep tones and slight afterbite. Very dark red, looks almost like blood. And made from grapes posessed by spirits of sinful mortals. Blood Wine.~
+@5020369 = ~I tried it back in Nashkel. One of the people there told me a legend about the curse around it. Cursed or not, it's definitely Blood Wine.~
+@5020380 = ~The air suddenly seems cooler, but noone else seems to notice it. As you lean towards the glass, your vision gets blurry and you feel your very self being pushed back.~
+@5020381 = ~You know this feeling well. You let the spirits guide your consciousness.~
+@5020382 = ~You are shown a series of violent scenes as if you were the one experiencing them. Warm blood dripping from your hand as you murder innocents. But then the scenes vanish and you're filled with regret. The pain of a sinful soul unable to truly cross the border to the ethereal world.~
+@5020383 = ~You see a blurry silhouette of a powerful wizard... or at least someone you see as a wizard. Some strange power sucks you in and binds you to a piece of mater. You have no eyes. No ears. You just grow.
+
+You are now a plant.~
+@5020384 = ~Your grapes are dry and lifeless, mere shells of fruits. And yet you know people gather them, because with each one of them being picked, you lose a bit of yourself.~
+@5020385 = ~Finally, you sense being served in a glass. And a friendly soul leaning towards you. The first being willing to hear your story.~
+@5020386 = ~You wake up. Only then you realise your lips have already moved to say...~
+@5020387 = ~BLOOD WINE~
+@5020090 = ~The legendary "cursed wine" from Aglarond. Blood Wine.~
 
 
 @5029900 = ~Point fer <CHARNAME>!~

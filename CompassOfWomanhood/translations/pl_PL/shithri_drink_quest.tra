@@ -624,13 +624,13 @@ Shithri nie tylko odmawia podania ci jakichkolwiek użytecznych informacji na te
 @5020036 = ~Czyste, złociste piwo leżakujące z pokrzywą i jakimś obcym owocem - pewne kaktusem. To Złote Piaski Złocisty.~
 @5020040 = ~Północna wersja dumy Calimshanu. Złote Piaski Złocisty.~
 
-@5020100 = ~Podano ci kieliszek ciemnego wina.~
+@5020100 = ~Podano ci lampkę ciemnego wina.~
 @5020101 = ~Przyjrzyj się.~
 @5020102 = ~Powąchaj.~
 @5020103 = ~Skosztuj.~
 @5020104 = ~Poddaj rundę.~
 @5020110 = ~To wino ma bardzo ciemny odcień czerwieni. Nie dostrzegasz innych cech godnych odnotowania.~
-@5020115 = ~Ujmujesz kieliszek w dłoń i wykonujesz nim kilka delikatnych obrotów. Obserwujesz, że krople opadają swobodnie, nie zostawiając smug. Niska lepkość. To wytrawne wino z zagranicy, przypuszczalnie z zachodu.~
+@5020115 = ~Ujmujesz lampkę w dłoń i wykonujesz nim kilka delikatnych obrotów. Obserwujesz, że krople opadają swobodnie, nie zostawiając smug. Niska lepkość. To wytrawne wino z zagranicy, przypuszczalnie z zachodu.~
 @5020116 = ~Wytrawne wino z zachodniego lasu. Pasuje tu Cormyr. A które cormyrskie miasto znane jest z wytrawnego czerwonego wina? Arabel. W takim razie to Arabellańskie Wino Wytrawne.~
 @5020120 = ~Aromat wina jest zbyt subtelny żeby go bliżej zidentyfikować.~
 @5020125 = ~Twoje wyostrzone powonienie z ledwością wykrywa znajomą nutę: jagody.~
@@ -643,7 +643,7 @@ Shithri nie tylko odmawia podania ci jakichkolwiek użytecznych informacji na te
 @5020136 = ~To wino przypomina ci las w deszczowy dzień. Ma posmak jagód, choć innych niż te lokalne. Jest bardzo wtrawne, ale pozostawia w ustach przyjemne uczucie.~
 @5020140 = ~To duma Cormyru, Arabellańskie Wino Wytrawne.~
 
-@5020200 = ~Podano ci kieliszek jasnoczerwonego wina.~
+@5020200 = ~Podano ci lampkę jasnoczerwonego wina.~
 @5020201 = ~Przyjrzyj się.~
 @5020202 = ~Powąchaj.~
 @5020203 = ~Skosztuj.~
@@ -652,7 +652,7 @@ Shithri nie tylko odmawia podania ci jakichkolwiek użytecznych informacji na te
 @5020220 = ~Aromat tego wina jest bardzo słodki i owocowy. Wydaje się złożony, ale nie rozpoznajesz jego elementów.~
 @5020223 = ~Od razu rozpoznajesz soczysty aromat malin, bardzo popularnych na Wybrzeżu Mieczy. Jest tam też woń innego owocu. Prostsza. Ale to nie wszystko, masz niemal pewność, że ucieka ci jakiś trzeci składnik.~
 @5020224 = ~Wino z dwóch owoców, z których jednym jest malina. Czyżby drugim była truskawka? W takim razie byłaby to Saerlooniańska Specjalna Kadź.~
-@5020226 = ~Gdy unosisz kieliszek do nosa, zapach wypełnia cię wspomnieniami lata w Candlekeep. Jeden z mnichów, pasjonat kultury niziołków, zawsze upewniał się by nie zabrakło ci tradycyjnego podwieczorku - kruchego ciasta wypełnionego lokalnymi malinami i truskawkami imoportowanymi aż z Tethyru.
+@5020226 = ~Gdy unosisz lampkę do nosa, zapach wypełnia cię wspomnieniami lata w Candlekeep. Jeden z mnichów, pasjonat kultury niziołków, zawsze upewniał się by nie zabrakło ci tradycyjnego podwieczorku - kruchego ciasta wypełnionego lokalnymi malinami i truskawkami imoportowanymi aż z Tethyru.
 
 To wino pachnie dokładnie tak samo. Malinami, truskawkami i ziarnem.~
 @5020227 = ~Wino pachnące jak niziołcze ciasto. Piękna rzecz. To Saerlooniańska Specjalan Kadź.~
@@ -665,12 +665,12 @@ Wybudzasz się z tego rozmarzenia. Pojedynek. Masz zgadywać. Maliny, truskawki 
 @5020237 = ~Smak i charakter letniego ciasta. Zaiste, to prawdziwy specjał. Saerlooniańska Specjalna Kadź.~
 @5020240 = ~To rzadki przysmak z Sembii, Saerlooniańska Specjalna Kadź!~
 
-@5020300 = ~Podano ci kieliszek ciemnoczerwonego wina.~
+@5020300 = ~Podano ci lampkę ciemnoczerwonego wina.~
 @5020301 = ~Przyjrzyj się.~
 @5020302 = ~Powąchaj.~
 @5020303 = ~Skosztuj.~
 @5020304 = ~Poddaj rundę.~
-@5020305 = ~Znów spoglądasz w stronę kieliszka ciemnoczerwonego wina.~
+@5020305 = ~Znów spoglądasz w stronę lampki wina.~
 @5020310 = ~Z jakiegoś powodu nagle czujesz satysfakcję. Przypomina ci to te momenty kiedy ukończysz zadanie dane ci od twego mrocznego patrona.~
 @5020311 = ~Na ułamek sekundy przechodzi cię złowrogi dreszcz. Nawet po tym jak minął, wciąż czujesz się nieco nieswojo względem lampki wina spoczywającej przed tobą.~
 @5020312 = ~Zauważasz, że Keldorn nagle pobladł. Spogląda na ciebie z obawą i wolno kręci głową.~
@@ -680,7 +680,7 @@ Wybudzasz się z tego rozmarzenia. Pojedynek. Masz zgadywać. Maliny, truskawki 
 @5020316 = ~„Mam nadzieję, że nie macie nic przeciwko bym wpierw się pomodlił?”~ ~„Mam nadzieję, że nie macie nic przeciwko bym wpierw się pomodliła?”~
 @5020317 = ~Tylko jedno wino może mieć tak potężną aurę zła. Takie, które opętały grzeszne dusze. Wino Krwawe.~
 @5020318 = ~Słyszałem o nim zbyt wiele opowieści by go nie rozpoznać. Uwarzone z winogron uschniętych od wpływu grzesznych dusz. To Wino Krwawe.~
-@5020320 = ~Wyczuwasz potężną aurę emanującą wprost ze stojącego przed tobą kieliszka. Wino wyje do ciebie swym złem jak wiatr na wzgórzach.~
+@5020320 = ~Wyczuwasz potężną aurę emanującą wprost ze stojącej przed tobą lampki. Wino wyje do ciebie swym złem jak wiatr na wzgórzach.~
 @5020321 = ~Ejże, co ty za czarostwa odprawiasz?~
 @5020322 = ~Sprawdzałem tylko, czy to wino aby nie jest przeklęte... i jest.~ ~Sprawdzałam tylko, czy to wino aby nie jest przeklęte... i jest.~
 @5020323 = ~Sędzia! Myślałem, że to miał być napitek, a nie przeklęty eliksir.~ ~Sędzia! Myślałam, że to miał być napitek, a nie przeklęty eliksir.~
@@ -688,6 +688,31 @@ Wybudzasz się z tego rozmarzenia. Pojedynek. Masz zgadywać. Maliny, truskawki 
 @5020326 = ~Ta. Paluch nic nie ma do modlitwy.~
 @5020330 = ~Gdy błogosławisz lampkę pośród potępieńczych jęków, wino nagle zmienia barwę. Jej czerwień stała się jasna i soczysta.~
 @5020331 = ~Wino wpierw koloru krwi zakrzepłej, lecz płacze i przypomina świeżą ranę gdy je błogosławić. To nie może być nic innego niż Wino Krwawe.~
+@5020340 = ~To wino ma ciemny odcień czerwieni. Nie dostrzegasz innych cech godnych odnotowania.~
+@5020341 = ~Wino nie jest już ciemnoczerwone, jego barwa jest dużo soczystsza. Gdy przyglądasz się bliżej, zauważasz, że wydaje się powoli płynąć wokół lampki.~
+@5020342 = ~Wino, które wyglądało jak zakrzepła krew, ale później zaczęło samo płynąć i stało się jaśniejsze, jak świeża rana. To nie może być nic innego niż Wino Krwawe.~
+@5020350 = ~Aromat jest dość wyraźny, ale trudno ci go opisać. Śliwka? Wiśnia? Coś jeszcze innego? Nie masz pewności.~
+@5020360 = ~Jest mocne. Głębokie tony dopełniają się z lekko ostrawym posmakiem. Jest... przyjemne, choć w nieco niecodzienny sposób.~
+@5020361 = ~Ledwie moczysz wargi gdy zaczynasz się krztusić. Twoje gardło zdaje ci się płonąć, a serce wypełnia ból. Z jakiegoś powodu nie możesz pozbyć się ze swych myśli obrazu szubienicy. Niemal słyszysz, jak kraczą nad nią wrony.~
+@5020362 = ~Ileż bólu. Jakże grzeszne dusze kryje to szkło. Słyszałem o nim, ale nie wierzyłem w to, że naprawdę istnieje. A jednak oto ono - Wino Krwawe.~ ~Ileż bólu. Jakże grzeszne dusze kryje to szkło. Słyszałam o nim, ale nie wierzyłem w to, że naprawdę istnieje. A jednak oto ono - Wino Krwawe.~
+@5020363 = ~Szubienice, wrony, dusze zmarłych wisielców! Zabierzcie to ode mnie!~
+@5020364 = ~Gdy kosztujesz wina, twoje serce wypełnia poczucie potęgi, a twoją głowę - obrazy. Szubienica. Wisielcy. Wrony kraczące nad ich głowami.~
+@5020365 = ~Ktokolwiek uwarzył to wino, nie obawiał się potężnych duchów. Słyszałem o nim. To Wino Krwawe.~ ~Ktokolwiek uwarzył to wino, nie obawiał się potężnych duchów. Słyszałam o nim. To Wino Krwawe.~
+@5020366 = ~Smak tego wina przywołuje ci wspomnienie z Wybrzeża Mieczy...~
+@5020367 = ~Znam je. Mnisi z Candlekeep powiadali, że to jedyne prawdziwie „złe” wino. Nie rozumiałem ich wtedy póki nie spróbowałem... Wino Krawe. Pasuje mu to miano.~ ~Znam je. Mnisi z Candlekeep powiadali, że to jedyne prawdziwie „złe” wino. Nie rozumiałam ich wtedy póki nie spróbowałam... Wino Krawe. Pasuje mu to miano.~
+@5020368 = ~To tylko legenda, ale pewien mnich w Candlekeep raz wspomniał mi o pewnym winie... zbyt drobiazgowo ażeby było to tylko przypadkowe podobieństwo. Mocne, z głębokimi tonami i lekko ostrawym posmakiem. Ciemnoczerwone prawie jak krew. I uwarzone z winogron opętanych przez dusze grzeszników. Wino Krawe.~
+@5020369 = ~Próbowałem go w Nashkel. Jedna z miejscowych mówiła, jak to powiada się o otaczającej je klątwie. Przeklęte czy nie, to z pewnością rzeczywiście jest Wino Krawe.~
+@5020380 = ~Powietrze nagle staje się chłodniejsze, choć nikt inny nie wydaje się tego zauważać. Gdy pochylasz się nad lampką wina, wzrok ci się rozmywa i czujesz, że coś spycha twoje jestestwo na bok.~
+@5020381 = ~Znasz dobrze to uczucie. Pozwalasz duchom prowadzić swoją jaźń.~
+@5020382 = ~Pokazują ci wiele scen wyjątkowej brutalności, które widzisz oczami ich bohaterów. Ciepła krew spływa z twych dłoni gdy mordujesz niewinnych. Lecz to wszystko znika i wypełnia cię żal. Ból grzesznej duszy niemogącej przekroczyć granicy do świata eterycznego.~
+@5020383 = ~Widzisz rozmytą sylwetkę potężnego maga... a w każdym razie kogoś, kogo ty widzisz jako maga. Jakaś dziwna moc wciąga cię i wiąże z materią. Nie masz oczu. Nie masz uszu. Tylko rośniesz.
+
+Jesteś rośliną.~
+@5020384 = ~Twoje grona są suche i bez życia, zaledwie skorupy prawdziwych owoców. A jednak wiesz, że ludzie je zbierają, ponieważ z każdym z nich tracisz cząstkę siebie.~
+@5020385 = ~Wreszcie czujesz, że podano cię w szkle. I przyjazną duszę nachylającą się w twoją stronę. Pierwszą, która zechciała wysłuchać twojej opowieści.~
+@5020386 = ~Budzisz się. Uświadamiasz sobie, że twoje wargi już zdążyły same się poruszyć by wypowiedzieć słowa...~
+@5020387 = ~WINO KRWAWE~
+@5020090 = ~Słynne „przeklęte wino” z Aglarond. Krwawe Wino.~
 
 
 @5029900 = ~Punkt dla ciebie, <CHARNAME>!~

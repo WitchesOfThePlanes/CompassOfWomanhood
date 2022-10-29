@@ -79,9 +79,11 @@ Note: the romance may influence the Tree of Life talk as well as the epilogues. 
 
 ## SoA Quest
 
-Shithri drinks much, but also knows much about various fine liquors from all around the Faerûn. Prompted by her, you can buy bottled liquors at the taverns and inns you visit, growing your collection. There are tons of lore-heavy descriptions of flavors, smells, colors, styles, places etc. Most of them are based on canon material, some are extrapolated based on vague description and knowledge of other alcoholic beverages in both Forgotten Realms and our worlds.
+Shithri drinks much, but also knows much about various fine liquors from all around the Faerûn. Prompted by her, you can buy bottled liquors at the taverns and inns you visit, growing your collection. There are tons of lore-heavy descriptions of flavors, smells, colors, styles, places etc. Most of them are based on canon material, some are extrapolated based on vague descriptions and knowledge of other alcoholic beverages in both Forgotten Realms and our world.
 
-After you make a big enough of a collection, an old sailor will come to confront Shithri about her dealing with land-lubbers (i.e. non-sailors) who don't know a thing about fine drinks. You can prove him wrong in a drink tasting competition between the two of you.
+After you make a big enough of a collection, an old sailor called Franky the Eye-Popper (Ferdek Podbijoko in Polish version) will meet you in Sea's Bounty tavern to confront Shithri about her dealing with land-lubbers (i.e. non-sailors) who don't know a thing about fine drinks. You can prove him wrong in a drink tasting competition between the two of you.
+
+If you win, you can ask for gold (5000 gp), his cutlass (just a non-enchanted weapon) or - if have high intelligence or wisdom - his bandana. That last item is magical.
 
 
 ## Orcish Culture

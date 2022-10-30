@@ -1479,7 +1479,10 @@ APPEND 6WSHITJ
   IF ~~ BEGIN golden_sands__basic_only
     SAY @3030001 /* Only Golden Sands Basic here, but there are others elsewhere. */
 
-    IF ~~ GOTO liquors_more
+    IF ~
+      PartyHasItem("_6WDR03a")
+    ~ GOTO liquors_more
+
     IF ~
       !PartyHasItem("_6WDR03a")
     ~ THEN
@@ -1488,7 +1491,10 @@ APPEND 6WSHITJ
   IF ~~ BEGIN golden_sands__gold_only
     SAY @3030101 /* Only Golden Sands Gold here, but there are others elsewhere. */
 
-    IF ~~ GOTO liquors_more
+    IF ~
+      PartyHasItem("_6WDR03b")
+    ~ GOTO liquors_more
+
     IF ~
       !PartyHasItem("_6WDR03b")
     ~ THEN
@@ -1497,7 +1503,10 @@ APPEND 6WSHITJ
   IF ~~ BEGIN golden_sands__gold_or_orange
     SAY @3030201 /* They 'ave Gold 'n Orange ones here. Nah Basic though. */
 
-    IF ~~ GOTO liquors_more
+    IF ~
+      PartyHasItem("_6WDR03b")
+      PartyHasItem("_6WDR03c")
+    ~ GOTO liquors_more
 
     IF ~
       !PartyHasItem("_6WDR03b")

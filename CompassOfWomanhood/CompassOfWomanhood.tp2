@@ -565,6 +565,11 @@ COPY ~CompassOfWomanhood/items/shithri/_6WBAN01.ITM~ ~override~
   SAY NAME2 @61
   SAY UNIDENTIFIED_DESC @62
   SAY IDENTIFIED_DESC   @63
+COPY ~CompassOfWomanhood/items/shithri/_6WBAN02.ITM~ ~override~
+  SAY NAME1 @60
+  SAY NAME2 @61
+  SAY UNIDENTIFIED_DESC @62
+  SAY IDENTIFIED_DESC   @63
 OUTER_SET file_num += 1
 
 // liquors

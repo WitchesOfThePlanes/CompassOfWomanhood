@@ -49,6 +49,7 @@ THEN
     //
     // There is a timer set in the dialogue.
 
+    SmallWait(1)
     StartDialogueNoSet(Player1)
 
     //TODO: most of banters shouldn't be started if Shithri
@@ -68,6 +69,7 @@ THEN
   RESPONSE #100
     SetInterrupt(FALSE)
     SetGlobal("6W#ShithriBrynnlawDrunk","GLOBAL",3)
+    SmallWait(1)
     StartDialogueNoSet(Player1)
     SetInterrupt(TRUE)
 END
@@ -81,7 +83,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("6W#ShithriBrynnlawDrunk","GLOBAL",4)
-    ReallyForceSpellRES("6W#DRUNK0", Myself)
+    ReallyForceSpellRES("6WDRUNK0", Myself)
 END
 
 //

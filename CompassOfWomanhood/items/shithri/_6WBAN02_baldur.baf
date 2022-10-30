@@ -1,0 +1,51 @@
+// if a character dies, they drop the cursed bandana
+// if another character picks it up, it should be replaced
+// with the non-cursed version
+
+IF
+  HasItem("_6WBAN02",Player1)
+  !HasItemEquiped("_6WBAN02",Player1)
+THEN
+  RESPONSE #100
+    ActionOverride(Player1,TransformItem("_6WBAN02","_6WBAN01"))
+END
+
+IF
+  HasItem("_6WBAN02",Player2)
+  !HasItemEquiped("_6WBAN02",Player2)
+THEN
+  RESPONSE #100
+    ActionOverride(Player2,TransformItem("_6WBAN02","_6WBAN01"))
+END
+
+IF
+  HasItem("_6WBAN02",Player3)
+  !HasItemEquiped("_6WBAN02",Player3)
+THEN
+  RESPONSE #100
+    ActionOverride(Player3,TransformItem("_6WBAN02","_6WBAN01"))
+END
+
+IF
+  HasItem("_6WBAN02",Player4)
+  !HasItemEquiped("_6WBAN02",Player4)
+THEN
+  RESPONSE #100
+    ActionOverride(Player4,TransformItem("_6WBAN02","_6WBAN01"))
+END
+
+IF
+  HasItem("_6WBAN02",Player5)
+  !HasItemEquiped("_6WBAN02",Player5)
+THEN
+  RESPONSE #100
+    ActionOverride(Player5,TransformItem("_6WBAN02","_6WBAN01"))
+END
+
+IF
+  HasItem("_6WBAN02",Player6)
+  !HasItemEquiped("_6WBAN02",Player6)
+THEN
+  RESPONSE #100
+    ActionOverride(Player6,TransformItem("_6WBAN02","_6WBAN01"))
+END

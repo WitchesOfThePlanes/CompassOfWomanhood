@@ -77,7 +77,7 @@ THEN
     SetGlobal("6W#ShithriDrinksHasUniqueDrinks","GLOBAL",0)
     Wait(1)
     // Shithri's drinks quest is still work in progress
-    // StartDialogNoSet(Player1)
+    StartDialogNoSet(Player1)
     SetInterrupt(TRUE)
 END
 

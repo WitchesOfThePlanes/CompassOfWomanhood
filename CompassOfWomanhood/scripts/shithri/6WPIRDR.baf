@@ -32,10 +32,9 @@ END
 IF
   Global("6W#ShithriDrinksSeamanWait","GLOBAL",1)
   GlobalGT("JaheiraCursed","GLOBAL",2)
-  Global("6W#ShithriDrinksSeamanTime","GLOBAL",0)
 THEN
   RESPONSE #100
-    SetGlobal("6W#ShithriDrinksSeamanTime","GLOBAL",1)
+    SetGlobal("6W#ShithriDrinksSeamanWait","GLOBAL",2)
     // wait just a bit after Jaheira stops talking, not to break the moment
     RealSetGlobalTimer("6W#ShithriDrinksSeamanTimer","GLOBAL",20)
 END

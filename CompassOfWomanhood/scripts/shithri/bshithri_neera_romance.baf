@@ -22,7 +22,7 @@ IF
   Global("6W#ShithriNeeraRomanceActive","GLOBAL",2)
 THEN
   RESPONSE #100
-    ChangeAIScript("6WSHITHRI",SPECIFICS)
+    ChangeAIScript("",SPECIFICS)
     Enemy()
 END
 
@@ -64,7 +64,7 @@ END
 IF
   Global("6W#ShithriNeeraNeeraRaise","GLOBAL",2)
   InParty("Neera")
-  !Dead("Neeera")
+  !Dead("Neera")
 THEN
   RESPONSE #100
     //TODO
@@ -224,7 +224,7 @@ IF
   OR(2)
     Global("6W#ShithriNeeraRomanceActive","GLOBAL",1)
     Global("6W#ShithriNeeraRomanceActive","GLOBAL",2)
-  OR(7)
+  OR(6)
     Global("6W#ShithriNeeraLoveTalk","GLOBAL",3)
     Global("6W#ShithriNeeraLoveTalk","GLOBAL",5)
     Global("6W#ShithriNeeraLoveTalk","GLOBAL",7)

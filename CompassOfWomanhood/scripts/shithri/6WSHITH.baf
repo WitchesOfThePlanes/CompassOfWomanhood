@@ -7,7 +7,7 @@ IF
   Detect([PC])
   Range(LastSeenBy(Myself),15)
   NumberOfTimesTalkedTo(0)
-  Global("Shithri_SeaMan_Initial","AR0300",0) // Sea Docks
+  Global("6W#Shithri_SeaMan_Initial","GLOBAL",0)
 THEN
   RESPONSE #100
     SetInterrupt(FALSE)
@@ -28,7 +28,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("6W#ShithriGotHalfAttackBonus","GLOBAL",1)
-    ReallyForceSpellDeadRES("6W#SHAB",Myself)
+    ReallyForceSpellDeadRES("6WSHIEAT",Myself)
     Continue()
 END
 

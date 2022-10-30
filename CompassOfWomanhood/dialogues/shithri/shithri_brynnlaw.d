@@ -373,7 +373,7 @@ We arrived at the Brynnlaw island, Shithri's destination. As it turns out, she's
         !IsValidForPartyDialog("Neera")
     ~ THEN
       DO ~
-        AddexperienceParty(12000)
+        AddExperienceParty(12000)
         LeaveParty()
         EscapeArea()
       ~
@@ -387,7 +387,7 @@ We arrived at the Brynnlaw island, Shithri's destination. Despite the companions
       IsValidForPartyDialog("Neera")
     ~ THEN
       DO ~
-        AddexperienceParty(12000)
+        AddExperienceParty(12000)
         LeaveParty()
         EscapeArea()
       ~
@@ -582,7 +582,7 @@ CHAIN 6WSHITJ shithri_desharik
   DO ~
     SetGlobal("6W#ShithriQueen","GLOBAL",1) // 1 represents the "drunk" version
     SetGlobal("6W#ShithriBrynnlawKing","GLOBAL",2)
-    AddexperienceParty(32000)
+    AddExperienceParty(32000)
     // cannot use standard SOLVED_JOURNAL here
     AddJournalEntry(@9000010, QUEST_DONE) /* Getting Shithri to Brynnlaw
 
@@ -752,7 +752,7 @@ CHAIN 6WSHITJ shithri_desharik_sober
   DO ~
     SetGlobal("6W#ShithriQueen","GLOBAL",2) // 2 represents the "sober" version
     SetGlobal("6W#ShithriBrynnlawKing","GLOBAL",2)
-    AddexperienceParty(48000)
+    AddExperienceParty(48000)
     // cannot use standard SOLVED_JOURNAL here
     AddJournalEntry(@9000010, QUEST_DONE) /* Getting Shithri to Brynnlaw
 
@@ -801,7 +801,7 @@ APPEND 6WSHITJ
 
     IF ~~ THEN
       DO ~
-        AddexperienceParty(12000)
+        AddExperienceParty(12000)
         LeaveParty()
         EscapeArea()
       ~
@@ -817,7 +817,7 @@ We went to the asylum before helping Shithri talk to the Pirate King. She wasn't
 
     IF ~~ THEN
       DO ~
-        AddexperienceParty(12000)
+        AddExperienceParty(12000)
         LeaveParty()
         EscapeArea()
       ~
@@ -833,7 +833,7 @@ We went to the asylum before helping Shithri talk to the Pirate King. She wasn't
 
     IF ~~ THEN
       DO ~
-        AddexperienceParty(12000)
+        AddExperienceParty(12000)
         LeaveParty()
         EscapeArea()
       ~
@@ -1036,7 +1036,7 @@ APPEND 6WSHITP
         SetGlobal("6W#ShithriBrynnlawRejoin","GLOBAL",2)
         SetGlobal("KickedOut","LOCALS",0)
         JoinParty()
-        AddexperienceParty(32000)
+        AddExperienceParty(32000)
       ~
       SOLVED_JOURNAL @9000012 /* Getting Shithri to Brynnlaw
 
@@ -1051,7 +1051,7 @@ I came back for Shithri, as promised. She seems to be done with her "business" n
         SetGlobal("6W#ShithriBrynnlawRejoin","GLOBAL",2)
         SetGlobal("KickedOut","LOCALS",0)
         JoinParty()
-        AddexperienceParty(32000)
+        AddExperienceParty(32000)
       ~
       SOLVED_JOURNAL @9000012 /* Getting Shithri to Brynnlaw
 
@@ -1069,7 +1069,7 @@ I came back for Shithri, as promised. She seems to be done with her "business" n
       DO ~
         SetGlobal("6W#ShithriBrynnlawRejoin","GLOBAL",2)
         SetGlobal("KickedOut","LOCALS",1)
-        AddexperienceParty(32000)
+        AddExperienceParty(32000)
       ~
       SOLVED_JOURNAL @9000013 /* Getting Shithri to Brynnlaw
 
@@ -1084,7 +1084,7 @@ I met with Shithri to say my goodbye. Despite the companionship we shared, she d
       DO ~
         SetGlobal("6W#ShithriBrynnlawRejoin","GLOBAL",2)
         SetGlobal("KickedOut","LOCALS",1)
-        AddexperienceParty(32000)
+        AddExperienceParty(32000)
       ~
       SOLVED_JOURNAL @9000013 /* Getting Shithri to Brynnlaw
 

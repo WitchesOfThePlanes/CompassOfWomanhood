@@ -176,6 +176,7 @@ Słowniczek:
  * dupuś / dupcia - fujara, niezdara, niedołęga
  * dziarski - pełen życia
  * dzinkuje - dziękuję
+ * echt - znakomity, bardzo dobry
  * fafrot / fafrota - gaduła
  * fandzolić - opowiadać głupoty
  * fejny - dobrej jakości, świetny
@@ -200,13 +201,14 @@ Słowniczek:
  * kamrat / kamratka - z uznaniem o towarzyszu, członku drużyny; także: przyjaciel
  * kapitan - właściwie znaczenie: dowódca na statku, używane ironicznie o szefie drużyny. Nieironiczna wersja: stary / stara
  * karno - stado, ławica, gromada (zwierząt, ryb)
+ * klamot, klamotek - stary przedmiot; Shithri używa także w znaczeniu: artefakt, magiczny przedmiot
  * knifka - skąpiec
- * kwindas / kwyndas - złamas, stękajło, dziaders; słowo w rodzaju męskim określające osoby dowolnej płci
  * koczołunek - czuwanie
  * kompan / kompanka - towarzysz, członek drużyny
  * konus / konuska - niska osoba
  * korsarz / korsarka - osoba mająca pozwolenie władz na napadanie na statki wrogiego państwa. Osoba robiąca to bez zezwolenia to pirat / piratka.
  * ksiunżka - książka
+ * kwindas / kwyndas - złamas, stękajło, dziaders; słowo w rodzaju męskim określające osoby dowolnej płci
  * lebioda - słabeusz
  * lepi - lepiej
  * list kaperski - oficjalne zezwolenie państwowe na napadanie na statki wrogiego państwa, osoba mająca list kaperski jest korsarzem / korsarką.
@@ -249,6 +251,7 @@ Słowniczek:
  * szur, szurek - młody chłopak
  * szurać, szurnąć - zaczepiać kogoś, "podskakiwać" komuś
  * ślipić - patrzeć, oglądać
+ * tangi - tęgi, silny
  * typ / typiara - osoba podejrzana lub nie ciesząca się dobrą opinią
  * truneczek - napój alkoholowy, zwłaszcza dobry
  * wachta - czas pełnienia służby na statku, z grubsza: "zmiana"; Shithri używa czasami także w znaczeniu "służba", "czuwanie" lub "warta"
@@ -263,4 +266,5 @@ Słowniczek:
  * wyrostka - żeńska forma od "wyrostek", podlotek, młoda dziewczyna, nastolatka
  * zgaga - osoba wątła
  * zyemby - zęby
+ * źrecie - jedzenie (czynność)
 

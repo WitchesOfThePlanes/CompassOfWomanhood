@@ -101,7 +101,7 @@ IF
 THEN
   RESPONSE #100
      SetGlobal("6W#ShithriBrynnlawDrunk","GLOBAL",2)
-     ReallyForceSpellRES("6W#DRUNK0", Myself)
+     ReallyForceSpellRES("6WDRUNK0", Myself)
 END
 
 

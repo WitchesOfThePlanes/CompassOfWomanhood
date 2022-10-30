@@ -53,13 +53,15 @@ THEN
 END
 
 // ...and come to an inn or tavern again, a bit later - she can offer her quest.
+//
+// Note: it would be weird if Shithri talked about liqies in the middle of Jaheira's
+// thing with Ployer, so Sea Bounty is handled separately.
 IF
-  !GlobalTimerNotExpired("6W#ShithriDrinksStartTimer","GLOBAL")
   Global("6W#ShithriDrinksStart","GLOBAL",2)
   InParty("6WSHITHRI")
-  OR(11)
+  GlobalTimerExpired("6W#ShithriDrinksStartTimer","GLOBAL")
+  OR(10)
     AreaCheck("AR0021")  // Crooked Crane 1st Floor
-    AreaCheck("AR0313")  // Sea Bounty Tavern 1st Floor
     AreaCheck("AR0406")  // Copper Coronet
     AreaCheck("AR0509")  // Five Flagons Inn 1st Floor
     AreaCheck("AR0513")  // Calbor's Inn at Bridge District 1st Floor
@@ -73,9 +75,128 @@ THEN
   RESPONSE #100
     SetInterrupt(FALSE)
     SetGlobal("6W#ShithriDrinksStart","GLOBAL",3)
+    SetGlobal("6W#ShithriDrinksActive","GLOBAL",1)
+    SetGlobal("6W#ShithriDrinksHasUniqueDrinks","GLOBAL",0)
     Wait(1)
     // Shithri's drinks quest is still work in progress
-    //StartDialogNoSet(Player1)
+    StartDialogNoSet(Player1)
     SetInterrupt(TRUE)
 END
 
+// It would be very awkward if Shithri talks between Ployer cursing Jaheira
+// and Jaheira commenting on it.
+//
+// If Jaheira and Ployer are present, wait for Jaheira to get cursed.
+IF
+  AreaCheck("AR0313")  // Sea Bounty Tavern 1st Floor
+  InParty("6WSHITHRI")
+  InParty("Jaheira")
+  InMyArea("Jaheira")
+  InMyArea("Ployer")
+  GlobalLT("JaheiraCursed","GLOBAL",3)
+  Global("6W#ShithriDrinksShithriWait","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("6W#ShithriDrinksShithriWait","GLOBAL",1)
+END
+
+// ...then wait a bit more.
+IF
+  Global("6W#ShithriDrinksShithriWait","GLOBAL",1)
+  GlobalGT("JaheiraCursed","GLOBAL",2)
+THEN
+  RESPONSE #100
+    SetGlobal("6W#ShithriDrinksShithriWait","GLOBAL",2)
+    // wait just a bit after Jaheira stops talking, not to break the moment
+    RealSetGlobalTimer("6W#ShithriDrinksShithriTimer","GLOBAL",20)
+END
+
+IF
+  Global("6W#ShithriDrinksStart","GLOBAL",2)
+  AreaCheck("AR0313")  // Sea Bounty Tavern 1st Floor
+  InParty("6WSHITHRI")
+  GlobalTimerExpired("6W#ShithriDrinksStartTimer","GLOBAL")
+  OR(2)
+    Global("6W#ShithriDrinksShithriWait","GLOBAL",0)
+    RealGlobalTimerExpired("6W#ShithriDrinksShithriTimer","GLOBAL")
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("6W#ShithriDrinksStart","GLOBAL",3)
+    SetGlobal("6W#ShithriDrinksActive","GLOBAL",1)
+    SetGlobal("6W#ShithriDrinksHasUniqueDrinks","GLOBAL",0)
+    Wait(1)
+    // Shithri's drinks quest is still work in progress
+    StartDialogNoSet(Player1)
+    SetInterrupt(TRUE)
+END
+
+
+//
+// Count unique liquors
+//
+// Implementation Note:
+// No straightforward way to count N out of M items. Seems like
+// the easiest way is to keep track of each item type via a variable,
+// and when setting one - incrementing the total unique counter.
+// This variable encodes:
+//  * 0 - party doesn't have that drink
+//  * 1 - party does have that drink
+//  * 2 - party already used that drink, doesn't matter if they
+//        still another bottle or not
+//
+// That is, however, VERY repetitive - so a script should generate those
+// instead.
+
+
+//
+// When you have at least 9 liquors, the seaman appears
+// in the Sea Bounty tavern.
+//
+
+// First, set "ready". If the party is in the Sea Bounty tavern,
+// they need to leave it before the seaman appears.
+IF
+  GlobalGT("6W#ShithriDrinksHasUniqueDrinks","GLOBAL",8)
+  Global("6W#ShithriDrinksSeamanSpawn","GLOBAL",0)
+
+  // It would be very awkward if the seaman talks between Ployer cursing Jaheira
+  // and Jaheira commenting on it. Wait with the quest until either Jaheira isn't
+  // in the party or Ployer already talked to her.
+  OR(4)
+    !InParty("Jaheira")
+    GlobalGT("JaheiraCursed","GLOBAL",2)
+    !AreaCheckObject("AR0313","Ployer")
+    Dead("Ployer")
+THEN
+  RESPONSE #100
+    SetGlobal("6W#ShithriDrinksSeamanSpawn","GLOBAL",1)
+END
+
+// The second step is to be anywhere but in the Sea Bounty tavern.
+IF
+  Global("6W#ShithriDrinksSeamanSpawn","GLOBAL",1)
+  // doesn't look like it can be done via [PC]:
+  !AreaCheckObject("AR0313",Player1)
+  !AreaCheckObject("AR0313",Player2)
+  !AreaCheckObject("AR0313",Player3)
+  !AreaCheckObject("AR0313",Player4)
+  !AreaCheckObject("AR0313",Player5)
+  !AreaCheckObject("AR0313",Player6)
+THEN
+  RESPONSE #100
+    SetGlobal("6W#ShithriDrinksSeamanSpawn","GLOBAL",2)
+END
+
+// Shithri may comment on the duel's result if she's in the party
+IF
+  Global("6W#ShithriDrinksEnding","GLOBAL",2)
+  IfValidForPartyDialog("6WSHITHRI")
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    Wait(1)
+    StartDialogueNoSet(Player1)
+    SetGlobal("6W#ShithriDrinksEnding","GLOBAL",3)
+    SetInterrupt(TRUE)
+END

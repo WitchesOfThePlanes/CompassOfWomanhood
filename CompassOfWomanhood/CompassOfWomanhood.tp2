@@ -223,6 +223,9 @@ BEGIN
   // Shithri's "Sea Shanty" ability
   ~CompassOfWomanhood/spells/shithri/6WSHANT2.spl~
   ~CompassOfWomanhood/spells/shithri/6WSHANT4.spl~
+
+  // Bandana's spell
+  ~CompassOfWomanhood/spells/shithri/6WBAND.spl~
 END
 
 SILENT
@@ -554,6 +557,14 @@ COPY ~CompassOfWomanhood/items/shithri/_6WSAB01.ITM~ ~override~
   SAY NAME1 @50
   SAY NAME2 @51
   SAY UNIDENTIFIED_DESC @52
+OUTER_SET file_num += 1
+
+// bandana
+COPY ~CompassOfWomanhood/items/shithri/_6WBAN01.ITM~ ~override~
+  SAY NAME1 @60
+  SAY NAME2 @61
+  SAY UNIDENTIFIED_DESC @62
+  SAY IDENTIFIED_DESC   @63
 OUTER_SET file_num += 1
 
 // liquors

@@ -6429,7 +6429,7 @@ I won my duel with Franky the Eye-Popper. I picked his cutlass for my reward. Lo
 I won my duel with Franky the Eye-Popper. Remembering how he insulted me, I demanded the thing he values the most: his bandana. He did call me cruel, so I guess it worked as I wanted. */
       DO ~
         AddExperienceParty(50000)
-        // GiveItemCreate("_6WBANDA", Player1, 0, 0, 0)
+        GiveItemCreate("_6WBAN01", Player1, 1, 0, 0)
         SetGlobal("6W#ShithriDrinksEnding","GLOBAL",1)
         SetGlobal("6W#ShithriDrinksReward","GLOBAL",3) // bandana
       ~
@@ -6443,7 +6443,7 @@ I won my duel with Franky the Eye-Popper. Remembering how he insulted me, I dema
 I won my duel with Franky the Eye-Popper. Remembering how he insulted me, I demanded the thing he values the most: his bandana. He did call me cruel, so I guess it worked as I wanted. */
       DO ~
         AddExperienceParty(50000)
-        // GiveItemCreate("_6WBANDA", Player1, 0, 0, 0)
+        GiveItemCreate("_6WBAN01", Player1, 1, 0, 0)
         SetGlobal("6W#ShithriDrinksEnding","GLOBAL",1)
         SetGlobal("6W#ShithriDrinksReward","GLOBAL",3) // bandana
       ~

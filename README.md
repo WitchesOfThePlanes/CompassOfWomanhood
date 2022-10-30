@@ -30,6 +30,9 @@ Core team:
  * Gabriela Zubek (Hrabina Gabina) — Shithri's voice actress, networker
  * Maria Oleszkiewicz (Wilczogon) — song writer
 
+Other voice actors:
+ * Piotr "Bunio" Bunkowski - as Franky the Eye-Popper
+
 Special thanks to:
  * Paweł "Kaczmar" Kaczmarek — linguistic consultation for Polish version of Shithri
  * Szymon Stoczek — proofreading of early versions of Shithri

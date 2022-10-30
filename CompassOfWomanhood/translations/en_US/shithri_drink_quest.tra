@@ -1,21 +1,21 @@
-@1000000 = ~Oy, capt'n! I hope ye'll nah jus' go past these great liqies indifferently, like the last time?~
+@1000000 = ~Oy, capt'n! I hope ye'll nah jus' go past these great liqies indifferently, like the last time?~ [6WDSHI50]
 @1000001 = ~Why wouldn't I?~
 @1000002 = ~What do you mean? We're already drinking quality stuff, aren't we?~
 @1000003 = ~Did you just imply that Elminster's Beer is not a fine liquor?!~
 
-@1000010 = ~Huh. There be more to life than jus' businness all the time, ye know.~
+@1000010 = ~Huh. There be more to life than jus' businness all the time, ye know.~ [6WDSHI52]
 @1000011 = ~But I do enjoy the stuff we drink...~
 @1000012 = ~You're right. There is time for work and time for pleasure. What do you suggest then?~
 @1000013 = ~Normally - maybe. But we have stuff to do.~
 
-@1000020 = ~I nah mean the usual stuff, capt'n. Shadowdark Ale is fine too. But we in Amn! Such a great place, tradin' all the finest liqies o' the whole Faerûn. Ain't it a waste?~
+@1000020 = ~I nah mean the usual stuff, capt'n. Shadowdark Ale's fine too. But we in Amn! Such a great place, tradin' all the finest liqies o' the whole Fah'erûn. Ain't it a waste, capt'n?~ [6WDSHI54]
 @1000021 = ~If you put it that way... what do you suggest then?~
 @1000022 = ~Not really. Drinking is a simple pleasure for me.~
 @1000023 = ~I hope ye jus' jestin'.~
 @1000024 = ~Pfff. Busy-busy <PRO_GIRLBOY>. Wha' a swab...~
 @1000025 = ~Ehh... mayhaps ye'll get it somewhen. If so, talk t' this bucko again.~
 
-@1000030 = ~Simple, me capt'n. We go t' tavern. Ye get a bottle or two. We go t' next one.~
+@1000030 = ~Simple, me capt'n. We go t' tavern. Ye get a bottle or two. We go t' next one.~ [6WDSHI56]
 @1000031 = ~Sounds like a plan.~
 @1000032 = ~Why can't we just buy all of them in a single place though?~
 @1000033 = ~Aye! A good one at that, yarrr. Set sail fer liqies!~
@@ -243,7 +243,8 @@
 @3900004 = ~Relax, Shithri, it's a joke. Have some faith in your captain!~
 @3900020 = ~Capt'n. Fer all the devils - if ye really want t' drink that, jus' mix water wit' tar 'n smoke that o'er rotten wood. That be how it tastes.~
 @3900021 = ~So dark, thick, cloudy and with smokey aftertaste? Doesn't sound that bad if you ask me.~
-@3900022 = ~Nay. No, nay, ne'er. No nay ne'er no more speak o' that trash o' a beer when this bucko around! *spits*~
+@3900022 = ~Well, if you say so...~
+@3900023 = ~Nay. No, nay, ne'er. No nay ne'er no more speak o' that trash o' a beer when this bucko around! *spits*~
 @3900030 = ~Capt'n. Oh me capt'n... ye e'er met Elminster?~
 @3900031 = ~Well, actually...~
 @3900032 = ~What if I did?~
@@ -254,9 +255,14 @@
 @3900037 = ~Aye. It be.~
 @3900038 = ~As ye see - works well fer them bastards.~
 @3900040 = ~Har har, wha' savage joke it be, me capt'n! Ye got this bucko right here, aye ye did!~
+@3900090 = ~Got it.~
+@3900091 = ~Ok, I won't SPEAK of it. But we're still taking a bottle.~
+@3900092 = ~You convinced me.~
+@3900093 = ~Well, even if Elminster doesn't really drink it, we'll still take a bottle.~
+@3900099 = ~*gulp* Wha' a swab...~
 
 @3100000 = ~Westgate Wine.~
-@3100001 = ~Ho, ne'er gonna forget the Beef 'n Oysters Barnabas! But fits well wit' dwarvish stews too, that bold, crimson liqie, aye.~  
+@3100001 = ~Ho, ne'er gonna forget the Beef 'n Oysters Barnabas! But fits well wit' dwarvish stews too, that bold, crimson liqie, aye.~
 @3100002 = ~So basically one wine to rule all them beef dishes? Fantastic!~
 @3100003 = ~I'm afraid it's either the wine or the beef for us...~
 @3100004 = ~Beef goes best with beer, not wine. We don't need it.~
@@ -296,7 +302,7 @@
 @3130050 = ~That why it so pricey, this wine. Nah so easy t' make wine o' frozen grapes.~
 
 @3140000 = ~Dragon's Beer.~
-@3140001 = ~Ye know how Sembia has dragon in its coats o' arms? They be very proud o' this liqie. Nice foams, harsh flavor. Best one fer rye bread 'n cheese.~
+@3140001 = ~Ye know how Cormyr has dragon in its coats o' arms? Few know Sembia has a dragon also. They be that proud o' this liqie. Nice foams, harsh flavor. Best one fer rye bread 'n cheese.~
 @3140002 = ~Rye bread, cheese and beer - what else would I need?~
 @3140003 = ~Sounds very satisfying, but we can't really afford that kind of thing. Not unless we stay at countryside.~
 @3140004 = ~Cheese goes with wine, not beer.~
@@ -316,7 +322,7 @@
 Shithri claims it to be quite heavy and best served chilled, but not cold. It's highly popular throughout the Sword Coast - you do remember people drinking it Candlekeep, Friendly Arm Inn and even Nashkel. It comes from Arabel, Cormyr.~
 
 
-@4010000 = ~Shadordark Ale~
+@4010000 = ~Shadowdark Ale~
 @4010001 = ~This bottle is filled with dark brown, a bit cloudy beer. When shaken, bubbles appear inside of it, and when poured, produces a yellow foam. Spells of cloves.
 
 According to Shithri, it's a very popular drink among young women of the Sword Coast, possibly due to it crisp, sweet and fruity flavor, as well as pleasant, creamy texture.~
@@ -339,19 +345,19 @@ Shithri says it's clear, crisp and light. Probably the most common of the Calims
 Confirmed by Shithri to contain nettles from Daggerfort, as well as desert cacti. It's said to be sharp and refreshing.~
 
 @4030200 = ~Golden Sands Orange~
-@4030201 = ~One of the Golden Sands Brew series of Calimshite lagers. This one is amber-yellow. Smells of oranges.
+@4030201 = ~One of the Golden Sands Brew series of Calimshite lagers. This one is amber-yellow and smells of oranges.
 
 Shithri claims it to get its color from oranges and currants, which also give it slightly acidic, sweet taste. It's very light, even for a lager of the Golden Sands Brew series.~
 
 
-@4040000 = ~Iriaeboran Ale~
+@4040000 = ~Iriaeboran North Brew~
 @4040001 = ~Called "bite of the north winds", this brew doesn't seem to stand out very much. It lacks distinct smell and its dark amber color is shared with many other drinks too.
 
-Despite it being rather mild, Shithri claims it to have a quite unique "cold" aftertaste. It's produced in Iriaebor of Elturgard region, just east of Wood of Sharp Teeth.~
+Despite it being rather mild, it has quite a unique "cold" aftertaste - or so says Shithri. It's produced in Iriaebor of Elturgard region, just east of Wood of Sharp Teeth.~
 
 
 @4050000 = ~Luiren's Best Ale~
-@4050001 = ~This bottle contains jeb-black, very thick ale of a bit unusual smell.
+@4050001 = ~This bottle contains jet-black, very thick ale of a bit unusual smell.
 
 Shithri claims it's produced by halflings and mostly consumed by halflings. Very popular in Luiren, Halruaa and Shining South, but occasionally also drunk in Sembia, Sword Coast and - as you saw - Amn.~
 
@@ -365,25 +371,466 @@ A slight smirk appears on Shithri's face each time she sees you holding the bott
 @4070000 = ~Undermountain Alurlyath~
 @4070001 = ~This bottle is made of very dark glass - its contents can't be seen without opening it. When you do, however, you can see a slight silver-green glow inside of it.
 
-Shithri claims this to be a special kind of sweet wine wine, with slightly nutty aftertaste. It's considered quite romantic and common among sea adventurers with good taste. Produced in Undermountain, a dwarvish city located just below Waterdeep.~
+Shithri claims this to be a special kind of sweet wine, with slightly nutty aftertaste. It's considered quite romantic and common among sea adventurers with good taste. Produced in Undermountain, a dwarvish city located just below Waterdeep.~
 
 
-@4080000 = ~Arabellan Wine~
+@4080000 = ~Arabellan Dry~
 @4080001 = ~This bottle contains ruby wine with a slight forest-like smell.
 
 According to Shithri, it's a dry wine that can be consumed on its own, chilled, or used for cooking - particularly braising a boar, due to the pleasant, berry-like taste in the background.~
 
 
 @4090000 = ~Evermead~
-@4090001 = ~This fanciful bottle contains a clear-gold, very thick mead. When you look at it against the light, it seems as if little suns - or stars, perhaps? - danced inside of it.
+@4090001 = ~This sophisticated bottle contains a clear-gold, very thick mead. When you look at it against the light, it seems as if little suns - or stars, perhaps? - danced inside of it.
 
 Shithri claims that this mead contains all the most expensive ingredients, such like cherries, vanilla beans and rose petals. It Westgate, it's a sign of nobility. Rumored to take centuries to produce and easily the best liquor elves of Trademeet make. It's also easily the most expensive drink one can have in the Sword Coast or Amn.~
 
 
-@4100000 = ~Westgate Wine~
-@4100001 = ~~
+@4100000 = ~Westgate Ruby~
+@4100001 = ~You can see this wine's lush crimson even from behind the thick glass.
+
+You're informed it's quite bold and slightly acidic. Shithri says it's the very best wine to have with beef dishes, be it a hearty stew or the famous Beef and Oyster Barnabas.~
 
 
+@4110000 = ~Saerloonian Topaz~
+@4110001 = ~This bottle is almost transparent, with very thin walls, so you can see the contents very well. It's filled with yellow-amber wine that gets but slightly bubbly when shaken.
+
+Shithri says it's semi-dry and that its nutty flavour with slight lemon-and-pear overtones make it a great for marinating rabbit. She bolds, however, not to confuse it with the other two famous wines from the same region: Saerloonian Special Vat, which is a red wine made with the addition of grains and sweet berries, and Saerloonian Glowfire, the highly aromatic wine that is said to capture the very essence of summer.~
+
+
+@4120000 = ~Berduskan Dark~
+@4120001 = ~The liquid inside this bottle is not only very dark, but also a bit thicker than most wines you've seen. It smells quite sweet.
+
+Shithri warns you that this wine is very alcoholic and may surprise you with it's burning aftertaste. According to her, if you tried it in Beregost - you did it wrong, as its true value only shines when it's paired with prawns or quail eggs, preferably both. Despite how strong it is, it's said to be quite a popular choice for romantic dinners.~
+
+
+@4130000 = ~Winter Wine~
+@4130001 = ~This bottle's contents is of purplish-red color. It looks a bit more like a potion rather than wine, but the smell dispels any doubts you may have.
+
+According to Shithri, this very alcoholic wine is made in the North, from grapes freezed on the vine. Its flavour is very strong and slightly spicy.~
+
+
+@4140000 = ~Dragon's Beer~
+@4140001 = ~The beer in this bottle is of a lighter brown hue and foams quite well. It has quite a strong aroma, a bit reminescent of sulphur.
+
+Sembians are very proud of this beer - or so Shithri says. Its flavor is strong and harsh, which makes it a good pair for rye bread and rich cheese.~
+
+
+@4900000 = ~Elminster's Choice~
+@4900001 = ~Almost half of this bottle is covered in a simple label picturing famous mage Elminster. Big, colorful letters above it form the text: "Elminster's Choice!". Below the picture come smaller characters stylized for hand-writing - "Life has no meaning but what we give it. My choice is on beer".
+
+The liquid inside is reminescent of storm clouds - very dark and hazy. It has a strong odor of cheep smoked ham.
+
+Shithri not only refuses to provide any valuable comment on this beer, but seems gravely offended of you as much as having it on you.~
+
+
+
+@5000000 = ~Nah talkin' t' ye lubbers. Pff! *gulp*~
+@5000010 = ~Oy, look who's there! Ain't that lil Shithri?~ [6WDPIR00]
+@5000011 = ~Eh? Who am I seein'? Franky the Eye-Popper? Be that ye? How'd ye been, matey?~ [6WDSHI00]
+@5000012 = ~Nah bad, nah bad. Been sailin' between Amn 'n Calimshan quite lot these days... Betta than ye, it seems. Who's that lubber o'er there?~ [6WDPIR02]
+@5000014 = ~That? That be me capt'n. Capt'n, meet Franky.~ [6WDSHI02]
+@5000015 = ~"Capt'n"? Har har! That a good one! Shithri, me lil rapscallion. Why nah ye join me instead of playin' wit' that lubber?~ [6WDPIR04]
+@5000017 = ~Capt'n be alright, Franky.~ [6WDSHI04]
+@5000018 = ~Aye, sure thing! That lubber who had dwarvish grog once or twice 'n already thinks he's a sailor, har har! Shithri, ye lil jester, 'ave some mercy fer an old man's stomach!~ [6WDPIR06]
+@5000019 = ~Aye, sure thing! That lubber who had dwarvish grog once or twice 'n already thinks she's a sailor, har har! Shithri, ye lil jester, 'ave some mercy fer an old man's stomach!~ [6WDPIR07]
+@5000020 = ~Nice to meet you too, Franky. I'm <CHARNAME>.~
+@5000021 = ~Not to brag, but I'm actually quite an expert when it comes to liquors.~
+@5000022 = ~Let's not waste our time on that man. We have stuff to do.~
+@5000030 = ~I bet ye do, lubber! Pff. Shithri, matey, if ye reconsider - ye know where t' find me.~
+@5000035 = ~Ho? 'n wha' makes ye think that?~ [6WDPIR10]
+@5000036 = ~Well, I mean: how difficult can it be to be better than someone like you?~
+@5000040 = ~Oh, 'n who be ye, huh?~
+@5000041 = ~That is no concern of yours.~
+@5000042 = ~You heard my trusty bosun. I'm her captain.~
+@5000043 = ~I'm someone who knows <PRO_HISHER> liquors better than you do.~
+@5000050 = ~Aye, it ain't. *gulp* Good luck wit' yer lubbin' then. Shithri, matey, if ye reconsider - ye know where t' find me.~
+@5000060 = ~Ye sure be! I bet ye got lotta experience on the sea, har har.~ [6WDPIR12]
+@5000061 = ~Well, I bet even a land-lubber like me knows my liquors better than you do.~
+@5000070 = ~Wha' ye said, ye swab?!~ [6WDPIR14]
+@5000071 = ~What you heard, dog. I bet I know my liquors better than you do.~
+@5000072 = ~I said what I said.~
+@5000080 = ~I warn ye, ye bildge rat. I nah be called Franky the Eye-Popper fer naught.~ [6WDPIR16]
+@5000081 = ~Oh? So you admit you can only beat me by fist and not by skill?~
+@5000082 = ~Bring it on, Franky the Popped-Eye!~
+@5000085 = ~Ho! I see ye got a big mouth. Fine, let's see if ye as good as ye say. The Thumb be judgin'.~ [6WDPIR18]
+@5000086 = ~Wha' the Thumb hears? A drinkin' duel, be it?~
+@5000087 = ~So wha' ye say, Shithri's "cap'tn"?~
+@5000090 = ~Fine by me.~
+@5000091 = ~I won't waste my time on you.~
+@5000095 = ~Huh! Thought so - ye jus' all talk. *gulp* Good luck wit' yer lubbin' then. Shithri, matey, if ye reconsider - ye know where t' find me.~
+
+@5000100 = ~Good! *gulp* Here be me rules: I try three o' yers, ye try three o' mine. I win - ye gimme some nice, round figure. Like 5000 gold pieces, says me. Fair enough?~ [6WDPIR20]
+@5000101 = ~Sure. I accept your rules.~
+@5000102 = ~And what if I win?~
+@5000103 = ~After giving it a second thought, I won't waste my time on you.~
+@5000110 = ~If ye win? Har har! If that e'er happens, ye pick wha' ye want.~ [6WDPIR22]
+@5000111 = ~Fine. I accept your rules.~
+@5000112 = ~Make it 5000 gold too and we're fine.~
+@5000120 = ~Capt'n? May I 'ave this bucko talk t' ye fer a moment?~ [6WDSHI06]
+@5000121 = ~Franky be plenty strong, though he nah look like it. Some say it cause o' how much spinach he eats, but I nah believe that. He prolly be 'avin' some item that makes 'im strong.~ [6WDSHI08]
+@5000122 = ~Like gloves or belt?~
+@5000123 = ~Doesn't matter. 5000 gold pieces is a fair reward.~
+@5000125 = ~Aye. Somethin' o' the kind.~ [6WDSHI10]
+@5000126 = ~Well, in that case... Hey, Franky! I will pick what I want then I win, after all. I accept your rules.~
+@5000130 = ~Could be, aye. 5000 gold pieces t' ye if ye e'er win. Deal?~
+@5000140 = ~Ready?~
+@5000141 = ~When you are.~
+@5000142 = ~Let me just gather my gold.~
+@5000143 = ~Let me just gather my collection.~
+@5000150 = ~Aye, take yer time. I ain't wanna hear ye complain ye got nah chance.~
+@5000160 = ~Oy, lubber. Ready fer the duel yet?~
+@5000161 = ~When you are.~
+@5000162 = ~No, not yet.~
+
+@5000200 = ~Oy, The Thumb! Come o'er 'ere!~
+@5000201 = ~Hehe. Listen y'all! Ye don't be seein' that often - a drinkin' duel 'ere in Sea's Bounty!~
+@5000210 = ~Betta be listenin' good, folks! These two will now be...~
+@5000211 = ~Be quick with it, ye hooker! We're waiting!~
+@5000212 = ~Too much talking, not enough drinking!~
+@5000213 = ~Oy, ye gonna flappin' yer gums, leavin' 'em throats-dry? Or let 'em 'ave their duel already, yarrr?~
+@5000214 = ~Oi, I ain't THAT patient, mate. My throat's dry.~
+@5000220 = ~Me folks! Wit'out nah more yappin': hello an' welcome our contestants...~
+@5000221 = ~We know them already!~
+@5000222 = ~Just begin already, let them taste the wine!~
+@5000225 = ~O' course, o' course. First goes our first-timer, <CHARNAME>!~
+@5000226 = ~Pick a drink fer Franky t' guess.~
+
+@5010000 = ~*sniffs* *sips*~
+@5010001 = ~Heavy. Black, wit' deep brown foam. Huh! Easy. It's Arabellan Bitter Black.~
+@5010010 = ~...which y'all can get 'ere, in Sea's Bounty! 'Tis one's a point fer Franky!~
+@5010100 = ~*sniffs* *sips*~
+@5010101 = ~Smells o' cloves. Cloudy an' bubblin'. Cremy. It's, obviously, Shadowdark Ale!~
+@5010110 = ~Ladies love 'im, I can tell ye! 'Tis a point!~
+@5010200 = ~*sniffs* *sips*~
+@5010201 = ~Hmmm...~
+@5010202 = ~This one's nah easy. Was I nah a common guest at Calimport, I'd 'ave nah idea... but I had it once or twice. What its name though... Pretty sure it comes from Cormyr's capital...~
+@5010203 = ~Suzail.~
+@5010204 = ~'Tis correct. Suz-Ale. Nah point fer Franky though!~
+@5010300 = ~*stares* Be it a trick? *sips*~
+@5010301 = ~Nay. Nah trick. It's really jus' Golden Sands Basic. How disappointin'.~
+@5010305 = ~Nah Calimshite tricks this time! Point fer Franky!~
+@5010306 = ~*sigh*~
+@5010310 = ~*sniffs* *sips*~
+@5010311 = ~Har har! Givin' cacti brew t' me? Forgot I'm tradin' wit' Calimshan already, <PRO_BOYGIRL>? O' course it's Golden Sands Gold!~
+@5010315 = ~Truly golden answer, point fer Franky!~
+@5010320 = ~*sniffs* *sips*~
+@5010321 = ~Hmm. Pretty sure it's Golden Sands Brew... but wha' kinda?~
+@5010322 = ~Smells o' oranges. Sweet. Very light. But a bit acidic, nah jus' from orange. Currant, be it?~
+@5010323 = ~Me guess: Golden Sands Orange.~
+@5010325 = ~Aye it be! Quite a rarity, ain't it? One point fer ye!~
+@5010400 = ~*sniffs* *sips*~
+@5010401 = ~Brrr! Cold! Something from the North? Nah gonna lie though - I ain't knowin' that one.~
+@5010410 = ~From the North 'tis, aye! The Iriaebor's best!~
+@5010411 = ~Hey, come t' think o' it. Why ye nah got it 'ere, mate?~
+@5010412 = ~...~
+@5010413 = ~Me says: let's continue.~
+@5010500 = ~*sniffs* *sips*~
+@5010501 = ~Smells like... smells. Black. Weird. Huh... Bet it's some halflin' or gnome one. No clue about theirs though.~
+@5010510 = ~Huh. E'ery halflin' worth 'is sling knows this one! 'Tis Luiren's Best itself! Nah point fer ya!~
+@5010600 = ~*sniffs*~
+@5010601 = ~Ye 'ave good taste, lubber, I mus' admit. This be good old Black Tanagyr's.~
+@5010610 = ~An' that's a good answer! Point fer Franky!~
+@5010611 = ~Oi. Oi, mate. Ain't tha' *hic* the one from...~
+@5010612 = ~Aye, 'tis the one. Heard they 'ave it somewhere in the city.~
+@5010700 = ~*stares* *sips*~
+@5010701 = ~Green. Glowing. Is it rich though? Hmm... mayhaps? Could it be...~
+@5010702 = ~Drow Green. Nah Ulaver, nay. But some kind of Drow Green.~
+@5010710 = ~Oy, matey, ye jestin' or wha'? E'ery bucko knows this one!~
+@5010711 = ~It's Alurlyath. They have it here.~
+@5010712 = ~I didn't realise you have such a good taste for wine, my dear!~
+@5010713 = ~She doesn't. Just a keen eye, boy. A pair, even. Not looking into them often enough, are you?~
+@5010714 = ~I... huh! As if you could know!~
+@5010720 = ~No point!~
+@5010800 = ~*smells* *sips*~
+@5010801 = ~Har har. Taste o' the forest, aye. Drunk it back on Inner Sea, drinkin' it 'ere. One o' me favs, Arabellan Dry.~
+@5010810 = ~Straight from Cormyr, aye! One point fer ye!~
+@5010900 = ~*sniffs* *sips*~
+@5010901 = ~Be it really... *sips*~
+@5010902 = ~Ne'er had it afore. But it obviously be it - the famous Evermead. I see ye nah poor <PRO_MANWOMAN> if ye can afford it, lubber.~
+@5010910 = ~An' if any one o' ye ne'er tried it either - now's the chance! Only 'til the end o' this duel - pay two gold pieces less!~
+@5010911 = ~Would you care for some, my dear?~
+@5010912 = ~Glad you've finally asked.~
+@5010920 = ~One point fer Franky!~
+@5011000 = ~*sniffs* *sips*~
+@5011001 = ~Deep, deep red an' quite bold... Had something like that in Cormyr. It's Blood Wine.~
+@5011011 = ~How typical, rivvil... I can say he's wrong without even tasting as much as a drop of it.~
+@5011012 = ~Have you ever seen blood?~
+@5011013 = ~Ayayay... I guess 'tis true Franky ne'er liked Beef 'n Oysters Barnabas...~
+@5011020 = ~Nah point fer ye this time, Franky! 'Tis Westgate Ruby, nah Bloood Wine.~
+@5011021 = ~Blimey...~
+@5011100 = ~*stares* *sips*~
+@5011101 = ~Hmm. Nah glow, but the color fits an' it does tast o' pears. Nah too sweet either. I says: Saerloonian Glowfire, although badly stored.~
+@5011010 = ~Saerloonian - aye. But 'tis Topaz, nah Glowfire. Nah point!~
+@5011011 = ~Toldja. People keep confusin' 'em.~
+@5011200 = ~*stares* *sips*~
+@5011201 = ~Very dark. Dense. Dry, but in a sweet way. An' that burnin' aftertaste... like fort'fied? They make that kind o' stuff in the North, ain't they? Winter Dry, then?~
+@5011210 = ~Nay. Nah really North, e'en. This one's from Berdusk. Nah point!~
+@5011300 = ~*stares* *sips*~
+@5011301 = ~Very dark, purplish even. Sweet, but plenty strong. An' that burnin' aftertaste... like fort'fied? They make that kind o' stuff in the North, ain't they? Winter Wine, then?~
+@5011310 = ~Aye. Winter Wine. Hope ye're nah jus' guessin' the name. One point fer Franky!~
+@5011400 = ~*smells* *sips*~
+@5011401 = ~Nah from Cormyr. Nay, definitely - too strong. Sembia, perhaps? Hmmm... I be knowin' but one strong Sembian beer. That's Old Black Goblin.~
+@5011410 = ~Nah, that's Dragon's Breath.~
+@5011411 = ~Old Black Goblin be plenty pricey e'en in Sembia, matey.~
+@5011412 = ~All fancy an' "noble", ain't he?~
+@5011413 = ~Calimshan itch, mayhaps?~
+@5011414 = ~Har har! Could be, aye!~
+@5011415 = ~Calimshan Itch. Terrible disease and yet you laugh at it! See, my cousin Barnal...~
+@5011420 = ~Nah point!~
+@5019000 = ~*stares* *sniffs*~
+@5019001 = ~Ye tryin' t' poison me? I ain't be drinkin' tis... tis... tis slop!~
+@5019002 = ~Yer guess then?~
+@5019003 = ~Oh come on, mate! 'Twas suppposed t' be FINE liquor duel!~
+@5019010 = ~"Fine"? Huh. Can't remember the "fine" part, I'm afraid. Maybe the judge remembers?~
+@5019011 = ~Well, it's a bit subjective whether or not some drink is "fine", wouldn't you agree?~
+@5019012 = ~Huh. So he says he won't be guessing. You heard that, good folks?~
+@5019013 = ~Fine, I'll just pick another one then?~
+@5019020 = ~Hmmm... nay. The Tumb be pretty sure he says: "drinking duel". Nah "fine" t' be found.~
+@5019030 = ~May The Thumb say: he be servin' it 'here in Sea's Bounty.~
+@5019031 = ~Ex'cly! Who ye thnk ye're, mate? Sayin' all 'ose bad things 'bout...~
+@5019032 = ~Expected more o' ye, Franky. All fancy an' bein' too "noble" t' drink wit' us.~
+@5019033 = ~Oh really, good sailor, you're ruining the charm of this place!~
+@5019035 = ~I be countin' this drink as good as any.~
+@5019040 = ~Hey, sweety, can't you just accept defeat?~
+@5019041 = ~Nah fair, Franky! Rules be rules!~
+@5019042 = ~Oi, mate, who ye thnk ye're?, huh? Who're ye anways?~
+@5019043 = ~Franky. He's a regular.~
+@5019044 = ~Well, *I* nay be knowin' 'him!~
+@5019045 = ~I says continue.~
+@5019050 = ~Franky, mate, ye be drinkin' or forfeitin' round?~
+@5019051 = ~*sigh* Jus'... jus' let's say I lost that one.~
+@5019060 = ~I says fine.~
+
+
+@5000500 = ~'ere comes a drink from Franky!~
+
+
+@5020000 = ~You're served a mug of clear, golden beer.~
+@5020001 = ~Take a better look.~
+@5020002 = ~Smell it.~
+@5020003 = ~Taste it.~
+@5020004 = ~Forfeit the round.~
+@5020010 = ~The beer is clear and of deep-golden color. On top of it, there is a thin layer of white foam. You don't see many bubbles.~
+@5020020 = ~Aside from a feint aroma typical to lagers, you also notice another strong component to the beer's smell. It's faint, but definitely there, herbaceous and slightly bitter.~
+@5020025 = ~Aside from a feint aroma typical to lagers, you also notice another strong component. You know that slightly bitter smell very well - it's that of good-quality nettles.~
+@5020026 = ~Clear, golden lager which smells of nettles. It's Golden Sands Gold.~
+@5020030 = ~When you sip the beer, it seems just slightly acidic. The taste is sharp and leaves a refreshing feeling in your mouth. It's somewhat reminescent of watermelon, although less sweet. You almost miss a very suble, iron-like after-taste.~
+@5020031 = ~Tastes familiar. It's Golden Sands Gold.~
+@5020032 = ~Tastes familiar. It's Golden Sands Basic.~
+@5020035 = ~When you sip the beer, it seems just slightly acidic. The taste is sharp and leaves a refreshing feeling in your mouth. It's somewhat reminescent of watermelon, although less sweet. You're quite certain it's some kind of a fruit, but it's foreign to you - perhaps coming from a different part of the world. Suddenly, you notice a suble, iron-like herbal after-taste. Nettles. Good ones, at that.~
+@5020036 = ~Clear, golden lager with nettles and some kind of foreign fruit - probably cacti. It's Golden Sands Gold.~
+@5020040 = ~It's Calimshan's pride's northern version. Golden Sands Gold.~
+
+@5020100 = ~You're served a glass of dark wine.~
+@5020101 = ~Take a better look.~
+@5020102 = ~Smell it.~
+@5020103 = ~Taste it.~
+@5020104 = ~Forfeit the round.~
+@5020110 = ~This wine is of very deep red hue. You can see no other characteristics worth mentioning.~
+@5020115 = ~Taking the glass in your hand, you make a gentle swirling motion. You observe how the wine drops don't stick to the glassat all. Low viscosity. It's a dry wine from abroad, probably from the west.~
+@5020116 = ~A dry wine from a western forest. Most famously, Cormyr fits that. And which Cormyrean city is the most known for dry red wines? Arabel. That would be Arabellan Dry then.~
+@5020115 = ~Taking the glass in your hand, you make a gentle swirling motion. You observe how the wine drops don't stick to the glass at all. Low viscosity. It's a dry wine from abroad, probably from the west.~
+@5020120 = ~The wine's aroma is too subtle for you to identify.~
+@5020125 = ~Your keen sense of smell just barely detects a familiar hint: berries.~
+@5020126 = ~A dark red wine with a hint of berries. It's Arabellan Dry.~
+@5020130 = ~The wine is very dry with a woodsy feel to it.~
+@5020131 = ~Tastes familiar. It's Arabellan Dry.~
+@5020133 = ~The wine is deep in its dryness, its richness singing you the stories of forests afar. And yet, it brings back memories of the Sword Coast...~
+@5020134 = ~I know it well, it's one of the first liquors I've had, back in good Candlekeep. It's Arabellan Dry.~
+@5020135 = ~How could I ever forget the very taste of adventure? It's the wine I had in Friendly Arm Inn, the first one I stayed at after leaving Candlekeep. Arabellan Dry.~
+@5020136 = ~This wine reminds you of forests during a rainy day. It has a hint of berries, although they seem a bit different from the local ones. It's very dry, but leaves a pleasant taste in your mouth.~
+@5020140 = ~It's Cormyr's pride, Arabellan Dry.~
+
+@5020200 = ~You're served a glass of pale red wine.~
+@5020201 = ~Take a better look.~
+@5020202 = ~Smell it.~
+@5020203 = ~Taste it.~
+@5020204 = ~Forfeit the round.~
+@5020210 = ~This pink-red wine is transculent and clear. It seems quite watery.~
+@5020220 = ~The aroma is very sweet and fruity. It seems quite complex, but you don't recognize its components.~
+@5020223 = ~You quickly recognize the lush smell of raspberries, a fruit very common in the Sword Coast. There is a different fruity scent too. A simpler one. These two aren't the whole thing either, though. You're quite certain you're missing some third component.~
+@5020224 = ~A wine made with two fruits, one of which is raspberry. Perhaps strawberry is the other one? That would be Saerloonian Special Vat then.~
+@5020226 = ~As you smell the wine, it brings back your memories of summer back in Candlekeep. One of the monks, passionate about halfling culture, always made sure to get you a proper treat - a crusty pie filled with local raspberries or Tethyr-imported strawberries.
+
+This wine smells exactly like that. Raspberries, strawberries and grains.~
+@5020227 = ~A wine that smells of a halfling pie. Beautiful. It's Saerloonian Special Vat.~
+@5020230 = ~It's really sweet, but not overwhelmingly so. It also leaves a tingle on your tongue, somehow.~
+@5020233 = ~As you sip the wine, you instantly recognize a familiar taste: ripe raspberries. There is also one more fruit in there. Less subtle in its sweetness, but just slightly acidic. The texture is also not as watery as it would if the wine was made just with sweet fruits, there is something more added in there. Something that leaves a tingle on your tongue. Your first thought is nettle, but then this wine doesn't taste of any green leaves.~
+@5020234 = ~A wine made with two fruits, one of which is raspberry. And something that changes the texture, but isn't nettle or any other green leaves. Could it be grains? And could the fruit be strawberry? That would be Saerloonian Special Vat then.~
+@5020236 = ~The first thing you notice about the wine is that it's unbelievably delicious. A perfect balance of fruity sweetness with just a hint of acidity, pleasurable texture without any stickiness. It feels like drinking liquid summer, having some excellent raspberry pie and raw strawberries at the same time. It brings back memories of one of the monks at Candlekeep, passionate about halfling culture, who always made sure to get you a proper treat, going as far as to buy Tethyr-imported strawberries.
+
+You wake up from this little daydream. The duel. You should make a guess. Raspberries, strawberries and a pleasant, pie-like feel to it. Grains?~
+@5020237 = ~The taste and feel of summer pie. It is, indeed, very special. It's Saerloonian Special Vat.~
+@5020240 = ~It's Sembia's rare sweet treat, Saerloonian Special Vat!~
+
+@5020300 = ~You're served a glass of deep-red wine.~
+@5020301 = ~Take a better look.~
+@5020302 = ~Smell it.~
+@5020303 = ~Taste it.~
+@5020304 = ~Forfeit the round.~
+@5020305 = ~You look again at the glass of wine.~
+@5020310 = ~For some reason, you suddenly feel very pleased. It reminds you of when you complete a task from your dark patron.~
+@5020311 = ~For a split of a second, you get an eerie feeling. Even afterwards, you're a little uneasy looking at the glass before you.~
+@5020312 = ~You notice that Keldorn got pale. He looks at you with concern and slowly shakes his head.~
+@5020313 = ~You notice Dorn is smiling. And it's not just any smile - it's the very same facial expression he makes after completing a mission given to him by his patron, Ur-Gothoz.~
+@5020314 = ~You notice Dorn is smiling. And it's not just any smile - it's the very same facial expression he makes after completing a mission given to him by his patron, Azothet.~
+@5020315 = ~Cast Detect Evil.~
+@5020316 = ~"I hope you don't mind if I pray before making my guess?"~
+@5020317 = ~Only one wine can have such a strong presence of evil in it. One posessed by sinful spirits. It's Blood Wine.~
+@5020318 = ~I heard too many stories not to recognize it. Made from grapes shriveled by sinful spirits. It's Blood Wine.~
+@5020320 = ~You feel a powerful aura emanating from the glass right in front of you. The wine howls with evil like wind on a hill.~
+@5020321 = ~Oy, wha' ye doin' wit' that magics?~
+@5020322 = ~It was just checking if it wasn't cursed... well, it is.~
+@5020323 = ~Judge? I thought it was supposed to be a drink, not a cursed potion.~
+@5020325 = ~Hmm... the Thumb be allowin' that spell. But ye still need t' guess.~
+@5020326 = ~Aye. The Thumb ain't be 'avin' nah problem wit' prayer.~
+@5020330 = ~As you bless the glass among the hellish groaning, the wine suddenly changes its color. Now it's of a vivid red hue.~
+@5020331 = ~A wine once of the color of clotted blood, but screams and resembles a fresh wound when blessed. It can't be anything other than Blood Wine.~
+@5020340 = ~This wine is of deep red hue. You can see no other characteristics worth mentioning.~
+@5020341 = ~The wine isn't deep red anymore, now its color is very vivid. As you take a better look, you notice it actually seems to slowly flow around the glass.~
+@5020342 = ~A wine that looked like clotted blood while still, but started flowing on its own when vivid red, like a fresh wound. It can'y be anything other than Blood Wine.~
+@5020350 = ~The aroma is quite strong, but you find it difficult to describe it. Plums? Cherries? Something different altogether? You're not sure.~
+@5020360 = ~It's heavy-bodied. Deep red tones are complimented by a slight afterbite. It's... pleasant, but in an unusual way.~
+@5020361 = ~You take a small sip and start choking. Your throat is burning and your heart is filled with pain. For some reason, a vivid picture of a gallow can't get out of your mind. You almost hear the crows caw.~
+@5020362 = ~So much pain. Such sinful spirits, dwelling in this glass. I did hear rumors of it, but didn't want to believe it. And yet here it is - Blood Wine.~
+@5020363 = ~Gallows, crows, spirits of dead men hanging! Take it away from me!~
+@5020364 = ~As you take a sip, you feel your heart is filling with power and your head - with vivid images. Gallow. Hanging men. Crows cawing above them.~
+@5020365 = ~Whoever made this wine, they weren't afraid of powerful spirits. I heard about it. It's Blood Wine.~
+@5020366 = ~The taste of this wine bring you back a memory back from the Sword Coast...~
+@5020367 = ~I know this wine. The monks at Candlekeep said it was the only truly "evil" one. I didn't understand what they meant until I've tried it... Blood Wine. Fitting name.~
+@5020368 = ~It's just a story but a monk in Candlekeep once mentioned me, but it's too specific to be anything else. Heavy wine with deep tones and slight afterbite. Very dark red, looks almost like blood. And made from grapes posessed by spirits of sinful mortals. Blood Wine.~
+@5020369 = ~I tried it back in Nashkel. One of the people there told me a legend about the curse around it. Cursed or not, it's definitely Blood Wine.~
+@5020380 = ~The air suddenly seems cooler, but noone else seems to notice it. As you lean towards the glass, your vision gets blurry and you feel your very self being pushed back.~
+@5020381 = ~You know this feeling well. You let the spirits guide your consciousness.~
+@5020382 = ~You are shown a series of violent scenes as if you were the one experiencing them. Warm blood dripping from your hand as you murder innocents. But then the scenes vanish and you're filled with regret. The pain of a sinful soul unable to truly cross the border to the ethereal world.~
+@5020383 = ~You see a blurry silhouette of a powerful wizard... or at least someone you see as a wizard. Some strange power sucks you in and binds you to a piece of mater. You have no eyes. No ears. You just grow.
+
+You are now a plant.~
+@5020384 = ~Your grapes are dry and lifeless, mere shells of fruits. And yet you know people gather them, because with each one of them being picked, you lose a bit of yourself.~
+@5020385 = ~Finally, you sense being served in a glass. And a friendly soul leaning towards you. The first being willing to hear your story.~
+@5020386 = ~You wake up. Only then you realise your lips have already moved to say...~
+@5020387 = ~BLOOD WINE~
+@5020090 = ~The legendary "cursed wine" from Aglarond. Blood Wine.~
+
+
+@5029900 = ~Point fer <CHARNAME>!~
+@5029910 = ~No point fer ye.~
+
+
+@5030000 = ~That was the last round, folks! An' the winner is...~
+
+@5030100 = ~Neither o' the two! They proved to both be jus' as good!~
+@5030101 = ~Huh. That comes a surprise. That new <PRO_MANWOMAN>'s nah so bad.~
+@5030102 = ~Har har, 'tis me capt'n fer ye!~
+@5030103 = ~I mus' say, Shithri, I misjudged that capt'n o' yers.~ [6WDPIR30]
+@5030104 = ~Ye know, he got a name. 'n ears.~ [6WDSHI16]
+@5030105 = ~Ye know, she got a name. 'n ears.~ [6WDSHI17]
+@5030106 = ~<CHARNAME>. As much as I hate t' admit that - ye nah a common lubber I thought ye be. Good match.~ [6WDPIR32]
+@5030110 = ~Thank you. You're not half-bad either, Franky.~
+@5030111 = ~Maybe we'll get a rematch next time we meet. Until then!~ [6WDPIR34]
+@5030120 = ~To be frank, I can't say I really expected to hear "sorry". I guess that's as good as it gets.~
+@5030130 = ~You just got lucky.~
+@5030131 = ~Lucky? Har har! Prove me worse then, next time we meet. Until then!~ [6WDPIR36]
+
+@5030200 = ~Our one an' only, Franky the Eye-Popper!~
+@5030201 = ~Knew that.~
+@5030202 = ~See, Shithri? Won fair an' square so I guess ye joinin' me now?~ [6WDPIR40]
+@5030203 = ~Wha'? This bucko be ne'er part o' the stakes, swab.~ [6WDSHI12]
+@5030204 = ~Oh come on...~ [6WDPIR42]
+@5030205 = ~I say wha' I say.~ [6WDSHI14]
+@5030206 = ~Oi, lubber. I hope ye nah forgot. Me gold.~ [6WDPIR44]
+@5030210 = ~Good match. Here is your reward.~
+@5030211 = ~Harrr... Aye, 5000 'tis.~
+@5030212 = ~Maybe one day, aft' ye see some more o' the world, we'll get a rematch. Until then, lubber!~ [6WDPIR46]
+@5030220 = ~You just got lucky.~
+@5030221 = ~Har har! Ye a sore loser, lubber! Now. Laughs aside - me gold.~ [6WDPIR48]
+@5030222 = ~Here it is.~
+@5030230 = ~Can't you just take that pirate girl?~
+@5030240 = ~Gold?~
+@5030241 = ~Ye deaf or wha'? Ownin' me 5000 gold pieces, remember?~ [6WDPIR50]
+@5030242 = ~Sure, take it.~
+@5030243 = ~Ah. That gold. I don't feel like giving it to you.~
+@5030250 = ~Huh. Lemme tell ye somethin', matey. Jus' a friendly advice, cause I'm in a good mood.~ [6WDPIR52]
+@5030251 = ~I don't need yer gold. But I doubt the Thumb be happy if ye turn out nah t' pay yer debts.~ [6WDPIR54]
+@5030252 = ~Ok, ok. Take my gold then.~
+@5030253 = ~I don't care what you tell about me. I'm not parting with my gold.~
+@5030255 = ~'Tis how ye greet hospitality? Get out! The Thumb had his share o' slippery rats, nah need fer more!~
+@5030260 = ~Capt'n. A debt be a debt.~
+
+@5030300 = ~The newcomer, <CHARNAME>!~
+@5030301 = ~Bein' fair: I doubted that.~
+@5030302 = ~Har har, 'tis me capt'n fer ye!~
+@5030303 = ~*hic* Very nice! Newcmr, ye a fine <PRO_MANWOMAN>. Let's 'ave a drink!~
+@5030304 = ~...~ [6WDPIR60]
+@5030310 = ~Good match, Frank. May I call you Frank?~
+@5030311 = ~Ye may nah.~ [6WDPIR62]
+@5030312 = ~Why so grim, Frank?~
+@5030313 = ~Jokes aside - what's my reward?~
+@5030314 = ~If I remember correctly, I was to "pick what I want" in case I win.~
+@5030315 = ~So where is my 5000 gold pieces?~
+@5030320 = ~To be frank, I expected no other result.~
+@5030321 = ~Why tormentin' this old sailor? Take yer reward an' jus'...~ [6WDPIR64]
+@5030322 = ~Yes, my reward. What was it, again?~
+@5030323 = ~If I remember correctly, I was to "pick what I want" in case I win.~
+@5030324 = ~My 5000 gold pieces, you mean.~
+@5030330 = ~So, what's my reward?~
+@5030331 = ~Pick wha' ye want. Franky the Eye-Popper always pays his debts.~ [6WDPIR66]
+@5030332 = ~Well, if I'd lost, I'd give you 5000 gold pieces. So it's only fair for you to give me the same.~
+@5030333 = ~Don't you have some magical items I could be interested in?~
+@5030334 = ~I want your cutlass.~
+@5030335 = ~I want a symbol of my victory over you. Something of little value, but what you care for. Give me your bandana.~
+@5030336 = ~I want your life.~
+@5030340 = ~If I remember correctly, I was to "pick what I want" in case I win.~
+@5030350 = ~Where is my 5000 gold pieces?~
+@5030351 = ~...fine. Capt'n will kill me, but debt be debt. Here be yer 5000 gold pieces. Now good day t' ye.~ [6WDPIR68]
+@5030360 = ~Magical? Nay, I ain't be havin' that kinda things.~ [6WDPIR70]
+@5030370 = ~Me cutlass? Sure, take it. Got plenty more on the ship. Now good day t' ye.~ [6WDPIR72]
+@5030380 = ~Me... me bandana? 'Tis... 'tis me very pride! Me soul! 'Tis...~ [6WDPIR74]
+@5030381 = ~Oh. I see. Ye cruel, cruel man! Fine, debt be debt. Take it.~ [6WDPIR76]
+@5030382 = ~Oh. I see. Ye cruel, cruel woman! Fine, debt be debt. Take it.~ [6WDPIR77]
+@5030390 = ~Har har! Me life be nah mine t' give. It's me capt'n's.~ [6WDPIR78]
+
+
+@5030500 = ~Ah, ye again. Wha' ye lookin' fer, ye cheatin' bastard? Ye ain't welcome here!~
+@5030501 = ~Thumb, what happened to the hospitality? I thought Sea Bounty welcomes all.~
+@5030502 = ~Well, I'd like a drink.~
+@5030503 = ~Nothing, really. Have a good day.~
+@5030510 = ~All guests are welcome at Sea Bounty. But ye nah guest. Begone.~
+@5030520 = ~An' the Thumb be glad t' 'ave his hand back, but life's harsh. Now get out.~
+
+
+@5040000 = ~See, capt'n? Told ye it be worth the hussle! Ye got toe-to-toe!~ [6WDSHI18]
+@5040010 = ~It was. He's a tough opponent.~
+@5040011 = ~But o' course! He Franky the Eye-Popper, a throat o' gold 'n an arm o' wood!~ [6WDSHI28]
+@5040020 = ~I think I've had my share of drinks for the day...~
+@5040021 = ~Huh? So nah Clap o' Thunder t' make it e'en more memorable? Shame.~ [6WDSHI20]
+@5040030 = ~Glad at least one of us liked it.~
+@5040031 = ~Weird. Everyone be abstinent around this bucko.~ [6WDSHI22]
+@5040100 = ~See, capt'n? Told ye it be worth the hussle! Ye gave a good fight there!~ [6WDSHI24]
+@5040110 = ~Well, he's a tough opponent.~
+@5040200 = ~See, capt'n? Told ye it be worth the hussle! Wha' a win!~ [6WDSHI26]
+@5040210 = ~I did. But he was a tough opponent.~
+
+
+@6000000 = ~Bitter Black Ale.~
+@6000010 = ~Shadowdark Ale.~
+@6000020 = ~Suz-Ale.~
+@6000030 = ~Golden Sands Basic.~
+@6000031 = ~Golden Sands Gold.~
+@6000032 = ~Golden Sands Orange.~
+@6000040 = ~Iriaeboran North Brew.~
+@6000050 = ~Luiren's Best Ale.~
+@6000060 = ~Tanagyr's Ale.~
+@6000070 = ~Undermountain Alurlyath.~
+@6000080 = ~Arabellan Dry.~
+@6000090 = ~Evermead.~
+@6000100 = ~Westgate Ruby.~
+@6000110 = ~Saerloonian Topaz.~
+@6000120 = ~Berduskan Dark.~
+@6000130 = ~Winter Wine.~
+@6000140 = ~Dragon's Beer.~
+@6000900 = ~Elminster's Choice.~
 
 
 
@@ -391,3 +838,43 @@ Shithri claims that this mead contains all the most expensive ingredients, such 
 
 Per Shithri's suggestion, I decided to give a try to fine liquor collecting. I need to ask for bottle liquors in the inns and taverns we visit. Shithri seems quite knowledgeable about various drinks, so she can probably offer me some advice.~
 
+@9000010 = ~Shithri-inspired liquor collection
+
+We met Shithri's old friend, Franky the Eye-Popper, in Sea's Bounty tavern. He dared to suggest I know nothing about fine liquors, so I got him to challenge me for a duel. If I lose, I'll need to pay 5000 gold pieces.~
+@9000011 = ~Shithri-inspired liquor collection
+
+We met Shithri's old friend, Franky the Eye-Popper, in Sea's Bounty tavern. He dared to suggest I know nothing about fine liquors, so I got him to challenge me for a duel. If I lose, I must pay him 5000 gold pieces. If I win, I'll pick my reward.~
+@9000012 = ~Shithri-inspired liquor collection
+
+We met Shithri's old friend, Franky the Eye-Popper, in Sea's Bounty tavern. He dared to suggest I know nothing about fine liquors, so I got him to challenge me for a duel. The loser pays the winner 5000 gold pieces.~
+
+@9000015 = ~Shithri-inspired liquor collection
+
+We met Shithri's old friend, Franky the Eye-Popper, in Sea's Bounty tavern. He insulted me, probably looking for a fight, but I won't waste my time on an old drunkard.~
+@9000016 = ~Shithri-inspired liquor collection
+
+We met Shithri's old friend, Franky the Eye-Popper, in Sea's Bounty tavern. He insulted me, so we got into a serious fight. And not just for words.~
+
+@9000020 = ~Shithri-inspired liquor collection
+
+My duel with Franky the Eye-Popper ended in a draw. I think he just got lucky.~
+
+@9000030 = ~Shithri-inspired liquor collection
+
+I lost my duel with Franky the Eye-Popper. I had to give him 5000 gold pieces, as promised.~
+@9000031 = ~Shithri-inspired liquor collection
+
+I lost my duel with Franky the Eye-Popper, but I refused to pay him. He warned me that the Thumb won't like it, but why should I care?~
+
+@9000040 = ~Shithri-inspired liquor collection
+
+I won my duel with Franky the Eye-Popper. He wasn't too happy about paying me my reward, but he kept his word.~
+@9000041 = ~Shithri-inspired liquor collection
+
+I won my duel with Franky the Eye-Popper. I picked his cutlass for my reward. Looks like a good weapon to me.~
+@9000042 = ~Shithri-inspired liquor collection
+
+I won my duel with Franky the Eye-Popper. Remembering how he insulted me, I demanded the thing he values the most: his bandana. He did call me cruel, so I guess it worked as I wanted.~
+@9000043 = ~Shithri-inspired liquor collection
+
+I won my duel with Franky the Eye-Popper. Remembering how he insulted me, I demanded the thing he values the most: his bandana. He did call me cruel, so I guess it worked as I wanted.~

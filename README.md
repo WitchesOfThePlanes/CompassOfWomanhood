@@ -11,7 +11,7 @@ To create diverse cast of interesting female companions that fit well with both 
 
 We are trying our best for the mod content to be high-quality and well-researched, and for the characters to be compelling.
 
-As a side goal, we wanted to start "from scratch", with no direct help from the experienced members of modding community — direct, because we use the tools created by them, as well as documentation, forum threads, tutorials etc — and we are grateful to the community for all of those tools and learning materials.
+As a side goal, we wanted to start "from scratch", with no direct help from the experienced members of modding community — direct, because we use the tools created by them, as well as documentation, forum threads, tutorials etc — and we are grateful to the community for all of those resources.
 
 
 ## List of companions

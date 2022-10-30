@@ -474,7 +474,7 @@ APPEND 6WSHITJ
         // slightly less than 9000 - for the reason, see the .baf file
         SetGlobalTimer("6W#ShithriBrynnlawSobering","GLOBAL",88000)
 
-        ReallyForceSpellRES("6W#DRUNK", Myself)
+        ReallyForceSpellRES("6WDRUNK", Myself)
       ~
       EXIT
   END
@@ -526,7 +526,7 @@ APPEND 6WSHITJ
         // slightly less than 9000 - for the reason, see the .baf file
         SetGlobalTimer("6W#ShithriBrynnlawSobering","GLOBAL",88000)
 
-        ReallyForceSpellRES("6W#DRUNK", Myself)
+        ReallyForceSpellRES("6WDRUNK", Myself)
       ~
       EXIT
   END

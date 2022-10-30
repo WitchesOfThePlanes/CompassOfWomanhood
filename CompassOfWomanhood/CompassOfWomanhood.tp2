@@ -518,6 +518,9 @@ BEGIN
 
   // summon in ToB
   ~CompassOfWomanhood/areas/shithri/ar4500.baf~  =>  ~ar4500.bcs~
+
+  // cursed bandana script
+  ~CompassOfWomanhood/items/shithri/_6WBAN02_baldur.baf~  =>  ~baldur.bcs~
 END
 
 SILENT

@@ -73,11 +73,11 @@
 @2000102 = ~Ta. Żem gotowa.~ [6WBSHI32]
 @2000103 = ~Nie. Jeszcze jedna rzecz. *łyk* *łyk* Ha... Tera jem gotowa.~ [6WBSHI36]
 @2000110 = ~Co jes? Niech mie kule bijo, żem je trzeźwa jak makrela!~ [6WBSHI40]
-@2000111 = ~Kapitanie, co do...~
+@2000111 = ~Kapitanie, co do jasnej...~ [6WBSHI42]
 @2000112 = ~Nie możesz iść tak pijana rozmawiać z królem, nie?~
 @2000113 = ~Efekty uboczne czarów leczniczych.~
-@2000120 = ~Hmm. Może i racja. Dzienki, kapitanie!~ [6WBSHI42]
-@2000130 = ~Ajjj, mógł żeś te galernice uprzedzić, co?~ [6WBSHI44] ~Ajjj, mogła żeś chociaż te galernice uprzedzić, co?~ [6WBSHI45]
+@2000120 = ~Hmm. Może i racja. Dzienki, kapitanie!~ [6WBSHI44]
+@2000130 = ~Ajjj, mógł żeś te galernice uprzedzić, co?~ [6WBSHI46] ~Ajjj, mogła żeś chociaż te galernice uprzedzić, co?~ [6WBSHI47]
 @2000131 = ~*łyk* *łyk* *łyk* Ha... Chwilke.~
 @2000132 = ~*łyk* *łyk* Ha... Gotowa!~
 
@@ -85,7 +85,7 @@
 @2000301 = ~Czy my się znamy?~
 @2000302 = ~Znamy? Czy my sie znamy? Ha, lepij cobyś wiedział, wilku. *łyk* No i co? Jesteś tu taki, pindrzony jak ostatni szczór loudowy a te typy tam o bedo mówić, żeś jes Król Piratów, har har! To dobre!~ [6WBSHI52]
 @2000303 = ~Jesteś pijana, dziewczyno. Wyjdź stąd.~
-@2000304 = ~Cichooo! Cicho! Ty. Ty myślisz, że ty lepszy ode mie, ha? Huh! Siedzisz ty se w tym swoim śmiesznym biureczku, nosisz ty te swoje badechołzy. Ale. Ale! Ta galernica sie tak łatwo nie nabierze! Nie nie!~ [6WBSHI54]
+@2000304 = ~*czka* Cichooo! Cicho! Ty. Ty myślisz, że ty lepszy ode mie, ha? Huh! Siedzisz ty se w tym swoim śmiesznym biureczku, nosisz ty te swoje badechołzy. Ale. Ale! Ta galernica sie tak łatwo nie nabierze! Nie nie!~ [6WBSHI54]
 @2000305 = ~Czy mógłbyś powiedzieć swojej przyjaciółce żeby przestała wylewać na mnie te pomyje?~ ~Czy mogłabyś powiedzieć swojej przyjaciółce żeby przestała wylewać na mnie te pomyje?~
 @2000306 = ~Pomyje? POMYJE?! No i patrzaj, nawet nie znasz ty takiego echcik grogu! Wiesz ty co? Wiesz ty co?~ [6WBSHI56]
 @2000307 = ~To ja bynde Królowo Piratów!~ [6WBSHI58]
@@ -97,14 +97,14 @@
 @2000321 = ~Oh, nie martw się. W Czarowięzach jest mnóstwo królowych i bogów. Zabierz mi ich wszystkich sprzed oczu. Na bogów, nowa jedwabna koszula, już poplamiona...~
 
 @2000400 = ~Moja przyjaciółka Shithri chciała z tobą pogadać.~
-@2000401 = ~Ahoj.~
+@2000401 = ~Ahoj.~ [6WBSHI60]
 @2000402 = ~Czy my się znamy?~
-@2000403 = ~*szczerzy się* Nie. Raczy nie. Ale to nieważne. Jezdem tu coby ci rzec dwie rzeczy.~
-@2000404 = ~Pierwsza. Jak by cie te wszystkie typy nie zwały - dla tej galernicy żaden z ciebie „król”. Nawet i za tysiouc lat nie uznam takiego pół-loudowego za swojego króla.~
-@2000405 = ~Druga. Ja, Shithri z Twerdzy Zentyla, zostane Królowo Piratów.~
-@2000406 = ~To je wszystko.~
+@2000403 = ~*szczerzy się* Nie. Raczy nie. Ale to nieważne. Jezdem tu coby ci rzec dwie rzeczy.~ [6WBSHI62]
+@2000404 = ~Piersza. Jak by cie te wszystkie typy nie zwały - dla tej galernicy żaden z ciebie „król”. Nawet i za tysiouc lat nie uznam takiego pół-loudowego za swojego króla.~ [6WBSHI64]
+@2000405 = ~Druga. Ja, Shithri z Twerdzy Zentyl, zostane Królowo Piratów.~ [6WBSHI66] 
+@2000406 = ~To je wszystko.~ [6WBSHI68]
 @2000407 = ~Jestem pod umiarkowanym wrażeniem twoich usilnych prób mówienia czystym Wspólnym. Co do treści - myślisz, że ilu piratów już mi deklarowało dokładnie to samo? Nie dbam o to czy nazwiesz mnie „swoim królem”. Interesuje mnie tylko faktyczna władza.~
-@2000408 = ~Dlatego nigdy nie byndziesz królem.~
+@2000408 = ~Dlatego nigdy nie byndziesz królem.~ [6WBSHI70]
 @2000409 = ~Tylko po to tu przyszliście?~
 @2000410 = ~Tak. To wszystko.~
 

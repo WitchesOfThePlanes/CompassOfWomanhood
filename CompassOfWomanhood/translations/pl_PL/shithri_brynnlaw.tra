@@ -108,19 +108,19 @@
 @2000409 = ~Tylko po to tu przyszliście?~
 @2000410 = ~Tak. To wszystko.~
 
-@2000500 = ~Hej, kapitanie! Nie ma głupich.~
-@2000501 = ~Żeś obiecał tej galernicy pomóc coby pogadała z Królem Piratów. A my tera - w twoim wariatkowie.~ ~Żeś obiecała tej galernicy pomoc coby pogadała z Królem Piratów. A my tera - w twoim wariatkowie.~
+@2000500 = ~Hej, kapitanie! Nie ma głupich.~ [6WBSHI72]
+@2000501 = ~Żeś obiecał tej galernicy pomóc coby pogadała z Królem Piratów. A my tera - w twoim wariatkowie.~ [6WBSHI74] ~Żeś obiecała tej galernicy pomoc coby pogadała z Królem Piratów. A my tera - w twoim wariatkowie.~ [6WBSHI75]
 @2000502 = ~Cóż, zamierzałem później się wrócić...~ ~Cóż, zamierzałam później się wrócić...~
 @2000503 = ~Zakładam, że wiesz już, że jestem tu po Imoen. Nie wydaje ci się, że to ważniejsze niż twoja „sprawa” z Królem Piratów?~
 @2000504 = ~Jestem tu dla zemsty na Irenicusie. O ile ten Król Piratów nie torturował cię do granic szaleństwa - to wydaje mi się, że moja sprawa jest ważniejsza niż twoja.~
 @2000505 = ~Przepraszam. Tylko tyle mogę rzec.~
-@2000520 = ~To mogłeś mie czasu nie marnować, arrr. To se ide.~
+@2000520 = ~To mogłeś mie czasu nie marnować, arrr. To se ide.~ ~To mogłaś mie czasu nie marnować, arrr. To se ide.~
 @2000530 = ~No to rób se swojo sprawe, a ja - swojo. No to se ide.~
 @2000540 = ~A co mie to obchodzi? Ty rób se swojo sprawe, a ja swojo. No to se ide.~
 
-@2000700 = ~Hej, kompanie... ejże, jezdeś ty tam?~
+@2000700 = ~Hej, kompanie... ejże, jezdeś ty tam?~ [6WBSHI80]
 @2000701 = ~He? T-tso? Szyri? Har har, mordeeeczko! *czka* Moja ty pikna mordeeeczko!~
-@2000702 = ~Ej, weź ty sie w garść, kompanie! Nie miał żeś z tej wyspy wyleźć?~
+@2000702 = ~Ej, weź ty sie w garść, kompanie! Nie miał żeś z tej wyspy wyleźć?~ [6WBSHI82]
 @2000710 = ~*czka* Z tym... tym... kapitanem twoim?~ ~*czka* Z tą... tą... twoją kapitan?~
 @2000711 = ~Ta! Wyłazisz stoud razem z nim i to galernico, nie?~ ~Ta! Wyłazisz stoud razem z nio i to galernico, nie?~
 @2000720 = ~*czka* Z tą... pikną, pikną elficką panią twoją?~
@@ -135,7 +135,7 @@
 @2000810 = ~...i twoja „pół-elficka pani”. Cześć.~
 @2000811 = ~*łyk* Mówiłam „przyjaciółka”.~
 @2000812 = ~Cóż. Dzień dobry, Neero.~
-@2000820 = ~No, kapitanie. Dotrzymał żeś słowa.~ ~No, kapitanie. Żeś dotrzymała słowa.~
+@2000820 = ~No, kapitanie. Dotrzymał żeś słowa.~ [6WBSHI84] ~No, kapitanie. Żeś dotrzymała słowa.~ [6WBSHI85]
 @2000821 = ~A jakże! Przyłącz się znów do mnie.~
 @2000822 = ~W zasadzie... chciałem się pożegnać.~ ~W zasadzie... chciałam się pożegnać.~
 @2000830 = ~Rozkaz, kapitanie! Chyntnie!~

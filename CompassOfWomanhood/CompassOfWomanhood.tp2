@@ -550,6 +550,13 @@ BEGIN
   COPY ~%icon%~ ~override~
   OUTER_SET file_num += 1
 END
+
+ACTION_BASH_FOR ~CompassOfWomanhood/items/shithri~ ~6WDR.*\.BAM~
+BEGIN
+  COPY ~%BASH_FOR_FILESPEC%~ ~override~
+  OUTER_SET file_num += 1
+END
+
 PRINT "Copied %file_num% item icons"
 
 SILENT
@@ -610,6 +617,11 @@ BEGIN
       num += 1
       SAY UNIDENTIFIED_DESC (AT "num")
       SAY IDENTIFIED_DESC   (AT "num")
+
+      SPRINT icon_filename "6WDR%midfix%I"
+      PATCH_IF FILE_EXISTS_IN_GAME "%icon_filename%.BAM" BEGIN
+        WRITE_EVALUATED_ASCII 0x3a "%icon_filename%" #8
+      END
 
     EXTEND_BOTTOM ~6WSHITH.bcs~ ~CompassOfWomanhood/scripts/shithri/shithri_drink_quest_iter.baf~
       SPRINT drink_num "%midfix%"

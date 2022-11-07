@@ -1229,6 +1229,234 @@ APPEND 6WSHITJ
 END
 
 
+//
+// 20. Uncle Gerhardt
+// Because gnomes make the best home-made nalewka!
+//
+// Nalewka (lit. "tincture") is a Polish alcoholic bewarage made by infusion.
+// It's somewhat similar to German or Dutch schnapps, but there are also a few
+// notable differences.
+//
+// While Jan Jansen or Jan Janssen is an existing Dutch name, Jan
+// (pronounced "yan") is also typically Polish --- which is actually
+// utilized in the Polish version of BG2 when Uncle Gerhardt calls him
+// ,,Mały Jasio'' (lit. "Little Johnny", in the English version: "Wee Janny").
+// Many DnD fans point out that many of the characteristics of gnomes
+// (for better or worse) are also stereotypically attributed to Jews and Poland
+// used to have a very large Jewish minority. The situation of gnomes
+// and gnomish districts in Athkatla also may be reminescent of multiple
+// descriptions of Polish Jews in XIX century. The way Jansen home
+// is multi-generational also fits the traditional Polish family model,
+// hich was the norm in XIX century.
+//
+// It seems Jan Jansen isn't as beloved among the English-speaking players,
+// but for Polish fans, he's one of the more popular characters --- probably
+// largely due to an amazing voice actor, Jan Kobuszewski (1934-2019), who gave
+// the character new life.
+//
+// For me (Udiknedormin), it's THE most beloved character.
+//
+// Attributing him with not just any strong liquor, but Polish nalewka
+// in particular, is a conscious reference here. Thanks for reading this note,
+// for it's quite a long one.
+
+// Implementation Note:
+// Just as with asking about Jaella, if the gabber is mean,
+// Uncle Gerhardt won't answer the question.
+EXTEND_BOTTOM GERHAR 0
+  IF ~
+    IsGabber(Player1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
+    // Shithri doesn't need to be present as long as the quest has been started
+  ~ THEN
+    REPLY @2200000 /* We're here for your hooch, old man. */
+    GOTO 4 // he'll tell you nothing
+END
+
+// Implementation Note:
+// If you're charismatic enough, you can pretend to be Jan in order
+// to get some schnapps.
+EXTEND_BOTTOM GERHAR 1
+  IF ~
+    CheckStatGT(LastTalkedToBy,17,CHR)
+    IsGabber(Player1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
+    Global("6W#ShithriDrinksGotTurnip","GLOBAL",0)
+    // Shithri doesn't need to be present as long as the quest has been started
+  ~ THEN
+    REPLY @2200010 /* Oh, Uncle Gerhardt, you had some hoochie again, didn't you? */
+    GOTO 6W#shithri_drinks_gerhardt__hooch_yes
+
+  IF ~
+    CheckStatLT(LastTalkedToBy,18,CHR)
+    IsGabber(Player1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
+    Global("6W#ShithriDrinksGotTurnip","GLOBAL",0)
+    // Shithri doesn't need to be present as long as the quest has been started
+  ~ THEN
+    REPLY @2200020 /* Uncle. I'm in need of a turnip hooch and you can't say it's me? */
+    GOTO 7
+END
+
+APPEND GERHAR
+  IF ~~ THEN 6W#shithri_drinks_gerhardt__hooch_yes
+    SAY @2200011 /* Oh, me good boy, and what a nice nalewka it was! Silly me. Come, laddie, take some! */
+
+    IF ~~ THEN
+      REPLY @2200012 /* Gladly! You're the best, Uncle! */
+      DO ~
+        // Will only get ONE bottle, even if you get rid of it!
+        SetGlobal("6W#ShithriDrinksGotTurnip","GLOBAL",1)
+        GiveItemCreate("_6WDR20", Player1, 0, 0, 0) // turnip schnapps
+      ~
+      GOTO 6W#shithri_drinks_gerhardt__hooch_chicken
+
+    IF ~~ THEN
+      REPLY @2200013 /* Maybe later. My question... */
+      GOTO 11
+  END
+  IF ~~ THEN 6W#shithri_drinks_gerhardt__hooch_chicken
+    // based on state 6
+    SAY @2200015 /* Now run to the chicken and get me some sausages, laddie! */
+    COPY_TRANS GERHAR 6
+  END
+END
+
+// Implementation Note:
+// Could get him to give you some schnapps even after you get to know
+// the Jaella info you seek.
+ADD_TRANS_TRIGGER GERHAR 19 ~
+  OR(3)
+    !IsGabber(Player1)
+    !GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
+    !Global("6W#ShithriDrinksGotTurnip","GLOBAL",0)
+~ DO 0
+ADD_TRANS_TRIGGER GERHAR 20 ~
+  OR(4)
+    !IsGabber(Player1)
+    !GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
+    !Global("6W#ShithriDrinksGotTurnip","GLOBAL",0)
+    !Global("6W#JanJoined","GLOBAL",1)
+~ DO 0
+
+EXTEND_TOP GERHAR 19
+  IF ~
+    IsGabber(Player1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
+    Global("6W#ShithriDrinksGotTurnip","GLOBAL",0)
+    CheckStatGT(LastTalkedToBy,17,CHR)
+    // Shithri doesn't need to be present as long as the quest has been started
+  ~ THEN
+    REPLY @2200110 /* Oh, Uncle Gerhardt, you had some hoochie again, didn't you? */
+    GOTO 6W#shithri_drinks_gerhardt__hooch1_yes
+
+  IF ~
+    IsGabber(Player1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
+    Global("6W#ShithriDrinksGotTurnip","GLOBAL",0)
+    CheckStatLT(LastTalkedToBy,18,CHR)
+    CheckStatGT(LastTalkedToBy,14,CHR)
+    // Shithri doesn't need to be present as long as the quest has been started
+  ~
+    REPLY @2200120 /* So you've had all of the hoochie by yourself? Leaving nothing for your nephew Jan? */
+    GOTO 6W#shithri_drinks_gerhardt__hooch1_no
+
+  IF ~
+    IsGabber(Player1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
+    Global("6W#ShithriDrinksGotTurnip","GLOBAL",0)
+    CheckStatLT(LastTalkedToBy,15,CHR)
+    // Shithri doesn't need to be present as long as the quest has been started
+  ~
+    REPLY @2200130 /* It's me, your nephew Jan. I just wondered if I could get some of your turnip hooch. */
+    GOTO 6W#shithri_drinks_gerhardt__hooch1_no
+
+  IF ~
+    IsGabber(Player1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
+    Global("6W#ShithriDrinksGotTurnip","GLOBAL",0)
+    // Shithri doesn't need to be present as long as the quest has been started
+  ~
+    REPLY @2200140 /* Right, off I go! */
+    EXIT
+END
+EXTEND_TOP GERHAR 20
+  IF ~
+    IsGabber(Player1)
+    Global("6W#JanJoined","GLOBAL",1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
+    Global("6W#ShithriDrinksGotTurnip","GLOBAL",0)
+    CheckStatGT(LastTalkedToBy,17,CHR)
+    // Shithri doesn't need to be present as long as the quest has been started
+  ~ THEN
+    REPLY @2200110 /* Oh, Uncle Gerhardt, you had some hoochie again, didn't you? */
+    GOTO 6W#shithri_drinks_gerhardt__hooch1_yes
+
+  IF ~
+    IsGabber(Player1)
+    Global("6W#JanJoined","GLOBAL",1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
+    Global("6W#ShithriDrinksGotTurnip","GLOBAL",0)
+    CheckStatLT(LastTalkedToBy,18,CHR)
+    CheckStatGT(LastTalkedToBy,14,CHR)
+    // Shithri doesn't need to be present as long as the quest has been started
+  ~
+    REPLY @2200120 /* So you've had all of the hoochie by yourself? Leaving nothing for your nephew Jan? */
+    GOTO 6W#shithri_drinks_gerhardt__hooch1_no
+
+  IF ~
+    IsGabber(Player1)
+    Global("6W#JanJoined","GLOBAL",1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
+    Global("6W#ShithriDrinksGotTurnip","GLOBAL",0)
+    CheckStatLT(LastTalkedToBy,15,CHR)
+    // Shithri doesn't need to be present as long as the quest has been started
+  ~
+    REPLY @2200130 /* It's me, your nephew Jan. I just wondered if I could get some of your turnip hooch. */
+    GOTO 6W#shithri_drinks_gerhardt__hooch1_no
+
+  IF ~
+    IsGabber(Player1)
+    Global("6W#JanJoined","GLOBAL",1)
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
+    Global("6W#ShithriDrinksGotTurnip","GLOBAL",0)
+    // Shithri doesn't need to be present as long as the quest has been started
+  ~
+    REPLY @2200140 /* Right, off I go! */
+    EXIT
+END
+
+APPEND GERHAR
+  IF ~~ THEN 6W#shithri_drinks_gerhardt__hooch1_yes
+    SAY @2200111 /* Oh yes, me wee Janny. And what a nice nalewka it was! Silly me. Come, laddie, take some! */
+
+    IF ~~ THEN
+      REPLY @2200012 /* Oh my! You're the best, Uncle! */
+      DO ~
+        // Will only get ONE bottle, even if you get rid of it!
+        SetGlobal("6W#ShithriDrinksGotTurnip","GLOBAL",1)
+        GiveItemCreate("_6WDR20", Player1, 0, 0, 0) // turnip schnapps
+      ~
+      GOTO 6W#shithri_drinks_gerhardt__hooch1_chicken
+  END
+  IF ~~ THEN 6W#shithri_drinks_gerhardt__hooch1_chicken
+    // based on state 6
+    SAY @2200015 /* Now run to the chicken and get me some sausages, laddie! */
+
+    // as in state 6, but without the Jaella answer
+    // TODO: maybe some better way to do that?
+    IF ~~ THEN
+      REPLY #2011 /* ~Uh, the chicken?~ */
+      GOTO 12
+  END
+  IF ~~ THEN 6W#shithri_drinks_gerhardt__hooch1_no
+    SAY @2200121 /* Ye nary Janny but a truly naughty child. Now piss off before I paddle yer bottom! */
+    IF ~~ THEN
+      EXIT
+  END
+END
+
+
 
 /*
  * Drinks
@@ -3153,6 +3381,18 @@ APPEND THUMB
       EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__round_1a__14
 
     IF ~
+      PartyHasItem("_6WDR20")
+      GlobalLT("6W#ShithriDrinksHasDrink20","GLOBAL",2)
+    ~ THEN
+      REPLY @6000200 /* Turnip Nalewka. */
+      DO ~
+        TakePartyItem("_6WDR20")
+        DestroyItem("_6WDR20")
+        SetGlobal("6W#ShithriDrinksHasDrink20","GLOBAL",2)
+      ~
+      EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__round_1a__20
+
+    IF ~
       PartyHasItem("_6WDR90")
       GlobalLT("6W#ShithriDrinksHasDrink90","GLOBAL",2)
     ~ THEN
@@ -3453,6 +3693,88 @@ CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__14
   == THUMB
   @5011420 /* Nah point! */
 END THUMB 6W#ShithriDrinksDuel__franky_pick_drink
+
+CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__20
+  @5012000 /* *stares* *sniffs* Huh? Wha' be that? */
+  =
+  @5012001 /* *sips* Mmm. Tastes pretty nice... */
+  =
+  @5012002 /* I 'ave nah idea. Wha' be that? */
+  == THUMB
+  @5012005 /* That's Turnip Nalewka by... arrr... Uncle Gerhardt, was it? */
+  == 6WPIRDR
+  @5012006 /* Oy, mate! Nahbody knows that "Uncle Gerhardt" o' yers! How was I supposed t' guess that? It nah even labelled! */
+END
+  // rule-lawyer to the rescue!
+  IF ~
+    CheckStatGT(Player1,13,INT)
+  ~ THEN
+    REPLY @5012010 /* And who said the liquors need to be well-known, labelled and patented? I can't remember that being in the rules. Judge? */
+    EXTERN ~THUMB~ 6W#ShithriDrinksDuel__round_1a__20__int
+
+  // connoisseur of the craft liqies
+  IF ~
+    // monks can appreciate those even with low wis, cause you know... monks
+    OR(2)
+      CheckStatGT(Player1,13,WIS)
+      Class(Player1,MONK)
+  ~
+    REPLY @5012011 /* Are you suggesting that traditional home-made liquors are worse than the mass-produced ones? */
+    EXTERN ~THUMB~ 6W#ShithriDrinksDuel__round_1a__20__wis
+
+  // appeal to race
+  IF ~
+    OR(2)
+      CheckStatGT(Player1,13,CHR)
+      Class(Player1,BARD_ALL)
+    InMyArea("SBSLUM01")
+  ~
+    REPLY @5012012 /* Did you hear that, good folks? This man, who sails to the foreign countries, spurned a local product. Hard work of amnian of hum... I mean: gnomish hands! */
+    EXTERN ~SBSLUM01~ 6W#ShithriDrinksDuel__round_1a__20__cha
+
+  // ...or be pacifist?
+  IF ~~
+    REPLY @5012013 /* Fine, I'll just pick another one then? */
+    EXTERN ~THUMB~ 6W#ShithriDrinksDuel__pick_another_drink
+
+CHAIN THUMB 6W#ShithriDrinksDuel__round_1a__20__int
+  @5012020 /* The Thumb has nah rule like that. 'ere in Sea's Bounty, we supportin' local products, aye. */
+  == SBWENCH IF ~InMyArea("SBWENCH")~
+  @5012021 /* Good to know. */
+  == SBCUST01 IF ~InMyArea("SBCUST01")~
+  @5012022 /* Vry good! Locaaal... local prduce... local producks... */
+  == SBCUST02 IF ~InMyArea("SBCUST02")~
+  @5012023 /* Aye, we all be lovin' it. For real, Franky. Thought better o' ye. */
+END ~THUMB~ 6W#ShithriDrinksDuel__round_1a__20__franky_lost
+
+CHAIN THUMB 6W#ShithriDrinksDuel__round_1a__20__wis
+  @5012030 /* ...which nah be wha' we sayin' 'here in Sea's Bounty... */
+  == SBCUST01 IF ~InMyArea("SBCUST01")~
+  @5012031 /* Oi! Oiii! Yeee, ye somth bad 'bout gramps? Huh? Huh? */
+  == SBCUST02 IF ~InMyArea("SBCUST02")~
+  @5012032 /* Come t' think o' it, yer gramps did make some nice whisky. Was a good man. */
+  == SBWENCH IF ~InMyArea("SBWENCH")~
+  @5012033 /* The Thumb. Ek-hem. */
+END ~THUMB~ 6W#ShithriDrinksDuel__round_1a__20__franky_lost
+
+CHAIN SBSLUM01 6W#ShithriDrinksDuel__round_1a__20__cha
+  @5012040 /* Hey, I have a gnomish friend! Remember Glim, my dear? */
+  == SBSLUM02 IF ~InMyArea("SBSLUM02")~
+  @5012041 /* Yes, yes. Your "roam gnome". Fascinating. */
+  == SBCUST02 IF ~InMyArea("SBCUST02")~
+  @5012042 /* Gnomes be fine. We 'ave 'em comin' 'ere sometimes. */
+  == THUMB
+  @5012043 /* 'ere in Sea's Bounty, we welcome every guest with the same hospitality. */
+END ~THUMB~ 6W#ShithriDrinksDuel__round_1a__20__franky_lost
+
+CHAIN THUMB 6W#ShithriDrinksDuel__round_1a__20__franky_lost
+  @5012050 /* Franky, mate. Ye lose this round. */
+  == 6WPIRDR
+  @5012051 /* Ehhh... turnip nalewka... */
+  == JANJ IF ~IsValidForPartyDialog("Jan")~
+  @5012052 /* Never underestimate the power of turnip! */
+END THUMB 6W#ShithriDrinksDuel__franky_pick_drink
+
 
 CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__90
   @5019000 /* *stares* *sniffs* */

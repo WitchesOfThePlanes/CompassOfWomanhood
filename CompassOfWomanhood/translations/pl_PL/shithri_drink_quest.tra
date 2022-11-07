@@ -105,6 +105,20 @@
 @2090010 = ~A pewno. Który ci sie podoba?~
 @2090011 = ~Żaden konkretny.~
 
+@2200000 = ~Jesteśmy tu po twój bimber, staruchu.~
+@2200010 = ~Ojej, Wujciu Gerhardcie, znowuś pobalował z bimberkiem, co?~
+@2200011 = ~A jakże, mój drogi, dobra naleweczka wyszła! Głupiec ze mnie. Chodź no, chłopcze, poczęstuj się!~
+@2200012 = ~O jejciu, dziękuję! Jesteś najlepszy, wujciu!~
+@2200013 = ~Może później. Moje pytanie...~
+@2200015 = ~A teraz biegnij do kury i przynieś mi trochę kiełbasy, chłopcze!~
+@2200020 = ~Wuju, ja tu potrzebuję trochę bimbru z rzepy, a ty nie widzisz, że to ja?~
+@2200110 = ~Ojej, Wujciu Gerhardcie, znowuś pobalował z bimberkiem, co?~
+@2200111 = ~Oj tak, mój Jasiu. Ale jaka dobra ta naleweczka! Głupiec ze mnie. Chodź no, chłopcze, poczęstuj się!~
+@2200120 = ~Czyli wypiłeś cały bimber z rzepy sam? Niczego nie zostawiłeś dla siostrzeńca Jana?~
+@2200121 = ~Nie jesteś Jasiem, ty niegrzeczny ty. Zmykaj zanim złoję ci tyłek!~
+@2200130 = ~To ja, twój siostrzeniec Jan. Zastanawiałem się czy nie dałbyś mi trochę swojego bimbru z rzepy.~
+@2200140 = ~No to idę!~
+
 
 @3000000 = ~Piwo Ciemne Gorzkie.~
 @3000001 = ~Ty z Wybrzeża Mieczy i nie znasz? Cinżkie takie, ale wykszość lubio. Fejne schłodzone.~
@@ -416,6 +430,12 @@ Według Shithri, to wyjątkowo mocne wino jest wytwarzane na dalekiej Północy,
 Sembiańczycy są bardzo dumni z tego piwa - a przynajmniej tak powiada Shithri. Jego smak jest mocny i cierpki, przez co dobrze pasuje do żytniego chleba i intensywnych serów.~
 
 
+@4200000 = ~Nalewka z Rzepy~
+@4200001 = ~Ta prostopadłościenna butelka zawiera mleczną ciecz o silnym zapachu przywodzącym na myśl rzodkiewkę.
+
+Według Wujcio Gerhardta, to znakomitej jakości domowa nalewka rzepowa rodzinnego przepisu. Chociaż nie wydaje się zbyt mocna, to jeśli wierzyć opowieściom Jana, to złudne wrażenie, ponieważ Wujcio znany jest z tego, że ilekroć sięgnie po butelkę, kończy mając problemy z chodzeniem w pozycji pionowej.~
+
+
 @4900000 = ~Wybór Elminstera~
 @4900001 = ~Niemal połowę butelki przykrywa prosta etykieta z obrazkiem przedstawiającym sławnego maga Elminstera. Wielkimi, kolorowymi literami nad obrazkiem napisano: „Wybór Elminstera!”. Pod obrazkiem stoją zaś mniejsze znaki stylizowane na pismo ręczne - „Życie nie ma znaczenia innego niż mu je nadamy. A mój wybór to piwo”.
 
@@ -579,6 +599,32 @@ Shithri nie tylko odmawia podania ci jakichkolwiek użytecznych informacji na te
 @5011414 = ~Har har! Może tak być!~
 @5011415 = ~Calimshański świerzb. Wy się śmiejecie, a to straszna choroba! Widzicie, mój kuzyn Barnal...~
 @5011420 = ~Bez punktu!~
+
+@5012000 = ~*wpatruje się* *wącha* Ho? A to co?~
+@5012001 = ~*próbuje* Mmm. Smakuje nieźle...~
+@5012002 = ~Pojencia nie mam. Co to?~
+@5012005 = ~To Nalewka z Rzepy, od... eee... Wujcia Gerhardta czy jakoś tak?~
+@5012006 = ~Ejże, kompanie! Nikt nie zna tego twojego „Wujcia Gerhardta”! Jak żem to niby miał zgadnąć? To nawet etykiety nie ma!~
+@5012010 = ~A kto powiedział, że trunki muszą być znane, oetykietkowane i opatentowane? Nie przypominam sobie w zasadach nic podobnego. Sędzia?~
+@5012011 = ~Czy sugerujesz, że tradycyjne wyroby domowe są gorsze od tych produkowanych masowo?~
+@5012012 = ~Słyszeliście to, dobrzy ludzie? Ten człowiek, który żegluje do obcych krajów, wzgardził lokalnym wyrobem. Dziełem ciężkiej pracy amniskich ludz... znaczy się: gnomich rąk!~
+@5012013 = ~Dobra, może po prostu wybiorę jakiś inny?~
+@5012020 = ~Paluch takiej reguły nie ma. Tu w Morskiej Zdobyczy wspieramy lokalne wyroby, ta.~
+@5012021 = ~Dobrze wiedzieć.~
+@5012022 = ~Brdzo dopsz! Lokne... lokane wyr... loknne wyroro...~
+@5012023 = ~Ta, wszyscy je lubimy. Naprawde, Ferdek. Myślał żem o tobie lepiej.~
+@5012030 = ~...Paluch wtrąci, że my tu w Morskiej Zdobyczy tak nie mówimy...~
+@5012031 = ~Ej! Ejjj! Tyyy, ty co zego mówisz o dziadziu? He? Heee?~
+@5012032 = ~Tak jak se myśle, to twój dziadzio niezły bimber pędził. Dobry chłop był.~
+@5012033 = ~Paluch. Eh-hem.~
+@5012040 = ~Hej, przecież ja mam przyjaciela gnoma! Pamiętasz Glima, moja droga?~
+@5012041 = ~Tak, tak. Twój „ziom gnom”. Fascynujące.~
+@5012042 = ~Gnomy są w sumie porządku. Czasem bywają.~
+@5012043 = ~A tu w Morskiej Zdobyczy, każdego witamy z tą samą gościnnością.~
+@5012050 = ~Ferdek, bracie. Przegrywasz tę rundę.~
+@5012051 = ~Ehhh... nalewka z rzepy...~
+@5012052 = ~Nigdy nie lekceważ potęgi rzepy!~
+
 @5019000 = ~*wpatruje się* *wącha*~
 @5019001 = ~Otruć mie chcesz? Nie bende pił tego... tego... tego ścieku!~
 @5019002 = ~To mówisz co to?~
@@ -831,6 +877,7 @@ Jesteś rośliną.~
 @6000120 = ~Berduskiańskie Ciemne.~
 @6000130 = ~Zimowe Wino.~
 @6000140 = ~Piwo Smoczy Oddech.~
+@6000200 = ~Nalewka z Rzepy.~
 @6000900 = ~Wybór Elminstera.~
 
 

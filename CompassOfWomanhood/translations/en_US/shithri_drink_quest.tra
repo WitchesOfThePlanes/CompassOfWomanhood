@@ -107,6 +107,19 @@
 @2090010 = ~Aye. Which one catches yer eye?~
 @2090011 = ~None in particular.~
 
+@2200000 = ~We're here for your hooch, old man.~
+@2200010 = ~Oh, Uncle Gerhardt, you had some hoochie again, didn't you?~
+@2200011 = ~Oh, me good boy, and what a nice schnappy it was! Silly me. Come, laddie, take some!~
+@2200012 = ~Oh my! You're the best, Uncle!~
+@2200013 = ~Maybe later. My question...~
+@2200015 = ~Now run to the chicken and get me some sausages, laddie!~
+@2200020 = ~Uncle. I'm in need of a turnip hooch and you can't say it's me?~
+@2200110 = ~Oh, Uncle Gerhardt, you had some hoochie again, didn't you?~
+@2200111 = ~Oh yes, me wee Janny. And what a nice schnappy it was! Silly me. Come, laddie, take some!~
+@2200120 = ~So you've had all of the hoochie by yourself? Leaving nothing for your nephew Jan?~
+@2200121 = ~Ye nary Janny but a truly naughty child. Now piss off before I paddle yer bottom!~
+@2200130 = ~It's me, your nephew Jan. I just wondered if I could get some of your turnip hooch.~
+@2200140 = ~Right, off I go!~
 
 
 @3000000 = ~Bitter Black Ale.~
@@ -416,6 +429,12 @@ According to Shithri, this very alcoholic wine is made in the North, from grapes
 Sembians are very proud of this beer - or so Shithri says. Its flavor is strong and harsh, which makes it a good pair for rye bread and rich cheese.~
 
 
+@4200000 = ~Turnip Nalewka~
+@4200001 = ~This rectangular bottle is filled with milky liquid. It has a strong, horseradish-like smell.
+
+According to Uncle Gerhardt, it's an excellent home-made turnip nalewka, family recipe. Although it doesn't seem very strong, but if you were to believe Jan's stories, it's misleading, as whenever Uncle grabs a bottle, he ends up having difficulty walking on two legs.~
+
+
 @4900000 = ~Elminster's Choice~
 @4900001 = ~Almost half of this bottle is covered in a simple label picturing famous mage Elminster. Big, colorful letters above it form the text: "Elminster's Choice!". Below the picture come smaller characters stylized for hand-writing - "Life has no meaning but what we give it. My choice is on beer".
 
@@ -578,6 +597,32 @@ Shithri not only refuses to provide any valuable comment on this beer, but seems
 @5011414 = ~Har har! Could be, aye!~
 @5011415 = ~Calimshan Itch. Terrible disease and yet you laugh at it! See, my cousin Barnal...~
 @5011420 = ~Nah point!~
+
+@5012000 = ~*stares* *sniffs* Huh? Wha' be that?~
+@5012001 = ~*sips* Mmm. Tastes pretty nice...~
+@5012002 = ~I 'ave nah idea. Wha' be that?~
+@5012005 = ~That's Turnip Schnapps by... arrr... Uncle Gerhardt, was it?~
+@5012006 = ~Oy, mate! Nahbody knows that "Uncle Gerhardt" o' yers! How was I supposed t' guess that? It nah even labelled!~
+@5012010 = ~And who said the liquors need to be well-known, labelled and patented? I can't remember that being in the rules. Judge?~
+@5012011 = ~Are you suggesting that traditional home-made liquors are worse than the mass-produced ones?~
+@5012012 = ~Did you hear that, good folks? This man, who sails to the foreign countries, spurned a local product. Hard work of amnian of hum... I mean: gnomish hands!~
+@5012013 = ~Fine, I'll just pick another one then?~
+@5012020 = ~The Thumb has nah rule like that. 'ere in Sea's Bounty, we supportin' local products, aye.~
+@5012021 = ~Good to know.~
+@5012022 = ~Vry good! Locaaal... local prduce... local producks...~
+@5012023 = ~Aye, we all be lovin' it. For real, Franky. Thought better o' ye.~
+@5012030 = ~...which nah be wha' we sayin' 'here in Sea's Bounty...~
+@5012031 = ~Oi! Oiii! Yeee, ye somth bad 'bout gramps? Huh? Huh?~
+@5012032 = ~Come t' think o' it, yer gramps did make some nice whisky. Was a good man.~
+@5012033 = ~The Thumb. Ek-hem.~
+@5012040 = ~Hey, I have a gnomish friend! Remember Glim, my dear?~
+@5012041 = ~Yes, yes. Your "roam gnome". Fascinating.~
+@5012042 = ~Gnomes be fine. We 'ave 'em comin' 'ere sometimes.~
+@5012043 = ~'ere in Sea's Bounty, we welcome every guest with the same hospitality.~
+@5012050 = ~Franky, mate. Ye lose this round.~
+@5012051 = ~Ehhh... turnip schnapps...~
+@5012052 = ~Never underestimate the power of turnip!~
+
 @5019000 = ~*stares* *sniffs*~
 @5019001 = ~Ye tryin' t' poison me? I ain't be drinkin' tis... tis... tis slop!~
 @5019002 = ~Yer guess then?~
@@ -587,7 +632,7 @@ Shithri not only refuses to provide any valuable comment on this beer, but seems
 @5019012 = ~Huh. So he says he won't be guessing. You heard that, good folks?~
 @5019013 = ~Fine, I'll just pick another one then?~
 @5019020 = ~Hmmm... nay. The Tumb be pretty sure he says: "drinking duel". Nah "fine" t' be found.~
-@5019030 = ~May The Thumb say: he be servin' it 'here in Sea's Bounty.~
+@5019030 = ~May The Thumb say: he be servin' it 'ere in Sea's Bounty.~
 @5019031 = ~Ex'cly! Who ye thnk ye're, mate? Sayin' all 'ose bad things 'bout...~
 @5019032 = ~Expected more o' ye, Franky. All fancy an' bein' too "noble" t' drink wit' us.~
 @5019033 = ~Oh really, good sailor, you're ruining the charm of this place!~
@@ -830,6 +875,7 @@ You are now a plant.~
 @6000120 = ~Berduskan Dark.~
 @6000130 = ~Winter Wine.~
 @6000140 = ~Dragon's Beer.~
+@6000200 = ~Turnip Schnapps.~
 @6000900 = ~Elminster's Choice.~
 
 

@@ -507,6 +507,9 @@ BEGIN
   // Dorn sparring
   ~CompassOfWomanhood/scripts/shithri/shithri_dorn25.baf~           =>  ~dorn25.bcs~
 
+  // Jan Jansen joining
+  ~CompassOfWomanhood/scripts/shithri/shithri_jan.baf~              =>  ~jan.bcs~
+
   // Neera romance
   ~CompassOfWomanhood/scripts/shithri/bshithri_neera_romance.baf~   =>  ~6WSHITH.bcs~
   ~CompassOfWomanhood/scripts/shithri/bshith25_neera_romance.baf~   =>  ~6WSHI25.bcs~ 
@@ -604,6 +607,7 @@ BEGIN
   ~12~  => 4120000  /* Berduskan Dark */
   ~13~  => 4130000  /* Winter Wine */
   ~14~  => 4140000  /* Dragon's Beer */
+  ~20~  => 4200000  /* Turnip Nalewka */
   ~90~  => 4900000  /* Elminster's Choice */
 END
 

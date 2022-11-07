@@ -257,7 +257,7 @@
 @3900093 = ~Nawet jeśli Elminster takiego nie pija, i tak weźmiemy butelkę.~
 @3900099 = ~*łyk* Co za kwindas...~
 
-@3100000 = ~Piwo Rubinowe z Wrót Zachodu.~
+@3100000 = ~Wino Rubinowe z Wrót Zachodu.~
 @3100001 = ~Ha, nigdy nie zapomne Barnab Wołowo-Ostrygowych! Ale pasuje też do krasnoludzkich gulaszy. Ciężki to truneczek, o ta.~
 @3100002 = ~Czyli właściwie jedno wino by rządzić wszystkim co wołowe? Fantastycznie!~
 @3100003 = ~Obawiam się, że w naszym przypadku to albo wino albo wołowina...~
@@ -382,7 +382,7 @@ Według Shithri, to wino wytrawne można spożywać samo, schłodzone, albo wyk
 Shithri twierdzi, że ten miód zawiera wszystkie najdroższe składniki, w tym wiśnie, wanilię i płatki róż. We Wrotach Zachodu jest uznawany za znak szlachectwa. Wieść głosi, że jego wytworzenie trwa całe wieki. Jest zdecydowanie najlepszym trunkiem jaki wyszedł spod rąk elfów z Trademeet, a także zdecydowanie najdroższym napojem na całym Wybrzeżu Mieczy oraz w Amn.~
 
 
-@4100000 = ~Piwo Rubinowe z Wrót Zachodu~
+@4100000 = ~Wino Rubinowe z Wrót Zachodu~
 @4100001 = ~Nawet zza grubych ścianek butelki dobrze widać soczysty karmazyn tego wina.
 
 Zostajesz poinformowany, że ma dość mocny i lekko kwaskowy smak. Shithri powiada, że to najlepsze możliwe wino do dań z wołowiny, niezależnie od tego, czy chodzi o tłusty gulasz czy słynne Barnaby Wołowo-Ostrygowe.~ ~Nawet zza grubych ścianek butelki dobrze widać soczysty karmazyn tego wina.
@@ -826,7 +826,7 @@ Jesteś rośliną.~
 @6000070 = ~Podgórskie Alurlyathańskie.~
 @6000080 = ~Arabellańskie Wino Wytrawne.~
 @6000090 = ~Evermead.~
-@6000100 = ~Piwo Rubinowe z Wrót Zachodu.~
+@6000100 = ~Wino Rubinowe z Wrót Zachodu.~
 @6000110 = ~Saerloonianiańskie Piwo Topazowe.~
 @6000120 = ~Berduskiańskie Ciemne.~
 @6000130 = ~Zimowe Wino.~

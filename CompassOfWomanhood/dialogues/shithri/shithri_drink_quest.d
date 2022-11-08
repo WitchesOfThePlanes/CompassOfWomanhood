@@ -4328,7 +4328,7 @@ APPEND 6WDRINK
     ~ THEN
       REPLY @5020102 /* Smell it. */
       DO ~
-        Global("6W#ShithriDrinksThisLook","GLOBAL",1)
+        SetGlobal("6W#ShithriDrinksThisLook","GLOBAL",1)
       ~
       GOTO 6W#ShithriDrinksDuel__franky__arabellan_dry__smell__default
     // half-orcs have keen sense of smell, due to their orcish heritage

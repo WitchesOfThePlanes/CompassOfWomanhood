@@ -48,11 +48,19 @@ LANGUAGE ~Polish~
 
 // Component "SHITHRI" setup
 BEGIN @1 /* Shithri the Pirate - companion */
+  REQUIRE_PREDICATE GAME_IS ~bg2ee~ @0
 
-REQUIRE_PREDICATE GAME_IS ~bg2ee~ @0
+  WITH_TRA ~CompassOfWomanhood/translations/%LANGUAGE%/shithri.tra~
+  BEGIN
+    INCLUDE ~CompassOfWomanhood/lib/shithri.tpa~
+  END
 
-// Shithri component
-WITH_TRA ~CompassOfWomanhood/translations/%LANGUAGE%/shithri.tra~
-BEGIN
-  INCLUDE ~CompassOfWomanhood/lib/shithri.tpa~
-END
+// Component "CALY" setup
+BEGIN @2 /* Caly the Courtisane - companion */
+  REQUIRE_PREDICATE GAME_IS ~bg2ee~ @0
+
+  // Caly component
+  WITH_TRA ~CompassOfWomanhood/translations/%LANGUAGE%/caly.tra~
+  BEGIN
+    INCLUDE ~CompassOfWomanhood/lib/caly.tpa~
+  END

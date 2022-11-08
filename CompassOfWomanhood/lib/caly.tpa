@@ -1,0 +1,71 @@
+
+//
+// Companion herself
+//
+
+// portraits
+SILENT
+COPY ~CompassOfWomanhood/creatures/caly/6WcalyS.bmp~ ~override~
+COPY ~CompassOfWomanhood/creatures/caly/6WcalyM.bmp~ ~override~
+COPY ~CompassOfWomanhood/creatures/caly/6WcalyL.bmp~ ~override~
+PRINT "Copied 3 portrait files"
+
+// creature
+SILENT
+OUTER_SET file_num = 0
+OUTER_SET file_edited_num = 0
+
+ACTION_FOR_EACH cre_file IN ~6WCALY08~ // ~6WCALY09~ ~6WCALY10~ ~6WCALY11~ ~6WCALY13~ ~6WCALY15~ ~6WCALY25~
+BEGIN
+  COPY ~CompassOfWomanhood/creatures/caly/%cre_file%.cre~ ~override~
+    SAY NAME1 @10
+    SAY NAME2 @11
+    SAY BIO   @12
+  
+    SAY HAPPY                  @100 /* We're good together, aren't we? */
+    SAY UNHAPPY_ANNOYED        @101 /* I'm starting to feel a bit... dissapointed? */
+    SAY UNHAPPY_SERIOUS        @102 /* We have to rethink our ways. */
+    SAY UNHAPPY_BREAKING_POINT @103 /* How dare you stoop so low! */
+    SAY LEADER                 @104 /* Ready to lead you all to the brightest future! */
+    SAY TIRED                  @105 /*  */
+    SAY BORED                  @106 /* C'mon, this girl just wanna have fuuun. */
+    SAY BATTLE_CRY1            @107 /* You have a spank wish! */
+    SAY BATTLE_CRY2            @108 /* Prepare to feel a lot of pain... and a tiny bit of pleasure */
+    SAY BATTLE_CRY3            @109 /* Taste my whip! */
+    SAY HURT                   @110 /* That wasn't nice! */
+    SAY DYING                  @111 /* So this is the "big death"... */
+    SAY AREA_FOREST            @112 /*  */
+    SAY AREA_CITY              @113 /*  */
+    SAY AREA_DUNGEON           @114 /*  */
+    SAY AREA_DAY               @115 /*  */
+    SAY AREA_NIGHT             @116 /*  */
+    SAY SELECT_COMMON1         @117 /* Yes, darlin'? */
+    SAY SELECT_COMMON2         @118 /* You want me? */
+    SAY SELECT_COMMON3         @119 /* Yes, honey? */
+    SAY SELECT_COMMON4         @120 /* Mhmmmmmm... */
+    SAY SELECT_COMMON5         @121 /* I feel the chosen one. */
+    SAY SELECT_COMMON6         @122 /* In need of my services? */
+    SAY SELECT_ACTION1         @123 /* My pleasure. */
+    SAY SELECT_ACTION2         @124 /* On your command. */
+    SAY SELECT_ACTION3         @125 /* Yes, sirrr. */
+    SAY SELECT_ACTION4         @126 /* Whatever you wish. */
+    SAY SELECT_ACTION5         @127 /*  */
+    SAY SELECT_ACTION6         @128 /*  */
+    SAY SELECT_ACTION7         @129 /*  */
+    SAY REACT_TO_DIE_GENERAL   @130 /* No, oh Goddess, no! */
+    SAY SELECT_RARE1           @131 /*  */
+    SAY SELECT_RARE2           @132 /*  */
+    SAY CRITICAL_HIT           @133 /*  */
+    SAY CRITICAL_MISS          @134 /*  */
+    SAY TARGET_IMMUNE          @135 /*  */
+    SAY INVENTORY_FULL         @136 /*  */
+    SAY PICKED_POCKET          @137 /*  */
+    SAY HIDDEN_IN_SHADOWS      @138 /*  */
+    SAY SPELL_DISRUPTED        @139 /*  */
+    SAY SET_A_TRAP             @140 /*  */
+  OUTER_SET file_num += 1
+END
+
+PRINT "Copied %file_num% creature files"
+PRINT "Edited %file_edited_num% existing creature files"
+

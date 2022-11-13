@@ -1157,6 +1157,17 @@ EXTEND_BOTTOM TRINNK01 0
     DO ~SetGlobal("ppinntalk","AR1602",1)~
     GOTO bottled_liquors__poor
 END
+EXTEND_BOTTOM TRINNK01 1
+  IF ~
+    IsGabber(Player1)
+    IfValidForPartyDialogue("6WSHITHRI")
+    InMyArea("6WSHITHRI")
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
+  ~ THEN
+    REPLY @2090000 /* Any bottled liquors in your offer? */
+    DO ~SetGlobal("ppinntalk","AR1602",1)~
+    GOTO bottled_liquors__poor
+END
 EXTEND_BOTTOM TRINNK01 14
   IF ~
     IsGabber(Player1)
@@ -1435,7 +1446,7 @@ APPEND GERHAR
       DO ~
         // Will only get ONE bottle, even if you get rid of it!
         SetGlobal("6W#ShithriDrinksGotTurnip","GLOBAL",1)
-        GiveItemCreate("_6WDR20", Player1, 0, 0, 0) // turnip schnapps
+        GiveItemCreate("_6WDR20", Player1, 0, 0, 0) // turnip nalewka
       ~
       GOTO 6W#shithri_drinks_gerhardt__hooch1_chicken
   END
@@ -1456,6 +1467,128 @@ APPEND GERHAR
   END
 END
 
+//
+// 21. Mironda
+//
+// Implementation Note:
+// First things first - Shithri should praise Mironda's call for trying
+// new liqies. They could be very good friends. Some additional interjections
+// will be added here, not just getting the liqie.
+
+// Mironda starts by asking: "Who're you? Aw, it don't matter. Want some rye?
+// 'Course ya do!" --- this whole thing is a quote from "Return to Zork",
+// a game from 1993.
+//
+// It can't really be INTERJECT, as the target state differs
+// if Shithri's in the party, but stays the same otherwise.
+EXTEND_BOTTOM OHNMIRON 0
+  IF ~
+    IsValidForPartyDialog("6WSHITHRI")
+  ~
+    EXTERN ~6WSHITJ~ 6W#ShithriDrinks__Mironda_initial
+END
+
+CHAIN 6WSHITJ 6W#ShithriDrinks__Mironda_initial
+  @2210000 /* Har har! 'Tis a fine dwarvish woman if I e'er saw one, capt'n! Wha' 'ave on ye? */
+  == OHNMIRON
+  @2210001 /* Just some plain old whiskey. Nah Luiren Rivengut, sadly. */
+  // Note: I (Udiknedormin) tried to find if there is an existing canonical
+  // Polish translation of the name "Luiren Rivengut".
+  //
+  // The following sources mention it:
+  //  * "The Wyvern's Spur" (Polish translation is titled: ,,Ostroga Wywerna'')
+  //    novel from 1990 - leaves "Rivengut" as-is
+  //  * "Song of the Saurials" (Polish translation is titled:
+  //    ,,Pieśń Sauriali''), novel from 1991 - leaves "Luiren Rivengut" as-is.
+  //  * "Heroes' Lorebook", book from 1996 - I didn't find it to have
+  //    an official translation.
+  //  * "Sword Coast Legends", a game from 2015 - I didn't find it to have
+  //    an official translation, only a fan project:
+  //    https://steamcommunity.com/groups/SwordCoastPL/discussions/0/496881136902601542/
+  //
+  // Therefore it looks like no official Polish translation exists to-date.
+  // I therefore created my own. If anyone's aware of an official version,
+  // please open an issue.
+
+  == 6WSHITJ
+  @2210002 /* Ho! I see ye know yer liqies, me matey! */
+  == OHNMIRON
+  // slightly modified version of 12, as she talks to Shithri now,
+  // so she doesn't give her any weird looks
+  @2210003 /* I've had my share. MORE than my share, though not more than my fair share—any share is fair enough to me, be it more than a thimble. So—I'm yer average dwarf. Except for one thing, maybe... */
+END OHNMIRON 13
+
+// Implementation Note:
+// State 13 leads to 8, which makes Mironda ask if you have
+// any more questions. I (Udiknedormin) checked that another installation
+// of BG2:EE had the very same string references even for EE-exclusive content,
+// so it seems safe to assume that unless we're talking about EET (of which
+// I have close to zero knowledge, at least regarding journal entry string
+// numbers), it should be safe to simply add the same triggers to
+// a new transition.
+//
+// Phew. Quite a long note to avoid an unwanted "Alice in the Wonderland"
+// reference, wouldn't you say?
+EXTEND_BOTTOM OHNMIRON 13
+  IF ~
+    IsValidForPartyDialog("6WSHITHRI")
+  ~
+    DO ~
+      AddJournalEntry(94458,QUEST)
+      SetGlobal("ohn_mironda_plot","global",1)
+      RevealAreaOnMap("AR2000")
+    ~
+    GOTO 6W#ShithriDrinks__Mironda_initial_fin
+END
+APPEND OHNMIRON
+  IF ~~ THEN 6W#ShithriDrinks__Mironda_initial_fin
+    SAY @2210005 /* What about ye? Ca-something, was it? Want some rye? */
+    COPY_TRANS OHNMIRON 0
+  END
+END
+
+// After you give her the beer, you can ask to get one bottle of it.
+// Doesn't matter if Shithri's available or not as long as you've started
+// the drinks quest.
+EXTEND_BOTTOM OHNMIRON 15
+  IF ~
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
+    !PartyHasItem("_6WDR21")
+  ~
+    REPLY @2210010 /* And I was hoping you could share a bottle with me? You see, I'm collecting fine liquors. */
+    DO ~
+      SetGlobal("ohn_mironda_plot","global",3)
+      TakePartyItem("ohncask")
+    ~
+    GOTO 6W#ShithriDrinks__Mironda_liq_collector0
+END
+CHAIN OHNMIRON 6W#ShithriDrinks__Mironda_liq_collector0
+  @2210021 /* But of course! Let me just... */
+  =
+  @2210022 /* Here ye go! */
+  DO ~
+    GiveItemCreate("_6WDR21", Player1, 0, 0, 0) // halfling's help
+  ~
+END OHNMIRON 16
+
+EXTEND_BOTTOM OHNMIRON 19
+  IF ~
+    GlobalGT("6W#ShithriDrinksActive","GLOBAL",0)
+    !PartyHasItem("_6WDR21")
+  ~
+    REPLY @2210020 /* I'll gladly have some, although I would prefer to get a bottle of it. You see, I'm collecting fine liquors. */
+    GOTO 6W#ShithriDrinks__Mironda_liq_collector1
+END
+CHAIN OHNMIRON 6W#ShithriDrinks__Mironda_liq_collector1
+  @2210021 /* But of course! Let me just... */
+  =
+  @2210022 /* Here ye go! */
+  DO ~
+    GiveItemCreate("_6WDR21", Player1, 0, 0, 0) // halfling's help
+  ~
+  =
+  @2210013 /* Oh! Don't forget... */
+COPY_TRANS OHNMIRON 19
 
 
 /*

@@ -1470,15 +1470,18 @@ END
 //
 // 21. Mironda
 //
-// Implementation Note:
 // First things first - Shithri should praise Mironda's call for trying
 // new liqies. They could be very good friends. Some additional interjections
 // will be added here, not just getting the liqie.
+//
+// The liquor has already been described in the cask's description,
+// so the item description is mostly the same (why overcomplicate things?).
 
 // Mironda starts by asking: "Who're you? Aw, it don't matter. Want some rye?
 // 'Course ya do!" --- this whole thing is a quote from "Return to Zork",
 // a game from 1993.
 //
+// Implementation Note:
 // It can't really be INTERJECT, as the target state differs
 // if Shithri's in the party, but stays the same otherwise.
 EXTEND_BOTTOM OHNMIRON 0
@@ -1563,9 +1566,9 @@ EXTEND_BOTTOM OHNMIRON 15
     GOTO 6W#ShithriDrinks__Mironda_liq_collector0
 END
 CHAIN OHNMIRON 6W#ShithriDrinks__Mironda_liq_collector0
-  @2210021 /* But of course! Let me just... */
+  @2210011 /* But of course! Let me just... */
   =
-  @2210022 /* Here ye go! */
+  @2210012 /* Here ye go! */
   DO ~
     GiveItemCreate("_6WDR21", Player1, 0, 0, 0) // halfling's help
   ~
@@ -1580,9 +1583,9 @@ EXTEND_BOTTOM OHNMIRON 19
     GOTO 6W#ShithriDrinks__Mironda_liq_collector1
 END
 CHAIN OHNMIRON 6W#ShithriDrinks__Mironda_liq_collector1
-  @2210021 /* But of course! Let me just... */
+  @2210011 /* But of course! Let me just... */
   =
-  @2210022 /* Here ye go! */
+  @2210012 /* Here ye go! */
   DO ~
     GiveItemCreate("_6WDR21", Player1, 0, 0, 0) // halfling's help
   ~

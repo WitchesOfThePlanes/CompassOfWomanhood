@@ -121,6 +121,17 @@
 @2200130 = ~It's me, your nephew Jan. I just wondered if I could get some of your turnip hooch.~
 @2200140 = ~Right, off I go!~
 
+@2210000 = ~Har har! 'Tis a fine dwarvish woman if I e'er saw one, capt'n! Wha' 'ave on ye?~
+@2210001 = ~Just some plain old whiskey. Nah Luiren Rivengut, sadly.~
+@2210002 = ~Ho! I see ye know yer liqies, me matey!~
+@2210003 = ~I've had my share. MORE than my share, though not more than my fair share—any share is fair enough to me, be it more than a thimble. So—I'm yer average dwarf. Except for one thing, maybe...~
+@2210005 = ~What about ye? Ca-something, was it? Want some rye?~
+@2210010 = ~And I was hoping you could share a bottle with me? You see, I'm collecting fine liquors.~
+@2210011 = ~But of course! Let me just...~
+@2210012 = ~Here ye go!~
+@2210013 = ~Oh! Don't forget...~
+@2210020 = ~I'll gladly have some, although I would prefer to get a bottle of it. You see, I'm collecting fine liquors.~
+
 
 @3000000 = ~Bitter Black Ale.~
 @3000001 = ~Ye from Sword Coast 'n nah know it? Quite heavy, but most like it that way. Best chilled.~
@@ -433,6 +444,12 @@ Sembians are very proud of this beer - or so Shithri says. Its flavor is strong 
 @4200001 = ~This rectangular bottle is filled with milky liquid. It has a strong, horseradish-like smell.
 
 According to Uncle Gerhardt, it's an excellent home-made turnip nalewka, family recipe. Although it doesn't seem very strong, but if you were to believe Jan's stories, it's misleading, as whenever Uncle grabs a bottle, he ends up having difficulty walking on two legs.~
+
+
+@4210000 = ~Halfling's Help~
+@4210001 = ~This simple bottle contains a light-gold bubbly wheat beer. It origins from Luiren, land of the halflings in the south of Faerûn.
+
+It's said to have quite a reputation. Connoisseurs describe Halfling's Help as a bubbly hefeweizen that tastes like strawberries and sun-dappled meadows while packing a high-alcohol punch.~
 
 
 @4900000 = ~Elminster's Choice~

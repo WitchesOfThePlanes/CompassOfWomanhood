@@ -608,6 +608,7 @@ BEGIN
   ~13~  => 4130000  /* Winter Wine */
   ~14~  => 4140000  /* Dragon's Beer */
   ~20~  => 4200000  /* Turnip Nalewka */
+  ~21~  => 4210000  /* Halfling's Help */
   ~90~  => 4900000  /* Elminster's Choice */
 END
 

@@ -119,6 +119,17 @@
 @2200130 = ~To ja, twój siostrzeniec Jan. Zastanawiałem się czy nie dałbyś mi trochę swojego bimbru z rzepy.~
 @2200140 = ~No to idę!~
 
+@2210000 = ~Har har! To ci je dopiero fejny krasnoludzki dziewczak, co kapitanie? Hej, a cóż tam masz?~
+@2210001 = ~Tylko zwykłą whiskey. No niestety, nie jest to Luireński Kiszkodrzyj.~
+@2210002 = ~Ho! Widze, że ty sie na truneczkasz znasz, kompanko!~
+@2210003 = ~Swoje jużem wypiła. Może i ciut ponad miarę, ale nie więcej niż mi się uczciwie należy. Każda miarka zda się uczciwa byle była większa od naparstka. Tak też, zwyczajny ze mnie krasnolud, jak widzisz. Poza jedną może tylko sprawą...~
+@2210005 = ~A ty? Ka-cośtam, tak? Golniesz sobie?~
+@2210010 = ~A ja miałem nadzieję, że podzieliłabyś się butelką tego specjału? Widzisz, zbieram zacne trunki.~ ~A ja miałam nadzieję, że podzieliłabyś się butelką tego specjału? Widzisz, zbieram zacne trunki.~
+@2210011 = ~Ależ oczywiście! Niechże tylko...~
+@2210012 = ~O, proszę!~
+@2210013 = ~Aha! Nie zapomnij...~
+@2210020 = ~Z chęcią wezmę trochę, choć wolałbym w butelce. Widzisz, zbieram zacne trunki.~ ~Z chęcią wezmę trochę, choć wolałabym w butelce. Widzisz, zbieram zacne trunki.~
+
 
 @3000000 = ~Piwo Ciemne Gorzkie.~
 @3000001 = ~Ty z Wybrzeża Mieczy i nie znasz? Cinżkie takie, ale wykszość lubio. Fejne schłodzone.~
@@ -259,7 +270,7 @@
 @3900031 = ~Cóż, właściwie...~
 @3900032 = ~A co jeśli tak?~
 @3900033 = ~Do czego zmierzasz?~
-@3900034 = ~Nazywajo to „Przysmak Elminstera” tylko żeby je sprzedać, kapitanie. On nigdy go nie pija.~
+@3900034 = ~Nazywajo to „Przysmak Elminstera” tyko żeby je sprzedać, kapitanie. On nigdy go nie pija.~
 @3900035 = ~No po prostu...!~
 @3900036 = ~Właściwie mogłem się tego spodziewać.~ ~Właściwie mogłam się tego spodziewać.~
 @3900037 = ~Ta. Tak właśnie.~
@@ -434,6 +445,12 @@ Sembiańczycy są bardzo dumni z tego piwa - a przynajmniej tak powiada Shithri.
 @4200001 = ~Ta prostopadłościenna butelka zawiera mleczną ciecz o silnym zapachu przywodzącym na myśl rzodkiewkę.
 
 Według Wujcio Gerhardta, to znakomitej jakości domowa nalewka rzepowa rodzinnego przepisu. Chociaż nie wydaje się zbyt mocna, to jeśli wierzyć opowieściom Jana, to złudne wrażenie, ponieważ Wujcio znany jest z tego, że ilekroć sięgnie po butelkę, kończy mając problemy z chodzeniem w pozycji pionowej.~
+
+
+@4210000 = ~Wspomożenie niziołka~
+@4210001 = ~Ta prosta butelka zawiera jasne, złociste piwo pszeniczne. Pochodzi z Luiren, krainy niziołków leżącej na południu Faerûnu.
+
+Podobno cieszy się dobrą renomą. Koneserzy opisują Wspomożenie niziołka jako jasne piwo bąbelkowe, które smakuje truskawką i skąpaną w słońcu łąką, zarazem mające niezłego kopa.~
 
 
 @4900000 = ~Wybór Elminstera~

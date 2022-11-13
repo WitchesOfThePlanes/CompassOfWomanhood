@@ -6894,7 +6894,7 @@ I won my duel with Franky the Eye-Popper. He wasn't too happy about paying me my
 I won my duel with Franky the Eye-Popper. I picked his cutlass for my reward. Looks like a good weapon to me. */
       DO ~
         AddExperienceParty(50000)
-        GiveItem("6WSAB01",Player1)
+        GiveItemCreate("_6WSAB01", Player1, 0, 0, 0)
         SetGlobal("6W#ShithriDrinksEnding","GLOBAL",1)
         SetGlobal("6W#ShithriDrinksReward","GLOBAL",2) // cutlass
       ~

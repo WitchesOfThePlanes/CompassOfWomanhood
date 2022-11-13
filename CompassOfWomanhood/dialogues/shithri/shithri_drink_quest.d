@@ -3529,6 +3529,18 @@ APPEND THUMB
       EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__round_1a__20
 
     IF ~
+      PartyHasItem("_6WDR21")
+      GlobalLT("6W#ShithriDrinksHasDrink21","GLOBAL",2)
+    ~ THEN
+      REPLY @6000210 /* Halfling's Help. */
+      DO ~
+        TakePartyItem("_6WDR21")
+        DestroyItem("_6WDR21")
+        SetGlobal("6W#ShithriDrinksHasDrink21","GLOBAL",2)
+      ~
+      EXTERN ~6WPIRDR~ 6W#ShithriDrinksDuel__round_1a__21
+
+    IF ~
       PartyHasItem("_6WDR90")
       GlobalLT("6W#ShithriDrinksHasDrink90","GLOBAL",2)
     ~ THEN
@@ -3909,6 +3921,19 @@ CHAIN THUMB 6W#ShithriDrinksDuel__round_1a__20__franky_lost
   @5012051 /* Ehhh... turnip nalewka... */
   == JANJ IF ~IsValidForPartyDialog("Jan")~
   @5012052 /* Never underestimate the power of turnip! */
+END THUMB 6W#ShithriDrinksDuel__franky_pick_drink
+
+
+CHAIN 6WPIRDR 6W#ShithriDrinksDuel__round_1a__21
+  @5012100 /* *sniffs* *sips* */
+  =
+  @5012101 /* Hmm. Bubbly. Sweet an' fruity. An'... Ho! Strong, that thing be! */
+  =
+  @5012102 /* If it was wine, I say Saerloonian Special Vat. But 'tis beer. Wha' be that... */
+  =
+  @5012103 /* I be 'avin' nah idea. */
+  == THUMB
+  @5012105 /* Not e'en close! That one's Halfling's Help, from Luiren! Nah point! */
 END THUMB 6W#ShithriDrinksDuel__franky_pick_drink
 
 

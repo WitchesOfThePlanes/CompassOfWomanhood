@@ -640,6 +640,12 @@ Shithri not only refuses to provide any valuable comment on this beer, but seems
 @5012051 = ~Ehhh... turnip schnapps...~
 @5012052 = ~Never underestimate the power of turnip!~
 
+@5012100 = ~*sniffs* *sips*~
+@5012101 = ~Hmm. Bubbly. Sweet an' fruity. An'... Ho! Strong, that thing be!~
+@5012102 = ~If it was wine, I say Saerloonian Special Vat. But 'tis beer. Wha' be that...~
+@5012103 = ~I be 'avin' nah idea.~
+@5012105 = ~Not e'en close! That one's Halfling's Help, from Luiren! Nah point!~
+
 @5019000 = ~*stares* *sniffs*~
 @5019001 = ~Ye tryin' t' poison me? I ain't be drinkin' tis... tis... tis slop!~
 @5019002 = ~Yer guess then?~
@@ -892,7 +898,8 @@ You are now a plant.~
 @6000120 = ~Berduskan Dark.~
 @6000130 = ~Winter Wine.~
 @6000140 = ~Dragon's Beer.~
-@6000200 = ~Turnip Schnapps.~
+@6000200 = ~Turnip Nalewka.~
+@6000210 = ~Halfling's Help.~
 @6000900 = ~Elminster's Choice.~
 
 

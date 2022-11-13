@@ -1567,11 +1567,11 @@ EXTEND_BOTTOM OHNMIRON 15
 END
 CHAIN OHNMIRON 6W#ShithriDrinks__Mironda_liq_collector0
   @2210011 /* But of course! Let me just... */
-  =
-  @2210012 /* Here ye go! */
   DO ~
     GiveItemCreate("_6WDR21", Player1, 0, 0, 0) // halfling's help
   ~
+  =
+  @2210012 /* Here ye go! */
 END OHNMIRON 16
 
 EXTEND_BOTTOM OHNMIRON 19
@@ -1584,11 +1584,11 @@ EXTEND_BOTTOM OHNMIRON 19
 END
 CHAIN OHNMIRON 6W#ShithriDrinks__Mironda_liq_collector1
   @2210011 /* But of course! Let me just... */
-  =
-  @2210012 /* Here ye go! */
   DO ~
     GiveItemCreate("_6WDR21", Player1, 0, 0, 0) // halfling's help
   ~
+  =
+  @2210012 /* Here ye go! */
   =
   @2210013 /* Oh! Don't forget... */
 COPY_TRANS OHNMIRON 19

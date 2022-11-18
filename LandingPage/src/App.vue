@@ -1,11 +1,11 @@
 <template>
   <v-app>
     <v-main>
-      <HelloWorld />
+      <NavMenu />
     </v-main>
   </v-app>
 </template>
 
 <script setup lang="ts">
-  import HelloWorld from '@/components/HelloWorld.vue'
+import NavMenu from "@/components/NavMenu.vue";
 </script>

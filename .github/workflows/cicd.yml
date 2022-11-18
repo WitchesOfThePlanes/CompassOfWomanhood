@@ -19,7 +19,7 @@ jobs:
       - name: Build Vue
         run: |
           cd LandingPage
-          yarn install
+          yarn install --frozen-lockfile
           yarn build
           cd dist
           ln -s index.html 404.html

@@ -16,10 +16,23 @@ jobs:
     name: Build Vue
     steps:
       - uses: actions/checkout@v2
-      - id: Build-Vue
-        uses: xRealNeon/VuePagesAction@1.0.1
-        with:
+      - name: Build Vue
+        run: |
+          cd LandingPage
+          yarn install
+          yarn build
+          cd dist
+          ln -s index.html 404.html
+          git config --global user.email "${{ gitemail }}"
+          git config --global user.name "${{ gitname }}"
+          git init
+          git add -A
+          git commit -m '${{ gitmsg }}'
+          git push -f https://${{ username }}:${{ token }}@github.com/${{ username }}/${{ reponame }}.git master:gh-pages
+        env:
           username: 'Udiknedormin'
           reponame: 'CompassOfWomanhood'
           token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
-          useyarn: true
+          gitemail: publisher@udiknedormin.github.io
+          gitname: Github Page Publisher
+          gitmsg: Publishing pages for job ${{ GITHUB_JOB }}

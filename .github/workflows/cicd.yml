@@ -20,3 +20,4 @@ jobs:
           username: 'Udiknedormin'
           reponame: 'CompassOfWomanhood'
           token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
+          useyarn: true

@@ -23,12 +23,12 @@ jobs:
           yarn build
           cd dist
           ln -s index.html 404.html
-          git config --global user.email "${{ gitemail }}"
-          git config --global user.name "${{ gitname }}"
+          git config --global user.email "${{ env.gitemail }}"
+          git config --global user.name "${{ env.gitname }}"
           git init
           git add -A
-          git commit -m '${{ gitmsg }}'
-          git push -f https://${{ username }}:${{ token }}@github.com/${{ username }}/${{ reponame }}.git master:gh-pages
+          git commit -m '${{ env.gitmsg }}'
+          git push -f https://${{ env.username }}:${{ env.token }}@github.com/${{ env.username }}/${{ env.reponame }}.git master:gh-pages
         env:
           username: 'Udiknedormin'
           reponame: 'CompassOfWomanhood'

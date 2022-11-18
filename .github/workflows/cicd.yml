@@ -12,13 +12,13 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./LandingPage
+        shell: bash
+        working-directory: LandingPage
     name: Build Vue
     steps:
       - uses: actions/checkout@v2
       - name: Build Vue
         run: |
-          cd LandingPage
           yarn install --frozen-lockfile
           yarn build
           cd dist

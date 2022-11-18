@@ -35,4 +35,4 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
           gitemail: publisher@udiknedormin.github.io
           gitname: Github Page Publisher
-          gitmsg: Publishing pages for job ${{ GITHUB_JOB }}
+          gitmsg: Publishing pages for job ${{ env.GITHUB_JOB }}

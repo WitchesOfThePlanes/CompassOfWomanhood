@@ -17,8 +17,8 @@
 <script setup lang="ts">
 import { i18n } from "@/plugins/i18n";
 
-const changeLocale = (locale: typeof i18n.global.locale) =>
-  (i18n.global.locale = locale);
+const changeLocale = (locale: string) =>
+  (i18n.global.locale = locale as typeof i18n.global.locale);
 </script>
 
 <style scoped></style>

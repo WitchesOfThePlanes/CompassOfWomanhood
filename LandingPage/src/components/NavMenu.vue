@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="d-flex align-end justify-end flex-column pa-6 nav-menu text-right"
+    class="h-screen d-flex align-end justify-center flex-column pa-6 nav-menu text-right"
   >
     <v-btn
       variant="plain"
@@ -25,6 +25,8 @@ const changeLocale = (locale: string) =>
 
 <style scoped>
 .nav-menu {
+  position: fixed;
+  right: 0;
   width: 200px;
 }
 </style>

@@ -1,7 +1,6 @@
 <template>
   <div class="h-screen d-flex flex-column justify-center">
-    <div class="d-flex align-center justify-space-between flex-row pa-6">
-      <div class="none" />
+    <div class="d-flex align-center justify-center flex-row pa-6">
       <header class="headers d-flex flex-column align-center justify-center">
         <h1 class="text-h1 align-self-center font-weight-medium">
           {{ $t("HERO.TITLE") }}
@@ -10,7 +9,6 @@
           {{ $t("HERO.SUBTITLE") }}
         </h4>
       </header>
-      <NavMenu />
     </div>
     <div class="d-flex align-center justify-center flex-column pa-6">
       <h2 class="text-h2 text-uppercase font-weight-bold">
@@ -30,7 +28,6 @@
 </template>
 
 <script setup lang="ts">
-import NavMenu from "@/components/NavMenu.vue";
 const ghLink = "https://github.com/Udiknedormin/CompassOfWomanhood";
 </script>
 

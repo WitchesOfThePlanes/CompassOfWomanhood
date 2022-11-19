@@ -3,5 +3,11 @@
     "ABOUT": "about",
     "CHARACTERS": "characters",
     "READ_MORE": "read more"
+  },
+  "HERO": {
+    "TITLE": "Compass of Womanhood",
+    "SUBTITLE": "Ways of Women, Ways of Pleasure",
+    "COMING_SOON": "Coming soon",
+    "BUTTON": "Click to discover"
   }
 }

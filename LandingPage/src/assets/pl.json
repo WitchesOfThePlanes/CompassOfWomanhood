@@ -3,5 +3,11 @@
     "ABOUT": "o projekcie",
     "CHARACTERS": "postacie",
     "READ_MORE": "czytaj więcej"
+  },
+  "HERO": {
+    "TITLE": "Kompas Kobiecości",
+    "SUBTITLE": "Ścieżki Kobiet, Ścieżki Przyjemności",
+    "COMING_SOON": "Już wkrótce",
+    "BUTTON": "Kliknij po więcej"
   }
 }

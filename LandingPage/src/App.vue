@@ -1,11 +1,11 @@
 <template>
   <v-app>
     <v-main>
-      <NavMenu />
+      <HeroPage />
     </v-main>
   </v-app>
 </template>
 
 <script setup lang="ts">
-import NavMenu from "@/components/NavMenu.vue";
+import HeroPage from "@/features/HeroPage.vue";
 </script>

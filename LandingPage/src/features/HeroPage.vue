@@ -2,16 +2,16 @@
   <div class="h-screen d-flex flex-column justify-center">
     <div class="d-flex align-center justify-center flex-row pa-6">
       <header class="headers d-flex flex-column align-center justify-center">
-        <h1 class="text-h1 align-self-center font-weight-medium">
+        <h1 class="text-md-h2 align-self-center font-weight-medium text-center">
           {{ $t("HERO.TITLE") }}
         </h1>
-        <h4 class="text-h4 align-self-end text-medium-emphasis">
+        <h4 class="text-md-h5 align-self-end text-medium-emphasis text-right">
           {{ $t("HERO.SUBTITLE") }}
         </h4>
       </header>
     </div>
     <div class="d-flex align-center justify-center flex-column my-12 pa-6">
-      <h2 class="text-h2 text-uppercase font-weight-bold">
+      <h2 class="text-md-h3 text-uppercase font-weight-bold">
         {{ $t("HERO.COMING_SOON") }}
       </h2>
       <v-btn

@@ -3,9 +3,6 @@ name: Build And Deploy Vue
 on:
   push:
     branches: [ "main", "feature/landing-page" ]
-  pull_request:
-    branches: [ "main" ]
-
 
 jobs:
   build_vue:

@@ -3,9 +3,9 @@
     class="h-screen d-flex align-end justify-center flex-column pa-6 nav-menu text-right"
   >
     <v-btn
-      variant="plain"
       v-for="locale in $i18n.availableLocales"
       :key="`locale-${locale}`"
+      :variant="$i18n.locale === locale ? 'text' : 'plain'"
       @click="changeLocale(locale)"
     >
       {{ locale }}
@@ -13,6 +13,9 @@
     <v-btn variant="plain"> {{ $t("MENU.ABOUT") }} </v-btn>
     <v-btn variant="plain">{{ $t("MENU.CHARACTERS") }} </v-btn>
     <v-btn variant="plain">{{ $t("MENU.READ_MORE") }} </v-btn>
+    <v-btn variant="text" icon="fa:fab fa-facebook" class="mt-10" />
+    <v-btn variant="text" icon="fa:fab fa-youtube" />
+    <v-btn variant="text" icon="fa:fab fa-twitter" />
   </nav>
 </template>
 

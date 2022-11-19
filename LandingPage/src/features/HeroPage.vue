@@ -10,7 +10,7 @@
         </h4>
       </header>
     </div>
-    <div class="d-flex align-center justify-center flex-column pa-6">
+    <div class="d-flex align-center justify-center flex-column my-12 pa-6">
       <h2 class="text-h2 text-uppercase font-weight-bold">
         {{ $t("HERO.COMING_SOON") }}
       </h2>
@@ -18,7 +18,7 @@
         rounded="pill"
         color="secondary"
         variant="outlined"
-        class="ma-6"
+        class="ma-8"
         :href="ghLink"
       >
         {{ $t("HERO.BUTTON") }}

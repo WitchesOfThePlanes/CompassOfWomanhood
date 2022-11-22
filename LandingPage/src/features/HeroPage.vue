@@ -22,6 +22,7 @@
         @click="scrollTo('about')"
       >
         {{ $t("HERO.BUTTON") }}
+        <v-icon right class="ml-2"> mdi-arrow-down-thick </v-icon>
       </v-btn>
     </div>
   </div>

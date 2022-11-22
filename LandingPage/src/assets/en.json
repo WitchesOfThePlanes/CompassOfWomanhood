@@ -14,6 +14,37 @@
     "TITLE": "About",
     "INTRODUCTION": "Hey traveler! Stop for a while. Come closer, and I will share with you a great story. Do you remember that times, when everything was simpler? Let’s turn back time and come back to Baldurs Gate 2. Impossible you say? Well… it is. We are a group of creazy people, who everyday thinks about (Sword Shore?). That’s why we moved our butts, and create something unusual, wonderful, marvelous and generally dope, and we mean modificationfor that classical game. We think of it when we do our dishes, sleep, and pumping score on mobile games while owning The throne. We, The fans, created for the fans all around the globe. So grab your strong dwarf ale, and enjoy the creation of our fingers.",
     "MOD": "\"Compass of Womanhood\" (COW), subtitled \"Ways of Women, Ways of Pleasure\", is a mod project for Baldur's Gate II: Enhanced Edition.",
-    "GOAL": "Its goal is to create diverse cast of interesting female companions that fit well with both the Forgotten Realms lore and the base games. All the mod's components are, by design, dual-language — in most cases both the English and the Polish version can be considered \"the original\" (it's usually bolded when that isn't the case)."
-  }
+    "GOAL": "Its goal is to create diverse cast of interesting female companions that fit well with both the Forgotten Realms lore and the base games. All the mod's components are, by design, dual-language — in most cases both the English and the Polish version can be considered \"the original\" (it's usually bolded when that isn't the case).",
+    "BUTTON": "Scroll to see companions"
+  },
+  "CHARACTERS": {
+    "TITLE": "List of companions",
+    "INTRO": "There are currently two companions developed as a part of this project, but additional companions may be added to the list:",
+    "SHITRI": {
+      "NAME": "Shithri",
+      "INTRO": "Shithri — vagabond half-orc pirate girl from <a href=\"https://forgottenrealms.fandom.com/wiki/Zenthil_Keep\">Zenthil Keep</a>. Worshipper of orcish goddess <a href=\"https://forgottenrealms.fandom.com/wiki/Luthic\">Luthic</a>, Mother of Caves. She's free-spirited and loves a good drink (and is quite persistent with her offers of drinking). Speaks in heavy pirate accent (pirate dialect even, in Polish language version).",
+      "FEATURES": {
+        "INTRO": "This component includes:",
+        "LIST": [
+          "One chaotic-neutral half-orc swashbuckler",
+          "Two companion quests (one complete and one under development)",
+          "Some interjections",
+          "1-5 banters with each of the Bioware and Beamdog NPCs",
+          "One in-party romance (NOT with the PC)",
+          "Numerous originally-written sea songs",
+          "Lots of orc, liquor and naval lore",
+          "(Polish version only) a dedicated \"pirate dialect\""
+        ]
+      },
+      "PLACE": "Shithri is found in the Docs District of Athkatla, near the lighthouse ([3564.3086])."
+    },
+    "CALY": {
+      "NAME": "Caly",
+      "INTRO": "Caly — high-class courtesan from <a href=\"https://forgottenrealms.fandom.com/wiki/Calimshan\">Calimshan</a> who speaks in posh manner and is blessed with red heair, believed by some to be \"the touch of <a href=\"https://forgottenrealms.fandom.com/wiki/Sune\">Sune</a>. Exclusive artiste and experienced story hunter. Worshipper of moon goddess <a href=\"https://forgottenrealms.fandom.com/wiki/Sel%C3%BBne\">Selûne</a>, but touched by the shadows.",
+      "FEATURES": {
+        "INTRO": "This component is currently under development."
+      }
+    }
+  },
+  "FOOTER": "This project is not developed, supported or endorsed by BioWare, Black Isle nor Beamdog."
 }

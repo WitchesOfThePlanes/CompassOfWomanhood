@@ -13,8 +13,12 @@
     <v-btn variant="plain" @click="goToMenu('about')">
       {{ $t("MENU.ABOUT") }}
     </v-btn>
-    <v-btn variant="plain">{{ $t("MENU.CHARACTERS") }} </v-btn>
-    <v-btn variant="plain">{{ $t("MENU.READ_MORE") }} </v-btn>
+    <v-btn variant="plain" @click="goToMenu('characters')"
+      >{{ $t("MENU.CHARACTERS") }}
+    </v-btn>
+    <v-btn variant="plain" :href="ghLink" target="_blank">
+      {{ $t("MENU.READ_MORE") }}
+    </v-btn>
     <v-btn variant="text" icon="fa:fab fa-facebook" class="mt-10" />
     <v-btn variant="text" icon="fa:fab fa-youtube" />
     <v-btn variant="text" icon="fa:fab fa-twitter" />
@@ -28,6 +32,8 @@ import { useScrollTo } from "@/composables/scroll-to";
 const emit = defineEmits(["close-mobile-menu"]);
 
 const { scrollTo } = useScrollTo();
+
+const ghLink = import.meta.env.VITE_APP_GH_LINK;
 
 const goToMenu = (section: string) => {
   emit("close-mobile-menu");

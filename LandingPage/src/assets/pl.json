@@ -14,6 +14,37 @@
     "TITLE": "O projekcie",
     "INTRODUCTION": "Hola, wędrowcy! Zatrzymajcie się na chwilę. Zbliż się, a przedstawię Ci ciekawą historię. Pamiętasz czasy, kiedy wszystko było proste? Spróbujmy cofnąć bieg rzeki czasu i wróćmy do Baldurs Gate 2. Niemożliwe? Ano jednak możliwe. Otóż jesteśmy grupką wariatów, którzy codziennie myślą o Wybrzeżu Mieczy. Dlatego też zebraliśmy swoje rzyci i tworzymy coś niezwykłego, wspaniałego, cudownego i ogólnie wyczesanego, czyli najbardziej moda. Myśleliśmy o nim podczas normalnej pracy, mycia garów, snu, a nawet podczas pobijania kolejnych rekordów w grach mobilnych siedząc na kibelku. Powstało coś od fanów dla fanów, więc chwyć kielich krzepkiego, krrrasnoludzkiego trunku i rozkoszuj się dziełem naszych paluszków.",
     "MOD": "\"Compass of Womanhood\" (COW, Kompas Kobiecości), także: „Ścieżki Kobiecości, Ścieżki Przyjemności”, to projekt modyfikacji dla gry Baldur's Gate II: Enhanced Edition.",
-    "GOAL": "Celem projektu jest stworzenie różnorodnej grupy nietrywialnych towarzyszek, które wpasowują się zarówno w świat Zaginionych Krain jak i samą grę. Wszystkie komponenty modyfikacji są, z założenia, dwujęzyczne — w większości przypadków zarówno angielska jak i polska wersja mogą być uznane za „oryginał” (zwykle jest to wyraźnie zaznaczone jeśli tak nie jest)."
-  }
+    "GOAL": "Celem projektu jest stworzenie różnorodnej grupy nietrywialnych towarzyszek, które wpasowują się zarówno w świat Zaginionych Krain jak i samą grę. Wszystkie komponenty modyfikacji są, z założenia, dwujęzyczne — w większości przypadków zarówno angielska jak i polska wersja mogą być uznane za „oryginał” (zwykle jest to wyraźnie zaznaczone jeśli tak nie jest).",
+    "BUTTON": "Przewiń by zobaczyć towarzyszki"
+  },
+  "CHARACTERS": {
+    "TITLE": "Lista towarzyszek",
+    "INTRO": "Obecnie w projekcie powstają dwie towarzyszki, ale lista może ulec wydłużeniu:",
+    "SHITRI": {
+      "NAME": "Shithri",
+      "INTRO": "Shithri — półorcza piratka i włóczęga z <a href=\"https://sfery.fandom.com/wiki/Twierdza_Zhentil\">Twierdzy Zenthil</a>. Wyznawczyni orczej bogini <a href=\"https://sfery.fandom.com/wiki/Luthic\">Luthic</a>, Matki Jaskiń. Lekkoduch, zawsze gotowa się napić (oraz bywa cokolwiek natrętna w swoich propozycjach kolejki). Mówi w dedykowanym dialekcie języka polskiego, stworzonym specjalnie na potrzeby tego komponentu.",
+      "FEATURES": {
+        "INTRO": "Komponent zawiera:",
+        "LIST": [
+          "Jedną chaotyczną-neutralną pół-orczą zawadiakę",
+          "Dwa zadania (jedno skończone i jedno w trakcie rozwoju)",
+          "Trochę wtrąceń",
+          "1-5 rozmów z każdym z towarzyszy od Bioware'u oraz Beamdoga",
+          "Jeden wewnątrzdrużynowy romans (NIE z postacią główną)",
+          "Liczne szanty napisane specjalnie dla tego komponentu",
+          "Mnóstwo wiedzy o orkach, trunkach i morzu",
+          "Dedykowany „piracki polski”"
+        ]
+      },
+      "PLACE": "Shitri można znaleźć w Dokach Athkatli, obok latarni morskiej ([3564.3086])."
+    },
+    "CALY": {
+      "NAME": "Caly",
+      "INTRO": "Caly — ekskluzywna kurtyzana z <a href=\"https://sfery.fandom.com/wiki/Calimshan\">Calimshanu</a> o wyrafinowanym sposobie wyrażania się oraz obdarzona rudymi włosami, o których wierzy się, że są „dotykiem <a href=\"https://sfery.fandom.com/wiki/Sune\">Sune</a>”. Wysublimowana artystka i doświadczona opowiadaczka historii. Wyznawczyni bogini księżyca, <a href=\"https://sfery.fandom.com/wiki/Sel%C3%BBne\">Selûne</a>, lecz dotknięta przez cienie.",
+      "FEATURES": {
+        "INTRO": "Ten komponent jest w trakcie rozwoju."
+      }
+    }
+  },
+  "FOOTER": "Ten projekt nie jest rozwijany, wspierany czy zatwierdzony przez BioWare, Black Isle ani Beamdog."
 }

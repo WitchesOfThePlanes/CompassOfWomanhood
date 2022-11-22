@@ -4,7 +4,7 @@
     class="h-screen d-flex flex-column align-center justify-center text-center pa-10"
   >
     <div :class="smAndUp && 'page'">
-      <div class="font-italic my-10 introduction">
+      <div class="font-italic mx-10 introduction">
         {{ $t("ABOUT.INTRODUCTION") }}
       </div>
       <h2 class="text-md-h4 mt-16">

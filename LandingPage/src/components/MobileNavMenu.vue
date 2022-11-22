@@ -17,12 +17,13 @@
         @click="state.mobileMenuOpen = false"
       />
     </div>
-    <slot name="menu"></slot>
+    <NavMenu @close-mobile-menu="state.mobileMenuOpen = false" />
   </div>
 </template>
 
 <script setup lang="ts">
 import { reactive } from "vue";
+import NavMenu from "@/components/NavMenu.vue";
 
 const state = reactive({ mobileMenuOpen: false });
 </script>

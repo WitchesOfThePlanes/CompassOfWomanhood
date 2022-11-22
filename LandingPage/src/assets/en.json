@@ -6,8 +6,14 @@
   },
   "HERO": {
     "TITLE": "Compass of Womanhood",
-    "SUBTITLE": "Ways of Women, Ways of Pleasure",
+    "SUBTITLE": "Ways of Women, Ways of Pleasure...",
     "COMING_SOON": "Coming soon",
-    "BUTTON": "Click to discover"
+    "BUTTON": "Scroll to discover"
+  },
+  "ABOUT": {
+    "TITLE": "About",
+    "INTRODUCTION": "Hey traveler! Stop for a while. Come closer, and I will share with you a great story. Do you remember that times, when everything was simpler? Let’s turn back time and come back to Baldurs Gate 2. Impossible you say? Well… it is. We are a group of creazy people, who everyday thinks about (Sword Shore?). That’s why we moved our butts, and create something unusual, wonderful, marvelous and generally dope, and we mean modificationfor that classical game. We think of it when we do our dishes, sleep, and pumping score on mobile games while owning The throne. We, The fans, created for the fans all around the globe. So grab your strong dwarf ale, and enjoy the creation of our fingers.",
+    "MOD": "\"Compass of Womanhood\" (COW), subtitled \"Ways of Women, Ways of Pleasure\", is a mod project for Baldur's Gate II: Enhanced Edition.",
+    "GOAL": "Its goal is to create diverse cast of interesting female companions that fit well with both the Forgotten Realms lore and the base games. All the mod's components are, by design, dual-language — in most cases both the English and the Polish version can be considered \"the original\" (it's usually bolded when that isn't the case)."
   }
 }

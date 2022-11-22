@@ -10,7 +10,9 @@
     >
       {{ locale }}
     </v-btn>
-    <v-btn variant="plain"> {{ $t("MENU.ABOUT") }} </v-btn>
+    <v-btn variant="plain" @click="goToMenu('about')">
+      {{ $t("MENU.ABOUT") }}
+    </v-btn>
     <v-btn variant="plain">{{ $t("MENU.CHARACTERS") }} </v-btn>
     <v-btn variant="plain">{{ $t("MENU.READ_MORE") }} </v-btn>
     <v-btn variant="text" icon="fa:fab fa-facebook" class="mt-10" />
@@ -21,9 +23,21 @@
 
 <script setup lang="ts">
 import { i18n } from "@/plugins/i18n";
+import { useScrollTo } from "@/composables/scroll-to";
 
-const changeLocale = (locale: string) =>
-  (i18n.global.locale = locale as typeof i18n.global.locale);
+const emit = defineEmits(["close-mobile-menu"]);
+
+const { scrollTo } = useScrollTo();
+
+const goToMenu = (section: string) => {
+  emit("close-mobile-menu");
+  scrollTo(section);
+};
+
+const changeLocale = (locale: string) => {
+  i18n.global.locale = locale as typeof i18n.global.locale;
+  emit("close-mobile-menu");
+};
 </script>
 
 <style scoped>

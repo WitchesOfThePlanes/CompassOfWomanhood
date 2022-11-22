@@ -19,7 +19,7 @@
         color="secondary"
         variant="outlined"
         class="ma-8"
-        :href="ghLink"
+        @click="scrollTo('about')"
       >
         {{ $t("HERO.BUTTON") }}
       </v-btn>
@@ -28,7 +28,9 @@
 </template>
 
 <script setup lang="ts">
-const ghLink = "https://github.com/Udiknedormin/CompassOfWomanhood";
+import { useScrollTo } from "@/composables/scroll-to";
+
+const { scrollTo } = useScrollTo();
 </script>
 
 <style scoped></style>

@@ -33,7 +33,7 @@
           )"
           :key="index"
         >
-          {{ $t(item) }}}}
+          {{ $t(item) }}
         </li>
       </ul>
       <div

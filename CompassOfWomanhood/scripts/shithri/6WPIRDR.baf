@@ -68,3 +68,21 @@ THEN
     StartDialogNoSet(Player1)
     SetInterrupt(TRUE)
 END
+
+//
+// If the quest ended by refusing the duel, Franky will leave the tavern
+// the next time party is absent.
+//
+IF
+  Global("6W#ShithriDrinksSeamanSpawn","GLOBAL",3)
+  Global("6W#ShithriDrinksActive","GLOBAL",3)
+  !InMyArea(Player1)
+  !InMyArea(Player2)
+  !InMyArea(Player3)
+  !InMyArea(Player4)
+  !InMyArea(Player5)
+  !InMyArea(Player6)
+THEN
+  RESPONSE #100
+    DestroySelf()
+END

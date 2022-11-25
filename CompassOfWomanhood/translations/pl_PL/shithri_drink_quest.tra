@@ -105,6 +105,31 @@
 @2090010 = ~A pewno. Który ci sie podoba?~
 @2090011 = ~Żaden konkretny.~
 
+@2200000 = ~Jesteśmy tu po twój bimber, staruchu.~
+@2200010 = ~Ojej, Wujciu Gerhardcie, znowuś pobalował z bimberkiem, co?~
+@2200011 = ~A jakże, mój drogi, dobra naleweczka wyszła! Głupiec ze mnie. Chodź no, chłopcze, poczęstuj się!~
+@2200012 = ~O jejciu, dziękuję! Jesteś najlepszy, wujciu!~
+@2200013 = ~Może później. Moje pytanie...~
+@2200015 = ~A teraz biegnij do kury i przynieś mi trochę kiełbasy, chłopcze!~
+@2200020 = ~Wuju, ja tu potrzebuję trochę bimbru z rzepy, a ty nie widzisz, że to ja?~
+@2200110 = ~Ojej, Wujciu Gerhardcie, znowuś pobalował z bimberkiem, co?~
+@2200111 = ~Oj tak, mój Jasiu. Ale jaka dobra ta naleweczka! Głupiec ze mnie. Chodź no, chłopcze, poczęstuj się!~
+@2200120 = ~Czyli wypiłeś cały bimber z rzepy sam? Niczego nie zostawiłeś dla siostrzeńca Jana?~
+@2200121 = ~Nie jesteś Jasiem, ty niegrzeczny ty. Zmykaj zanim złoję ci tyłek!~
+@2200130 = ~To ja, twój siostrzeniec Jan. Zastanawiałem się czy nie dałbyś mi trochę swojego bimbru z rzepy.~
+@2200140 = ~No to idę!~
+
+@2210000 = ~Har har! To ci je dopiero fejny krasnoludzki dziewczak, co kapitanie? Hej, a cóż tam masz?~
+@2210001 = ~Tylko zwykłą whiskey. No niestety, nie jest to Luireński Kiszkodrzyj.~
+@2210002 = ~Ho! Widze, że ty sie na truneczkasz znasz, kompanko!~
+@2210003 = ~Swoje jużem wypiła. Może i ciut ponad miarę, ale nie więcej niż mi się uczciwie należy. Każda miarka zda się uczciwa byle była większa od naparstka. Tak też, zwyczajny ze mnie krasnolud, jak widzisz. Poza jedną może tylko sprawą...~ [OH88949]
+@2210005 = ~A ty? Ka-cośtam, tak? Golniesz sobie?~
+@2210010 = ~A ja miałem nadzieję, że podzieliłabyś się butelką tego specjału? Widzisz, zbieram zacne trunki.~ ~A ja miałam nadzieję, że podzieliłabyś się butelką tego specjału? Widzisz, zbieram zacne trunki.~
+@2210011 = ~Ależ oczywiście! Niechże tylko...~
+@2210012 = ~O, proszę!~
+@2210013 = ~Aha! Nie zapomnij...~
+@2210020 = ~Z chęcią wezmę trochę, choć wolałbym w butelce. Widzisz, zbieram zacne trunki.~ ~Z chęcią wezmę trochę, choć wolałabym w butelce. Widzisz, zbieram zacne trunki.~
+
 
 @3000000 = ~Piwo Ciemne Gorzkie.~
 @3000001 = ~Ty z Wybrzeża Mieczy i nie znasz? Cinżkie takie, ale wykszość lubio. Fejne schłodzone.~
@@ -245,7 +270,7 @@
 @3900031 = ~Cóż, właściwie...~
 @3900032 = ~A co jeśli tak?~
 @3900033 = ~Do czego zmierzasz?~
-@3900034 = ~Nazywajo to „Przysmak Elminstera” tylko żeby je sprzedać, kapitanie. On nigdy go nie pija.~
+@3900034 = ~Nazywajo to „Przysmak Elminstera” tyko żeby je sprzedać, kapitanie. On nigdy go nie pija.~
 @3900035 = ~No po prostu...!~
 @3900036 = ~Właściwie mogłem się tego spodziewać.~ ~Właściwie mogłam się tego spodziewać.~
 @3900037 = ~Ta. Tak właśnie.~
@@ -257,7 +282,7 @@
 @3900093 = ~Nawet jeśli Elminster takiego nie pija, i tak weźmiemy butelkę.~
 @3900099 = ~*łyk* Co za kwindas...~
 
-@3100000 = ~Piwo Rubinowe z Wrót Zachodu.~
+@3100000 = ~Wino Rubinowe z Wrót Zachodu.~
 @3100001 = ~Ha, nigdy nie zapomne Barnab Wołowo-Ostrygowych! Ale pasuje też do krasnoludzkich gulaszy. Ciężki to truneczek, o ta.~
 @3100002 = ~Czyli właściwie jedno wino by rządzić wszystkim co wołowe? Fantastycznie!~
 @3100003 = ~Obawiam się, że w naszym przypadku to albo wino albo wołowina...~
@@ -266,7 +291,7 @@
 @3100030 = ~To zbierzmy kapke grosza. Wołek źle wchodzi suchym pyskiem.~
 @3100040 = ~Mówi szczur loudowy, co to nigdy nie próbował specjałów Morza Spadajoucych Gwiazd.~
 
-@3110000 = ~Saerloonianiańskie Piwo Topazowe.~
+@3110000 = ~Saerloonianiańskie Wino Topazowe.~
 @3110001 = ~Czyli to bursztynowe, co to je i orzechowe i owocowe. Dobry truneczek, ładnie wchodzi z królikiem. Nie mylić z czerwonym Saerlooniańsko Specjalno Kadzio, oraz sławnym świecoucym białym Saerlooniańskim Blaskiem.~
 @3110002 = ~Orzechowe ORAZ owocowe? Zainteresowałaś mnie.~
 @3110003 = ~Tak czy owak, obawiam się, że nie stać nas na żadne z nich.~
@@ -313,7 +338,7 @@
 
 
 @4000000 = ~Piwo Ciemne Gorzkie~
-@4000001 = ~Ta butelka zawiera ciemne, zupełnie czarne piwo które, gdy je lać, tworzy duże ilości piany w odcieniu głębokiego brązu.
+@4000001 = ~Ta butelka zawiera ciemne, niemal zupełnie czarne piwo które, gdy je lać, tworzy duże ilości piany w odcieniu głębokiego brązu.
 
 Shithri twierdzi, że jest dość ciężkie i najlepiej podawać je schłodzone, ale nie zimne. Jest bardzo popularne na Wybrzeżu Mieczy - przypominasz sobie picie go w Candlekeep, Gospodzie Pod Pomocną Dłonią, a nawet Nashkel. Pochodzi z Arabel, w Cormyrze.~
 
@@ -382,7 +407,7 @@ Według Shithri, to wino wytrawne można spożywać samo, schłodzone, albo wyk
 Shithri twierdzi, że ten miód zawiera wszystkie najdroższe składniki, w tym wiśnie, wanilię i płatki róż. We Wrotach Zachodu jest uznawany za znak szlachectwa. Wieść głosi, że jego wytworzenie trwa całe wieki. Jest zdecydowanie najlepszym trunkiem jaki wyszedł spod rąk elfów z Trademeet, a także zdecydowanie najdroższym napojem na całym Wybrzeżu Mieczy oraz w Amn.~
 
 
-@4100000 = ~Piwo Rubinowe z Wrót Zachodu~
+@4100000 = ~Wino Rubinowe z Wrót Zachodu~
 @4100001 = ~Nawet zza grubych ścianek butelki dobrze widać soczysty karmazyn tego wina.
 
 Zostajesz poinformowany, że ma dość mocny i lekko kwaskowy smak. Shithri powiada, że to najlepsze możliwe wino do dań z wołowiny, niezależnie od tego, czy chodzi o tłusty gulasz czy słynne Barnaby Wołowo-Ostrygowe.~ ~Nawet zza grubych ścianek butelki dobrze widać soczysty karmazyn tego wina.
@@ -390,8 +415,8 @@ Zostajesz poinformowany, że ma dość mocny i lekko kwaskowy smak. Shithri powi
 Zostajesz poinformowana, że ma dość mocny i lekko kwaskowy smak. Shithri powiada, że to najlepsze możliwe wino do dań z wołowiny, niezależnie od tego, czy chodzi o tłusty gulasz czy słynne Barnaby Wołowo-Ostrygowe.~
 
 
-@4110000 = ~Saerloonianiańskie Piwo Topazowe~
-@4110001 = ~Ta butelka jest niemal zupełnie prezroczysta, o bardzo cienkich ściankach, przez co bardzo dobrze widać jej zawartość. Jest wypełniona żółto-bursztynowym winem które delikatnie się pieni gdy je wstrząsnąć.
+@4110000 = ~Saerloonianiańskie Wino Topazowe~
+@4110001 = ~Ta butelka jest niemal zupełnie przeroczysta, o bardzo cienkich ściankach, przez co bardzo dobrze widać jej zawartość. Jest wypełniona żółto-bursztynowym winem które delikatnie się pieni gdy je wstrząsnąć.
 
 Shithri powiada, że to pół-wytrawne wino jest w smaku orzechowe z lekkimi nutami cytryn i gruszek, co czyni je doskonałym do marynowania królika. Podkreśla jednak, aby nie mylić go z dwoma pozostałymi słynnymi winami z tego samego regionu: Saerlooniańską Specjalną Kadzią, czerwonym winem z dodatkiem zbóż, truskawek i malin, oraz Saerlooniańskim Blaskiem, wyjątkowo aromatycznym winem, o którym mówi się, że zamyka w sobie samą esencję lata.~
 
@@ -413,7 +438,19 @@ Według Shithri, to wyjątkowo mocne wino jest wytwarzane na dalekiej Północy,
 @4140000 = ~Piwo Smoczy Oddech~
 @4140001 = ~Piwo w tej butelce jest nieco jaśniejszego odcienia brązu i dobrze się pieni. Ma dość mocny aromat, nieco przypominający siarkę.
 
-Sembiańczycy są bardzo dumni z tego piwa - a przynajmniej tak powiada Shithri. Jego smak jest mocny i cierpki, przez co dobrze pasuje do żytniego chleba i intensywnych serów.~
+Sembijczycy są bardzo dumni z tego piwa - a przynajmniej tak powiada Shithri. Jego smak jest mocny i cierpki, przez co dobrze pasuje do żytniego chleba i intensywnych serów.~
+
+
+@4200000 = ~Nalewka z Rzepy~
+@4200001 = ~Ta prostopadłościenna butelka zawiera mleczną ciecz o silnym zapachu przywodzącym na myśl rzodkiewkę.
+
+Według Wujcio Gerhardta, to znakomitej jakości domowa nalewka rzepowa rodzinnego przepisu. Chociaż nie wydaje się zbyt mocna, to jeśli wierzyć opowieściom Jana, to złudne wrażenie, ponieważ Wujcio znany jest z tego, że ilekroć sięgnie po butelkę, kończy mając problemy z chodzeniem w pozycji pionowej.~
+
+
+@4210000 = ~Wspomożenie niziołka~
+@4210001 = ~Ta prosta butelka zawiera jasne, złociste piwo pszeniczne. Pochodzi z Luiren, krainy niziołków leżącej na południu Faerûnu.
+
+Podobno cieszy się dobrą renomą. Koneserzy opisują Wspomożenie niziołka jako jasne piwo bąbelkowe, które smakuje truskawką i skąpaną w słońcu łąką, zarazem mające niezłego kopa.~
 
 
 @4900000 = ~Wybór Elminstera~
@@ -430,7 +467,7 @@ Shithri nie tylko odmawia podania ci jakichkolwiek użytecznych informacji na te
 @5000010 = ~Aj, kogo moje oczy widzo? Czy to nie moja mała Shithri?~ [6WDPIR00]
 @5000011 = ~Czy to mie oczy nie mylo? Ferdek Podbijoko? To je ty? Co tam jak tam, ty stary capie?~ [6WDSHI00]
 @5000012 = ~Źle nie jes. Sporo pływam mindzy Amn a Calimshanem... widze, że lepiej od ciebie. Co to za szczur londowy?~ [6WDPIR02]
-@5000014 = ~To? To je mój kapitan. Kapitanie, poznaj starego wilka morskiego, Ferdek.~ [6WDSHI02] ~To? To je moja kapitan. Kapitanie, poznaj: wilk morski, Ferdek.~ [6WDSHI03]
+@5000014 = ~To? To je mój kapitan. Kapitanie, poznaj: wilk morski, Ferdek.~ [6WDSHI02] ~To? To je moja kapitan. Kapitanie, poznaj: wilk morski, Ferdek.~ [6WDSHI03]
 @5000015 = ~„Kapitan”? Har har! A to dobre! Shithri, złośnico mała. Byś nie dołączyła do mie zamiast sie z tym londowym bawić?~ [6WDPIR04] ~„Kapitan”? Har har! A to dobre! Shithri, złośnico mała. Byś nie dołączyła do mie zamiast sie z tom londowom bawić?~ [6WDPIR05]
 @5000017 = ~Kapitan je fejn, Ferdek.~ [6WDSHI04]
 @5000018 = ~Ta, jasna sprawa! Taki szczur londowy, co to krasnoludzkiego grogu sie raz czy dwa ożłopał i myśli, że marynarz, har har! Shithri, psotko, miejże litość nad brzuchem starego żeglarza!~ [6WDPIR06]
@@ -538,7 +575,7 @@ Shithri nie tylko odmawia podania ci jakichkolwiek użytecznych informacji na te
 @5010701 = ~Zielone. Świeconce. Czy bogate? Hmm... może? Czy to może...~
 @5010702 = ~Drowowe Zielone. Nie Ulaver, nie nie. Ale jakieś Drowowe Zielone.~
 @5010710 = ~Ej, kompanie, ty se żartujesz czy co? Każdy galernik to zna!~
-@5010711 = ~To Alurlyath. Mają je tu.~
+@5010711 = ~Alurlyathańskie. Mają je tu.~
 @5010712 = ~Nie wiedziałem, że masz taki gust do wina, moja droga!~
 @5010713 = ~Nie ma. Tylko dobre oko, a nawet dwa. Nie patrzysz w nie zbyt często, co, chłopcze?~
 @5010714 = ~Ja... też coś! Co ty niby wiesz!~
@@ -579,6 +616,38 @@ Shithri nie tylko odmawia podania ci jakichkolwiek użytecznych informacji na te
 @5011414 = ~Har har! Może tak być!~
 @5011415 = ~Calimshański świerzb. Wy się śmiejecie, a to straszna choroba! Widzicie, mój kuzyn Barnal...~
 @5011420 = ~Bez punktu!~
+
+@5012000 = ~*wpatruje się* *wącha* Ho? A to co?~
+@5012001 = ~*próbuje* Mmm. Smakuje nieźle...~
+@5012002 = ~Pojencia nie mam. Co to?~
+@5012005 = ~To Nalewka z Rzepy, od... eee... Wujcia Gerhardta czy jakoś tak?~
+@5012006 = ~Ejże, kompanie! Nikt nie zna tego twojego „Wujcia Gerhardta”! Jak żem to niby miał zgadnąć? To nawet etykiety nie ma!~
+@5012010 = ~A kto powiedział, że trunki muszą być znane, oetykietkowane i opatentowane? Nie przypominam sobie w zasadach nic podobnego. Sędzia?~
+@5012011 = ~Czy sugerujesz, że tradycyjne wyroby domowe są gorsze od tych produkowanych masowo?~
+@5012012 = ~Słyszeliście to, dobrzy ludzie? Ten człowiek, który żegluje do obcych krajów, wzgardził lokalnym wyrobem. Dziełem ciężkiej pracy amniskich ludz... znaczy się: gnomich rąk!~
+@5012013 = ~Dobra, może po prostu wybiorę jakiś inny?~
+@5012020 = ~Paluch takiej reguły nie ma. Tu w Morskiej Zdobyczy wspieramy lokalne wyroby, ta.~
+@5012021 = ~Dobrze wiedzieć.~
+@5012022 = ~Brdzo dopsz! Lokne... lokane wyr... loknne wyroro...~
+@5012023 = ~Ta, wszyscy je lubimy. Naprawde, Ferdek. Myślał żem o tobie lepiej.~
+@5012030 = ~...Paluch wtrąci, że my tu w Morskiej Zdobyczy tak nie mówimy...~
+@5012031 = ~Ej! Ejjj! Tyyy, ty co zego mówisz o dziadziu? He? Heee?~
+@5012032 = ~Tak jak se myśle, to twój dziadzio niezły bimber pędził. Dobry chłop był.~
+@5012033 = ~Paluch. Eh-hem.~
+@5012040 = ~Hej, przecież ja mam przyjaciela gnoma! Pamiętasz Glima, moja droga?~
+@5012041 = ~Tak, tak. Twój „ziom gnom”. Fascynujące.~
+@5012042 = ~Gnomy są w sumie porządku. Czasem bywają.~
+@5012043 = ~A tu w Morskiej Zdobyczy, każdego witamy z tą samą gościnnością.~
+@5012050 = ~Ferdek, bracie. Przegrywasz tę rundę.~
+@5012051 = ~Ehhh... nalewka z rzepy...~
+@5012052 = ~Nigdy nie lekceważ potęgi rzepy!~
+
+@5012100 = ~*wącha* *kosztuje*~
+@5012101 = ~Hmm. Bombelkowe. Słodkie i owocowe. I... Ho! Mocne to!~
+@5012102 = ~Jakby to było wino, to bym mówił: Saerlooniańska Specjalna Kadź. Ale to piwo. Co to jes...~
+@5012103 = ~Pojencia nie mam.~
+@5012105 = ~Nawet nie blisko! To Wspomożenie niziołka, z Luiren! Bez punktu!~
+
 @5019000 = ~*wpatruje się* *wącha*~
 @5019001 = ~Otruć mie chcesz? Nie bende pił tego... tego... tego ścieku!~
 @5019002 = ~To mówisz co to?~
@@ -826,11 +895,13 @@ Jesteś rośliną.~
 @6000070 = ~Podgórskie Alurlyathańskie.~
 @6000080 = ~Arabellańskie Wino Wytrawne.~
 @6000090 = ~Evermead.~
-@6000100 = ~Piwo Rubinowe z Wrót Zachodu.~
+@6000100 = ~Wino Rubinowe z Wrót Zachodu.~
 @6000110 = ~Saerloonianiańskie Piwo Topazowe.~
 @6000120 = ~Berduskiańskie Ciemne.~
 @6000130 = ~Zimowe Wino.~
 @6000140 = ~Piwo Smoczy Oddech.~
+@6000200 = ~Nalewka z Rzepy.~
+@6000210 = ~Wspomożenie niziołka.~
 @6000900 = ~Wybór Elminstera.~
 
 

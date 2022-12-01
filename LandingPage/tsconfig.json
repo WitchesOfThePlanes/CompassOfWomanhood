@@ -27,8 +27,5 @@
     "src/**/*.json",
     "vite.config.ts"
   ],
-  "exclude": [
-    "scripts",
-    "node_modules"
-  ]
+  "exclude": ["scripts", "node_modules"]
 }

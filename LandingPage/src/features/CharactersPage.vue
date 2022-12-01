@@ -10,7 +10,7 @@
       {{ $t("CHARACTERS.INTRO") }}
     </div>
     <div :class="smAndUp && 'page'">
-      <CharacterDetails character-name="SHITRI" layout="left" />
+      <CharacterDetails character-name="SHITHRI" layout="left" />
       <CharacterDetails character-name="CALY" layout="right" />
     </div>
   </div>

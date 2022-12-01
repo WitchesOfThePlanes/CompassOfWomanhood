@@ -4,17 +4,11 @@
     class="h-screen d-flex flex-column align-center justify-center text-center pa-10"
   >
     <div :class="smAndUp && 'page'">
-      <div class="font-italic mx-10 introduction">
-        {{ $t("ABOUT.INTRODUCTION") }}
-      </div>
-      <h2 class="text-md-h4 mt-16">
+      <h2 class="text-md-h4 mt-16 mb-10">
         {{ $t("ABOUT.TITLE") }}
       </h2>
-      <div class="mt-10">
-        {{ $t("ABOUT.MOD") }}
-      </div>
-      <div class="mt-5">
-        {{ $t("ABOUT.GOAL") }}
+      <div class="mt-2" v-for="(item, index) in $tm('ABOUT.MOD')" :key="index">
+        {{ $t(item) }}
       </div>
       <v-btn
         rounded="pill"

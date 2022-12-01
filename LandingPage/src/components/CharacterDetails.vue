@@ -3,9 +3,10 @@
     class="d-md-flex w-100 align-center justify-center pa-6"
     :class="props.layout === 'left' ? 'flex-row' : 'flex-row-reverse'"
   >
-    <div class="character-image text-center">
+    <div class="text-center">
       <img
-        src="https://via.placeholder.com/300x450/"
+        class="character-image"
+        :src="props.characterName === 'CALY' ? imgCaly : imgShithri"
         :alt="`${props.characterName}-portait`"
       />
     </div>
@@ -47,12 +48,19 @@
 </template>
 
 <script setup lang="ts">
+import imgCaly from "@/assets/caly.png";
+import imgShithri from "@/assets/shithri.png";
+
 interface ICharacterDetailsProps {
-  characterName: string;
+  characterName: "SHITHRI" | "CALY";
   layout: "left" | "right";
 }
 
 const props = defineProps<ICharacterDetailsProps>();
 </script>
 
-<style scoped></style>
+<style scoped>
+.character-image {
+  max-width: 90vw;
+}
+</style>

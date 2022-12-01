@@ -7,7 +7,11 @@
       <h2 class="text-md-h4 mt-16 mb-10">
         {{ $t("ABOUT.TITLE") }}
       </h2>
-      <div class="mt-2" v-for="(item, index) in $tm('ABOUT.MOD')" :key="index">
+      <div
+        class="mt-2 mx-5"
+        v-for="(item, index) in $tm('ABOUT.MOD')"
+        :key="index"
+      >
         {{ $t(item) }}
       </div>
       <v-btn

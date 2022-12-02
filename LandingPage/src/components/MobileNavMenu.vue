@@ -9,7 +9,7 @@
       @click="state.mobileMenuOpen = true"
     />
   </div>
-  <div v-else class="h-screen w-100 bg-white mobile-nav-menu">
+  <div v-else class="h-screen w-100 mobile-nav-menu bg-dark">
     <div class="d-flex align-end justify-start flex-column pa-6">
       <v-btn
         variant="text"
@@ -33,5 +33,8 @@ const state = reactive({ mobileMenuOpen: false });
   position: fixed;
   right: 0;
   top: 0;
+}
+.bg-dark {
+  background: #14162a;
 }
 </style>

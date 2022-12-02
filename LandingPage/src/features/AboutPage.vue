@@ -1,11 +1,14 @@
 <template>
   <div
     id="about"
-    class="h-screen d-flex flex-column align-center justify-center text-center pa-10"
+    class="d-flex flex-column align-center justify-center pa-10 about"
   >
     <div :class="smAndUp && 'page'">
-      <h2 class="text-md-h4 mt-16 mb-10">
-        {{ $t("ABOUT.TITLE") }}
+      <h2 class="mt-16 mb-10 mx-5">
+        <SectionTitle>
+          <SwordSvg />
+          {{ $t("ABOUT.TITLE") }}
+        </SectionTitle>
       </h2>
       <div
         class="mt-2 mx-5"
@@ -18,7 +21,7 @@
         rounded="pill"
         color="secondary"
         variant="outlined"
-        class="ma-8"
+        class="my-8 mx-5"
         @click="scrollTo('characters')"
       >
         {{ $t("ABOUT.BUTTON") }}
@@ -29,18 +32,21 @@
 </template>
 
 <script setup lang="ts">
+import SwordSvg from "@/assets/Sword.svg";
+
 import { useDisplay } from "vuetify";
 import { useScrollTo } from "@/composables/scroll-to";
+import SectionTitle from "@/components/SectionTitle.vue";
 
 const { scrollTo } = useScrollTo();
 const { smAndUp } = useDisplay();
 </script>
 
 <style scoped>
-.introduction {
-  font-size: 0.8rem;
-}
 .page {
   width: 60vw;
+}
+.about {
+  min-height: 100vh;
 }
 </style>

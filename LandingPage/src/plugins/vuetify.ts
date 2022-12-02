@@ -23,11 +23,12 @@ export default createVuetify({
     },
   },
   theme: {
+    defaultTheme: "dark",
     themes: {
-      light: {
+      dark: {
         colors: {
-          primary: "#512da8",
-          secondary: "#616161",
+          primary: "#ffffff",
+          secondary: "#ffffff",
         },
       },
     },

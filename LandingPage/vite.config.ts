@@ -2,20 +2,24 @@
 import vue from "@vitejs/plugin-vue";
 import vuetify from "vite-plugin-vuetify";
 import eslintPlugin from "vite-plugin-eslint";
+import webfontDownload from "vite-plugin-webfont-dl";
+import svgLoader from "vite-svg-loader";
 
 // Utilities
 import { defineConfig } from "vite";
 import { fileURLToPath, URL } from "node:url";
 
-// https://vitejs.dev/config/
 export default defineConfig({
   base: "./",
   plugins: [
     vue(),
-    // https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vite-plugin
+    svgLoader({
+      defaultImport: "component",
+    }),
     vuetify({
       autoImport: true,
     }),
+    webfontDownload(),
     eslintPlugin(),
   ],
   define: { "process.env": {} },

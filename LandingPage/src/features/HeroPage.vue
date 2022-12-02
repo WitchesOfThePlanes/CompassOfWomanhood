@@ -1,24 +1,29 @@
 <template>
-  <div class="h-screen d-flex flex-column justify-center">
+  <div
+    class="h-screen d-flex flex-column justify-center home"
+    :style="{ backgroundImage: `url(${bgImagePath})` }"
+  >
     <div class="d-flex align-center justify-center flex-row pa-6">
       <header class="headers d-flex flex-column align-center justify-center">
-        <h1 class="text-md-h2 align-self-center font-weight-medium text-center">
+        <h1 class="align-self-center font-weight-medium text-center">
           {{ $t("HERO.TITLE") }}
         </h1>
-        <h4 class="text-md-h5 align-self-end text-medium-emphasis text-right">
+        <h4 class="align-self-end text-right subtitle">
           {{ $t("HERO.SUBTITLE") }}
         </h4>
       </header>
     </div>
-    <div class="d-flex align-center justify-center flex-column my-12 pa-6">
-      <h2 class="text-md-h3 text-uppercase font-weight-bold">
-        {{ $t("HERO.COMING_SOON") }}
+    <div
+      class="d-flex align-center justify-center flex-column my-12 pa-6 coming-soon"
+    >
+      <h2>
+        <SectionTitle>{{ $t("HERO.COMING_SOON") }}</SectionTitle>
       </h2>
       <v-btn
         rounded="pill"
         color="secondary"
         variant="outlined"
-        class="ma-8"
+        class="mx-8 mt-16 text-lowercase font-weight-light"
         @click="scrollTo('about')"
       >
         {{ $t("HERO.BUTTON") }}
@@ -29,9 +34,23 @@
 </template>
 
 <script setup lang="ts">
+import bgImagePath from "@/assets/home-bg.png";
+
 import { useScrollTo } from "@/composables/scroll-to";
+import SectionTitle from "@/components/SectionTitle.vue";
 
 const { scrollTo } = useScrollTo();
 </script>
 
-<style scoped></style>
+<style scoped>
+.home {
+  background-size: cover;
+}
+.subtitle {
+  font-size: 22px;
+}
+.coming-soon {
+  position: relative;
+  top: 150px;
+}
+</style>

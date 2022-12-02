@@ -13,9 +13,7 @@ export default defineConfig({
   base: "./",
   plugins: [
     vue(),
-    svgLoader({
-      defaultImport: "component",
-    }),
+    svgLoader(),
     vuetify({
       autoImport: true,
     }),

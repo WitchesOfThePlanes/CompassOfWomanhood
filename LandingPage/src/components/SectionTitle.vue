@@ -9,6 +9,7 @@
 <style scoped>
 .section-title {
   display: flex;
+  align-items: center;
   font-family: "Alexandria", serif;
   font-weight: 600;
   font-size: 10vw;
@@ -31,5 +32,10 @@
     font-size: 4rem;
     line-height: 78px;
   }
+}
+
+.section-title svg {
+  margin-right: 16px;
+  max-height: 2em;
 }
 </style>

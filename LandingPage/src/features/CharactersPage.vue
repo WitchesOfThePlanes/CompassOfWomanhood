@@ -17,7 +17,8 @@
 </template>
 
 <script setup lang="ts">
-import SwordSvg from "@/assets/Sword.svg";
+/// <reference types="vite-svg-loader" />
+import SwordSvg from "@/assets/Sword.svg?component";
 
 import { useDisplay } from "vuetify";
 import CharacterDetails from "@/components/CharacterDetails.vue";

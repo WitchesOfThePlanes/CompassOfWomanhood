@@ -1,5 +1,6 @@
 <template>
   <v-btn-toggle
+    v-model="activeSection"
     class="h-screen d-flex align-end justify-center flex-column pa-6 nav-menu text-right"
   >
     <v-btn
@@ -26,6 +27,7 @@
       class="button pa-2"
       selected-class="active"
       variant="plain"
+      value="characters"
       @click="goToMenu('characters')"
       >{{ $t("MENU.CHARACTERS") }}
     </v-btn>
@@ -41,7 +43,14 @@
 <script setup lang="ts">
 import { i18n } from "@/plugins/i18n";
 import { useScrollTo } from "@/composables/scroll-to";
+import { ref, watch } from "vue";
 
+interface INavMenuProps {
+  activeSection?: string;
+}
+
+const props = defineProps<INavMenuProps>();
+const activeSection = ref();
 const emit = defineEmits(["close-mobile-menu"]);
 
 const { scrollTo } = useScrollTo();
@@ -51,12 +60,20 @@ const ghLink = import.meta.env.VITE_APP_GH_LINK;
 const goToMenu = (section: string) => {
   emit("close-mobile-menu");
   scrollTo(section);
+  activeSection.value = section;
 };
 
 const changeLocale = (locale: string) => {
   i18n.global.locale = locale as typeof i18n.global.locale;
   emit("close-mobile-menu");
 };
+
+watch(
+  () => props.activeSection,
+  async (newSection) => {
+    activeSection.value = newSection;
+  }
+);
 </script>
 
 <style scoped>
@@ -70,6 +87,11 @@ const changeLocale = (locale: string) => {
   font-weight: 300;
   display: flex;
   justify-content: end;
+  opacity: 1;
+}
+
+.button:hover {
+  color: #f9b24b;
 }
 
 .active {

@@ -32,7 +32,8 @@
 </template>
 
 <script setup lang="ts">
-import SwordSvg from "@/assets/Sword.svg";
+/// <reference types="vite-svg-loader" />
+import SwordSvg from "@/assets/Sword.svg?component";
 
 import { useDisplay } from "vuetify";
 import { useScrollTo } from "@/composables/scroll-to";

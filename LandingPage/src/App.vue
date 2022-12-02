@@ -1,13 +1,13 @@
 <template>
   <v-app>
     <v-main>
-      <HeroPage />
+      <HeroPage v-intersect="intersect('home')" />
       <div class="main">
-        <AboutPage />
-        <CharactersPage />
+        <AboutPage v-intersect="intersect('about')" />
+        <CharactersPage v-intersect="intersect('characters')" />
       </div>
     </v-main>
-    <NavMenu v-if="smAndUp" />
+    <NavMenu :active-section="intersectedSection" v-if="smAndUp" />
     <MobileNavMenu v-else />
     <AppFooter />
   </v-app>
@@ -21,8 +21,24 @@ import HeroPage from "@/features/HeroPage.vue";
 import AboutPage from "@/features/AboutPage.vue";
 import CharactersPage from "@/features/CharactersPage.vue";
 import AppFooter from "@/components/AppFooter.vue";
+import { ref } from "vue";
 
 const { smAndUp } = useDisplay();
+
+const intersectedSection = ref("");
+
+const intersect = (name: string) => ({
+  handler: onIntersect(name),
+  options: {
+    threshold: [0.2],
+  },
+});
+
+const onIntersect = (name: string) => (isIntersecting: boolean) => {
+  if (isIntersecting) {
+    intersectedSection.value = name;
+  }
+};
 </script>
 
 <style>

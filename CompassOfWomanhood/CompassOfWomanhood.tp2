@@ -507,6 +507,9 @@ BEGIN
   // Dorn sparring
   ~CompassOfWomanhood/scripts/shithri/shithri_dorn25.baf~           =>  ~dorn25.bcs~
 
+  // Jan Jansen joining
+  ~CompassOfWomanhood/scripts/shithri/shithri_jan.baf~              =>  ~jan.bcs~
+
   // Neera romance
   ~CompassOfWomanhood/scripts/shithri/bshithri_neera_romance.baf~   =>  ~6WSHITH.bcs~
   ~CompassOfWomanhood/scripts/shithri/bshith25_neera_romance.baf~   =>  ~6WSHI25.bcs~ 
@@ -518,6 +521,9 @@ BEGIN
 
   // summon in ToB
   ~CompassOfWomanhood/areas/shithri/ar4500.baf~  =>  ~ar4500.bcs~
+
+  // cursed bandana script
+  ~CompassOfWomanhood/items/shithri/_6WBAN02_baldur.baf~  =>  ~baldur.bcs~
 END
 
 SILENT
@@ -547,6 +553,13 @@ BEGIN
   COPY ~%icon%~ ~override~
   OUTER_SET file_num += 1
 END
+
+ACTION_BASH_FOR ~CompassOfWomanhood/items/shithri~ ~6WDR.*\.BAM~
+BEGIN
+  COPY ~%BASH_FOR_FILESPEC%~ ~override~
+  OUTER_SET file_num += 1
+END
+
 PRINT "Copied %file_num% item icons"
 
 SILENT
@@ -594,6 +607,8 @@ BEGIN
   ~12~  => 4120000  /* Berduskan Dark */
   ~13~  => 4130000  /* Winter Wine */
   ~14~  => 4140000  /* Dragon's Beer */
+  ~20~  => 4200000  /* Turnip Nalewka */
+  ~21~  => 4210000  /* Halfling's Help */
   ~90~  => 4900000  /* Elminster's Choice */
 END
 
@@ -607,6 +622,11 @@ BEGIN
       num += 1
       SAY UNIDENTIFIED_DESC (AT "num")
       SAY IDENTIFIED_DESC   (AT "num")
+
+      SPRINT icon_filename "6WDR%midfix%I"
+      PATCH_IF FILE_EXISTS_IN_GAME "%icon_filename%.BAM" BEGIN
+        WRITE_EVALUATED_ASCII 0x3a "%icon_filename%" #8
+      END
 
     EXTEND_BOTTOM ~6WSHITH.bcs~ ~CompassOfWomanhood/scripts/shithri/shithri_drink_quest_iter.baf~
       SPRINT drink_num "%midfix%"

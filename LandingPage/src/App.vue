@@ -30,7 +30,7 @@ const intersectedSection = ref("");
 const intersect = (name: string) => ({
   handler: onIntersect(name),
   options: {
-    threshold: [0.2],
+    threshold: [0.1],
   },
 });
 

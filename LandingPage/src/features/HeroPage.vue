@@ -6,7 +6,7 @@
     <div class="d-flex align-center justify-center flex-row pa-6">
       <header class="headers d-flex flex-column align-center justify-center">
         <h1 class="align-self-center font-weight-medium text-center">
-          {{ $t("HERO.TITLE") }}
+          <img :src="logoImagePath" alt="logo" />
         </h1>
         <h4 class="align-self-end text-right subtitle">
           {{ $t("HERO.SUBTITLE") }}
@@ -35,6 +35,7 @@
 
 <script setup lang="ts">
 import bgImagePath from "@/assets/home-bg.png";
+import logoImagePath from "@/assets/logo.png";
 
 import { useScrollTo } from "@/composables/scroll-to";
 import SectionTitle from "@/components/SectionTitle.vue";

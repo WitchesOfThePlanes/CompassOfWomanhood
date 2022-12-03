@@ -2,11 +2,12 @@
   <div
     id="about"
     class="d-flex flex-column align-center justify-center pa-10 about"
+    :style="{ backgroundImage: `url(${bgImagePath})` }"
   >
     <div :class="smAndUp && 'page'">
       <h2 class="mt-16 mb-10 mx-5">
         <SectionTitle>
-          <SwordSvg />
+          <img class="sword" :src="swordPng" />
           {{ $t("ABOUT.TITLE") }}
         </SectionTitle>
       </h2>
@@ -32,8 +33,8 @@
 </template>
 
 <script setup lang="ts">
-/// <reference types="vite-svg-loader" />
-import SwordSvg from "@/assets/Sword.svg?component";
+import bgImagePath from "@/assets/section-bg.png";
+import swordPng from "@/assets/Sword.png";
 
 import { useDisplay } from "vuetify";
 import { useScrollTo } from "@/composables/scroll-to";
@@ -49,5 +50,10 @@ const { smAndUp } = useDisplay();
 }
 .about {
   min-height: 100vh;
+  background-position: center center;
+}
+.sword {
+  margin-right: 16px;
+  max-height: 2em;
 }
 </style>

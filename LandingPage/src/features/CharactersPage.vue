@@ -4,7 +4,10 @@
     class="d-flex flex-column align-center justify-center pa-10"
   >
     <h2 class="ma-6">
-      <SectionTitle> <SwordSvg />{{ $t("CHARACTERS.TITLE") }}</SectionTitle>
+      <SectionTitle>
+        <img class="sword" :src="swordPng" />
+        {{ $t("CHARACTERS.TITLE") }}
+      </SectionTitle>
     </h2>
     <div class="text-center mb-10">
       {{ $t("CHARACTERS.INTRO") }}
@@ -17,8 +20,7 @@
 </template>
 
 <script setup lang="ts">
-/// <reference types="vite-svg-loader" />
-import SwordSvg from "@/assets/Sword.svg?component";
+import swordPng from "@/assets/Sword.png";
 
 import { useDisplay } from "vuetify";
 import CharacterDetails from "@/components/CharacterDetails.vue";
@@ -30,5 +32,9 @@ const { smAndUp } = useDisplay();
 <style scoped>
 .page {
   width: 60vw;
+}
+.sword {
+  margin-right: 16px;
+  max-height: 2em;
 }
 </style>

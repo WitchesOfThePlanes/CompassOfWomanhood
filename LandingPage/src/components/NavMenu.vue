@@ -71,7 +71,9 @@ const changeLocale = (locale: string) => {
 watch(
   () => props.activeSection,
   async (newSection) => {
-    activeSection.value = newSection;
+    if (newSection) {
+      activeSection.value = newSection;
+    }
   }
 );
 </script>

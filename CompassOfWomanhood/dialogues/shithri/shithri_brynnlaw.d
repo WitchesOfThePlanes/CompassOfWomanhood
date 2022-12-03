@@ -898,7 +898,7 @@ CHAIN IF WEIGHT #-1 ~
     SetGlobal("6W#ShithriBrynnlawRespawn","GLOBAL",3)
   ~
   == PIRPIR01
-  @2000701 /* Huh? Wh-wha'? Shiri? Har har, me hear-ty! *hic* Me prtty, prrtty hear-ty! */
+  @2000701 /* Huh? Wh-wha'? Shiri? Har har! Me hear-ty. *hic* Me prrtty hear-ty! */
   == 6WSHITP
   @2000702 /* Oy, get yerself together, matey! Nah wanna leave this island nahmore? */
 END

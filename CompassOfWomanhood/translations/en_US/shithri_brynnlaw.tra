@@ -120,16 +120,16 @@
 @2000540 = ~Why should I care? Ye do yer thing, I do me thing. Off I go.~
 
 @2000700 = ~Ho, me matey... Ho, ho, ye there?~
-@2000701 = ~Huh? Wh-wha'? Shiri? Har har, me hear-ty! *hic* Me prtty, prrtty hear-ty!~
+@2000701 = ~Huh? Wh-wha'? Shiri? Har har! Me hear-ty. *hic* Me prrtty hear-ty!~ [6WBPIT80]
 @2000702 = ~Oy, get yerself together, matey! Nah wanna leave this island nahmore?~
-@2000710 = ~*hic* Wit' that... that... captain o' yers?~
+@2000710 = ~*hic* Wit' that... that... captain o' yers?~ [6WBPIT82]
 @2000711 = ~Aye! Ye gettin' outta here wit' this bucko and <PRO_HIMHER>, ain't ye?~
-@2000720 = ~*hic* Wit' that... prtty, prtty elvn lady o' yers?~
+@2000720 = ~*hic* Wit' that... prtty, prtty elvn lady o' yers?~ [6WBPIT84]
 @2000721 = ~Half-elven. 'n she nah "lady 'o I". She jus'...~
 @2000722 = ~She jus' a... friend.~
-@2000730 = ~*hic* Wit' that... prtty, prtty elvn lady o' yers?~
+@2000730 = ~*hic* Wit' that... prtty, prtty elvn lady o' yers?~ [6WBPIT86]
 @2000731 = ~*smirk* ...half-elven.~
-@2000740 = ~zzzZZzzz...~
+@2000740 = ~zzzZZzzz...~ [6WBPIT88]
 @2000741 = ~Ho, me matey! Me matey! Blimey... *gulp*~
 
 @2000800 = ~Ho, me capt'n! Ahoy!~

@@ -119,16 +119,16 @@
 @2000540 = ~A co mie to obchodzi? Ty rób se swojo sprawe, a ja swojo. No to se ide.~
 
 @2000700 = ~Hej, kompanie... ejże, jezdeś ty tam?~ [6WBSHI80]
-@2000701 = ~He? T-tso? Szyri? Har har, mordeeeczko! *czka* Moja ty pikna mordeeeczko!~
+@2000701 = ~He? T-tso? Szyri? Har har! Mooordeczko! *czka* Moja ty pikna mordeczko!~ [6WBPIT80]
 @2000702 = ~Ej, weź ty sie w garść, kompanie! Nie miał żeś z tej wyspy wyleźć?~ [6WBSHI82]
-@2000710 = ~*czka* Z tym... tym... kapitanem twoim?~ ~*czka* Z tą... tą... twoją kapitan?~
+@2000710 = ~*czka* Z tym... tym... kapitanem twoim?~ [6WBPIT82] ~*czka* Z tą... tą... twoją kapitan?~ [6WBPIT83]
 @2000711 = ~Ta! Wyłazisz stoud razem z nim i to galernico, nie?~ ~Ta! Wyłazisz stoud razem z nio i to galernico, nie?~
-@2000720 = ~*czka* Z tą... pikną, pikną elficką panią twoją?~
+@2000720 = ~*czka* Z tą... pikną, pikną elficką panią twoją?~ [6WBPIT84]
 @2000721 = ~Pół-elficką. I żadna „moja pani”. Jes tyko...~
 @2000722 = ~Tyko przyjaciółko.~
-@2000730 = ~*czka* Z tą... pikną, pikną elficką panią twoją?~
+@2000730 = ~*czka* Z tą... pikną, pikną elficką panią twoją?~ [6WBPIT86]
 @2000731 = ~*szczerzy się* ...pół-elficką.~
-@2000740 = ~zzzZZzzz...~
+@2000740 = ~zzzZZzzz...~ [6WBPIT88]
 @2000741 = ~Ejże, kompanie! Mój kompanie! Niech to... *łyk*~
 
 @2000800 = ~Ah, kapitan! Ahoj!~
@@ -160,7 +160,7 @@
 
 @3000000 = ~Nie masz pojęcia, jak często to słyszę. Oczywiście, że jesteś tu na leczeniu. W końcu mamy tu już wielu samozwańczych królów, królowych i bogów. Kiedyś nawet był tu jeden Elminster.~
 
-@3000100 = ~Hej, kompanie, posłuchaj no... Jak się nazywa ryba co ma ucha?~
+@3000100 = ~Hej, kompanie, posłuchaj no... Jak się nazywa ryba co ma ucha?~ ~Hej, kompanko, posłuchaj no... Jak się nazywa ryba co ma ucha?~
 @3000101 = ~Sam nie wiem, ale pewnikiem nie śledź! Har har, ależ z ciebie jest szczur lądowy!~
 @3000102 = ~Nie wiem, ale pewno nie śledź!~
 @3000103 = ~Har har! Widzę, żeś jes zacna galernica, kompanko!~

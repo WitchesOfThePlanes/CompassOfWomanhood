@@ -391,7 +391,7 @@ APPEND 6WSHITJ
   END
 END
 
-EXTEND_BOTTOM player1 3
+EXTEND_BOTTOM PLAYER1 3
   IF ~
     IsValidForPartyDialogue("6WSHITHRI")
     !IsValidForPartyDialogue("IMOEN2")
@@ -465,7 +465,7 @@ CHAIN 6WSHITJ slayer_change_reaction
   @4000302 /* But fer Mother's voice, me capt'n, get a grip. Or we all end up deadmen. */
 END
 
-EXTEND_BOTTOM player1 5
+EXTEND_BOTTOM PLAYER1 5
   IF ~
     IsValidForPartyDialogue("6WSHITHRI")
     !IsValidForPartyDialogue("IMOEN2")
@@ -523,7 +523,7 @@ APPEND 6WSHITJ
   END
 END
 
-EXTEND_BOTTOM player1 16
+EXTEND_BOTTOM PLAYER1 16
   IF ~
     IsValidForPartyDialogue("6WSHITHRI")
     !IsValidForPartyDialogue("IMOEN2")
@@ -583,7 +583,7 @@ APPEND 6WSHITJ
   END
 END
 
-EXTEND_BOTTOM player1 15
+EXTEND_BOTTOM PLAYER1 15
   IF ~
     IsValidForPartyDialogue("6WSHITHRI")
     !IsValidForPartyDialogue("IMOEN2")

@@ -1,7 +1,7 @@
 {
   "MENU": {
     "ABOUT": "about",
-    "CHARACTERS": "characters",
+    "CHARACTERS": "companions",
     "READ_MORE": "read more"
   },
   "HERO": {
@@ -9,6 +9,10 @@
     "SUBTITLE": "Ways of Women, Ways of Pleasure...",
     "COMING_SOON": "Coming soon",
     "BUTTON": "Scroll to discover"
+  },
+  "INTRO": {
+    "HASHTAG": "compassofwomanhood",
+    "INTRODUCTION": ["Hey traveler! Stop for a while. Come closer, and I will share with you a great story. Do you remember that times, when everything was simpler? Let’s turn back time and come back to Baldurs Gate 2. Impossible you say? Well… it is.", "We are a group of crazy people, who everyday thinks about (Sword Shore?). That’s why we moved our butts, and create something unusual, wonderful, marvelous and generally dope, and we mean modification for that classical game. We think of it when we do our dishes, sleep, and pumping score on mobile games while owning The throne.", "We, The fans, created for the fans all around the globe. So grab your strong dwarf ale, and enjoy the creation of our fingers."]
   },
   "ABOUT": {
     "TITLE": "About",
@@ -19,7 +23,7 @@
       "The other character is Caly: well-read, educated and painfully professional. An exclusive courtesan with hair as fiery as her temperament. Knowledgeable in art and history. A follower of the moon goddess, seeking the way of her faith.",
       "Everyone will find something for themselves in the mod. Great drinks, sea shanties, lore of the sea and fairy tales from all over the world, broadly understood art, as well as pirate slang in both language versions. In a word, everything that we fell in love with Baldur's for."
     ],
-    "BUTTON": "Scroll to see companions"
+    "BUTTON": "Watch trailer"
   },
   "CHARACTERS": {
     "TITLE": "List of companions",

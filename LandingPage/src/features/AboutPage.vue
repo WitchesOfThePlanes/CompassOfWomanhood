@@ -22,11 +22,12 @@
         rounded="pill"
         color="secondary"
         variant="outlined"
-        class="my-8 mx-5"
-        @click="scrollTo('characters')"
+        class="mx-8 mt-16 text-lowercase font-weight-light"
       >
-        {{ $t("ABOUT.BUTTON") }}
-        <v-icon right class="ml-2"> mdi-arrow-down-thick </v-icon>
+        <span class="d-flex align-baseline">
+          <v-icon right class="mr-2"> fa:far fa-circle-play </v-icon>
+          {{ $t("ABOUT.BUTTON") }}
+        </span>
       </v-btn>
     </div>
   </div>
@@ -37,10 +38,8 @@ import bgImagePath from "@/assets/section-bg.png";
 import swordPng from "@/assets/Sword.png";
 
 import { useDisplay } from "vuetify";
-import { useScrollTo } from "@/composables/scroll-to";
 import SectionTitle from "@/components/SectionTitle.vue";
 
-const { scrollTo } = useScrollTo();
 const { smAndUp } = useDisplay();
 </script>
 

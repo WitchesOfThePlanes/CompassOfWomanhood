@@ -3,6 +3,7 @@
     <v-main>
       <HeroPage v-intersect="intersect('home')" />
       <div class="main">
+        <IntroPage />
         <AboutPage v-intersect="intersect('about')" />
         <CharactersPage v-intersect="intersect('characters')" />
       </div>
@@ -22,6 +23,7 @@ import AboutPage from "@/features/AboutPage.vue";
 import CharactersPage from "@/features/CharactersPage.vue";
 import AppFooter from "@/components/AppFooter.vue";
 import { ref } from "vue";
+import IntroPage from "@/features/IntroPage.vue";
 
 const { smAndUp } = useDisplay();
 
@@ -52,6 +54,11 @@ h5,
 h6 {
   font-family: "Alexandria", serif;
   font-weight: 300;
+}
+
+html,
+body {
+  font-size: 14px;
 }
 
 .main {

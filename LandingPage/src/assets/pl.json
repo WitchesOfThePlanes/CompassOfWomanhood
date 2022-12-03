@@ -1,7 +1,7 @@
 {
   "MENU": {
     "ABOUT": "o projekcie",
-    "CHARACTERS": "postacie",
+    "CHARACTERS": "towarzyszki",
     "READ_MORE": "czytaj więcej"
   },
   "HERO": {
@@ -9,6 +9,10 @@
     "SUBTITLE": "Ścieżki Kobiet, Ścieżki Przyjemności...",
     "COMING_SOON": "Już wkrótce",
     "BUTTON": "Przewiń po więcej"
+  },
+  "INTRO": {
+    "HASHTAG": "compassofwomanhood",
+    "INTRODUCTION": ["Hola, wędrowcy! Zatrzymajcie się na chwilę. Zbliż się, a przedstawię Ci ciekawą historię. Pamiętasz czasy, kiedy wszystko było proste? Spróbujmy cofnąć bieg rzeki czasu i wróćmy do Baldurs Gate 2. Niemożliwe? Ano jednak możliwe.", "Otóż jesteśmy grupką wariatów, którzy codziennie myślą o Wybrzeżu Mieczy. Dlatego też zebraliśmy swoje rzyci i tworzymy coś niezwykłego, wspaniałego, cudownego i ogólnie wyczesanego, czyli najbardziej moda. Myśleliśmy o nim podczas normalnej pracy, mycia garów, snu, a nawet podczas pobijania kolejnych rekordów w grach mobilnych siedząc na kibelku.", "Powstało coś od fanów dla fanów, więc chwyć kielich krzepkiego, krrrasnoludzkiego trunku i rozkoszuj się dziełem naszych paluszków."]
   },
   "ABOUT": {
     "TITLE": "O projekcie",
@@ -19,7 +23,7 @@
       "Drugą postacią jest Caly. Oczytana, wykształcona i do bólu profesjonalna. Ekskluzywna kurtyzana o włosach równie płomiennych, co jej temperament. Obeznana w sztuce i historii. Wyznawczyni bogini księżyca, szukająca drogi swojej wiary.",
       "W modzie każdy znajdzie coś dla siebie. Wspaniałe trunki, morskie szanty, wiedza o morzu, baśniach ze wszystkich stron świata, szeroko pojętą sztukę, a także piracki slang w obu wersjach językowych. Jednym słowem wszystko to, za co pokochaliśmy Baldura."
     ],
-    "BUTTON": "Przewiń by zobaczyć towarzyszki"
+    "BUTTON": "Zobacz zwiastun"
   },
   "CHARACTERS": {
     "TITLE": "Lista towarzyszek",

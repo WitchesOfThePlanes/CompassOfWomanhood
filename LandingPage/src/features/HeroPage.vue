@@ -6,7 +6,7 @@
     <div class="d-flex align-center justify-center flex-row pa-6">
       <header class="headers d-flex flex-column align-center justify-center">
         <h1 class="align-self-center font-weight-medium text-center">
-          <img :src="logoImagePath" alt="logo" />
+          <img class="logo" :src="logoImagePath" alt="logo" />
         </h1>
         <h4 class="align-self-end text-right subtitle">
           {{ $t("HERO.SUBTITLE") }}
@@ -24,10 +24,12 @@
         color="secondary"
         variant="outlined"
         class="mx-8 mt-16 text-lowercase font-weight-light"
-        @click="scrollTo('about')"
+        @click="scrollTo('intro')"
       >
-        {{ $t("HERO.BUTTON") }}
-        <v-icon right class="ml-2"> mdi-arrow-down-thick </v-icon>
+        <span class="d-flex align-center">
+          {{ $t("HERO.BUTTON") }}
+          <v-icon right class="ml-2"> mdi-arrow-down </v-icon>
+        </span>
       </v-btn>
     </div>
   </div>
@@ -46,6 +48,9 @@ const { scrollTo } = useScrollTo();
 <style scoped>
 .home {
   background-size: cover;
+}
+.logo {
+  max-width: 90vw;
 }
 .subtitle {
   font-size: 22px;

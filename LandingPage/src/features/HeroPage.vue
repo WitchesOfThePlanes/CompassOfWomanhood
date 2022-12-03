@@ -47,6 +47,7 @@ const { scrollTo } = useScrollTo();
 
 <style scoped>
 .home {
+  background-color: #00000b;
   background-size: cover;
 }
 .logo {

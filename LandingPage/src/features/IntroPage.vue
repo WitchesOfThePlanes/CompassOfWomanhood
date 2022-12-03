@@ -4,12 +4,17 @@
     class="d-flex flex-column align-center justify-center text-center py-10"
   >
     <h2 class="mt-16 mb-10 mx-md-0 mx-5 d-flex justify-center">
-      <SectionTitle class="hashtag">
+      <SectionTitle data-aos="fade-up" class="hashtag">
         <img class="hash" :src="hashPng" />
         {{ $t("INTRO.HASHTAG") }}
       </SectionTitle>
     </h2>
-    <div class="px-10" :class="smAndUp && 'page'">
+    <div
+      data-aos="fade-up"
+      data-aos-delay="500"
+      class="px-10"
+      :class="smAndUp && 'page'"
+    >
       <div
         class="my-2 mx-5 introduction"
         v-for="(item, index) in $tm('INTRO.INTRODUCTION')"

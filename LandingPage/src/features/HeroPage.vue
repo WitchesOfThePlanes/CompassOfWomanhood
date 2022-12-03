@@ -4,7 +4,10 @@
     :style="{ backgroundImage: `url(${bgImagePath})` }"
   >
     <div class="d-flex align-center justify-center flex-row pa-6">
-      <header class="headers d-flex flex-column align-center justify-center">
+      <header
+        data-aos="fade-up"
+        class="headers d-flex flex-column align-center justify-center"
+      >
         <h1 class="align-self-center font-weight-medium text-center">
           <img class="logo" :src="logoImagePath" alt="logo" />
         </h1>
@@ -16,10 +19,12 @@
     <div
       class="d-flex align-center justify-center flex-column my-12 pa-6 coming-soon"
     >
-      <h2>
+      <h2 data-aos="fade-up" data-aos-delay="500">
         <SectionTitle>{{ $t("HERO.COMING_SOON") }}</SectionTitle>
       </h2>
       <v-btn
+        data-aos="fade-up"
+        data-aos-delay="1000"
         rounded="pill"
         color="secondary"
         variant="outlined"

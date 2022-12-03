@@ -6,12 +6,14 @@
   >
     <div :class="smAndUp && 'page'">
       <h2 class="mt-16 mb-10 mx-5">
-        <SectionTitle>
+        <SectionTitle data-aos="fade-up">
           <img class="sword" :src="swordPng" />
           {{ $t("ABOUT.TITLE") }}
         </SectionTitle>
       </h2>
       <div
+        data-aos="fade-up"
+        data-aos-delay="500"
         class="mt-2 mx-5"
         v-for="(item, index) in $tm('ABOUT.MOD')"
         :key="index"
@@ -19,6 +21,8 @@
         {{ $t(item) }}
       </div>
       <v-btn
+        data-aos="fade-up"
+        data-aos-delay="500"
         rounded="pill"
         color="secondary"
         variant="outlined"

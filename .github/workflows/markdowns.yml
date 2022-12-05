@@ -29,8 +29,8 @@ jobs:
         run: npm install -g @knennigtri/merge-markdown
       - name: Merge markdowns
         run: |
-          merge-markdown -m ${{ env.translationsPath }}/pl_PL
-          merge-markdown -m ${{ env.translationsPath }}/en_US
+          merge-markdown -m ${{ env.translationsPath }}/pl_PL --nolinkcheck
+          merge-markdown -m ${{ env.translationsPath }}/en_US --nolinkcheck
         env:
           translationsPath: 'CompassOfWomanhood/translations'
 
@@ -43,11 +43,5 @@ jobs:
           message: Publishing merged markdowns for branch ${{ github.head_ref }}
           branch: ${{ github.head_ref }}
           force: true
-      - name: Dump github context
-        run:   echo "$GITHUB_CONTEXT"
-        shell: bash
-        env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
-
 
 

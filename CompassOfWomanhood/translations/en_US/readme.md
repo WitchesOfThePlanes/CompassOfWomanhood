@@ -10,7 +10,7 @@ List of companions
 
 There are currently two companions developed as a part of this project, but additional companions may be added to the list:
 
-*   Shithri — vagabond half-orc pirate girl from [Zenthil Keep](https://forgottenrealms.fandom.com/wiki/Zenthil_Keep). Worshipper of orcish goddess [Luthic](https://forgottenrealms.fandom.com/wiki/Luthic), Mother of Caves. She's free-spirited and loves a good drink (and is quite persistent with her offers of drinking). Speaks in heavy pirate accent (pirate dialect even, in Polish language version).
+*   Shithri — vagabond half-orc pirate girl from [Zhentil Keep](https://forgottenrealms.fandom.com/wiki/Zhentil_Keep). Worshipper of orcish goddess [Luthic](https://forgottenrealms.fandom.com/wiki/Luthic), Mother of Caves. She's free-spirited and loves a good drink (and is quite persistent with her offers of drinking). Speaks in heavy pirate accent (pirate dialect even, in Polish language version).
 
     This component includes:
 
@@ -46,7 +46,7 @@ Authors
 Core team (in joining order):
 
 *   Michalina "Misza" Kotwica (Udiknedormin) — founder; researcher, script & song writer, programmer, audio adjustment
-*   Aleksandra Bielak (Vakme) — co-founder; script writer, tester, networker
+*   Aleksandra Bielak (Vakme) — co-founder; script writer, tester, networker, devop
 *   Aleksandra Czapla (Lexie Heron) — graphical artist
 *   Gabriela Zubek (Hrabina Gabina) — Shithri's voice actress, networker
 *   Maria Oleszkiewicz (Wilczogon) — song writer

@@ -2,7 +2,7 @@
 
 ![Shithri](./creatures/shithri/6WshithL.bmp)
 
-Shithri is a female half-orc swashbuckler companion who's always ready for a drink. Being a half-orc piratess and originating form Zenthil Keep, she may make your companions rather detached or suspicious... but who could refuse when asked: "Ho, me matey! Care fer a draught?"
+Shithri is a female half-orc swashbuckler companion who's always ready for a drink. Being a half-orc piratess and originating form Zhentil Keep, she may make your companions rather detached or suspicious... but who could refuse when asked: "Ho, me matey! Care fer a draught?"
 
 This mod is, by-desing, dual-language - in most cases both the English and the Polish version can be considered "the original" (it's usually bolded when that isn't the case).
 
@@ -22,8 +22,8 @@ Featuring:
 Shithri speaks in a highly stylized pirate way, which is described in-universe as "the Zentish accent". There are numerous reasons for that:
 
  * having spend many years sailing on the Sea of Falling Stars, Shithri is very accustomed to the ways of the sea, hence the naval elements in her speech
- * being a half-orc from Zenthil Keep implies she comes from the lower class - her speech reflects that
- * people from different countries may have different accents, Shithri is from Zenthil Keep, which is quite far from Amn and the Sword Coast
+ * being a half-orc from Zhentil Keep implies she comes from the lower class - her speech reflects that
+ * people from different countries may have different accents, Shithri is from Zhentil Keep, which is quite far from Amn and the Sword Coast
  * due to being raised by orc mother and uncle, Shithri's first language is orcish, not Common, which may explain her accent
  * well, she actually IS a pirate, so she speaks in a piratey way
 

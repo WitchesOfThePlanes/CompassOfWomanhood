@@ -10,7 +10,7 @@ List of companions
 
 There are currently two companions developed as a part of this project, but additional companions may be added to the list:
 
-*   Shithri — vagabond half-orc pirate girl from [Zenthil Keep](https://forgottenrealms.fandom.com/wiki/Zenthil_Keep). Worshipper of orcish goddess [Luthic](https://forgottenrealms.fandom.com/wiki/Luthic), Mother of Caves. She's free-spirited and loves a good drink (and is quite persistent with her offers of drinking). Speaks in heavy pirate accent (pirate dialect even, in Polish language version).
+*   Shithri — vagabond half-orc pirate girl from [Zhentil Keep](https://forgottenrealms.fandom.com/wiki/Zhentil_Keep). Worshipper of orcish goddess [Luthic](https://forgottenrealms.fandom.com/wiki/Luthic), Mother of Caves. She's free-spirited and loves a good drink (and is quite persistent with her offers of drinking). Speaks in heavy pirate accent (pirate dialect even, in Polish language version).
 
     This component includes:
 

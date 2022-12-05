@@ -10,7 +10,7 @@ Lista towarzyszek
 
 Obecnie w projekcie powstają dwie towarzyszki, ale lista może ulec wydłużeniu:
 
-*   Shithri — półorcza piratka i włóczęga z [Twierdzy Zenthil](https://sfery.fandom.com/wiki/Twierdza_Zhentil). Wyznawczyni orczej bogini [Luthic](https://sfery.fandom.com/wiki/Luthic), Matki Jaskiń. Lekkoduch, zawsze gotowa się napić (oraz bywa cokolwiek natrętna w swoich propozycjach kolejki). Mówi w dedykowanym dialekcie języka polskiego, stworzonym specjalnie na potrzeby tego komponentu.
+*   Shithri — półorcza piratka i włóczęga z [Twierdzy Zhentil](https://sfery.fandom.com/wiki/Twierdza_Zhentil). Wyznawczyni orczej bogini [Luthic](https://sfery.fandom.com/wiki/Luthic), Matki Jaskiń. Lekkoduch, zawsze gotowa się napić (oraz bywa cokolwiek natrętna w swoich propozycjach kolejki). Mówi w dedykowanym dialekcie języka polskiego, stworzonym specjalnie na potrzeby tego komponentu.
 
     Komponent zawiera:
 

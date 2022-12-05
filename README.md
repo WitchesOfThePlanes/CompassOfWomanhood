@@ -17,7 +17,7 @@ As a side goal, we wanted to start "from scratch", with no direct help from the 
 ## List of companions
 
 There are currently two companions developed as a part of this project, but additional companions may be added to the list:
- * [Shithri](./CompassOfWomanhood/Shithri_README.md) — vagabond half-orc pirate girl from Zenthil Keep. Worshipper of orcish goddess Luthic, Mother of Caves. She's free-spirited and loves a good drink (and is quite persistent with her offers of drinking). Speaks in heavy pirate accent (pirate dialect even, in Polish language version).
+ * [Shithri](./CompassOfWomanhood/Shithri_README.md) — vagabond half-orc pirate girl from Zhentil Keep. Worshipper of orcish goddess Luthic, Mother of Caves. She's free-spirited and loves a good drink (and is quite persistent with her offers of drinking). Speaks in heavy pirate accent (pirate dialect even, in Polish language version).
  * Caly — high-class courtesan from Calimshan who speaks in posh manner and is blessed with red heair, believed by some to be "the touch of [Sune](https://forgottenrealms.fandom.com/wiki/Sune)". Exclusive artiste and experienced story hunter. Worshipper of moon goddess [Selûne](https://forgottenrealms.fandom.com/wiki/Sel%C3%BBne), but touched by the shadows.
 
 

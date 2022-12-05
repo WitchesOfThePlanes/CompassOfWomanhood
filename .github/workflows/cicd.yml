@@ -1,0 +1,35 @@
+name: Build And Deploy Vue
+
+on:
+  push:
+    branches: [ "main", "feature/landing-page" ]
+
+jobs:
+  build_vue:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+        working-directory: LandingPage
+    name: Build Vue
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build Vue
+        run: |
+          yarn install --frozen-lockfile
+          yarn build
+          cd dist
+          ln -s index.html 404.html
+          git config --global user.email "${{ env.gitemail }}"
+          git config --global user.name "${{ env.gitname }}"
+          git init
+          git add -A
+          git commit -m '${{ env.gitmsg }}'
+          git push -f https://${{ env.username }}:${{ env.token }}@github.com/${{ env.username }}/${{ env.reponame }}.git master:gh-pages
+        env:
+          username: 'Udiknedormin'
+          reponame: 'CompassOfWomanhood'
+          token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
+          gitemail: publisher@udiknedormin.github.io
+          gitname: Github Page Publisher
+          gitmsg: Publishing pages for job ${{ env.GITHUB_JOB }}

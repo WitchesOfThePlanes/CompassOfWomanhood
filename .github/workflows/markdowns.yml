@@ -29,6 +29,7 @@ jobs:
         run: |
           merge-markdown -m ${{ env.translationsPath }}/pl_PL --nolinkcheck
           merge-markdown -m ${{ env.translationsPath }}/en_US --nolinkcheck
+          cp ${{ env.translationsPath }}/en_US/readme.md README.md
         env:
           translationsPath: 'CompassOfWomanhood/translations'
 

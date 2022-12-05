@@ -2,7 +2,7 @@ name: Build And Deploy Vue
 
 on:
   push:
-    branches: [ "main", "feature/landing-page" ]
+    branches: [ "main", "feature/markdowns" ]
 
 jobs:
   build_vue:
@@ -25,11 +25,9 @@ jobs:
           git init
           git add -A
           git commit -m '${{ env.gitmsg }}'
-          git push -f https://${{ env.username }}:${{ env.token }}@github.com/${{ env.username }}/${{ env.reponame }}.git master:gh-pages
+          git push -f https://${{ github.repository_owner }}:${{ env.token }}@github.com/${{ github.repository }}.git master:gh-pages
         env:
-          username: 'Udiknedormin'
-          reponame: 'CompassOfWomanhood'
           token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
           gitemail: publisher@udiknedormin.github.io
-          gitname: Github Page Publisher
-          gitmsg: Publishing pages for job ${{ env.GITHUB_JOB }}
+          gitname: Github Page Publisher [bot]
+          gitmsg: Publishing pages for job ${{ github.workflow }}

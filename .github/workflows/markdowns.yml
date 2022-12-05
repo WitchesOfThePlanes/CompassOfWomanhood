@@ -22,7 +22,7 @@ jobs:
           node-version: 16
       - name: Running on the current branch branch.
         run: |
-          echo "Running on current: ${{ teps.branch-name.outputs.current_branch }}"
+          echo "Running on current: ${{ steps.branch-name.outputs.current_branch }}"
       - name: Install merge markdown
         run: npm install -g @knennigtri/merge-markdown
       - name: Merge markdowns
@@ -38,8 +38,8 @@ jobs:
           author_email: publisher@udiknedormin.github.io
           author_name: Github Publisher [bot]
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          message: Publishing merged markdowns for branch ${{ github.head_ref }}
-          branch: ${{ teps.branch-name.outputs.current_branch }}
+          message: Publishing merged markdowns for branch ${{ steps.branch-name.outputs.current_branch }}
+          branch: ${{ steps.branch-name.outputs.current_branch }}
           force: true
 
 

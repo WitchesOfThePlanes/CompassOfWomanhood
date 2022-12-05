@@ -4,7 +4,7 @@ Authors
 Core team (in joining order):
 
 *   Michalina "Misza" Kotwica (Udiknedormin) — founder; researcher, script & song writer, programmer, audio adjustment
-*   Aleksandra Bielak (Vakme) — co-founder; script writer, tester, networker
+*   Aleksandra Bielak (Vakme) — co-founder; script writer, tester, networker, devops
 *   Aleksandra Czapla (Lexie Heron) — graphical artist
 *   Gabriela Zubek (Hrabina Gabina) — Shithri's voice actress, networker
 *   Maria Oleszkiewicz (Wilczogon) — song writer

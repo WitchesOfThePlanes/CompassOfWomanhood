@@ -1,0 +1,53 @@
+name: Build markdowns
+
+on:
+  pull_request:
+    types:
+      - opened
+    branches:
+      - 'main'
+    paths:
+      - 'CompassOfWomanhood/translations/**.md'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Running on the current branch branch.
+        run: |
+          echo "Running on current: ${{ github.head_ref }}"
+      - name: Install merge markdown
+        run: npm install -g @knennigtri/merge-markdown
+      - name: Merge markdowns
+        run: |
+          merge-markdown -m ${{ env.translationsPath }}/pl_PL
+          merge-markdown -m ${{ env.translationsPath }}/en_US
+        env:
+          translationsPath: 'CompassOfWomanhood/translations'
+
+      - name: Commit & Push changes
+        uses: actions-js/push@master
+        with:
+          author_email: publisher@udiknedormin.github.io
+          author_name: Github Publisher [bot]
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          message: Publishing merged markdowns for branch ${{ github.head_ref }}
+          branch: ${{ github.head_ref }}
+          force: true
+      - name: Dump github context
+        run:   echo "$GITHUB_CONTEXT"
+        shell: bash
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+
+
+

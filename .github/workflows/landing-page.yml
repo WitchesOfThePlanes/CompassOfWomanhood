@@ -1,8 +1,8 @@
-name: Build And Deploy Vue
+name: Build And Deploy Landing Page
 
 on:
   push:
-    branches: [ "main", "feature/markdowns" ]
+    branches: [ "main" ]
 
 jobs:
   build_vue:

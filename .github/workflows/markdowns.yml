@@ -13,8 +13,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
@@ -32,7 +30,7 @@ jobs:
           translationsPath: 'CompassOfWomanhood/translations'
 
       - name: Commit & Push changes
-        uses: actions-js/push@master
+        uses: actions-js/push@v1.3
         with:
           author_email: publisher@udiknedormin.github.io
           author_name: Github Publisher [bot]
@@ -40,5 +38,10 @@ jobs:
           message: Publishing merged markdowns for branch ${{ github.head_ref }}
           branch: ${{ github.head_ref }}
           force: true
+      - name: Dump github context
+        run: echo "$GITHUB_CONTEXT"
+        shell: bash
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
 
 

@@ -47,15 +47,16 @@
           "Mnóstwo wiedzy o orkach, trunkach i morzu",
           "Dedykowany „piracki polski”"
         ]
-      },
-      "PLACE": "Shitri można znaleźć w Dokach Athkatli, obok latarni morskiej ([3564.3086])."
+      }
     },
     "CALY": {
       "NAME": "Caly",
       "INTRO": "Caly — ekskluzywna kurtyzana z <a href=\"https://sfery.fandom.com/wiki/Calimshan\">Calimshanu</a> o wyrafinowanym sposobie wyrażania się oraz obdarzona rudymi włosami, o których wierzy się, że są „dotykiem <a href=\"https://sfery.fandom.com/wiki/Sune\">Sune</a>”. Wysublimowana artystka i doświadczona opowiadaczka historii. Wyznawczyni bogini księżyca, <a href=\"https://sfery.fandom.com/wiki/Sel%C3%BBne\">Selûne</a>, lecz dotknięta przez cienie.",
-      "FEATURES": {
-        "INTRO": "Ten komponent jest w trakcie rozwoju."
-      }
+      "STATUS": "Ten komponent jest w trakcie rozwoju."
+    },
+    "BUTTONS": {
+      "READ_MORE": "Czytaj więcej",
+      "CLOSE": "Zamknij"
     }
   },
   "FOOTER": "Ten projekt nie jest rozwijany, wspierany czy zatwierdzony przez BioWare, Black Isle ani Beamdog."

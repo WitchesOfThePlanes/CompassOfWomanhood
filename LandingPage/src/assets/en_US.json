@@ -43,13 +43,16 @@
           "Lots of orc, liquor and naval lore",
           "(Polish version only) a dedicated \"pirate dialect\""
         ]
-      },
-      "PLACE": "Shithri is found in the Docs District of Athkatla, near the lighthouse ([3564.3086])."
+      }
     },
     "CALY": {
       "NAME": "Caly",
       "INTRO": "Caly — high-class courtesan from <a href=\"https://forgottenrealms.fandom.com/wiki/Calimshan\">Calimshan</a> who speaks in posh manner and is blessed with red heair, believed by some to be \"the touch of <a href=\"https://forgottenrealms.fandom.com/wiki/Sune\">Sune</a>. Exclusive artiste and experienced story hunter. Worshipper of moon goddess <a href=\"https://forgottenrealms.fandom.com/wiki/Sel%C3%BBne\">Selûne</a>, but touched by the shadows.",
-      "PLACE": "This component is currently under development."
+      "STATUS": "This component is currently under development."
+    },
+    "BUTTONS": {
+      "READ_MORE": "Read more",
+      "CLOSE": "Close"
     }
   },
   "FOOTER": "This project is not developed, supported or endorsed by BioWare, Black Isle nor Beamdog."

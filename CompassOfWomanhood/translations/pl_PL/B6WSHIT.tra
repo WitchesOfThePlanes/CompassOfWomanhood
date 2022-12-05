@@ -65,7 +65,7 @@ Hej ha, kolejke nalej...”~
 @1020000 = ~Sha'nru? Może by tak...~
 @1020001 = ~Nie. Mamy ważniejsze rzeczy do roboty niż picie.~
 @1020002 = ~Zresztą jeszcze nie mam do ciebie zaufania.~
-@1020003 = ~Jeszcze? Niech zgadne. Ty Harfiarka. Ja Zentka. Czy to coś chciała gadać ma słowo „Zentharim”?~
+@1020003 = ~Jeszcze? Niech zgadne. Ty Harfiarka. Ja Zentka. Czy to coś chciała gadać ma słowo „Zhentarim”?~
 @1020004 = ~Nic podobnego. Nie sądzę żebyś była agentką. Ale zastanawia mnie półorczyca-piratka.~
 @1020005 = ~Wciąż jeszcze rozważam twoje miejsce w równowadze.~
 @1020006 = ~*łyk* To niech cie Luthic prowadzi.~
@@ -146,7 +146,7 @@ Hej ha, kolejke nalej...”~
 
 @1060100 = ~Dobrze walczysz jak na kobietę.~
 @1060101 = ~Tak mówisz, wymoczku?~
-@1060102 = ~Cóż, przyznam że nie wygląda jakby ćwiczono cię w sztukach wojennych. Mogę się tylko domyślać, że to jakiś taniec dla prymitywnych orczych bożków albo inny Zentharimowy rytuał szczęścia. A może to piracki zwyczaj?~
+@1060102 = ~Cóż, przyznam że nie wygląda jakby ćwiczono cię w sztukach wojennych. Mogę się tylko domyślać, że to jakiś taniec dla prymitywnych orczych bożków albo inny Zhentarimowy rytuał szczęścia. A może to piracki zwyczaj?~
 @1060103 = ~Słowo wyncej a twój łeb nakarmi luthickie niedźwiedzie, ty nyndzny, parszywy sztyfcie.~
 @1060104 = ~„Sztyfcie”? Nazywasz mnie sługą, pół-orczyco? Znaj swoje miejsce! <CHARNAME> trzyma cię z nami tylko dla zabawy.~
 @1060105 = ~Uważaj, rojberku. To nie twój ciepły zamuszek gdzie twoja garau wszo zaajka.~
@@ -158,7 +158,7 @@ Hej ha, kolejke nalej...”~
 @1060111 = ~Ty też przesadziłaś.~
 @1060112 = ~Wiem, że to on zaczął, ale pomyśl czy Luthic by cię poparła.~
 @1060113 = ~Wiem, że to on zaczął, ale proszę, bądź mądrzejsza.~
-@1060120 = ~Typie. Nic nie wiesz. O piratach. O Zentharimach. O orczych bogach.~ ~Nic nie wiesz, typiaro. O piratach. O Zentharimach. O orczych bogach.~
+@1060120 = ~Typie. Nic nie wiesz. O piratach. O Zhentarimach. O orczych bogach.~ ~Nic nie wiesz, typiaro. O piratach. O Zhentarimach. O orczych bogach.~
 @1060121 = ~Masz rację, nie wiem. Ale wszyscy tu jesteśmy przyjaciółmi.~
 @1060122 = ~Podoba ci się czy nie, jesteśmy drużyną. Towarzyszami.~
 @1060123 = ~Nie muszę. Jeśli ci się ze mną nie podoba, odejdź.~
@@ -174,7 +174,7 @@ Hej ha, kolejke nalej...”~
 @1060140 = ~Bierzesz stronę tej piratki, <CHARNAME>?~
 @1060141 = ~Tak. Jest przyjaciółką.~
 @1060142 = ~Nie biorę niczyjej strony. Jesteśmy drużyną. Pracujemy razem.~
-@1060143 = ~Naprawdę? Zentharimska półorcza piratka. Czcicielka żądnych krwi orczych bożków. TO nazywasz przyjaciółką?~
+@1060143 = ~Naprawdę? Zhentarimska półorcza piratka. Czcicielka żądnych krwi orczych bożków. TO nazywasz przyjaciółką?~
 @1060144 = ~Nie rozśmieszaj mnie! To robactwo!~
 @1060145 = ~Co tam marmotasz, rycerzyku? Aaa, ta! Ty nie rycerzyk a zwykły dupuś, arrr! Syf, kiła i mogiła! Mogiła twojego boga, mogiła twojego zakonu. Może nasz kapitan trzyma cie tu tyko z litości?~ ~Co tam marmotasz, rycerzyku? Aaa, ta! Ty nie rycerzyk a zwykły dupuś, arrr! Syf, kiła i mogiła! Mogiła twojego boga, mogiła twojego zakonu. Może nasza kapitan trzyma cie tu tyko z litości?~
 @1060146 = ~Dość tego!~
@@ -377,7 +377,7 @@ To uczciwo cene dał!”~
 @1130104 = ~Lepiej nie patrz na mie z góry. Arrr.~
 @1130105 = ~Nie patrzę! Shithri, ja...~
 @1130106 = ~Słychaj, ty fałszywa, rozpieszczona dziwko. Słychaj dobrze, bo powtarzać nie bynde.~
-@1130107 = ~Z mojej matki była dumna orczyca Twerdzy Zenthyl. Mój wuj był żołnierz generała Vrakka.~
+@1130107 = ~Z mojej matki była dumna orczyca Twerdzy Zhentyl. Mój wuj był żołnierz generała Vrakka.~
 @1130108 = ~Ze mie jes piratka. Ano jes! Grabie. Zabijam dziesiountki. Głoduje na morzu.~
 @1130109 = ~Nie waż sie łżeć, że wszysko przez to kim sie urodziłam. WYBRAŁAM to życie.~
 @1130110 = ~A tera idźkaj stoud. Musze sie napić.~

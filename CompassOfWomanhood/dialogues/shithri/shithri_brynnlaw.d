@@ -155,7 +155,7 @@ At the docks, I met a half-orc pirate called Shithri. She was looking for a ship
       REPLY @1000036 /* Sure. Glad you were honest with me, welcome aboard! */
       GOTO SureWillHelpMoney
     IF ~~ THEN
-      REPLY @1000037 /* A Zenth pirate? No thanks. */
+      REPLY @1000037 /* A Zhent pirate? No thanks. */
       GOTO BrynnlawDeny
   END
   
@@ -184,7 +184,7 @@ CHAIN
     == JAHEIRAJ IF ~IsValidForPartyDialogue("JAHEIRA")~ THEN
     @1000033 /* A Zhent? I knew I heard that accent before... */
     == DORNJ IF ~IsValidForPartyDialogue("DORN")~ THEN
-    @1000034 /* Zenthil Keep is hardly the best place to be a half-orc. */ 
+    @1000034 /* Zhentil Keep is hardly the best place to be a half-orc. */ 
 END 6WSHIT ShithriZentishOk
 
 
@@ -742,7 +742,7 @@ CHAIN 6WSHITJ shithri_desharik_sober
   =
   @2000404 /* First. Whate'er those rapscallions call ye - ye nah "king" o' this bucko. Nah in a thousand years I consider a half-lubber me king. */
   =
-  @2000405 /* Second. I, Shithri o' Zenthil Keep, gonna be Queen o' Pirates. */
+  @2000405 /* Second. I, Shithri o' Zhentil Keep, gonna be Queen o' Pirates. */
   =
   @2000406 /* That be all. */
   == PPDESH

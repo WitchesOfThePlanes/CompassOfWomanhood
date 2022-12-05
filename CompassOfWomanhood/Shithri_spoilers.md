@@ -88,7 +88,7 @@ If you win, you can ask for gold (5000 gp), his cutlass (just a non-enchanted we
 
 ## Orcish Culture
 
-Banters, interjections and other dialogues elaborate on the culture of orcs of Zenthil Keep. Note that Shithri's mother is mixed race too, being half-[mountain orc](https://forgottenrealms.fandom.com/wiki/Mountain_orc?so=search) and half-[ondonti](https://forgottenrealms.fandom.com/wiki/Ondonti), and Shithri herself was raised to be a soldier (by Zentish law, orcs and half-orcs were breeded specifically to become soldiers), so her perspective may not be typical for orcs in general.
+Banters, interjections and other dialogues elaborate on the culture of orcs of Zhentil Keep. Note that Shithri's mother is mixed race too, being half-[mountain orc](https://forgottenrealms.fandom.com/wiki/Mountain_orc?so=search) and half-[ondonti](https://forgottenrealms.fandom.com/wiki/Ondonti), and Shithri herself was raised to be a soldier (by Zentish law, orcs and half-orcs were breeded specifically to become soldiers), so her perspective may not be typical for orcs in general.
 
 
 ### Language
@@ -114,7 +114,7 @@ There are a few gods mentioned in the dialogues:
  * Luthic, Mother of Caves; Godly-Ma* (pl. bożematka) or simply (Great) Mother — the mother-goddess to all orcs, wife of king-of-gods Gruumsh and mother of skull-crusher Bahgtru, patron of healers, witches, females and fertility. Force of stability and life. Her favoured animals are bears, particularly bear mothers, and — to a lesser extend — boards. *Luthic has many traits of Mother Nature and indeed, Shithri considers some druids to be very close to Luthic priests. *Shithri never sings any sea songs while in forests, as — she claims — she "listens t' Mother's voice". *Luthic is portrayed as a loving mother who forgets her children much of their wrong-doings.
  * Gruumsh, The One-Eyed God, He Who Never Sleeps — the king-of-gods in orcish pantheon, having only one, never-closing eye. Ruler of the storm, aspect of Talos. God of power, rule and destruction, patron of rulers worshipped by most of male orcs. *It is said he wouldn't approve Luthic using contraceptive herbal decoctions.
  * Bahgtru, The Leg Breaker, The Strong — son of Luthic and Gruumsh, god of physical strength and brutality, strong-but-dumb patron of "an average orc", as well as young males. Despite the patriarchy of the orcish societies, Bahgtru is known to pay more respect to his mother rather than his father, and when the two fight, he picks Luthic's side.
- * Ilneval, The War Maker (pl. Ojciec Wojny), War Master, Horde Leader — Gruumsh's soldiers' captain, god of strategy and tactics, patron of captains. *He's also a patron to Zenthilar orc and half-orc soldiers and god of military discipline, as opposed to Bahgtru, who is a god of individual strength and battle chaos. *Shithri's uncle, who served in the army, was a worshipper of Ilneval.
+ * Ilneval, The War Maker (pl. Ojciec Wojny), War Master, Horde Leader — Gruumsh's soldiers' captain, god of strategy and tactics, patron of captains. *He's also a patron to Zhentilar orc and half-orc soldiers and god of military discipline, as opposed to Bahgtru, who is a god of individual strength and battle chaos. *Shithri's uncle, who served in the army, was a worshipper of Ilneval.
 
 *Unlike in human cultures, comparing an orc to various animals is often not an insult, but rather a praise:
  * "bear" suggests lacking malice, being friendly

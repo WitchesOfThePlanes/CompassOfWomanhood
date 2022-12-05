@@ -153,7 +153,7 @@ CHAIN IF WEIGHT #1 ~
   == BNEERA
   @1000207 /* That's a bit unexpected, but... yeah. Could be fun, I guess. Story time and all. */
   == B6WSHIT
-  @1000208 /* I be from Zenthil Keep. A city about half the size o' Baldur's Gate. Hidden behind huge bulwarks made o' earth. 'n on them, rock walls almost the same size. Bridges leadin' to the city be so high ye could stack five ships under 'em. */
+  @1000208 /* I be from Zhentil Keep. A city about half the size o' Baldur's Gate. Hidden behind huge bulwarks made o' earth. 'n on them, rock walls almost the same size. Bridges leadin' to the city be so high ye could stack five ships under 'em. */
   == BNEERA
   @1000209 /* Wouldn't make much sense though. */
   == B6WSHIT
@@ -334,7 +334,7 @@ CHAIN IF WEIGHT #1 ~
   =
   @1000707 /* When I look at yer hair. I nah be proud. */
   == BNEERA
-  @1000708 /* I won't lie to you - I really hated them. Hated them hard. But I doubt you're related to them. I mean, Zenthil Keep is quite far from High Forest. Besides, they may be another clan or something. And- */
+  @1000708 /* I won't lie to you - I really hated them. Hated them hard. But I doubt you're related to them. I mean, Zhentil Keep is quite far from High Forest. Besides, they may be another clan or something. And- */
   == BNEERA IF ~Global("ohn_regi_plot","global",0)~
   @1000709 /* And look, I have a friend who is half-orc, his name is Reginald. */
   == BNEERA IF ~!Global("ohn_regi_plot","global",0)~

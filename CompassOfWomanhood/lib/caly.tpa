@@ -69,3 +69,34 @@ END
 PRINT "Copied %file_num% creature files"
 PRINT "Edited %file_edited_num% existing creature files"
 
+
+//
+// Scripts
+//
+
+SILENT
+// COMPILE ~CompassOfWomanhood/scripts/caly/6WCALY.baf~ ~override~
+// COMPILE ~CompassOfWomanhood/scripts/caly/6WCAL25.baf~ ~override~
+// PRINT "Compiled 2 new scripts"
+
+ACTION_DEFINE_ASSOCIATIVE_ARRAY script_extensions
+BEGIN
+  // quests
+  //TODO
+
+  // place her in the temple district
+  ~CompassOfWomanhood/areas/caly/ar0900.baf~  =>  ~ar0900.bcs~
+
+  // summon in ToB
+  //TODO:
+  // ~CompassOfWomanhood/areas/caly/ar4500.baf~  =>  ~ar4500.bcs~
+END
+
+SILENT
+OUTER_SET file_num = 0
+ACTION_PHP_EACH script_extensions AS ext => script
+BEGIN
+  EXTEND_BOTTOM ~%script%~ ~%ext%~
+  OUTER_SET file_num += 1
+END
+PRINT "Extended %file_num% existing scripts"

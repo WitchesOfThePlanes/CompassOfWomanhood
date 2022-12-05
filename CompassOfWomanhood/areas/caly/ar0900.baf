@@ -1,0 +1,93 @@
+//
+// Template District
+//
+
+// Caly stands in the shadowed place just between
+// the temples of Helm (lawful deity)
+// and Lathander (god of morning), thus connecting
+// her goddess being that of the moon, herself being
+// lawful and being connected to shadows, both physically
+// and mentally.
+//
+// level-scaling:
+IF
+  Global("6W#Caly_present","AR0900",0)
+  XPLT(Player1,161000)
+  !InMyArea("6WCALY")
+  !InPartyAllowDead("6WCALY")
+  !Dead("6WCALY")
+THEN
+  RESPONSE #100
+    SetGlobal("6W#Caly_present","AR0900",1)
+    CreateCreature("6WCALY08",[2638.1415],SW)
+    ActionOverride("6WCALY", SetName(#%CALY_NAME_0%))
+END
+
+IF
+  Global("6W#Caly_present","AR0900",0)
+  XPGT(Player1,160999)
+  XPLT(Player1,200000)
+  !InMyArea("6WCALY")
+  !InPartyAllowDead("6WCALY")
+  !Dead("6WCALY")
+THEN
+  RESPONSE #100
+    SetGlobal("6W#Caly_present","AR0900",1)
+    CreateCreature("6WCALY09",[2638.1415],SW)
+    ActionOverride("6WCALY", SetName(#%CALY_NAME_0%))
+END
+
+IF
+  Global("6W#Caly_present","AR0900",0)
+  XPGT(Player1,199999)
+  XPLT(Player1,400000)
+  !InMyArea("6WCALY")
+  !InPartyAllowDead("6WCALY")
+  !Dead("6WCALY")
+THEN
+  RESPONSE #100
+    SetGlobal("6W#Caly_present","AR0900",1)
+    CreateCreature("6WCALY10",[2638.1415],SW)
+    ActionOverride("6WCALY", SetName(#%CALY_NAME_0%))
+END
+
+IF
+  Global("6W#Caly_present","AR0900",0)
+  XPGT(Player1,399999)
+  XPLT(Player1,800000)
+  !InMyArea("6WCALY")
+  !InPartyAllowDead("6WCALY")
+  !Dead("6WCALY")
+THEN
+  RESPONSE #100
+    SetGlobal("6W#Caly_present","AR0900",1)
+    CreateCreature("6WCALY11",[2638.1415],SW)
+    ActionOverride("6WCALY", SetName(#%CALY_NAME_0%))
+END
+
+IF
+  Global("6W#Caly_present","AR0900",0)
+  XPGT(Player1,799999)
+  XPLT(Player1,1200000)
+  !InMyArea("6WCALY")
+  !InPartyAllowDead("6WCALY")
+  !Dead("6WCALY")
+THEN
+  RESPONSE #100
+    SetGlobal("6W#Caly_present","AR0900",1)
+    CreateCreature("6WCALY13",[2638.1415],SW)
+    ActionOverride("6WCALY", SetName(#%CALY_NAME_0%))
+END
+
+IF
+  Global("6W#Caly_present","AR0900",0)
+  XPGT(Player1,1199999)
+  !InMyArea("6WCALY")
+  !InPartyAllowDead("6WCALY")
+  !Dead("6WCALY")
+THEN
+  RESPONSE #100
+    SetGlobal("6W#Caly_present","AR0900",1)
+    CreateCreature("6WCALY15",[2638.1415],SW)
+    ActionOverride("6WCALY", SetName(#%CALY_NAME_0%))
+END

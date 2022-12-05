@@ -46,7 +46,7 @@ Autorzy
 Główny zespół (w kolejności dołączania):
 
 *   Michalina „Misza” Kotwica (Udiknedormin) — założycielka; research, skrypty i teksty piosenek, programowanie, dopasowanie dźwięku
-*   Aleksandra Bielak (Vakme) — współzałożycielka; skrypty, testy, networking, programowanie środowiska
+*   Aleksandra Bielak (Vakme) — współzałożycielka; skrypty, testy, networking, programowanie: środowisko i strona
 *   Aleksandra Czapla (Lexie Heron) — grafiki
 *   Gabriela Zubek (Hrabina Gabina) — głos Shithri, networking
 *   Maria Oleszkiewicz (Wilczogon) — teksty piosenek

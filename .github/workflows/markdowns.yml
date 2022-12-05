@@ -1,8 +1,9 @@
 name: Build markdowns
 
 on:
-  pull_request:
-    branches: [ "main" ]
+  pull_request_target:
+    types:
+      - opened
     paths:
       - 'CompassOfWomanhood/translations/**.md'
 
@@ -13,16 +14,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: Get branch name
-        id: branch-name
-        uses: tj-actions/branch-names@v6
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 16
       - name: Running on the current branch branch.
         run: |
-          echo "Running on current: ${{ steps.branch-name.outputs.current_branch }}"
+          echo "Running on current: ${{ github.head_ref }}"
       - name: Install merge markdown
         run: npm install -g @knennigtri/merge-markdown
       - name: Merge markdowns
@@ -31,10 +29,15 @@ jobs:
           merge-markdown -m ${{ env.translationsPath }}/en_US
         env:
           translationsPath: 'CompassOfWomanhood/translations'
-      - name: Commit markdown
-        run: |
-          git status
-          git add */readme.md
+
+      - name: Commit & Push changes
+        uses: actions-js/push@master
+        with:
+          author_email: publisher@udiknedormin.github.io
+          author_name: Github Publisher [bot]
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          message: Publishing merged markdowns for branch ${{ github.head_ref }}
+          branch: ${{ github.head_ref }}
       - name: Dump github context
         run:   echo "$GITHUB_CONTEXT"
         shell: bash

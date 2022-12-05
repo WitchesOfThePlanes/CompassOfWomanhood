@@ -1,14 +1,10 @@
 name: Build markdowns
 
 on:
-  pull_request:
-    types:
-      - opened
-      - reopened
-    branches:
-      - 'main'
+  push:
     paths:
       - 'CompassOfWomanhood/translations/**.md'
+      - '!CompassOfWomanhood/translations/*/readme.md'
 
 jobs:
   build:

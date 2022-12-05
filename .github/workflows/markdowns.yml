@@ -31,5 +31,8 @@ jobs:
           merge-markdown -m ${{ env.translationsPath }}/en_US
         env:
           translationsPath: 'CompassOfWomanhood/translations'
+      - name: Commit markdown
+        run: |
+          git status
 
 

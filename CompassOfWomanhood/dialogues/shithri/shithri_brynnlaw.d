@@ -34,10 +34,8 @@
 
 CHAIN IF ~
   NumberOfTimesTalkedTo(0)
-  Global("6W#Shithri_SeaMan_Initial","Global",0)
-~ THEN 6WSHIT SeaMan_initial
+~ THEN 6WSHIT 6W#Shithri_SeaMan_initial
   @1000000 /* So ye nah sailin' t' Brynnlaw? */
-  DO ~SetGlobal("6W#Shithri_SeaMan_Initial","Global",1)~
   == DSAILOR2
   @1000001 /* I'm a sailor, not a pirate, lass. *hic* Told ye already! Sailin' north now. */
   == 6WSHIT

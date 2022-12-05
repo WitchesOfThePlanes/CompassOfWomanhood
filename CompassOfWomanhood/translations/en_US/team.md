@@ -1,3 +1,6 @@
+Authors
+-------
+
 Core team (in joining order):
 
 *   Michalina "Misza" Kotwica (Udiknedormin) — founder; researcher, script & song writer, programmer, audio adjustment

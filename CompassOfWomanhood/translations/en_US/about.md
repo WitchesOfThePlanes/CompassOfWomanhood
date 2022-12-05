@@ -1,5 +1,3 @@
-Compass Of Womanhood
-
 Compass Of Womanhood (COW) mod for BG2:EE
 =========================================
 

@@ -1,7 +1,7 @@
 Compass Of Womanhood (COW) mod for BG2:EE
 =========================================
 
-"Compass of Womanhood" (COW), subtitled "Ways of Women, Ways of Pleasure", is a mod project for Baldur's Gate II: Enhanced Edition.
+"Compass of Womanhood" (COW, CoW, 6W), subtitled "Ways of Women, Ways of Pleasure", is a mod project for Baldur's Gate II: Enhanced Edition.
 
 Its goal is to create diverse cast of interesting female companions that fit well with both the Forgotten Realms lore and the base games. All the mod's components are, by design, dual-language — in most cases both the English and the Polish version can be considered "the original" (it's usually bolded when that isn't the case).
 

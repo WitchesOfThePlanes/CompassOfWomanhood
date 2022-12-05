@@ -25,4 +25,11 @@ jobs:
           echo "Running on current: ${{ steps.branch-name.outputs.current_branch }}"
       - name: Install merge markdown
         run: npm install -g @knennigtri/merge-markdown
+      - name: Merge markdowns
+        run: |
+          merge-markdown -m ${{ env.translationsPath }}/pl_PL
+          merge-markdown -m ${{ env.translationsPath }}/en_US
+        env:
+          translationsPath: 'CompassOfWomanhood/translations'
+
 

@@ -5,6 +5,8 @@ on:
     paths:
       - 'CompassOfWomanhood/translations/**.md'
       - '!CompassOfWomanhood/translations/*/readme.md'
+    branches-ignore:
+      - main
 
 jobs:
   build:

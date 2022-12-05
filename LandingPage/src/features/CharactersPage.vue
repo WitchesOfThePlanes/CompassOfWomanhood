@@ -3,16 +3,16 @@
     id="characters"
     class="d-flex flex-column align-center justify-center pa-10"
   >
-    <h2 class="ma-6">
-      <SectionTitle>
-        <img class="sword" :src="swordPng" />
-        {{ $t("CHARACTERS.TITLE") }}
-      </SectionTitle>
-    </h2>
-    <div class="text-center mb-10">
-      {{ $t("CHARACTERS.INTRO") }}
-    </div>
     <div :class="smAndUp && 'page'">
+      <h2 class="ma-5">
+        <SectionTitle>
+          <img class="sword" :src="swordPng" />
+          {{ $t("CHARACTERS.TITLE") }}
+        </SectionTitle>
+      </h2>
+      <div class="mb-10 mx-5">
+        {{ $t("CHARACTERS.INTRO") }}
+      </div>
       <CharacterDetails character-name="SHITHRI" layout="left" />
       <CharacterDetails character-name="CALY" layout="right" />
     </div>

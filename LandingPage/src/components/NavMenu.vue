@@ -11,7 +11,7 @@
       variant="plain"
       @click="changeLocale(locale)"
     >
-      {{ locale }}
+      {{ locale.split("_")[0] }}
     </v-btn>
 
     <v-btn
@@ -31,12 +31,27 @@
       @click="goToMenu('characters')"
       >{{ $t("MENU.CHARACTERS") }}
     </v-btn>
-    <v-btn class="button pa-2" variant="plain" :href="ghLink" target="_blank">
-      {{ $t("MENU.READ_MORE") }}
+    <v-btn
+      value="team"
+      @click="goToMenu('team')"
+      selected-class="active"
+      class="button pa-2"
+      variant="plain"
+    >
+      {{ $t("MENU.TEAM") }}
     </v-btn>
     <v-btn variant="text" icon="fa:fab fa-facebook" class="mt-10 pa-2" />
     <v-btn variant="text" icon="fa:fab fa-youtube" class="pa-2" />
     <v-btn variant="text" icon="fa:fab fa-twitter" class="pa-2" />
+    <v-btn variant="text" icon="fa:fab fa-instagram" class="pa-2" />
+    <v-btn variant="text" icon="fa:fab fa-tiktok" class="pa-2" />
+    <v-btn
+      variant="text"
+      icon="fa:fab fa-github"
+      class="pa-2"
+      :href="ghLink"
+      target="_blank"
+    />
   </v-btn-toggle>
 </template>
 

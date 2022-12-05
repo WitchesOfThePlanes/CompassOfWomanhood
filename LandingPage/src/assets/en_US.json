@@ -2,7 +2,7 @@
   "MENU": {
     "ABOUT": "about",
     "CHARACTERS": "companions",
-    "READ_MORE": "read more"
+    "TEAM": "team"
   },
   "HERO": {
     "TITLE": "Compass of Womanhood",
@@ -49,9 +49,7 @@
     "CALY": {
       "NAME": "Caly",
       "INTRO": "Caly — high-class courtesan from <a href=\"https://forgottenrealms.fandom.com/wiki/Calimshan\">Calimshan</a> who speaks in posh manner and is blessed with red heair, believed by some to be \"the touch of <a href=\"https://forgottenrealms.fandom.com/wiki/Sune\">Sune</a>. Exclusive artiste and experienced story hunter. Worshipper of moon goddess <a href=\"https://forgottenrealms.fandom.com/wiki/Sel%C3%BBne\">Selûne</a>, but touched by the shadows.",
-      "FEATURES": {
-        "INTRO": "This component is currently under development."
-      }
+      "PLACE": "This component is currently under development."
     }
   },
   "FOOTER": "This project is not developed, supported or endorsed by BioWare, Black Isle nor Beamdog."

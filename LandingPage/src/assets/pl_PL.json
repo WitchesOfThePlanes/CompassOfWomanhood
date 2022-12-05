@@ -2,7 +2,7 @@
   "MENU": {
     "ABOUT": "o projekcie",
     "CHARACTERS": "towarzyszki",
-    "READ_MORE": "czytaj więcej"
+    "TEAM": "zespół"
   },
   "HERO": {
     "TITLE": "Kompas Kobiecości",
@@ -12,7 +12,11 @@
   },
   "INTRO": {
     "HASHTAG": "compassofwomanhood",
-    "INTRODUCTION": ["Hola, wędrowcy! Zatrzymajcie się na chwilę. Zbliż się, a przedstawię Ci ciekawą historię. Pamiętasz czasy, kiedy wszystko było proste? Spróbujmy cofnąć bieg rzeki czasu i wróćmy do Baldurs Gate 2. Niemożliwe? Ano jednak możliwe.", "Otóż jesteśmy grupką wariatów, którzy codziennie myślą o Wybrzeżu Mieczy. Dlatego też zebraliśmy swoje rzyci i tworzymy coś niezwykłego, wspaniałego, cudownego i ogólnie wyczesanego, czyli najbardziej moda. Myśleliśmy o nim podczas normalnej pracy, mycia garów, snu, a nawet podczas pobijania kolejnych rekordów w grach mobilnych siedząc na kibelku.", "Powstało coś od fanów dla fanów, więc chwyć kielich krzepkiego, krrrasnoludzkiego trunku i rozkoszuj się dziełem naszych paluszków."]
+    "INTRODUCTION": [
+      "Hola, wędrowcy! Zatrzymajcie się na chwilę. Zbliż się, a przedstawię Ci ciekawą historię. Pamiętasz czasy, kiedy wszystko było proste? Spróbujmy cofnąć bieg rzeki czasu i wróćmy do Baldurs Gate 2. Niemożliwe? Ano jednak możliwe.",
+      "Otóż jesteśmy grupką wariatów, którzy codziennie myślą o Wybrzeżu Mieczy. Dlatego też zebraliśmy swoje rzyci i tworzymy coś niezwykłego, wspaniałego, cudownego i ogólnie wyczesanego, czyli najbardziej moda. Myśleliśmy o nim podczas normalnej pracy, mycia garów, snu, a nawet podczas pobijania kolejnych rekordów w grach mobilnych siedząc na kibelku.",
+      "Powstało coś od fanów dla fanów, więc chwyć kielich krzepkiego, krrrasnoludzkiego trunku i rozkoszuj się dziełem naszych paluszków."
+    ]
   },
   "ABOUT": {
     "TITLE": "O projekcie",

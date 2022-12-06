@@ -1,5 +1,54 @@
 
 //
+// Dialogues
+//
+
+ACTION_DEFINE_ARRAY dialogues
+BEGIN
+  // SoA
+  ~CompassOfWomanhood/dialogues/caly/6WCALY.d~
+  //~CompassOfWomanhood/dialogues/caly/B6WCALY.d~
+  //~CompassOfWomanhood/dialogues/caly/6WCALYP.d~
+  //~CompassOfWomanhood/dialogues/caly/6WCALYJ.d~
+  //~CompassOfWomanhood/dialogues/caly/6WCALYD.d~
+
+  // ToB
+  //~CompassOfWomanhood/dialogues/caly/6WCAL25.d~
+  //~CompassOfWomanhood/dialogues/caly/6WCAL25A.d~
+  //~CompassOfWomanhood/dialogues/caly/B6WCAL25.d~
+  //~CompassOfWomanhood/dialogues/caly/6WCAL25P.d~
+  //~CompassOfWomanhood/dialogues/caly/6WCAL25J.d~
+  //~CompassOfWomanhood/dialogues/caly/6WCAL25D.d~
+END
+
+ACTION_DEFINE_ARRAY dialogues_extra
+BEGIN
+  // interjections
+  //~CompassOfWomanhood/dialogues/caly/caly_interjections.d~
+
+  // quests
+  ~CompassOfWomanhood/dialogues/caly/caly_tales.d~
+END
+
+SILENT
+OUTER_SET file_num = 0
+
+ACTION_PHP_EACH dialogues AS num => dialog
+BEGIN
+  COMPILE ~%dialog%~ ~override~
+  OUTER_SET file_num += 1
+END
+
+ACTION_PHP_EACH dialogues_extra AS num => dialog
+BEGIN
+  COMPILE ~%dialog%~ ~override~
+  OUTER_SET file_num += 1
+END
+
+PRINT "Compile %file_num% dialog files"
+
+
+//
 // Companion herself
 //
 

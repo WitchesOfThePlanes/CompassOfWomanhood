@@ -2,7 +2,7 @@
   "MENU": {
     "ABOUT": "o projekcie",
     "CHARACTERS": "towarzyszki",
-    "READ_MORE": "czytaj więcej"
+    "TEAM": "zespół"
   },
   "HERO": {
     "TITLE": "Kompas Kobiecości",
@@ -12,7 +12,11 @@
   },
   "INTRO": {
     "HASHTAG": "compassofwomanhood",
-    "INTRODUCTION": ["Hola, wędrowcy! Zatrzymajcie się na chwilę. Zbliż się, a przedstawię Ci ciekawą historię. Pamiętasz czasy, kiedy wszystko było proste? Spróbujmy cofnąć bieg rzeki czasu i wróćmy do Baldurs Gate 2. Niemożliwe? Ano jednak możliwe.", "Otóż jesteśmy grupką wariatów, którzy codziennie myślą o Wybrzeżu Mieczy. Dlatego też zebraliśmy swoje rzyci i tworzymy coś niezwykłego, wspaniałego, cudownego i ogólnie wyczesanego, czyli najbardziej moda. Myśleliśmy o nim podczas normalnej pracy, mycia garów, snu, a nawet podczas pobijania kolejnych rekordów w grach mobilnych siedząc na kibelku.", "Powstało coś od fanów dla fanów, więc chwyć kielich krzepkiego, krrrasnoludzkiego trunku i rozkoszuj się dziełem naszych paluszków."]
+    "INTRODUCTION": [
+      "Hola, wędrowcy! Zatrzymajcie się na chwilę. Zbliż się, a przedstawię Ci ciekawą historię. Pamiętasz czasy, kiedy wszystko było proste? Spróbujmy cofnąć bieg rzeki czasu i wróćmy do Baldurs Gate 2. Niemożliwe? Ano jednak możliwe.",
+      "Otóż jesteśmy grupką wariatów, którzy codziennie myślą o Wybrzeżu Mieczy. Dlatego też zebraliśmy swoje rzyci i tworzymy coś niezwykłego, wspaniałego, cudownego i ogólnie wyczesanego, czyli najbardziej moda. Myśleliśmy o nim podczas normalnej pracy, mycia garów, snu, a nawet podczas pobijania kolejnych rekordów w grach mobilnych siedząc na kibelku.",
+      "Powstało coś od fanów dla fanów, więc chwyć kielich krzepkiego, krrrasnoludzkiego trunku i rozkoszuj się dziełem naszych paluszków."
+    ]
   },
   "ABOUT": {
     "TITLE": "O projekcie",
@@ -43,15 +47,16 @@
           "Mnóstwo wiedzy o orkach, trunkach i morzu",
           "Dedykowany „piracki polski”"
         ]
-      },
-      "PLACE": "Shitri można znaleźć w Dokach Athkatli, obok latarni morskiej ([3564.3086])."
+      }
     },
     "CALY": {
       "NAME": "Caly",
       "INTRO": "Caly — ekskluzywna kurtyzana z <a href=\"https://sfery.fandom.com/wiki/Calimshan\">Calimshanu</a> o wyrafinowanym sposobie wyrażania się oraz obdarzona rudymi włosami, o których wierzy się, że są „dotykiem <a href=\"https://sfery.fandom.com/wiki/Sune\">Sune</a>”. Wysublimowana artystka i doświadczona opowiadaczka historii. Wyznawczyni bogini księżyca, <a href=\"https://sfery.fandom.com/wiki/Sel%C3%BBne\">Selûne</a>, lecz dotknięta przez cienie.",
-      "FEATURES": {
-        "INTRO": "Ten komponent jest w trakcie rozwoju."
-      }
+      "STATUS": "Ten komponent jest w trakcie rozwoju."
+    },
+    "BUTTONS": {
+      "READ_MORE": "Czytaj więcej",
+      "CLOSE": "Zamknij"
     }
   },
   "FOOTER": "Ten projekt nie jest rozwijany, wspierany czy zatwierdzony przez BioWare, Black Isle ani Beamdog."

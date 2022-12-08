@@ -1,7 +1,7 @@
 <template>
   <div
     id="about"
-    class="d-flex flex-column align-center justify-center pa-10 about"
+    class="d-flex flex-column align-center justify-center py-10 about"
     :style="{ backgroundImage: `url(${bgImagePath})` }"
   >
     <div :class="smAndUp && 'page'">
@@ -54,6 +54,7 @@ const { smAndUp } = useDisplay();
 .about {
   min-height: 100vh;
   background-position: center center;
+  background-size: contain;
 }
 .sword {
   margin-right: 16px;

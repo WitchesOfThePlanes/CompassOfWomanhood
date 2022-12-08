@@ -2,7 +2,7 @@
   "MENU": {
     "ABOUT": "about",
     "CHARACTERS": "companions",
-    "READ_MORE": "read more"
+    "TEAM": "team"
   },
   "HERO": {
     "TITLE": "Compass of Womanhood",
@@ -12,7 +12,11 @@
   },
   "INTRO": {
     "HASHTAG": "compassofwomanhood",
-    "INTRODUCTION": ["Hey traveler! Stop for a while. Come closer, I will tell you a story. Do you remember those good old times when everything was simpler? Let’s turn the clock back to Baldurs Gate 2. It's not possible, you may say. Well… it is possible.", "We are a group of freaks who think about the Sword Coast every other day. That’s why we got off our asses and created something unusual, wonderful, marvelous and generally dope, and by that we mean a modification for that classical game. We think of it when we do our dishes, when we sleep, and even when pumping score on mobile games while owning The Throne.", "For fans, by fans. So grab yerself a pint of a strong dwarrrven ale and enjoy the creation of our nerdy hands."]
+    "INTRODUCTION": [
+      "Hey traveler! Stop for a while. Come closer, I will tell you a story. Do you remember those good old times when everything was simpler? Let’s turn the clock back to Baldurs Gate 2. It's not possible, you may say. Well… it is possible.",
+      "We are a group of freaks who think about the Sword Coast every other day. That’s why we got off our asses and created something unusual, wonderful, marvelous and generally dope, and by that we mean a modification for that classical game. We think of it when we do our dishes, when we sleep, and even when pumping score on mobile games while owning The Throne.",
+      "For fans, by fans. So grab yerself a pint of a strong dwarrrven ale and enjoy the creation of our nerdy hands."
+    ]
   },
   "ABOUT": {
     "TITLE": "About",
@@ -43,15 +47,16 @@
           "Lots of orc, liquor and naval lore",
           "(Polish version only) a dedicated \"pirate dialect\""
         ]
-      },
-      "PLACE": "Shithri is found in the Docs District of Athkatla, near the lighthouse ([3564.3086])."
+      }
     },
     "CALY": {
       "NAME": "Caly",
       "INTRO": "Caly — high-class courtesan from <a href=\"https://forgottenrealms.fandom.com/wiki/Calimshan\">Calimshan</a> who speaks in posh manner and is blessed with red heair, believed by some to be \"the touch of <a href=\"https://forgottenrealms.fandom.com/wiki/Sune\">Sune</a>. Exclusive artiste and experienced story hunter. Worshipper of moon goddess <a href=\"https://forgottenrealms.fandom.com/wiki/Sel%C3%BBne\">Selûne</a>, but touched by the shadows.",
-      "FEATURES": {
-        "INTRO": "This component is currently under development."
-      }
+      "STATUS": "This component is currently under development."
+    },
+    "BUTTONS": {
+      "READ_MORE": "Read more",
+      "CLOSE": "Close"
     }
   },
   "FOOTER": "This project is not developed, supported or endorsed by BioWare, Black Isle nor Beamdog."

@@ -66,13 +66,14 @@ OUTER_SET file_num = 0
 OUTER_SET file_edited_num = 0
 
 // Need variables for Caly's name strings, to use them in the scripts later on.
-OUTER_SET CALY_NAME_0 = RESOLVE_STR_REF(@10)
-OUTER_SET CALY_NAME_1 = RESOLVE_STR_REF(@11)
-OUTER_SET CALY_NAME_2 = RESOLVE_STR_REF(@12)
+OUTER_SET 6WCALY_NAME_0 = RESOLVE_STR_REF(@10)
+OUTER_SET 6WCALY_NAME_1 = RESOLVE_STR_REF(@11)
+OUTER_SET 6WCALY_NAME_2 = RESOLVE_STR_REF(@12)
+OUTER_SET 6WCALY_TALES_BUY = RESOLVE_STR_REF(@99)
 
 COPY ~CompassOfWomanhood/creatures/caly/6WCALY00.cre~ ~override~
-  WRITE_LONG NAME1 CALY_NAME_0
-  WRITE_LONG NAME2 CALY_NAME_0
+  WRITE_LONG NAME1 6WCALY_NAME_0
+  WRITE_LONG NAME2 6WCALY_NAME_0
 
   SAY BATTLE_CRY1 @109 /* Taste my whip! */
   // SAY HURT  @110 /* That wasn't nice! */
@@ -82,8 +83,8 @@ OUTER_SET file_num += 1
 ACTION_FOR_EACH cre_file IN ~6WCALY08~ // ~6WCALY09~ ~6WCALY10~ ~6WCALY11~ ~6WCALY13~ ~6WCALY15~ ~6WCALY25~
 BEGIN
   COPY ~CompassOfWomanhood/creatures/caly/%cre_file%.cre~ ~override~
-    WRITE_LONG NAME1 CALY_NAME_1
-    WRITE_LONG NAME2 CALY_NAME_2
+    WRITE_LONG NAME1 6WCALY_NAME_1
+    WRITE_LONG NAME2 6WCALY_NAME_2
     SAY BIO @13
   
     SAY HAPPY                  @100 /* We're good together, aren't we? */
@@ -139,6 +140,8 @@ PRINT "Edited %file_edited_num% existing creature files"
 //
 
 SILENT
+COMPILE ~CompassOfWomanhood/scripts/caly/6WCAL0.baf~ ~override~
+  EVALUATE_BUFFER
 // COMPILE ~CompassOfWomanhood/scripts/caly/6WCALY.baf~ ~override~
 // COMPILE ~CompassOfWomanhood/scripts/caly/6WCAL25.baf~ ~override~
 // PRINT "Compiled 2 new scripts"

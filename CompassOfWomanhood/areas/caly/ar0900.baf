@@ -8,86 +8,18 @@
 // her goddess being that of the moon, herself being
 // lawful and being connected to shadows, both physically
 // and mentally.
-//
-// level-scaling:
-IF
-  Global("6W#Caly_present","AR0900",0)
-  XPLT(Player1,161000)
-  !InMyArea("6WCALY")
-  !InPartyAllowDead("6WCALY")
-  !Dead("6WCALY")
-THEN
-  RESPONSE #100
-    SetGlobal("6W#Caly_present","AR0900",1)
-    CreateCreature("6WCALY08",[2638.1415],SW)
-    ActionOverride("6WCALY", SetName(#%CALY_NAME_0%))
-END
 
+// Implementation Note:
+// No level-scaling, as introduction-Caly is a different .cre file.
+// It's to avoid anonymous Caly from having a portrait, which
+// would heavily suggest she's a joinable, or at least very important,
+// character.
 IF
   Global("6W#Caly_present","AR0900",0)
-  XPGT(Player1,160999)
-  XPLT(Player1,200000)
-  !InMyArea("6WCALY")
-  !InPartyAllowDead("6WCALY")
-  !Dead("6WCALY")
+  !InMyArea("6WCALY0")
+  !Dead("6WCALY0")
 THEN
   RESPONSE #100
     SetGlobal("6W#Caly_present","AR0900",1)
-    CreateCreature("6WCALY09",[2638.1415],SW)
-    ActionOverride("6WCALY", SetName(#%CALY_NAME_0%))
-END
-
-IF
-  Global("6W#Caly_present","AR0900",0)
-  XPGT(Player1,199999)
-  XPLT(Player1,400000)
-  !InMyArea("6WCALY")
-  !InPartyAllowDead("6WCALY")
-  !Dead("6WCALY")
-THEN
-  RESPONSE #100
-    SetGlobal("6W#Caly_present","AR0900",1)
-    CreateCreature("6WCALY10",[2638.1415],SW)
-    ActionOverride("6WCALY", SetName(#%CALY_NAME_0%))
-END
-
-IF
-  Global("6W#Caly_present","AR0900",0)
-  XPGT(Player1,399999)
-  XPLT(Player1,800000)
-  !InMyArea("6WCALY")
-  !InPartyAllowDead("6WCALY")
-  !Dead("6WCALY")
-THEN
-  RESPONSE #100
-    SetGlobal("6W#Caly_present","AR0900",1)
-    CreateCreature("6WCALY11",[2638.1415],SW)
-    ActionOverride("6WCALY", SetName(#%CALY_NAME_0%))
-END
-
-IF
-  Global("6W#Caly_present","AR0900",0)
-  XPGT(Player1,799999)
-  XPLT(Player1,1200000)
-  !InMyArea("6WCALY")
-  !InPartyAllowDead("6WCALY")
-  !Dead("6WCALY")
-THEN
-  RESPONSE #100
-    SetGlobal("6W#Caly_present","AR0900",1)
-    CreateCreature("6WCALY13",[2638.1415],SW)
-    ActionOverride("6WCALY", SetName(#%CALY_NAME_0%))
-END
-
-IF
-  Global("6W#Caly_present","AR0900",0)
-  XPGT(Player1,1199999)
-  !InMyArea("6WCALY")
-  !InPartyAllowDead("6WCALY")
-  !Dead("6WCALY")
-THEN
-  RESPONSE #100
-    SetGlobal("6W#Caly_present","AR0900",1)
-    CreateCreature("6WCALY15",[2638.1415],SW)
-    ActionOverride("6WCALY", SetName(#%CALY_NAME_0%))
+    CreateCreature("6WCALY00",[2638.1415],SW)
 END

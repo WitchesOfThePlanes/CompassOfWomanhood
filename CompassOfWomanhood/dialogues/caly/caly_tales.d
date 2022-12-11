@@ -41,7 +41,7 @@
 //   0 -> 2
 //   1 -> 2
 
-APPEND 6WCALY
+APPEND 6WCAL0
   IF ~
     Global("6W#CalyInitial","GLOBAL",0)
   ~ THEN 6W#Caly_Initial

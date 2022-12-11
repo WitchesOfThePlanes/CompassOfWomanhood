@@ -6,6 +6,7 @@
 ACTION_DEFINE_ARRAY dialogues
 BEGIN
   // SoA
+  ~CompassOfWomanhood/dialogues/caly/6WCAL0.d~
   ~CompassOfWomanhood/dialogues/caly/6WCALY.d~
   //~CompassOfWomanhood/dialogues/caly/B6WCALY.d~
   //~CompassOfWomanhood/dialogues/caly/6WCALYP.d~
@@ -68,6 +69,15 @@ OUTER_SET file_edited_num = 0
 OUTER_SET CALY_NAME_0 = RESOLVE_STR_REF(@10)
 OUTER_SET CALY_NAME_1 = RESOLVE_STR_REF(@11)
 OUTER_SET CALY_NAME_2 = RESOLVE_STR_REF(@12)
+
+COPY ~CompassOfWomanhood/creatures/caly/6WCALY00.cre~ ~override~
+  WRITE_LONG NAME1 CALY_NAME_0
+  WRITE_LONG NAME2 CALY_NAME_0
+
+  SAY BATTLE_CRY1 @109 /* Taste my whip! */
+  // SAY HURT  @110 /* That wasn't nice! */
+  // SAY DYING @111 /* So this is the "big death"... */
+OUTER_SET file_num += 1
 
 ACTION_FOR_EACH cre_file IN ~6WCALY08~ // ~6WCALY09~ ~6WCALY10~ ~6WCALY11~ ~6WCALY13~ ~6WCALY15~ ~6WCALY25~
 BEGIN
@@ -150,7 +160,7 @@ SILENT
 OUTER_SET file_num = 0
 ACTION_PHP_EACH script_extensions AS ext => script
 BEGIN
-  EXTEND_BOTTOM ~%script%~ ~%ext%~ EVALUATE_BUFFER
+  EXTEND_BOTTOM ~%script%~ ~%ext%~
   OUTER_SET file_num += 1
 END
 PRINT "Extended %file_num% existing scripts"

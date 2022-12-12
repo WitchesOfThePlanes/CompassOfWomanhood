@@ -167,3 +167,25 @@ BEGIN
   OUTER_SET file_num += 1
 END
 PRINT "Extended %file_num% existing scripts"
+
+
+//
+// Items
+//
+
+// letter (Nun's posession)
+COPY ~CompassOfWomanhood/items/caly/_6WSCR00.ITM~ ~override~
+  SAY NAME1 @50
+  SAY NAME2 @51
+  SAY UNIDENTIFIED_DESC @52
+OUTER_SET file_num += 1
+
+// handkerchief (Nun's posession)
+COPY ~CompassOfWomanhood/items/caly/_6WMSC00.ITM~ ~override~
+  SAY NAME1 @60
+  SAY NAME2 @61
+  SAY UNIDENTIFIED_DESC @62
+OUTER_SET file_num += 1
+
+PRINT "Copied %file_num% item files"
+

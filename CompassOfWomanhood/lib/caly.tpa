@@ -136,15 +136,48 @@ PRINT "Edited %file_edited_num% existing creature files"
 
 
 //
+// Areas
+//
+
+ACTION_DEFINE_ARRAY areas
+BEGIN
+  // Caly's "random" encounter are
+  ~6W2000~
+END
+
+SILENT
+OUTER_SET file_num = 0
+
+ACTION_PHP_EACH areas AS num => are_file
+BEGIN
+  COPY ~CompassOfWomanhood/areas/caly/%are_file%.are~ ~override~
+  OUTER_SET file_num += 1
+END
+
+PRINT "Copied %file_num% area files"
+
+
+//
 // Scripts
 //
 
 SILENT
-COMPILE ~CompassOfWomanhood/scripts/caly/6WCAL0.baf~ ~override~
-  EVALUATE_BUFFER
-// COMPILE ~CompassOfWomanhood/scripts/caly/6WCALY.baf~ ~override~
-// COMPILE ~CompassOfWomanhood/scripts/caly/6WCAL25.baf~ ~override~
-// PRINT "Compiled 2 new scripts"
+OUTER_SET file_num = 0
+
+ACTION_FOR_EACH script_file IN ~6WCAL0~  // ~6WCALY~ ~6WCAL25~
+BEGIN
+  COMPILE ~CompassOfWomanhood/scripts/caly/%script_file%.baf~ ~override~ EVALUATE_BUFFER
+  OUTER_SET file_num += 1
+END
+
+ACTION_PHP_EACH areas AS num => script_file
+BEGIN
+  COMPILE ~CompassOfWomanhood/areas/caly/%script_file%.baf~ ~override~
+  OUTER_SET file_num += 1
+END
+
+PRINT "Compiled %file_num% new scripts"
+
 
 ACTION_DEFINE_ASSOCIATIVE_ARRAY script_extensions
 BEGIN
@@ -172,6 +205,9 @@ PRINT "Extended %file_num% existing scripts"
 //
 // Items
 //
+
+SILENT
+OUTER_SET file_num = 0
 
 // letter (Nun's posession)
 COPY ~CompassOfWomanhood/items/caly/_6WSCR00.ITM~ ~override~

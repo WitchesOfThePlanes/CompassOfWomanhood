@@ -1,0 +1,59 @@
+// Caly's "random" encounter
+
+IF
+  GlobalGT("6W#CALY_INTRO_STORIES","GLOBAL",0)
+  Global("6W#CALY_INTRO_ENCOUNTER","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    FadeToColor([0.0],0)
+    MoveViewPoint([1165.54],INSTANT)
+    ClearAllActions()
+    StartCutSceneMode()
+    MultiPlayerSync()
+
+    // add some male bandits...
+    CreateCreature("REBAND01",[488.558],NE)
+    CreateCreature("REBAND02",[500.454],NE)
+    CreateCreature("REBAND03",[552.476],NE)
+    CreateCreature("REBAND05",[525.591],NE)
+
+    // ...but they won't attack
+    ActionOverride("REBAND01",ChangeAIScript("",DEFAULT))
+    ActionOverride("REBAND02",ChangeAIScript("",DEFAULT))
+    ActionOverride("REBAND03",ChangeAIScript("",DEFAULT))
+    ActionOverride("REBAND05",ChangeAIScript("",DEFAULT))
+    ActionOverride("REBAND01",ChangeAIScript("",OVERRIDE))
+    ActionOverride("REBAND02",ChangeAIScript("",OVERRIDE))
+    ActionOverride("REBAND03",ChangeAIScript("",OVERRIDE))
+    ActionOverride("REBAND05",ChangeAIScript("",OVERRIDE))
+
+    SetGlobal("6W#CALY_INTRO_ENCOUNTER","GLOBAL",1)
+    SetGlobalTimer("OH_TIMER_FRE","GLOBAL",1)
+    Explore()
+
+    // maybe talking to this point from somewhere north-east?
+    ActionOverride(Player1,JumpToPoint([700.342]))
+    ActionOverride(Player2,JumpToPoint([677.294]))
+    ActionOverride(Player3,JumpToPoint([746.320]))
+    ActionOverride(Player4,JumpToPoint([728.271]))
+    ActionOverride(Player5,JumpToPoint([730.221]))
+    ActionOverride(Player6,JumpToPoint([796.243]))
+    ActionOverride(Player1,Face(SW))
+    ActionOverride(Player2,Face(SW))
+    ActionOverride(Player3,Face(SW))
+    ActionOverride(Player4,Face(SW))
+    ActionOverride(Player5,Face(SW))
+    ActionOverride(Player6,Face(SW))
+    Wait(1)
+
+    FadeFromColor([15.0],0)
+    Wait(1)
+    MoveViewPoint([605.461],BD_NORMAL)
+
+    Wait(8)
+    EndCutSceneMode()
+    //StartCutScene("OHNCUT02")
+END
+
+

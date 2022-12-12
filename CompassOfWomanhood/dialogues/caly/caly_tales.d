@@ -121,6 +121,7 @@ APPEND 6WCAL0
     IF ~~ THEN
       DO ~
         SetGlobal("6W#CALY_INTRO_STORIES","GLOBAL",1)
+        ForceRandomEncounter("6W2000")
       ~
       EXIT
   END
@@ -131,6 +132,7 @@ APPEND 6WCAL0
     IF ~~ THEN
       DO ~
         SetGlobal("6W#CALY_INTRO_STORIES","GLOBAL",2)
+        ForceRandomEncounter("6W2000")
       ~
       EXIT
   END

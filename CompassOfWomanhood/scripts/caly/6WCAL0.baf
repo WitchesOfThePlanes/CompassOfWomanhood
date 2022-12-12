@@ -1,0 +1,40 @@
+//
+// Caly - script for before introduction in SoA
+// She's anonymous here.
+//
+
+IF
+  See([PC])
+  Allegiance(Myself,NEUTRAL)
+  Global("6WCaly_Tales_InitShout","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("6WCaly_Tales_InitShout","LOCALS",1)
+    StartTimer(101,10)
+    SmallWait(2)
+    DisplayStringHead(Myself,%6WCALY_TALES_BUY%) // Tales, I'll buy tales!
+END
+
+IF
+  See([PC])
+  TimerExpired(101)
+  Allegiance(Myself,NEUTRAL)
+  Global("6WCaly_Tales_InitShout","LOCALS",1)
+THEN
+  RESPONSE #100
+    DisplayStringHead(Myself,%6WCALY_TALES_BUY%) // Tales, I'll buy tales!
+    StartTimer(101,15)
+END
+
+// If you go to Brynnlaw without getting Caly before,
+// she'll not be there in the Temple District anymore.
+//
+// She'll leave a handerchief for you, however.
+IF
+  GlobalGT("Chapter","GLOBAL",3)
+THEN
+  RESPONSE #100
+    CreateItem("_6WMSC00",0,0,0)
+    DropItem("_6WMSC00",[-1.-1])
+    DestroySelf()
+END

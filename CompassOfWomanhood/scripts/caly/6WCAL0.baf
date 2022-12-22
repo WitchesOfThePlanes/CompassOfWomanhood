@@ -38,3 +38,13 @@ THEN
     DropItem("_6WMSC00",[-1.-1])
     DestroySelf()
 END
+
+// If the anon Caly dies, random encounter shouldn't be triggered.
+IF
+  GlobalGT("6W#CALY_INTRO_STORIES","GLOBAL",0)
+  Die()
+THEN
+  RESPONSE #100
+    // change to the usual random encounter in the city
+    ForceRandomEncounterEntry("AR0041","S")
+END

@@ -92,42 +92,42 @@ BEGIN
     SAY UNHAPPY_SERIOUS        @102 /* We have to rethink our ways. */
     SAY UNHAPPY_BREAKING_POINT @103 /* How dare you stoop so low! */
     SAY LEADER                 @104 /* Ready to lead you all to the brightest future! */
-    SAY TIRED                  @105 /*  */
+    SAY TIRED                  @105 /* We've been going hard for too long. */
     SAY BORED                  @106 /* C'mon, this girl just wanna have fuuun. */
     SAY BATTLE_CRY1            @107 /* You have a spank wish! */
     SAY BATTLE_CRY2            @108 /* Prepare to feel a lot of pain... and a tiny bit of pleasure */
     SAY BATTLE_CRY3            @109 /* Taste my whip! */
     SAY HURT                   @110 /* That wasn't nice! */
     SAY DYING                  @111 /* So this is the "big death"... */
-    SAY AREA_FOREST            @112 /*  */
-    SAY AREA_CITY              @113 /*  */
-    SAY AREA_DUNGEON           @114 /*  */
-    SAY AREA_DAY               @115 /*  */
-    SAY AREA_NIGHT             @116 /*  */
+    SAY AREA_FOREST            @112 /* Ouch, muddy, ouch, wet, ouch INSECTS! */
+    SAY AREA_CITY              @113 /* Finally, it feels like home! */
+    SAY AREA_DUNGEON           @114 /* Ouch, muddy, ouch, wet, ouch RODENTS! */
+    SAY AREA_DAY               @115 /* New day, new me, new tale! */
+    SAY AREA_NIGHT             @116 /* This is the rhythm of the night, said once a Rashemi bard. */
     SAY SELECT_COMMON1         @117 /* Yes, darlin'? */
     SAY SELECT_COMMON2         @118 /* You want me? */
     SAY SELECT_COMMON3         @119 /* Yes, honey? */
     SAY SELECT_COMMON4         @120 /* Mhmmmmmm... */
     SAY SELECT_COMMON5         @121 /* I feel the chosen one. */
     SAY SELECT_COMMON6         @122 /* In need of my services? */
-    SAY SELECT_ACTION1         @123 /* My pleasure. */
+    SAY SELECT_ACTION1         @123 /* Yes, sirrr. */
     SAY SELECT_ACTION2         @124 /* On your command. */
-    SAY SELECT_ACTION3         @125 /* Yes, sirrr. */
-    SAY SELECT_ACTION4         @126 /* Whatever you wish. */
-    SAY SELECT_ACTION5         @127 /*  */
-    SAY SELECT_ACTION6         @128 /*  */
-    SAY SELECT_ACTION7         @129 /*  */
+    SAY SELECT_ACTION3         @125 /* My pleasure. */
+    SAY SELECT_ACTION4         @126 /* Whatever you wish for. */
+    SAY SELECT_ACTION5         @127 /* Of course! */
+    SAY SELECT_ACTION6         @128 /* On my way! */
+    SAY SELECT_ACTION7         @129 /* Yes, yes! */
     SAY REACT_TO_DIE_GENERAL   @130 /* No, oh Goddess, no! */
-    SAY SELECT_RARE1           @131 /*  */
-    SAY SELECT_RARE2           @132 /*  */
-    SAY CRITICAL_HIT           @133 /*  */
-    SAY CRITICAL_MISS          @134 /*  */
-    SAY TARGET_IMMUNE          @135 /*  */
-    SAY INVENTORY_FULL         @136 /*  */
-    SAY PICKED_POCKET          @137 /*  */
-    SAY HIDDEN_IN_SHADOWS      @138 /*  */
-    SAY SPELL_DISRUPTED        @139 /*  */
-    SAY SET_A_TRAP             @140 /*  */
+    SAY SELECT_RARE1           @131 /* My pleeeasuuure. */
+    SAY SELECT_RARE2           @132 /* Ooooh yeees! */
+    SAY CRITICAL_HIT           @133 /* Oh, you liked that? */
+    SAY CRITICAL_MISS          @134 /* There's luck in leisure. */
+    SAY TARGET_IMMUNE          @135 /* I'll find a way to harm you! */
+    SAY INVENTORY_FULL         @136 /* I'm looking for a strong independent man to carry my luggage. */
+    SAY PICKED_POCKET          @137 /* Opportunity makes a thief! */
+    SAY HIDDEN_IN_SHADOWS      @138 /* Even though I walk through the valley of shadows I fear no evil, for my Lady is with me. */
+    SAY SPELL_DISRUPTED        @139 /* C'mon, focus! */
+    SAY SET_A_TRAP             @140 /* Surprise! */
   OUTER_SET file_num += 1
 END
 

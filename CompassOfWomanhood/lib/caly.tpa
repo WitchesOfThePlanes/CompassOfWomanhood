@@ -164,6 +164,15 @@ PRINT "Copied %file_num% area files"
 SILENT
 OUTER_SET file_num = 0
 
+WITH_TRA ~CompassOfWomanhood/translations/%LANGUAGE%/caly_tales.tra~
+BEGIN
+  // associative array doesn't seem to work with RESOLVE_STR_REF
+  OUTER_SET 6WCALY_INIT_BANDITS_00 = RESOLVE_STR_REF(@1000100)
+  OUTER_SET 6WCALY_INIT_BANDITS_01 = RESOLVE_STR_REF(@1000101)
+  OUTER_SET 6WCALY_INIT_BANDITS_02 = RESOLVE_STR_REF(@1000102)
+  OUTER_SET 6WCALY_INIT_BANDITS_03 = RESOLVE_STR_REF(@1000103)
+END
+
 ACTION_FOR_EACH script_file IN ~6WCAL0~  // ~6WCALY~ ~6WCAL25~
 BEGIN
   COMPILE ~CompassOfWomanhood/scripts/caly/%script_file%.baf~ ~override~ EVALUATE_BUFFER
@@ -173,6 +182,7 @@ END
 ACTION_PHP_EACH areas AS num => script_file
 BEGIN
   COMPILE ~CompassOfWomanhood/areas/caly/%script_file%.baf~ ~override~
+    EVALUATE_BUFFER
   OUTER_SET file_num += 1
 END
 

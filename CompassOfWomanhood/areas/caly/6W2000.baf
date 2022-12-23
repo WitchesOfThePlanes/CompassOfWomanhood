@@ -7,7 +7,7 @@ THEN
   RESPONSE #100
     SetInterrupt(FALSE)
     FadeToColor([0.0],0)
-    MoveViewPoint([1165.54],INSTANT)
+    MoveViewPoint([1165.80],INSTANT)
     ClearAllActions()
     StartCutSceneMode()
     MultiPlayerSync()
@@ -23,6 +23,7 @@ THEN
     ActionOverride("REBAND02",ChangeAIScript("",DEFAULT))
     ActionOverride("REBAND03",ChangeAIScript("",DEFAULT))
     ActionOverride("REBAND05",ChangeAIScript("",DEFAULT))
+
     ActionOverride("REBAND01",ChangeAIScript("",OVERRIDE))
     ActionOverride("REBAND02",ChangeAIScript("",OVERRIDE))
     ActionOverride("REBAND03",ChangeAIScript("",OVERRIDE))
@@ -33,18 +34,28 @@ THEN
     Explore()
 
     // maybe talking to this point from somewhere north-east?
-    ActionOverride(Player1,JumpToPoint([700.342]))
-    ActionOverride(Player2,JumpToPoint([677.294]))
-    ActionOverride(Player3,JumpToPoint([746.320]))
-    ActionOverride(Player4,JumpToPoint([728.271]))
-    ActionOverride(Player5,JumpToPoint([730.221]))
-    ActionOverride(Player6,JumpToPoint([796.243]))
+    ActionOverride(Player1,JumpToPoint([1000.-12]))
+    ActionOverride(Player2,JumpToPoint([977.-64]))
+    ActionOverride(Player3,JumpToPoint([1046.-30]))
+    ActionOverride(Player4,JumpToPoint([1028.-81]))
+    ActionOverride(Player5,JumpToPoint([1030.-131]))
+    ActionOverride(Player6,JumpToPoint([1096.-113]))
+
     ActionOverride(Player1,Face(SW))
     ActionOverride(Player2,Face(SW))
     ActionOverride(Player3,Face(SW))
     ActionOverride(Player4,Face(SW))
     ActionOverride(Player5,Face(SW))
     ActionOverride(Player6,Face(SW))
+
+    SmallWait(5)
+
+    ActionOverride(Player1, MoveToPoint([700.342]))
+    ActionOverride(Player2, MoveToPoint([677.294]))
+    ActionOverride(Player3, MoveToPoint([746.320]))
+    ActionOverride(Player4, MoveToPoint([728.271]))
+    ActionOverride(Player5, MoveToPoint([730.221]))
+    ActionOverride(Player6, MoveToPoint([796.243]))
     Wait(1)
 
     FadeFromColor([15.0],0)
@@ -52,8 +63,17 @@ THEN
     MoveViewPoint([605.461],BD_NORMAL)
 
     Wait(8)
+
+    DisplayStringHead("REBAND01", %6WCALY_INIT_BANDITS(1000100)%)
+    Wait(3)
+    DisplayStringHead("REBAND02", %6WCALY_INIT_BANDITS(1000101)%)
+    Wait(3)
+    DisplayStringHead("REBAND01", %6WCALY_INIT_BANDITS(1000102)%)
+    Wait(4)
+    DisplayStringHead("REBAND01", %6WCALY_INIT_BANDITS(1000103)%)
+    Wait(6)
+
     EndCutSceneMode()
-    //StartCutScene("OHNCUT02")
 END
 
 

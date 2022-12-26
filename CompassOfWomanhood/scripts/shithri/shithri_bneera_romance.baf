@@ -69,7 +69,7 @@ THEN
     SetInterrupt(FALSE)
     LeaveParty()
     //TODO: handle it better? or is it good enough?
-    SetGLOBAL("KickedOut","LOCALS",1)
+    SetGlobal("KickedOut","LOCALS",1)
     EscapeAreaMove("AR0313",703,242,SW)
     SetInterrupt(TRUE)
 END

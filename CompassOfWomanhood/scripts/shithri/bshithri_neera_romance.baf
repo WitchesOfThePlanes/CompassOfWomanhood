@@ -103,6 +103,39 @@ END
 */
 
 
+//
+// Each time Neera will leave the party, Shithri should do so too.
+//
+// If some case is unhandled though - e.g. Neera is kicked out
+// but the PC runs away so that she can't have her unjoin dialogue,
+// Shithri should leave too.
+//
+// Same if Shithri is unconscious, asleep etc.
+//
+
+IF
+  Global("6W#ShithriNeeraRomanceActive","GLOBAL",2)
+  InParty(Myself)
+  !Dead("6WSHITHRI") // `Dead` cannot accept Myself
+  !InPartyAllowDead("Neera")
+  Global("6W#ShithriMoveToNeera","GLOBAL",0)
+  // Unless Neera leaves, she can still talk to PC
+  OR(2)
+    !InMyArea("Neera")
+    Global("6W#NeeraWaitingHere","GLOBAL",1)
+THEN
+  RESPONSE #100
+    // set global so that filtering is less repetitive
+    SetInterrupt(FALSE)
+    LeaveParty()
+    ChangeAIScript("6WSHITP",DEFAULT)
+    SetGlobal("KickedOut","LOCALS",1)
+    SetGlobal("6W#ShithriMoveToNeera","GLOBAL",1)
+    SetInterrupt(TRUE)
+    Continue()
+END
+
+
 // Start the romance
 
 IF

@@ -1,0 +1,96 @@
+//
+// Shithri script for after leaving the party (with Neera).
+//
+
+
+// If already near Neera, stop.
+IF
+  Global("6W#ShithriMoveToNeera","GLOBAL",1)
+  InMyArea("Neera")
+  Range("Neera",10)
+THEN
+  RESPONSE #100
+    SetGlobal("6W#ShithriMoveToNeera","GLOBAL",0)
+    SetGlobal("6W#NeeraWaitingHere","GLOBAL",0)
+END
+
+// If same location - go to her.
+IF
+  Global("6W#ShithriMoveToNeera","GLOBAL",1)
+  InMyArea("Neera")
+  !InMyArea([PC])
+THEN
+  RESPONSE #100
+    JumpToObject("Neera")
+END
+IF
+  Global("6W#ShithriMoveToNeera","GLOBAL",1)
+  InMyArea("Neera")
+  InMyArea([PC])
+THEN
+  RESPONSE #100
+    MoveToObjectOffset("Neera",[20.0])
+    Face(SE)
+END
+
+// If not the same location - try to go there.
+//
+// Implementation Note:
+// Unfortunately, there seem to be no easy way to just move one creature
+// to the same area as another one. Therefore, Shithri needs the same
+// rules here as Neera.
+IF
+  Global("6W#ShithriMoveToNeera","GLOBAL",1)
+  !InMyArea("Neera")
+  //GlobalLT("OHN_ENTER_REFUGE","GLOBAL",2)
+  //Global("OHN_REFUGE_BURNED","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("6W#ShithriMoveToNeera","GLOBAL",0)
+    EscapeAreaMove("OH6100",383,1659,SE)
+    SetInterrupt(TRUE)
+END
+IF
+  Global("6W#ShithriMoveToNeera","GLOBAL",1)
+  !InMyArea("Neera")
+  GlobalLT("OHN_ENTER_REFUGE","GLOBAL",2)
+  Global("OHN_REFUGE_BURNED","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("6W#ShithriMoveToNeera","GLOBAL",0)
+    EscapeAreaMove("OH6200",383,1659,SE)
+    SetInterrupt(TRUE)
+END
+IF
+  Global("6W#ShithriMoveToNeera","GLOBAL",1)
+  !InMyArea("Neera")
+  GlobalGT("OHN_ENTER_REFUGE","GLOBAL",1)
+  Global("OHN_REFUGE_BURNED","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("6W#ShithriMoveToNeera","GLOBAL",0)
+    EscapeAreaMove("OH6100",1442,1151,SE)
+    SetInterrupt(TRUE)
+END
+IF
+  Global("6W#ShithriMoveToNeera","GLOBAL",1)
+  !InMyArea("Neera")
+  GlobalGT("OHN_ENTER_REFUGE","GLOBAL",1)
+  Global("OHN_REFUGE_BURNED","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("6W#ShithriMoveToNeera","GLOBAL",0)
+    EscapeAreaMove("OH6200",1442,1151,SE)
+    SetInterrupt(TRUE)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    NoAction()
+END

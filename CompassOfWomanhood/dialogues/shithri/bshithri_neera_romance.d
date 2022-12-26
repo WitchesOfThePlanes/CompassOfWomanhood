@@ -15,6 +15,14 @@
 // ~ 2 - reactions to death etc
 
 
+// when Neera leaves "here", it sets a flag for Shithri
+ADD_TRANS_ACTION ~NEERAP~
+  BEGIN 0 END
+  BEGIN 2 END
+  ~SetGlobal("6W#NeeraWaitingHere","GLOBAL",1)~
+  UNLESS ~6W#NeeraWaitingHere~
+
+
 // Neera dies
 APPEND B6WSHIT
   IF WEIGHT #0 ~

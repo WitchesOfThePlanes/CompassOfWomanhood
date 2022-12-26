@@ -119,18 +119,19 @@
 @2000530 = ~Then ye do yer thing, I do me thing. Off I go.~ 
 @2000540 = ~Why should I care? Ye do yer thing, I do me thing. Off I go.~
 
-@2000700 = ~Ho, me matey... Ho, ho, ye there?~
-@2000701 = ~Huh? Wh-wha'? Shiri? Har har! Me hear-ty. *hic* Me prrtty hear-ty!~ [6WBPIT80]
-@2000702 = ~Oy, get yerself together, matey! Nah wanna leave this island nahmore?~
+@2000700 = ~Oi, me matey... Oi, ye there?~ [6WBSHI80]
+@2000701 = ~Huh? Wh-wha'? Shiri? Me har ar har! Me hear-ty. *hic* Me prrtty hear-ty!~ [6WBPIT80]
+@2000702 = ~Oy, get yerself together, matey! Nah wanna leave this island nahmore?~ [6WBSHI82]
 @2000710 = ~*hic* Wit' that... that... captain o' yers?~ [6WBPIT82]
-@2000711 = ~Aye! Ye gettin' outta here wit' this bucko and <PRO_HIMHER>, ain't ye?~
+@2000711 = ~Aye! Ye gettin' outta here wit' this bucko and him, ain't ye?~ [6WBSHI84]
+@2000712 = ~Aye! Ye gettin' outta here wit' this bucko and her, ain't ye?~ [6WBSHI85]
 @2000720 = ~*hic* Wit' that... prtty, prtty elvn lady o' yers?~ [6WBPIT84]
-@2000721 = ~Half-elven. 'n she nah "lady 'o I". She jus'...~
-@2000722 = ~She jus' a... friend.~
+@2000721 = ~Half-elven. 'n she nah "lady 'o I". She jus'...~ [6WBSHI86]
+@2000722 = ~She jus' a... friend.~ [6WBSHI88]
 @2000730 = ~*hic* Wit' that... prtty, prtty elvn lady o' yers?~ [6WBPIT86]
-@2000731 = ~*smirk* ...half-elven.~
+@2000731 = ~*smirk* ...half-elven.~ [6WBSHI90]
 @2000740 = ~zzzZZzzz...~ [6WBPIT88]
-@2000741 = ~Ho, me matey! Me matey! Blimey... *gulp*~
+@2000741 = ~Ho, me matey! Me matey! Blimey... *gulp*~ [6WBSHI92]
 
 @2000800 = ~Ho, me capt'n! Ahoy!~
 @2000810 = ~...and "your half-elven lady". Hi.~

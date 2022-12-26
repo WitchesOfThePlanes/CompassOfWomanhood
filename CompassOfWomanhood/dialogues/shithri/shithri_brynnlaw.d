@@ -921,8 +921,16 @@ END
 
 CHAIN PIRPIR01 ask_captn
   @2000710 /* *hic* Wit' that... that... capt'n o' yers? */
-  == 6WSHITP
-  @2000711 /* Aye! Ye gettin' outta here wit' this bucko and <PRO_HIMHER>, ain't ye? */
+
+  // Implementation Note:
+  // Unfortunately, it seems F-dialogues (and therefore their sound files)
+  // in TRA files don't work as expected in the English version.
+  // Hence, two separate states are needed.
+
+  == 6WSHITP IF ~Gender(Player1,Male)~
+  @2000711 /* Aye! Ye gettin' outta here wit' this bucko and him, ain't ye? */
+  == 6WSHITP IF ~!Gender(Player1,Male)~
+  @2000712 /* Aye! Ye gettin' outta here wit' this bucko and her, ain't ye? */
 EXTERN PIRPIR01 asleep
 
 CHAIN PIRPIR01 ask_pretty_elven_lady

@@ -3,6 +3,17 @@
 //
 
 
+// If Neera re-joins, so does Shithri.
+IF
+  Global("6W#ShithriNeeraRomanceActive","GLOBAL",2)
+  InParty("Neera")
+  !InParty(Myself)
+THEN
+  RESPONSE #100
+    JoinParty()
+END
+
+
 // If already near Neera, stop.
 IF
   Global("6W#ShithriMoveToNeera","GLOBAL",1)
@@ -29,7 +40,7 @@ IF
   InMyArea([PC])
 THEN
   RESPONSE #100
-    MoveToObjectOffset("Neera",[20.0])
+    MoveToObjectOffset("Neera",[40.0])
     Face(SE)
 END
 
@@ -86,11 +97,4 @@ THEN
     SetGlobal("6W#ShithriMoveToNeera","GLOBAL",0)
     EscapeAreaMove("OH6200",1442,1151,SE)
     SetInterrupt(TRUE)
-END
-
-IF
-  True()
-THEN
-  RESPONSE #100
-    NoAction()
 END

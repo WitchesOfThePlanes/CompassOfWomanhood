@@ -492,11 +492,14 @@ PRINT "Edited %file_edited_num% existing creature files"
 //
 
 SILENT
-COMPILE ~CompassOfWomanhood/scripts/shithri/6WSHITP.baf~ ~override~
-COMPILE ~CompassOfWomanhood/scripts/shithri/6WSHITH.baf~ ~override~
-COMPILE ~CompassOfWomanhood/scripts/shithri/6WSHI25.baf~ ~override~
-COMPILE ~CompassOfWomanhood/scripts/shithri/6WPIRDR.baf~ ~override~
-PRINT "Compiled 4 new scripts"
+OUTER_SET file_num = 0
+
+ACTION_FOR_EACH script_file IN ~6WSHITH~ ~6WSHI25~ ~6WPIRDR~ ~6WSHITP~ ~6WNEERP~
+BEGIN
+  COMPILE ~CompassOfWomanhood/scripts/shithri/%script_file%.baf~ ~override~
+  OUTER_SET file_num += 1
+END
+PRINT "Compiled %file_num% new scripts"
 
 ACTION_DEFINE_ASSOCIATIVE_ARRAY script_extensions
 BEGIN

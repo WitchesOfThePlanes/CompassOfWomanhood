@@ -129,6 +129,7 @@ THEN
     SetInterrupt(FALSE)
     LeaveParty()
     ChangeAIScript("6WSHITP",DEFAULT)
+    ActionOverride("Neera", ChangeAIScript("6WNEERP",DEFAULT))
     SetGlobal("KickedOut","LOCALS",1)
     SetGlobal("6W#ShithriMoveToNeera","GLOBAL",1)
     SetInterrupt(TRUE)

@@ -523,7 +523,7 @@ Shithri nie tylko odmawia podania ci jakichkolwiek użytecznych informacji na te
 
 @5000200 = ~Ej, Paluch! Chodź no tu!~
 @5000201 = ~Hehe. Słuchajta wszyscy! Tego sie często nie widuje - pojedynek na picie, tu w Morskiej Zdobyczy!~
-@5000210 = ~No. Uważajta, ludziska! Tych dwóch tutaj...~ ~No. Uważajta, ludziska! Tych tutaj dwoje...~
+@5000210 = ~No. Uważajta, ludziska! Tych dwóch tutaj...~ [6WSILEN] ~No. Uważajta, ludziska! Tych tutaj dwoje...~ [6WSILEN]
 @5000211 = ~Szybciej tam, haczyk! My tu czekamy!~
 @5000212 = ~Za dużo gadania, za mało picia!~
 @5000213 = ~Ej, ty bedziesz tak kłapał dziobem a ich trzymał o suchym pysku, ha? Czy dasz im sie ścierać wreszcie, arrr?~

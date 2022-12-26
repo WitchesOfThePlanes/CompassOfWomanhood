@@ -19,12 +19,27 @@
 @1000042 = ~Pff. So why naggin', ye be? *gulp*~
 
 
-@1000100 = ~Ho, wha' ye think ye doin'? I nah be common thug, mind ye!~
+@1000100 = ~Ho, wha' ye think ye doin'? I nah common thug, mind ye!~
 
-@1000110 = ~Huh! I see the common thug <PRO_HIMHER>self arrived.~
+@1000110 = ~Huh! I see the common thug <PRO_HIMHER>self arrived.~ [6WSILEN]
 @1000112 = ~Well, I want you to rejoin the team.~
 @1000113 = ~How about we have a drink or two, what do you say?~
 @1000114 = ~And what do we have here? The good-for-nothing pirate "princess"?~
 @1000120 = ~Har har, nice one! *gulp* Business be business, but ye seem t' jus' enjoy murder.~
 @1000130 = ~Nah splicin' the mainbrace wit' the like o' ye, thug.~
 @1000140 = ~At least I nah be a murderer wit' no code o' conduct. *gulp*~
+
+
+@1000200 = ~Huh! I see the liar <PRO_HIMHER>self arrived.~ [6WSILEN]
+@1000201 = ~Pardon?~
+@1000202 = ~I'm never lied to you, Shithri.~
+@1000203 = ~Hi. Also: bye.~
+@1000210 = ~Ye think this bucko dumb, ain't ye? Brynnlaw. "Part ways fer now". Rings any bells?~
+@1000212 = ~It does. I'm sorry about that, Shithri.~
+@1000213 = ~You mean you never forget a thing?~
+@1000214 = ~And you BELIEVED it? Wow. Just wow.~
+@1000215 = ~Beats me.~
+@1000220 = ~Why should I care? Liar!~
+@2000230 = ~A darin' bucko always pays 'er debts. 'n she owns nothin' t' ones like ye.~
+@2000240 = ~*stares* *gulp*~
+@2000250 = ~Nah jus' liar, but a dumb one at that. Har har. Wha' a swab...~

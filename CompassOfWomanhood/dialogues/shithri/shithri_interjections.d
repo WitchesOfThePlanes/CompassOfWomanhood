@@ -102,6 +102,78 @@ EXTEND_BOTTOM DADROW21 2
 END
 
 
+//
+// Reginald, from Neera's Hidden Refuge
+//
+// Implementation Note:
+// PC can note that Reginald's a half-orc. Dorn will laugh at PC,
+// while Reginald tries to bond with him. Shithri might be a fellow half-orc
+// here, as she's more positive towards her heritage than Dorn is.
+
+// Reginald is from Damara --- a country east of Gelena Mountains,
+// on the northern-east of Moonsea. Shithri is from Zhentil Keep, on the other
+// side of it. Note that the Moonsea isn't that big, so these two are quite
+// close, geographically.
+//
+// Neera's interjection is more important though, so it comes first.
+EXTEND_BOTTOM OHNREGI 4
+  IF ~
+    IfValidForPartyDialogue("6WSHITHRI")
+    !IfValidForPartyDialogue("Neera")
+  ~ THEN
+    DO ~
+      SetGlobal("6W#ShithriReginald","GLOBAL",1)
+    ~
+    EXTERN ~6WSHITJ~ 6W#ShithriReginald_cousin
+END
+EXTEND_BOTTOM NEERAJ 71
+  IF ~
+    IfValidForPartyDialogue("6WSHITHRI")
+  ~ THEN
+    DO ~
+      SetGlobal("6W#ShithriReginald","GLOBAL",1)
+    ~
+    EXTERN ~6WSHITJ~ 6W#ShithriReginald_cousin
+END
+CHAIN 6WSHITJ 6W#ShithriReginald_cousin
+  @1000200 /* Damara? That jus' a stone throw from the Moonsea! Hello me cousin, then! */
+  == OHNREGI
+  @1000201 /* Cousin, yes. You are Luthic's daughter. */
+  == 6WSHITJ
+  @1000202 /* Aye I be! */
+  == OHNREGI
+  @1000203 /* Sound of Thargate. */
+  == 6WSHITJ
+  @1000204 /* Aye I do! */
+  == OHNREGI
+  @1000205 /* Good. */
+END OHNREGI 3
+
+// Makes sense to ask Shithri to talk to him, considering how he managed
+// to talk with her for a bit plus they're "cousins".
+EXTEND_BOTTOM OHNREGI 8
+  IF ~
+    IfValidForPartyDialogue("6WSHITHRI")
+    Global("6W#ShithriReginald","GLOBAL",1)
+  ~
+  REPLY @1000210 /* Shithri? Can you calm down your "cousin"? */
+  EXTERN ~6WSHITJ~ 6W#ShithriReginald_calm_down
+END
+CHAIN 6WSHITJ 6W#ShithriReginald_calm_down
+  @1000211 /* Oi, cousin. Cap'tn be alright. Nah need t' get angry. */
+  == OHNREGI
+  @1000212 /* Talks too much. */
+  == 6WSHITJ
+  @1000213 /* Ye son o' Gruumsh, nah Leg-Breaker, ain't ya? */
+  == OHNREGI
+  @1000214 /* YOU talk too much! */
+  == 6WSHITJ
+  @1000215 /* Come on, cousin! Let's splice the mainbrace 'n forget this already. Wha' says you? */
+  == OHNREGI
+  @1000216 /* No! You all go now! One chance to walk away. Else I attack. */
+COPY_TRANS OHNREGI 9
+
+
 /*
  * Major NPC dialogues
  */

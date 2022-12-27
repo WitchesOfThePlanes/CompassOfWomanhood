@@ -43,6 +43,65 @@ THEN SALVANAS 6W#shithri_salvanas
 EXIT
 
 
+// Drow (male) prostitute
+//
+// Implementation Note:
+//
+// Normally, the dialogue options are allowed depending on a character's gender
+// plus an eager answer may be disallowed for some. Neera is the only canon
+// companions who is conditionally eager: she is eager but only if the romance
+// with her isn't active.
+//
+// As a side note: it's interesting how Nalia is eligible here for
+// an exotic massage, but not when talking with Madam Nin. Looks like she draws
+// the line at sexual stuff.
+//
+// Considering the above, Shithri may be added for "eager" path as long as she's
+// not in a romance with Neera + Neera should get an additional condition. Because
+// state 1 of Shithri-Neera romance is less serious than in canon romances, the "eager"
+// path can probably be permissed for state 1.
+//
+// All of the other characters speak the very same line here (gender-specific),
+// as they are supposed to pretend to be common drow. Shithri's pirate speech
+// comes into play now though.
+//
+// Not sure why the original code uses `Name` instead of `IsGabber` though...
+
+// Shouldn't apply the default dialogue (need to guard both male
+// and female version, as some wild surges may temporarily switch genders)
+ADD_TRANS_TRIGGER DADROW21 2 ~
+  !Name("6WSHITHRI",LastTalkedToBy)
+~ DO 0 1
+
+// Neera only if not commited to Shithri
+ADD_TRANS_TRIGGER DADROW21 2 ~
+  !Global("6W#ShithriNeeraRomanceActive","GLOBAL",2)
+~ DO 2
+
+// Shithri's "no thanks" dialogue shouldn't be as elaborate as the original
+// one either.
+ADD_TRANS_TRIGGER DADROW21 2 ~
+  !IsGabber("6WSHITHRI")
+~ DO 5
+
+// Add Shithri-specific dialogues, with accent included.
+EXTEND_BOTTOM DADROW21 2
+  IF ~
+    IsGabber("6WSHITHRI")
+    !Global("6W#ShithriNeeraRomanceActive","GLOBAL",1)
+    !Global("6W#ShithriNeeraRomanceActive","GLOBAL",2)
+  ~ THEN
+    REPLY @1000100 /* Aye, sounds nah half bad. Show this bu... I mean: this female, wha' ye made o'. */
+    GOTO 4
+
+  IF ~
+    IsGabber("6WSHITHRI")
+  ~
+    REPLY @1000110 /* Maybe 'nother day. */
+    GOTO 3
+END
+
+
 /*
  * Major NPC dialogues
  */

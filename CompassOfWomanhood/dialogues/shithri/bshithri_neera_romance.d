@@ -335,9 +335,9 @@ CHAIN IF WEIGHT #1 ~
   @1000707 /* When I look at yer hair. I nah be proud. */
   == BNEERA
   @1000708 /* I won't lie to you - I really hated them. Hated them hard. But I doubt you're related to them. I mean, Zhentil Keep is quite far from High Forest. Besides, they may be another clan or something. And- */
-  == BNEERA IF ~Global("ohn_regi_plot","global",0)~
+  == BNEERA IF ~Global("6W#ShithriReginald","GLOBAL",0)~
   @1000709 /* And look, I have a friend who is half-orc, his name is Reginald. */
-  == BNEERA IF ~!Global("ohn_regi_plot","global",0)~
+  == BNEERA IF ~!Global("6W#ShithriReginald","GLOBAL",0)~
   @1000710 /* And look, you remember my friend Reginald. He's also half-orc. */
   == BNEERA
   @1000711 /* Uh, that didn't sound good. */

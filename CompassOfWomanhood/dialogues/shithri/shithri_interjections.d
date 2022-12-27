@@ -122,7 +122,7 @@ EXTEND_BOTTOM OHNREGI 4
     !IfValidForPartyDialogue("Neera")
   ~ THEN
     DO ~
-      SetGlobal("6W#ShithriReginald","GLOBAL",1)
+      SetGlobal("6W#ShithriReginald","GLOBAL",2)
     ~
     EXTERN ~6WSHITJ~ 6W#ShithriReginald_cousin
 END
@@ -131,7 +131,7 @@ EXTEND_BOTTOM NEERAJ 71
     IfValidForPartyDialogue("6WSHITHRI")
   ~ THEN
     DO ~
-      SetGlobal("6W#ShithriReginald","GLOBAL",1)
+      SetGlobal("6W#ShithriReginald","GLOBAL",2)
     ~
     EXTERN ~6WSHITJ~ 6W#ShithriReginald_cousin
 END
@@ -154,7 +154,7 @@ END OHNREGI 3
 EXTEND_BOTTOM OHNREGI 8
   IF ~
     IfValidForPartyDialogue("6WSHITHRI")
-    Global("6W#ShithriReginald","GLOBAL",1)
+    Global("6W#ShithriReginald","GLOBAL",2)
   ~
   REPLY @1000210 /* Shithri? Can you calm down your "cousin"? */
   EXTERN ~6WSHITJ~ 6W#ShithriReginald_calm_down

@@ -155,6 +155,7 @@ THEN
   RESPONSE #100
     SetGlobal("6W#ShithriBrynnlawRespawn","GLOBAL",1)
     Activate(Myself)
+    ActionOverride("pirpir01", SetName(@1010)) // Pirate Peter
 END
 
 
@@ -194,7 +195,7 @@ IF
   Range([PC],12)
 THEN
   RESPONSE #100
-    SetGlobal("6W#ShithriBrynnlawRespawn","GLOBAL",2)
+    SetGlobal("6W#ShithriBrynnlawRespawn","GLOBAL",3)
 END
 
 

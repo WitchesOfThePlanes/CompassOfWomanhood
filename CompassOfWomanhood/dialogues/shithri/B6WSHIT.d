@@ -208,9 +208,9 @@ CHAIN IF ~
   =
   @1020002 /* Besides. I don't trust you yet. */
   == B6WSHIT
-  @1020003 /* Yet? Let I guess then. Ye be Harper. I be Zentish. Mayhaps yer answer 'as word "Zentharim"... */
+  @1020003 /* Yet? Let I guess then. Ye be Harper. I be Zentish. Mayhaps yer answer 'as word "Zhentarim"... */
   == BJAHEIR
-  @1020004 /* Far from that. I doubt you're a Zenthish agent. You being a half-orc and a pirate, however, is what concerns me. */
+  @1020004 /* Far from that. I doubt you're a Zhentish agent. You being a half-orc and a pirate, however, is what concerns me. */
   =
   @1020005 /* I have yet to determine your place in the balance. */
   == B6WSHIT
@@ -457,7 +457,7 @@ CHAIN IF ~
   == B6WSHIT
   @1060101 /* Oh do I, pretty lad? */
   == BANOMEN
-  @1060102 /* Well, I do admit it looks like your training wasn't exactly in the art of battle. I could only guess it's some dance for primitive orcish gods or another Zentharim ritual for luck. Or perhaps a pirate thing? */
+  @1060102 /* Well, I do admit it looks like your training wasn't exactly in the art of battle. I could only guess it's some dance for primitive orcish gods or another Zhentarim ritual for luck. Or perhaps a pirate thing? */
   == B6WSHIT
   @1060103 /* Speak another word 'n yer head will feed the Luthic's bears, ye wretched, mangy knave. */
   == BANOMEN
@@ -537,7 +537,7 @@ EXIT
 
 APPEND BANOMEN
   IF ~~ THEN BEGIN 6W#banter_shithri_anomen_fight__shithri_friend
-    SAY @1060143 /* Really? A Zentharim half-orc pirate. Worshipping blood-thirsty orcish gods. You call THAT a friend? */
+    SAY @1060143 /* Really? A Zhentarim half-orc pirate. Worshipping blood-thirsty orcish gods. You call THAT a friend? */
 
     IF ~
       !Global("AnomenIsNotKnight","GLOBAL",0)
@@ -585,7 +585,7 @@ EXIT
 
 APPEND B6WSHIT
   IF ~~ THEN BEGIN 6W#banter_shithri_anomen_fight__ye_know_nothin
-    SAY @1060120 /* Ye know nothin', swab. O' pirates. O' Zentharim. O' orcish gods. */
+    SAY @1060120 /* Ye know nothin', swab. O' pirates. O' Zhentarim. O' orcish gods. */
 
     IF ~~ THEN
       REPLY @1060121 /* You're right, I don't. But we're all friends here. */

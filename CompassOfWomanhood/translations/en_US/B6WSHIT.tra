@@ -64,8 +64,8 @@ When he is delirious?~
 @1020000 = ~Sha'nru? Care fer...~
 @1020001 = ~No. We have more important things to do than drinking.~
 @1020002 = ~Besides. I don’t trust you yet.~
-@1020003 = ~Yet? Let I guess then. Ye be Harper. I be Zentish. Mayhaps yer answer 'as word "Zentharim"...~
-@1020004 = ~Far from that. I doubt you're a Zenthish agent. You being a half-orc and a pirate, however, is what concerns me.~
+@1020003 = ~Yet? Let I guess then. Ye be Harper. I be Zentish. Mayhaps yer answer 'as word "Zhentarim"...~
+@1020004 = ~Far from that. I doubt you're a Zhentish agent. You being a half-orc and a pirate, however, is what concerns me.~
 @1020005 = ~I have yet to determine your place in the balance.~
 @1020006 = ~*gulp* May Luthic guide ye in that.~
 
@@ -145,7 +145,7 @@ When he is delirious?~
 
 @1060100 = ~You fight well for a woman.~
 @1060101 = ~Oh do I, pretty lad?~
-@1060102 = ~Well, I do admit it looks like your training wasn't exactly in the art of battle. I could only guess it's some dance for primitive orcish gods or another Zentharim ritual for luck. Or perhaps a pirate thing?~
+@1060102 = ~Well, I do admit it looks like your training wasn't exactly in the art of battle. I could only guess it's some dance for primitive orcish gods or another Zhentarim ritual for luck. Or perhaps a pirate thing?~
 @1060103 = ~Speak another word 'n yer head will feed the Luthic's bears, ye wretched, mangy knave.~
 @1060104 = ~"Knave"? You calling me a servant, half-orc? Learn your place! <CHARNAME> only keeps you around for the laughs.~
 @1060105 = ~Careful, dandy. 'tis not yer cozy lil castle where yer garau be t' pat yer head afterwards.~
@@ -157,7 +157,7 @@ When he is delirious?~
 @1060111 = ~You took it too far too.~
 @1060112 = ~I know he started, but think if Luthic would approve your behaviour.~
 @1060113 = ~I know he started, but please be the wiser one.~
-@1060120 = ~Ye know nothin', swab. O' pirates. O' Zentharim. O' orcish gods.~
+@1060120 = ~Ye know nothin', swab. O' pirates. O' Zhentarim. O' orcish gods.~
 @1060121 = ~You're right, I don't. But we're all friends here.~
 @1060122 = ~Like it or not, we're a team. Companions.~
 @1060123 = ~I don't need to. If you don't like it, leave.~
@@ -173,7 +173,7 @@ When he is delirious?~
 @1060140 = ~You're siding with that pirate, <CHARNAME>?~
 @1060141 = ~Yes. She's a friend.~
 @1060142 = ~I don't take sides. We're a team. We work together.~
-@1060143 = ~Really? A Zentharim half-orc pirate. Worshipping blood-thirsty orcish gods. You call THAT a friend?~
+@1060143 = ~Really? A Zhentarim half-orc pirate. Worshipping blood-thirsty orcish gods. You call THAT a friend?~
 @1060144 = ~Don't make me laugh! It's vermin!~
 @1060145 = ~Say wha', knighty? Ah, right! Ye nah knighty at all, yarrr! Ye just a failure! Failure to yer god, failure to yer order. Mayhaps it be just mercy that capt'n keeps ye with <PRO_HIMHER>?~
 @1060146 = ~Enough!~

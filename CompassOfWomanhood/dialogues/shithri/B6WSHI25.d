@@ -66,7 +66,7 @@ CHAIN IF ~
   == B6WSHI25
   @1010104 /* *gulp* Ye mean... like a privateer? Corsair? */
   == BIMOEN25
-  @1010105 /* I mean you're quite a nice person. For someone raised in Zenthil Keep, at least. */
+  @1010105 /* I mean you're quite a nice person. For someone raised in Zhentil Keep, at least. */
   =
   @1010106 /* So... a cinnamon cookie? For friendship? */
   == B6WSHI25

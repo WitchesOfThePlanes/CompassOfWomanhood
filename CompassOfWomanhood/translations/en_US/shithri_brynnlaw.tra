@@ -120,7 +120,7 @@
 @2000540 = ~Why should I care? Ye do yer thing, I do me thing. Off I go.~
 
 @2000700 = ~Oi, me matey... Oi, ye there?~ [6WBSHI80]
-@2000701 = ~Huh? Wh-wha'? Shiri? Me har ar har! Me hear-ty. *hic* Me prrtty hear-ty!~ [6WBPIT80]
+@2000701 = ~Huh? Wh-wha'? Shiri? Me har har har! Me hear-ty. *hic* Me prrtty hear-ty!~ [6WBPIT80]
 @2000702 = ~Oy, get yerself together, matey! Nah wanna leave this island nahmore?~ [6WBSHI82]
 @2000710 = ~*hic* Wit' that... that... captain o' yers?~ [6WBPIT82]
 @2000711 = ~Aye! Ye gettin' outta here wit' this bucko and him, ain't ye?~ [6WBSHI84]
@@ -133,16 +133,16 @@
 @2000740 = ~zzzZZzzz...~ [6WBPIT88]
 @2000741 = ~Ho, me matey! Me matey! Blimey... *gulp*~ [6WBSHI92]
 
-@2000800 = ~Ho, me capt'n! Ahoy!~
+@2000800 = ~Ho, me capt'n! Ahoy!~ [6WBSH100]
 @2000810 = ~...and "your half-elven lady". Hi.~
-@2000811 = ~*gulp* I said "friend".~
-@2000812 = ~Well. Hullo, Neera.~
-@2000820 = ~So, me capt'n. Ye came as promised.~
+@2000811 = ~*gulp* I said "friend".~ [6WBSH102]
+@2000812 = ~Well. Hullo, Neera.~ [6WBSH104]
+@2000820 = ~So, me capt'n. Ye came as promised.~ [6WBSH106]
 @2000821 = ~Indeed! Please join me again.~
 @2000822 = ~In fact... I wanted to say goodbye.~
-@2000830 = ~Aye aye, capt'n! Gladly!~
-@2000831 = ~Aye, I heard ye got this bosun a job, har har. Good thinkin'.~
-@2000840 = ~Huh. As ye wish. *gulp*~
+@2000830 = ~Aye aye, capt'n! Gladly!~ [6WBSH108]
+@2000831 = ~Aye, I heard ye got this bosun a job, har har. Good thinkin'.~ [6WBSH110]
+@2000840 = ~Huh. As ye wish.~ [6WBSH112]
 @2000841 = ~Thanks for making it clear, <CHARNAME>. You did keep your word... kinda. Anyway. Bye!~
 
 

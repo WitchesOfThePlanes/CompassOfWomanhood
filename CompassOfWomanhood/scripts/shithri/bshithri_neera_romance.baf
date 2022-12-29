@@ -276,3 +276,18 @@ THEN
     IncrementGlobal("6W#ShithriNeeraLoveTalk","GLOBAL",1)
     RealSetGlobalTimer("6W#ShithriNeeraRomance","GLOBAL",FIVE_HOURS)
 END
+
+//
+// Neera mentions Reginald once. Shithri may talk to him,
+// but she may just meet (i.e. detect) him too.
+//
+// Could filter talking to him, but that seems overly complex
+// for a really minor benefit.
+//
+IF
+  Global("6W#ShithriReginald","GLOBAL",0)
+  Detect("OHNREGI")
+THEN
+  RESPONSE #100
+    SetGlobal("6W#ShithriReginald","GLOBAL",1)
+END

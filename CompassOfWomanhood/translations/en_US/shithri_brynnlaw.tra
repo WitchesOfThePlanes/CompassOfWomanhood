@@ -79,7 +79,7 @@
 @2000113 = ~Side-effect of healing spells.~
 @2000120 = ~Hmm. Mayhaps, aye. Thanks, capt'n!~ [6WBSHI42]
 @2000130 = ~Ayyy, could've warned this bucko, ye could.~ [6WBSHI44]
-@2000131 = ~*gulp* *gulp* *gulp* Ha... A moment.~
+@2000131 = ~*gulp* *gulp* *gulp* Ha... A moment.~ [6WBSHI46]
 @2000132 = ~*gulp* *gulp* Ha... I be ready!~
 
 @2000300 = ~Ahoy, ye old sea *hic* dog!~ [6WBSHI50]
@@ -98,19 +98,19 @@
 @2000321 = ~Oh, don't worry. They have plenty of queens and gods in the Spellhold. Get them all out of my sight, all of them. I swear to gods, new silky shirt, already stained...~
 
 @2000400 = ~My friend Shithri wanted to speak with you.~
-@2000401 = ~Ahoy.~
-@2000402 = ~Do we know each other?~
+@2000401 = ~Ahoy.~ [6WBSHI60]
+@2000402 = ~Do we know each other?~ [6WBSHI62]
 @2000403 = ~*smirk* Nay. Prolly nah. But that o' nah importance. I be here to jus' tell ye two things.~
-@2000404 = ~First. Whate'er those rapscallions call ye - ye nah "king" o' this bucko. Nah in a thousand years I consider a half-lubber me king.~
-@2000405 = ~Second. I, Shithri o' Zhentil Keep, gonna be Queen o' Pirates.~
-@2000406 = ~That be all.~
+@2000404 = ~First. Whate'er those rapscallions call ye - ye nah "king" o' this bucko. Nah in a thousand years I consider a half-lubber me king.~ [6WBSHI64]
+@2000405 = ~Second. I, Shithri o' Zhentil Keep, gonna be Queen o' Pirates.~ [6WBSHI66]
+@2000406 = ~That be all.~ [6WBSHI68]
 @2000407 = ~Consider me mildly amused, girl, by your efforts to speak proper Common. As for the contents - you think how many pirates declared me exactly that? I couldn't care less for you calling me "your king". I care for the actual power.~
-@2000408 = ~That be why ye'll ne'er truly be the king.~
+@2000408 = ~That be why ye'll ne'er truly be the king.~ [6WBSHI70]
 @2000409 = ~Is that all you came here for?~
 @2000410 = ~Yes. That's all.~
 
-@2000500 = ~Ho, me capt'n! Nahbody that dumb.~
-@2000501 = ~Ye promised t' help this bucko speak t' Pirate King. 'n yet here we be - inside o' that house o' madmen.~
+@2000500 = ~Ho, me capt'n! Nahbody that dumb.~ [6WBSHI72]
+@2000501 = ~Ye promised t' help this bucko speak t' Pirate King. 'n yet here we be - inside o' that house o' madmen.~ [6WBSHI74]
 @2000502 = ~Well, I intended to go back to help you later...~
 @2000503 = ~I assume you already know I'm here for Imoen. Don't you think rescuing her is more important than your "business" with the Pirate King?~
 @2000504 = ~I'm here for my revenge on Irenicus. Unless the Pirate King tortured until it drives you mad - I think my business is more important than yours.~

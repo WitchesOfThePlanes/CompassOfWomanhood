@@ -3,15 +3,14 @@ Authors
 
 Core team (in joining order):
 
-*   Michalina "Misza" Kotwica (Udiknedormin) — founder; researcher, script & song writer, programmer, audio adjustment
-*   Aleksandra Bielak (Vakme) — co-founder; script writer, tester, networker, devops, landing page
-*   Aleksandra Czapla (Lexie Heron) — graphical artist
-*   Gabriela Zubek (Hrabina Gabina) — Shithri's voice actress, networker
+*   Michalina "Misza" Kotwica (Udiknedormin) — founder; researcher, script & song writer, programmer (mod implementation), audio adjustment
+*   Aleksandra Bielak (Vakme) — co-founder; script writer, devops, programmer (landing page)
+*   Aleksandra Czapla (Lexie Heron) — graphical artist (portraits)
+*   Gabriela Zubek (Hrabina Gabina) — voice actress (Shithri), graphical artist (item icons, logo), scrum master
 *   Maria Oleszkiewicz (Wilczogon) — song writer
-
-Other voice actors:
-
-*   Piotr "Bunio" Bunkowski - as Franky the Eye-Popper
+*   Piotr "Bunio" Bunkowski - voice actor (Franky the Eye-Popper)
+*   Dominika "Domi" Wesołowska - graphical artist (logo, landing page)
+*   Andrzej Kaźmierski - voice actor (Pirate Peter)
 
 Special thanks to:
 

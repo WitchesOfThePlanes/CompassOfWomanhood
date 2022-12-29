@@ -3,15 +3,14 @@ Autorzy
 
 Główny zespół (w kolejności dołączania):
 
-*   Michalina „Misza” Kotwica (Udiknedormin) — założycielka; research, skrypty i teksty piosenek, programowanie, dopasowanie dźwięku
-*   Aleksandra Bielak (Vakme) — współzałożycielka; skrypty, testy, networking, programowanie: środowisko i strona
-*   Aleksandra Czapla (Lexie Heron) — grafiki
-*   Gabriela Zubek (Hrabina Gabina) — głos Shithri, networking
+*   Michalina „Misza” Kotwica (Udiknedormin) — założycielka; research, scenariusz i teksty piosenek, programowanie (implementacja moda), dopasowanie dźwięku
+*   Aleksandra Bielak (Vakme) — współzałożycielka; scenariusz, programowanie (automatyzacja, strona)
+*   Aleksandra Czapla (Lexie Heron) — grafika (portrety)
+*   Gabriela Zubek (Hrabina Gabina) — głos (Shithri), grafika (ikony przedmiotów, logo), scrum masterka
 *   Maria Oleszkiewicz (Wilczogon) — teksty piosenek
-
-Pozostali aktorzy głosowi:
-
-*   Piotr "Bunio" Bunkowski - jako Ferdek Podbijoko
+*   Piotr „Bunio” Bunkowski - głos (Ferdek Podbijoko)
+*   Dominika „Domi” Wesołowska - grafika (logo, strona)
+*   Andrzej Kaźmierski - głos (Pirat Pieter)
 
 Specjalne podziękowania dla:
 

@@ -154,6 +154,7 @@ Słowniczek:
  * (za)ajkać - ugłaskać. Typowe użycie: matka ajkająca dziecko, które rozbiło sobie kolano.
  * arrr! - rodzaj chrząknięcia, może pełnić w zdaniu lub wypowiedzi funkcję wzmacniacza
  * awanturnik / awanturnica - osoba prowadząca burzliwe życie, często pełne przygód. Shithri używa tego określenia także jako eufemizm na pirata / piratkę.
+ * badechołzy - właściwie: szerokie, nieprzylegające do ciała spodnie. Shithri często używa w znaczeniu ogólnym: ubrania szczurów lądowych.
  * biełka - dziewczyna
  * bierze - biorę (!), bierze
  * biesić sie, biesić sia - gniewać się
@@ -244,6 +245,7 @@ Słowniczek:
  * swajka - inaczej marszpikel; metalowy, jednostronnie zaostrzony szpic długości ok. 15-60 cm używany przy wykonywania splotów lin
  * "syf, kiła i mogiła" - bardzo trudna/zła sytuacja, bez perspektyw na poprawę
  * szanta - morska pieśń pracy, charakteryzuje się wyraźnym rytmem. Nie każda pieśń morska to szanta, choć Shithri czasami używa słowa szanta na określenie pieśni morskich tak w ogóle.
+ * szczur loudowy - osoba żyjąca na lądzie, nie-żeglarz. Określenie raczej pogardliwe.
  * szkorbut - choroba, częsta na morzu, wynikająca z dużych niedoborów witaminy C. Do jej późnych objawów należą obluzowanie albo wręcz wypadanie zębów.
  * sztyft - osoba przyuczająca się do fachu, chłopiec/dziewka na posyłki
  * szur, szurek - młody chłopak

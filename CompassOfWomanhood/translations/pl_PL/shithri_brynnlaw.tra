@@ -73,22 +73,22 @@
 @2000102 = ~Ta. Żem gotowa.~ [6WBSHI32]
 @2000103 = ~Nie. Jeszcze jedna rzecz. *łyk* *łyk* Ha... Tera jem gotowa.~ [6WBSHI36]
 @2000110 = ~Co jes? Niech mie kule bijo, żem je trzeźwa jak makrela!~ [6WBSHI40]
-@2000111 = ~Kapitanie, co do...~
+@2000111 = ~Kapitanie, co do jasnej...~ [6WBSHI42]
 @2000112 = ~Nie możesz iść tak pijana rozmawiać z królem, nie?~
 @2000113 = ~Efekty uboczne czarów leczniczych.~
-@2000120 = ~Hmm. Może i racja. Dzienki, kapitanie!~ [6WBSHI42]
-@2000130 = ~Ajjj, mógł żeś te galernice uprzedzić, co?~ [6WBSHI44] ~Ajjj, mogła żeś chociaż te galernice uprzedzić, co?~ [6WBSHI45]
+@2000120 = ~Eeee... Może i racja? Dzienki, kapitanie!~ [6WBSHI44]
+@2000130 = ~Ajjj, mógł żeś te galernice uprzedzić, co?~ [6WBSHI46] ~Ajjj, mogła żeś chociaż te galernice uprzedzić, co?~ [6WBSHI47]
 @2000131 = ~*łyk* *łyk* *łyk* Ha... Chwilke.~
 @2000132 = ~*łyk* *łyk* Ha... Gotowa!~
 
 @2000300 = ~*czka* Ahoj, ty stary psie morski!~ [6WBSHI50]
 @2000301 = ~Czy my się znamy?~
-@2000302 = ~Znamy? Czy my sie znamy? Ha, lepij cobyś wiedział, wilku. *łyk* No i co? Jesteś tu taki, pindrzony jak ostatni szczór loudowy a te typy tam o bedo mówić, żeś jes Król Piratów, har har! To dobre!~ [6WBSHI52]
+@2000302 = ~Znamy? Czy my sie znamy? Ha, lepij cobyś wiedział, wilku. *łyk* No i co? Jesteś tu taki, pindrzony jak ostatni szczór loudowy. A te typy tam o bedo mówić, żeś jes Król Piratów, har har! To dobre!~ [6WBSHI52]
 @2000303 = ~Jesteś pijana, dziewczyno. Wyjdź stąd.~
-@2000304 = ~Cichooo! Cicho! Ty. Ty myślisz, że ty lepszy ode mie, ha? Huh! Siedzisz ty se w tym swoim śmiesznym biureczku, nosisz ty te swoje badechołzy. Ale. Ale! Ta galernica sie tak łatwo nie nabierze! Nie nie!~ [6WBSHI54]
+@2000304 = ~*czka* Cicho! Cicho! Ty. Ty myślisz, że ty lepszy ode mie, ha? Ha? Siedzisz ty se w tym swoim śmiesznym biureczku, nosisz ty te swoje badechołzy. Ale. Ale! Ta galernica sie tak łatwo nie nabierze! Nienienie! Nie!~ [6WBSHI54]
 @2000305 = ~Czy mógłbyś powiedzieć swojej przyjaciółce żeby przestała wylewać na mnie te pomyje?~ ~Czy mogłabyś powiedzieć swojej przyjaciółce żeby przestała wylewać na mnie te pomyje?~
-@2000306 = ~Pomyje? POMYJE?! No i patrzaj, nawet nie znasz ty takiego echcik grogu! Wiesz ty co? Wiesz ty co?~ [6WBSHI56]
-@2000307 = ~To ja bynde Królowo Piratów!~ [6WBSHI58]
+@2000306 = ~Pomyje? POMYJE?! *czka* No i patrzaj, nawet nie znasz ty takiego echcik grogu! Wiesz *czka* ty co? Wiesz ty co?~ [6WBSHI56]
+@2000307 = ~To ja! To ja bynde Królowo Piratów! *czka*~ [6WBSHI58]
 @2000308 = ~Tym kim będziesz to kolejną szaloną kobietą wtrąconą do przytułku. Wyjdź. Stąd. TERAZ.~
 @2000310 = ~Czy tak się zwracasz do swojej królowej?! Na kolana przed majestatem, głupcze!~
 @2000311 = ~Pragnę dodać, że ja jestem dzieckiem boga.~
@@ -97,50 +97,51 @@
 @2000321 = ~Oh, nie martw się. W Czarowięzach jest mnóstwo królowych i bogów. Zabierz mi ich wszystkich sprzed oczu. Na bogów, nowa jedwabna koszula, już poplamiona...~
 
 @2000400 = ~Moja przyjaciółka Shithri chciała z tobą pogadać.~
-@2000401 = ~Ahoj.~
+@2000401 = ~Ahoj.~ [6WBSHI60]
 @2000402 = ~Czy my się znamy?~
-@2000403 = ~*szczerzy się* Nie. Raczy nie. Ale to nieważne. Jezdem tu coby ci rzec dwie rzeczy.~
-@2000404 = ~Pierwsza. Jak by cie te wszystkie typy nie zwały - dla tej galernicy żaden z ciebie „król”. Nawet i za tysiouc lat nie uznam takiego pół-loudowego za swojego króla.~
-@2000405 = ~Druga. Ja, Shithri z Twerdzy Zentyla, zostane Królowo Piratów.~
-@2000406 = ~To je wszystko.~
+@2000403 = ~*szczerzy się* Nie. Raczy nie. Ale to nieważne. Jezdem tu coby ci rzec dwie rzeczy.~ [6WBSHI62]
+@2000404 = ~Piersza. Jak by cie te wszystkie typy nie zwały - dla tej galernicy żaden z ciebie „król”. Nawet i za tysiouc lat nie uznam takiego pół-loudowego za swojego króla.~ [6WBSHI64]
+@2000405 = ~Druga. Ja, Shithri z Twerdzy Zentyl, zostane Królowo Piratów.~ [6WBSHI66]
+@2000406 = ~To je wszystko.~ [6WBSHI68]
 @2000407 = ~Jestem pod umiarkowanym wrażeniem twoich usilnych prób mówienia czystym Wspólnym. Co do treści - myślisz, że ilu piratów już mi deklarowało dokładnie to samo? Nie dbam o to czy nazwiesz mnie „swoim królem”. Interesuje mnie tylko faktyczna władza.~
-@2000408 = ~Dlatego nigdy nie byndziesz królem.~
+@2000408 = ~Dlatego nigdy nie byndziesz królem.~ [6WBSHI70]
 @2000409 = ~Tylko po to tu przyszliście?~
 @2000410 = ~Tak. To wszystko.~
 
-@2000500 = ~Hej, kapitanie! Nie ma głupich.~
-@2000501 = ~Żeś obiecał tej galernicy pomóc coby pogadała z Królem Piratów. A my tera - w twoim wariatkowie.~ ~Żeś obiecała tej galernicy pomoc coby pogadała z Królem Piratów. A my tera - w twoim wariatkowie.~
+@2000500 = ~Hej, kapitanie! Nie ma głupich.~ [6WBSHI72]
+@2000501 = ~Żeś obiecał tej galernicy pomóc coby pogadała z Królem Piratów. A my tera - w twoim wariatkowie.~ [6WBSHI74] ~Żeś obiecała tej galernicy pomoc coby pogadała z Królem Piratów. A my tera - w twoim wariatkowie.~ [6WBSHI75]
 @2000502 = ~Cóż, zamierzałem później się wrócić...~ ~Cóż, zamierzałam później się wrócić...~
 @2000503 = ~Zakładam, że wiesz już, że jestem tu po Imoen. Nie wydaje ci się, że to ważniejsze niż twoja „sprawa” z Królem Piratów?~
 @2000504 = ~Jestem tu dla zemsty na Irenicusie. O ile ten Król Piratów nie torturował cię do granic szaleństwa - to wydaje mi się, że moja sprawa jest ważniejsza niż twoja.~
 @2000505 = ~Przepraszam. Tylko tyle mogę rzec.~
-@2000520 = ~To mogłeś mie czasu nie marnować, arrr. To se ide.~
+@2000520 = ~To mogłeś mie czasu nie marnować, arrr. To se ide.~ ~To mogłaś mie czasu nie marnować, arrr. To se ide.~
 @2000530 = ~No to rób se swojo sprawe, a ja - swojo. No to se ide.~
 @2000540 = ~A co mie to obchodzi? Ty rób se swojo sprawe, a ja swojo. No to se ide.~
 
-@2000700 = ~Hej, kompanie... ejże, jezdeś ty tam?~
-@2000701 = ~He? T-tso? Szyri? Har har, mordeeeczko! *czka* Moja ty pikna mordeeeczko!~
-@2000702 = ~Ej, weź ty sie w garść, kompanie! Nie miał żeś z tej wyspy wyleźć?~
-@2000710 = ~*czka* Z tym... tym... kapitanem twoim?~ ~*czka* Z tą... tą... twoją kapitan?~
-@2000711 = ~Ta! Wyłazisz stoud razem z nim i to galernico, nie?~ ~Ta! Wyłazisz stoud razem z nio i to galernico, nie?~
-@2000720 = ~*czka* Z tą... pikną, pikną elficką panią twoją?~
-@2000721 = ~Pół-elficką. I żadna „moja pani”. Jes tyko...~
-@2000722 = ~Tyko przyjaciółko.~
-@2000730 = ~*czka* Z tą... pikną, pikną elficką panią twoją?~
-@2000731 = ~*szczerzy się* ...pół-elficką.~
-@2000740 = ~zzzZZzzz...~
-@2000741 = ~Ejże, kompanie! Mój kompanie! Niech to... *łyk*~
+@2000700 = ~Hej, kompanie... ejże, jezdeś ty tam?~ [6WBSHI80]
+@2000701 = ~He? T-tso? Szyri? Har har! Mooordeczko! *czka* Moja ty pikna mordeczko!~ [6WBPIT80]
+@2000702 = ~Ej, weź ty sie w garść, kompanie! Nie miał żeś z tej wyspy wyleźć?~ [6WBSHI82]
+@2000710 = ~*czka* Z tym... tym... kapitanem twoim?~ [6WBPIT82] ~*czka* Z tą... tą... twoją kapitan?~ [6WBPIT83]
+@2000711 = ~Ta! Wyłazisz stoud razem z nim i to galernico, nie?~ [6WBSHI84]
+@2000712 = ~Ta! Wyłazisz stoud razem z nio i to galernico, nie?~ [6WBSHI85]
+@2000720 = ~*czka* Z tą... pikną, pikną elficką panią twoją?~ [6WBPIT84]
+@2000721 = ~Pół-elficką. I żadna „moja pani”. Jes tyko...~ [6WBSHI86]
+@2000722 = ~Tyko przyjaciółko.~ [6WBSHI88]
+@2000730 = ~*czka* Z tą... pikną, pikną elficką panią twoją?~ [6WBPIT86]
+@2000731 = ~*szczerzy się* ...pół-elficką.~ [6WBSHI90]
+@2000740 = ~zzzZZzzz...~ [6WBPIT88]
+@2000741 = ~Ejże, kompanie! Mój kompanie! Niech to... *łyk*~ [6WBSHI92]
 
-@2000800 = ~Ah, kapitan! Ahoj!~
+@2000800 = ~Ah, kapitan! Ahoj!~ [6WBSH100]
 @2000810 = ~...i twoja „pół-elficka pani”. Cześć.~
-@2000811 = ~*łyk* Mówiłam „przyjaciółka”.~
-@2000812 = ~Cóż. Dzień dobry, Neero.~
-@2000820 = ~No, kapitanie. Dotrzymał żeś słowa.~ ~No, kapitanie. Żeś dotrzymała słowa.~
+@2000811 = ~*łyk* Mówiłam „przyjaciółka”.~ [6WBSH102]
+@2000812 = ~Cóż. Dzień dobry, Neero.~ [6WBSH104]
+@2000820 = ~No, kapitanie. Dotrzymał żeś słowa.~ [6WBSH106] ~No, kapitanie. Żeś dotrzymała słowa.~ [6WBSH107]
 @2000821 = ~A jakże! Przyłącz się znów do mnie.~
 @2000822 = ~W zasadzie... chciałem się pożegnać.~ ~W zasadzie... chciałam się pożegnać.~
-@2000830 = ~Rozkaz, kapitanie! Chyntnie!~
-@2000831 = ~Ta, żem słyszała żeś tej bosmance fuche załatwił, har har. Dobrze kombinujesz.~ ~Ta, żem słyszała żeś tej bosmance fuche załatwiła, har har. Dobrze kombinujesz.~
-@2000840 = ~Huh. Jak se chcesz. *łyk*~
+@2000830 = ~Rozkaz, kapitanie! Chyntnie!~ [6WBSH108]
+@2000831 = ~Ta, żem słyszała żeś tej bosmance fuche załatwił, har har. Dobrze kombinujesz.~ [6WBSH110] ~Ta, żem słyszała żeś tej bosmance fuche załatwiła, har har. Dobrze kombinujesz.~ [6WBSH111]
+@2000840 = ~Huh. Jak se chcesz.~ [6WBSH112]
 @2000841 = ~Dzięki za postawienie sprawy jasno, <CHARNAME>. Właściwie dotrzymałeś słowa... tak jakby. No. To cześć!~ ~Dzięki za postawienie sprawy jasno, <CHARNAME>. Właściwie dotrzymałaś słowa... tak jakby. No. To cześć!~
 
 
@@ -160,7 +161,7 @@
 
 @3000000 = ~Nie masz pojęcia, jak często to słyszę. Oczywiście, że jesteś tu na leczeniu. W końcu mamy tu już wielu samozwańczych królów, królowych i bogów. Kiedyś nawet był tu jeden Elminster.~
 
-@3000100 = ~Hej, kompanie, posłuchaj no... Jak się nazywa ryba co ma ucha?~
+@3000100 = ~Hej, kompanie, posłuchaj no... Jak się nazywa ryba co ma ucha?~ ~Hej, kompanko, posłuchaj no... Jak się nazywa ryba co ma ucha?~
 @3000101 = ~Sam nie wiem, ale pewnikiem nie śledź! Har har, ależ z ciebie jest szczur lądowy!~
 @3000102 = ~Nie wiem, ale pewno nie śledź!~
 @3000103 = ~Har har! Widzę, żeś jes zacna galernica, kompanko!~

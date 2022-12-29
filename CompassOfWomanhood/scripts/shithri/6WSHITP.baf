@@ -53,8 +53,8 @@ END
 IF
   Global("6W#ShithriMoveToNeera","GLOBAL",1)
   !InMyArea("Neera")
-  //GlobalLT("OHN_ENTER_REFUGE","GLOBAL",2)
-  //Global("OHN_REFUGE_BURNED","GLOBAL",0)
+  GlobalLT("OHN_ENTER_REFUGE","GLOBAL",2)
+  Global("OHN_REFUGE_BURNED","GLOBAL",0)
 THEN
   RESPONSE #100
     SetInterrupt(FALSE)

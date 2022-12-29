@@ -251,14 +251,14 @@ PRINT "Copied %file_num% spell files"
 LAF HANDLE_AUDIO
   STR_VAR
     oggdec_path = ~CompassOfWomanhood/sounds~
-    audio_path  = ~CompassOfWomanhood/translations/%LANGUAGE%/sounds~
+    audio_path  = ~CompassOfWomanhood/translations/%LANGUAGE%/sounds/shithri~
 END
 */
 
 // US English is the base
 SILENT
 OUTER_SET file_num = 0
-ACTION_BASH_FOR ~CompassOfWomanhood/translations/en_US/sounds~ ~^B?6W.*\.wav$~
+ACTION_BASH_FOR ~CompassOfWomanhood/translations/en_US/sounds/shithri~ ~^B?6W.*\.wav$~
 BEGIN
   COPY ~%BASH_FOR_FILESPEC%~ ~override~
   OUTER_SET file_num += 1
@@ -270,7 +270,7 @@ ACTION_IF !(%LANGUAGE% STRING_EQUAL "en_US") THEN
 BEGIN
   SILENT
   OUTER_SET file_num = 0
-  ACTION_BASH_FOR ~CompassOfWomanhood/translations/%LANGUAGE%/sounds~ ~^B?6W.*\.wav$~
+  ACTION_BASH_FOR ~CompassOfWomanhood/translations/%LANGUAGE%/sounds/shithri~ ~^B?6W.*\.wav$~
   BEGIN
     COPY ~%BASH_FOR_FILESPEC%~ ~override~
     OUTER_SET file_num += 1

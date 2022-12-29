@@ -68,10 +68,22 @@ THEN
   RESPONSE #100
     SetInterrupt(FALSE)
     LeaveParty()
-    //TODO: handle it better? or is it good enough?
-    SetGLOBAL("KickedOut","LOCALS",1)
+    ChangeAIScript("6WNEERP",DEFAULT)
+    ActionOverride("6WSHITHRI", ChangeAIScript("6WSHITP",DEFAULT))
+    SetGlobal("KickedOut","LOCALS",1)
     EscapeAreaMove("AR0313",703,242,SW)
     SetInterrupt(TRUE)
+END
+
+
+// If Shithri re-joins, so does Neera.
+IF
+  Global("6W#ShithriNeeraRomanceActive","GLOBAL",2)
+  InParty("6W#SHITHRI")
+  !InParty(Myself)
+THEN
+  RESPONSE #100
+    JoinParty()
 END
 
 

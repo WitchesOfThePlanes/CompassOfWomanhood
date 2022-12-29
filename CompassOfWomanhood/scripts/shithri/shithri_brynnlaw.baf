@@ -4,6 +4,17 @@
 // Mainly initiating dialogues.
 //
 
+// Player went to Brynnlaw without her - mark it.
+IF
+  GlobalGT("Chapter","GLOBAL",4)
+  GlobalGT("6W#ShithriJoined","GLOBAL",0)
+  Global("6W#ShithriBrynnlaw","GLOBAL",0)
+  Global("6W#ShithriNahGotToBrynnlaw","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("6W#ShithriNahGotToBrynnlaw","GLOBAL",1)
+END
+
 
 //
 // Shithri is finally in Brynnlaw

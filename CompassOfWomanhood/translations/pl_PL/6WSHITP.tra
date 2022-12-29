@@ -20,10 +20,25 @@
 
 @1000100 = ~Ejże, co ty wyrabiasz? Ja nie żadna bandziora, se nie myśl!~
 
-@1000110 = ~Phi! Widze, że bandzior przylaz.~ ~Phi! Widze, że bandziora przylazła.~
+@1000110 = ~Phi! Widze, że bandzior przylaz.~ [6WSILEN] ~Phi! Widze, że bandziora przylazła.~ [6WSILEN]
 @1000112 = ~Cóż, chciałbym żebyś wróciła do drużyny.~ ~Cóż, chciałabym żebyś wróciła do drużyny.~
 @1000113 = ~Co powiesz na łyk lub dwa?~
 @1000114 = ~A co my tu mamy? Czyżby nicponiowata piracka „księżniczka”?~
 @1000120 = ~Har har, a to dobre! *łyk* Biznes jes biznes, ale ty to po prostu lubisz mordować.~
 @1000130 = ~Z takimi jak ty pić nie bynde, zbóju.~ ~Z takimi jak ty pić nie bynde, zbójnico.~
 @1000140 = ~Przynajmniej nie morderczyni bez kodeksu.~
+
+
+@1000200 = ~Phi! Widze, że kłamca przylaz.~ ~Phi! Widze, że kłamczucha przylazła.~ [6WSILEN]
+@1000201 = ~Co proszę?~
+@1000202 = ~Nigdy cię nie okłamałem, Shithri.~ ~Nigdy cię nie okłamałam, Shithri.~
+@1000203 = ~Cześć. Jak również: pa.~
+@1000210 = ~Masz te galernice za głupio, ha? Brynnlaw. „Rozdzielić, na razie”. Dzwoni ci co?~
+@1000212 = ~Dzwoni. Przepraszam, Shithri.~
+@1000213 = ~Masz na myśli, że ty nigdy o niczym nie zapominasz?~
+@1000214 = ~A ty mi UWIERZYŁAŚ? Łał. Po prostu łał.~
+@1000215 = ~Pojęcia nie mam.~
+@1000220 = ~A co mie to? Kłamco!~ ~A co mie to? Kłamczucho!~
+@2000230 = ~Chwacka galernica zawsze spłaca swoje długi. A takim jak ty nic nie wisi.~
+@2000240 = ~*wpatruje się* *łyk*~
+@2000250 = ~Nie tyko kłamca, ale i głupi. Har har. Co za kwindas...~ ~Nie tyko kłamczucha, ale i głupia. Har har. Co za kwindas...~

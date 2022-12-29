@@ -8,6 +8,7 @@ BEGIN 6WSHITP
 IF ~
   GLOBAL("KickedOut","LOCALS",0)
   HappinessGT(Myself,-290)
+  Global("6W#ShithriNahGotToBrynnlaw","GLOBAL",0)
 ~ THEN BEGIN kicked_out
   SAY @1000000 /* Ye heard one a shanty too many, yarrr? */
 
@@ -56,6 +57,7 @@ END
 IF ~
   GLOBAL("KickedOut","LOCALS",1)
   ReputationGT(Player1,1)
+  Global("6W#ShithriNahGotToBrynnlaw","GLOBAL",0)
 ~ THEN BEGIN rejoin_maybe
   SAY @1000030 /* Ahoy, capt'n! Care fer a draught? */
 
@@ -95,8 +97,9 @@ END
 IF ~
   GLOBAL("KickedOut","LOCALS",0)
   !HappinessGT(Myself,-290)
+  Global("6W#ShithriNahGotToBrynnlaw","GLOBAL",0)
 ~ THEN BEGIN kicked_out__unhappy
-  SAY @1000100 /* Ho, wha' ye think ye doin'? I nah be common thug, mind ye! */
+  SAY @1000100 /* Ho, wha' ye think ye doin'? I nah common thug, mind ye! */
 
   IF ~~ THEN
     DO ~
@@ -110,6 +113,7 @@ END
 IF ~
   GLOBAL("KickedOut","LOCALS",1)
   !ReputationGT(Player1,1)
+  Global("6W#ShithriNahGotToBrynnlaw","GLOBAL",0)
 ~ THEN BEGIN rejoin_unhappy
   SAY @1000110 /* Huh! I see the common thug <PRO_HIMHER>self arrived. */
 
@@ -137,4 +141,68 @@ END
 IF ~~ THEN BEGIN rejoin_unhappy__princess
   SAY @1000140 /* At least I nah be a murderer wit' no code o' conduct. *gulp* */
   IF ~~ THEN EXIT
+END
+
+
+//
+// When she joined, then unjoined and you went to Brynnlaw without her.
+//
+IF ~
+  GlobalGT("6W#ShithriNahGotToBrynnlaw","GLOBAL",0)
+~ THEN BEGIN rejoin_lied
+  SAY @1000200 /* Huh! I see the liar <PRO_HIMHER>self arrived. */
+
+  IF ~~ THEN
+    REPLY @1000201 /* Pardon? */
+    GOTO rejoin_lied__pardon
+  IF ~~ THEN
+    REPLY @1000202 /* I'm never lied to you, Shithri. */
+    GOTO rejoin_lied__pardon
+  IF ~~ THEN
+    REPLY @1000203 /* Hi. Also: bye. */
+    EXIT
+END
+
+IF ~~ THEN rejoin_lied__pardon
+  SAY @1000210 /* Ye think this bucko dumb, ain't ye? Brynnlaw. "Part ways fer now". Rings any bells? */
+
+  IF ~~ THEN
+    REPLY @1000212 /* It does. I'm sorry about that, Shithri. */
+    GOTO rejoin_lied__sorry
+
+  IF ~~ THEN
+    REPLY @1000213 /* You mean you never forget a thing? */
+    GOTO rejoin_lied__forget
+
+  IF ~~ THEN
+    REPLY @1000214 /* And you BELIEVED it? Wow. Just wow. */
+    GOTO rejoin_lied__haha
+
+  IF ~~ THEN
+    REPLY @1000215 /* Beats me. */
+    GOTO rejoin_lied__nah
+END
+
+IF ~~ THEN rejoin_lied__sorry
+  SAY @1000220 /* Why should I care? Liar! */
+  IF ~~ THEN
+    EXIT
+END
+
+IF ~~ THEN rejoin_lied__forget
+  SAY @2000230 /* A darin' bucko always pays 'er debts. 'n she owns nothin' t' ones like ye. */
+  IF ~~ THEN
+    EXIT
+END
+
+IF ~~ THEN rejoin_lied__haha
+  SAY @2000240 /* *stares* *gulp* */
+  IF ~~ THEN
+    EXIT
+END
+
+IF ~~ THEN rejoin_lied__nah
+  SAY @2000250 /* Nah jus' liar, but a dumb one at that. Har har. Wha' a swab... */
+  IF ~~ THEN
+    EXIT
 END

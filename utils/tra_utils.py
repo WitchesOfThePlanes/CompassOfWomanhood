@@ -131,6 +131,12 @@ class DFile(WeiduFile):
 
     def check_string_identifiers(self) -> None:
         idents = set(self.gather_string_identifiers())
+
+        # if the file contains no string identifiers,
+        # it doesn't require .tra files, as they would be empty anyway
+        if not idents:
+            return
+
         tra_files = self.get_tra_file_paths()
         for tra_file_path in tra_files:
             tra_dir = tra_file_path.parent.name

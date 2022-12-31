@@ -122,9 +122,9 @@ class DFile(WeiduFile):
                 tra_files_missing.append(tra_file)
 
         if tra_files_missing:
-            tra_files_missing_str = [
+            tra_files_missing_str = ''.join([
                 f'\n * {fname}' for fname in tra_files_missing
-            ]
+            ])
             raise RuntimeError(f"Missing translation files:{tra_files_missing_str}")
 
         return tra_files_found
@@ -169,7 +169,7 @@ def _get_whole_string(io: TextIO, line: str) -> str:
     return string
 
 def _get_ident_string(io: TextIO, line: Optional[str] = None) -> Optional[Tuple[str, str]]:
-    pat = re.compile('^(@[0-9]*) = ~')
+    pat = re.compile('^(@[0-9]*) *= *~')
 
     if line is None:
         line = io.readline()

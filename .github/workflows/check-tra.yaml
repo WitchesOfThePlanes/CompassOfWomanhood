@@ -1,4 +1,4 @@
-name: Build markdowns
+name: Check .tra files
 
 on:
   push:
@@ -25,9 +25,9 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install pytest
-        if [ -f ./utils/requirements.txt ]; then pip install -r ./utils/requirements.txt; fi
+        if [ -f ./ModUtils/requirements.txt ]; then pip install -r ./ModUtils/requirements.txt; fi
     - name: Test with pytest
       run: |
-        export PYTHONPATH="${PYTHONPATH}:$(pwd)/utils"
+        export PYTHONPATH="${PYTHONPATH}:$(pwd)/ModUtils"
         pytest
 

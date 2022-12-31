@@ -5,6 +5,10 @@ from typing import TextIO, Sequence, Mapping, Set, Tuple, List, Optional, Union,
 
 Self = TypeVar('Self')
 
+string_ident_pattern = re.compile('@[0-9]*')
+tra_entry_pattern = re.compile('(@[0-9]*) *=( *~[^~]*~( *\[([a-zA-Z0-9]*)\])?( *~[^~]*~( *\[([a-zA-Z0-9]*)\])?)?)')
+
+
 class WeiduFile:
     name: str
     path: Path
@@ -91,12 +95,11 @@ def _find_content(line: str, in_comment: bool, *, buf: Optional[List[str]] = Non
 
 class DFile(WeiduFile):
     def gather_string_identifiers(self) -> Sequence[str]:
-        pat = re.compile('@[0-9]*')
         all_idents = set()
         in_comment = False
         for line in self.io:
             content, in_comment = _find_content(line, in_comment)
-            idents = pat.findall(content)
+            idents = string_ident_pattern.findall(content)
             all_idents |= set(idents)
         all_idents_seq = list(all_idents)
         all_idents_seq.sort()
@@ -150,61 +153,16 @@ class DFile(WeiduFile):
                 ])
                 raise RuntimeError(f"Missing identifiers for file '{self.name}' in '{tra_dir}/{tra_file_path.name}': {missing_files_str}")
 
-
-def _get_whole_string(io: TextIO, line: str) -> str:
-    string_parts = []
-    where_end = line.find('~')
-    if where_end != -1:
-        string_parts.append(line[:where_end])
-    else:
-        string_parts.append(line)
-        while True: # do-until
-            line = io.readline()
-            if line == '':
-                break
-
-            where_end = line.find('~')
-            if where_end != -1:
-                new_part = line[:where_end]
-                string_parts.append(new_part)
-                break
-            else:
-                string_parts.append(line)
-
-    string = ''.join(string_parts)
-    return string
-
-def _get_ident_string(io: TextIO, line: Optional[str] = None) -> Optional[Tuple[str, str]]:
-    pat = re.compile('^(@[0-9]*) *= *~')
-
-    if line is None:
-        line = io.readline()
-    if line == '':
-        return None
-
-    match = pat.match(line)
-    if not match:
-        return None
-
-    ident = match.group(1)
-    rest_of_line = line[match.end() :]
-    string = _get_whole_string(io, rest_of_line)
-    return ident, string
-
 class TraFile(WeiduFile):
     def gather_strings(self) -> Mapping[str, str]:
         all_strings = {}
 
-        while True: # do-until
-            line = self.io.readline()
-            if line == '':
-                break
+        file_contents = self.io.read()
 
-            ident_string = _get_ident_string(self.io, line)
-            if ident_string is None:
-                continue
-            ident, string = ident_string
-            all_strings[ident] = string
+        for match in tra_entry_pattern.finditer(file_contents):
+            ident = match.group(1)
+            m_string = match.group(2)
+            all_strings[ident] = m_string
 
         all_strings_seq = list(all_strings.items())
         all_strings_seq.sort()

@@ -32,16 +32,26 @@ APPEND 6WSHITJ
       REPLY @1000002 /* Actually, I'm in a mood for a sea song. */
       GOTO 6WShithri_PlayerSeaSong_ok
 
-    //TODO: doesn't work, because WeiDU doesn't know the labels anymore
-    // at this point. Need to either have the two in the same file (meh)
-    // or make it two separate files in-game (huh?).
+    // Implementation Note:
+    // Couldn't just use the label, because WeiDU forgets the string labels
+    // after compiling the file. State numbers cannot be used either, because
+    // it's impossible to force the state number in APPEND statements.
+    // The only possibility would be to either put it all into a single file
+    // (srsly... with the same .tra namespace etc) or carefully craft
+    // it with the file order and APPEND_EARLY... which is very fragile.
+    //
+    // Both of those seem quite bad, so it seems fair to do a tiny hack here:
+    // the state isn't GOTO-ed to, it's calling Shithri to "call you back" with
+    // a triggering variable set.
     IF ~
       Global("6W#ShithriDrinksStart","GLOBAL",4)
-      Global("6W#ShithriDrinksActive","GLOBAL",1)
+      Global("6W#ShithriDrinksActive","GLOBAL",0)
     ~ THEN
       REPLY @1000005 /* About those "liqies" you've mentioned... */
-      //TODO: make it work somehow?
-      //GOTO 6W#shithri_drinks_start__1
+      DO ~
+        SetGlobal("6W#ShithriCallMeBack","GLOBAL",1)
+        SetGlobal("6W#ShithriDrinksAskedAboutStart","GLOBAL",1)
+      ~
       EXIT
 
     IF ~~ THEN

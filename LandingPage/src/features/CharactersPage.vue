@@ -1,17 +1,17 @@
 <template>
   <div
     id="characters"
-    class="d-flex flex-column align-center justify-center pa-10"
+    class="d-flex flex-column align-center justify-center py-10 mx-5"
   >
     <div :class="smAndUp && 'page'">
       <div data-aos="fade-up">
-        <h2 class="ma-5">
+        <h2 class="mt-16 mb-10">
           <SectionTitle>
             <img class="sword" :src="swordPng" />
             {{ $t("CHARACTERS.TITLE") }}
           </SectionTitle>
         </h2>
-        <div class="mb-10 mx-5">
+        <div class="mt-2 mb-10">
           {{ $t("CHARACTERS.INTRO") }}
         </div>
       </div>

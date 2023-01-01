@@ -1,11 +1,11 @@
 <template>
   <div
     id="about"
-    class="d-flex flex-column align-center justify-center py-10 about"
+    class="d-flex flex-column align-center justify-center py-10 about mx-5"
     :style="{ backgroundImage: `url(${bgImagePath})` }"
   >
     <div :class="smAndUp && 'page'">
-      <h2 class="mt-16 mb-10 mx-5">
+      <h2 class="mt-16 mb-10">
         <SectionTitle data-aos="fade-up">
           <img class="sword" :src="swordPng" />
           {{ $t("ABOUT.TITLE") }}
@@ -14,7 +14,7 @@
       <div
         data-aos="fade-up"
         data-aos-delay="500"
-        class="mt-2 mx-5"
+        class="mt-2"
         v-for="(item, index) in $tm('ABOUT.MOD')"
         :key="index"
       >

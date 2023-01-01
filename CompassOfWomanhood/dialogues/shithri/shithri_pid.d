@@ -161,7 +161,7 @@ APPEND 6WSHITJ
   END
 
   IF ~~ THEN 6WShithri_PlayerSeaSong_forest__mother_goddess
-    SAY @1000250 /* Aye. Me Godly Ma. But also bears'. Boars'. Wolves'. E'eryone's. */
+    SAY @1000250 /* Aye. Me Godly Ma. Mother t' all orcs. But also bears'. Boars'. Wolves'. E'eryone's. */
     IF ~
       !Class(Player1,CLERIC_ALL)
       !Race(Player1,HALFORC)

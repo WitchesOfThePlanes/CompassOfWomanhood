@@ -223,58 +223,189 @@ APPEND 6WSHITJ
 
   IF ~~ THEN 6WShithri_PlayerSeaSong_ok
     SAY @1000300 /* Aye aye, capt'n! Wha' be the song ye fancy? */
-    //TODO: implement
-    IF ~~ THEN
-      EXIT
 
     //IF ~~ THEN
     //  REPLY @1000301 /* Any at all would be fine. */
-    //  GOTO 6WShithri_PlayerSeaSong_
+    //  GOTO 6WShithri_PlayerSeaSong_any
 
-    //IF ~
-    //  Global("6W#banter_Shithri_Jan","GLOBAL",1)
-    //  Global("6W#tob_banter_Shithri_Jan","GLOBAL",0)
-    //~ THEN
-    //  REPLY @1000302 /* The one about Scratchy Jansen. */
-    //  GOTO 6WShithri_PlayerSeaSong_scratchy1
-    //IF ~
-    //  Global("6W#tob_banter_Shithri_Jan","GLOBAL",1)
-    //~ THEN
-    //  REPLY @1000302 /* The one about Scratchy Jansen. */
-    //  GOTO 6WShithri_PlayerSeaSong_scratchy2
+    IF ~
+      Global("6W#banter_Shithri_Jan","GLOBAL",1)
+      Global("6W#tob_banter_Shithri_Jan","GLOBAL",0)
+    ~ THEN
+      REPLY @1000302 /* The one about Scratchy Jansen. */
+      GOTO 6WShithri_PlayerSeaSong_scratchy1
+    IF ~
+      Global("6W#tob_banter_Shithri_Jan","GLOBAL",1)
+    ~ THEN
+      REPLY @1000302 /* The one about Scratchy Jansen. */
+      GOTO 6WShithri_PlayerSeaSong_scratchy2
 
-    //IF ~
-    //  Global("6W#banter_Shithri_Edwin","GLOBAL",1)
-    //~ THEN
-    //  REPLY @1000303 /* The one about a drunken wizard. */
-    //  GOTO 6WShithri_PlayerSeaSong_wizard
+    IF ~
+      GlobalGT("6W#banter_Shithri_Edwin","GLOBAL",0)
+    ~ THEN
+      REPLY @1000303 /* The one about a drunken wizard. */
+      GOTO 6WShithri_PlayerSeaSong_wizard
 
-    //IF ~
-    //  GlobalGT("6W#ShithriNeeraLoveTalk","GLOBAL",26)
-    //  Global("6W#ShithriNeeraRomanceActive","GLOBAL",2)
-    //  InParty("Neera")
-    //~
-    //  REPLY @1000304 /* The one about Cormyte ladies. */
-    //  GOTO 6WShithri_PlayerSeaSong_cormyte_ok
-    //IF ~
-    //  GlobalGT("6W#ShithriNeeraLoveTalk","GLOBAL",26)
-    //  OR(2)
-    //    Global("6W#ShithriNeeraRomanceActive","GLOBAL",3)
-    //    !InParty("Neera")
-    //~
-    //  REPLY @1000304 /* The one about Cormyte ladies. */
-    //  GOTO 6WShithri_PlayerSeaSong_cormyte_nah
+    IF ~
+      GlobalGT("6W#ShithriNeeraLoveTalk","GLOBAL",26)
+      Global("6W#ShithriNeeraRomanceActive","GLOBAL",2)
+      InParty("Neera")
+    ~
+      REPLY @1000304 /* The one about Cormyte ladies. */
+      GOTO 6WShithri_PlayerSeaSong_cormyte_ok
+    IF ~
+      GlobalGT("6W#ShithriNeeraLoveTalk","GLOBAL",26)
+      OR(2)
+        Global("6W#ShithriNeeraRomanceActive","GLOBAL",3)
+        !InParty("Neera")
+    ~
+      REPLY @1000304 /* The one about Cormyte ladies. */
+      GOTO 6WShithri_PlayerSeaSong_cormyte_nah
 
-    //IF ~~ THEN
-    //  REPLY @1000309 /* Nevermind. */
-    //  IF ~~ THEN
-    //    GOTO 6WShithri_PlayerSeaSong_shame
+    IF ~~ THEN
+      REPLY @1000390 /* Nevermind. */
+      GOTO 6WShithri_PlayerSeaSong_shame
   END
 
-  //IF ~~ THEN 6WShithri_PlayerSeaSong_shame
-  //  SAY @1000390 /* Shame. */
-  //  IF ~~ THEN EXIT
-  //END
+  IF ~~ THEN 6WShithri_PlayerSeaSong_scratchy1
+    SAY @1020000 /* O' Scratchy, ye say? Eh. 'is niece ain't be so fond o' it, but 'ere ye 'ave it: */
+    =
+    @1020001 /* "There once be a gnome that put t' field
+                 The name o' the gnome be Jansen Scratchy
+                 The sun shined hot, the rain poured down
+                 Oh come, me hungry boys, come (huh!)" */
+    =
+    @1020002 /* "Soon may the Jansen come
+                 T' bring us onions 'n leek 'n yam
+                 When turnip pickle be done
+                 He offer his price 'n sell!" */
+    IF ~~ THEN
+      EXIT
+  END
+
+  IF ~~ THEN 6WShithri_PlayerSeaSong_scratchy2
+    SAY @1020010 /* O' ol' Scratchy, ye say? Har har! 'ere it goes! */
+    =
+    @1020011 /* "Once Scratchy Jansen had some dirt
+                 In all yer sight the field will get
+                 And the day the soil was wet
+                 With the rain o' our sweat" */
+    =
+    @1020012 /* "Soon may be Scratchy back
+                 T' give each one an onion sack
+                 Turn turnip t' white from black
+                 Wit' gols his bag will clack" */
+    =
+    @1020013 /* "I know the onions really well
+                 O' countryman I be one hell
+                 The famine great on us once fell
+                 O'er waste the tears I quell" */
+    =
+    @1020014 /* "Soon may be Scratchy back
+                 T' give each one an onion sack
+                 Turn turnip t' white from black
+                 Wit' gols his bag will clack" */
+    =
+    @1020015 /* "'Wipe tears' Jan Jansen t' uncle say
+                 'Nah worry, here me plan I lay:
+                 I know an elf o'er the bay
+                 He buy turnip doubly paid'" */
+    =
+    @1020016 /* "Soon may be Scratchy back
+                 T' give each one an onion sack
+                 Turn turnip t' white from black
+                 Wit' gols his bag will clack" */
+    =
+    @1020017 /* "Soon more he got than ever lost
+                 'N turnip-famous he be most
+                 Now Scratchy's jacket be golden flossed
+                 For us - as bad as it was" */
+    =
+    @1020018 /* "Soon may be Scratchy back
+                 T' give each one an onion sack
+                 Turn turnip t' white from black
+                 Wit' gols his bag will clack" */
+    IF ~~ THEN
+      EXIT
+  END
+
+  IF ~~ THEN 6WShithri_PlayerSeaSong_wizard
+    SAY @1020100 /* Oh, ye in good mood, I see! */
+    =
+    @1020101 /* "What will we do wit' a drunken wizard
+                 What will we do wit' a drunken wizard
+                 What will we do wit' a drunken wizard
+                 When he is delirious?" */
+    =
+    @1020102 /* "Way hay and up she raises
+                 Way hay and up she raises
+                 Way hay and up she raises
+                 Riding Weave all serious! */
+    =
+    @1020103 /* "Shave 'is noggin wit' a rusty razor
+                 Shave 'is noggin wit' a rusty razor
+                 Shave 'is noggin wit' a rusty razor
+                 When he is delirious!" */
+    =
+    @1020104 /* "Way hay and up she raises
+                 Way hay and up she raises
+                 Way hay and up she raises
+                 Riding Weave all serious! */
+    IF ~~ THEN
+      EXIT
+  END
+END
+
+CHAIN 6WSHITJ 6WShithri_PlayerSeaSong_cormyte_ok
+  @1020200 /* Ho! The song o' the Thargate's sailors. Any time, capt'n. */
+  =
+  @1020201 /* "Farewell and shikhem, to you Cormyte ladies...
+               Farewell and shikhem, to ones of Suzail...
+               For we received orders to sail for Old Thargate
+               But we hope, very soon, we shall see you again!" */
+
+  BRANCH ~IsValidForDialog("Neera")~
+  BEGIN
+    == 6WSHITJ
+    @1020210 /* "The taste of your lips, of you, Cormyte ladies..." */
+    == NEERA
+    @1020211 /* "...In darkest of nights will bring us some smiles..." */
+    == 6WSHITJ
+    @1020212 /* "...Until we strike shallows in swamp river of Moon Sea
+                 Ylraphon to Elmwood in one hundred miles!" */
+    == NEERA
+    @1020215 /* Must make you remember the one with braided beard, does't it? */
+    == 6WSHITJ
+    @1020216 /* Nay. More into hair now. Loose hair. */
+    == NEERA
+    @1020217 /* Loose? And surely you didn't mean to name some specific color? Like... a VERY specific color? */
+    == 6WSHITJ
+    @1020218 /* *smirk* */
+  END
+
+  BRANCH ~!IsValidForDialog("Neera")~
+  BEGIN
+    == 6WSHITJ
+    @1020220 /* "The taste of your lips, of you, Cormyte ladies
+    In darkest of nights will bring us some smiles
+    Until we strike shallows in swamp river of Moon Sea
+    Ylraphon to Elmwood in one hundred miles!" */
+  END
+EXIT
+
+APPEND 6WSHITJ
+  IF ~~ THEN 6WShithri_PlayerSeaSong_cormyte_nah
+    SAY @1020250 /* *sigh* 'nother time, capt'n. 'nother time. */
+    IF ~~ THEN
+      EXIT
+  END
+
+
+  IF ~~ THEN 6WShithri_PlayerSeaSong_shame
+    SAY @1000391 /* Shame. */
+    IF ~~ THEN
+      EXIT
+  END
 
 
   //

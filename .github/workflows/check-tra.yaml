@@ -28,6 +28,6 @@ jobs:
         if [ -f ./ModUtils/requirements.txt ]; then pip install -r ./ModUtils/requirements.txt; fi
     - name: Test with pytest
       run: |
-        export PYTHONPATH="${PYTHONPATH}:$(pwd)/ModUtils"
+        export PYTHONPATH="${PYTHONPATH}:$(pwd)/ModTools"
         pytest
 

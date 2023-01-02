@@ -540,6 +540,13 @@ COPY ~CompassOfWomanhood/items/shithri/_6WBAN02.ITM~ ~override~
   SAY IDENTIFIED_DESC   @63
 OUTER_SET file_num += 1
 
+// Shithri's drink
+COPY ~CompassOfWomanhood/items/shithri/_6WDRINK.itm~ ~override~
+  SAY NAME1 @70
+  SAY NAME2 @71
+  SAY UNIDENTIFIED_DESC @72
+OUTER_SET file_num += 1
+
 // liquors
 // (mapping two-digit midfix to string number)
 //TODO: icons

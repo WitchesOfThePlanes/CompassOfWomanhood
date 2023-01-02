@@ -300,7 +300,7 @@ ACTION_FOR_EACH cre_file IN ~6WSHIT08~ ~6WSHIT09~ ~6WSHIT10~ ~6WSHIT11~ ~6WSHIT1
 BEGIN
   COPY ~CompassOfWomanhood/creatures/shithri/%cre_file%.cre~ ~override~
     WRITE_LONG NAME1 %6W_SHITHRI_NAME%
-    SAY NAME2 @11
+    WRITE_LONG NAME2 %6W_SHITHRI_NAME%
     SAY BIO   @12
   
     SAY HAPPY                  @100 /* Ho! 'tis the hearties I be lookin' fer! */

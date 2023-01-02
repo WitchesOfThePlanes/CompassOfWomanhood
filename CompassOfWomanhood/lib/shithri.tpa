@@ -132,7 +132,7 @@ APPEND ~npclevel.2da~
 OUTER_SET file_num += 1
 
 APPEND ~npclvl25.2da~
-  ~Shithri    6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08  6Wshit086 Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08  6Wshit08 6Wshit08 6Wshit08 6Wshit08 6Wshit08 6Wshit08 6Wshit08~
+  ~6WSHITHRI    6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08  6Wshit086 Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08  6Wshit08 6Wshit08 6Wshit08 6Wshit08 6Wshit08 6Wshit08 6Wshit08~
   UNLESS ~6WSHITHRI~
 OUTER_SET file_num += 1
 
@@ -294,10 +294,12 @@ SILENT
 OUTER_SET file_num = 0
 OUTER_SET file_edited_num = 0
 
+OUTER_SET 6W_SHITHRI_NAME = RESOLVE_STR_REF(@10)
+
 ACTION_FOR_EACH cre_file IN ~6WSHIT08~ ~6WSHIT09~ ~6WSHIT10~ ~6WSHIT11~ ~6WSHIT13~ ~6WSHIT15~ ~6WSHIT25~
 BEGIN
   COPY ~CompassOfWomanhood/creatures/shithri/%cre_file%.cre~ ~override~
-    SAY NAME1 @10
+    WRITE_LONG NAME1 %6W_SHITHRI_NAME%
     SAY NAME2 @11
     SAY BIO   @12
   
@@ -546,6 +548,11 @@ COPY ~CompassOfWomanhood/items/shithri/_6WDRINK.itm~ ~override~
   SAY NAME2 @71
   SAY UNIDENTIFIED_DESC @72
 OUTER_SET file_num += 1
+
+OUTER_SET 6W_SHITHRI_DRINK_REMOVE = RESOLVE_STR_REF(@75)
+APPEND item_use.2da
+  ~_6WDRINK 6WSHITHRI %6W_SHITHRI_DRINK_REMOVE% 3 %6W_SHITHRI_NAME%~
+  UNLESS ~_6WDRINK~
 
 // liquors
 // (mapping two-digit midfix to string number)

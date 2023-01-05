@@ -1,25 +1,31 @@
 <template>
   <div
-    class="d-md-flex w-100 align-center justify-center pa-6"
+    class="d-md-flex align-center justify-center my-6"
     :class="props.layout === 'left' ? 'flex-row' : 'flex-row-reverse'"
   >
     <div class="text-center">
       <img
-        class="character-image"
+        class="character-image mx-md-16"
         :src="props.characterName === 'CALY' ? imgCaly : imgShithri"
         :alt="`${props.characterName}-portait`"
       />
     </div>
     <div
-      class="d-flex align-start justify-center flex-column pa-md-6 text-left"
+      class="d-flex align-start justify-center flex-column mx-md-16 text-left"
     >
       <h2 class="character-name mt-5">
         {{ $t(`CHARACTERS.${props.characterName}.NAME`) }}
       </h2>
-      <div
-        class="mt-5"
-        v-html="$t(`CHARACTERS.${props.characterName}.INTRO`)"
-      />
+
+      <div class="mt-5 details-description">
+        <div v-html="$t(`CHARACTERS.${props.characterName}.INTRO`)" />
+        <div
+          v-if="$te(`CHARACTERS.${props.characterName}.STATUS`)"
+          class="mt-5 font-weight-thin"
+        >
+          {{ $t(`CHARACTERS.${props.characterName}.STATUS`) }}
+        </div>
+      </div>
       <div v-if="$te(`CHARACTERS.${props.characterName}.FEATURES`)">
         <v-btn
           rounded="pill"
@@ -55,7 +61,7 @@
                 rounded="pill"
                 color="secondary"
                 variant="outlined"
-                class="ma-5 text-lowercase font-weight-light"
+                class="mx-5 text-lowercase font-weight-light"
                 @click="dialog = false"
               >
                 {{ $t("CHARACTERS.BUTTONS.CLOSE") }}</v-btn
@@ -63,12 +69,6 @@
             </v-card-actions>
           </v-card>
         </v-dialog>
-      </div>
-      <div
-        v-if="$te(`CHARACTERS.${props.characterName}.STATUS`)"
-        class="mt-5 font-weight-thin"
-      >
-        {{ $t(`CHARACTERS.${props.characterName}.STATUS`) }}
       </div>
     </div>
   </div>
@@ -95,10 +95,16 @@ const dialog = ref(false);
   width: 300px;
 }
 .character-name {
-  font-size: 5vw;
-  font-weight: bold;
+  font-size: 64px;
+  font-weight: 600;
 }
 .details-dialog {
   background: #14162a;
+}
+
+@media (min-width: 900px) {
+  .details-description {
+    width: 400px;
+  }
 }
 </style>

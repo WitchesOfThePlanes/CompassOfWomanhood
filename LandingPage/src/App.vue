@@ -6,24 +6,28 @@
         <IntroPage />
         <AboutPage v-intersect="intersect('about')" />
         <CharactersPage v-intersect="intersect('characters')" />
+        <TeamPage v-intersect="intersect('team')" />
       </div>
     </v-main>
     <NavMenu :active-section="intersectedSection" v-if="smAndUp" />
     <MobileNavMenu v-else />
     <AppFooter />
+    <AppLoader />
   </v-app>
 </template>
 
 <script setup lang="ts">
 import { useDisplay } from "vuetify";
+import { ref } from "vue";
 import NavMenu from "@/components/NavMenu.vue";
 import MobileNavMenu from "@/components/MobileNavMenu.vue";
 import HeroPage from "@/features/HeroPage.vue";
 import AboutPage from "@/features/AboutPage.vue";
 import CharactersPage from "@/features/CharactersPage.vue";
 import AppFooter from "@/components/AppFooter.vue";
-import { ref } from "vue";
 import IntroPage from "@/features/IntroPage.vue";
+import TeamPage from "@/features/TeamPage.vue";
+import AppLoader from "@/components/AppLoader.vue";
 
 const { smAndUp } = useDisplay();
 
@@ -59,6 +63,11 @@ h6 {
 html,
 body {
   font-size: 14px;
+}
+
+a {
+  color: #96c3ea;
+  text-decoration: none;
 }
 
 .main {

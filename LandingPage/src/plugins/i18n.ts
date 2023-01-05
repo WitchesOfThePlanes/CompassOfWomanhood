@@ -1,6 +1,6 @@
 import { createI18n } from "vue-i18n";
-import en_US from "@/assets/en_US.json";
-import pl_PL from "@/assets/pl_PL.json";
+import en_US from "@/assets/locale/en_US.json";
+import pl_PL from "@/assets/locale/pl_PL.json";
 
 const messages = {
   en_US: en_US,

@@ -41,10 +41,7 @@
       {{ $t("MENU.TEAM") }}
     </v-btn>
     <v-btn variant="text" icon="fa:fab fa-facebook" class="mt-10 pa-2" />
-    <v-btn variant="text" icon="fa:fab fa-youtube" class="pa-2" />
-    <v-btn variant="text" icon="fa:fab fa-twitter" class="pa-2" />
     <v-btn variant="text" icon="fa:fab fa-instagram" class="pa-2" />
-    <v-btn variant="text" icon="fa:fab fa-tiktok" class="pa-2" />
     <v-btn
       variant="text"
       icon="fa:fab fa-github"
@@ -52,12 +49,14 @@
       :href="ghLink"
       target="_blank"
     />
+    <v-btn variant="text" icon="fa:fab fa-discord" class="pa-2" />
+    <v-btn variant="text" icon="fa:fab fa-mastodon" class="pa-2" />
   </v-btn-toggle>
 </template>
 
 <script setup lang="ts">
 import { i18n } from "@/plugins/i18n";
-import { useScrollTo } from "@/composables/scroll-to";
+import { useScrollTo } from "@/utils/scroll-to.composable";
 import { ref, watch } from "vue";
 
 interface INavMenuProps {

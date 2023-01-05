@@ -1,42 +1,30 @@
 <template>
   <div
-    id="characters"
-    class="d-flex flex-column align-center justify-center py-10 mx-6"
+    id="team"
+    class="d-flex flex-column align-center justify-center py-10 mx-5 team"
+    :style="{ backgroundImage: `url(${bgImagePath})` }"
   >
     <div :class="smAndUp && 'page'">
       <div data-aos="fade-up">
         <h2 class="mt-16 mb-10">
           <SectionTitle>
             <img class="sword" :src="swordPng" />
-            {{ $t("CHARACTERS.TITLE") }}
+            {{ $t("TEAM.TITLE") }}
           </SectionTitle>
         </h2>
-        <div class="mt-2 mb-10">
-          {{ $t("CHARACTERS.INTRO") }}
-        </div>
+        <TeamContent />
       </div>
-      <CharacterDetails
-        data-aos="fade-up"
-        data-aos-delay="500"
-        character-name="SHITHRI"
-        layout="left"
-      />
-      <CharacterDetails
-        data-aos-delay="1000"
-        data-aos="fade-up"
-        character-name="CALY"
-        layout="right"
-      />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import bgImagePath from "@/assets/section-bg.png";
 import swordPng from "@/assets/Sword.png";
 
 import { useDisplay } from "vuetify";
-import CharacterDetails from "@/components/CharacterDetails.vue";
 import SectionTitle from "@/components/SectionTitle.vue";
+import TeamContent from "@/components/TeamContent.vue";
 
 const { smAndUp } = useDisplay();
 </script>
@@ -44,6 +32,10 @@ const { smAndUp } = useDisplay();
 <style scoped>
 .page {
   width: 60vw;
+}
+.team {
+  background-position: center center;
+  background-size: contain;
 }
 .sword {
   margin-right: 16px;

@@ -6,6 +6,7 @@
         <IntroPage />
         <AboutPage v-intersect="intersect('about')" />
         <CharactersPage v-intersect="intersect('characters')" />
+        <TeamPage v-intersect="intersect('team')" />
       </div>
     </v-main>
     <NavMenu :active-section="intersectedSection" v-if="smAndUp" />
@@ -24,6 +25,7 @@ import CharactersPage from "@/features/CharactersPage.vue";
 import AppFooter from "@/components/AppFooter.vue";
 import { ref } from "vue";
 import IntroPage from "@/features/IntroPage.vue";
+import TeamPage from "@/features/TeamPage.vue";
 
 const { smAndUp } = useDisplay();
 
@@ -59,6 +61,11 @@ h6 {
 html,
 body {
   font-size: 14px;
+}
+
+a {
+  color: #96c3ea;
+  text-decoration: none;
 }
 
 .main {

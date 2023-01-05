@@ -57,7 +57,7 @@
 
 <script setup lang="ts">
 import { i18n } from "@/plugins/i18n";
-import { useScrollTo } from "@/composables/scroll-to";
+import { useScrollTo } from "@/utils/scroll-to.composable";
 import { ref, watch } from "vue";
 
 interface INavMenuProps {

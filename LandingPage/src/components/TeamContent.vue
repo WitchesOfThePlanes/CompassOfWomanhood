@@ -12,11 +12,16 @@ const content = useTeamContent();
 
 <style lang="scss">
 .external {
+  margin: 0 24px;
   h2 {
     display: none;
   }
-  p {
-    margin-top: 10px;
+  ul {
+    margin-top: 12px;
+    margin-bottom: 24px;
+  }
+  li {
+    margin-left: 24px;
   }
 }
 </style>

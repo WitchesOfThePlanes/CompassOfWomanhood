@@ -1,7 +1,7 @@
 <template>
   <div
     id="characters"
-    class="d-flex flex-column align-center justify-center py-10 mx-5"
+    class="d-flex flex-column align-center justify-center py-10 mx-6"
   >
     <div :class="smAndUp && 'page'">
       <div data-aos="fade-up">

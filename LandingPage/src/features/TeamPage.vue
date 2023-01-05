@@ -1,7 +1,7 @@
 <template>
   <div
-    id="characters"
-    class="d-flex flex-column align-center justify-center py-10 mx-5"
+    id="team"
+    class="d-flex flex-column align-center justify-center py-10 mx-5 team"
     :style="{ backgroundImage: `url(${bgImagePath})` }"
   >
     <div :class="smAndUp && 'page'">
@@ -32,6 +32,10 @@ const { smAndUp } = useDisplay();
 <style scoped>
 .page {
   width: 60vw;
+}
+.team {
+  background-position: center center;
+  background-size: contain;
 }
 .sword {
   margin-right: 16px;

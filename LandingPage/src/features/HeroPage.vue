@@ -3,7 +3,7 @@
     class="h-screen d-flex flex-column justify-center home"
     :style="{ backgroundImage: `url(${bgImagePath})` }"
   >
-    <div class="w-50">
+    <div class="homepage">
       <div class="d-flex align-center justify-center flex-row pa-6">
         <header
           data-aos="fade-up"
@@ -29,7 +29,7 @@
           rounded="pill"
           color="secondary"
           variant="outlined"
-          class="mx-8 mt-16 text-lowercase font-weight-light"
+          class="mx-8 mt-md-16 mt-6 mb-16 text-lowercase font-weight-light"
           @click="scrollTo('intro')"
         >
           <span class="d-flex align-center">
@@ -54,9 +54,26 @@ const { scrollTo } = useScrollTo();
 
 <style scoped>
 .home {
-  background-color: #00000b;
-  background-position: center right 100px;
-  background-size: 60%;
+  background-position: 50% 60%, center center;
+  background-size: auto 50%;
+}
+.homepage {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media (min-width: 960px) {
+  .homepage {
+    display: block;
+    width: 50%;
+    height: auto;
+  }
+  .home {
+    background-position: center right 100px;
+    background-size: 60%;
+  }
 }
 .logo {
   max-width: 90vw;

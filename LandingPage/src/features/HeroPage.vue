@@ -29,7 +29,7 @@
           rounded="pill"
           color="secondary"
           variant="outlined"
-          class="mx-8 mt-md-16 mt-6 mb-16 text-lowercase font-weight-light"
+          class="mx-8 mt-md-10 mt-6 mb-16 text-lowercase font-weight-light"
           @click="scrollTo('intro')"
         >
           <span class="d-flex align-center">

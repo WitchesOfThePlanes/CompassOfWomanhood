@@ -15,42 +15,26 @@
     </v-btn>
 
     <v-btn
+      v-for="link in linksConfig"
+      :key="link.id"
       class="button pa-2"
       selected-class="active"
-      value="about"
+      :value="link.id"
       variant="plain"
-      @click="goToMenu('about')"
+      @click="goToMenu(link.id)"
     >
-      {{ $t("MENU.ABOUT") }}
+      {{ $t(link.content) }}
     </v-btn>
+    <span class="breaker mt-10" />
     <v-btn
-      class="button pa-2"
-      selected-class="active"
-      variant="plain"
-      value="characters"
-      @click="goToMenu('characters')"
-      >{{ $t("MENU.CHARACTERS") }}
-    </v-btn>
-    <v-btn
-      value="team"
-      @click="goToMenu('team')"
-      selected-class="active"
-      class="button pa-2"
-      variant="plain"
-    >
-      {{ $t("MENU.TEAM") }}
-    </v-btn>
-    <v-btn variant="text" icon="fa:fab fa-facebook" class="mt-10 pa-2" />
-    <v-btn variant="text" icon="fa:fab fa-instagram" class="pa-2" />
-    <v-btn
+      v-for="social in socialLinksConfig"
+      :key="social.id"
       variant="text"
-      icon="fa:fab fa-github"
+      :icon="`fa:fab fa-${social.id}`"
       class="pa-2"
-      :href="ghLink"
+      :href="social.link"
       target="_blank"
     />
-    <v-btn variant="text" icon="fa:fab fa-discord" class="pa-2" />
-    <v-btn variant="text" icon="fa:fab fa-mastodon" class="pa-2" />
   </v-btn-toggle>
 </template>
 
@@ -58,6 +42,8 @@
 import { i18n } from "@/plugins/i18n";
 import { useScrollTo } from "@/utils/scroll-to.composable";
 import { ref, watch } from "vue";
+
+import { linksConfig, socialLinksConfig } from "./links.config";
 
 interface INavMenuProps {
   activeSection?: string;
@@ -68,8 +54,6 @@ const activeSection = ref();
 const emit = defineEmits(["close-mobile-menu"]);
 
 const { scrollTo } = useScrollTo();
-
-const ghLink = import.meta.env.VITE_APP_GH_LINK;
 
 const goToMenu = (section: string) => {
   emit("close-mobile-menu");

@@ -1,12 +1,12 @@
 <template>
   <v-app>
     <v-main>
-      <HeroPage v-intersect="intersect('home')" />
+      <HeroPage v-intersect="intersect(MENU_ITEM.HOME)" />
       <div class="main">
         <IntroPage />
-        <AboutPage v-intersect="intersect('about')" />
-        <CharactersPage v-intersect="intersect('characters')" />
-        <TeamPage v-intersect="intersect('team')" />
+        <AboutPage v-intersect="intersect(MENU_ITEM.ABOUT)" />
+        <CharactersPage v-intersect="intersect(MENU_ITEM.CHARACTERS)" />
+        <TeamPage v-intersect="intersect(MENU_ITEM.TEAM)" />
       </div>
     </v-main>
     <NavMenu :active-section="intersectedSection" v-if="smAndUp" />
@@ -19,8 +19,8 @@
 <script setup lang="ts">
 import { useDisplay } from "vuetify";
 import { ref } from "vue";
-import NavMenu from "@/components/NavMenu.vue";
-import MobileNavMenu from "@/components/MobileNavMenu.vue";
+import NavMenu from "@/components/menu/NavMenu.vue";
+import MobileNavMenu from "@/components/menu/MobileNavMenu.vue";
 import HeroPage from "@/features/HeroPage.vue";
 import AboutPage from "@/features/AboutPage.vue";
 import CharactersPage from "@/features/CharactersPage.vue";
@@ -28,6 +28,7 @@ import AppFooter from "@/components/AppFooter.vue";
 import IntroPage from "@/features/IntroPage.vue";
 import TeamPage from "@/features/TeamPage.vue";
 import AppLoader from "@/components/AppLoader.vue";
+import { MENU_ITEM } from "@/components/menu/links.config";
 
 const { smAndUp } = useDisplay();
 

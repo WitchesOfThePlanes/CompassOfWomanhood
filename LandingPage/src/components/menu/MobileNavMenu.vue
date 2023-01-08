@@ -23,7 +23,7 @@
 
 <script setup lang="ts">
 import { reactive } from "vue";
-import NavMenu from "@/components/NavMenu.vue";
+import NavMenu from "@/components/menu/NavMenu.vue";
 
 const state = reactive({ mobileMenuOpen: false });
 </script>

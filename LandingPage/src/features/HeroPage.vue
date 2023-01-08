@@ -13,9 +13,6 @@
           <h1 class="align-self-center font-weight-medium text-center">
             <img class="logo" :src="logoImagePath" alt="logo" />
           </h1>
-          <h4 class="align-self-end text-right subtitle">
-            {{ $t("HERO.SUBTITLE") }}
-          </h4>
         </header>
       </div>
       <div

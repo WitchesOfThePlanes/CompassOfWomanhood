@@ -39,6 +39,29 @@
           {{ $t(link.content) }}
         </v-list-item>
       </div>
+
+      <div class="px-12">
+        <v-btn-toggle v-model="$i18n.locale" rounded="xl" mandatory divided>
+          <v-btn
+            class="menu-label"
+            selected-class="menu-label-active"
+            variant="outlined"
+          >
+            Language:
+          </v-btn>
+          <v-btn
+            selected-class="active"
+            variant="outlined"
+            size="large"
+            v-for="locale in $i18n.availableLocales"
+            :key="`locale-${locale}`"
+            :value="locale"
+            @click="changeLocale(locale)"
+          >
+            {{ locale.split("_")[0] }}
+          </v-btn>
+        </v-btn-toggle>
+      </div>
     </div>
   </div>
 </template>
@@ -49,8 +72,9 @@ import { reactive } from "vue";
 import bgImagePath from "@/assets/home-bg.svg?url";
 import { linksConfig, socialLinksConfig, MENU_ITEM } from "./links.config";
 import { useScrollTo } from "@/utils/scroll-to.composable";
+import { i18n } from "@/plugins/i18n";
 
-const state = reactive({ mobileMenuOpen: false });
+const state = reactive({ mobileMenuOpen: false, langMenu: false });
 const { scrollTo } = useScrollTo();
 
 const openMenu = () => (state.mobileMenuOpen = true);
@@ -59,6 +83,10 @@ const closeMenu = () => (state.mobileMenuOpen = false);
 const goToMenu = (section: string) => {
   scrollTo(section);
   closeMenu();
+};
+
+const changeLocale = (locale: string) => {
+  i18n.global.locale = locale as typeof i18n.global.locale;
 };
 </script>
 
@@ -85,11 +113,21 @@ const goToMenu = (section: string) => {
   position: relative;
 }
 .button {
-  font-family: "Alexandria";
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 39px;
   text-transform: uppercase;
+}
+
+.active {
+  font-weight: 500;
+  color: #f9b24b;
+}
+.menu-label {
+  pointer-events: none;
+}
+.menu-label-active {
+  background-color: transparent;
 }
 </style>

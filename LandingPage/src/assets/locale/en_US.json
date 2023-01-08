@@ -1,5 +1,6 @@
 {
   "MENU": {
+    "HOME": "home",
     "ABOUT": "about",
     "CHARACTERS": "companions",
     "TEAM": "team"

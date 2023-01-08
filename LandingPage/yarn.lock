@@ -1869,10 +1869,10 @@ vite-plugin-eslint@^1.8.1:
     "@types/eslint" "^8.4.5"
     rollup "^2.77.2"
 
-vite-plugin-vuetify@^1.0.0-alpha.12:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/vite-plugin-vuetify/-/vite-plugin-vuetify-1.0.0.tgz#41139404d8be584debcc2582b5e015681aa5539e"
-  integrity sha512-30+W6H//wjOegKCha4wQ3IS+JyXDE6IayL5cK5S4IrM7WIceV/WitnxljbPZHER+Jyl3BGIuYV6nofjMOfRO1g==
+vite-plugin-vuetify@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/vite-plugin-vuetify/-/vite-plugin-vuetify-1.0.1.tgz#dcdf78f804c0cc6c7ff90087fe2e8766598ce112"
+  integrity sha512-/xHsIDuHxq7f6fDqCBYxNascLhDi+X8dV3RzTwmo4mGPrSnGq9pHv8wJsXBIQIT3nY8s16V0lmd6sXMjm0F8wg==
   dependencies:
     "@vuetify/loader-shared" "^1.7.0"
     debug "^4.3.3"
@@ -1964,10 +1964,10 @@ vue@^3.2.38:
     "@vue/server-renderer" "3.2.45"
     "@vue/shared" "3.2.45"
 
-vuetify@^3.0.0:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-3.0.1.tgz#f64454b79cf11dc0d8d5a69f1ba258e8b34f183e"
-  integrity sha512-Vl4wYB4mCm6GFK6Q9KZDK+HM3YKI7md7BoUPwbgqZj4bkofjQ/8NVSRQQpTcwk0YoQrgw6qj0QaOtP5zitkS1Q==
+vuetify@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-3.1.0.tgz#e92b4d8414c106b3474813ace157ee1101f87d60"
+  integrity sha512-v0+5eNq4GPXGcJ0F2dwJDbQOhuZhEgoiUDWHXqgWJixzc9mzwt+4nSmPz0vYPYl9oC3UFf3Se+vh0xNoRjv4Ig==
 
 webfontloader@^1.0.0:
   version "1.6.28"

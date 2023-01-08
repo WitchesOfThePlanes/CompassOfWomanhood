@@ -1,5 +1,6 @@
 <template>
   <div
+    id="home"
     class="h-screen d-flex flex-column justify-center home"
     :style="{ backgroundImage: `url(${bgImagePath})` }"
   >

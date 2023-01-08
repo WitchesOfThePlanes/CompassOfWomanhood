@@ -51,19 +51,15 @@ interface INavMenuProps {
 
 const props = defineProps<INavMenuProps>();
 const activeSection = ref();
-const emit = defineEmits(["close-mobile-menu"]);
-
 const { scrollTo } = useScrollTo();
 
 const goToMenu = (section: string) => {
-  emit("close-mobile-menu");
   scrollTo(section);
   activeSection.value = section;
 };
 
 const changeLocale = (locale: string) => {
   i18n.global.locale = locale as typeof i18n.global.locale;
-  emit("close-mobile-menu");
 };
 
 watch(

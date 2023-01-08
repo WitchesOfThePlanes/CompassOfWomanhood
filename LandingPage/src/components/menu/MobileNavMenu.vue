@@ -20,7 +20,7 @@
       <div class="menu-buttons d-flex flex-column justify-space-around">
         <v-btn-toggle
           v-model="activeSection"
-          class="h-50 d-flex flex-column justify-start align-start px-6 py-12"
+          class="h-50 d-flex flex-column justify-start align-start px-6 py-sm-8 py-4"
         >
           <v-btn
             class="button pa-2"

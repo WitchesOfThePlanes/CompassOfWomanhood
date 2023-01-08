@@ -3,11 +3,11 @@ import { MENU_ITEM } from "@/components/menu/links.config";
 
 interface IIntersectReturns {
   intersect: (name: MENU_ITEM) => void;
-  intersectedSection: Ref<MENU_ITEM | null>;
+  intersectedSection: Ref<MENU_ITEM | undefined>;
 }
 
 export const useIntersect = (): IIntersectReturns => {
-  const intersectedSection = ref<MENU_ITEM | null>(null);
+  const intersectedSection = ref<MENU_ITEM | undefined>();
 
   const intersect = (name: MENU_ITEM) => ({
     handler: onIntersect(name),

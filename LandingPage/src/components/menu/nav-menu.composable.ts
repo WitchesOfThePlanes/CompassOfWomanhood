@@ -1,11 +1,12 @@
 import { Ref, ref, watch } from "vue";
+import { MENU_ITEM } from "@/components/menu/links.config";
 
 export type INavMenuProps = {
   activeSection?: string;
 };
 
 export interface INavMenuReturns {
-  activeSection: Ref<string | undefined>;
+  activeSection: Ref<MENU_ITEM | undefined>;
   setActiveSection: (section: string) => void;
 }
 

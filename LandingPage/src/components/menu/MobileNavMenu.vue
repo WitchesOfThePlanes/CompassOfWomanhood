@@ -43,13 +43,6 @@
       <div class="px-12">
         <v-btn-toggle v-model="$i18n.locale" rounded="xl" mandatory divided>
           <v-btn
-            class="menu-label"
-            selected-class="menu-label-active"
-            variant="outlined"
-          >
-            Language:
-          </v-btn>
-          <v-btn
             selected-class="active"
             variant="outlined"
             size="large"

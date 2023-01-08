@@ -41,35 +41,23 @@
 <script setup lang="ts">
 import { i18n } from "@/plugins/i18n";
 import { useScrollTo } from "@/utils/scroll-to.composable";
-import { ref, watch } from "vue";
 
 import { linksConfig, socialLinksConfig } from "./links.config";
-
-interface INavMenuProps {
-  activeSection?: string;
-}
+import { useNavMenu } from "./nav-menu.composable";
+import type { INavMenuProps } from "./nav-menu.composable";
 
 const props = defineProps<INavMenuProps>();
-const activeSection = ref();
+const { activeSection, setActiveSection } = useNavMenu(props);
 const { scrollTo } = useScrollTo();
 
 const goToMenu = (section: string) => {
   scrollTo(section);
-  activeSection.value = section;
+  setActiveSection(section);
 };
 
 const changeLocale = (locale: string) => {
   i18n.global.locale = locale as typeof i18n.global.locale;
 };
-
-watch(
-  () => props.activeSection,
-  async (newSection) => {
-    if (newSection) {
-      activeSection.value = newSection;
-    }
-  }
-);
 </script>
 
 <style scoped>

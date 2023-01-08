@@ -10,7 +10,7 @@
       </div>
     </v-main>
     <NavMenu :active-section="intersectedSection" v-if="smAndUp" />
-    <MobileNavMenu v-else />
+    <MobileNavMenu :active-section="intersectedSection" v-else />
     <AppFooter />
     <AppLoader />
   </v-app>

@@ -18,7 +18,7 @@
 
 <script setup lang="ts">
 import { useDisplay } from "vuetify";
-import { ref } from "vue";
+
 import NavMenu from "@/components/menu/NavMenu.vue";
 import MobileNavMenu from "@/components/menu/MobileNavMenu.vue";
 import HeroPage from "@/features/HeroPage.vue";
@@ -29,23 +29,10 @@ import IntroPage from "@/features/IntroPage.vue";
 import TeamPage from "@/features/TeamPage.vue";
 import AppLoader from "@/components/AppLoader.vue";
 import { MENU_ITEM } from "@/components/menu/links.config";
+import { useIntersect } from "@/utils/intersect.composable";
 
 const { smAndUp } = useDisplay();
-
-const intersectedSection = ref("");
-
-const intersect = (name: string) => ({
-  handler: onIntersect(name),
-  options: {
-    threshold: [0.1],
-  },
-});
-
-const onIntersect = (name: string) => (isIntersecting: boolean) => {
-  if (isIntersecting) {
-    intersectedSection.value = name;
-  }
-};
+const { intersect, intersectedSection } = useIntersect();
 </script>
 
 <style>

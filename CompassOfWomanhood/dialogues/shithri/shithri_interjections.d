@@ -43,6 +43,137 @@ THEN SALVANAS 6W#shithri_salvanas
 EXIT
 
 
+// Drow (male) prostitute
+//
+// Implementation Note:
+//
+// Normally, the dialogue options are allowed depending on a character's gender
+// plus an eager answer may be disallowed for some. Neera is the only canon
+// companions who is conditionally eager: she is eager but only if the romance
+// with her isn't active.
+//
+// As a side note: it's interesting how Nalia is eligible here for
+// an exotic massage, but not when talking with Madam Nin. Looks like she draws
+// the line at sexual stuff.
+//
+// Considering the above, Shithri may be added for "eager" path as long as she's
+// not in a romance with Neera + Neera should get an additional condition. Because
+// state 1 of Shithri-Neera romance is less serious than in canon romances, the "eager"
+// path can probably be permissed for state 1.
+//
+// All of the other characters speak the very same line here (gender-specific),
+// as they are supposed to pretend to be common drow. Shithri's pirate speech
+// comes into play now though.
+//
+// Not sure why the original code uses `Name` instead of `IsGabber` though...
+
+// Shouldn't apply the default dialogue (need to guard both male
+// and female version, as some wild surges may temporarily switch genders)
+ADD_TRANS_TRIGGER DADROW21 2 ~
+  !Name("6WSHITHRI",LastTalkedToBy)
+~ DO 0 1
+
+// Neera only if not commited to Shithri
+ADD_TRANS_TRIGGER DADROW21 2 ~
+  !Global("6W#ShithriNeeraRomanceActive","GLOBAL",2)
+~ DO 2
+
+// Shithri's "no thanks" dialogue shouldn't be as elaborate as the original
+// one either.
+ADD_TRANS_TRIGGER DADROW21 2 ~
+  !IsGabber("6WSHITHRI")
+~ DO 5
+
+// Add Shithri-specific dialogues, with accent included.
+EXTEND_BOTTOM DADROW21 2
+  IF ~
+    IsGabber("6WSHITHRI")
+    !Global("6W#ShithriNeeraRomanceActive","GLOBAL",1)
+    !Global("6W#ShithriNeeraRomanceActive","GLOBAL",2)
+  ~ THEN
+    REPLY @1000100 /* Aye, sounds nah half bad. Show this bu... I mean: this female, wha' ye made o'. */
+    GOTO 4
+
+  IF ~
+    IsGabber("6WSHITHRI")
+  ~
+    REPLY @1000110 /* Maybe 'nother day. */
+    GOTO 3
+END
+
+
+//
+// Reginald, from Neera's Hidden Refuge
+//
+// Implementation Note:
+// PC can note that Reginald's a half-orc. Dorn will laugh at PC,
+// while Reginald tries to bond with him. Shithri might be a fellow half-orc
+// here, as she's more positive towards her heritage than Dorn is.
+
+// Reginald is from Damara --- a country east of Gelena Mountains,
+// on the northern-east of Moonsea. Shithri is from Zhentil Keep, on the other
+// side of it. Note that the Moonsea isn't that big, so these two are quite
+// close, geographically.
+//
+// Neera's interjection is more important though, so it comes first.
+EXTEND_BOTTOM OHNREGI 4
+  IF ~
+    IfValidForPartyDialogue("6WSHITHRI")
+    !IfValidForPartyDialogue("Neera")
+  ~ THEN
+    DO ~
+      SetGlobal("6W#ShithriReginald","GLOBAL",2)
+    ~
+    EXTERN ~6WSHITJ~ 6W#ShithriReginald_cousin
+END
+EXTEND_BOTTOM NEERAJ 71
+  IF ~
+    IfValidForPartyDialogue("6WSHITHRI")
+  ~ THEN
+    DO ~
+      SetGlobal("6W#ShithriReginald","GLOBAL",2)
+    ~
+    EXTERN ~6WSHITJ~ 6W#ShithriReginald_cousin
+END
+CHAIN 6WSHITJ 6W#ShithriReginald_cousin
+  @1000200 /* Damara? That jus' a stone throw from the Moonsea! Hello me cousin, then! */
+  == OHNREGI
+  @1000201 /* Cousin, yes. You are Luthic's daughter. */
+  == 6WSHITJ
+  @1000202 /* Aye I be! */
+  == OHNREGI
+  @1000203 /* Sound of Thargate. */
+  == 6WSHITJ
+  @1000204 /* Aye I do! */
+  == OHNREGI
+  @1000205 /* Good. */
+END OHNREGI 3
+
+// Makes sense to ask Shithri to talk to him, considering how he managed
+// to talk with her for a bit plus they're "cousins".
+EXTEND_BOTTOM OHNREGI 8
+  IF ~
+    IfValidForPartyDialogue("6WSHITHRI")
+    Global("6W#ShithriReginald","GLOBAL",2)
+  ~
+  REPLY @1000210 /* Shithri? Can you calm down your "cousin"? */
+  EXTERN ~6WSHITJ~ 6W#ShithriReginald_calm_down
+END
+CHAIN 6WSHITJ 6W#ShithriReginald_calm_down
+  @1000211 /* Oi, cousin. Cap'tn be alright. Nah need t' get angry. */
+  == OHNREGI
+  @1000212 /* Talks too much. */
+  == 6WSHITJ
+  @1000213 /* Ye son o' Gruumsh, nah Leg-Breaker, ain't ya? */
+  == OHNREGI
+  @1000214 /* YOU talk too much! */
+  == 6WSHITJ
+  @1000215 /* Come on, cousin! Let's splice the mainbrace 'n forget this already. Wha' says you? */
+  == OHNREGI
+  @1000216 /* No! You all go now! One chance to walk away. Else I attack. */
+COPY_TRANS OHNREGI 9
+
+
 /*
  * Major NPC dialogues
  */
@@ -391,7 +522,7 @@ APPEND 6WSHITJ
   END
 END
 
-EXTEND_BOTTOM player1 3
+EXTEND_BOTTOM PLAYER1 3
   IF ~
     IsValidForPartyDialogue("6WSHITHRI")
     !IsValidForPartyDialogue("IMOEN2")
@@ -465,7 +596,7 @@ CHAIN 6WSHITJ slayer_change_reaction
   @4000302 /* But fer Mother's voice, me capt'n, get a grip. Or we all end up deadmen. */
 END
 
-EXTEND_BOTTOM player1 5
+EXTEND_BOTTOM PLAYER1 5
   IF ~
     IsValidForPartyDialogue("6WSHITHRI")
     !IsValidForPartyDialogue("IMOEN2")
@@ -523,7 +654,7 @@ APPEND 6WSHITJ
   END
 END
 
-EXTEND_BOTTOM player1 16
+EXTEND_BOTTOM PLAYER1 16
   IF ~
     IsValidForPartyDialogue("6WSHITHRI")
     !IsValidForPartyDialogue("IMOEN2")
@@ -583,7 +714,7 @@ APPEND 6WSHITJ
   END
 END
 
-EXTEND_BOTTOM player1 15
+EXTEND_BOTTOM PLAYER1 15
   IF ~
     IsValidForPartyDialogue("6WSHITHRI")
     !IsValidForPartyDialogue("IMOEN2")

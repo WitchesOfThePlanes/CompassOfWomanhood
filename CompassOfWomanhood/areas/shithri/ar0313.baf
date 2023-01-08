@@ -74,14 +74,6 @@ THEN
     ActionOverride("SBSLUM01", Face(SE))
     ActionOverride("SBSLUM02", Face(SE))
 
-    // the Thumb switches off his soundset
-    // so that it doesn't play during his
-    // judge comments
-    SetPlayerSound("THUMB", -1, SELECT_COMMON1)
-    SetPlayerSound("THUMB", -1, SELECT_COMMON2)
-    SetPlayerSound("THUMB", -1, SELECT_COMMON3)
-    SetPlayerSound("THUMB", -1, SELECT_COMMON4)
-
     FadeFromColor([20.0],0)
     Wait(1)
     SmallWait(1)
@@ -124,12 +116,6 @@ THEN
     ActionOverride("SBWENCH",  ChangeAIScript("WDRUNSGT",DEFAULT))
     ActionOverride("SBSLUM01", ChangeAIScript("WTRUNSGT",DEFAULT))
     ActionOverride("SBSLUM02", ChangeAIScript("WDRUNSGT",DEFAULT))
-
-    // the Thumb is an inn-keeper again
-    SetPlayerSound("THUMB", 60246, SELECT_COMMON1)
-    SetPlayerSound("THUMB", 60247, SELECT_COMMON2)
-    SetPlayerSound("THUMB", 60248, SELECT_COMMON3)
-    SetPlayerSound("THUMB", 60249, SELECT_COMMON4)
 
     // Franky goes away
     ActionOverride("6WPIRDR", DestroySelf())

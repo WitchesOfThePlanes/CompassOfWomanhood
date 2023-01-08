@@ -1,5 +1,4 @@
 @10 = ~Shithri~
-@11 = ~Shithri~
 @12 = ~Zapytana o swoją przeszłość, SHITHRI z dumą nazywa się Zentką mieszanego pochodzenia. Jej matka była kapłanką Luthic, orczej bogini mądrości i jaskiń. W kwestii ojca Shithri bierze głęboki wdech tylko po to żeby stwierdzić, że nie znała „tego elfa” zbyt dobrze. Jako nastolatka przyłączyła się do pirackiej załogi żeglującej na południe. Kończy swoją opowieść stwierdzająć, że przygody które miała po drodze do Wybrzeża Mieczy to temat wymagający wielu wieczorów. I co najmniej kilku baryłek rumu.~
 
 @20 = ~Gdy opuściła drużynę, której przewodził<PRO_HESHE> <CHARNAME>, Shithri wyruszyła na południe by spełnić swoje marzenie o odwiedzeniu Chultu. Stworzywszy swoją własną piracką bandę, koniec końców została znana jako Postrach Trzech Mórz Zewnętrznych. Przez swoje zamiłowanie do znakomitych trunków, hojność, a także dobre traktowanie pojmanych marynarzy, zyskała sobie także tytuł „Księżniczki Piratów”. Gdy zaoferowano jej zarówno calimshański list kaperski jak i udział w konsorcjum Rundeen, odrzuciła obie propozycje, odpowiadając, że nie będzie służyć żadnemu panu. Ostatnio widziano ją gdy jej statek porwał potężny huragan, jak twierdzi jedynych dwóch ocaleńców z jej załogi. Choć ich opowieści różniły się w szczegółach, obie łączyło jedno: ich kapitan śmiejąca się za sterem pośród szalejących fal.~
@@ -43,7 +42,18 @@ Właściwości ładunków:
 – Przemiana Tensera raz dziennie
   Czas działania: 1 tura
 
-Weight: 2~
+Waga: 2~
+
+@70 = ~Skórzana manierka~
+@71 = ~Skórzana manierka~
+@72 = ~Tego rodzaju pojemniki są bardzo popularne wśród podróżników, zwłaszcza calimshańskich handlarzy i żeglarzy pływających po Morzu Spadających Gwiazd. Przeważnie wypełnione są wodą lub napojem alkoholowym takim jak grog.
+
+Ta manierka wydaje się zupełnie zwyczajna dopóki nie zauważy się, że choć Shithri często z niej pije, to nigdy nie wygląda żeby ją napełniała.
+
+PARAMETRY:
+
+Waga: 1~
+@75 = ~Shithri chwyta manierkę i – uśmiechając się – odkorkowuje ją. „Chcesz kolejke? Trza było mówić!”~ [GAM_47]
 
 
 @100 = ~Ha! Właśnie takich kamratów żem szukała!~ [6WSHIT00]
@@ -102,3 +112,4 @@ Przerywa nucenie szanty zanim dobiegnie jej zwykły koniec.~
 
 
 @1000 = ~Ferdek Podbijoko~
+@1010 = ~Pirat Pieter~

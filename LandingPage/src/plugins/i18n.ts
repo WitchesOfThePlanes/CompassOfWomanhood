@@ -1,13 +1,13 @@
 import { createI18n } from "vue-i18n";
-import en from "@/assets/en.json";
-import pl from "@/assets/pl.json";
+import en_US from "@/assets/locale/en_US.json";
+import pl_PL from "@/assets/locale/pl_PL.json";
 
 const messages = {
-  en: en,
-  pl: pl,
+  en_US: en_US,
+  pl_PL: pl_PL,
 };
 
 export const i18n = createI18n({
-  locale: "en", // set locale
+  locale: "en_US", // set locale
   messages, // set locale messages
 });

@@ -4,6 +4,17 @@
 // Mainly initiating dialogues.
 //
 
+// Player went to Brynnlaw without her - mark it.
+IF
+  GlobalGT("Chapter","GLOBAL",4)
+  GlobalGT("6W#ShithriJoined","GLOBAL",0)
+  Global("6W#ShithriBrynnlaw","GLOBAL",0)
+  Global("6W#ShithriNahGotToBrynnlaw","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("6W#ShithriNahGotToBrynnlaw","GLOBAL",1)
+END
+
 
 //
 // Shithri is finally in Brynnlaw
@@ -155,6 +166,7 @@ THEN
   RESPONSE #100
     SetGlobal("6W#ShithriBrynnlawRespawn","GLOBAL",1)
     Activate(Myself)
+    ActionOverride("pirpir01", SetName(@1010)) // Pirate Peter
 END
 
 
@@ -194,7 +206,7 @@ IF
   Range([PC],12)
 THEN
   RESPONSE #100
-    SetGlobal("6W#ShithriBrynnlawRespawn","GLOBAL",2)
+    SetGlobal("6W#ShithriBrynnlawRespawn","GLOBAL",3)
 END
 
 

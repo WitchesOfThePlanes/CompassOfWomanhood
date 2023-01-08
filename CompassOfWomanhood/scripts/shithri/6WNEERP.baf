@@ -1,0 +1,14 @@
+//
+// Neera script for after leaving the party (with Shithri).
+//
+
+
+// If Shithri re-joins, so does Neera.
+IF
+  Global("6W#ShithriNeeraRomanceActive","GLOBAL",2)
+  InParty("6WSHITHRI")
+  !InParty(Myself)
+THEN
+  RESPONSE #100
+    JoinParty()
+END

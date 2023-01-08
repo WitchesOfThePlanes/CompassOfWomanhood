@@ -128,7 +128,7 @@ APPEND ~npclevel.2da~
 OUTER_SET file_num += 1
 
 APPEND ~npclvl25.2da~
-  ~Shithri    6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08  6Wshit086 Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08  6Wshit08 6Wshit08 6Wshit08 6Wshit08 6Wshit08 6Wshit08 6Wshit08~
+  ~6WSHITHRI    6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08  6Wshit086 Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08   6Wshit08  6Wshit08 6Wshit08 6Wshit08 6Wshit08 6Wshit08 6Wshit08 6Wshit08~
   UNLESS ~6WSHITHRI~
 OUTER_SET file_num += 1
 
@@ -247,14 +247,14 @@ PRINT "Copied %file_num% spell files"
 LAF HANDLE_AUDIO
   STR_VAR
     oggdec_path = ~CompassOfWomanhood/sounds~
-    audio_path  = ~CompassOfWomanhood/translations/%LANGUAGE%/sounds~
+    audio_path  = ~CompassOfWomanhood/translations/%LANGUAGE%/sounds/shithri~
 END
 */
 
 // US English is the base
 SILENT
 OUTER_SET file_num = 0
-ACTION_BASH_FOR ~CompassOfWomanhood/translations/en_US/sounds~ ~^B?6W.*\.wav$~
+ACTION_BASH_FOR ~CompassOfWomanhood/translations/en_US/sounds/shithri~ ~^B?6W.*\.wav$~
 BEGIN
   COPY ~%BASH_FOR_FILESPEC%~ ~override~
   OUTER_SET file_num += 1
@@ -266,7 +266,7 @@ ACTION_IF !(%LANGUAGE% STRING_EQUAL "en_US") THEN
 BEGIN
   SILENT
   OUTER_SET file_num = 0
-  ACTION_BASH_FOR ~CompassOfWomanhood/translations/%LANGUAGE%/sounds~ ~^B?6W.*\.wav$~
+  ACTION_BASH_FOR ~CompassOfWomanhood/translations/%LANGUAGE%/sounds/shithri~ ~^B?6W.*\.wav$~
   BEGIN
     COPY ~%BASH_FOR_FILESPEC%~ ~override~
     OUTER_SET file_num += 1
@@ -290,11 +290,13 @@ SILENT
 OUTER_SET file_num = 0
 OUTER_SET file_edited_num = 0
 
+OUTER_SET 6W_SHITHRI_NAME = RESOLVE_STR_REF(@10)
+
 ACTION_FOR_EACH cre_file IN ~6WSHIT08~ ~6WSHIT09~ ~6WSHIT10~ ~6WSHIT11~ ~6WSHIT13~ ~6WSHIT15~ ~6WSHIT25~
 BEGIN
   COPY ~CompassOfWomanhood/creatures/shithri/%cre_file%.cre~ ~override~
-    SAY NAME1 @10
-    SAY NAME2 @11
+    WRITE_LONG NAME1 %6W_SHITHRI_NAME%
+    WRITE_LONG NAME2 %6W_SHITHRI_NAME%
     SAY BIO   @12
   
     SAY HAPPY                  @100 /* Ho! 'tis the hearties I be lookin' fer! */
@@ -439,10 +441,14 @@ PRINT "Edited %file_edited_num% existing creature files"
 //
 
 SILENT
-COMPILE ~CompassOfWomanhood/scripts/shithri/6WSHITH.baf~ ~override~
-COMPILE ~CompassOfWomanhood/scripts/shithri/6WSHI25.baf~ ~override~
-COMPILE ~CompassOfWomanhood/scripts/shithri/6WPIRDR.baf~ ~override~
-PRINT "Compiled 3 new scripts"
+OUTER_SET file_num = 0
+
+ACTION_FOR_EACH script_file IN ~6WSHITH~ ~6WSHI25~ ~6WPIRDR~ ~6WSHITP~ ~6WNEERP~
+BEGIN
+  COMPILE ~CompassOfWomanhood/scripts/shithri/%script_file%.baf~ ~override~
+  OUTER_SET file_num += 1
+END
+PRINT "Compiled %file_num% new scripts"
 
 ACTION_DEFINE_ASSOCIATIVE_ARRAY script_extensions
 BEGIN
@@ -531,6 +537,18 @@ COPY ~CompassOfWomanhood/items/shithri/_6WBAN02.ITM~ ~override~
   SAY UNIDENTIFIED_DESC @62
   SAY IDENTIFIED_DESC   @63
 OUTER_SET file_num += 1
+
+// Shithri's drink
+COPY ~CompassOfWomanhood/items/shithri/_6WDRINK.itm~ ~override~
+  SAY NAME1 @70
+  SAY NAME2 @71
+  SAY UNIDENTIFIED_DESC @72
+OUTER_SET file_num += 1
+
+OUTER_SET 6W_SHITHRI_DRINK_REMOVE = RESOLVE_STR_REF(@75)
+APPEND item_use.2da
+  ~_6WDRINK 6WSHITHRI %6W_SHITHRI_DRINK_REMOVE% 3 %6W_SHITHRI_NAME%~
+  UNLESS ~_6WDRINK~
 
 // liquors
 // (mapping two-digit midfix to string number)

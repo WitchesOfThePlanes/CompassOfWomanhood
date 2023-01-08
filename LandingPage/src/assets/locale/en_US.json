@@ -1,0 +1,66 @@
+{
+  "MENU": {
+    "ABOUT": "about",
+    "CHARACTERS": "companions",
+    "TEAM": "team"
+  },
+  "HERO": {
+    "TITLE": "Compass of Womanhood",
+    "SUBTITLE": "Ways of Women, Ways of Pleasure...",
+    "COMING_SOON": "Coming soon",
+    "BUTTON": "Scroll to discover"
+  },
+  "INTRO": {
+    "HASHTAG": "compassofwomanhood",
+    "INTRODUCTION": [
+      "Hey traveler! Stop for a while. Come closer, I will tell you a story. Do you remember those good old times when everything was simpler? Let’s turn the clock back to Baldurs Gate 2. It's not possible, you may say. Well… it is possible.",
+      "We are a group of freaks who think about the Sword Coast every other day. That’s why we got off our asses and created something unusual, wonderful, marvelous and generally dope, and by that we mean a modification for that classical game. We think of it when we do our dishes, when we sleep, and even when pumping score on mobile games while owning The Throne.",
+      "For fans, by fans. So grab yerself a pint of a strong dwarrrven ale and enjoy the creation of our nerdy hands."
+    ]
+  },
+  "ABOUT": {
+    "TITLE": "About",
+    "MOD": [
+      "The project \"Compass of Womanhood\" subtitled \"Ways of Woman, Ways of Pleasure\" is a tribute to the already iconic game Baldur's Gate II: Enhanced Edition.",
+      "The vision of the mod is to create a variety of female companions, that will not only fit into the world of the Forgotten Realms, but also the game itself.  All components of the modification are bilingual by design - in most cases, both the English and Polish versions can be considered \"original\" (usually it is clearly indicated iif that's not the case).  There are currently two companions being created under the project, but the list may be extended.",
+      "The first heroine is Shithri - a pirate, a vagabond and a connoisseur of a good toddy. She is a follower of the orcish goddess known as the Mother of Caves.  In Polish version, she speaks in a unique dialect of Polish language, dedicated for this initiative.",
+      "The other character is Caly: well-read, educated and painfully professional. An exclusive courtesan with hair as fiery as her temperament. Knowledgeable in art and history. A follower of the moon goddess, seeking the way of her faith.",
+      "Everyone will find something for themselves in the mod. Great drinks, sea shanties, lore of the sea and fairy tales from all over the world, broadly understood art, as well as pirate slang in both language versions. In a word, everything that we fell in love with Baldur's for."
+    ],
+    "BUTTON": "Watch trailer"
+  },
+  "CHARACTERS": {
+    "TITLE": "List of companions",
+    "INTRO": "There are currently two companions developed as a part of this project, but additional companions may be added to the list:",
+    "SHITHRI": {
+      "NAME": "Shithri",
+      "INTRO": "Shithri — vagabond half-orc pirate girl from <a href=\"https://forgottenrealms.fandom.com/wiki/Zenthil_Keep\">Zenthil Keep</a>. Worshipper of orcish goddess <a href=\"https://forgottenrealms.fandom.com/wiki/Luthic\">Luthic</a>, Mother of Caves. She's free-spirited and loves a good drink (and is quite persistent with her offers of drinking). Speaks in heavy pirate accent (pirate dialect even, in Polish language version).",
+      "FEATURES": {
+        "INTRO": "This component includes:",
+        "LIST": [
+          "One chaotic-neutral half-orc swashbuckler",
+          "Two companion quests (one complete and one under development)",
+          "Some interjections",
+          "1-5 banters with each of the Bioware and Beamdog NPCs",
+          "One in-party romance (NOT with the PC)",
+          "Numerous originally-written sea songs",
+          "Lots of orc, liquor and naval lore",
+          "(Polish version only) a dedicated \"pirate dialect\""
+        ]
+      }
+    },
+    "CALY": {
+      "NAME": "Caly",
+      "INTRO": "Caly — high-class courtesan from <a href=\"https://forgottenrealms.fandom.com/wiki/Calimshan\">Calimshan</a> who speaks in posh manner and is blessed with red heair, believed by some to be \"the touch of <a href=\"https://forgottenrealms.fandom.com/wiki/Sune\">Sune</a>. Exclusive artiste and experienced story hunter. Worshipper of moon goddess <a href=\"https://forgottenrealms.fandom.com/wiki/Sel%C3%BBne\">Selûne</a>, but touched by the shadows.",
+      "STATUS": "This component is currently under development."
+    },
+    "BUTTONS": {
+      "READ_MORE": "Read more",
+      "CLOSE": "Close"
+    }
+  },
+  "TEAM": {
+    "TITLE": "Meet our team"
+  },
+  "FOOTER": "This project is not developed, supported or endorsed by BioWare, Black Isle nor Beamdog."
+}

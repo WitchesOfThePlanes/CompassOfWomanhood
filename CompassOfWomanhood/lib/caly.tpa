@@ -50,6 +50,43 @@ PRINT "Compile %file_num% dialog files"
 
 
 //
+// Sounds
+//
+
+// `LAF HANDLE_AUDIO` doesn't seem to support %LANGUAGE% placeholder
+/*
+LAF HANDLE_AUDIO
+  STR_VAR
+    oggdec_path = ~CompassOfWomanhood/sounds~
+    audio_path  = ~CompassOfWomanhood/translations/%LANGUAGE%/sounds/caly~
+END
+*/
+
+// US English is the base
+SILENT
+OUTER_SET file_num = 0
+ACTION_BASH_FOR ~CompassOfWomanhood/translations/en_US/sounds/caly~ ~^B?6W.*\.wav$~
+BEGIN
+  COPY ~%BASH_FOR_FILESPEC%~ ~override~
+  OUTER_SET file_num += 1
+END
+PRINT "Copied %file_num% sound files for en_US"
+
+// Other languages may add or overwrite some sounds.
+ACTION_IF !(%LANGUAGE% STRING_EQUAL "en_US") THEN
+BEGIN
+  SILENT
+  OUTER_SET file_num = 0
+  ACTION_BASH_FOR ~CompassOfWomanhood/translations/%LANGUAGE%/sounds/caly~ ~^B?6W.*\.wav$~
+  BEGIN
+    COPY ~%BASH_FOR_FILESPEC%~ ~override~
+    OUTER_SET file_num += 1
+  END
+  PRINT "Copied %file_num% sound files for %LANGUAGE%"
+END
+
+
+//
 // Companion herself
 //
 

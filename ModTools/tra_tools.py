@@ -1,6 +1,10 @@
 from pathlib import Path
 import re
-from typing import TextIO, Sequence, Mapping, Set, Tuple, List, Optional, Union, Type, TypeVar
+from typing import \
+    TextIO, \
+    Sequence, Mapping, Set, Tuple, List, Optional, \
+    Union, \
+    Type, TypeVar, ClassVar
 
 
 Self = TypeVar('Self')
@@ -14,7 +18,7 @@ class WeiduFile:
     path: Path
     io: TextIO
 
-    subroots: Set[str] = {
+    subroots: ClassVar[Set[str]] = {
         'audio',
         'areas',
         'creatures',

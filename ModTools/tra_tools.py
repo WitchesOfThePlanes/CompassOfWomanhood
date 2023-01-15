@@ -53,7 +53,7 @@ class WeiduFile:
     def __init__(self, io: TextIO, root_path: Path, name: Optional[str] = None):
         if name is None:
             if hasattr(io, 'name'):
-                name = io.name
+                name = Path(io.name).resolve().name
             else:
                 raise RuntimeError("Provided an unnamed IO with no name!")
 

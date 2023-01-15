@@ -1,6 +1,10 @@
 from pathlib import Path
 import re
-from typing import TextIO, Sequence, Mapping, Set, Tuple, List, Optional, Union, Type, TypeVar
+from typing import \
+    TextIO, \
+    Sequence, Mapping, Set, Tuple, List, Optional, \
+    Union, \
+    Type, TypeVar
 
 
 Self = TypeVar('Self')
@@ -8,24 +12,50 @@ Self = TypeVar('Self')
 string_ident_pattern = re.compile('@[0-9]*')
 tra_entry_pattern = re.compile('(@[0-9]*) *=( *~[^~]*~( *\[([a-zA-Z0-9]*)\])?( *~[^~]*~( *\[([a-zA-Z0-9]*)\])?)?)')
 
+known_subroots: Set[str] = {
+    'audio',
+    'areas',
+    'creatures',
+    'dialogues',
+    'epilogues',
+    'items',
+    'lib',
+    'scripts',
+    'spells',
+    'translations',
+}
+
+
+def is_main_mod_dir(path: Union[str, Path]) -> bool:
+    if not isinstance(path, Path):
+        path = Path(path)
+
+    mod_name = path.name
+    tp2_fname = f'{mod_name}.tp2'
+    tp2_fpath = path / tp2_fname
+    return tp2_fpath.exists() and tp2_fpath.is_file()
+
+def find_root_path(path: Union[str, Path]) -> Path:
+    if not isinstance(path, Path):
+        path = Path(path)
+
+    name = path.name
+    path = path.resolve()
+
+    root_path = path.parent
+
+    while not is_main_mod_dir(root_path):
+        # guard against infinite loop at root directory
+        if root_path.parent == root_path:
+            raise RuntimeError(f"No mod directory detected above the provided path")
+        root_path = root_path.parent
+
+    return root_path
 
 class WeiduFile:
     name: str
     path: Path
     io: TextIO
-
-    subroots: Set[str] = {
-        'audio',
-        'areas',
-        'creatures',
-        'dialogues',
-        'epilogues',
-        'items',
-        'lib',
-        'scripts',
-        'spells',
-        'translations',
-    }
 
     @classmethod
     def from_path(cls: Type[Self], path: Union[str, Path]) -> Self:
@@ -33,14 +63,7 @@ class WeiduFile:
             path = Path(path)
 
         name = path.name
-        path = path.resolve()
-
-        root_path = path.parent
-        while root_path.name != '.':
-            prev_root_path = root_path
-            root_path = root_path.parent
-            if prev_root_path.name in cls.subroots:
-                break
+        root_path = find_root_path(path)
 
         io = open(path, 'r')
         dfile = cls(io, root_path=root_path, name=name)
@@ -49,9 +72,12 @@ class WeiduFile:
     def __init__(self, io: TextIO, root_path: Path, name: Optional[str] = None):
         if name is None:
             if hasattr(io, 'name'):
-                name = io.name
+                name = Path(io.name).resolve().name
             else:
                 raise RuntimeError("Provided an unnamed IO with no name!")
+
+        if not is_main_mod_dir(root_path):
+            raise RuntimeError("Provided root path isn't a mod directory!")
 
         self.name = name
         self.root_path = root_path

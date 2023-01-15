@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from tra_utils import DFile
+from tra_tools import DFile
 
 
 dialogue_root_path = Path('CompassOfWomanhood/dialogues').absolute()

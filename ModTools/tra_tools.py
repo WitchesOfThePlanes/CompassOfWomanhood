@@ -42,12 +42,12 @@ def find_root_path(path: Union[str, Path]) -> Path:
     name = path.name
     path = path.resolve()
 
-    prev_root_path = path
     root_path = path.parent
 
-    # guard against infinite loop at root directory
-    while prev_root_path != root_path and not is_main_mod_dir(root_path):
-        prev_root_path = root_path
+    while not is_main_mod_dir(root_path):
+        # guard against infinite loop at root directory
+        if root_path.parent == root_path:
+            raise RuntimeError(f"No mod directory detected above the provided path")
         root_path = root_path.parent
 
     return root_path
@@ -75,6 +75,9 @@ class WeiduFile:
                 name = Path(io.name).resolve().name
             else:
                 raise RuntimeError("Provided an unnamed IO with no name!")
+
+        if not is_main_mod_dir(root_path):
+            raise RuntimeError("Provided root path isn't a mod directory!")
 
         self.name = name
         self.root_path = root_path

@@ -4,7 +4,7 @@ from typing import \
     TextIO, \
     Sequence, Mapping, Set, Tuple, List, Optional, \
     Union, \
-    Type, TypeVar, ClassVar
+    Type, TypeVar
 
 
 Self = TypeVar('Self')

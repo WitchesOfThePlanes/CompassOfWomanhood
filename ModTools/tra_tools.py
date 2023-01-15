@@ -13,6 +13,21 @@ string_ident_pattern = re.compile('@[0-9]*')
 tra_entry_pattern = re.compile('(@[0-9]*) *=( *~[^~]*~( *\[([a-zA-Z0-9]*)\])?( *~[^~]*~( *\[([a-zA-Z0-9]*)\])?)?)')
 
 
+def find_root_path(path: Union[str, Path], subroots: Set[str]) -> Path:
+    if not isinstance(path, Path):
+        path = Path(path)
+
+    name = path.name
+    path = path.resolve()
+
+    root_path = path.parent
+    while root_path.name != '.':
+        prev_root_path = root_path
+        root_path = root_path.parent
+        if prev_root_path.name in subroots:
+            break
+    return root_path
+
 class WeiduFile:
     name: str
     path: Path
@@ -37,14 +52,7 @@ class WeiduFile:
             path = Path(path)
 
         name = path.name
-        path = path.resolve()
-
-        root_path = path.parent
-        while root_path.name != '.':
-            prev_root_path = root_path
-            root_path = root_path.parent
-            if prev_root_path.name in cls.subroots:
-                break
+        root_path = find_root_path(path, cls.subroots)
 
         io = open(path, 'r')
         dfile = cls(io, root_path=root_path, name=name)

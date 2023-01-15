@@ -30,15 +30,10 @@ def is_main_mod_dir(path: Union[str, Path]) -> bool:
     if not isinstance(path, Path):
         path = Path(path)
 
-    # can't be main mod dir if it has no parent
-    if path.name == '.':
-        return False
-
     mod_name = path.name
-
-    setup_fname = f'Setup-{mod_name}.exe'
-    setup_fpath = path.parent / setup_fname
-    return setup_fpath.exists() and setup_fpath.is_file()
+    tp2_fname = f'{mod_name}.tp2'
+    tp2_fpath = path / tp2_fname
+    return tp2_fpath.exists() and tp2_fpath.is_file()
 
 def find_root_path(path: Union[str, Path]) -> Path:
     if not isinstance(path, Path):
@@ -47,13 +42,10 @@ def find_root_path(path: Union[str, Path]) -> Path:
     name = path.name
     path = path.resolve()
 
-    root_path = path.parent # dialogue file is, for sure, not the mod's name
+    prev_root_path = path
+    root_path = path.parent
 
-    mod_name  = root_path.name
-    prev_root_path = root_path
-    root_path = root_path.parent
-
-    # main mod directory has the setup file directly above it
+    # guard against infinite loop at root directory
     while prev_root_path != root_path and not is_main_mod_dir(root_path):
         prev_root_path = root_path
         root_path = root_path.parent

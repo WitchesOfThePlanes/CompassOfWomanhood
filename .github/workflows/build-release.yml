@@ -1,0 +1,48 @@
+name: Build release
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Create directory
+      run: |
+        mkdir -p target/release
+    - name: Compress into zip
+      uses: vimtor/action-zip@v1
+        with:
+          files: Setup-CompassOfWomanhood.exe CompassOfWomanhood/
+          dest: target/release/CompassOfWomanhood.zip
+    - name: Compress into tarball
+      uses: a7ul/tar-action@v1.1.0
+      id: compress
+      with:
+        command: c
+        cwd: ./test
+        files: |
+          Setup-CompassOfWomanhood.exe
+          CompassOfWomanhood
+        outPath: target/release/CompassOfWomanhood.tar.gz
+    - name: Upload zip to release
+      uses: svenstaro/upload-release-action@v2
+      with:
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        tag: ${{ github.ref }}
+        file: target/release/CompassOfWomanhood.zip
+        asset_name: CompassOfWomanhood-${{ github.ref }}.zip
+        overwrite: true
+        body: "Game files (zip)"
+    - name: Upload tarball to release
+      uses: svenstaro/upload-release-action@v2
+      with:
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        tag: ${{ github.ref }}
+        file: target/release/CompassOfWomanhood.tar.gz
+        asset_name: CompassOfWomanhood-${{ github.ref }}.tar.gz
+        overwrite: true
+        body: "Game files (tarball)"

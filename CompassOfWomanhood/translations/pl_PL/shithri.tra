@@ -36,7 +36,8 @@ PARAMETRY:
 
 Specjalne:
 - może być zdjęta tylko do czasu pierwszego użycia właściwości ładunków
-- po pierwszym użyciu ładunku, użytkownik staje się odporny na czar Zdjęcie Klątwy
+- po pierwszym użyciu ładunku, użytkownik staje się odporny na czar Zdjęcie Klątwy, przez co ten przedmiot można zdjąć tylko poprzez śmierć
+- śmierć w czasie gdy postać jest pod wpływem klątwy na stałe zmniejsza maksymalne PŻ o 1
 
 Właściwości ładunków:
 – Przemiana Tensera raz dziennie

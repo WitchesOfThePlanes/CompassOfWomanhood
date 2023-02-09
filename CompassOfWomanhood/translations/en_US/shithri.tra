@@ -34,7 +34,8 @@ STATISTICS:
 
 Equipped abilities:
 - can only be removed before using its charge ability for the first time
-- after using the charge ability for the first time, the user becomes immune to Remove Curse spell
+- after using the charge ability for the first time, the user becomes immune to Remove Curse spell, making it only possible to unequip this item via death
+- death while under the curse permanently decreases the maximum HP by 1
 
 Charge abilities:
 – Tenser's Transformation once a day

@@ -33,8 +33,10 @@ It has a will of its own, not allowing anyone it doesn't consider a unworthy war
 STATISTICS:
 
 Equipped abilities:
-- can only be removed before using its charge ability for the first time
-- after using the charge ability for the first time, the user becomes immune to Remove Curse spell
+- after the first usage of its charge ability, the user gets cursed
+- when cursed, the user's spellcasting is disabled
+- when cursed, the user becomes immune to Remove Curse spell, making it only possible to unequip this item via death
+- when cursed, death permanently decreases the maximum HP by 1
 
 Charge abilities:
 – Tenser's Transformation once a day

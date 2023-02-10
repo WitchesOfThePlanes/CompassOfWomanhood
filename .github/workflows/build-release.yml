@@ -15,9 +15,9 @@ jobs:
         mkdir -p target/release
     - name: Compress into zip
       uses: vimtor/action-zip@v1
-        with:
-          files: Setup-CompassOfWomanhood.exe CompassOfWomanhood/
-          dest: target/release/CompassOfWomanhood.zip
+      with:
+        files: Setup-CompassOfWomanhood.exe CompassOfWomanhood/
+        dest: target/release/CompassOfWomanhood.zip
     - name: Compress into tarball
       uses: a7ul/tar-action@v1.1.0
       id: compress

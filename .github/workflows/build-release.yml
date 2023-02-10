@@ -23,10 +23,10 @@ jobs:
       id: compress
       with:
         command: c
-        cwd: ./test
+        cwd: "./"
         files: |
           Setup-CompassOfWomanhood.exe
-          CompassOfWomanhood
+          CompassOfWomanhood/
         outPath: target/release/CompassOfWomanhood.tar.gz
     - name: Upload zip to release
       uses: svenstaro/upload-release-action@v2

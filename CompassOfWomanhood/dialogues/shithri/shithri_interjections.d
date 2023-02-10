@@ -300,7 +300,9 @@ APPEND Player1
       DO ~SetGlobal("6W#Shithri_TreeofLife","GLOBAL",1)~
       EXTERN ~6WSHITJ~ 6W#shithri_tree_of_life__not_your_voyage
 
-    IF ~~ THEN
+    IF ~
+      GlobalGT("6W#ShithriQueen","GLOBAL",0) // PC knows about Shithri wanting to become the Queen of Pirates
+    ~ THEN
       REPLY @4000011 /* You know that Irenicus is more dangerous than any sea you've travelled. There is no need for the world to lose its future first Pirate Queen. */
       DO ~SetGlobal("6W#Shithri_TreeofLife","GLOBAL",1)~
       EXTERN ~6WSHITJ~ 6W#shithri_tree_of_life__danger

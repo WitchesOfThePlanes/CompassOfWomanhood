@@ -50,9 +50,9 @@ Główny zespół (w kolejności dołączania):
 *   Aleksandra Czapla (Lexie Heron) — grafika (portrety)
 *   Gabriela Zubek (Hrabina Gabina) — głos (Shithri), grafika (ikony przedmiotów, logo), scrum masterka
 *   Maria Oleszkiewicz (Wilczogon) — teksty piosenek
-*   Piotr „Bunio” Bunkowski - głos (Ferdek Podbijoko)
-*   Dominika „Domi” Wesołowska - grafika (logo, strona)
-*   Andrzej Kaźmierski - głos (Pirat Pieter)
+*   Piotr „Bunio” Bunkowski — głos (Ferdek Podbijoko)
+*   Dominika „Domi” Wesołowska — grafika (logo, strona)
+*   Andrzej Kaźmierski — głos (Pirat Pieter)
 
 Specjalne podziękowania dla:
 

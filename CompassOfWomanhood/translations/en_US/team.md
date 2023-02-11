@@ -8,9 +8,9 @@ Core team (in joining order):
 *   Aleksandra Czapla (Lexie Heron) — graphical artist (portraits)
 *   Gabriela Zubek (Hrabina Gabina) — voice actress (Shithri), graphical artist (item icons, logo), scrum master
 *   Maria Oleszkiewicz (Wilczogon) — song writer
-*   Piotr "Bunio" Bunkowski - voice actor (Franky the Eye-Popper)
-*   Dominika "Domi" Wesołowska - graphical artist (logo, landing page)
-*   Andrzej Kaźmierski - voice actor (Pirate Peter)
+*   Piotr "Bunio" Bunkowski — voice actor (Franky the Eye-Popper)
+*   Dominika "Domi" Wesołowska — graphical artist (logo, landing page)
+*   Andrzej Kaźmierski — voice actor (Pirate Peter)
 
 Special thanks to:
 

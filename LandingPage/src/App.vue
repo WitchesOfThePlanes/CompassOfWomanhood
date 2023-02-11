@@ -7,6 +7,7 @@
         <AboutPage v-intersect="intersect(MENU_ITEM.ABOUT)" />
         <CharactersPage v-intersect="intersect(MENU_ITEM.CHARACTERS)" />
         <TeamPage v-intersect="intersect(MENU_ITEM.TEAM)" />
+        <ContactPage v-intersect="intersect(MENU_ITEM.CONTACT)" />
       </div>
     </v-main>
     <NavMenu :active-section="intersectedSection" v-if="smAndUp" />
@@ -27,6 +28,7 @@ import CharactersPage from "@/features/CharactersPage.vue";
 import AppFooter from "@/components/AppFooter.vue";
 import IntroPage from "@/features/IntroPage.vue";
 import TeamPage from "@/features/TeamPage.vue";
+import ContactPage from "@/features/ContactPage.vue";
 import AppLoader from "@/components/AppLoader.vue";
 import { MENU_ITEM } from "@/components/menu/links.config";
 import { useIntersect } from "@/utils/intersect.composable";

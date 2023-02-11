@@ -3,7 +3,8 @@
     "HOME": "home",
     "ABOUT": "about",
     "CHARACTERS": "companions",
-    "TEAM": "team"
+    "TEAM": "team",
+    "CONTACT": "contact us"
   },
   "HERO": {
     "TITLE": "Compass of Womanhood",
@@ -62,6 +63,13 @@
   },
   "TEAM": {
     "TITLE": "Meet our team"
+  },
+  "CONTACT": {
+    "TITLE": "CONTACT US",
+    "HELLO": "Hello fellow traveler! If You enjoyed a taste of calimshan beer, then You are welcome to our tavern Copper Coronet for a chitchat and another round!",
+    "EMAIL": "Click on the email address below to copy it:",
+    "SNACKBAR": "Email was copied to clipboard!",
+    "CLOSE": "Close"
   },
   "FOOTER": {
     "SOCIAL": "Drop by our social media",

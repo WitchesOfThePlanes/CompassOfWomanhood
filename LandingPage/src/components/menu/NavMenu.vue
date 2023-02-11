@@ -44,9 +44,10 @@ import { useScrollTo } from "@/utils/scroll-to.composable";
 
 import { linksConfig, socialLinksConfig } from "./links.config";
 import { useNavMenu } from "./nav-menu.composable";
-import type { INavMenuProps } from "./nav-menu.composable";
 
-const props = defineProps<INavMenuProps>();
+const props = defineProps<{
+  activeSection?: string;
+}>();
 const { activeSection, setActiveSection } = useNavMenu(props);
 const { scrollTo } = useScrollTo();
 

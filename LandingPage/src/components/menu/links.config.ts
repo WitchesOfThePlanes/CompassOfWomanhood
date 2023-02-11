@@ -5,6 +5,7 @@ export enum MENU_ITEM {
   ABOUT = "about",
   CHARACTERS = "characters",
   TEAM = "team",
+  CONTACT = "contact",
 }
 
 export interface INavLink {
@@ -31,6 +32,10 @@ export const linksConfig: INavLink[] = [
   {
     id: MENU_ITEM.TEAM,
     content: "MENU.TEAM",
+  },
+  {
+    id: MENU_ITEM.CONTACT,
+    content: "MENU.CONTACT",
   },
 ];
 

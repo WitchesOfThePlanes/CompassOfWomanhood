@@ -102,6 +102,7 @@ import logoImagePath from "@/assets/logo-small.png";
 import logoPlImagePath from "@/assets/logo-small-pl.png";
 import { i18n } from "@/plugins/i18n";
 import { useScrollTo } from "@/utils/scroll-to.composable";
+import { decode } from "@/utils/base64";
 
 const plLocale: typeof i18n.global.locale = "pl_PL";
 const email = import.meta.env.VITE_APP_EMAIL;
@@ -112,7 +113,7 @@ const { smAndUp } = useDisplay();
 
 const handleClick = async () => {
   if (linkEl.value) {
-    await navigator.clipboard.writeText(email);
+    await navigator.clipboard.writeText(decode(email));
     snackbar.value = true;
   }
 };

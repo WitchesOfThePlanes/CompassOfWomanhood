@@ -15,7 +15,7 @@ There are currently two companions developed as a part of this project, but addi
     This component includes:
 
     *   One chaotic-neutral half-orc swashbuckler
-    *   Two companion quests (one complete and one under development)
+    *   Two companion quests
     *   Some interjections
     *   1-5 banters with each of the Bioware and Beamdog NPCs
     *   One in-party romance (NOT with the PC)

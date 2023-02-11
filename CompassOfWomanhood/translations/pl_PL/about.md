@@ -15,7 +15,7 @@ Obecnie w projekcie powstają dwie towarzyszki, ale lista może ulec wydłużeni
     Komponent zawiera:
 
     *   Jedną chaotyczną-neutralną pół-orczą zawadiakę
-    *   Dwa zadania (jedno skończone i jedno w trakcie rozwoju)
+    *   Dwa zadania
     *   Trochę wtrąceń
     *   1-5 rozmów z każdym z towarzyszy od Bioware'u oraz Beamdoga
     *   Jeden wewnątrzdrużynowy romans (NIE z postacią główną)

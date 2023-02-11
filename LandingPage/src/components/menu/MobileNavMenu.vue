@@ -76,7 +76,11 @@
               target="_blank"
             />
           </div>
-          <img class="logo pa-4" :src="logoImagePath" alt="logo-small" />
+          <img
+            class="logo pa-4"
+            :src="$i18n.locale === plLocale ? logoPlImagePath : logoImagePath"
+            alt="logo-small"
+          />
         </div>
       </div>
     </div>
@@ -88,15 +92,18 @@ import { reactive } from "vue";
 
 import bgImagePath from "@/assets/home-bg.svg?url";
 import logoImagePath from "@/assets/logo-small.png";
-import { linksConfig, socialLinksConfig, MENU_ITEM } from "./links.config";
+import logoPlImagePath from "@/assets/logo-small-pl.png";
 import { useScrollTo } from "@/utils/scroll-to.composable";
 import { i18n } from "@/plugins/i18n";
 
+import { linksConfig, socialLinksConfig, MENU_ITEM } from "./links.config";
 import { useNavMenu } from "./nav-menu.composable";
-import type { INavMenuProps } from "./nav-menu.composable";
 
-const props = defineProps<INavMenuProps>();
+const props = defineProps<{
+  activeSection?: string;
+}>();
 const { activeSection, setActiveSection } = useNavMenu(props);
+const plLocale: typeof i18n.global.locale = "pl_PL";
 
 const state = reactive({ mobileMenuOpen: false, langMenu: false });
 const { scrollTo } = useScrollTo();
@@ -162,5 +169,8 @@ const changeLocale = (locale: string) => {
   font-weight: 600;
   font-size: 21px;
   line-height: 26px;
+}
+.logo {
+  max-height: 100px;
 }
 </style>

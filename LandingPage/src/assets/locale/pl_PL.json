@@ -3,7 +3,8 @@
     "HOME": "strona główna",
     "ABOUT": "o projekcie",
     "CHARACTERS": "towarzyszki",
-    "TEAM": "zespół"
+    "TEAM": "zespół",
+    "CONTACT": "kontakt"
   },
   "HERO": {
     "TITLE": "Kompas Kobiecości",
@@ -62,6 +63,13 @@
   },
   "TEAM": {
     "TITLE": "Poznaj nasz zespół"
+  },
+  "CONTACT": {
+    "TITLE": "Kontakt",
+    "HELLO": "Hello fellow traveler! If You enjoyed a taste of calimshan beer, then You are welcome to our tavern Copper Coronet for a chitchat and another round!",
+    "EMAIL": "Kliknij poniższy adres email, aby go skopiować:",
+    "SNACKBAR": "Adres email został skopiowany do schowka!",
+    "CLOSE": "Zamknij"
   },
   "FOOTER": {
     "SOCIAL": "Zajrzyj na nasze social media",

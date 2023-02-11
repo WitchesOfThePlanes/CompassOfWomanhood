@@ -11,7 +11,11 @@
           class="headers d-flex flex-column align-center justify-center"
         >
           <h1 class="align-self-center font-weight-medium text-center">
-            <img class="logo" :src="logoImagePath" alt="logo" />
+            <img
+              class="logo"
+              :src="$i18n.locale === plLocale ? logoPlImagePath : logoImagePath"
+              alt="logo"
+            />
           </h1>
         </header>
       </div>
@@ -43,11 +47,15 @@
 <script setup lang="ts">
 import bgImagePath from "@/assets/home-bg.svg?url";
 import logoImagePath from "@/assets/logo.png";
+import logoPlImagePath from "@/assets/logo-pl.png";
 
 import { useScrollTo } from "@/utils/scroll-to.composable";
 import SectionTitle from "@/components/SectionTitle.vue";
+import { i18n } from "@/plugins/i18n";
 
 const { scrollTo } = useScrollTo();
+
+const plLocale: typeof i18n.global.locale = "pl_PL";
 </script>
 
 <style scoped>

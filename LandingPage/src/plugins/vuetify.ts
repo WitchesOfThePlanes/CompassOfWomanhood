@@ -30,6 +30,7 @@ export default createVuetify({
           primary: "#ffffff",
           secondary: "#ffffff",
           background: "#00000b",
+          surface: "#8d97cc",
         },
         variables: {
           "border-opacity": 1,

@@ -6,6 +6,6 @@
 
 <style scoped>
 .footer {
-  background: #14162a;
+  background: #4c455c;
 }
 </style>

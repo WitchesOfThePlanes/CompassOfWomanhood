@@ -1,7 +1,7 @@
 import { Ref, ref, watch } from "vue";
 import { MENU_ITEM } from "@/components/menu/links.config";
 
-export type INavMenuProps = {
+export type TNavMenuProps = {
   activeSection?: string;
 };
 
@@ -10,7 +10,7 @@ export interface INavMenuReturns {
   setActiveSection: (section: string) => void;
 }
 
-export const useNavMenu = (props: INavMenuProps): INavMenuReturns => {
+export const useNavMenu = (props: TNavMenuProps): INavMenuReturns => {
   const activeSection = ref();
 
   const setActiveSection = (section: string) => (activeSection.value = section);

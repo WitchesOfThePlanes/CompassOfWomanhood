@@ -10,6 +10,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: Get tag name
+      id: get_tag_name
+      run: |
+        echo ::set-output name=TAG_NAME::${GITHUB_REF#refs/tags/}
     - name: Create directory
       run: |
         mkdir -p target/release
@@ -35,7 +39,7 @@ jobs:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
         tag: ${{ github.ref }}
         file: target/release/CompassOfWomanhood.zip
-        asset_name: CompassOfWomanhood-${{ github.ref }}.zip
+        asset_name: CompassOfWomanhood-${{ steps.get_tag_name.outputs.TAG_NAME }}.zip
         overwrite: true
         body: "Game files (zip)"
     - name: Upload tarball to release
@@ -44,6 +48,6 @@ jobs:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
         tag: ${{ github.ref }}
         file: target/release/CompassOfWomanhood.tar.gz
-        asset_name: CompassOfWomanhood-${{ github.ref }}.tar.gz
+        asset_name: CompassOfWomanhood-${{ steps.get_tag_name.outputs.TAG_NAME }}.tar.gz
         overwrite: true
         body: "Game files (tarball)"

@@ -15,7 +15,7 @@ Obecnie w projekcie powstają dwie towarzyszki, ale lista może ulec wydłużeni
     Komponent zawiera:
 
     *   Jedną chaotyczną-neutralną pół-orczą zawadiakę
-    *   Dwa zadania (jedno skończone i jedno w trakcie rozwoju)
+    *   Dwa zadania
     *   Trochę wtrąceń
     *   1-5 rozmów z każdym z towarzyszy od Bioware'u oraz Beamdoga
     *   Jeden wewnątrzdrużynowy romans (NIE z postacią główną)
@@ -45,14 +45,14 @@ Autorzy
 
 Główny zespół (w kolejności dołączania):
 
-*   Michalina „Misza” Kotwica (Udiknedormin) — założycielka; research, scenariusz i teksty piosenek, programowanie (implementacja moda), dopasowanie dźwięku
-*   Aleksandra Bielak (Vakme) — współzałożycielka; scenariusz, programowanie (automatyzacja, strona)
+*   Michalina „Misza” Kotwica (Udiknedormin) — założycielka; research, scenariusz i teksty piosenek, programowanie (implementacja moda, automatyzacja), dopasowanie dźwięku
+*   Aleksandra Bielak (Vakme) — współzałożycielka; scenariusz, programowanie (strona, automatyzacja)
 *   Aleksandra Czapla (Lexie Heron) — grafika (portrety)
-*   Gabriela Zubek (Hrabina Gabina) — głos (Shithri), grafika (ikony przedmiotów, logo), scrum masterka
+*   Gabriela Zubek (Hrabina Gabina) — głos (Shithri), grafika (ikony przedmiotów, logo)
 *   Maria Oleszkiewicz (Wilczogon) — teksty piosenek
-*   Piotr „Bunio” Bunkowski - głos (Ferdek Podbijoko)
-*   Dominika „Domi” Wesołowska - grafika (logo, strona)
-*   Andrzej Kaźmierski - głos (Pirat Pieter)
+*   Piotr „Bunio” Bunkowski — głos (Ferdek Podbijoko)
+*   Dominika „Domi” Wesołowska — grafika (logo, strona)
+*   Andrzej Kaźmierski — głos (Pirat Pieter)
 
 Specjalne podziękowania dla:
 

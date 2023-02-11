@@ -15,7 +15,7 @@ There are currently two companions developed as a part of this project, but addi
     This component includes:
 
     *   One chaotic-neutral half-orc swashbuckler
-    *   Two companion quests (one complete and one under development)
+    *   Two companion quests
     *   Some interjections
     *   1-5 banters with each of the Bioware and Beamdog NPCs
     *   One in-party romance (NOT with the PC)
@@ -45,14 +45,14 @@ Authors
 
 Core team (in joining order):
 
-*   Michalina "Misza" Kotwica (Udiknedormin) — founder; researcher, script & song writer, programmer (mod implementation), audio adjustment
-*   Aleksandra Bielak (Vakme) — co-founder; script writer, devops, programmer (landing page)
+*   Michalina "Misza" Kotwica (Udiknedormin) — founder; researcher, script & song writer, programmer (mod implementation, automation), audio adjustment
+*   Aleksandra Bielak (Vakme) — co-founder; script writer, programmer (landing page, automation)
 *   Aleksandra Czapla (Lexie Heron) — graphical artist (portraits)
-*   Gabriela Zubek (Hrabina Gabina) — voice actress (Shithri), graphical artist (item icons, logo), scrum master
+*   Gabriela Zubek (Hrabina Gabina) — voice actress (Shithri), graphical artist (item icons, logo)
 *   Maria Oleszkiewicz (Wilczogon) — song writer
-*   Piotr "Bunio" Bunkowski - voice actor (Franky the Eye-Popper)
-*   Dominika "Domi" Wesołowska - graphical artist (logo, landing page)
-*   Andrzej Kaźmierski - voice actor (Pirate Peter)
+*   Piotr "Bunio" Bunkowski — voice actor (Franky the Eye-Popper)
+*   Dominika "Domi" Wesołowska — graphical artist (logo, landing page)
+*   Andrzej Kaźmierski — voice actor (Pirate Peter)
 
 Special thanks to:
 

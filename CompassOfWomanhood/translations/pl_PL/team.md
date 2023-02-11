@@ -3,10 +3,10 @@ Autorzy
 
 Główny zespół (w kolejności dołączania):
 
-*   Michalina „Misza” Kotwica (Udiknedormin) — założycielka; research, scenariusz i teksty piosenek, programowanie (implementacja moda), dopasowanie dźwięku
-*   Aleksandra Bielak (Vakme) — współzałożycielka; scenariusz, programowanie (automatyzacja, strona)
+*   Michalina „Misza” Kotwica (Udiknedormin) — założycielka; research, scenariusz i teksty piosenek, programowanie (implementacja moda, automatyzacja), dopasowanie dźwięku
+*   Aleksandra Bielak (Vakme) — współzałożycielka; scenariusz, programowanie (strona, automatyzacja)
 *   Aleksandra Czapla (Lexie Heron) — grafika (portrety)
-*   Gabriela Zubek (Hrabina Gabina) — głos (Shithri), grafika (ikony przedmiotów, logo), scrum masterka
+*   Gabriela Zubek (Hrabina Gabina) — głos (Shithri), grafika (ikony przedmiotów, logo)
 *   Maria Oleszkiewicz (Wilczogon) — teksty piosenek
 *   Piotr „Bunio” Bunkowski — głos (Ferdek Podbijoko)
 *   Dominika „Domi” Wesołowska — grafika (logo, strona)

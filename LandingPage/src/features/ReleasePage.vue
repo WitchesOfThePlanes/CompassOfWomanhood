@@ -11,6 +11,7 @@
             {{ $t("RELEASE.TITLE") }}
           </SectionTitle>
         </h2>
+        <InstallationContent />
         <h3 class="mt-2 mb-6">
           {{ $t("RELEASE.DOWNLOAD") }}
         </h3>
@@ -26,6 +27,7 @@ import swordPng from "@/assets/Sword.png";
 import { useDisplay } from "vuetify";
 import SectionTitle from "@/components/SectionTitle.vue";
 import ReleaseCard from "@/components/ReleaseCard.vue";
+import InstallationContent from "@/components/InstallationContent.vue";
 
 const { smAndUp } = useDisplay();
 </script>

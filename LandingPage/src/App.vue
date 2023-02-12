@@ -71,18 +71,4 @@ a {
     #4c455c 100%
   );
 }
-
-.external {
-  margin: 0 24px;
-  h2 {
-    display: none;
-  }
-  ul {
-    margin-top: 12px;
-    margin-bottom: 24px;
-  }
-  li {
-    margin-left: 24px;
-  }
-}
 </style>

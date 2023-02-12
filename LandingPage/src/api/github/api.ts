@@ -12,6 +12,17 @@ export const getTeamContent = async (locale: string): Promise<string> => {
   return res.data;
 };
 
+export const getInstallationContent = async (
+  locale: string
+): Promise<string> => {
+  const res = await httpClient.get(routes.installationFile(locale), {
+    headers: {
+      Accept: "application/vnd.github.raw",
+    },
+  });
+  return res.data;
+};
+
 export const getLatestRelease = async (): Promise<Release> => {
   const res = await httpClient.get(routes.releaseList, {
     headers: {

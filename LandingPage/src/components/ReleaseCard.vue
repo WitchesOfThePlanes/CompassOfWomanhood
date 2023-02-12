@@ -42,11 +42,17 @@
         </div>
       </v-card-text>
       <v-card-actions>
-        <v-btn :href="release.zipball_url">
-          {{ $t("RELEASE.BUTTONS.ZIP") }}
-        </v-btn>
-        <v-btn :href="release.tarball_url">
-          {{ $t("RELEASE.BUTTONS.TAR") }}
+        <v-btn
+          v-for="asset in release.assets"
+          :key="asset.id"
+          :href="asset.browser_download_url"
+        >
+          {{
+            $t("RELEASE.BUTTONS.DOWNLOAD", [
+              getFileExtension(asset.name),
+              getFileSize(asset.size),
+            ])
+          }}
         </v-btn>
       </v-card-actions>
     </v-card>
@@ -78,12 +84,18 @@
 import { useLatestRelease } from "@/api/use-api.composable";
 import { Release } from "@/api/github/release.schema";
 import { ref, Ref, UnwrapRef } from "vue";
+import { filesize } from "filesize";
 
 const release: Ref<UnwrapRef<Release | null>> = useLatestRelease();
 const dialog = ref(false);
+const getFileExtension = (fileName: string) =>
+  fileName.split(".").slice(1).join(".");
+const getFileSize = (size: number) => filesize(size);
 </script>
 
 <style lang="scss">
+@import "external";
+
 .notes-dialog {
   background: #14162a;
 }

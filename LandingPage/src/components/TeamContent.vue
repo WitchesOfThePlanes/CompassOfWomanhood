@@ -10,4 +10,6 @@ import { useTeamContent } from "@/api/use-api.composable";
 const content = useTeamContent();
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+@import "external";
+</style>

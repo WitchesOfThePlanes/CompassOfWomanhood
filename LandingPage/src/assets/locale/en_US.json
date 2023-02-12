@@ -68,8 +68,7 @@
     "BUTTONS": {
       "GITHUB": "View release on Github",
       "NOTES": "Release notes",
-      "ZIP": "Download (.zip)",
-      "TAR": "Download (.tar.gz)"
+      "DOWNLOAD": "Download .{0} ({1})"
     },
     "DIALOG": {
       "TITLE": "Release notes",
@@ -89,5 +88,6 @@
   "FOOTER": {
     "SOCIAL": "Drop by our social media",
     "COPY": "This project is not developed, supported or endorsed by BioWare, Black Isle nor Beamdog."
-  }
+  },
+  "INSTALLATION_SEPARATOR": "Installation"
 }

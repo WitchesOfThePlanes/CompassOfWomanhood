@@ -15,6 +15,7 @@
     "axios": "^1.2.1",
     "buffer": "^6.0.3",
     "dompurify": "^2.4.1",
+    "filesize": "^10.0.6",
     "marker": "^0.1.2",
     "roboto-fontface": "*",
     "vue": "^3.2.38",

@@ -3,6 +3,7 @@
     "HOME": "strona główna",
     "ABOUT": "o projekcie",
     "CHARACTERS": "towarzyszki",
+    "RELEASE": "instalacja",
     "TEAM": "zespół",
     "CONTACT": "kontakt"
   },
@@ -58,6 +59,20 @@
     },
     "BUTTONS": {
       "READ_MORE": "Czytaj więcej",
+      "CLOSE": "Zamknij"
+    }
+  },
+  "RELEASE": {
+    "TITLE": "Instalacja",
+    "DOWNLOAD": "Pobierz najnowszą wersję:",
+    "BUTTONS": {
+      "GITHUB": "Zobacz wersję na Githubie",
+      "NOTES": "Lista zmian",
+      "ZIP": "Pobierz (.zip)",
+      "TAR": "Pobierz (.tar.gz)"
+    },
+    "DIALOG": {
+      "TITLE": "Lista zmian",
       "CLOSE": "Zamknij"
     }
   },

@@ -3,6 +3,7 @@
     "HOME": "home",
     "ABOUT": "about",
     "CHARACTERS": "companions",
+    "RELEASE": "how to install",
     "TEAM": "team",
     "CONTACT": "contact us"
   },
@@ -58,6 +59,20 @@
     },
     "BUTTONS": {
       "READ_MORE": "Read more",
+      "CLOSE": "Close"
+    }
+  },
+  "RELEASE": {
+    "TITLE": "How to install",
+    "DOWNLOAD": "Download latest release:",
+    "BUTTONS": {
+      "GITHUB": "View release on Github",
+      "NOTES": "Release notes",
+      "ZIP": "Download (.zip)",
+      "TAR": "Download (.tar.gz)"
+    },
+    "DIALOG": {
+      "TITLE": "Release notes",
       "CLOSE": "Close"
     }
   },

@@ -41,7 +41,7 @@
         "INTRO": "Komponent zawiera:",
         "LIST": [
           "Jedną chaotyczną-neutralną pół-orczą zawadiakę",
-          "Dwa zadania (jedno skończone i jedno w trakcie rozwoju)",
+          "Dwa zadania",
           "Trochę wtrąceń",
           "1-5 rozmów z każdym z towarzyszy od Bioware'u oraz Beamdoga",
           "Jeden wewnątrzdrużynowy romans (NIE z postacią główną)",
@@ -66,7 +66,7 @@
   },
   "CONTACT": {
     "TITLE": "Kontakt",
-    "HELLO": "Hello fellow traveler! If You enjoyed a taste of calimshan beer, then You are welcome to our tavern Copper Coronet for a chitchat and another round!",
+    "HELLO": "Hej wędrowcze! Jeśli zasmakowało Ci calimshańskie piwo, to zapraszamy do gospody Miedziany Diadem na pogawędkę i następną kolejkę!",
     "EMAIL": "Kliknij poniższy adres email, aby go skopiować:",
     "SNACKBAR": "Adres email został skopiowany do schowka!",
     "CLOSE": "Zamknij"

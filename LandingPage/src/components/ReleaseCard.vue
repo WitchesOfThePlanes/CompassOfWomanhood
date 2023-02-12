@@ -1,13 +1,13 @@
 <template>
   <div v-if="release">
-    <v-card variant="outlined" max-width="600">
+    <v-card variant="outlined" max-width="90vw" width="600" class="rounded-xl">
       <v-card-item>
         <v-card-title class="my-2">{{ release.name }}</v-card-title>
         <v-card-subtitle>
-          <v-chip prepend-icon="mdi-tag" class="mx-2">
+          <v-chip prepend-icon="mdi-tag" class="mx-2" color="surface">
             {{ release.tag_name }}
           </v-chip>
-          <v-chip prepend-icon="mdi-calendar">
+          <v-chip prepend-icon="mdi-calendar" color="surface">
             {{ release.published_at.toLocaleDateString() }}
           </v-chip>
         </v-card-subtitle>
@@ -17,9 +17,9 @@
         <div class="mt-3">
           <v-btn
             rounded="pill"
-            color="secondary"
+            color="surface"
             variant="outlined"
-            class="mr-4 text-lowercase font-weight-light"
+            class="mr-4 mb-4 text-lowercase font-weight-light"
             :href="release.html_url"
           >
             <span class="d-flex align-baseline">
@@ -29,9 +29,9 @@
           </v-btn>
           <v-btn
             rounded="pill"
-            color="secondary"
             variant="outlined"
-            class="text-lowercase font-weight-light"
+            color="surface"
+            class="mb-4 text-lowercase font-weight-light"
             @click="dialog = true"
           >
             <span class="d-flex align-baseline">
@@ -41,8 +41,9 @@
           </v-btn>
         </div>
       </v-card-text>
-      <v-card-actions>
+      <v-card-actions class="d-flex flex-wrap">
         <v-btn
+          class="mx-2"
           v-for="asset in release.assets"
           :key="asset.id"
           :href="asset.browser_download_url"

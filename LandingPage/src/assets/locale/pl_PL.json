@@ -68,7 +68,7 @@
     "BUTTONS": {
       "GITHUB": "Zobacz wersję na Githubie",
       "NOTES": "Lista zmian",
-      "DOWNLOAD": "Download .{0} ({1})"
+      "DOWNLOAD": "Pobierz .{0} ({1})"
     },
     "DIALOG": {
       "TITLE": "Lista zmian",

@@ -174,6 +174,23 @@ CHAIN 6WSHITJ 6W#ShithriReginald_calm_down
 COPY_TRANS OHNREGI 9
 
 
+//
+// Hayes betrayed Telana and wild mages, is now drinking himself dead.
+// Shithri obviously doesn't approve it one bit.
+//
+
+INTERJECT_COPY_TRANS OHNHAYES 29 6W#ShithriHayesBetrayer_comment
+  BRANCH ~IsValidForPartyDialog("6WSHITHRI")~
+  BEGIN
+    == 6WSHITJ
+    @1000300 /* Wastin' liqies 'ere, ain't ye, deadman traitor? */
+    == OHNHAYES
+    @1000301 /* Traitor, yes. But not dead. Not yet. */
+  END
+END
+
+
+
 /*
  * Major NPC dialogues
  */

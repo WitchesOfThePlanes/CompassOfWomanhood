@@ -42,6 +42,8 @@ THEN
   RESPONSE #100
     SetInterrupt(FALSE)
     SetGlobal("6W#ShithriCallMeBack","GLOBAL",0)
+    DisplayString(Myself,#16233) // "gulp" + sound
+    Wait(1)
     StartDialogNoSet(Player1)
     SetInterrupt(TRUE)
 END

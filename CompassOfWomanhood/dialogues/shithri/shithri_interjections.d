@@ -717,11 +717,11 @@ END
 // comment how PC must take the lead - and who's better to say that
 // than your trusty bosun?
 //
-// Arguably, Minsc's (and Boo's!) comment is worth getting prioritied though.
+// Arguably, Minsc's (and Boo's!) comment is worth getting prioritized though.
 
 APPEND 6WSHITJ
   IF ~~ THEN asylum_prisoners_freed_reaction
-    SAY @4000500 /* Yo-ho-ho! Mad madmen all around! Ye betta lead them outta here, capt'n, or be prepared fer lots o' mageries. 'n nah a good kind. */
+    SAY @4000500 /* Yo-ho-ho! Mad madmen all around! Ye betta lead 'em outta 'ere, capt'n, or be prepared fer lots o' mageries. 'n nah a good kind, nay. */
     IF ~~ THEN
       DO ~
         SetGlobal("playerTalk","AR1515",2)

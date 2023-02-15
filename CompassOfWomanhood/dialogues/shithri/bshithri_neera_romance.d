@@ -1167,3 +1167,82 @@ EXIT
 // ...and then just the epilogue left!
 //
 
+
+//
+// Modifications of existing dialogues
+//
+// Implementation Note:
+// Use prefix @3...
+//
+
+// NeeraJ 517 --- Neera mentions how she's interested in many things.
+// Among other things, she mentions men with beards.
+//
+// If she's comitted to Shithri, she'd rather mention Shithri instead.
+//
+// That state is transitioned to from 512.2 and 516.1
+
+APPEND ~NEERAJ~
+  IF ~~ THEN 6W#romance_shithri_neera__mod_0
+    SAY @3000000 /* Beyond their eagerness to hunt us down like stray kobolds... we don't know much. Their interest in wild magic certainly does seem extraordinary. I mean, I'm a wild mage, right? But I'm into other things, too. Really long walks, carrying lots of gems and crossbow bolts, a certain pirate girl... the list goes on. But the Order is obsessed. [OH87640] */
+
+    // copied from the original state
+    IF ~~ THEN REPLY #87641 GOTO 518
+  END
+END
+
+ALTER_TRANS ~NEERAJ~
+BEGIN 512 END
+BEGIN 1 END  // uses 0-indexing
+BEGIN
+  "TRIGGER" ~!Global("6W#ShithriNeeraRomanceActive","GLOBAL",2)~
+END
+
+EXTEND_TOP ~NEERAJ~ 512 #2  // uses 1-indexing
+  // transition mostly copy-pasted
+  IF ~
+    Global("6W#ShithriNeeraRomanceActive","GLOBAL",2)
+  ~ THEN
+    // copied from the original transition
+    REPLY #87630
+    GOTO 6W#romance_shithri_neera__mod_0
+END
+
+ALTER_TRANS ~NEERAJ~
+BEGIN 516 END
+BEGIN 0 END  // uses 0-indexing
+BEGIN
+  "TRIGGER" ~!Global("6W#ShithriNeeraRomanceActive","GLOBAL",2)~
+END
+
+EXTEND_TOP ~NEERAJ~ 516 #1  // uses 1-indexing
+  // transition mostly copy-pasted
+  IF ~
+    Global("6W#ShithriNeeraRomanceActive","GLOBAL",2)
+  ~ THEN
+    // copied from the original transition
+    REPLY #87630
+    GOTO 6W#romance_shithri_neera__mod_0
+END
+
+
+/*
+//TODO: is it needed?
+
+// Shithri should be able to reference meeting Telana
+// Telana first speaks just after Hayes. Telana offers multiple replies,
+// while Hayes goto-s directly, so it's easier to add the action on Hayes.
+//
+// The transition should only happen if Shithri is present. While it's
+// possible for Shithri to meet Telana later on, a typical scenario is probably
+// that Shithri was in the party while they were introduced to Telana.
+
+EXTEND_BOTTOM ~OHNHAYES~
+  IF ~InParty("6WSHITHRI")~
+  DO ~
+    SetGlobal("6W#romance_shithri_neera__telana","GLOBAL",1)
+  ~
+  GOTO ~OHNTELAN~ 65
+END
+*/
+

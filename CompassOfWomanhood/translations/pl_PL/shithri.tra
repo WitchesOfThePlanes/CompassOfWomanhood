@@ -26,7 +26,7 @@ Waga: 3~
 @60 = ~Marynarska bandana~
 @61 = ~Bandana miecznika Haqu~
 @62 = ~Ta bandana była noszona przez marynarza Ferdka Podbijoko. Cenił ją najbardziej ze wszystkiego co miał, nazywając swoją dumą i duszą.~
-@63 = ~Ta bandana była noszona przez marynarza Ferdka Podbijoko. Cenił ją najbardziej ze wszystkiego co miał, nazywając swoją dumą i duszą. W jaki sposób wszedł w jej posiadanie pozostaje tajemnicą
+@63 = ~Ta bandana była noszona przez marynarza Ferdka Podbijoko. Cenił ją najbardziej ze wszystkiego co miał, nazywając swoją dumą i duszą. W jaki sposób wszedł w jej posiadanie pozostaje tajemnicą.
 
 Nie będąc zwyczajną chustą, bandana silnie przywiązuje się do swojego właściciela. Tak silnie, jak się okazuje, że zabiera kawałeczek jego duszy gdy ten umiera. Poprzez przewiązanie jej w odpowiedni sposób, można uzyskać dostęp do umiejętności i siły poprzednich właścicieli, w szczególności legendarnego miecznika Haqu, o którym powiada się, że był najbliżej stania się Królem Piratów.
 
@@ -35,6 +35,7 @@ Bandana ma własną jaźń i nie pozwalaja korzystać ze swoich mocy nikomu, kog
 PARAMETRY:
 
 Specjalne:
+- Szczęście: +1
 - po pierwszmy użyciu właściwości ładunków, użytkownik zostaje przeklęty
 - gdy użytkownik jest przeklęty, jego zdolności rzucania czarów zostają zablokowane
 - gdy użytkownik jest przeklęty, staje się odporny na czar Zdjęcie Klątwy, przez co ten przedmiot można zdjąć tylko po śmierci
@@ -43,6 +44,16 @@ Specjalne:
 Właściwości ładunków:
 – Przemiana Tensera raz dziennie
   Czas działania: 1 tura
+
+Waga: 2~
+@64 = ~Ta bandana była noszona przez marynarza Ferdka Podbijoko. Cenił ją najbardziej ze wszystkiego co miał, nazywając swoją dumą i duszą. W jaki sposób wszedł w jej posiadanie pozostaje tajemnicą
+
+Nie jest to zwykły talizman - piracka legenda głosi, że ten przedmiot ma własną duszę. Bandana sama też wybiera sobie pana, błogosławieństwem swojej pełnej mocy obdarowując jedynie wojowników godnych odziedziczyć wolę jej oryginalnego właściciela, miecznika Haqu, przez wielu uważanego za tego, któremu najbliżej było do stania się Królem Piratów. Jeśli śmiałek zaakceptuje jej dar, marzenie Haqu będzie znów żywe skoro nowe życie zostanie mu wydane.
+
+PARAMETRY:
+
+Specjalne:
+- Szczęście: +1
 
 Waga: 2~
 
@@ -103,7 +114,7 @@ Waga: 1~
 
 @200 = ~Szanta~
 @201 = ~Szanta
-Jako doświadczona żeglarka, Shithri może zanucić prostą szantę by móc czuwać cokolwiek się nie stanie przez 1 turę. Gdy nuci, otrzyuje premię +1 do Szczęścia, a także staje się odporna na sen, strach, zamęt i oszołomienie - jednak zdradza jej pozycję jeśli była niewidzialna. Tej umiejętności nie może użyć przebywając w lesie.~
+Jako doświadczona żeglarka, Shithri może zanucić prostą szantę by móc czuwać cokolwiek się nie stanie przez 1 turę. Gdy nuci, otrzymuje premię +1 do Szczęścia, a także staje się odporna na sen, strach, zamęt i oszołomienie - jednak zdradza jej pozycję jeśli była niewidzialna. Tej umiejętności nie może użyć przebywając w lesie.~
 @202 = ~Nuci szantę~
 @203 = ~Przestań nucić~
 @204 = ~Przestań nucić

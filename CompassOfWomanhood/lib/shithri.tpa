@@ -533,6 +533,11 @@ COPY ~CompassOfWomanhood/items/shithri/_6WSAB01.ITM~ ~override~
 OUTER_SET file_num += 1
 
 // bandana
+COPY ~CompassOfWomanhood/items/shithri/_6WBAN00.ITM~ ~override~
+  SAY NAME1 @60
+  SAY NAME2 @61
+  SAY UNIDENTIFIED_DESC @62
+  SAY IDENTIFIED_DESC   @64
 COPY ~CompassOfWomanhood/items/shithri/_6WBAN01.ITM~ ~override~
   SAY NAME1 @60
   SAY NAME2 @61

@@ -15,7 +15,7 @@
         <h3 class="mt-2 mb-6">
           {{ $t("RELEASE.DOWNLOAD") }}
         </h3>
-        <ReleaseCard />
+        <ReleaseCard :release="release" />
       </div>
     </div>
   </div>
@@ -28,6 +28,11 @@ import { useDisplay } from "vuetify";
 import SectionTitle from "@/components/SectionTitle.vue";
 import ReleaseCard from "@/components/ReleaseCard.vue";
 import InstallationContent from "@/components/InstallationContent.vue";
+import { Ref, UnwrapRef } from "vue";
+import { Release } from "@/api/github/release.schema";
+import { useLatestRelease } from "@/api/use-api.composable";
+
+const release: Ref<UnwrapRef<Release | null>> = useLatestRelease();
 
 const { smAndUp } = useDisplay();
 </script>

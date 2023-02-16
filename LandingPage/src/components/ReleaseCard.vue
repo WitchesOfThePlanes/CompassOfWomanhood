@@ -8,7 +8,7 @@
             {{ release.tag_name }}
           </v-chip>
           <v-chip prepend-icon="mdi-calendar" color="surface">
-            {{ release.published_at.toLocaleDateString() }}
+            {{ release.published_at?.toLocaleDateString() }}
           </v-chip>
         </v-card-subtitle>
       </v-card-item>
@@ -82,12 +82,17 @@
 </template>
 
 <script setup lang="ts">
-import { useLatestRelease } from "@/api/use-api.composable";
 import { Release } from "@/api/github/release.schema";
-import { ref, Ref, UnwrapRef } from "vue";
+import { toRef, ref } from "vue";
 import { filesize } from "filesize";
 
-const release: Ref<UnwrapRef<Release | null>> = useLatestRelease();
+interface IReleaseCardProps {
+  release: Release | null;
+}
+
+const props = defineProps<IReleaseCardProps>();
+const release = toRef(props, "release");
+
 const dialog = ref(false);
 const getFileExtension = (fileName: string) =>
   fileName.split(".").slice(1).join(".");

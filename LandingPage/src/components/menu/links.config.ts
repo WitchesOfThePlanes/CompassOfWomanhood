@@ -4,6 +4,7 @@ export enum MENU_ITEM {
   HOME = "home",
   ABOUT = "about",
   CHARACTERS = "characters",
+  RELEASE = "release",
   TEAM = "team",
   CONTACT = "contact",
 }
@@ -28,6 +29,10 @@ export const linksConfig: INavLink[] = [
   {
     id: MENU_ITEM.CHARACTERS,
     content: "MENU.CHARACTERS",
+  },
+  {
+    id: MENU_ITEM.RELEASE,
+    content: "MENU.RELEASE",
   },
   {
     id: MENU_ITEM.TEAM,

@@ -3,6 +3,7 @@
     "HOME": "strona główna",
     "ABOUT": "o projekcie",
     "CHARACTERS": "towarzyszki",
+    "RELEASE": "instalacja",
     "TEAM": "zespół",
     "CONTACT": "kontakt"
   },
@@ -61,6 +62,19 @@
       "CLOSE": "Zamknij"
     }
   },
+  "RELEASE": {
+    "TITLE": "Instalacja",
+    "DOWNLOAD": "Pobierz najnowszą wersję:",
+    "BUTTONS": {
+      "GITHUB": "Zobacz wersję na Githubie",
+      "NOTES": "Lista zmian",
+      "DOWNLOAD": "Pobierz .{0} ({1})"
+    },
+    "DIALOG": {
+      "TITLE": "Lista zmian",
+      "CLOSE": "Zamknij"
+    }
+  },
   "TEAM": {
     "TITLE": "Poznaj nasz zespół"
   },
@@ -74,5 +88,6 @@
   "FOOTER": {
     "SOCIAL": "Zajrzyj na nasze social media",
     "COPY": "Ten projekt nie jest rozwijany, wspierany czy zatwierdzony przez BioWare, Black Isle ani Beamdog."
-  }
+  },
+  "INSTALLATION_SEPARATOR": "Instalacja"
 }

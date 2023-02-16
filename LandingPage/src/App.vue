@@ -6,6 +6,7 @@
         <IntroPage />
         <AboutPage v-intersect="intersect(MENU_ITEM.ABOUT)" />
         <CharactersPage v-intersect="intersect(MENU_ITEM.CHARACTERS)" />
+        <ReleasePage v-intersect="intersect(MENU_ITEM.RELEASE)" />
         <TeamPage v-intersect="intersect(MENU_ITEM.TEAM)" />
         <ContactPage v-intersect="intersect(MENU_ITEM.CONTACT)" />
       </div>
@@ -27,6 +28,7 @@ import AboutPage from "@/features/AboutPage.vue";
 import CharactersPage from "@/features/CharactersPage.vue";
 import AppFooter from "@/components/AppFooter.vue";
 import IntroPage from "@/features/IntroPage.vue";
+import ReleasePage from "@/features/ReleasePage.vue";
 import TeamPage from "@/features/TeamPage.vue";
 import ContactPage from "@/features/ContactPage.vue";
 import AppLoader from "@/components/AppLoader.vue";

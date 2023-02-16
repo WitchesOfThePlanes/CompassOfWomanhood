@@ -1,18 +1,16 @@
 <template>
   <div
     v-if="!state.mobileMenuOpen"
-    class="h-screen d-flex align-end justify-start flex-column pa-6 mobile-nav-menu"
+    class="d-flex align-end justify-start flex-column pa-6 mobile-nav-menu"
   >
     <v-btn variant="text" icon="fa:fas fa-bars" @click="openMenu()" />
   </div>
-  <div v-else class="h-screen w-100 mobile-nav-menu bg-dark">
+  <div v-else class="w-100 mobile-nav-menu bg-dark">
     <div
       class="h-screen w-100 menu-background"
       :style="{ backgroundImage: `url(${bgImagePath})` }"
     />
-    <div
-      class="menu-content h-screen w-100 d-flex flex-column justify-lg-space-between"
-    >
+    <div class="menu-content w-100 d-flex flex-column justify-lg-space-between">
       <div class="d-flex align-end justify-start flex-column pa-6">
         <v-btn variant="text" icon="fa:fas fa-times" @click="closeMenu()" />
       </div>
@@ -20,7 +18,7 @@
       <div class="menu-buttons d-flex flex-column justify-space-around">
         <v-btn-toggle
           v-model="activeSection"
-          class="h-50 d-flex flex-column justify-start align-start px-6 py-sm-8 py-4"
+          class="d-flex flex-column justify-start align-start px-6 py-sm-8 py-4 button-group"
         >
           <v-btn
             class="button pa-2"
@@ -144,15 +142,20 @@ const changeLocale = (locale: string) => {
 }
 .menu-content {
   position: relative;
+  height: 100vh;
+  overflow-y: auto;
 }
 .menu-buttons {
   height: 60%;
 }
+.button-group {
+  height: auto;
+}
 .button {
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
-  line-height: 39px;
+  font-size: 24px;
+  line-height: 29px;
   text-transform: uppercase;
 }
 

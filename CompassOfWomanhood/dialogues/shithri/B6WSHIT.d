@@ -1071,15 +1071,15 @@ CHAIN IF ~
   @1090008 /* Don't worry. Uncle Scratchy was never good at singing to begin with. Besides - 'tis not even the way he spoke his own name. He claimed it to be pronounced Sss-cratt-chee. But as you may guess, it was just to make the Sembian competition angry. */
 EXIT
 
-// Unlikely enough to be considered an easter egg: if the player doesn't mind
-// equipping Jan Jansen with the Bandana of Haqu (the cursed variant),
-// then they can get a little bonus of Shithri-Jan banter.
+// If Jan has Bandana of Pirate Haqu equipped, Shithri is givin him looks.
 CHAIN IF ~
   IfValidForPartyDialogue("6WSHITHRI")
   IfValidForPartyDialogue("Jan")
   See("Jan")
   CombatCounter(0)
-  HasItemEquiped("_6WBAN02","Jan")
+  OR(2)
+    HasItemEquiped("_6WBAN01","Jan")
+    HasItemEquiped("_6WBAN02","Jan")
   Global("6W#banter_Shithri_Jan_bandana","GLOBAL",0)
 ~ THEN BJAN 6W#banter_shithri_jan_bandana_0
   @1090100 /* Ha, Shithri, I see Jan Jansen's Flasher Master Bruiser Mate catched your eye, didn't they? Excellent choice, most exquisite taste, I must say. You actually remind me of aunt Kadie herself. */

@@ -48,7 +48,7 @@ THEN
     SmallWait(1)
 
     StorePartyLocations()
-    ActionOverride("6WPIRDIR", JumpToPoint([443.540]))
+    ActionOverride("6WPIRDR",  JumpToPoint([443.540]))
     ActionOverride(Player1,    JumpToPoint([482.500]))
     ActionOverride(Player2,    JumpToPoint([518.437]))
     ActionOverride(Player3,    JumpToPoint([486.414]))
@@ -61,7 +61,7 @@ THEN
     ActionOverride("SBSLUM01", JumpToPoint([271.562]))
     ActionOverride("SBSLUM02", JumpToPoint([289.551]))
 
-    ActionOverride("6WPIRDIR", Face(NW))
+    ActionOverride("6WPIRDR",  Face(NW))
     ActionOverride(Player1,    Face(NW))
     ActionOverride(Player2,    Face(SW))
     ActionOverride(Player3,    Face(SW))

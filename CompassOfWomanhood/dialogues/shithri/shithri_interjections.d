@@ -250,6 +250,53 @@ INTERJECT_COPY_TRANS ANOMENJ 265 6W#ShithriAnomenComAsylumBreak
 END
 
 
+//
+// Cambion Aesgareth who wants to play cards --- of course Shithri should comment that!
+//
+// Implementation Note:
+// Here, one of three canon companions may speak:
+// 1. Haer'Dalis --- he knows Aesgareth, so he's a very natural fit here, if he's available.
+// 2. Imoen --- she comments that you're surely interested. Doesn't seem to have any strong reason.
+// 3. Minsc --- comments on Boo.
+//
+// Looks like Shithri has a reason weaker than Haer'Dalis, but stronger than Imoen.
+//
+// As with other companions, Shithri should have two variants --- for SoA and ToB,
+// as Watcher Tower is available in both of them.
+APPEND 6WSHI25J
+  IF ~~ THEN 6W#shithri_cambion_cards
+    SAY @2000400 /* Fer the Seven Hells, playin' cards wit' a cambion? Count this bucko in! */
+    IF ~~ THEN
+      EXTERN ~GORCAMB~ 18
+  END
+END
+APPEND 6WSHITJ
+  IF ~~ THEN 6W#shithri_cambion_cards
+    SAY @2000400 /* Fer the Seven Hells, playin' cards wit' a cambion? Count this bucko in! */
+    IF ~~ THEN
+      EXTERN ~GORCAMB~ 18
+  END
+END
+
+EXTEND GORCAMB 17
+  IF ~
+    Global("6W#Shithri_cambion_cards","GLOBAL",0)
+    IfValidForPartyDialogue("6WSHITHRI")
+    !IfValidForPartyDialogue("HaerDalis")
+    GlobalGT("Chapter","GLOBAL",7)
+  ~ THEN
+    EXTERN ~6WSHI25J~ 6W#shithri_cambion_cards
+
+  IF ~
+    Global("6W#Shithri_cambion_cards","GLOBAL",0)
+    IfValidForPartyDialogue("6WSHITHRI")
+    !IfValidForPartyDialogue("HaerDalis")
+    GlobalLT("Chapter","GLOBAL",8)
+  ~ THEN
+    EXTERN ~6WSHITJ~ 6W#shithri_cambion_cards
+END
+
+
 
 //
 // Main plot-related

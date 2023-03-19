@@ -1,9 +1,10 @@
 Compass Of Womanhood (COW) mod dla BG2:EE
 =========================================
 
-"Compass of Womanhood" (COW, Kompas Kobiecości, CoW, 6W), także: „Ścieżki Kobiecości, Ścieżki Przyjemności”, to projekt modyfikacji dla gry Baldur's Gate II: Enhanced Edition.
+[Kompas Kobiecości](https://witchesoftheplanes.github.io/CompassOfWomanhood/) (Compass of Womanhood, COW, CoW, 6W), także: „Ścieżki Kobiecości, Ścieżki Przyjemności”, to projekt modyfikacji dla gry Baldur's Gate II: Enhanced Edition.
 
 Celem projektu jest stworzenie różnorodnej grupy nietrywialnych towarzyszek, które wpasowują się zarówno w świat Zaginionych Krain jak i samą grę. Wszystkie komponenty modyfikacji są, z założenia, dwujęzyczne — w większości przypadków zarówno angielska jak i polska wersja mogą być uznane za „oryginał” (zwykle jest to wyraźnie zaznaczone jeśli tak nie jest).
+
 
 Lista towarzyszek
 -----------------

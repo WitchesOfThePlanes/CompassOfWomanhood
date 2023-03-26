@@ -1,6 +1,14 @@
 Compass Of Womanhood (COW) mod for BG2:EE
 =========================================
 
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/WitchesOfThePlanes/CompassOfWomanhood/build-release.yml?label=build%20release)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/WitchesOfThePlanes/CompassOfWomanhood/landing-page.yml?label=build%20landing%20page)
+![GitHub all releases](https://img.shields.io/github/downloads/WitchesOfThePlanes/CompassOfWomanhood/total)
+![GitHub](https://img.shields.io/github/license/WitchesOfThePlanes/CompassOfWomanhood)
+![Website](https://img.shields.io/website?url=https%3A%2F%2Fwitchesoftheplanes.github.io%2FCompassOfWomanhood%2F)
+![GitHub (Pre-)Release Date](https://img.shields.io/github/release-date-pre/WitchesOfThePlanes/CompassOfWomanhood?label=%28pre-%29release%20date)
+![GitHub Repo stars](https://img.shields.io/github/stars/WitchesOfThePlanes/CompassOfWomanhood?style=social)
+
 [Compass of Womanhood](https://witchesoftheplanes.github.io/CompassOfWomanhood/) (COW, CoW, 6W), subtitled "Ways of Women, Ways of Pleasure", is a mod project for Baldur's Gate II: Enhanced Edition.
 
 Its goal is to create diverse cast of interesting female companions that fit well with both the Forgotten Realms lore and the base games. All the mod's components are, by design, dual-language — in most cases both the English and the Polish version can be considered "the original" (it's usually bolded when that isn't the case).

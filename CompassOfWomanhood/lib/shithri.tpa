@@ -504,6 +504,7 @@ ACTION_DEFINE_ARRAY item_icons
 BEGIN
   ~CompassOfWomanhood/items/shithri/6WSAB01I.BAM~
   ~CompassOfWomanhood/items/shithri/6WSAB01D.BAM~
+  ~CompassOfWomanhood/items/shithri/6WDRINKI.BAM~
 END
 
 SILENT

@@ -3,6 +3,7 @@
     "HOME": "home",
     "ABOUT": "about",
     "CHARACTERS": "companions",
+    "RELEASE": "how to install",
     "TEAM": "team",
     "CONTACT": "contact us"
   },
@@ -61,6 +62,19 @@
       "CLOSE": "Close"
     }
   },
+  "RELEASE": {
+    "TITLE": "How to install",
+    "DOWNLOAD": "Download latest release:",
+    "BUTTONS": {
+      "GITHUB": "View release on Github",
+      "NOTES": "Release notes",
+      "DOWNLOAD": "Download .{0} ({1})"
+    },
+    "DIALOG": {
+      "TITLE": "Release notes",
+      "CLOSE": "Close"
+    }
+  },
   "TEAM": {
     "TITLE": "Meet our team"
   },
@@ -74,5 +88,6 @@
   "FOOTER": {
     "SOCIAL": "Drop by our social media",
     "COPY": "This project is not developed, supported or endorsed by BioWare, Black Isle nor Beamdog."
-  }
+  },
+  "INSTALLATION_SEPARATOR": "Installation"
 }

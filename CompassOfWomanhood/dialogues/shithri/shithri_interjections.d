@@ -174,6 +174,23 @@ CHAIN 6WSHITJ 6W#ShithriReginald_calm_down
 COPY_TRANS OHNREGI 9
 
 
+//
+// Hayes betrayed Telana and wild mages, is now drinking himself dead.
+// Shithri obviously doesn't approve it one bit.
+//
+
+INTERJECT_COPY_TRANS OHNHAYES 29 6W#ShithriHayesBetrayer_comment
+  BRANCH ~IsValidForPartyDialog("6WSHITHRI")~
+  BEGIN
+    == 6WSHITJ
+    @1000300 /* Wastin' liqies 'ere, ain't ye, deadman traitor? */
+    == OHNHAYES
+    @1000301 /* Traitor, yes. But not dead. Not yet. */
+  END
+END
+
+
+
 /*
  * Major NPC dialogues
  */
@@ -700,11 +717,11 @@ END
 // comment how PC must take the lead - and who's better to say that
 // than your trusty bosun?
 //
-// Arguably, Minsc's (and Boo's!) comment is worth getting prioritied though.
+// Arguably, Minsc's (and Boo's!) comment is worth getting prioritized though.
 
 APPEND 6WSHITJ
   IF ~~ THEN asylum_prisoners_freed_reaction
-    SAY @4000500 /* Yo-ho-ho! Mad madmen all around! Ye betta lead them outta here, capt'n, or be prepared fer lots o' mageries. 'n nah a good kind. */
+    SAY @4000500 /* Yo-ho-ho! Mad madmen all around! Ye betta lead 'em outta 'ere, capt'n, or be prepared fer lots o' mageries. 'n nah a good kind, nay. */
     IF ~~ THEN
       DO ~
         SetGlobal("playerTalk","AR1515",2)

@@ -32,6 +32,25 @@ APPEND 6WSHITJ
       REPLY @1000002 /* Actually, I'm in a mood for a sea song. */
       GOTO 6WShithri_PlayerSeaSong_ok
 
+    IF ~
+      Global("6W#ShithriQueen","GLOBAL",1)
+      Global("6W#ShithriQueenAsked","GLOBAL",0)
+    ~ THEN
+      REPLY @1000003 /* You've mentioned something about becoming a queen... */
+      DO ~
+        SetGlobal("6W#ShithriQueenAsked","GLOBAL",1)
+      ~
+      GOTO 6WShithri_QueenAsk__drunk
+    IF ~
+      Global("6W#ShithriQueen","GLOBAL",2)
+      Global("6W#ShithriQueenAsked","GLOBAL",0)
+    ~ THEN
+      REPLY @1000003 /* You've mentioned something about becoming a queen... */
+      DO ~
+        SetGlobal("6W#ShithriQueenAsked","GLOBAL",1)
+      ~
+      GOTO 6WShithri_QueenAsk__sober
+
     // Implementation Note:
     // Couldn't just use the label, because WeiDU forgets the string labels
     // after compiling the file. State numbers cannot be used either, because
@@ -407,6 +426,124 @@ APPEND 6WSHITJ
       EXIT
   END
 
+
+  //
+  // Queen
+  //
+
+  IF ~~ THEN 6WShithri_QueenAsk__drunk
+    SAY @1000400 /* Aye... could've made it clearer, aye I could. */
+    =
+    @1000401 /* I gonna be queen o' pirates. */
+
+    IF ~~ THEN
+      REPLY @1000412 /* I'm not sure Desharik likes you in kind of way. Or any kind of way, to be honest. */
+      GOTO 6WShithri_QueenAsk__desharik_likes
+    IF ~~ THEN
+      REPLY @1000413 /* So you want to get Desharik's power? */
+      GOTO 6WShithri_QueenAsk__become_desharik
+    IF ~Gender(Player1,MALE)~ THEN
+      REPLY @1000414 /* What exactly do you mean by "queen"? */
+      GOTO 6WShithri_QueenAsk__what_do_you_mean__m
+    IF ~!Gender(Player1,MALE)~ THEN
+      REPLY @1000414 /* What exactly do you mean by "queen"? */
+      GOTO 6WShithri_QueenAsk__what_do_you_mean__f
+  END
+  IF ~~ THEN 6WShithri_QueenAsk__sober
+    SAY @1000405 /* Aye. I said I gonna be queen o' pirates. */
+
+    IF ~~ THEN
+      REPLY @1000412 /* I'm not sure Desharik likes you in kind of way. Or any kind of way, to be honest. */
+      GOTO 6WShithri_QueenAsk__desharik_likes
+    IF ~~ THEN
+      REPLY @1000413 /* So you want to get Desharik's power? */
+      GOTO 6WShithri_QueenAsk__become_desharik
+    IF ~Gender(Player1,MALE)~ THEN
+      REPLY @1000414 /* What exactly do you mean by "queen"? */
+      GOTO 6WShithri_QueenAsk__what_do_you_mean__m
+    IF ~!Gender(Player1,MALE)~ THEN
+      REPLY @1000414 /* What exactly do you mean by "queen"? */
+      GOTO 6WShithri_QueenAsk__what_do_you_mean__f
+  END
+
+  IF ~~ THEN 6WShithri_QueenAsk__desharik_likes
+    SAY @1000420 /* Har har! Wha' a luck! Neither does this bucko! */
+    =
+    @1000421 /* Not e'ery queen be wife t' king, ye know. */
+
+    IF ~~ THEN
+      REPLY @1000413 /* So you want to get Desharik's power? */
+      GOTO 6WShithri_QueenAsk__become_desharik
+    IF ~Gender(Player1,MALE)~ THEN
+      REPLY @1000414 /* What exactly do you mean by "queen"? */
+      GOTO 6WShithri_QueenAsk__what_do_you_mean__m
+    IF ~!Gender(Player1,MALE)~ THEN
+      REPLY @1000414 /* What exactly do you mean by "queen"? */
+      GOTO 6WShithri_QueenAsk__what_do_you_mean__f
+  END
+
+  IF ~~ THEN 6WShithri_QueenAsk__become_desharik
+    SAY @1000430 /* Capt'n. If this bucko e'er turns a half-lubber like that dog, betta jus' kill 'er. */
+
+    // Desharik's wife would share his lifestyle, so that question
+    // makes no sense either, leaving only one option
+    IF ~Gender(Player1,MALE)~ THEN
+      REPLY @1000414 /* What exactly do you mean by "queen"? */
+      GOTO 6WShithri_QueenAsk__what_do_you_mean__m
+    IF ~!Gender(Player1,MALE)~ THEN
+      REPLY @1000414 /* What exactly do you mean by "queen"? */
+      GOTO 6WShithri_QueenAsk__what_do_you_mean__f
+  END
+
+  IF ~~ THEN 6WShithri_QueenAsk__what_do_you_mean__m
+    SAY @1000440 /* Freedom, me capt'n! When ye do all ye like, when ye go where ye like. No power above ye, noone t' stop ye... Ain't ye a king then? */
+
+    IF ~~ THEN
+      REPLY @1000442 /* More like a god. */
+      GOTO 6WShithri_QueenAsk__god
+
+    IF ~~ THEN
+      REPLY @1000444 /* Not really. Kings have their responsibilities. They can't exactly do as they please. */
+      GOTO 6WShithri_QueenAsk__king
+
+    IF ~~ THEN
+      REPLY @1000446 /* I think I get it. You don't mean "the one to rule pirates". You mean "the best pirate". */
+      GOTO 6WShithri_QueenAsk__best
+  END
+  // Note: If you weren't sure if Shithri's dream of becoming a queen of pirates
+  // is a manga reference --- I hope you're sure now?
+  IF ~~ THEN 6WShithri_QueenAsk__what_do_you_mean__f
+    SAY @1000441 /* Freedom, me capt'n! When ye do all ye like, when ye go where ye like. No power above ye, noone t' stop ye... Ain't ye a queen then? */
+
+    IF ~~ THEN
+      REPLY @1000443 /* More like a goddess. */
+      GOTO 6WShithri_QueenAsk__god
+
+    IF ~~ THEN
+      REPLY @1000445 /* Not really. Queens have their responsibilities. They can't exactly do as they please. */
+      GOTO 6WShithri_QueenAsk__king
+
+    IF ~~ THEN
+      REPLY @1000446 /* I think I get it. You don't mean "the one to rule pirates". You mean "the best pirate". */
+      GOTO 6WShithri_QueenAsk__best
+  END
+
+  IF ~~ THEN 6WShithri_QueenAsk__god
+    // Note: Of course they do! They actually do have one in Pathfinder, her name is Besmara, the Pirate Queen. ;)
+    SAY @1000450 /* Aye. I reckon 'tis how ye'd see it. Mayhaps 'tis true. Mayhaps buckos need a goddess o' thar own too... */
+    IF ~~ THEN EXIT
+  END
+
+  IF ~~ THEN 6WShithri_QueenAsk__king
+    SAY @1000452 /* A queen who gets orders nah be true queen. Mayhaps ye'll get it one day. */
+    IF ~~ THEN EXIT
+  END
+
+  IF ~~ THEN 6WShithri_QueenAsk__best
+    // Note: more anime references, cause why not.
+    SAY @1000454 /* But o' course. I wanna be the very best 'n travel all across the seas! Ain't that obvious, capt'n? */
+    IF ~~ THEN EXIT
+  END
 
   //
   // just checking

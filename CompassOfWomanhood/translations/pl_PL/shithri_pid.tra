@@ -1,6 +1,7 @@
 @1000000 = ~Ta, kapitanie? Chcesz kolejke?~
 @1000001 = ~No pewnie! A co masz?~
 @1000002 = ~Właściwie to mam ochotę na szantę.~
+@1000003 = ~Wspominałaś coś o zostaniu królową...~
 @1000005 = ~Co do tych „truneczków”, o których wspominałaś...~
 @1000009 = ~Niespecjalnie. Tak tylko sprawdzam.~
 @1000090 = ~Ta galernica nigdzie sie nie wybiera, kapitanie. *łyk*~
@@ -44,6 +45,26 @@
 @1000304 = ~Tę o Cormyrskich dziewczynach.~
 @1000390 = ~Nieważne.~
 @1000391 = ~Trudno.~
+
+@1000400 = ~Ta... mogła żem sie wyrazić jaśniej, ta.~
+@1000401 = ~Zostane królowo piratów.~
+@1000405 = ~Ta. Żem powiedziała, że zostane królowo piratów.~
+@1000412 = ~Nie jestem pewny, czy Desharik lubi cię w taki sposób. Ani czy w ogóle cię lubi.~ ~Nie jestem pewna, czy Desharik lubi cię w taki sposób. Ani czy w ogóle cię lubi.~
+@1000413 = ~Czyli chcesz zdobyć taką władzę jak Desharik?~
+@1000414 = ~Co dokładnie masz na myśli mówiąc „królowa”?~
+@1000420 = ~Har har! Całe szczynście! Ta galernica też nie!~
+@1000421 = ~Nie każda królowa je żono króla, wiesz?~
+@1000430 = ~Kapitanie. Jeśli ta galernica sie kiedy stanie taka pół-loudowa jak ten pies, to weźże lepij jo zabij.~
+@1000440 = ~Wolność, kapitanie! Gdy robisz co chcesz, pływasz gdzie chcesz. Nikogo nad tobo, nikogo cie zatrzymać... Czyś wtedy nie król?~
+@1000441 = ~Wolność, kapitanie! Gdy robisz co chcesz, pływasz gdzie chcesz. Nikogo nad tobo, nikogo cie zatrzymać... Czyś wtedy nie królowa?~
+@1000442 = ~Raczej bóg.~
+@1000443 = ~Raczej bogini.~
+@1000444 = ~Nie do końca. Królowie mają swoje obowiązki. Nie mogą po prostu robić co im się podoba.~
+@1000445 = ~Nie do końca. Królowe mają swoje obowiązki. Nie mogą po prostu robić co im się podoba.~
+@1000446 = ~Chyba rozumiem. Nie masz na myśli „tej która rządzi piratami”, tylko „najlepszą z piratów”.~
+@1000450 = ~Ta. Tak żem myślała, że pewno tak to widzisz. Może i prawda. Może i galernikom by się własna bogini przydała...~
+@1000452 = ~Królowa co to jej rozkazujo to nie je królowa. Może kedyś zrozumiesz.~
+@1000454 = ~No pywnie. Najlepszo być chce, śwet przemierzyć wzdłuż i wszerz. Dziwisz mie sie, kapitanie?~
 
 
 @1020000 = ~O Drapaku, powiadasz? Heh. Jego siostrzeniec nie je nio zachwycony, ale niech byndzie:~

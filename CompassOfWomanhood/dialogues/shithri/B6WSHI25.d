@@ -384,7 +384,7 @@ CHAIN IF ~
   =
   @1100007 /* Young lady. I believe you are well aware of the nature of your misconducts. Your over-amicable behaviours, especially towards... other young ladies who... may or may not happen to be over-amicable with others too. */
   == B6WSHI25
-  @1100008 /* Aye, of course I be a friendly lass t' all me hearties! */
+  @1100008 /* Aye, o' course I be a friendly lass t' all me hearties! */
   == BKELDO25
   @1100009 /* Well, I wouldn't exactly call it a friendship, unless- */
   =

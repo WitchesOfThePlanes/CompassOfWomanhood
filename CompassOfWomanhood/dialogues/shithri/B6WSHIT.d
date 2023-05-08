@@ -719,6 +719,57 @@ EXIT
 // Cernd
 //
 
+// Cernd's house and child - higher priority, triggered
+
+// triggered by Global("CerndBeggar","GLOBAL",2) in Shithri's script
+CHAIN IF WEIGHT #-1 ~
+  IfValidForPartyDialogue("6WSHITHRI")
+  IfValidForPartyDialogue("Cernd")
+  See("Cernd")
+  Global("6W#Shithri_Cernd_House","GLOBAL",3)
+  // either before house talks, or after they're resolved
+~ THEN B6WSHIT 6W#shithri_cernd_house_0
+  // pulgor - druid, "priest of the forest"
+  @1070200 /* 'Tis... 'tis yer house? In... city o' bricks 'n marbles? Wit'... servants? Wit' wife? */
+  DO ~SetGlobal("6W#Shithri_Cernd_House","GLOBAL",4)~
+  =
+  @1070201 /* Ye nah pulgor. Ye- ye HUMAN! */
+  == BCERND
+  @1070202 /* It is but the past, my dear. But everything changes. And so do I. My call to nature... */
+  == B6WSHIT
+  @1070203 /* Avast, human. No more words from ye. No more. */
+EXIT
+
+// triggered by Global("CerndSpawnAfterBabyDelivered","GLOBAL",2) in Shithri's script
+CHAIN IF WEIGHT #-1 ~
+  IfValidForPartyDialogue("6WSHITHRI")
+  IfValidForPartyDialogue("Cernd")
+  See("Cernd")
+  Global("6W#Shithri_Cernd_House","GLOBAL",5)
+  // either before house talks, or after they're resolved
+~ THEN B6WSHIT 6W#shithri_cernd_house_1
+  @1070300 /* Ho, hu- me matey! */
+  DO ~SetGlobal("6W#Shithri_Cernd_House","GLOBAL",6)~
+  == BCERND
+  @1070301 /* I do listen, oh child of mountains. */
+  == B6WSHIT
+  @1070302 /* Me matey... nah. Pulgor. I be sorry. */
+  =
+  @1070303 /* Yer past nah define ye. 'tis nah about city even. */
+  =
+  // gubuk - humanoid such as human, elf or halfling, lit. "soft-skinned"
+  @1070304 /* Pulgor. I be angry at another gubuk. */
+  == BCERND
+  @1070305 /* I thought he was an elf, not human. */
+  == B6WSHIT
+  @1070306 /* ... */
+  =
+  // gubar - plural of gubuk
+  @1070307 /* (damn 'em, gubar, always thinkin' they so cunnin') */
+EXIT
+
+// Cernd random banters
+
 CHAIN IF ~
   IfValidForPartyDialogue("6WSHITHRI")
   IfValidForPartyDialogue("Cernd")
@@ -1020,6 +1071,37 @@ CHAIN IF ~
   @1090008 /* Don't worry. Uncle Scratchy was never good at singing to begin with. Besides - 'tis not even the way he spoke his own name. He claimed it to be pronounced Sss-cratt-chee. But as you may guess, it was just to make the Sembian competition angry. */
 EXIT
 
+// If Jan has Bandana of Pirate Haqu equipped, Shithri is givin him looks.
+CHAIN IF ~
+  IfValidForPartyDialogue("6WSHITHRI")
+  IfValidForPartyDialogue("Jan")
+  See("Jan")
+  CombatCounter(0)
+  OR(2)
+    HasItemEquiped("_6WBAN01","Jan")
+    HasItemEquiped("_6WBAN02","Jan")
+  Global("6W#banter_Shithri_Jan_bandana","GLOBAL",0)
+~ THEN BJAN 6W#banter_shithri_jan_bandana_0
+  @1090100 /* Ha, Shithri, I see Jan Jansen's Flasher Master Bruiser Mate catched your eye, didn't they? Excellent choice, most exquisite taste, I must say. You actually remind me of aunt Kadie herself. */
+  DO ~SetGlobal("6W#banter_Shithri_Jan_bandana","GLOBAL",1)~
+  == B6WSHIT
+  @1090101 /* Nay, me matey. I be lookin' at yer bandana. */
+  == BJAN
+  @1090102 /* You're right, I'm sure auntie would love it. After all, her late husband was a skilled hunter of sea cucumbers. A risky business, as you can expect. And look what happened to him! */
+  == B6WSHIT
+  @1090103 /* Aye? Wha' happened? */
+  == BJAN
+  @1090104 /* LATE husband, I tell you. My dear, if you knew all the hazards of hunting vegetables, you wouldn't be so eager about cucumbers. I mean can you even make a soup out of a cucumber? */
+  == B6WSHIT
+  @1090105 /* ...I reckon? */
+  == BJAN
+  @1090106 /* Of course you can! But will it be as good as a turnip one? */
+  == B6WSHIT
+  @1090107 /* Fer all the three seas, wha' it 'ave t' do wit' a pirate bandana?! */
+  == BJAN
+  @1090108 /* Well, while Kadie's husband was busy with his risky hunting, I was a sailor, trading turnip in the distant land of Waterdeep. And while I endured the raging weather and ungrateful buyers, at least the pirates weren't poisonous. When I close I eyes, I can still see it clear as a frosty winter day: a deathly pale turnip on a sea cucumber-black background... Now if you'd excuse me, a call of nostalgia. */
+END
+
 
 //
 // Keldorn
@@ -1232,6 +1314,28 @@ EXIT
 //
 // Valygar
 //
+
+// Valygar's quest reactions - higher priority, triggered
+
+// triggered by Global("LavokDead","GLOBAL",1) in Shithri's script
+CHAIN IF WEIGHT #-1 ~
+  IfValidForPartyDialogue("6WSHITHRI")
+  IfValidForPartyDialogue("Valygar")
+  See("Valygar")
+  Global("6W#Shithri_Valygar_lavok","GLOBAL",1)
+  // either before house talks, or after they're resolved
+~ THEN B6WSHIT 6W#shithri_valygar_lavok
+  @1140300 /* Let's splice the mainbrace fer yer success, me hearty. */
+  DO ~SetGlobal("6W#Shithri_Valygar_lavok","GLOBAL",2)~
+  == BVALYGA
+  @1140301 /* Thank you. */
+  == B6WSHIT
+  @1140302 /* Shanties? */
+  == BVALYGA
+  @1140303 /* No. */
+EXIT
+
+// Valygar random banters
 
 CHAIN IF ~
   IfValidForPartyDialogue("6WSHITHRI")

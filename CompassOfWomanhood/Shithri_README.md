@@ -250,6 +250,7 @@ Słowniczek:
  * sztyft - osoba przyuczająca się do fachu, chłopiec/dziewka na posyłki
  * szur, szurek - młody chłopak
  * szurać, szurnąć - zaczepiać kogoś, "podskakiwać" komuś
+ * ścierw - padlina, zwłoki zwierzęcia
  * ślipić - patrzeć, oglądać
  * tangi - tęgi, silny
  * typ / typiara - osoba podejrzana lub nie ciesząca się dobrą opinią

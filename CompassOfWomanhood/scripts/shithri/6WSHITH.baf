@@ -42,6 +42,8 @@ THEN
   RESPONSE #100
     SetInterrupt(FALSE)
     SetGlobal("6W#ShithriCallMeBack","GLOBAL",0)
+    DisplayString(Myself,#16233) // "gulp" + sound
+    Wait(1)
     StartDialogNoSet(Player1)
     SetInterrupt(TRUE)
 END
@@ -76,7 +78,7 @@ THEN
     Wait(1)
     MoveToObject("Cernd")
     SetGlobal("6W#Shithri_Cernd_House","GLOBAL",3)
-    StartDialogNoSet("Cernd")
+    Interact("Cernd")
     SetInterrupt(TRUE)
 END
 
@@ -94,7 +96,7 @@ THEN
     Wait(1)
     MoveToObject("Cernd")
     SetGlobal("6W#Shithri_Cernd_House","GLOBAL",5)
-    StartDialogNoSet("Cernd")
+    Interact("Cernd")
     SetInterrupt(TRUE)
 END
 
@@ -125,7 +127,7 @@ THEN
     Wait(1)
     MoveToObject("Valygar")
     SetGlobal("6W#Shithri_Valygar_lavok","GLOBAL",1)
-    StartDialogNoSet("Valygar")
+    Interact("Valygar")
     SetInterrupt(TRUE)
 END
 

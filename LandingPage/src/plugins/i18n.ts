@@ -8,6 +8,6 @@ const messages = {
 };
 
 export const i18n = createI18n({
-  locale: "en_US", // set locale
+  locale: "pl_PL", // set locale
   messages, // set locale messages
 });

@@ -14,7 +14,7 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "lib": ["esnext", "dom"],
-    "types": ["vuetify", "vite/client"],
+    "types": ["vuetify", "vite/client", "jest", "@testing-library/jest-dom"],
     "paths": {
       "@/*": ["src/*"]
     }

@@ -4,6 +4,7 @@
     class="h-screen d-flex align-end justify-center flex-column pa-6 nav-menu text-right"
   >
     <v-btn
+      :data-testId="locale"
       class="pa-2 button"
       v-for="locale in $i18n.availableLocales"
       :key="`locale-${locale}`"
@@ -15,6 +16,7 @@
     </v-btn>
 
     <v-btn
+      :data-testId="link.id"
       v-for="link in linksConfig"
       :key="link.id"
       class="button pa-2"

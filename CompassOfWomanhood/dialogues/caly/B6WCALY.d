@@ -378,6 +378,85 @@ EXIT
 // Rasaad
 //
 
+CHAIN IF ~
+  IfValidForPartyDialogue("6WCALY")
+  IfValidForPartyDialogue("Rasaad")
+  See("6WCALY")
+  CombatCounter(0)
+  Global("6W#Caly_chose_dark","GLOBAL",0)
+  Global("6W#banter_Caly_Rasaad","GLOBAL",0)
+~ THEN BRASAAD 6W#banter_caly_rasaad_0
+  @1190000 /* Seeing a fellow Selûnite at my side fills my heart with... */
+  DO ~SetGlobal("6W#banter_Caly_Rasaad","GLOBAL",1)~
+  == B6WCALY
+  @1190001 /* Joy? */
+  == BRASAAD
+  @1190002 /* Would you call it joy if it's a darkness darker than dark, grasping my soul like a moonless night sky? */
+  == B6WCALY
+  @1190003 /* There are many ways to feel joy. All of them valid. */
+  == BRASAAD
+  @1190004 /* It's not joy, Caly. */
+  == B6WCALY
+  @1190005 /* I do hope it's not shame, at the very least. */
+  == BRASAAD
+  @1190006 /* No. Some day you may understand. But I hope you won't. */
+EXIT
+
+CHAIN IF ~
+  IfValidForPartyDialogue("6WCALY")
+  IfValidForPartyDialogue("Rasaad")
+  See("Rasaad")
+  CombatCounter(0)
+  Global("6W#Caly_chose_dark","GLOBAL",0)
+  Global("6W#banter_Caly_Rasaad","GLOBAL",1)
+~ THEN B6WCALY 6W#banter_caly_rasaad_1
+  @1190100 /* Pray tell, oh my brother in faith, why are your eyes following my movements so meticulously? */
+  DO ~SetGlobal("6W#banter_Caly_Rasaad","GLOBAL",2)~
+  == BRASAAD
+  @1190101 /* I was wondering. I rarely saw female monks of my order... */
+  == B6WCALY
+  @1190102 /* Oh my, oh my. I didn't expect you to be that late of a bloomer. */
+  == BRASAAD
+  @1190103 /* ...but I think I would still recognize their robes. Yet yours strike me as strange and unfamiliar. */
+  == B6WCALY
+  @1190104 /* So it's about the way I dress. What else could it have been? */
+  == BRASAAD
+  @1190105 /* I didn't want to upset you. */
+  == B6WCALY
+  @1190106 /* I am not upset. It was to be expected. */
+  == BRASAAD
+  @1190107 /* I am sorry, Caly. It wasn't my intention to offend you. */
+  == B6WCALY
+  @1190108 /* Oh, please! You're a man and nothing manly is alien to you. As we can all see. */
+  == BRASAAD
+  @1190109 /* I am truly sorry and that is all I can do. I will leave now. */
+EXIT
+
+CHAIN IF ~
+  IfValidForPartyDialogue("6WCALY")
+  IfValidForPartyDialogue("Rasaad")
+  See("Rasaad")
+  CombatCounter(0)
+  Global("6W#Caly_chose_dark","GLOBAL",1)
+  Global("6W#banter_Caly_Rasaad_dark","GLOBAL",0)
+~ THEN BRASAAD 6W#banter_caly_rasaad_dark_0
+  @1191000 /* Please, think it through. */
+  DO ~SetGlobal("6W#banter_Caly_Rasaad_dark","GLOBAL",1)~
+  == B6WCALY
+  @1191001 /* Look who's saying that. */
+  == BRASAAD
+  @1191002 /* I know. But maybe it's not too late for you? */
+  == B6WCALY
+  @1191003 /* You seem misguided. I didn't abandon the moon. */
+  == BRASAAD
+  @1191004 /* You didn't? */
+  == B6WCALY
+  @1191005 /* No. For darkness is my moon. */
+  =
+  @1191006 /* You won't be whole until you cast shadow. Like a candle. */
+  =
+  @1991007 /* Silent? I thought so. You wouldn't dare disturb the sound of silence. Unlike a candle. */
+EXIT
 
 
 //

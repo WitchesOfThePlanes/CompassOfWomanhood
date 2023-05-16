@@ -212,6 +212,7 @@ CHAIN
   IfValidForPartyDialogue("6WCALY")
   IfValidForPartyDialogue("Korgan")
   See("6WCALY")
+  Global("6W#Caly_chose_light","GLOBAL",1)
   Global("6W#banter_Caly_Korgan_light","GLOBAL",0)
 ~ THEN B6WCALY 6W#banter_caly_korgan_light_0
   @1111000 /* If I speak with devas and unicorns kneel before me, but do not have love, I am only a clanging copper. */
@@ -267,6 +268,110 @@ EXIT
 // Hexxat
 //
 
+CHAIN IF ~
+  IfValidForPartyDialogue("6WCALY")
+  IfValidForPartyDialogue("Hexxat")
+  See("Hexxat")
+  CombatCounter(0)
+  // their banters don't have any particular order
+  Global("6W#banter_Caly_Hexxat_0","GLOBAL",0)
+~ THEN B6WCALY 6W#banter_caly_hexxat_0
+  @1180000 /* Oh, come on. Don't be shy. */
+  DO ~SetGlobal("6W#banter_Caly_Hexxat_0","GLOBAL",1)~
+  == BHEXXAT
+  @1180001 /* What do you mean? */
+  == B6WCALY
+  @1180002 /* Hexxat, will you be giving me those looks all day or will we... fight patriarchy together? */
+  == BHEXXAT
+  @1180003 /* I didn't... Caly, I don't think you and I share the same priorities in life. */
+  == B6WCALY
+  @1180004 /* Well, I know we don't. But we might share them in death. */
+  == BHEXXAT
+  @1180005 /* Stop. */
+EXIT
+
+CHAIN IF ~
+  IfValidForPartyDialogue("6WCALY")
+  IfValidForPartyDialogue("Hexxat")
+  See("6WCALY")
+  CombatCounter(0)
+  Global("6W#Caly_chose_light","GLOBAL",0)
+  !Global("HexxatRomanceActive","GLOBAL",2)
+  Global("6W#banter_Caly_Hexxat_1","GLOBAL",0)
+~ THEN BHEXXAT 6W#banter_caly_hexxat_1
+  @1180100 /* I noticed you expose your neck a lot, lately. */
+  DO ~SetGlobal("6W#banter_Caly_Hexxat_1","GLOBAL",1)~
+  == B6WCALY
+  @1180101 /* And I noticed you are a very observant woman. Or shall I say inquisitive? */
+  == BHEXXAT
+  @1180102 /* I'm not. Stop it. */
+  == B6WCALY
+  // In the Polish version, Caly uses an alliteration rather than a rhyme: ,,ekskursje w dyskursie''
+  // (meaning similar as English "excursions in the discourse", but sounds much more sophisticated),
+  // which is also the name of a blog by a Polish writer and journalist Wojciech Orliński. It's probably
+  // one of the oldest Polish blogs that are still active in 2023 (it was started in 2006).
+  @1180103 /* My dear, you know I cannot refuse myself the pleasure of exploration in a conversation? */
+  == BHEXXAT
+  @1180104 /* I meant your neck. */
+  == B6WCALY
+  @1180105 /* Oh. Did I make you intrigued? */
+  == BHEXXAT
+  @1180106 /* No. You made yourself unsafe. */
+EXIT
+
+CHAIN IF ~
+  IfValidForPartyDialogue("6WCALY")
+  IfValidForPartyDialogue("Hexxat")
+  See("Hexxat")
+  CombatCounter(0)
+  Global("6W#Caly_chose_light","GLOBAL",0)
+  !Global("HexxatRomanceActive","GLOBAL",2)
+  OR(2)
+    Global("6W#banter_Caly_Hexxat_0","GLOBAL",1)
+    Global("6W#banter_Caly_Hexxat_1","GLOBAL",1)
+  Global("6W#banter_Caly_Hexxat_2","GLOBAL",0)
+~ THEN B6WCALY 6W#banter_caly_hexxat_2
+  @1180200 /* Tell me, Hexxat. Is that true? */
+  DO ~SetGlobal("6W#banter_Caly_Hexxat_2","GLOBAL",1)~
+  == BHEXXAT
+  @1180201 /* I don't read minds, Caly. */
+  == B6WCALY
+  @1180202 /* About the vampires. Or, more precisely, vampiresses. Are they like piratesses? */
+
+  BRANCH ~IfValidForPartyDialog("6WSHIT")~
+    == B6WSHIT
+    @1180210 /* Piratess...es? */
+  BEGIN
+
+  == BHEXXAT
+  @1180220 /* Some of them. Perhaps. */
+  == B6WCALY
+  @1180221 /* But not you. You are special. */
+  == BHEXXAT
+  @1180222 /* I may be, yes. */
+  == B6WCALY
+  @1180223 /* And I don't dislike that. */
+  == BHEXXAT
+  @1180224 /* Good. */
+EXIT
+
+CHAIN IF ~
+  IfValidForPartyDialogue("6WCALY")
+  IfValidForPartyDialogue("Hexxat")
+  See("Hexxat")
+  CombatCounter(0)
+  Global("6W#Caly_chose_light","GLOBAL",1)
+  Global("6W#banter_Caly_Hexxat_light_0","GLOBAL",0)
+~ THEN B6WCALY 6W#banter_caly_hexxat_5
+  @1181000 /* My Lady, lead me not into temptation. If you are willing, take this cup from me. */
+  DO ~SetGlobal("6W#banter_Caly_Hexxat_light_0","GLOBAL",1)~
+  == BHEXXAT
+  @1181001 /* Can I help you, Caly? */
+  == B6WCALY
+  @1181002 /* May I not stare at her because she is dark. Because she is cursed to never see the sun. And like a rose's, her beauty lies among thorns. */
+  == BHEXXAT
+  @1181003 /* Flattering. */
+EXIT
 
 
 //

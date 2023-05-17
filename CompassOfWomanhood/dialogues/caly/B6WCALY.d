@@ -262,6 +262,58 @@ EXIT
 // Neera
 //
 
+CHAIN IF ~
+  IfValidForPartyDialogue("6WCALY")
+  IfValidForPartyDialogue("Neera")
+  See("6WCALY")
+  Global("6W#banter_Caly_Neera","GLOBAL",0)
+~ THEN BNEERA 6W#banter_caly_neera_0
+  @1170000 /* Caly, Caly, Caly. Hmm... And Caly of Calimshan at that! Doesn't it sound weird? Not really your typical name, more like a nickname, really. */
+  =
+  @1170001 /* But if so, what was it before? Kali? Khali? Kaliii? */
+  DO ~SetGlobal("6W#banter_Caly_Neera","GLOBAL",1)~
+
+  BRANCH ~IfValidForPartyDialog("Rasaad")~
+    == BRASAAD
+    @1170010 /* Khalifa would be my guess. */
+  BEGIN
+
+  == B6WCALY
+  @1170020 /* Caly is all you need, my dear. */
+  == BNEERA
+  @1170021 /* But... */
+  == B6WCALY
+  @1170022 /* Please respect my life choices, Neera. */
+  == BNEERA
+  @1170023 /* Ok ok, I was just curious! Why so serious... */
+EXIT
+
+CHAIN IF ~
+  IfValidForPartyDialogue("6WCALY")
+  IfValidForPartyDialogue("Neera")
+  See("Neera")
+  Global("6W#Caly_chose_dark","GLOBAL",1)
+  Global("6W#banter_Caly_Neera_dark","GLOBAL",0)
+~ THEN 6WCALY 6W#banter_caly_neera_dark_0
+  @1171000 /* We are not so different, Neera. Both of us have been touched by cosmic forces feared by many. And both of us embraced them dearly as a part of ourselves. */
+  DO ~SetGlobal("6W#banter_Caly_Neera_dark","GLOBAL",0)~
+  == BNEERA
+  @1171001 /* Isn't yours more, you know, dark? I'm pretty sure it IS darkness, literally. Or shadows. I'm not sure what's the exact difference. */
+  == B6WCALY
+  @1171002 /* Shadow is when the light meets the dark. Pleasure meets pain. It's like being born and dying. And hearing the sound of silence. */
+  == BNEERA
+  @1171003 /* Hmm. Not THAT different then, yeah. Except for the last part. And also the first part. Not sure if I'd put the second one that way. It's more like dread and euphoria. */
+  == B6WCALY
+  @1171004 /* It is that too, in a way. */
+  == BNEERA
+  @1171005 /* How about wild surges? */
+  == B6WCALY
+  @1171006 /* I don't know how those feel. How could shadows devour me if I'm one with them? */
+  == BNEERA
+  @1171007 /* Not so similar then. */
+  == B6WCALY
+  @1171008 /* Perhaps. Perhaps not. */
+EXIT
 
 
 //

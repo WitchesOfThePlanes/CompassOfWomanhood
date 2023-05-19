@@ -441,15 +441,15 @@ CHAIN IF ~
   @1190000 /* Seeing a fellow Selûnite at my side fills my heart with... */
   DO ~SetGlobal("6W#banter_Caly_Rasaad","GLOBAL",1)~
   == B6WCALY
-  @1190001 /* Joy? */
+  @1190001 /* Joy is it? */
   == BRASAAD
-  @1190002 /* Would you call it joy if it's a darkness darker than dark, grasping my soul like a moonless night sky? */
+  @1190002 /* Would you call it joy if it's dark like a moonless sky? */
   == B6WCALY
   @1190003 /* There are many ways to feel joy. All of them valid. */
   == BRASAAD
   @1190004 /* It's not joy, Caly. */
   == B6WCALY
-  @1190005 /* I do hope it's not shame, at the very least. */
+  @1190005 /* Well, I do hope it's not shame, at the very least. */
   == BRASAAD
   @1190006 /* No. Some day you may understand. But I hope you won't. */
 EXIT

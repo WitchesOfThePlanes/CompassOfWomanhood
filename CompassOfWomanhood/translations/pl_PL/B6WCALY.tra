@@ -54,6 +54,27 @@
 @1111004 = ~Nie musi się znać, prymitywie.~
 
 
+@1130000 = ~Wydajesz się zamyśloną, moja droga, i to bardziej niż masz to w zwyczaju. Jak również bardziej melancholiczną. Czy raczysz podzielić się opowieścią tego, co zaprząta ci głowę?~
+@1130001 = ~To nie tyle opowieść co raczej nagłe uświadomienie. Nie jesteś szlachetnie urodzona. Używasz wyrafinowanego słownictwa, poruszasz się z gracją. Ale tego cię nauczono.~
+@1130002 = ~Nauczono? Huh. O wiele, wiele gorzej. Mnie do tego *wychowano*.~
+@1130003 = ~Właśnie! Musiałaś być małą dziewczynką gdy kto inny zdecydował, że spędzisz całe życie zadowalając władców. To przecież okropne!~
+@1130004 = ~A czy wiesz dlaczego mi się to przytrafiło, moja droga Nalio?~
+@1130005 = ~Ponieważ urodziłaś się biedna. Niewolnicą bogatych.~
+@1130006 = ~Znów błędna odpowiedź. Ponieważ byłam kobietą.~
+@1130007 = ~Masz na myśli, że to by się nie stało gdybyś była mężczyzną? Jestem przekonana, że bywają też tacy mężczyźni. Zwłaszcza w Calimshanie.~
+@1130008 = ~Oh, naturalnie, są. Jednakże jak przypuszczasz, czyje pragnienia osoby mej profesji mają za zadanie zaspokajać? Nawet jeśli są mężczyznami.~
+@1130009 = ~Królów. Książąt. Mężczyzn u władzy.~
+@1130010 = ~W rzeczy samej. I niech z tą myślą cię zostawię.~
+
+@1130100 = ~Myślałam o tym, co mówiłaś, Caly.~
+@1130101 = ~Radam jest temu. Czy dotarłaś już do jakiś wniosków w owym temacie?~
+@1130102 = ~Tak. Dotarłam. Właściwie nawet dwóch.~
+@1130103 = ~Dotarło do mnie, że nawet wśród szlachetnie urodzonych, kobiety nigdy nie są równe mężczyznom. Przykładowo, to zawsze męski dziedzic dziedziczy ziemię, nawet jeśli jest jedynie mężem córki danego rodu.~
+@1130104 = ~Jako żywo. Nie są.~
+@1130105 = ~Nie jesteś*my*.~
+@1130106 = ~Rozumiem. Będę zatem wyczekiwać aż dotrzesz do trzeciego wniosku.~
+
+
 @1170000 = ~Caly, Caly, Caly. Hmm... I to na dodatek Caly z Calimshanu! Czy to nie brzmi dziwnie? Nie jak zwykłe imię, bardziej przezwisko.~
 @1170001 = ~Ale jak tak, to jak brzmiało to wcześniejsze? Kali? Khali? Kaliii?~
 @1170010 = ~Zgadywałbym: Khalifa.~
@@ -130,4 +151,18 @@
 @1191004 = ~Nie?~
 @1191005 = ~Nie. Ciemność jest moim księżycem.~
 @1191006 = ~Nie będziesz całością póki nie rzucisz cienia. Jak świeca.~
-@1991007 = ~Milczysz? Tak myślałam. Ty nie ośmieliłbyś się naruszyć dźwięku ciszy. Świeca - owszem.~
+@1191007 = ~Milczysz? Tak myślałam. Ty nie ośmieliłbyś się naruszyć dźwięku ciszy. Świeca - owszem.~
+
+
+@1900000 = ~Nie pojmuję jej zupełnie, moja droga. Niepojęcie zamknięty ma umysł owo indywiduum jakim jest!~
+@1900001 = ~Właśnie! Czy uwierzyłabyś, że nie tylko wyznaje hipotezę uczciwego świata, ale jeszcze mylnie nazywa ją determinizmem?~
+@1900010 = ~Huh. Niczego więcej się spodziewać. Jakże mogłaby nie chodzić po omacku gdy nic jej nie oświeca? Nic ani nikt.~
+@1900011 = ~Huh. Niczego więcej się spodziewać. Jakże mogłaby stąpać ścieżką, której nie można nazwać, gdy nikt jej nie poprowadzi?~
+@1900020 = ~Ymmm... Czy sugerujesz to co wydaje mi się, że sugerujesz?~
+@1900021 = ~Widzisz potrzebę pytać?~
+@1900022 = ~Znajduję was rivvilów niepokojącymi już pojedynczych. Ale szepczący i zerkający ukradkiem w moim kierunku - wzbudzacie we mnie obawę.~
+@1900023 = ~Czy to nie jest przypadkiem to samo?~
+@1900024 = ~Bynajmniej ani trochę. To jak porównać rozrywkę z zabawianiem.~
+@1900025 = ~Albo głupotę z głupstwem.~
+@1900026 = ~Albo wredotę ze wstrętotą.~
+@1900026 = ~Przewybornie! W takim razie chyba zostawię was same, skoro tak się dziś doskonale dogadujecie!~

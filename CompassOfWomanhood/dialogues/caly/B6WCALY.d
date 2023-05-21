@@ -238,6 +238,57 @@ EXIT
 // Nalia
 //
 
+CHAIN
+  IfValidForPartyDialogue("6WCALY")
+  IfValidForPartyDialogue("Nalia")
+  See("Nalia")
+  Global("6W#banter_Caly_Nalia","GLOBAL",0)
+~ THEN B6WCALY 6W#banter_caly_nalia_0
+  @1130000 /* You seem lost in thoughts, my dear, more so than usual. And more melancholic as well. Would you share that tale which occupies your mind? */
+  DO ~SetGlobal("6W#banter_Caly_Nalia","GLOBAL",1)~
+  == BNALIA
+  @1130001 /* It's not much of a tale, more like a sudden realization. You aren't a noble. Your vocabulary is sophisticated, your moves are graceful. But you were trained to do that. */
+  == B6WCALY
+  @1130002 /* Trained? Huh. Much, much worse than that. I was *raised* for that. */
+  == BNALIA
+  @1130003 /* Exactly! You must have been a little girl when others decided you will spend all your life for the pleasure of the rulers. That's just horrible! */
+  == B6WCALY
+  @1130004 /* And do you know why that happened to me, my dear Nalia? */
+  == BNALIA
+  @1130005 /* Because you were born poor. A slave to the rich. */
+  == B6WCALY
+  @1130006 /* Wrong once again. Because I was a woman. */
+  == BNALIA
+  @1130007 /* Do you mean to say it would never happen were you a man? I was pretty sure there were men like that too. Especially in Calimshan. */
+  == B6WCALY
+  @1130008 /* Oh, there are, of course. But were you to take an educated guess, whose desires are those of my profession meant to fulfill? Even if they are men. */
+  == BNALIA
+  @1130009 /* Kings'. Princes'. Men in power. */
+  == B6WCALY
+  @1130010 /* Exactly. I will leave you with that thought. */
+EXIT
+
+CHAIN
+  IfValidForPartyDialogue("6WCALY")
+  IfValidForPartyDialogue("Nalia")
+  See("6WCALY")
+  Global("6W#banter_Caly_Nalia","GLOBAL",1)
+~ THEN BNALIA 6W#banter_caly_nalia_1
+  @1130100 /* I've been thinking about what you said, Caly. */
+  DO ~SetGlobal("6W#banter_Caly_Nalia","GLOBAL",2)~
+  == B6WCALY
+  @1130101 /* I am pleased to hear that. Did you arrive at any particular conclusion? */
+  == BNALIA
+  @1130102 /* Yes. I did. Two conclusions, to be precise. */
+  =
+  @1130103 /* I realised that even among the nobility, women are never really equal to men. It's the male heir who inherits the land, for instance. Even if he's but a husband of the daughter by blood. */
+  == B6WCALY
+  @1130104 /* Indeed. They are not. */
+  == BNALIA
+  @1130105 /* *We* are not. */
+  == B6WCALY
+  @1130106 /* I see. I will be looking forward to your third conclusion then. */
+EXIT
 
 
 //
@@ -507,7 +558,7 @@ CHAIN IF ~
   =
   @1191006 /* You won't be whole until you cast shadow. Like a candle. */
   =
-  @1991007 /* Silent? I thought so. You wouldn't dare disturb the sound of silence. Unlike a candle. */
+  @1191007 /* Silent? I thought so. You wouldn't dare disturb the sound of silence. Unlike a candle. */
 EXIT
 
 
@@ -522,3 +573,62 @@ EXIT
 // this way. Especially considering how adding a bwilson.dlg file may be
 // incompatible with WilsonChronicles mod.
 
+
+
+//
+// Nalia and Viconia
+//
+
+// Caly-Nalia-Viconia dialogue should only get triggered after both
+// Caly-Viconia and Nalia-Viconia. Nalia-Viconia only uses a local though,
+// so adding a global-setting action to it is needed.
+ADD_TRANS_ACTION BVICONI
+  BEGIN 5 END
+  BEGIN 0 END
+  ~SetGlobal("6W#banter_Nalia_Viconia_0","GLOBAL",1)~
+  UNLESS ~6W#banter_Nalia_Viconia_0~
+CHAIN
+  IfValidForPartyDialogue("6WCALY")
+  IfValidForPartyDialogue("Nalia")
+  IfValidForPartyDialogue("Viconia")
+  See("Nalia")
+  Global("6W#banter_Nalia_Viconia_0","GLOBAL",1)
+  Global("6W#banter_Caly_Viconia_0","GLOBAL",1)
+  Global("6W#banter_Caly_Nalia_viconia","GLOBAL",0)
+~ THEN B6WCALY 6W#banter_caly_nalia_viconia_1
+  @1900000 /* I fail to understand her, my dear. Such a narrow-minded individual, she is! */
+  DO ~SetGlobal("6W#banter_Caly_Nalia_Viconia","GLOBAL",1)~
+  == BNALIA
+  @1900001 /* I know! Can you believe she not only believes the just-world hypothesis to be true, but confuses it with determinism? */
+
+  == B6WCALY IF ~Global("6W#Caly_chose_dark","GLOBAL",0)~
+  @1900010 /* Huh. As much to be expected though. How could she not walk in the dark if she had nothing to be enlightened by? Nothing and noone. */
+
+  == B6WCALY IF ~Global("6W#Caly_chose_dark","GLOBAL",1)~
+  @1900011 /* Huh. As much to be expected though. How could she walk a way that cannot be spoken, with noone to guide her? */
+
+  == BNALIA
+  @1900020 /* Ummm... Do you mean to imply what I think you mean to imply? */
+
+  == B6WCALY
+  @1900021 /* Are you asking still? */
+
+  == BVICONI
+  @1900022 /* I find you rivvil disturbing enough when you are on your own. But your whispers and surreptitious looks at my general direction, I find most distressing. */
+  // Of vourse Viconia would be on the Dark Side, why do you even ask?
+
+  == BNALIA
+  @1900023 /* Isn't it the same though? */
+
+  == B6WCALY
+  @1900024 /* Not even remotely so. You may compare that to entertainment and amusement. */
+
+  == BVICONI
+  @1900025 /* Or to silliness and stupidity. */
+
+  == B6WCALY
+  @1900026 /* Or to nasty and mean. */
+
+  == BNALIA
+  @1900026 /* Well fine! I'll just leave you two alone then, seeing you seem to understand each other so well today! */
+EXIT

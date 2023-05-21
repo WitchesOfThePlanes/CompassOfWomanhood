@@ -53,6 +53,27 @@
 @1111004 = ~She has no need to, you simpleton.~
 
 
+@1130000 = ~You seem lost in thoughts, my dear, more so than usual. And more melancholic as well. Would you share that tale which occupies your mind?~
+@1130001 = ~It's not much of a tale, more like a sudden realization. You aren't a noble. Your vocabulary is sophisticated, your moves are graceful. But you were trained to do that.~
+@1130002 = ~Trained? Huh. Much, much worse than that. I was *raised* for that.~
+@1130003 = ~Exactly! You must have been a little girl when others decided you will spend all your life for the pleasure of the rulers. That's just horrible!~
+@1130004 = ~And do you know why that happened to me, my dear Nalia?~
+@1130005 = ~Because you were born poor. A slave to the rich.~
+@1130006 = ~Wrong once again. Because I was a woman.~
+@1130007 = ~Do you mean to say it would never happen were you a man? I was pretty sure there were men like that too. Especially in Calimshan.~
+@1130008 = ~Oh, there are, of course. But were you to take an educated guess, whose desires are those of my profession meant to fulfill? Even if they are men.~
+@1130009 = ~Kings'. Princes'. Men in power.~
+@1130010 = ~Exactly. I will leave you with that thought.~
+
+@1130100 = ~I've been thinking about what you said, Caly.~
+@1130101 = ~I am pleased to hear that. Did you arrive at any particular conclusion?~
+@1130102 = ~Yes. I did. Two conclusions, to be precise.~
+@1130103 = ~I realised that even among the nobility, women are never really equal to men. It's the male heir who inherits the land, for instance. Even if he's but a husband of the daughter by blood.~
+@1130104 = ~Indeed. They are not.~
+@1130105 = ~*We* are not.~
+@1130106 = ~I see. I will be looking forward to your third conclusion then.~
+
+
 @1170000 = ~Caly, Caly, Caly. Hmm... And Caly of Calimshan at that! Doesn't it sound weird? Not really your typical name, more like a nickname, really.~
 @1170001 = ~But if so, what was it before? Kali? Khali? Kaliii?~
 @1170010 = ~Khalifa would be my guess.~
@@ -129,4 +150,18 @@
 @1191004 = ~You didn't?~
 @1191005 = ~No. For darkness is my moon.~
 @1191006 = ~You won't be whole until you cast shadow. Like a candle.~
-@1991007 = ~Silent? I thought so. You wouldn't dare disturb the sound of silence. Unlike a candle.~
+@1191007 = ~Silent? I thought so. You wouldn't dare disturb the sound of silence. Unlike a candle.~
+
+
+@1900000 = ~I fail to understand her, my dear. Such a narrow-minded individual, she is!~
+@1900001 = ~I know! Can you believe she not only believes the just-world hypothesis to be true, but confuses it with determinism?~
+@1900010 = ~Huh. As much to be expected though. How could she not walk in the dark if she had nothing to be enlightened by? Nothing and noone.~
+@1900011 = ~Huh. As much to be expected though. How could she walk a way that cannot be spoken, with noone to guide her?~
+@1900020 = ~Ummm... Do you mean to imply what I think you mean to imply?~
+@1900021 = ~Are you asking still?~
+@1900022 = ~I find you rivvil disturbing enough when you are on your own. But your whispers and surreptitious looks at my general direction, I find most distressing.~
+@1900023 = ~Isn't it the same though?~
+@1900024 = ~Not even remotely so. You may compare that to entertainment and amusement.~
+@1900025 = ~Or to silliness and stupidity.~
+@1900026 = ~Or to nasty and mean.~
+@1900026 = ~Well fine! I'll just leave you two alone then, seeing you seem to understand each other so well today!~

@@ -174,6 +174,91 @@ EXIT
 // Keldorn
 //
 
+CHAIN IF ~
+  IfValidForPartyDialogue("6WCALY")
+  IfValidForPartyDialogue("Keldorn")
+  See("Keldorn")
+  CombatCounter(0)
+  // if Caly met lady Maria, why would she ask about her?
+  !GlobalGT("LadyMaria","GLOBAL",0)
+  Global("6W#banter_Caly_Keldorn","GLOBAL",0)
+~ THEN B6WCALY 6W#banter_caly_keldorn_0
+  @1100000 /* My lord... */
+  DO ~SetGlobal("6W#banter_Caly_Keldorn","GLOBAL",1)~
+  == BKELDOR
+  @1100001 /* Please, don't call me that, Caly. The way you pronounce it is... */
+  == B6WCALY
+  // Cicero
+  @1100002 /* Unfitting for a man your age? Nonsense, boy, few things are as false as what people tend to say about age. After all... what is more pleasant than age surrounded by studious and affectionate youth, as a wise man said? */
+  == BKELDOR
+  @1100003 /* I am quite certain that the emphasis was on STUDIOUS. That being said - my age aside, I am a knight. And, perhaps most importantly, a married man. */
+  == B6WCALY
+  @1100004 /* Oh well. What kind of a woman is she? */
+  == BKELDOR
+  @1100005 /* Charming and beautiful, of course. */
+  == B6WCALY
+  @1100006 /* Of course. */
+  == BKELDOR
+  @1100007 /* What is it? */
+  == B6WCALY
+  @1100008 /* Nothing, really, my lord. I just heard these exact words so, so many times. Always the same. Always with the same look in their eyes... */
+  =
+  @1100009 /* And they always come back. It always makes me but slightly in a mood for a glass of wine. Perhaps a fine pipe too. */
+  == BKELDOR
+  @1100010 /* Why are you telling me all of this? */
+  == B6WCALY
+  @1100011 /* No particular reason, sir. My tongue just slipped a little, there is nothing more to it. Let us go. */
+EXIT
+
+CHAIN IF ~
+  IfValidForPartyDialogue("6WCALY")
+  IfValidForPartyDialogue("Keldorn")
+  See("6WCALY")
+  CombatCounter(0)
+  Global("LadyMaria","GLOBAL",5)
+  // need the previous dialogue to refer to it, another dialogue handles the case in which the previous one didn't occur
+  Global("6W#banter_Caly_Keldorn","GLOBAL",1)
+~ THEN BKELDOR 6W#banter_caly_keldorn_1a
+  @1100100 /* My lady. I think I finally understood the meaning of what you once told me. */
+  DO ~SetGlobal("6W#banter_Caly_Keldorn","GLOBAL",2)~
+  == B6WCALY
+  @1100101 /* Your lady? I thought you had one and she was most certainly not me. */
+  == BKELDOR
+  @1100102 /* I learned my lesson, no need to be so ironic. */
+  == B6WCALY
+  @1100103 /* That tale has yet to end. Do not rush it. */
+END
+
+CHAIN IF ~
+  IfValidForPartyDialogue("6WCALY")
+  IfValidForPartyDialogue("Keldorn")
+  See("6WCALY")
+  CombatCounter(0)
+  Global("LadyMaria","GLOBAL",5)
+  // variant of the previous dialogue
+  Global("6W#banter_Caly_Keldorn","GLOBAL",0)
+~ THEN BKELDOR 6W#banter_caly_keldorn_1b
+  @1100200 /* You seem low in spirit, Caly. Did anything happen? */
+  DO ~SetGlobal("6W#banter_Caly_Keldorn","GLOBAL",2)~
+  == B6WCALY
+  @1100201 /* I beg for your forgiveness, my good knight. It is a trait of mine that the tales such as yours make me prone to suble forms of melancholy. */
+  == BKELDOR
+  @1100202 /* Well, it did have some sad parts, but it had a happy ending, didn't it? */
+  == B6WCALY
+  @1100203 /* That tale has yet to end. */
+  == BKELDOR
+  @1100204 /* In theory, it does. But I know the ending already: I will finish my mission, come back to Maria and then we will live happily ever after. */
+  == B6WCALY
+  @1100205 /* And you are never to wield a blade again. Never to abandon your lady once more. */
+  == BKELDOR
+  @1100206 /* I... */
+  =
+  @1100207 /* I am different. */
+  == B6WCALY
+  @1100208 /* Of course. All of you are "not like the other men". And yet all of you - alike. */
+  =
+  @1100209 /* Do not rush it. That tale has yet to end. Now let us go, before my desire for a glass of wine grows stronger still. */
+END
 
 
 //

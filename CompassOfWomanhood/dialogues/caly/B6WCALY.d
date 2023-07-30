@@ -162,6 +162,18 @@ EXIT
 // Haer'Dalis
 //
 
+// CHAIN IF ~
+//   IfValidForPartyDialogue("6WCALY")
+//   IfValidForPartyDialogue("Haerdalis")
+//   See("6WCALY")
+//   CombatCounter(0)
+//   Global("6W#banter_Caly_Haerdalis","GLOBAL",0)
+// ~ THEN BHAERDA 6W#banter_caly_haerdalis_0
+//   @1080000 /*  */
+//   DO ~SetGlobal("6W#banter_Caly_Haerdalis","GLOBAL",1)~
+//   == B6WCALY
+//   @1080001 /*  */
+// END
 
 
 //

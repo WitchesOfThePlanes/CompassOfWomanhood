@@ -711,7 +711,7 @@ CHAIN
   @1900021 /* Are you asking still? */
 
   == BVICONI
-  @1900022 /* I find you rivvil disturbing enough when you are on your own. But your whispers and surreptitious looks at my general direction, I find most distressing. */
+  @1900022 /* I find you rivvil disturbing enough when you are on your own. But your whispers and surreptitious looks in my general direction, I find most distressing. */
   // Of vourse Viconia would be on the Dark Side, why do you even ask?
 
   == BNALIA
